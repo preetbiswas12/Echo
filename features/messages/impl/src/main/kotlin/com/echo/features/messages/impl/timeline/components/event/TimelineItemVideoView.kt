@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -32,10 +33,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.hideFromAccessibility
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
+import coil3.compose.AsyncImagePainter
 import com.echo.compound.tokens.generated.CompoundIcons
+import com.echo.features.messages.impl.R
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemVideoContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemVideoContentPreviewParam
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemVideoContent
@@ -90,58 +94,82 @@ fun TimelineItemVideoView(
                 onShowClick = onShowContentClick,
             ) {
                 var isLoaded by remember { mutableStateOf(false) }
-                AsyncImage(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .then(if (isLoaded) Modifier.background(Color.White) else Modifier)
-                        .then(
-                            if (!isTalkbackActive && onContentClick != null) {
-                                Modifier
-                                    .combinedClickable(
-                                        onClick = onContentClick,
-                                        onLongClick = onLongClick,
-                                    )
-                                    .onKeyboardContextMenuAction(onLongClick)
-                            } else {
-                                Modifier
-                            }
-                        ),
-                    model = MediaRequestData(
-                        source = content.thumbnailSource,
-                        kind = MediaRequestData.Kind.Thumbnail(
-                            width = content.thumbnailWidth?.toLong() ?: MAX_THUMBNAIL_WIDTH,
-                            height = content.thumbnailHeight?.toLong() ?: MAX_THUMBNAIL_HEIGHT,
-                        )
-                    ),
-                    contentScale = ContentScale.Crop,
-                    alignment = Alignment.Center,
-                    contentDescription = description,
-                    onState = { state ->
-                        val url = content.thumbnailSource?.safeUrl
-                        if (url != null) {
-                            handleAsyncImageStateChange(
-                                state = state,
-                                onLoaded = { isLoaded = true },
-                                updateContentValidationState = { contentValidationState.update(url, it) },
+                var hasLoadError by remember { mutableStateOf(false) }
+                Box(modifier = Modifier.fillMaxWidth()) {
+                    AsyncImage(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .then(if (isLoaded) Modifier.background(Color.White) else Modifier)
+                            .then(
+                                if (!isTalkbackActive && onContentClick != null && !hasLoadError) {
+                                    Modifier
+                                        .combinedClickable(
+                                            onClick = onContentClick,
+                                            onLongClick = onLongClick,
+                                        )
+                                        .onKeyboardContextMenuAction(onLongClick)
+                                } else {
+                                    Modifier
+                                }
+                            ),
+                        model = MediaRequestData(
+                            source = content.thumbnailSource,
+                            kind = MediaRequestData.Kind.Thumbnail(
+                                width = content.thumbnailWidth?.toLong() ?: MAX_THUMBNAIL_WIDTH,
+                                height = content.thumbnailHeight?.toLong() ?: MAX_THUMBNAIL_HEIGHT,
                             )
-                        }
-                    },
-                )
+                        ),
+                        contentScale = ContentScale.Crop,
+                        alignment = Alignment.Center,
+                        contentDescription = if (hasLoadError) stringResource(R.string.screen_room_timeline_media_expired) else description,
+                        onState = { state ->
+                            hasLoadError = state is AsyncImagePainter.State.Error
+                            val url = content.thumbnailSource?.safeUrl
+                            if (url != null) {
+                                handleAsyncImageStateChange(
+                                    state = state,
+                                    onLoaded = { isLoaded = true },
+                                    updateContentValidationState = { contentValidationState.update(url, it) },
+                                )
+                            }
+                        },
+                    )
 
-                if (!isContentBeingValidated) {
-                    Box(
-                        modifier = Modifier.roundedBackground(),
-                        contentAlignment = Alignment.Center,
-                    ) {
-                        Image(
-                            imageVector = CompoundIcons.PlaySolid(),
-                            contentDescription = stringResource(id = CommonStrings.a11y_play),
-                            colorFilter = ColorFilter.tint(Color.White),
-                            modifier = Modifier.semantics { hideFromAccessibility() }
-                        )
+                    when {
+                        hasLoadError -> {
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .background(Color.Black.copy(alpha = 0.45f))
+                                    .padding(12.dp),
+                                contentAlignment = Alignment.Center,
+                            ) {
+                                Text(
+                                    text = stringResource(R.string.screen_room_timeline_media_expired),
+                                    color = Color.White,
+                                    textAlign = TextAlign.Center,
+                                )
+                            }
+                        }
+                        !isContentBeingValidated -> {
+                            Box(
+                                modifier = Modifier
+                                    .align(Alignment.Center)
+                                    .roundedBackground(),
+                                contentAlignment = Alignment.Center,
+                            ) {
+                                Image(
+                                    imageVector = CompoundIcons.PlaySolid(),
+                                    contentDescription = stringResource(id = CommonStrings.a11y_play),
+                                    colorFilter = ColorFilter.tint(Color.White),
+                                    modifier = Modifier.semantics { hideFromAccessibility() }
+                                )
+                            }
+                        }
+                        else -> {
+                            CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+                        }
                     }
-                } else {
-                    CircularProgressIndicator()
                 }
             }
         }

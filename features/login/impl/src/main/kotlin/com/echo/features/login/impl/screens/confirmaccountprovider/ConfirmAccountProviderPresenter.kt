@@ -22,6 +22,7 @@ import dev.zacsweers.metro.AssistedFactory
 import dev.zacsweers.metro.AssistedInject
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
+import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.changeserver.ChangeServerEvent
 import com.echo.features.login.impl.changeserver.ChangeServerState
 import com.echo.features.login.impl.login.LoginModeEvent
@@ -29,7 +30,6 @@ import com.echo.features.login.impl.login.LoginModeState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.uri.ensureProtocol
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
-import com.echo.libraries.matrix.api.accountprovider.matrixOrgAccountProvider
 import com.echo.libraries.matrix.api.core.MatrixPatterns
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import kotlinx.coroutines.flow.map
@@ -64,16 +64,16 @@ class ConfirmAccountProviderPresenter(
         }.collectAsState(emptyList())
 
         // The account providers offered for autocomplete: previously-used ones first, then the
-        // enterprise/MDM-configured allow-list, then matrix.org (always available, even before any sign-in).
+        // enterprise/MDM-configured allow-list, then the Echo homeserver placeholder (always available).
         // Everything is rendered without the https:// scheme (added back at connection time).
         val autocompleteCandidates = remember(homeserverHistory) {
-            (homeserverHistory + enterpriseService.accountProviderAllowList() + matrixOrgAccountProvider)
+            (homeserverHistory + enterpriseService.accountProviderAllowList() + AccountProvider.Generic(AccountProviderDataSource.DEFAULT_ECHO_HOMESERVER))
                 .map { it.friendlyServerName() }
                 .distinct()
         }
 
         // Editable input, seeded from the current (history-defaulted) account provider until the user edits it.
-        // Displayed without the scheme, so the field shows e.g. "matrix.org" rather than "https://matrix.org".
+        // Displayed without the scheme, so the field shows e.g. "homeserver.echo.example" rather than "https://…".
         var userInput by rememberSaveable { mutableStateOf<String?>(null) }
         val accountProviderInput = userInput ?: accountProvider.friendlyServerName()
 
@@ -133,7 +133,7 @@ class ConfirmAccountProviderPresenter(
                     // For a user ID the homeserver is the domain part (after the ':'), keeping any port.
                     val host = if (isUserId) accountProvider.substringAfter(":") else accountProvider
                     submittedLoginHint = "mxid:$accountProvider".takeIf { isUserId && !params.isAccountCreation }
-                    // Default the scheme to https:// so entering a bare host (e.g. "matrix.org") works.
+                    // Default the scheme to https:// so entering a bare host (e.g. "homeserver.example.org") works.
                     val accountProviderUrl = host.ensureProtocol()
                     submittedAccountProvider = accountProviderUrl
                     changeServerState.eventSink(

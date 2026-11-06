@@ -10,8 +10,10 @@ package com.echo.features.messages.impl.timeline.components.event
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.combinedClickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
@@ -26,9 +28,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
+import coil3.compose.AsyncImagePainter
+import com.echo.features.messages.impl.R
 import com.echo.features.messages.impl.timeline.aTimelineItemEvent
 import com.echo.features.messages.impl.timeline.components.ATimelineItemEventRow
 import com.echo.features.messages.impl.timeline.model.TimelineItemGroupPosition
@@ -86,37 +91,56 @@ fun TimelineItemImageView(
                     onShowClick = onShowContentClick,
                 ) {
                     var isLoaded by remember { mutableStateOf(false) }
-                    AsyncImage(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .then(if (isLoaded) Modifier.background(Color.White) else Modifier)
-                            .then(
-                                if (!isTalkbackActive() && onContentClick != null) {
-                                    Modifier
-                                        .combinedClickable(
-                                            onClick = onContentClick,
-                                            onLongClick = onLongClick,
-                                        )
-                                        .onKeyboardContextMenuAction(onLongClick)
-                                } else {
-                                    Modifier
+                    var hasLoadError by remember { mutableStateOf(false) }
+                    Box(modifier = Modifier.fillMaxWidth()) {
+                        AsyncImage(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .then(if (isLoaded) Modifier.background(Color.White) else Modifier)
+                                .then(
+                                    if (!isTalkbackActive() && onContentClick != null && !hasLoadError) {
+                                        Modifier
+                                            .combinedClickable(
+                                                onClick = onContentClick,
+                                                onLongClick = onLongClick,
+                                            )
+                                            .onKeyboardContextMenuAction(onLongClick)
+                                    } else {
+                                        Modifier
+                                    }
+                                ),
+                            model = content.thumbnailMediaRequestData,
+                            contentScale = ContentScale.Crop,
+                            alignment = Alignment.Center,
+                            contentDescription = if (hasLoadError) stringResource(R.string.screen_room_timeline_media_expired) else description,
+                            onState = { state ->
+                                hasLoadError = state is AsyncImagePainter.State.Error
+                                val url = content.thumbnailMediaRequestData.source?.safeUrl
+                                if (url != null) {
+                                    handleAsyncImageStateChange(
+                                        state = state,
+                                        onLoaded = { isLoaded = true },
+                                        updateContentValidationState = { contentValidationState.update(url, it) },
+                                    )
                                 }
-                            ),
-                        model = content.thumbnailMediaRequestData,
-                        contentScale = ContentScale.Crop,
-                        alignment = Alignment.Center,
-                        contentDescription = description,
-                        onState = { state ->
-                            val url = content.thumbnailMediaRequestData.source?.safeUrl
-                            if (url != null) {
-                                handleAsyncImageStateChange(
-                                    state = state,
-                                    onLoaded = { isLoaded = true },
-                                    updateContentValidationState = { contentValidationState.update(url, it) },
+                            },
+                        )
+                        if (hasLoadError) {
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .background(Color.Black.copy(alpha = 0.45f))
+                                    .padding(12.dp),
+                                contentAlignment = Alignment.Center,
+                            ) {
+                                androidx.compose.material3.Text(
+                                    text = stringResource(R.string.screen_room_timeline_media_expired),
+                                    color = Color.White,
+                                    textAlign = TextAlign.Center,
                                 )
                             }
-                        },
-                    )
+                        }
+                    }
                 }
             }
         }

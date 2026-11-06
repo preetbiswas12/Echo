@@ -14,7 +14,6 @@ import dev.zacsweers.metro.SingleIn
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
-import com.echo.libraries.matrix.api.accountprovider.matrixOrgAccountProvider
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -32,10 +31,15 @@ class AccountProviderDataSource(
     @AppCoroutineScope private val coroutineScope: CoroutineScope,
 ) {
     // The provider used when the user has not selected one: an enterprise/MDM-configured provider,
-    // else matrix.org. The most recently used provider (from history) can override it, see init.
+    // else the Echo homeserver placeholder. Replace `DEFAULT_ECHO_HOMESERVER` with the real Echo-server domain.
+    // The most recently used provider (from history) can override it, see init.
     private val configuredAccountProvider = enterpriseService.accountProviderAllowList()
         .firstOrNull()
-        ?: matrixOrgAccountProvider
+        ?: AccountProvider.Generic(DEFAULT_ECHO_HOMESERVER)
+
+    companion object {
+        // TODO(Echo): set to the real Echo-server homeserver domain (e.g. "https://echo.example.org").
+        const val DEFAULT_ECHO_HOMESERVER = "https://homeserver.echo.example"
 
     private val accountProvider: MutableStateFlow<AccountProvider> = MutableStateFlow(configuredAccountProvider)
 
