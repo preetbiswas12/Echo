@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./public/echo_app_logo.png" alt="Echo logo" width="160" />
+</p>
+
 [![Latest build](https://github.com/element-hq/element-x-android/actions/workflows/build.yml/badge.svg?query=branch%3Adevelop)](https://github.com/element-hq/element-x-android/actions/workflows/build.yml?query=branch%3Adevelop)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=element-x-android&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=element-x-android)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-x-android&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-x-android)
@@ -6,7 +10,7 @@
 [![Element X Android Matrix room #element-x-android:matrix.org](https://img.shields.io/matrix/element-x-android:matrix.org.svg?label=%23element-x-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-android:matrix.org)
 [![Localazy](https://img.shields.io/endpoint?url=https%3A%2F%2Fconnect.localazy.com%2Fstatus%2Felement%2Fdata%3Fcontent%3Dall%26title%3Dlocalazy%26logo%3Dtrue)](https://localazy.com/p/element)
 
-# Element X Android
+# Echo (Element X Android)
 
 Element X Android is the next-generation [Matrix](https://matrix.org/) client provided by [Element](https://element.io/).
 
@@ -30,27 +34,14 @@ Compared to the previous-generation [Element Classic](https://github.com/element
 
 <!--- END -->
 
-## Screenshots
+## Branding
 
-Here are some screenshots of the application:
+Echo branding assets are available in [`public/`](./public/):
 
-<!--
-Commands run before taking the screenshots:
-adb shell settings put system time_12_24 24
-adb shell am broadcast -a com.android.systemui.demo -e command enter
-adb shell am broadcast -a com.android.systemui.demo -e command clock -e hhmm 1337
-adb shell am broadcast -a com.android.systemui.demo -e command network -e mobile show -e level 4
-adb shell am broadcast -a com.android.systemui.demo -e command network -e wifi show -e level 4
-adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
-adb shell am broadcast -a com.android.systemui.demo -e command battery -e plugged false -e level 100
-
-And to exit demo mode:
-adb shell am broadcast -a com.android.systemui.demo -e command exit
--->
-
-|<img src="./docs/images-lfs/screen_1_light.png" width="280" />|<img src="./docs/images-lfs/screen_2_light.png" width="280" />|<img src="./docs/images-lfs/screen_3_light.png" width="280" />|<img src="./docs/images-lfs/screen_4_light.png" width="280" />|
-|-|-|-|-|
-|<img src="./docs/images-lfs/screen_1_dark.png" width="280" />|<img src="./docs/images-lfs/screen_2_dark.png" width="280" />|<img src="./docs/images-lfs/screen_3_dark.png" width="280" />|<img src="./docs/images-lfs/screen_4_dark.png" width="280" />|
+| | |
+|---|---|
+| <img src="./public/echo_light.png" alt="Echo light" width="320" /> | <img src="./public/echo_dark.png" alt="Echo dark" width="320" /> |
+| <img src="./public/echo_blue_gradient.png" alt="Echo blue gradient" width="320" /> | <img src="./public/echo_app_logo.png" alt="Echo app logo" width="160" /> |
 
 ## Translations
 
