@@ -1,4 +1,4 @@
-# Contributing to Element X Android
+# Contributing to Echo
 
 <!--- TOC -->
 
@@ -32,7 +32,7 @@
 
 ## Contributing to Element
 
-Element X Android support can be found in this room: [![Element X Android Matrix room #element-x-android:matrix.org](https://img.shields.io/matrix/element-x-android:matrix.org.svg?label=%23element-x-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-android:matrix.org).
+For questions or support related to this repository, please open an issue in this repo.
 
 The rest of the document contains specific rules for Matrix Android projects.
 
