@@ -1,0 +1,92 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.element.android",
+    "module": "element-call-bom",
+    "version": "0.1.0-rc.9",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.element.android",
+          "module": "element-call-api",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call-ui",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call-test",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.element.android",
+          "module": "element-call-api",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call-ui",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        },
+        {
+          "group": "io.element.android",
+          "module": "element-call-test",
+          "version": {
+            "requires": "0.1.0-rc.9"
+          }
+        }
+      ]
+    }
+  ]
+}

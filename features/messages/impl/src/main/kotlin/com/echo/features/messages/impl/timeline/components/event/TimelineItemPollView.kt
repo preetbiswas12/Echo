@@ -1,0 +1,67 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.messages.impl.timeline.components.event
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import com.echo.features.messages.impl.timeline.TimelineEvent
+import com.echo.features.messages.impl.timeline.model.event.TimelineItemPollContent
+import com.echo.features.messages.impl.timeline.model.event.TimelineItemPollContentPreviewParam
+import com.echo.features.poll.api.pollcontent.PollContentView
+import com.echo.libraries.designsystem.preview.ElementPreview
+import com.echo.libraries.designsystem.preview.PreviewsDayNight
+import com.echo.libraries.matrix.api.core.EventId
+import kotlinx.collections.immutable.toImmutableList
+
+@Composable
+fun TimelineItemPollView(
+    content: TimelineItemPollContent,
+    eventSink: (TimelineEvent.TimelineItemPollEvent) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    fun onSendPollResponse(pollStartId: EventId, answerIds: List<String>) {
+        eventSink(TimelineEvent.SendPollResponse(pollStartId, answerIds))
+    }
+
+    fun onEndPoll(pollStartId: EventId) {
+        eventSink(TimelineEvent.EndPoll(pollStartId))
+    }
+
+    fun onEditPoll(pollStartId: EventId) {
+        eventSink(TimelineEvent.EditPoll(pollStartId))
+    }
+
+    PollContentView(
+        eventId = content.eventId,
+        question = content.question,
+        answerItems = content.answerItems.toImmutableList(),
+        pollKind = content.pollKind,
+        isMultipleSelection = content.maxSelections > 1u,
+        maxSelections = content.maxSelections,
+        isPollEnded = content.isEnded,
+        isPollEditable = content.isEditable,
+        isMine = content.isMine,
+        onSendPollResponse = ::onSendPollResponse,
+        onEditPoll = ::onEditPoll,
+        onEndPoll = ::onEndPoll,
+        modifier = modifier,
+    )
+}
+
+@PreviewsDayNight
+@Composable
+internal fun TimelineItemPollViewPreview(@PreviewParameter(TimelineItemPollContentPreviewParam::class) content: TimelineItemPollContent) =
+    ElementPreview {
+        TimelineItemPollView(
+            content = content,
+            eventSink = {},
+        )
+    }
+

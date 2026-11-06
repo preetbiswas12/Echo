@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.api.user
+
+import android.os.Parcelable
+import com.echo.libraries.matrix.api.core.UserId
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class MatrixUser(
+    val userId: UserId,
+    val displayName: String? = null,
+    val avatarUrl: String? = null,
+    val displayedStatus: DisplayedStatus? = null,
+    val rawStatus: UserStatus? = null,
+    /** Base64 encoded thumbnail of [avatarUrl], stored locally, used as a fallback when the avatar cannot be loaded. */
+    val avatarThumbnail: String? = null,
+) : Parcelable
+

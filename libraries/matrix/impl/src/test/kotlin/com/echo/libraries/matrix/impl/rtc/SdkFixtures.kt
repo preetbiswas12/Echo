@@ -1,0 +1,23 @@
+/*
+ * Copyright (c) 2026 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.impl.rtc
+
+import org.matrix.rustcomponents.sdk.EventEncryptionInfo
+import org.matrix.rustcomponents.sdk.ShieldState
+
+const val A_SENDER_DEVICE = "SENDERDEVICE"
+
+fun anEncryptionInfo(senderId: String, shield: ShieldState) = EventEncryptionInfo(
+    senderId = senderId,
+    senderDeviceId = A_SENDER_DEVICE,
+    senderCurve25519Key = "curve",
+    sessionId = null,
+    shieldState = shield,
+    shieldStateStrict = shield,
+)
+

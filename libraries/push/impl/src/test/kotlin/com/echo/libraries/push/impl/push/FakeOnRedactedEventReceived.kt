@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2024, 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.push.impl.push
+
+import com.echo.libraries.push.impl.notifications.model.ResolvedPushEvent
+import com.echo.tests.testutils.lambda.lambdaError
+
+class FakeOnRedactedEventReceived(
+    private val onRedactedEventsReceivedResult: (List<ResolvedPushEvent.Redaction>) -> Unit = { lambdaError() },
+) : OnRedactedEventReceived {
+    override suspend fun onRedactedEventsReceived(redactions: List<ResolvedPushEvent.Redaction>) {
+        onRedactedEventsReceivedResult(redactions)
+    }
+}
+

@@ -1,0 +1,80 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.messages.impl.timeline
+
+import com.echo.features.messages.impl.timeline.components.MessageShieldData
+import com.echo.features.messages.impl.timeline.model.TimelineItem
+import com.echo.libraries.matrix.api.core.EventId
+import com.echo.libraries.matrix.api.core.RoomId
+import com.echo.libraries.matrix.api.core.ThreadId
+import com.echo.libraries.matrix.api.media.MediaSource
+import com.echo.libraries.matrix.api.timeline.Timeline
+import com.echo.libraries.matrix.ui.media.contentvalidation.ContentValidationState
+import kotlin.time.Duration
+
+sealed interface TimelineEvent {
+    data class OnScrollFinished(val firstIndex: Int) : TimelineEvent
+    data class FocusOnEvent(val eventId: EventId, val debounce: Duration = Duration.ZERO) : TimelineEvent
+    data object ClearFocusRequestState : TimelineEvent
+    data object OnFocusEventRender : TimelineEvent
+    data object JumpToLive : TimelineEvent
+
+    data object HideShieldDialog : TimelineEvent
+
+    data object MarkAllAsRead : TimelineEvent
+    data class EnterSelectionMode(val action: SelectionAction, val eventId: EventId) : TimelineEvent
+    data class ToggleSelection(val eventId: EventId) : TimelineEvent
+    data object ExitSelectionMode : TimelineEvent
+    data class CopyToClipboard(val text: String) : TimelineEvent
+
+    /**
+     * Events coming from a timeline item.
+     */
+    sealed interface TimelineItemEvent : TimelineEvent
+
+    data class ShowSendFailureDialog(val event: TimelineItem.Event) : TimelineItemEvent
+    data object HideSendFailureDialog : TimelineEvent
+
+    data class ComputeVerifiedUserSendFailure(val event: TimelineItem.Event) : TimelineItemEvent
+    data class ShowShieldDialog(val messageShieldData: MessageShieldData) : TimelineItemEvent
+    data class LoadMore(val direction: Timeline.PaginationDirection) : TimelineItemEvent
+    data class OpenThread(val threadRootEventId: ThreadId, val focusedEvent: EventId?) : TimelineItemEvent
+
+    /**
+     * Navigate to the predecessor or successor room of the current room.
+     */
+    data class NavigateToPredecessorOrSuccessorRoom(val roomId: RoomId) : TimelineItemEvent
+
+    /**
+     * Events coming from a poll item.
+     */
+    sealed interface TimelineItemPollEvent : TimelineItemEvent
+
+    data class SendPollResponse(
+        val pollStartId: EventId,
+        val answerIds: List<String>
+    ) : TimelineItemPollEvent
+
+    data class EndPoll(
+        val pollStartId: EventId,
+    ) : TimelineItemPollEvent
+
+    data class EditPoll(
+        val pollStartId: EventId,
+    ) : TimelineItemPollEvent
+
+    data object StopLiveLocationShare : TimelineItemEvent
+
+    data class ValidateMedia(
+        val eventId: EventId,
+        val mediaSources: List<MediaSource>,
+        val validationState: ContentValidationState
+    ) : TimelineItemEvent
+}
+

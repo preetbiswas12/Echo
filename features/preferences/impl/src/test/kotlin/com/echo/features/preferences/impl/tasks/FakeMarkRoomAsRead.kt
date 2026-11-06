@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2026 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.preferences.impl.tasks
+
+import com.echo.libraries.matrix.api.core.RoomId
+
+class FakeMarkRoomAsRead(
+    private val invokeLambda: suspend (RoomId) -> Result<Unit> = { Result.success(Unit) },
+) : MarkRoomAsRead {
+    val invokedRoomIds = mutableListOf<RoomId>()
+
+    override suspend fun invoke(roomId: RoomId): Result<Unit> {
+        invokedRoomIds.add(roomId)
+        return invokeLambda(roomId)
+    }
+}
+

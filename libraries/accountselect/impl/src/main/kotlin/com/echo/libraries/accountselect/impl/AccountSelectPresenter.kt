@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.accountselect.impl
+
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.produceState
+import dev.zacsweers.metro.Inject
+import com.echo.libraries.architecture.Presenter
+import com.echo.libraries.matrix.api.user.MatrixUser
+import com.echo.libraries.matrix.api.user.toMatrixUser
+import com.echo.libraries.sessionstorage.api.SessionStore
+import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.toImmutableList
+
+@Inject
+class AccountSelectPresenter(
+    private val sessionStore: SessionStore,
+) : Presenter<AccountSelectState> {
+    @Composable
+    override fun present(): AccountSelectState {
+        val accounts by produceState<ImmutableList<MatrixUser>>(persistentListOf()) {
+            // Do not use sessionStore.sessionsFlow() to not make it change when an account is selected.
+            value = sessionStore.getAllSessions()
+                .map { it.toMatrixUser() }
+                .toImmutableList()
+        }
+
+        return AccountSelectState(
+            accounts = accounts,
+        )
+    }
+}
+

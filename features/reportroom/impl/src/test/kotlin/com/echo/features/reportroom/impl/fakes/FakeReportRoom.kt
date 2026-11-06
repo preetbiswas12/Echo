@@ -1,0 +1,28 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.reportroom.impl.fakes
+
+import com.echo.features.reportroom.impl.ReportRoom
+import com.echo.libraries.matrix.api.core.RoomId
+import com.echo.tests.testutils.lambda.lambdaError
+import com.echo.tests.testutils.simulateLongTask
+
+class FakeReportRoom(
+    var lambda: (RoomId, Boolean, String, Boolean) -> Result<Unit> = { _, _, _, _ -> lambdaError() }
+) : ReportRoom {
+    override suspend fun invoke(
+        roomId: RoomId,
+        shouldReport: Boolean,
+        reason: String,
+        shouldLeave: Boolean
+    ): Result<Unit> = simulateLongTask {
+        lambda(roomId, shouldReport, reason, shouldLeave)
+    }
+}
+

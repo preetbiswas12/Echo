@@ -1,0 +1,49 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.messages.impl.timeline.model.event
+
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
+import com.echo.features.poll.api.pollcontent.PollAnswerItem
+import com.echo.features.poll.api.pollcontent.aPollAnswerItemList
+import com.echo.features.poll.api.pollcontent.aPollQuestion
+import com.echo.libraries.matrix.api.core.EventId
+import com.echo.libraries.matrix.api.poll.PollKind
+
+open class TimelineItemPollContentPreviewParam : PreviewParameterProvider<TimelineItemPollContent> {
+    override val values: Sequence<TimelineItemPollContent>
+        get() = sequenceOf(
+            aTimelineItemPollContent(),
+            aTimelineItemPollContent().copy(pollKind = PollKind.Undisclosed),
+            aTimelineItemPollContent().copy(isMine = true),
+            aTimelineItemPollContent().copy(isMine = true, isEditable = true),
+        )
+}
+
+fun aTimelineItemPollContent(
+    question: String = aPollQuestion(),
+    answerItems: List<PollAnswerItem> = aPollAnswerItemList(),
+    isMine: Boolean = false,
+    isEditable: Boolean = false,
+    isEnded: Boolean = false,
+    isEdited: Boolean = false,
+    maxSelections: ULong = 1u,
+): TimelineItemPollContent {
+    return TimelineItemPollContent(
+        eventId = EventId("\$anEventId"),
+        pollKind = PollKind.Disclosed,
+        question = question,
+        answerItems = answerItems,
+        maxSelections = maxSelections,
+        isMine = isMine,
+        isEditable = isEditable,
+        isEnded = isEnded,
+        isEdited = isEdited,
+    )
+}
+

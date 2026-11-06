@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.element.android</groupId>
+  <artifactId>element-call-bom</artifactId>
+  <version>0.1.0-rc.9</version>
+  <packaging>pom</packaging>
+  <name>Element Call Android BOM</name>
+  <description>Bill of materials for the native Element Call component for Android: one version for every element-call artifact.</description>
+  <url>https://github.com/element-hq/element-call-android</url>
+  <inceptionYear>2026</inceptionYear>
+  <licenses>
+    <license>
+      <name>GNU Affero General Public License v3.0 only</name>
+      <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+    <license>
+      <name>Element Commercial License</name>
+      <url>https://raw.githubusercontent.com/element-hq/element-call-android/main/LICENSE-COMMERCIAL</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>element</id>
+      <name>Element</name>
+      <url>https://element.io</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/element-hq/element-call-android.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/element-hq/element-call-android.git</developerConnection>
+    <url>https://github.com/element-hq/element-call-android</url>
+  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.element.android</groupId>
+        <artifactId>element-call-api</artifactId>
+        <version>0.1.0-rc.9</version>
+      </dependency>
+      <dependency>
+        <groupId>io.element.android</groupId>
+        <artifactId>element-call</artifactId>
+        <version>0.1.0-rc.9</version>
+      </dependency>
+      <dependency>
+        <groupId>io.element.android</groupId>
+        <artifactId>element-call-ui</artifactId>
+        <version>0.1.0-rc.9</version>
+      </dependency>
+      <dependency>
+        <groupId>io.element.android</groupId>
+        <artifactId>element-call-test</artifactId>
+        <version>0.1.0-rc.9</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

@@ -1,0 +1,74 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2024, 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.impl.room
+
+import app.cash.turbine.test
+import com.google.common.truth.Truth.assertThat
+import com.echo.libraries.matrix.api.core.UserId
+import com.echo.libraries.matrix.api.user.MatrixUser
+import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomHero
+import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomInfo
+import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoom
+import com.echo.libraries.matrix.test.A_USER_ID
+import com.echo.tests.testutils.testCoroutineDispatchers
+import kotlinx.coroutines.test.runTest
+import org.junit.Test
+
+class RoomInfoExtTest {
+    @Test
+    fun `get non empty element Heroes`() {
+        val result = aRustRoomInfo(
+            isDm = true,
+            heroes = listOf(aRustRoomHero())
+        ).elementHeroes()
+        assertThat(result).isEqualTo(
+            listOf(
+                MatrixUser(
+                    userId = UserId(A_USER_ID.value),
+                    displayName = "displayName",
+                    avatarUrl = "avatarUrl",
+                )
+            )
+        )
+    }
+
+    @Test
+    fun `too many heroes and element Heroes is empty`() {
+        val result = aRustRoomInfo(
+            isDm = true,
+            heroes = listOf(aRustRoomHero(), aRustRoomHero())
+        ).elementHeroes()
+        assertThat(result).isEmpty()
+    }
+
+    @Test
+    fun `not direct and element Heroes is empty`() {
+        val result = aRustRoomInfo(
+            isDm = false,
+            heroes = listOf(aRustRoomHero())
+        ).elementHeroes()
+        assertThat(result).isEmpty()
+    }
+
+    @Test
+    fun `roomInfoUpdates returns the current value and then updates`() = runTest {
+        val roomInfo = aRustRoomInfo(isDm = true)
+        val room = FakeFfiRoom(roomInfo = roomInfo, testScope = backgroundScope)
+
+        room.roomInfoUpdates(dispatchers = testCoroutineDispatchers()).test {
+            assertThat(awaitItem()).isEqualTo(roomInfo)
+
+            val newRoomInfo = aRustRoomInfo(isDm = false)
+            room.givenRoomInfoUpdate(newRoomInfo)
+
+            assertThat(awaitItem()).isEqualTo(newRoomInfo)
+        }
+    }
+}
+

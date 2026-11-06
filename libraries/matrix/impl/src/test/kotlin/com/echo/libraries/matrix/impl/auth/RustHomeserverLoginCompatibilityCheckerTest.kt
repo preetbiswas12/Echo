@@ -1,0 +1,57 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.impl.auth
+
+import com.google.common.truth.Truth.assertThat
+import com.echo.libraries.matrix.impl.FakeClientBuilderProvider
+import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
+import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClientBuilder
+import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiHomeserverLoginDetails
+import com.echo.tests.testutils.testCoroutineDispatchers
+import kotlinx.coroutines.test.TestScope
+import kotlinx.coroutines.test.runTest
+import org.junit.Test
+
+class RustHomeserverLoginCompatibilityCheckerTest {
+    @Test
+    fun `check - is valid if it supports OAuth login`() = runTest {
+        val sut = createChecker { FakeFfiHomeserverLoginDetails(supportsOAuthLogin = true) }
+        assertThat(sut.check("https://matrix.host.org").getOrNull()).isTrue()
+    }
+
+    @Test
+    fun `check - is valid if it supports password login`() = runTest {
+        val sut = createChecker { FakeFfiHomeserverLoginDetails(supportsPasswordLogin = true) }
+        assertThat(sut.check("https://matrix.host.org").getOrNull()).isTrue()
+    }
+
+    @Test
+    fun `check - is not valid if it only supports SSO login`() = runTest {
+        val sut = createChecker { FakeFfiHomeserverLoginDetails(supportsSsoLogin = true) }
+        assertThat(sut.check("https://matrix.host.org").getOrNull()).isFalse()
+    }
+
+    @Test
+    fun `check - is not valid if fetching the data fails`() = runTest {
+        val sut = createChecker { error("Unexpected error!") }
+        assertThat(sut.check("https://matrix.host.org").isFailure).isTrue()
+    }
+
+    private fun TestScope.createChecker(
+        result: () -> FakeFfiHomeserverLoginDetails,
+    ) = RustHomeServerLoginCompatibilityChecker(
+        clientBuilderProvider = FakeClientBuilderProvider {
+            FakeFfiClientBuilder {
+                FakeFfiClient(homeserverLoginDetailsResult = result)
+            }
+        },
+        coroutineDispatchers = testCoroutineDispatchers(),
+    )
+}
+

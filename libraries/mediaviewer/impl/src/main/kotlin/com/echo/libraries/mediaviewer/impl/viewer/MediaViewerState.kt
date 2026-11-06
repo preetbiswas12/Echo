@@ -1,0 +1,67 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.mediaviewer.impl.viewer
+
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.State
+import com.echo.libraries.architecture.AsyncData
+import com.echo.libraries.designsystem.utils.snackbar.SnackbarMessage
+import com.echo.libraries.htmlrenderer.api.DocumentNode
+import com.echo.libraries.matrix.api.core.EventId
+import com.echo.libraries.matrix.api.core.UserId
+import com.echo.libraries.matrix.api.media.MediaSource
+import com.echo.libraries.matrix.api.timeline.Timeline
+import com.echo.libraries.matrix.ui.media.contentvalidation.ContentValidationState
+import com.echo.libraries.mediaviewer.api.MediaInfo
+import com.echo.libraries.mediaviewer.api.local.LocalMedia
+import com.echo.libraries.mediaviewer.impl.details.MediaBottomSheetState
+import kotlinx.collections.immutable.ImmutableList
+
+data class MediaViewerState(
+    val initiallySelectedEventId: EventId?,
+    val listData: ImmutableList<MediaViewerPageData>,
+    val currentIndex: Int,
+    val snackbarMessage: SnackbarMessage?,
+    val canShowInfo: Boolean,
+    val mediaBottomSheetState: MediaBottomSheetState,
+    /** The current user ID, used to display UI sent by/owned by the current user differently in the formatted captions. */
+    val currentUserId: UserId?,
+    val eventSink: (MediaViewerEvent) -> Unit,
+)
+
+@Immutable
+sealed interface MediaViewerPageData {
+    val pagerKey: Long
+
+    data class Failure(
+        val throwable: Throwable,
+        override val pagerKey: Long = 0,
+    ) : MediaViewerPageData
+
+    data class Loading(
+        val direction: Timeline.PaginationDirection,
+        val timestamp: Long,
+        override val pagerKey: Long,
+    ) : MediaViewerPageData
+
+    data class MediaViewerData(
+        val eventId: EventId?,
+        val mediaInfo: MediaInfo,
+        /** The [MediaInfo.htmlCaption] converted to styled text, if any. */
+        val formattedCaption: CharSequence? = null,
+        /** The [MediaInfo.htmlCaption] parsed into a tree for the native Compose renderer, only when the new timeline event renderer is enabled. */
+        val captionTree: DocumentNode? = null,
+        val mediaSource: MediaSource,
+        val thumbnailSource: MediaSource?,
+        val downloadedMedia: State<AsyncData<LocalMedia>>,
+        val validationState: ContentValidationState,
+        override val pagerKey: Long,
+    ) : MediaViewerPageData
+}
+

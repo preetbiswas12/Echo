@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.impl.fixtures.fakes
+
+import com.echo.tests.testutils.lambda.lambdaError
+import org.matrix.rustcomponents.sdk.NoHandle
+import org.matrix.rustcomponents.sdk.QrCodeData
+
+class FakeFfiQrCodeData(
+    private val serverNameResult: () -> String? = { lambdaError() },
+    private val baseUrlResult: () -> String? = { lambdaError() },
+    private val toBytesResult: () -> ByteArray = { lambdaError() },
+) : QrCodeData(NoHandle) {
+    override fun serverName(): String? {
+        return serverNameResult()
+    }
+
+    override fun baseUrl(): String? {
+        return baseUrlResult()
+    }
+
+    override fun toBytes(): ByteArray {
+        return toBytesResult()
+    }
+}
+

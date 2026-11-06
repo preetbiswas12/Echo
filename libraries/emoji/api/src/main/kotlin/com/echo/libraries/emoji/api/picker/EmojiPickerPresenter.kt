@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2026 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.emoji.api.picker
+
+import com.echo.libraries.architecture.Presenter
+import com.echo.libraries.emoji.api.recentemojis.GetRecentEmojis
+
+fun interface EmojiPickerPresenter : Presenter<EmojiPickerState> {
+    /**
+     * Creates a presenter for one picker instance.
+     */
+    fun interface Factory {
+        /**
+         * @param getRecentEmojis how the picker sources its recent tab; pass [com.echo.libraries.emoji.api.recentemojis.EmptyGetRecentEmojis]
+         * for a picker that should have no recent tab at all.
+         */
+        fun create(getRecentEmojis: GetRecentEmojis): EmojiPickerPresenter
+    }
+}
+

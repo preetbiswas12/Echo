@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2024, 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.impl.fixtures.fakes
+
+import org.matrix.rustcomponents.sdk.NoHandle
+import org.matrix.rustcomponents.sdk.TaskHandle
+
+class FakeFfiTaskHandle(
+    private val isFinishedResult: () -> Boolean = { false },
+    private val cancelResult: () -> Unit = {},
+) : TaskHandle(NoHandle) {
+    override fun isFinished(): Boolean = isFinishedResult()
+    override fun cancel() = cancelResult()
+    override fun destroy() = Unit
+}
+

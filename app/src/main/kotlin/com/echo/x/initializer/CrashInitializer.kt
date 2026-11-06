@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2022-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.x.initializer
+
+import android.content.Context
+import androidx.startup.Initializer
+import com.echo.features.rageshake.impl.crash.VectorUncaughtExceptionHandler
+import com.echo.features.rageshake.impl.di.RageshakeBindings
+import com.echo.libraries.architecture.bindings
+
+class CrashInitializer : Initializer<Unit> {
+    override fun create(context: Context) {
+        VectorUncaughtExceptionHandler(
+            context.bindings<RageshakeBindings>().preferencesCrashDataStore(),
+        ).activate()
+    }
+
+    override fun dependencies(): List<Class<out Initializer<*>>> = emptyList()
+}
+

@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2026 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.libraries.matrix.api.room.location
+
+import com.echo.libraries.matrix.api.core.RoomId
+
+data class BeaconInfoUpdate(
+    val roomId: RoomId,
+    val beaconId: BeaconId,
+    val isLive: Boolean,
+)
+

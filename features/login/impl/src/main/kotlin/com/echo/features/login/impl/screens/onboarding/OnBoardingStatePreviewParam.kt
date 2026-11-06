@@ -1,0 +1,74 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2023-2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+package com.echo.features.login.impl.screens.onboarding
+
+import androidx.annotation.DrawableRes
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
+import com.echo.features.login.impl.login.LoginModeState
+import com.echo.features.login.impl.login.aLoginModeState
+import com.echo.libraries.designsystem.R
+import com.echo.libraries.matrix.api.accountprovider.AccountProvider
+
+open class OnBoardingStatePreviewParam : PreviewParameterProvider<OnBoardingState> {
+    override val values: Sequence<OnBoardingState>
+        get() = sequenceOf(
+            anOnBoardingState(),
+            anOnBoardingState(canLoginWithQrCode = true),
+            anOnBoardingState(canCreateAccount = true),
+            anOnBoardingState(canLoginWithQrCode = true, canCreateAccount = true),
+            anOnBoardingState(canLoginWithQrCode = true, canCreateAccount = true, canReportBug = true),
+            anOnBoardingState(
+                defaultAccountProvider = AccountProvider.Generic("element.io"),
+                canCreateAccount = false,
+                canReportBug = true
+            ),
+            anOnBoardingState(customLogoResId = R.drawable.sample_background),
+            anOnBoardingState(
+                isAddingAccount = true,
+                canLoginWithQrCode = true,
+                canCreateAccount = true,
+            ),
+            anOnBoardingState(
+                showBackButton = true,
+                showDeveloperSettings = true,
+            ),
+        )
+}
+
+fun anOnBoardingState(
+    isAddingAccount: Boolean = false,
+    showBackButton: Boolean = false,
+    showDeveloperSettings: Boolean = false,
+    productionApplicationName: String = "Element",
+    defaultAccountProvider: AccountProvider? = null,
+    mustChooseAccountProvider: Boolean = false,
+    canLoginWithQrCode: Boolean = false,
+    canCreateAccount: Boolean = false,
+    canReportBug: Boolean = false,
+    version: String = "1.0.0",
+    @DrawableRes
+    customLogoResId: Int? = null,
+    loginModeState: LoginModeState = aLoginModeState(),
+    eventSink: (OnBoardingEvent) -> Unit = {},
+) = OnBoardingState(
+    isAddingAccount = isAddingAccount,
+    showBackButton = showBackButton,
+    showDeveloperSettings = showDeveloperSettings,
+    productionApplicationName = productionApplicationName,
+    defaultAccountProvider = defaultAccountProvider,
+    mustChooseAccountProvider = mustChooseAccountProvider,
+    canLoginWithQrCode = canLoginWithQrCode,
+    canCreateAccount = canCreateAccount,
+    canReportBug = canReportBug,
+    version = version,
+    loginModeState = loginModeState,
+    onBoardingLogoResId = customLogoResId,
+    eventSink = eventSink,
+)
+
