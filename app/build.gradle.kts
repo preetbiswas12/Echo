@@ -181,9 +181,14 @@ android {
     }
     flavorDimensions += "store"
     productFlavors {
-        create("gplay") {
+        create("generic") {
             dimension = "store"
             isDefault = true
+            buildConfigFieldStr("SHORT_FLAVOR_DESCRIPTION", "N")
+            buildConfigFieldStr("FLAVOR_DESCRIPTION", "Generic")
+        }
+        create("gplay") {
+            dimension = "store"
             buildConfigFieldStr("SHORT_FLAVOR_DESCRIPTION", "G")
             buildConfigFieldStr("FLAVOR_DESCRIPTION", "GooglePlay")
         }
@@ -341,6 +346,8 @@ licensee {
     // The rustls-platform-verifier dependency does not provide a license file in their maven repo, but there are MIT and Apache licenses in
     // the source code repo: see https://github.com/rustls/rustls-platform-verifier
     ignoreDependencies(groupId = "org.rustls", artifactId = "rustls-platform-verifier")
+    // matrix-rust-rtc publishes only an AAR artifact (no POM) on GitHub releases, which licensee cannot resolve.
+    ignoreDependencies(groupId = "io.element.android", artifactId = "matrix-rtc-android")
 }
 
 fun Project.configureLicensesTasks(reportingExtension: ReportingExtension) {
