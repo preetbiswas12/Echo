@@ -37,11 +37,12 @@ class AccountProviderDataSource(
         .firstOrNull()
         ?: AccountProvider.Generic(DEFAULT_ECHO_HOMESERVER)
 
+    private val accountProvider: MutableStateFlow<AccountProvider> = MutableStateFlow(configuredAccountProvider)
+
     companion object {
         // TODO(Echo): set to the real Echo-server homeserver domain (e.g. "https://echo.example.org").
         const val DEFAULT_ECHO_HOMESERVER = "https://homeserver.echo.example"
-
-    private val accountProvider: MutableStateFlow<AccountProvider> = MutableStateFlow(configuredAccountProvider)
+    }
 
     val flow: StateFlow<AccountProvider> = accountProvider.asStateFlow()
 
