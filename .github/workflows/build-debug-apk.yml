@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-debug:
-    name: Build gplay debug APK
+    name: Build debug APK
     runs-on: ubuntu-latest
 
     steps:
@@ -71,12 +71,12 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build gplay debug APK
-        run: ./gradlew :app:assembleGplayDebug --stacktrace
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: echo-gplay-debug-apk
-          path: app/build/outputs/apk/gplay/debug/*.apk
+          name: echo-debug-apk
+          path: app/build/outputs/apk/**/*.apk
           if-no-files-found: error
