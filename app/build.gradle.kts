@@ -341,6 +341,8 @@ licensee {
     // The rustls-platform-verifier dependency does not provide a license file in their maven repo, but there are MIT and Apache licenses in
     // the source code repo: see https://github.com/rustls/rustls-platform-verifier
     ignoreDependencies(groupId = "org.rustls", artifactId = "rustls-platform-verifier")
+    // matrix-rust-rtc publishes only an AAR artifact and no POM metadata, which licensee requires to resolve license information.
+    ignoreDependencies(groupId = "io.element.android", artifactId = "matrix-rtc-android")
 }
 
 fun Project.configureLicensesTasks(reportingExtension: ReportingExtension) {
@@ -377,4 +379,3 @@ configurations.all {
         }
     }
 }
-
