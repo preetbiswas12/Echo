@@ -309,8 +309,10 @@ dependencies {
     implementation(platform(libs.network.okhttp.bom))
     implementation(libs.network.okhttp.logging)
 
-    implementation(platform(libs.google.firebase.bom))
-    implementation(libs.firebase.messaging)
+    if (ModulesConfig.pushProvidersConfig.includeFirebase) {
+        "gplayImplementation"(platform(libs.google.firebase.bom))
+        "gplayImplementation"(libs.firebase.messaging)
+    }
 
     testCommonDependencies(libs)
     testImplementation(projects.libraries.matrix.test)
