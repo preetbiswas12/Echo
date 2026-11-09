@@ -6,8 +6,16 @@ on:
 
 jobs:
   build-debug:
-    name: Build debug APK
+    name: Build debug APK (${{ matrix.abi }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - abi: arm64-v8a
+            artifact: echo-debug-apk-arm64
+          - abi: x86_64
+            artifact: echo-debug-apk-x86_64
 
     steps:
       - name: Checkout
@@ -71,12 +79,12 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build debug APK (x86_64, emulator-friendly)
-        run: ./gradlew :app:assembleGenericDebug --stacktrace -Pci.disableAbiSplits=true -Pci.abiFilters=x86_64
+      - name: Build debug APK (${{ matrix.abi }})
+        run: ./gradlew :app:assembleGenericDebug --stacktrace -Pci.disableAbiSplits=true -Pci.abiFilters=${{ matrix.abi }}
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: echo-debug-apk-x86_64
+          name: ${{ matrix.artifact }}
           path: app/build/outputs/apk/generic/debug/*.apk
           if-no-files-found: error
