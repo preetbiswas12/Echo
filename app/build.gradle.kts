@@ -47,9 +47,17 @@ android {
         versionCode = Versions.VERSION_CODE
         versionName = Versions.VERSION_NAME
 
-        // Keep abiFilter for the universalApk
+        // Keep abiFilter for the universalApk / single APK. Can be overridden in CI (e.g. -Pci.abiFilters=x86_64).
         ndk {
-            abiFilters += listOf("armeabi-v7a", "x86", "arm64-v8a", "x86_64")
+            val ciAbiFilters = project.findProperty("ci.abiFilters")?.toString()
+                ?.split(",")
+                ?.map { it.trim() }
+                ?.filter { it.isNotEmpty() }
+            if (ciAbiFilters != null) {
+                abiFilters += ciAbiFilters
+            } else {
+                abiFilters += listOf("armeabi-v7a", "x86", "arm64-v8a", "x86_64")
+            }
         }
 
         // Ref: https://developer.android.com/studio/build/configure-apk-splits.html#configure-abi-split

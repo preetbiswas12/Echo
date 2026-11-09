@@ -71,12 +71,12 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build debug APK
-        run: ./gradlew :app:assembleGenericDebug --stacktrace -Pci.disableAbiSplits=true
+      - name: Build debug APK (x86_64, emulator-friendly)
+        run: ./gradlew :app:assembleGenericDebug --stacktrace -Pci.disableAbiSplits=true -Pci.abiFilters=x86_64
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: echo-debug-apk
+          name: echo-debug-apk-x86_64
           path: app/build/outputs/apk/generic/debug/*.apk
           if-no-files-found: error
