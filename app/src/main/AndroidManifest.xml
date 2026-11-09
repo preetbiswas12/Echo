@@ -9,7 +9,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name=".ElementXApplication"
+        android:name="com.echo.x.ElementXApplication"
         android:allowBackup="false"
         android:appCategory="social"
         android:dataExtractionRules="@xml/data_extraction_rules"
