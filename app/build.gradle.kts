@@ -57,16 +57,18 @@ android {
             // Configures multiple APKs based on ABI.
             abi {
                 val buildingAppBundle = gradle.startParameter.taskNames.any { it.contains("bundle") }
+                val disableAbiSplits = project.findProperty("ci.disableAbiSplits")?.toString()?.toBoolean() == true
+                val enableAbiSplits = !buildingAppBundle && !disableAbiSplits
 
                 // Enables building multiple APKs per ABI. This should be disabled when building an AAB.
-                isEnable = !buildingAppBundle
+                // Can be disabled in CI with -Pci.disableAbiSplits=true to produce a single universal APK.
+                isEnable = enableAbiSplits
 
-                // By default all ABIs are included, so use reset() and include to specify that we only
-                // want APKs for armeabi-v7a, x86, arm64-v8a and x86_64.
-                // Resets the list of ABIs that Gradle should create APKs for to none.
-                reset()
-
-                if (!buildingAppBundle) {
+                if (enableAbiSplits) {
+                    // By default all ABIs are included, so use reset() and include to specify that we only
+                    // want APKs for armeabi-v7a, x86, arm64-v8a and x86_64.
+                    // Resets the list of ABIs that Gradle should create APKs for to none.
+                    reset()
                     // Specifies a list of ABIs that Gradle should create APKs for.
                     include("armeabi-v7a", "x86", "arm64-v8a", "x86_64")
                     // Generate a universal APK that includes all ABIs, so user who installs from CI tool can use this one by default.
