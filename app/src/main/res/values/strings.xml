@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2026 Element Creations Ltd.
+  ~
+  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  ~ Please see LICENSE files in the repository root for full details.
+  -->
+<!--
+  ~ Rebranded overrides of library strings that referenced Element products.
+  ~ The app module takes precedence over library modules when resources are merged, so these
+  ~ replace the `localazy.xml` values (which must not be edited directly) for the default locale.
+-->
+<resources>
+    <!-- features/login/impl -->
+    <string name="screen_onboarding_welcome_title">"Welcome to Echo"</string>
+
+    <!-- features/messages/impl -->
+    <string name="screen_room_timeline_legacy_call">"Unsupported call. Ask if the caller can use the new Echo app."</string>
+
+    <!-- features/call/impl -->
+    <string name="screen_incoming_call_subtitle_android">"Incoming call"</string>
+    <string name="call_invalid_audio_device_bluetooth_devices_disabled">"Calls do not support using Bluetooth audio devices in this Android version. Please select a different audio device."</string>
+
+    <!-- features/preferences/impl -->
+    <string name="screen_advanced_settings_element_call_base_url">"Custom call base URL"</string>
+    <string name="screen_advanced_settings_element_call_base_url_description">"Set a custom base URL for calls."</string>
+    <string name="screen_notification_settings_sound_element_default">"Echo default"</string>
+    <string name="screen_notification_settings_sound_element_fade">"Echo fade"</string>
+</resources>

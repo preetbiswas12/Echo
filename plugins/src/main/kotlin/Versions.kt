@@ -55,7 +55,12 @@ object Versions {
      * See comment above for the calculation method.
      */
     const val VERSION_CODE = (2000 + versionYear) * 10_000 + versionMonth * 100 + versionReleaseNumber
-    val VERSION_NAME = "$versionYear.${versionMonth.toString().padStart(2, '0')}.$versionReleaseNumber"
+
+    /**
+     * The user-facing version of the app. The versionCode above keeps the CalVer-like scheme, so
+     * new builds keep installing over previously installed ones.
+     */
+    val VERSION_NAME = "1.0.0"
 
     /**
      * Compile SDK version. Must be updated when a new Android version is released.
