@@ -72,7 +72,7 @@ class ConfirmAccountProviderPresenter(
         }
 
         // Editable input, seeded from the current (history-defaulted) account provider until the user edits it.
-        // Displayed without the scheme, so the field shows e.g. "homeserver.echo.example" rather than "https://…".
+        // Displayed without the scheme, so the field shows e.g. "echo-server-a4ae.onrender.com" rather than "https://…".
         var userInput by rememberSaveable { mutableStateOf<String?>(null) }
         val accountProviderInput = userInput ?: accountProvider.friendlyServerName()
 

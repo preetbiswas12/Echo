@@ -20,11 +20,6 @@ jobs:
             artifact: echo-debug-apk-x86_64
             build-type: Debug
             extra-props: ''
-          - abi: arm64-v8a
-            artifact: echo-release-apk-arm64
-            build-type: Release
-            # Lightest single APK: en-only resources on top of the ABI filter.
-            extra-props: '-Pci.locales=en'
 
     steps:
       - name: Checkout

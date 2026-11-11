@@ -31,7 +31,7 @@ class AccountProviderDataSource(
     @AppCoroutineScope private val coroutineScope: CoroutineScope,
 ) {
     // The provider used when the user has not selected one: an enterprise/MDM-configured provider,
-    // else the Echo homeserver placeholder. Replace `DEFAULT_ECHO_HOMESERVER` with the real Echo-server domain.
+    // else the Echo homeserver.
     // The most recently used provider (from history) can override it, see init.
     private val configuredAccountProvider = enterpriseService.accountProviderAllowList()
         .firstOrNull()
@@ -40,8 +40,11 @@ class AccountProviderDataSource(
     private val accountProvider: MutableStateFlow<AccountProvider> = MutableStateFlow(configuredAccountProvider)
 
     companion object {
-        // TODO(Echo): set to the real Echo-server homeserver domain (e.g. "https://echo.example.org").
-        const val DEFAULT_ECHO_HOMESERVER = "https://homeserver.echo.example"
+        /**
+         * The Echo homeserver, baked into the app: it is the default account provider for the
+         * sign-in, registration and change-server screens.
+         */
+        const val DEFAULT_ECHO_HOMESERVER = "https://echo-server-a4ae.onrender.com"
     }
 
     val flow: StateFlow<AccountProvider> = accountProvider.asStateFlow()
