@@ -8,9 +8,9 @@
 
 package com.echo.compound.colors
 
+import com.echo.compound.theme.echoColorsDark
+import com.echo.compound.theme.echoColorsLight
 import com.echo.compound.tokens.generated.SemanticColors
-import com.echo.compound.tokens.generated.compoundColorsDark
-import com.echo.compound.tokens.generated.compoundColorsLight
 
 data class SemanticColorsLightDark(
     val light: SemanticColors,
@@ -18,8 +18,8 @@ data class SemanticColorsLightDark(
 ) {
     companion object {
         val default = SemanticColorsLightDark(
-            light = compoundColorsLight,
-            dark = compoundColorsDark,
+            light = echoColorsLight,
+            dark = echoColorsDark,
         )
     }
 }

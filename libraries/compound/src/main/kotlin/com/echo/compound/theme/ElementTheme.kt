@@ -37,8 +37,6 @@ import com.echo.compound.annotations.CoreColorToken
 import com.echo.compound.tokens.compoundTypography
 import com.echo.compound.tokens.generated.SemanticColors
 import com.echo.compound.tokens.generated.TypographyTokens
-import com.echo.compound.tokens.generated.compoundColorsDark
-import com.echo.compound.tokens.generated.compoundColorsLight
 import com.echo.compound.tokens.generated.internal.DarkColorTokens
 
 /**
@@ -79,7 +77,7 @@ object ElementTheme {
 }
 
 // Global variables (application level)
-internal val LocalCompoundColors = staticCompositionLocalOf { compoundColorsLight }
+internal val LocalCompoundColors = staticCompositionLocalOf { echoColorsLight }
 
 /**
  * Sets up the theme for the application, or a part of it.
@@ -104,8 +102,8 @@ fun ElementTheme(
     lightStatusBar: Boolean = !theme.isDark(),
     // true to enable MaterialYou
     dynamicColor: Boolean = false,
-    compoundLight: SemanticColors = compoundColorsLight,
-    compoundDark: SemanticColors = compoundColorsDark,
+    compoundLight: SemanticColors = echoColorsLight,
+    compoundDark: SemanticColors = echoColorsDark,
     materialColorsLight: ColorScheme = compoundLight.toMaterialColorScheme(),
     materialColorsDark: ColorScheme = compoundDark.toMaterialColorScheme(),
     typography: Typography = compoundTypography,
