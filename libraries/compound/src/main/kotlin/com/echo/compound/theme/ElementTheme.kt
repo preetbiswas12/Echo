@@ -34,9 +34,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.echo.compound.annotations.CoreColorToken
-import com.echo.compound.tokens.compoundTypography
 import com.echo.compound.tokens.generated.SemanticColors
-import com.echo.compound.tokens.generated.TypographyTokens
 import com.echo.compound.tokens.generated.internal.DarkColorTokens
 
 /**
@@ -65,7 +63,7 @@ object ElementTheme {
     /**
      * Compound [Typography] tokens. In Figma, these have the `Android/font/` prefix.
      */
-    val typography: TypographyTokens = TypographyTokens
+    val typography: EchoTypographyTokens = EchoTypographyTokens
 
     /**
      * Returns whether the theme version used is the light or the dark one.
@@ -91,7 +89,7 @@ internal val LocalCompoundColors = staticCompositionLocalOf { echoColorsLight }
  * @param compoundDark the [SemanticColors] to use in dark theme.
  * @param materialColorsLight the Material 3 [ColorScheme] to use in light theme.
  * @param materialColorsDark the Material 3 [ColorScheme] to use in dark theme.
- * @param typography the Material 3 [Typography] tokens to use. It'll use [compoundTypography] by default.
+ * @param typography the Material 3 [Typography] tokens to use. It'll use [echoTypography] by default.
  * @param content the content to apply the theme to.
  */
 @OptIn(CoreColorToken::class)
@@ -106,7 +104,7 @@ fun ElementTheme(
     compoundDark: SemanticColors = echoColorsDark,
     materialColorsLight: ColorScheme = compoundLight.toMaterialColorScheme(),
     materialColorsDark: ColorScheme = compoundDark.toMaterialColorScheme(),
-    typography: Typography = compoundTypography,
+    typography: Typography = echoTypography,
     content: @Composable () -> Unit,
 ) {
     val darkTheme = theme.isDark()

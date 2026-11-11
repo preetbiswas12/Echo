@@ -9,6 +9,7 @@
 package com.echo.libraries.designsystem.theme
 
 import androidx.compose.ui.text.TextStyle
+import com.echo.compound.theme.EchoTypographyTokens
 import com.echo.compound.tokens.generated.TypographyTokens
 
 /*
@@ -19,5 +20,11 @@ val TypographyTokens.aliasScreenTitle: TextStyle
     get() = fontHeadingSmMedium
 
 val TypographyTokens.aliasButtonText: TextStyle
+    get() = fontBodyLgMedium
+
+val EchoTypographyTokens.aliasScreenTitle: TextStyle
+    get() = fontHeadingSmMedium
+
+val EchoTypographyTokens.aliasButtonText: TextStyle
     get() = fontBodyLgMedium
 
