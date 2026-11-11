@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-debug:
-    name: Build debug APK (${{ matrix.abi }})
+    name: Build ${{ matrix.build-type }} APK (${{ matrix.abi }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -14,8 +14,17 @@ jobs:
         include:
           - abi: arm64-v8a
             artifact: echo-debug-apk-arm64
+            build-type: Debug
+            extra-props: ''
           - abi: x86_64
             artifact: echo-debug-apk-x86_64
+            build-type: Debug
+            extra-props: ''
+          - abi: arm64-v8a
+            artifact: echo-release-apk-arm64
+            build-type: Release
+            # Lightest single APK: en-only resources on top of the ABI filter.
+            extra-props: '-Pci.locales=en'
 
     steps:
       - name: Checkout
@@ -79,12 +88,12 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build debug APK (${{ matrix.abi }})
-        run: ./gradlew :app:assembleGenericDebug --stacktrace -Pci.disableAbiSplits=true -Pci.abiFilters=${{ matrix.abi }}
+      - name: Build ${{ matrix.build-type }} APK (${{ matrix.abi }})
+        run: ./gradlew :app:assembleGeneric${{ matrix.build-type }} --stacktrace -Pci.disableAbiSplits=true -Pci.abiFilters=${{ matrix.abi }} ${{ matrix.extra-props }}
 
-      - name: Upload debug APK
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact }}
-          path: app/build/outputs/apk/generic/debug/*.apk
+          path: app/build/outputs/apk/generic/${{ matrix.build-type == 'Debug' && 'debug' || 'release' }}/*.apk
           if-no-files-found: error

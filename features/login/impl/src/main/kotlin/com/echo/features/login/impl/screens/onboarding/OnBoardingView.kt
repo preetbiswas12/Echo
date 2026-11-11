@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -25,6 +26,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.BiasAlignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -37,8 +40,6 @@ import com.echo.features.login.impl.R
 import com.echo.features.login.impl.login.LoginModeEvent
 import com.echo.features.login.impl.login.LoginModeView
 import com.echo.libraries.architecture.AsyncData
-import com.echo.libraries.designsystem.atomic.atoms.ElementLogoAtom
-import com.echo.libraries.designsystem.atomic.atoms.ElementLogoAtomSize
 import com.echo.libraries.designsystem.atomic.molecules.ButtonColumnMolecule
 import com.echo.libraries.designsystem.atomic.pages.FlowStepPage
 import com.echo.libraries.designsystem.atomic.pages.OnBoardingPage
@@ -132,52 +133,65 @@ private fun AddFirstAccountScaffold(
     onDeveloperSettingsClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    OnBoardingPage(
-        modifier = modifier,
-        renderBackground = state.onBoardingLogoResId == null,
-        content = {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-            ) {
-                if (state.onBoardingLogoResId != null) {
-                    OnBoardingLogo(
-                        onBoardingLogoResId = state.onBoardingLogoResId,
-                    )
-                } else {
-                    OnBoardingContent(state = state)
-                }
-                if (state.showDeveloperSettings) {
-                    IconButton(
-                        onClick = onDeveloperSettingsClick,
-                        modifier = Modifier
-                            .align(Alignment.TopStart),
-                    ) {
-                        Icon(
-                            imageVector = CompoundIcons.SettingsSolid(),
-                            contentDescription = stringResource(CommonStrings.common_developer_options),
+    Box(
+        modifier = modifier.fillMaxSize(),
+    ) {
+        // Echo welcome background image.
+        Image(
+            modifier = Modifier.fillMaxSize(),
+            painter = painterResource(id = R.drawable.echo_welcome_bg),
+            contentScale = ContentScale.Crop,
+            contentDescription = null,
+        )
+        OnBoardingPage(
+            modifier = Modifier.fillMaxSize(),
+            renderBackground = false,
+            content = {
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                ) {
+                    if (state.onBoardingLogoResId != null) {
+                        OnBoardingLogo(
+                            onBoardingLogoResId = state.onBoardingLogoResId,
                         )
+                    } else {
+                        OnBoardingContent(state = state)
+                    }
+                    if (state.showDeveloperSettings) {
+                        IconButton(
+                            onClick = onDeveloperSettingsClick,
+                            modifier = Modifier
+                                .align(Alignment.TopStart),
+                        ) {
+                            Icon(
+                                imageVector = CompoundIcons.SettingsSolid(),
+                                contentDescription = stringResource(CommonStrings.common_developer_options),
+                                tint = Color.White,
+                            )
+                        }
+                    }
+                    if (state.showBackButton) {
+                        // Add icon button to "navigate back"
+                        IconButton(
+                            onClick = onBackClick,
+                            modifier = Modifier
+                                .align(Alignment.TopEnd),
+                        ) {
+                            Icon(
+                                imageVector = CompoundIcons.Close(),
+                                contentDescription = stringResource(CommonStrings.action_cancel),
+                                tint = Color.White,
+                            )
+                        }
                     }
                 }
-                if (state.showBackButton) {
-                    // Add icon button to "navigate back"
-                    IconButton(
-                        onClick = onBackClick,
-                        modifier = Modifier
-                            .align(Alignment.TopEnd),
-                    ) {
-                        Icon(
-                            imageVector = CompoundIcons.Close(),
-                            contentDescription = stringResource(CommonStrings.action_cancel),
-                        )
-                    }
-                }
+                loginView()
+            },
+            footer = {
+                buttons()
             }
-            loginView()
-        },
-        footer = {
-            buttons()
-        }
-    )
+        )
+    }
 }
 
 /**
@@ -213,9 +227,10 @@ private fun OnBoardingContent(state: OnBoardingState) {
                 verticalBias = -0.4f
             )
         ) {
-            ElementLogoAtom(
-                size = ElementLogoAtomSize.Large,
-                modifier = Modifier.padding(top = ElementLogoAtomSize.Large.shadowRadius / 2)
+            Image(
+                painter = painterResource(id = R.drawable.echo_welcome_logo),
+                contentDescription = null,
+                modifier = Modifier.size(120.dp),
             )
         }
         Box(
@@ -232,14 +247,14 @@ private fun OnBoardingContent(state: OnBoardingState) {
             ) {
                 Text(
                     text = stringResource(id = R.string.screen_onboarding_welcome_title),
-                    color = ElementTheme.colors.textPrimary,
+                    color = Color.White,
                     style = ElementTheme.typography.fontHeadingLgBold,
                     textAlign = TextAlign.Center,
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
                     text = stringResource(id = R.string.screen_onboarding_welcome_message, state.productionApplicationName),
-                    color = ElementTheme.colors.textPrimary,
+                    color = Color.White,
                     style = ElementTheme.typography.fontBodyLgRegular,
                     textAlign = TextAlign.Center,
                 )

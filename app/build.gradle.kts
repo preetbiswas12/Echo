@@ -86,7 +86,12 @@ android {
         }
 
         androidResources {
-            localeFilters += locales
+            // Can be overridden in CI (e.g. -Pci.locales=en) to build a lighter APK.
+            val ciLocales = project.findProperty("ci.locales")?.toString()
+                ?.split(",")
+                ?.map { it.trim() }
+                ?.filter { it.isNotEmpty() }
+            localeFilters += ciLocales ?: locales
         }
     }
 
