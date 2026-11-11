@@ -33,6 +33,8 @@ dependencies {
     implementation(projects.libraries.core)
     implementation(projects.services.toolbox.api)
 
+    implementation(libs.androidx.corektx)
+
     implementation(projects.libraries.network)
     implementation(platform(libs.network.okhttp.bom))
     implementation(libs.network.okhttp.okhttp)

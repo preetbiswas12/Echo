@@ -7,6 +7,12 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application>
         <receiver
             android:name=".VectorUnifiedPushMessagingReceiver"
@@ -22,17 +28,38 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".KeepInternalDistributor"
+            android:name=".distributor.NtfyDistributorReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <!--
+                Echo embeds its own UnifiedPush distributor, backed by an ntfy WebSocket
+                subscription, see the `distributor` package. These are the actions an end
+                user application sends to a distributor, as per
+                https://unifiedpush.org/developers/spec/android/.
+                -->
+                <action android:name="org.unifiedpush.android.distributor.REGISTER" />
+                <action android:name="org.unifiedpush.android.distributor.UNREGISTER" />
+                <action android:name="org.unifiedpush.android.distributor.MESSAGE_ACK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".distributor.NtfyPushBootReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <!--
-                This action is checked to track installed and uninstalled distributors.
-                We declare it to keep the background sync as an internal
-                unifiedpush distributor.
-                -->
-                <action android:name="org.unifiedpush.android.distributor.REGISTER" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
+        <service
+            android:name=".distributor.NtfyPushService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Embedded UnifiedPush distributor: keeps a WebSocket connection to the ntfy push server to deliver instant notifications" />
+        </service>
     </application>
 </manifest>

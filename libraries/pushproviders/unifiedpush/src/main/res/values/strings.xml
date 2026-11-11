@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_distributor_notification_channel_name">Push service</string>
+    <string name="push_distributor_notification_title">Notifications active</string>
+    <string name="push_distributor_notification_text">Connected to the push server to receive messages instantly.</string>
+</resources>

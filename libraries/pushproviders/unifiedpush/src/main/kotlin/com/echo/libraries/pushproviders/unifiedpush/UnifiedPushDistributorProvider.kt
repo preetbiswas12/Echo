@@ -25,14 +25,11 @@ class DefaultUnifiedPushDistributorProvider(
     @ApplicationContext private val context: Context,
 ) : UnifiedPushDistributorProvider {
     override fun getDistributors(): List<Distributor> {
-        val distributors = UnifiedPush.getDistributors(context)
-        return distributors.mapNotNull {
-            if (it == context.packageName) {
-                // Exclude self
-                null
-            } else {
-                Distributor(it, context.getApplicationLabel(it))
-            }
+        // Echo embeds its own UnifiedPush distributor (see the `distributor` package), so this
+        // package is a valid distributor and is included. Upstream excluded it because it was
+        // only a placeholder used to keep the background sync as an internal distributor.
+        return UnifiedPush.getDistributors(context).map {
+            Distributor(it, context.getApplicationLabel(it))
         }
     }
 }

@@ -29,7 +29,11 @@ object BuildTimeConfig {
     val SERVICES_SENTRY_DSN_RUST: String? = null
     val BUG_REPORT_URL: String? = null
     val BUG_REPORT_APP_NAME: String? = null
-    const val PUSH_CONFIG_INCLUDE_FIREBASE: Boolean = true
+    // FCM is disabled: the app is not registered to any Firebase project, and there is no
+    // sygnal gateway that can deliver pushes to `com.echo`. Push notifications are provided
+    // by the embedded UnifiedPush distributor instead (see PUSH_CONFIG_INCLUDE_UNIFIED_PUSH
+    // and the `distributor` package of the unifiedpush module).
+    const val PUSH_CONFIG_INCLUDE_FIREBASE: Boolean = false
     const val PUSH_CONFIG_INCLUDE_UNIFIED_PUSH: Boolean = true
     val PUSHER_APP_ID_RELEASE: String? = null
     val PUSHER_APP_ID_DEBUG: String? = null
