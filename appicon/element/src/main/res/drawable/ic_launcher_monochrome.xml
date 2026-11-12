@@ -1,0 +1,32 @@
+<!--
+  ~ Copyright (c) 2025 Element Creations Ltd.
+  ~ Copyright 2023 New Vector Ltd.
+  ~
+  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  ~ Please see LICENSE files in the repository root for full details.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Echo mark: three radiating sound-wave arcs above a dot. -->
+    <path
+        android:pathData="M42.742,57.5 A13,13 0 0 1 65.258,57.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M35.38,53.25 A21.5,21.5 0 0 1 72.62,53.25"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M28.019,49 A30,30 0 0 1 79.981,49"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M49.5,64 a4.5,4.5 0 1 0 9,0 a4.5,4.5 0 1 0 -9,0" />
+</vector>
