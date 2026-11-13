@@ -24,6 +24,7 @@ jobs:
     # Also skip manual runs on develop: develop is analysed with the code coverage by nightlyReports.yml, and an analysis
     # without the coverage report would reset the coverage to 0%.
     if: >
+      github.repository == 'element-hq/element-x-android' &&
       (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == 'element-hq/element-x-android') &&
       !(github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/develop')
     # Allow all jobs on main. Just one per PR.

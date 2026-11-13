@@ -37,49 +37,6 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v5
 
-      - name: Create CI google-services.json
-        shell: bash
-        run: |
-          cat > app/google-services.json <<'JSON'
-          {
-            "project_info": {
-              "project_number": "000000000000",
-              "project_id": "echo-ci-placeholder",
-              "storage_bucket": "echo-ci-placeholder.appspot.com"
-            },
-            "client": [
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
-                  "android_client_info": { "package_name": "com.echo" }
-                },
-                "oauth_client": [],
-                "api_key": [{ "current_key": "CI_PLACEHOLDER_KEY" }],
-                "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
-              },
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000000001",
-                  "android_client_info": { "package_name": "com.echo.debug" }
-                },
-                "oauth_client": [],
-                "api_key": [{ "current_key": "CI_PLACEHOLDER_KEY" }],
-                "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
-              },
-              {
-                "client_info": {
-                  "mobilesdk_app_id": "1:000000000000:android:0000000000000000000002",
-                  "android_client_info": { "package_name": "com.echo.nightly" }
-                },
-                "oauth_client": [],
-                "api_key": [{ "current_key": "CI_PLACEHOLDER_KEY" }],
-                "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
-              }
-            ],
-            "configuration_version": "1"
-          }
-          JSON
-
       - name: Make gradlew executable
         run: chmod +x gradlew
 

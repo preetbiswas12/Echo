@@ -35,7 +35,6 @@ plugins {
     id("kotlin-parcelize")
     alias(libs.plugins.licensee)
     alias(libs.plugins.kotlin.serialization)
-    id("com.google.gms.google-services") version "4.5.0"
 }
 
 android {
