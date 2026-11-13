@@ -50,7 +50,7 @@ allprojects {
     }
 
     tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
-        exclude("io/element/android/tests/konsist/failures/**")
+        exclude("com/echo/tests/konsist/failures/**")
 
         // This file comes from another project and we want to keep it as close to the original as possible
         exclude("org/rustls/platformverifier/**")
@@ -77,7 +77,7 @@ allprojects {
         val generatedPath = "${layout.buildDirectory.asFile.get()}/generated/"
         filter {
             exclude { element -> element.file.path.contains(generatedPath) }
-            exclude("io/element/android/tests/konsist/failures/**")
+            exclude("com/echo/tests/konsist/failures/**")
 
             // This file comes from another project and we want to keep it as close to the original as possible
             exclude("**/SafeChildrenTransitionScope.kt")
