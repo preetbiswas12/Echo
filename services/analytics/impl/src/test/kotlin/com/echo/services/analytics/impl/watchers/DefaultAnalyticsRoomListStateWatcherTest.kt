@@ -7,7 +7,6 @@
 
 package com.echo.services.analytics.impl.watchers
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
 import com.echo.libraries.matrix.api.roomlist.RoomListService
 import com.echo.libraries.matrix.test.roomlist.FakeRoomListService
@@ -15,6 +14,7 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.CatchUp
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -169,4 +169,3 @@ class DefaultAnalyticsRoomListStateWatcherTest {
         networkMonitor = networkMonitor,
     )
 }
-

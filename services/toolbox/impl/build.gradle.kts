@@ -23,5 +23,3 @@ dependencies {
     api(projects.services.toolbox.api)
     implementation(libs.androidx.corektx)
 }
-
-

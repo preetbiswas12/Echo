@@ -8,8 +8,8 @@
 
 package com.echo.libraries.voicerecorder.impl.audio
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlin.math.log10
 import kotlin.math.sqrt
 
@@ -50,4 +50,3 @@ private fun Float.dBov(): Float = 20 * log10(this)
 private fun Float.normalize(): Float = (this + DYNAMIC_RANGE_PCM16) / DYNAMIC_RANGE_PCM16
 
 private const val DYNAMIC_RANGE_PCM16: Float = 96.0f
-

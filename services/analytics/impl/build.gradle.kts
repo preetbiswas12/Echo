@@ -45,5 +45,3 @@ dependencies {
     testImplementation(projects.features.networkmonitor.test)
     testImplementation(projects.services.toolbox.test)
 }
-
-

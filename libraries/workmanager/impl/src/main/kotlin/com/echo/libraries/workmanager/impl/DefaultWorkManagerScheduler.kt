@@ -11,9 +11,6 @@ package com.echo.libraries.workmanager.impl
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
@@ -22,6 +19,9 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerScheduler
 import com.echo.libraries.workmanager.api.WorkManagerWorkerType
 import com.echo.libraries.workmanager.api.workManagerTag
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -87,4 +87,3 @@ class DefaultWorkManagerScheduler(
         }
     }
 }
-

@@ -114,4 +114,3 @@ private class FakeWorkManagerRequestBuilder(
 internal class FakeWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
     override fun doWork(): Result = Result.success()
 }
-

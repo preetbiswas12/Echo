@@ -14,4 +14,3 @@ class FakeAnalyticsColdStartWatcher : AnalyticsColdStartWatcher {
     override fun whenLoggingIn() {}
     override fun onRoomListVisible() {}
 }
-

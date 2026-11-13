@@ -11,4 +11,3 @@ package com.echo.services.analyticsproviders.posthog.log
 import com.echo.libraries.core.log.logger.LoggerTag
 
 internal val analyticsTag = LoggerTag("Posthog")
-

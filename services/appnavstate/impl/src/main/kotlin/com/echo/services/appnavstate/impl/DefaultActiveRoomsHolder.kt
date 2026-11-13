@@ -8,13 +8,13 @@
 
 package com.echo.services.appnavstate.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import java.util.concurrent.ConcurrentHashMap
 
 @SingleIn(AppScope::class)
@@ -51,4 +51,3 @@ class DefaultActiveRoomsHolder : ActiveRoomsHolder {
         }
     }
 }
-

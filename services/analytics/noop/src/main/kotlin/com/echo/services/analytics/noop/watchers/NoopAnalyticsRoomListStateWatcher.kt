@@ -7,13 +7,12 @@
 
 package com.echo.services.analytics.noop.watchers
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.services.analytics.api.watchers.AnalyticsRoomListStateWatcher
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class NoopAnalyticsRoomListStateWatcher : AnalyticsRoomListStateWatcher {
     override fun start() {}
     override fun stop() {}
 }
-

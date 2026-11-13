@@ -25,4 +25,3 @@ data class AudioConfig(
     val sampleRate: SampleRate,
     val bitRate: Int,
 )
-

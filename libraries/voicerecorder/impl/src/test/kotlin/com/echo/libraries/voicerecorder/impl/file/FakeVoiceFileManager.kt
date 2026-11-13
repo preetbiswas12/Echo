@@ -25,4 +25,3 @@ class FakeVoiceFileManager(
         fakeFileSystem.deleteFile(file)
     }
 }
-

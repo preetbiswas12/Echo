@@ -10,9 +10,9 @@ package com.echo.services.analytics.test
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.services.analytics.api.ScreenTracker
 import com.echo.tests.testutils.lambda.lambdaError
+import im.vector.app.features.analytics.plan.MobileScreen
 
 class FakeScreenTracker(
     private val trackScreenLambda: (MobileScreen.ScreenName) -> Unit = { lambdaError() }
@@ -24,4 +24,3 @@ class FakeScreenTracker(
         }
     }
 }
-

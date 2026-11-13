@@ -64,4 +64,3 @@ class DefaultAnalyticsSendMessageWatcherTest {
         coroutineScope = backgroundScope,
     )
 }
-

@@ -10,13 +10,13 @@ package com.echo.libraries.voiceplayer.impl
 
 import app.cash.turbine.TurbineTestContext
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.mediaplayer.api.MediaPlayer
 import com.echo.libraries.mediaplayer.test.FakeMediaPlayer
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -316,4 +316,3 @@ private suspend fun TurbineTestContext<VoiceMessagePlayer.State>.matchReadyState
         assertThat(it.duration).isEqualTo(fakeTotalDurationMs)
     }
 }
-

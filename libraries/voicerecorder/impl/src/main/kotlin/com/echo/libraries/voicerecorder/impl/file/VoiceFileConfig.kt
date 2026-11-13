@@ -20,4 +20,3 @@ data class VoiceFileConfig(
     val fileExt: String,
     val mimeType: String,
 )
-

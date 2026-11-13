@@ -20,4 +20,3 @@ interface AnalyticsSdkSpan {
     /** Exit the span and stop collecting the metrics. A request should be sent shortly after. */
     fun exit()
 }
-

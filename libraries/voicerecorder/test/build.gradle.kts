@@ -21,5 +21,3 @@ dependencies {
     implementation(libs.coroutines.test)
     implementation(projects.libraries.core)
 }
-
-

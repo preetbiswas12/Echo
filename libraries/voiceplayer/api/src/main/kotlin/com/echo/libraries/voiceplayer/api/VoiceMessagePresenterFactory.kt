@@ -32,4 +32,3 @@ interface VoiceMessagePresenterFactory {
         duration: Duration,
     ): Presenter<VoiceMessageState>
 }
-

@@ -66,4 +66,3 @@ class NoopAnalyticsServiceTest {
         sut.updateSuperProperties(SuperProperties())
     }
 }
-

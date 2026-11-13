@@ -17,4 +17,3 @@ class FakeSystemClock(
 ) : SystemClock {
     override fun epochMillis() = epochMillisResult
 }
-

@@ -13,4 +13,3 @@ fun aAppErrorState() = AppErrorState.Error(
     body = "Something went wrong, and the details of that would go here.",
     dismiss = {},
 )
-

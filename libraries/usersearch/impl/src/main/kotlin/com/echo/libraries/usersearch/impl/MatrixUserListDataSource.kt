@@ -8,12 +8,12 @@
 
 package com.echo.libraries.usersearch.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.usersearch.api.UserListDataSource
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class MatrixUserListDataSource(
@@ -28,4 +28,3 @@ class MatrixUserListDataSource(
         return client.getProfile(userId).getOrNull()
     }
 }
-

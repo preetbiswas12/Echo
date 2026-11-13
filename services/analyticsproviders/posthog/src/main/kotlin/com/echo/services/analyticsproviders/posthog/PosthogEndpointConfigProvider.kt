@@ -8,10 +8,10 @@
 
 package com.echo.services.analyticsproviders.posthog
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.extensions.isElement
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
+import dev.zacsweers.metro.Inject
 
 @Inject
 class PosthogEndpointConfigProvider(
@@ -44,4 +44,3 @@ class PosthogEndpointConfigProvider(
         }
     }
 }
-

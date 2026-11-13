@@ -16,4 +16,3 @@ class FakeNotificationTroubleshootNavigator(
 ) : NotificationTroubleshootNavigator {
     override fun navigateToBlockedUsers() = openIgnoredUsersResult()
 }
-

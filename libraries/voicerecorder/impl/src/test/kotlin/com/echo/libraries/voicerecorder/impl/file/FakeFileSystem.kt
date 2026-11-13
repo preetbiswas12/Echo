@@ -33,4 +33,3 @@ class FakeFileSystem {
         files.remove(file)
     }
 }
-

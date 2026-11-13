@@ -19,4 +19,3 @@ object AnalyticsUserData {
     const val FIRST_SYNC_STATE = "first_sync_state"
     const val TIMELINE_ITEM_COUNT = "timeline_item_count"
 }
-

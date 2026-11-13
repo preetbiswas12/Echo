@@ -18,4 +18,3 @@ interface AnalyticsRoomListStateWatcher {
     /** Stops watching, to be called when the app leaves the foreground. */
     fun stop()
 }
-

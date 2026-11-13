@@ -8,9 +8,6 @@
 
 package com.echo.services.appnavstate.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.core.RoomId
@@ -20,6 +17,9 @@ import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.appnavstate.api.AppNavigationState
 import com.echo.services.appnavstate.api.AppNavigationStateService
 import com.echo.services.appnavstate.api.NavigationState
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -137,4 +137,3 @@ class DefaultAppNavigationStateService(
         return true
     }
 }
-

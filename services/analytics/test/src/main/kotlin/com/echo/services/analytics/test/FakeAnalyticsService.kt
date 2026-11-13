@@ -8,10 +8,6 @@
 
 package com.echo.services.analytics.test
 
-import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
-import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
-import im.vector.app.features.analytics.plan.SuperProperties
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsSdkSpan
 import com.echo.services.analytics.api.AnalyticsService
@@ -19,6 +15,10 @@ import com.echo.services.analytics.api.NoopAnalyticsSdkSpan
 import com.echo.services.analytics.api.NoopAnalyticsTransaction
 import com.echo.services.analyticsproviders.api.AnalyticsProvider
 import com.echo.services.analyticsproviders.api.AnalyticsTransaction
+import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
+import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
+import im.vector.app.features.analytics.plan.SuperProperties
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -96,4 +96,3 @@ class FakeAnalyticsService(
 
     override fun enterSdkSpan(name: String?, parentTraceId: String?): AnalyticsSdkSpan = NoopAnalyticsSdkSpan
 }
-

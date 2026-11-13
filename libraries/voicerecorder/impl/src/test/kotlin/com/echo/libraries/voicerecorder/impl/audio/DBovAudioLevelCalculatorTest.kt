@@ -39,4 +39,3 @@ class DBovAudioLevelCalculatorTest {
         assertThat(level).isEqualTo(0.0f)
     }
 }
-

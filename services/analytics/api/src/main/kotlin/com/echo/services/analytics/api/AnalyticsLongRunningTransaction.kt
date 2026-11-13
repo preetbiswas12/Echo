@@ -31,4 +31,3 @@ sealed class AnalyticsLongRunningTransaction(
     data class PushToNotification(val eventId: String) : AnalyticsLongRunningTransaction(AnalyticsTransactions.pushToNotification)
     data class PushToWorkManager(val eventId: String) : AnalyticsLongRunningTransaction("Push to WorkManager")
 }
-

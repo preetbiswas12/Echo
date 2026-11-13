@@ -154,4 +154,3 @@ inline fun <T> AnalyticsService.inBridgeSdkSpan(parentTraceId: String?, block: (
         span.exit()
     }
 }
-

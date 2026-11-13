@@ -27,5 +27,3 @@ dependencies {
     testCommonDependencies(libs, false)
     testImplementation(projects.libraries.sessionStorage.test)
 }
-
-

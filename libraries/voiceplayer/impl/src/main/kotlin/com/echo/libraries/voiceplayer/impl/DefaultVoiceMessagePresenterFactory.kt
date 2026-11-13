@@ -8,7 +8,6 @@
 
 package com.echo.libraries.voiceplayer.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.voiceplayer.api.VoiceMessagePresenterFactory
 import com.echo.libraries.voiceplayer.api.VoiceMessageState
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlin.time.Duration
 
@@ -52,4 +52,3 @@ class DefaultVoiceMessagePresenterFactory(
         )
     }
 }
-

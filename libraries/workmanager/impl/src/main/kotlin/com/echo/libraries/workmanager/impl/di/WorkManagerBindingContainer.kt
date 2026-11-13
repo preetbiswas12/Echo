@@ -9,12 +9,12 @@ package com.echo.libraries.workmanager.impl.di
 
 import android.content.Context
 import androidx.work.WorkManager
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.di.annotations.ApplicationContext
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -27,4 +27,3 @@ object WorkManagerBindingContainer {
         return WorkManager.getInstance(context)
     }
 }
-

@@ -7,9 +7,9 @@
 
 package com.echo.services.analytics.noop.watchers
 
+import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
 
 @ContributesBinding(AppScope::class)
 class NoopAnalyticsColdStartWatcher : AnalyticsColdStartWatcher {
@@ -17,4 +17,3 @@ class NoopAnalyticsColdStartWatcher : AnalyticsColdStartWatcher {
     override fun whenLoggingIn() {}
     override fun onRoomListVisible() {}
 }
-

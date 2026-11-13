@@ -8,13 +8,13 @@
 
 package com.echo.libraries.voiceplayer.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.mapCatchingExceptions
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.mediaplayer.api.MediaPlayer
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
@@ -235,4 +235,3 @@ class DefaultVoiceMessagePlayer(
         it.isMyTrack && (it.isReady || it.isEnded)
     }
 }
-

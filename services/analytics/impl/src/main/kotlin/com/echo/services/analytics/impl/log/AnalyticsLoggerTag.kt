@@ -11,4 +11,3 @@ package com.echo.services.analytics.impl.log
 import com.echo.libraries.core.log.logger.LoggerTag
 
 val analyticsTag = LoggerTag("Analytics")
-

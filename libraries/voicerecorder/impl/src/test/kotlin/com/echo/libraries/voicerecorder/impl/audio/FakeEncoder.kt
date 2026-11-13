@@ -30,4 +30,3 @@ class FakeEncoder(
         curFile = null
     }
 }
-

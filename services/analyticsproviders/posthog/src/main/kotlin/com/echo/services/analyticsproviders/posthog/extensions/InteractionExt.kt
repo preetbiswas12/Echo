@@ -15,4 +15,3 @@ fun Interaction.Name.toAnalyticsInteraction(interactionType: Interaction.Interac
         name = this,
         interactionType = interactionType
     )
-

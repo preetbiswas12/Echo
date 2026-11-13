@@ -10,8 +10,6 @@ package com.echo.libraries.voicerecorder.impl
 
 import android.Manifest
 import androidx.annotation.RequiresPermission
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.appconfig.VoiceMessageConfig
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.coroutine.childScope
@@ -27,6 +25,8 @@ import com.echo.libraries.voicerecorder.impl.audio.Encoder
 import com.echo.libraries.voicerecorder.impl.audio.resample
 import com.echo.libraries.voicerecorder.impl.file.VoiceFileConfig
 import com.echo.libraries.voicerecorder.impl.file.VoiceFileManager
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -168,4 +168,3 @@ class DefaultVoiceRecorder(
         _state.emit(VoiceRecorderState.Idle)
     }
 }
-

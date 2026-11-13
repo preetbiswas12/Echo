@@ -19,5 +19,3 @@ dependencies {
     api(projects.services.appnavstate.api)
     implementation(libs.coroutines.core)
 }
-
-

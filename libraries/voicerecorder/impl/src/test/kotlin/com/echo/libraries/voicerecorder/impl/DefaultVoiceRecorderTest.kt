@@ -11,7 +11,6 @@ package com.echo.libraries.voicerecorder.impl
 import android.media.AudioFormat
 import android.media.MediaRecorder
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.appconfig.VoiceMessageConfig
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.voicerecorder.api.VoiceRecorderState
@@ -25,6 +24,7 @@ import com.echo.libraries.voicerecorder.impl.di.VoiceRecorderBindingContainer
 import com.echo.libraries.voicerecorder.impl.file.FakeFileSystem
 import com.echo.libraries.voicerecorder.impl.file.FakeVoiceFileManager
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -192,4 +192,3 @@ class DefaultVoiceRecorderTest {
         }
     }
 }
-

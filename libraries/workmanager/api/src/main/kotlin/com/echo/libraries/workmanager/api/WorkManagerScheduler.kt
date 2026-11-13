@@ -53,4 +53,3 @@ enum class WorkManagerRequestType {
     DB_VACUUM,
     SEARCH_BACKFILL,
 }
-

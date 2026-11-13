@@ -10,14 +10,14 @@ package com.echo.libraries.voicerecorder.impl.di
 
 import android.media.AudioFormat
 import android.media.MediaRecorder
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.voicerecorder.impl.audio.AudioConfig
 import com.echo.libraries.voicerecorder.impl.audio.SampleRate
 import com.echo.libraries.voicerecorder.impl.file.VoiceFileConfig
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 import io.element.android.opusencoder.OggOpusEncoder
 
 @BindingContainer
@@ -50,4 +50,3 @@ object VoiceRecorderBindingContainer {
     @Provides
     fun providesOggOpusEncoder(): OggOpusEncoder = OggOpusEncoder.create()
 }
-

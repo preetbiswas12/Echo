@@ -8,13 +8,13 @@
 
 package com.echo.services.analyticsproviders.test
 
+import com.echo.services.analyticsproviders.api.AnalyticsProvider
+import com.echo.services.analyticsproviders.api.AnalyticsTransaction
+import com.echo.tests.testutils.lambda.lambdaError
 import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
 import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
 import im.vector.app.features.analytics.plan.SuperProperties
 import im.vector.app.features.analytics.plan.UserProperties
-import com.echo.services.analyticsproviders.api.AnalyticsProvider
-import com.echo.services.analyticsproviders.api.AnalyticsTransaction
-import com.echo.tests.testutils.lambda.lambdaError
 
 class FakeAnalyticsProvider(
     override val name: String = "FakeAnalyticsProvider",
@@ -35,4 +35,3 @@ class FakeAnalyticsProvider(
     override fun updateSuperProperties(updatedProperties: SuperProperties) = updateSuperPropertiesLambda(updatedProperties)
     override fun startTransaction(name: String, operation: String?, description: String?): AnalyticsTransaction? = null
 }
-

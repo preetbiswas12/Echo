@@ -25,4 +25,3 @@ interface ScreenTracker {
         screen: MobileScreen.ScreenName,
     )
 }
-

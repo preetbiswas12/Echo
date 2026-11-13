@@ -37,4 +37,3 @@ internal class FakeAnalyticsStore(
         resetLambda()
     }
 }
-

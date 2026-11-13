@@ -19,5 +19,3 @@ dependencies {
     implementation(projects.services.apperror.api)
     implementation(projects.tests.testutils)
 }
-
-

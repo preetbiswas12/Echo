@@ -34,4 +34,3 @@ class FakeActiveRoomsHolder : ActiveRoomsHolder {
     override fun clear(sessionId: SessionId) {
     }
 }
-

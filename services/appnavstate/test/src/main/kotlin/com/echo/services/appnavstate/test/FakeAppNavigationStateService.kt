@@ -39,4 +39,3 @@ class FakeAppNavigationStateService(
     override fun onNavigateToThread(owner: String, threadId: ThreadId) = Unit
     override fun onLeavingThread(owner: String) = Unit
 }
-

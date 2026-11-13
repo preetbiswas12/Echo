@@ -20,4 +20,3 @@ class FakePushHistoryEntryPoint : PushHistoryEntryPoint {
         callback: PushHistoryEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

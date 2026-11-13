@@ -31,4 +31,3 @@ class FakeWorkManagerScheduler(
         cancelLambda(sessionId, requestType)
     }
 }
-

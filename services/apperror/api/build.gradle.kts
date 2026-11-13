@@ -18,5 +18,3 @@ dependencies {
     implementation(libs.coroutines.core)
     implementation(projects.libraries.designsystem)
 }
-
-

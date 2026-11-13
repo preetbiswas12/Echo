@@ -8,14 +8,6 @@
 
 package com.echo.services.analytics.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import dev.zacsweers.metro.binding
-import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
-import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
-import im.vector.app.features.analytics.plan.SuperProperties
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
@@ -29,6 +21,14 @@ import com.echo.services.analytics.impl.log.analyticsTag
 import com.echo.services.analytics.impl.store.AnalyticsStore
 import com.echo.services.analyticsproviders.api.AnalyticsProvider
 import com.echo.services.analyticsproviders.api.AnalyticsTransaction
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import dev.zacsweers.metro.binding
+import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
+import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
+import im.vector.app.features.analytics.plan.SuperProperties
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
@@ -200,4 +200,3 @@ class DefaultAnalyticsService(
         }
     }
 }
-

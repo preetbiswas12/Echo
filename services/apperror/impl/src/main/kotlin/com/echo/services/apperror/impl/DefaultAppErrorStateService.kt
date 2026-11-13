@@ -8,12 +8,12 @@
 
 package com.echo.services.apperror.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.services.apperror.api.AppErrorState
 import com.echo.services.apperror.api.AppErrorStateService
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -41,4 +41,3 @@ class DefaultAppErrorStateService(
         showError(title, body)
     }
 }
-

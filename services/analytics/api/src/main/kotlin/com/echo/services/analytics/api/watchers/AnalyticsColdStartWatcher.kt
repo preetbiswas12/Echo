@@ -21,4 +21,3 @@ interface AnalyticsColdStartWatcher {
     /** Ends the measurement, to be called once the cached room list is actually on screen. */
     fun onRoomListVisible()
 }
-

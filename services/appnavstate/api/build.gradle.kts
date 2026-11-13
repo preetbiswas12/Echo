@@ -20,5 +20,3 @@ dependencies {
     implementation(libs.androidx.startup)
     implementation(projects.libraries.matrix.api)
 }
-
-

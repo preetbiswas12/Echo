@@ -38,4 +38,3 @@ fun NavigationState.currentThreadId(): ThreadId? {
         is NavigationState.Thread -> threadId
     }
 }
-

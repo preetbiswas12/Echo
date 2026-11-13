@@ -7,15 +7,15 @@
 
 package com.echo.services.analytics.impl.watchers
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.cancelLongRunningTransaction
 import com.echo.services.analytics.api.finishLongRunningTransaction
 import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.launchIn
@@ -62,4 +62,3 @@ class DefaultAnalyticsColdStartWatcher(
         }
     }
 }
-

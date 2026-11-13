@@ -8,4 +8,3 @@
 package com.echo.services.appnavstate.api
 
 const val ROOM_OPENED_FROM_NOTIFICATION = "opened_from_notification"
-

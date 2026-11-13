@@ -8,6 +8,9 @@
 
 package com.echo.services.analyticsproviders.posthog
 
+import com.echo.services.analyticsproviders.api.AnalyticsProvider
+import com.echo.services.analyticsproviders.api.AnalyticsTransaction
+import com.echo.services.analyticsproviders.posthog.log.analyticsTag
 import com.posthog.PostHogInterface
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoSet
@@ -15,9 +18,6 @@ import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
 import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
 import im.vector.app.features.analytics.plan.SuperProperties
 import im.vector.app.features.analytics.plan.UserProperties
-import com.echo.services.analyticsproviders.api.AnalyticsProvider
-import com.echo.services.analyticsproviders.api.AnalyticsTransaction
-import com.echo.services.analyticsproviders.posthog.log.analyticsTag
 import timber.log.Timber
 
 // private val REUSE_EXISTING_ID: String? = null
@@ -135,4 +135,3 @@ private fun Map<String, Any?>.keepOnlyNonNullValues(): Map<String, Any> {
     }
     return result
 }
-

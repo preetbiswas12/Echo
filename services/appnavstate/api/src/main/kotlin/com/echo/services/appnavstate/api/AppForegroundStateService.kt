@@ -72,4 +72,3 @@ interface AppForegroundStateService {
      */
     fun updateIsSharingLiveLocation(isSharingLiveLocation: Boolean)
 }
-

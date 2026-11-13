@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.matrix.api)
     implementation(projects.tests.testutils)
 }
-
-

@@ -34,4 +34,3 @@ interface AppErrorStateService {
      */
     fun showError(@StringRes titleRes: Int, @StringRes bodyRes: Int)
 }
-

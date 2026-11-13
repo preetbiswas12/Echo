@@ -12,14 +12,14 @@ import androidx.lifecycle.Lifecycle
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.toolbox.api.systemclock.SystemClock
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.FakeLifecycleOwner
 import com.echo.tests.testutils.withFakeLifecycleOwner
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.MobileScreen
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -60,4 +60,3 @@ private fun createDefaultScreenTracker(
     analyticsService = analyticsService,
     systemClock = systemClock,
 )
-

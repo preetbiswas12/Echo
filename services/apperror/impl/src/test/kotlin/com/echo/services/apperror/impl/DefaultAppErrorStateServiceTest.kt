@@ -9,9 +9,9 @@
 package com.echo.services.apperror.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.services.apperror.api.AppErrorState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -76,4 +76,3 @@ internal class DefaultAppErrorStateServiceTest {
         stringProvider = FakeStringProvider(),
     )
 }
-

@@ -35,4 +35,3 @@ class FakeAppErrorStateService(
         mutableAppErrorStateFlow.value = state
     }
 }
-

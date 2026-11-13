@@ -17,4 +17,3 @@ import kotlin.reflect.KClass
 @Target(AnnotationTarget.CLASS, AnnotationTarget.PROPERTY)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class WorkerKey(val value: KClass<out ListenableWorker>)
-

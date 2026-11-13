@@ -39,4 +39,3 @@ class FakeStringProvider(
         return defaultResult + " ($quantity) " + formatArgs.joinToString()
     }
 }
-

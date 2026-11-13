@@ -13,10 +13,10 @@ import android.media.AudioRecord
 import android.media.audiofx.AutomaticGainControl
 import android.media.audiofx.NoiseSuppressor
 import androidx.annotation.RequiresPermission
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.data.tryOrNull
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.withContext
 
@@ -130,4 +130,3 @@ private fun isAudioRecordErrorResult(result: Int): Boolean {
 }
 
 private fun ShortArray.sizeInBytes(): Int = size * Short.SIZE_BYTES
-

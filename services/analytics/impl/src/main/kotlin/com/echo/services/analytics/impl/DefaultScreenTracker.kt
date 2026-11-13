@@ -14,13 +14,13 @@ import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.Lifecycle
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.libraries.designsystem.utils.OnLifecycleEvent
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.ScreenTracker
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.MobileScreen
 
 @ContributesBinding(AppScope::class)
 class DefaultScreenTracker(
@@ -48,4 +48,3 @@ class DefaultScreenTracker(
         }
     }
 }
-

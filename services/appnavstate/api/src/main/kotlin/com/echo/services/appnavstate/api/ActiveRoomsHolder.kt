@@ -41,4 +41,3 @@ interface ActiveRoomsHolder {
      */
     fun clear(sessionId: SessionId)
 }
-

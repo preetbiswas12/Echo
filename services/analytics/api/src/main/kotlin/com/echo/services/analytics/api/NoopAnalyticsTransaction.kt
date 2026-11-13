@@ -21,4 +21,3 @@ object NoopAnalyticsTransaction : AnalyticsTransaction {
     override fun attachError(throwable: Throwable) {}
     override fun finish() {}
 }
-

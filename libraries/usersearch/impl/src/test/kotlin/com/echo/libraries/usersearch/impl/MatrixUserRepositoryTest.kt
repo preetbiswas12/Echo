@@ -9,7 +9,6 @@
 package com.echo.libraries.usersearch.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.user.MatrixUser
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.ui.components.aMatrixUserList
 import com.echo.libraries.usersearch.api.UserSearchResult
 import com.echo.libraries.usersearch.test.FakeUserListDataSource
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -204,4 +204,3 @@ internal class MatrixUserRepositoryTest {
 
     private fun placeholderResult(id: UserId = A_USER_ID, isUnresolved: Boolean = false) = UserSearchResult(MatrixUser(id), isUnresolved = isUnresolved)
 }
-

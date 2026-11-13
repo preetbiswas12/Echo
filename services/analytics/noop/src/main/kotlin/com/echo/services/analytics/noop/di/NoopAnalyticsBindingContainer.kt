@@ -7,11 +7,11 @@
 
 package com.echo.services.analytics.noop.di
 
+import com.echo.libraries.di.identifiers.SentrySdkDsn
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.di.identifiers.SentrySdkDsn
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -19,4 +19,3 @@ object NoopAnalyticsBindingContainer {
     @Provides
     fun providesSentrySdkDsn(): SentrySdkDsn? = null
 }
-

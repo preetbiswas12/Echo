@@ -61,4 +61,3 @@ interface AnalyticsTracker {
 fun AnalyticsTracker.captureInteraction(name: Interaction.Name, type: Interaction.InteractionType? = null) {
     capture(Interaction(interactionType = type, name = name))
 }
-

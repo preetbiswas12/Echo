@@ -23,4 +23,3 @@ class AppForegroundStateServiceInitializer : Initializer<AppForegroundStateServi
         ProcessLifecycleInitializer::class.java
     )
 }
-

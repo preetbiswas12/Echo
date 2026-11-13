@@ -14,4 +14,3 @@ data class PosthogEndpointConfig(
 ) {
     val isValid = host.isNotBlank() && apiKey.isNotBlank()
 }
-

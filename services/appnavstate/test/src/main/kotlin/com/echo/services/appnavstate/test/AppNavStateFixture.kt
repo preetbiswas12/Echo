@@ -44,4 +44,3 @@ fun anAppNavigationState(
     navigationState = navigationState,
     isInForeground = isInForeground,
 )
-

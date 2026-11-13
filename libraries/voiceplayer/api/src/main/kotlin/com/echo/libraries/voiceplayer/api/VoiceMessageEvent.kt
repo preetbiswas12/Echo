@@ -13,4 +13,3 @@ sealed interface VoiceMessageEvent {
     data class Seek(val percentage: Float) : VoiceMessageEvent
     data object ChangePlaybackSpeed : VoiceMessageEvent
 }
-

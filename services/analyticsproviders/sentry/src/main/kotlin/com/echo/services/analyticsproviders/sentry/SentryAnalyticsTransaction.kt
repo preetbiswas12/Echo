@@ -44,4 +44,3 @@ class SentryAnalyticsTransaction private constructor(span: ISpan) : AnalyticsTra
         inner.finish()
     }
 }
-

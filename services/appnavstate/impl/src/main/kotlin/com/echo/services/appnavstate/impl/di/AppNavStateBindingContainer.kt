@@ -10,13 +10,13 @@ package com.echo.services.appnavstate.impl.di
 
 import android.content.Context
 import androidx.startup.AppInitializer
+import com.echo.libraries.di.annotations.ApplicationContext
+import com.echo.services.appnavstate.api.AppForegroundStateService
+import com.echo.services.appnavstate.impl.initializer.AppForegroundStateServiceInitializer
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.di.annotations.ApplicationContext
-import com.echo.services.appnavstate.api.AppForegroundStateService
-import com.echo.services.appnavstate.impl.initializer.AppForegroundStateServiceInitializer
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -27,4 +27,3 @@ object AppNavStateBindingContainer {
     ): AppForegroundStateService =
         AppInitializer.getInstance(context).initializeComponent(AppForegroundStateServiceInitializer::class.java)
 }
-

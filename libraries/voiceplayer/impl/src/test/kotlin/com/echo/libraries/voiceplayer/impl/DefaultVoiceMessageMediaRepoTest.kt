@@ -8,12 +8,12 @@
 
 package com.echo.libraries.voiceplayer.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.media.MatrixMediaLoader
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.matrix.test.media.FakeMatrixMediaLoader
 import com.echo.libraries.matrix.test.mxc.FakeMxcTools
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -162,4 +162,3 @@ private fun TemporaryFolder.createCachedFile() = File(cachedFilePath).apply {
 }
 
 private fun TemporaryFolder.createRustMediaFile() = File(this.root, "rustMediaFile.ogg").apply { createNewFile() }
-

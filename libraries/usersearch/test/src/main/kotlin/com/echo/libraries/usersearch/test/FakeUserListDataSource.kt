@@ -28,4 +28,3 @@ class FakeUserListDataSource : UserListDataSource {
         this.profile = matrixUser
     }
 }
-

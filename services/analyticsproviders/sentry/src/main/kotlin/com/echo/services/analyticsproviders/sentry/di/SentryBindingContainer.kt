@@ -7,13 +7,13 @@
 
 package com.echo.services.analyticsproviders.sentry.di
 
+import com.echo.libraries.di.identifiers.SentryDsn
+import com.echo.libraries.di.identifiers.SentrySdkDsn
+import com.echo.services.analyticsproviders.sentry.SentryConfig
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.di.identifiers.SentryDsn
-import com.echo.libraries.di.identifiers.SentrySdkDsn
-import com.echo.services.analyticsproviders.sentry.SentryConfig
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -24,4 +24,3 @@ object SentryBindingContainer {
     @Provides
     fun providesSentrySdkDsn(): SentrySdkDsn? = SentryConfig.SDK_DSN.takeIf { it.isNotBlank() }?.let(::SentrySdkDsn)
 }
-

@@ -15,4 +15,3 @@ class FakeAudioLevelCalculator : AudioLevelCalculator {
         return buffer.map { abs(it.toFloat()) }.average().toFloat() / Short.MAX_VALUE
     }
 }
-

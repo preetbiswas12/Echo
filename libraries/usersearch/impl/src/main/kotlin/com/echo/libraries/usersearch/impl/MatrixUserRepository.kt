@@ -8,7 +8,6 @@
 
 package com.echo.libraries.usersearch.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.MatrixPatterns
@@ -18,6 +17,7 @@ import com.echo.libraries.usersearch.api.UserListDataSource
 import com.echo.libraries.usersearch.api.UserRepository
 import com.echo.libraries.usersearch.api.UserSearchResult
 import com.echo.libraries.usersearch.api.UserSearchResultState
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -73,4 +73,3 @@ class MatrixUserRepository(
         private const val MAXIMUM_SEARCH_RESULTS = 10L
     }
 }
-

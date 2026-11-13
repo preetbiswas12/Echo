@@ -11,4 +11,3 @@ object NoopAnalyticsSdkSpan : AnalyticsSdkSpan {
     override fun enter() {}
     override fun exit() {}
 }
-

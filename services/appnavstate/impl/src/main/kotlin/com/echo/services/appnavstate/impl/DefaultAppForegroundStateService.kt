@@ -48,4 +48,3 @@ class DefaultAppForegroundStateService : AppForegroundStateService {
 
     private fun getCurrentState(): Boolean = appLifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)
 }
-

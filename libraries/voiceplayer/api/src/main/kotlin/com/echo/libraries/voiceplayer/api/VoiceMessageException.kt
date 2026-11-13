@@ -24,4 +24,3 @@ sealed class VoiceMessageException : Exception() {
         override val cause: Throwable?
     ) : VoiceMessageException()
 }
-

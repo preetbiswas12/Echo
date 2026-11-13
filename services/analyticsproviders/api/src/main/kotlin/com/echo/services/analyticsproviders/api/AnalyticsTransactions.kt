@@ -50,4 +50,3 @@ data class TransactionDefinition(
     val operation: String? = null,
     val description: String?,
 )
-

@@ -45,4 +45,3 @@ interface VoiceRecorder {
      */
     val state: StateFlow<VoiceRecorderState>
 }
-

@@ -11,9 +11,9 @@ package com.echo.services.toolbox.impl.strings
 import android.content.res.Resources
 import androidx.annotation.PluralsRes
 import androidx.annotation.StringRes
+import com.echo.services.toolbox.api.strings.StringProvider
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.services.toolbox.api.strings.StringProvider
 
 @ContributesBinding(AppScope::class)
 class AndroidStringProvider(private val resources: Resources) : StringProvider {
@@ -39,4 +39,3 @@ class AndroidStringProvider(private val resources: Resources) : StringProvider {
         return resources.getString(resId, *formatArgs)
     }
 }
-

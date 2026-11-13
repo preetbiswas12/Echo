@@ -49,4 +49,3 @@ class FakeAppForegroundStateService(
         this.isSharingLiveLocation.value = isSharingLiveLocation
     }
 }
-

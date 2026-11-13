@@ -20,4 +20,3 @@ sealed interface AppErrorState {
         val dismiss: () -> Unit,
     ) : AppErrorState
 }
-

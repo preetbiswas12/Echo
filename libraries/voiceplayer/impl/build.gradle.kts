@@ -39,5 +39,3 @@ dependencies {
     testImplementation(projects.libraries.mediaplayer.test)
     testImplementation(projects.services.analytics.test)
 }
-
-

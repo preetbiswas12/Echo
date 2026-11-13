@@ -10,11 +10,6 @@
 package com.echo.services.analyticsproviders.sentry
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
-import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
-import im.vector.app.features.analytics.plan.SuperProperties
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.core.data.megaBytes
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.di.identifiers.SentryDsn
@@ -27,6 +22,11 @@ import com.echo.services.appnavstate.api.AppNavigationState
 import com.echo.services.appnavstate.api.NavigationState
 import com.echo.services.appnavstate.test.FakeAppNavigationStateService
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
+import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
+import im.vector.app.features.analytics.plan.SuperProperties
+import im.vector.app.features.analytics.plan.UserProperties
 import io.sentry.Sentry
 import io.sentry.SentryTracer
 import io.sentry.protocol.SentryId
@@ -243,4 +243,3 @@ class SentryAnalyticsProviderTest : RobolectricTest() {
         appNavigationStateService = appNavigationStateService,
     )
 }
-

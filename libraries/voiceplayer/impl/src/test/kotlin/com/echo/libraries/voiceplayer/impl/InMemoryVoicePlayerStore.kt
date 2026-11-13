@@ -24,4 +24,3 @@ internal class InMemoryVoicePlayerStore(
         playBackSpeedIndex.emit(index)
     }
 }
-

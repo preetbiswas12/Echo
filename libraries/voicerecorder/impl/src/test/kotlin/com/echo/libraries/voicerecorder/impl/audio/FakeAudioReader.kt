@@ -38,4 +38,3 @@ class FakeAudioReader(
         isRecording = false
     }
 }
-

@@ -9,12 +9,12 @@
 package com.echo.services.analyticsproviders.posthog
 
 import android.content.Context
+import com.echo.libraries.core.meta.BuildMeta
+import com.echo.libraries.di.annotations.ApplicationContext
 import com.posthog.PostHogInterface
 import com.posthog.android.PostHogAndroid
 import com.posthog.android.PostHogAndroidConfig
 import dev.zacsweers.metro.Inject
-import com.echo.libraries.core.meta.BuildMeta
-import com.echo.libraries.di.annotations.ApplicationContext
 
 @Inject
 class PostHogFactory(
@@ -39,4 +39,3 @@ class PostHogFactory(
         )
     }
 }
-

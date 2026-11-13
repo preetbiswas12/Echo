@@ -15,4 +15,3 @@ fun interface SystemClock {
     /** The current wall-clock time in milliseconds since the epoch. */
     fun epochMillis(): Long
 }
-

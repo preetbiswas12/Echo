@@ -8,12 +8,12 @@
 
 package com.echo.libraries.voicerecorder.impl.file
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.hash.md5
 import com.echo.libraries.di.CacheDirectory
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.room.BaseRoom
+import dev.zacsweers.metro.ContributesBinding
 import java.io.File
 import java.util.UUID
 
@@ -37,4 +37,3 @@ class DefaultVoiceFileManager(
         file.delete()
     }
 }
-

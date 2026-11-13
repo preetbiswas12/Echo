@@ -7,9 +7,9 @@
 
 package com.echo.services.analytics.impl.watchers
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.ColdStart
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -105,4 +105,3 @@ class DefaultAnalyticsColdStartWatcherTest {
         appCoroutineScope = backgroundScope,
     )
 }
-

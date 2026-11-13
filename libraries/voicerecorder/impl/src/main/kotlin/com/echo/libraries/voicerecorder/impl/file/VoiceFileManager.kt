@@ -15,4 +15,3 @@ interface VoiceFileManager {
 
     fun deleteFile(file: File)
 }
-

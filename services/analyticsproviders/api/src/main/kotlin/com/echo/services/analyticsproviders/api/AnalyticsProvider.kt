@@ -37,4 +37,3 @@ interface AnalyticsProvider : AnalyticsTracker, ErrorTracker {
      */
     fun startTransaction(name: String, operation: String? = null, description: String? = null): AnalyticsTransaction?
 }
-

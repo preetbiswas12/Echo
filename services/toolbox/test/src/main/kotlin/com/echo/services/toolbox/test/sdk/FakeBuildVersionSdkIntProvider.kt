@@ -15,4 +15,3 @@ class FakeBuildVersionSdkIntProvider(
 ) : BuildVersionSdkIntProvider {
     override fun get(): Int = sdkInt
 }
-

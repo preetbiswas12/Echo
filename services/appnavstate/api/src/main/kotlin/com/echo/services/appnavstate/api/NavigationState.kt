@@ -40,4 +40,3 @@ sealed class NavigationState(open val owner: String) {
         val parentRoom: Room,
     ) : NavigationState(owner)
 }
-

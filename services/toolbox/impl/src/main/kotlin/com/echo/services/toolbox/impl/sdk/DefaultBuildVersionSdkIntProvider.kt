@@ -9,13 +9,12 @@
 package com.echo.services.toolbox.impl.sdk
 
 import android.os.Build
+import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
 
 @ContributesBinding(AppScope::class)
 class DefaultBuildVersionSdkIntProvider :
     BuildVersionSdkIntProvider {
     override fun get() = Build.VERSION.SDK_INT
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.libraries.voiceplayer.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.media.MediaSource
@@ -19,6 +18,7 @@ import com.echo.libraries.voiceplayer.api.VoiceMessageState
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -289,4 +289,3 @@ fun TestScope.createVoiceMessagePresenter(
     eventId = eventId,
     duration = duration,
 )
-

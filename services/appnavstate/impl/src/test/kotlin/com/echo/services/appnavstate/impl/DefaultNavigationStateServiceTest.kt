@@ -8,7 +8,6 @@
 
 package com.echo.services.appnavstate.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -21,6 +20,7 @@ import com.echo.services.appnavstate.test.A_ROOM_OWNER
 import com.echo.services.appnavstate.test.A_SESSION_OWNER
 import com.echo.services.appnavstate.test.A_THREAD_OWNER
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -234,4 +234,3 @@ class DefaultNavigationStateServiceTest {
         coroutineScope = backgroundScope,
     )
 }
-

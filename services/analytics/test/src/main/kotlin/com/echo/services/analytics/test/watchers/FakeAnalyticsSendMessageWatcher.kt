@@ -16,4 +16,3 @@ class FakeAnalyticsSendMessageWatcher(
     override fun start() = startLambda()
     override fun stop() = stopLambda()
 }
-

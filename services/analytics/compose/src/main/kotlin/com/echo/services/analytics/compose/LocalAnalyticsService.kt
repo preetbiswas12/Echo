@@ -18,4 +18,3 @@ import com.echo.services.analytics.noop.NoopAnalyticsService
 val LocalAnalyticsService = staticCompositionLocalOf<AnalyticsService> {
     NoopAnalyticsService()
 }
-

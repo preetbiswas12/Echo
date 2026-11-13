@@ -16,4 +16,3 @@ object SentryConfig {
     const val ENV_NIGHTLY = "NIGHTLY"
     const val ENV_RELEASE = "RELEASE"
 }
-

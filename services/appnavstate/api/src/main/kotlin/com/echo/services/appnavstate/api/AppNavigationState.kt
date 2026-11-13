@@ -15,4 +15,3 @@ data class AppNavigationState(
     val navigationState: NavigationState,
     val isInForeground: Boolean,
 )
-

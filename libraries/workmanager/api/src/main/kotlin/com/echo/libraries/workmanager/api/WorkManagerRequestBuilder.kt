@@ -43,4 +43,3 @@ sealed interface WorkManagerWorkerType {
      */
     data object Default : WorkManagerWorkerType
 }
-

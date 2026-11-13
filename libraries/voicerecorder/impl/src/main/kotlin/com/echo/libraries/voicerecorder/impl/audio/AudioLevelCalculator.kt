@@ -20,4 +20,3 @@ interface AudioLevelCalculator {
     @FloatRange(from = 0.0, to = 1.0)
     fun calculateAudioLevel(buffer: ShortArray): Float
 }
-

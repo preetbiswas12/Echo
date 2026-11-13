@@ -10,12 +10,6 @@ package com.echo.services.analyticsproviders.sentry
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
-import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
-import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
-import im.vector.app.features.analytics.plan.SuperProperties
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.core.data.ByteUnit
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
@@ -28,6 +22,12 @@ import com.echo.services.analyticsproviders.api.AnalyticsUserData
 import com.echo.services.analyticsproviders.sentry.log.analyticsTag
 import com.echo.services.appnavstate.api.AppNavigationStateService
 import com.echo.services.appnavstate.api.currentSessionId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
+import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
+import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
+import im.vector.app.features.analytics.plan.SuperProperties
+import im.vector.app.features.analytics.plan.UserProperties
 import io.sentry.Breadcrumb
 import io.sentry.Sentry
 import io.sentry.SentryOptions
@@ -147,4 +147,3 @@ private fun BuildType.toSentryEnv() = when (this) {
     BuildType.NIGHTLY -> SentryConfig.ENV_NIGHTLY
     BuildType.DEBUG -> SentryConfig.ENV_DEBUG
 }
-

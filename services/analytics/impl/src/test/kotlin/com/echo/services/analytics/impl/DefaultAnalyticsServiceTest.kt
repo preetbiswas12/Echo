@@ -10,13 +10,6 @@
 
 package com.echo.services.analytics.impl
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
-import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
-import im.vector.app.features.analytics.plan.MobileScreen
-import im.vector.app.features.analytics.plan.PollEnd
-import im.vector.app.features.analytics.plan.SuperProperties
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.matrix.test.analytics.FakeAnalyticsSdkManager
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.libraries.sessionstorage.test.observer.NoOpSessionObserver
@@ -26,6 +19,13 @@ import com.echo.services.analyticsproviders.api.AnalyticsProvider
 import com.echo.services.analyticsproviders.test.FakeAnalyticsProvider
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
+import im.vector.app.features.analytics.itf.VectorAnalyticsScreen
+import im.vector.app.features.analytics.plan.MobileScreen
+import im.vector.app.features.analytics.plan.PollEnd
+import im.vector.app.features.analytics.plan.SuperProperties
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -313,4 +313,3 @@ class DefaultAnalyticsServiceTest {
         private const val AN_ID = "anId"
     }
 }
-

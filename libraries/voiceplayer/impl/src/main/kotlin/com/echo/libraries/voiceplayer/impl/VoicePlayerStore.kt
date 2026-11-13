@@ -9,9 +9,9 @@ package com.echo.libraries.voiceplayer.impl
 
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
+import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -39,4 +39,3 @@ class PreferencesVoicePlayerStore(
         }
     }
 }
-

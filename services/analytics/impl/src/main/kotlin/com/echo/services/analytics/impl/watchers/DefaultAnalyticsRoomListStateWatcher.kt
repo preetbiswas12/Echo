@@ -7,7 +7,6 @@
 
 package com.echo.services.analytics.impl.watchers
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -19,6 +18,7 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.watchers.AnalyticsRoomListStateWatcher
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.flow.combine
@@ -96,4 +96,3 @@ class DefaultAnalyticsRoomListStateWatcher(
         }
     }
 }
-

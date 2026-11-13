@@ -7,8 +7,6 @@
 
 package com.echo.services.analytics.impl.watchers
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.RoomCoroutineScope
 import com.echo.libraries.matrix.api.core.TransactionId
@@ -18,6 +16,8 @@ import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.watchers.AnalyticsSendMessageWatcher
 import com.echo.services.analyticsproviders.api.AnalyticsTransaction
 import com.echo.services.analyticsproviders.api.AnalyticsTransactions
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Job
@@ -80,4 +80,3 @@ class DefaultAnalyticsSendMessageWatcher(
         }
     }
 }
-

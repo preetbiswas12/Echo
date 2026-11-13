@@ -21,4 +21,3 @@ interface ExternalIntentLauncher {
      */
     fun launch(intent: Intent)
 }
-

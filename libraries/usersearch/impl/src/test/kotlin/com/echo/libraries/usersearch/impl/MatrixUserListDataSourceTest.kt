@@ -8,7 +8,6 @@
 
 package com.echo.libraries.usersearch.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.user.MatrixSearchUserResults
 import com.echo.libraries.matrix.api.user.MatrixUser
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.libraries.matrix.test.A_USER_NAME
 import com.echo.libraries.matrix.test.FakeMatrixClient
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -91,4 +91,3 @@ internal class MatrixUserListDataSourceTest {
         avatarUrl: String = AN_AVATAR_URL
     ) = MatrixUser(userId, displayName, avatarUrl)
 }
-

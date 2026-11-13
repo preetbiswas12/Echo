@@ -8,8 +8,8 @@
 
 package com.echo.libraries.voicerecorder.impl.audio
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 import io.element.android.opusencoder.OggOpusEncoder
 import timber.log.Timber
 import java.io.File
@@ -50,4 +50,3 @@ class DefaultEncoder(
         encoder = null
     }
 }
-

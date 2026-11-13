@@ -63,4 +63,3 @@ fun aVoiceMessageState(
     durationMs = durationMs,
     eventSink = {},
 )
-

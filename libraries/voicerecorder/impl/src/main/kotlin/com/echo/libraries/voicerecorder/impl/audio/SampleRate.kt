@@ -14,4 +14,3 @@ data object SampleRate {
     const val HZ = 48_000
     fun asEncoderModel() = LibOpusOggSampleRate.Rate48kHz
 }
-

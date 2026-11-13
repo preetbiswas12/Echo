@@ -16,5 +16,3 @@ dependencies {
     api(projects.services.analytics.api)
     implementation(projects.services.analytics.noop)
 }
-
-

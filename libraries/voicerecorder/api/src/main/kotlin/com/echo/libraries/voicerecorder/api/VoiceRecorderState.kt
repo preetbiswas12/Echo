@@ -45,4 +45,3 @@ sealed interface VoiceRecorderState {
         val duration: Duration,
     ) : VoiceRecorderState
 }
-

@@ -26,4 +26,3 @@ suspend fun NotificationTroubleshootTest.runAndTestState(
     }
     state.test(validate = validate)
 }
-

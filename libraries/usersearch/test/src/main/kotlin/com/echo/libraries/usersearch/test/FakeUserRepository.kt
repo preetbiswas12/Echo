@@ -28,4 +28,3 @@ class FakeUserRepository : UserRepository {
         flow.emit(state)
     }
 }
-

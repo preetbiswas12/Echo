@@ -8,9 +8,9 @@
 
 package com.echo.services.toolbox.impl.systemclock
 
+import com.echo.services.toolbox.api.systemclock.SystemClock
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.services.toolbox.api.systemclock.SystemClock
 
 @ContributesBinding(AppScope::class)
 class DefaultSystemClock : SystemClock {
@@ -24,4 +24,3 @@ class DefaultSystemClock : SystemClock {
         return System.currentTimeMillis()
     }
 }
-

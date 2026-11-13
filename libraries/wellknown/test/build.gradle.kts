@@ -17,5 +17,3 @@ android {
 dependencies {
     implementation(projects.tests.testutils)
 }
-
-

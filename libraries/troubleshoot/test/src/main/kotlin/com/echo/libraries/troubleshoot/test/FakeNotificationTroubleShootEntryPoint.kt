@@ -20,4 +20,3 @@ class FakeNotificationTroubleShootEntryPoint : NotificationTroubleShootEntryPoin
         callback: NotificationTroubleShootEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

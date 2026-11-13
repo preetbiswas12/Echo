@@ -10,10 +10,10 @@ package com.echo.services.toolbox.impl.intent
 
 import android.content.Context
 import android.content.Intent
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.services.toolbox.api.intent.ExternalIntentLauncher
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultExternalIntentLauncher(
@@ -23,4 +23,3 @@ class DefaultExternalIntentLauncher(
         context.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
     }
 }
-

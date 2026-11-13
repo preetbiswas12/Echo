@@ -33,4 +33,3 @@ interface AnalyticsSdkManager {
      */
     fun bridge(parentTraceId: String? = null): AnalyticsSdkSpan
 }
-

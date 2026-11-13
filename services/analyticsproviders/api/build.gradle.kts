@@ -16,5 +16,3 @@ android {
 dependencies {
     api(libs.matrix.analytics.events)
 }
-
-

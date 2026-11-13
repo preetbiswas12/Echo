@@ -69,4 +69,3 @@ interface AppNavigationStateService {
      */
     fun onLeavingThread(owner: String)
 }
-

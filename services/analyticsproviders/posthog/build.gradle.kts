@@ -45,5 +45,3 @@ dependencies {
 
     testCommonDependencies(libs)
 }
-
-

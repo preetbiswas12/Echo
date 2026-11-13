@@ -11,4 +11,3 @@ package com.echo.services.analyticsproviders.sentry.log
 import com.echo.libraries.core.log.logger.LoggerTag
 
 internal val analyticsTag = LoggerTag("Sentry")
-

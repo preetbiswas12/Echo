@@ -24,5 +24,3 @@ dependencies {
     api(projects.services.analytics.api)
     testCommonDependencies(libs)
 }
-
-

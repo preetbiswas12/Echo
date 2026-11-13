@@ -12,4 +12,3 @@ object VoicePlayerConfig {
     // the UI will allow to change to the next speed in the list, in loop.
     val availablePlaybackSpeeds = listOf(1.0f, 1.5f, 2.0f, 0.5f)
 }
-

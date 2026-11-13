@@ -8,13 +8,13 @@
 
 package com.echo.services.analyticsproviders.posthog
 
+import com.echo.tests.testutils.WarmUpRule
 import com.google.common.truth.Truth.assertThat
 import com.posthog.PostHogInterface
 import im.vector.app.features.analytics.itf.VectorAnalyticsEvent
 import im.vector.app.features.analytics.plan.MobileScreen
 import im.vector.app.features.analytics.plan.SuperProperties
 import im.vector.app.features.analytics.plan.UserProperties
-import com.echo.tests.testutils.WarmUpRule
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -217,4 +217,3 @@ class PosthogAnalyticsProviderTest {
         verify { mockPosthog.capture(event = "MockEventName", any(), properties = mapOf("appPlatform" to SuperProperties.AppPlatform.Other), any()) }
     }
 }
-

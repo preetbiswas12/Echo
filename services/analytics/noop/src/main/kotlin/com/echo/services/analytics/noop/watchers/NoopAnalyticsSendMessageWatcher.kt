@@ -7,13 +7,12 @@
 
 package com.echo.services.analytics.noop.watchers
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
 import com.echo.services.analytics.api.watchers.AnalyticsSendMessageWatcher
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class NoopAnalyticsSendMessageWatcher : AnalyticsSendMessageWatcher {
     override fun start() = Unit
     override fun stop() = Unit
 }
-

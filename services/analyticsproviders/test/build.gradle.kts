@@ -17,5 +17,3 @@ dependencies {
     implementation(projects.services.analyticsproviders.api)
     implementation(projects.tests.testutils)
 }
-
-
