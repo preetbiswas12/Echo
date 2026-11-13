@@ -42,4 +42,3 @@ class RunCatchingRule(config: Config) : Rule(config) {
         }
     }
 }
-

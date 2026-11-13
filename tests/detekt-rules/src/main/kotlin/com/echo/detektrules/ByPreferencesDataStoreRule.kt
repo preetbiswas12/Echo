@@ -43,4 +43,3 @@ class ByPreferencesDataStoreRule(config: Config) : Rule(config) {
         }
     }
 }
-

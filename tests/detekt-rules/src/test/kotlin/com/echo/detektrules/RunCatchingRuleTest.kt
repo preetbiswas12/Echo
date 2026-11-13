@@ -32,4 +32,3 @@ class RunCatchingRuleTest {
         }
         """.trimIndent()
 }
-
