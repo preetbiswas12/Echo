@@ -9,6 +9,7 @@ package com.echo.libraries.pushproviders.unifiedpush.distributor
 
 import android.content.Context
 import androidx.core.content.edit
+import com.echo.libraries.core.extensions.runCatchingExceptions
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -33,7 +34,7 @@ internal class NtfyDistributorStore(context: Context) {
 
     fun registrations(): List<NtfyRegistration> {
         return preferences.getString(KEY_REGISTRATIONS, null)
-            ?.let { encoded -> runCatching { json.decodeFromString<List<NtfyRegistration>>(encoded) }.getOrNull() }
+            ?.let { encoded -> runCatchingExceptions { json.decodeFromString<List<NtfyRegistration>>(encoded) }.getOrNull() }
             .orEmpty()
     }
 

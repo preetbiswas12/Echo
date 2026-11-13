@@ -228,7 +228,7 @@ class NtfyPushService : Service() {
         }
 
         override fun onMessage(webSocket: WebSocket, text: String) {
-            val streamMessage = runCatching { json.decodeFromString<NtfyStreamMessage>(text) }.getOrNull()
+            val streamMessage = runCatchingExceptions { json.decodeFromString<NtfyStreamMessage>(text) }.getOrNull()
             if (streamMessage != null) {
                 onMessageReceived(streamMessage)
             }
