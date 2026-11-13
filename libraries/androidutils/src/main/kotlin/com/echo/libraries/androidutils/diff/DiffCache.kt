@@ -56,4 +56,3 @@ class MutableListDiffCache<E>(private val mutableList: MutableList<E?> = ArrayLi
         mutableList.add(index, element)
     }
 }
-

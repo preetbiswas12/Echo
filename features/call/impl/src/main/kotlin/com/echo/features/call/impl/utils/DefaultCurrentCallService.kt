@@ -8,13 +8,13 @@
 
 package com.echo.features.call.impl.utils
 
+import com.echo.features.call.api.CurrentCall
+import com.echo.features.call.api.CurrentCallService
+import com.echo.features.call.api.CurrentCallTracker
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import dev.zacsweers.metro.binding
-import com.echo.features.call.api.CurrentCall
-import com.echo.features.call.api.CurrentCallService
-import com.echo.features.call.api.CurrentCallTracker
 import kotlinx.coroutines.flow.MutableStateFlow
 
 @SingleIn(AppScope::class)
@@ -31,4 +31,3 @@ class DefaultCurrentCallService : CurrentCallService, CurrentCallTracker {
         currentCall.value = CurrentCall.None
     }
 }
-

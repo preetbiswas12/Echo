@@ -19,4 +19,3 @@ fun RgbColor.toDashColor(): String {
             it.toString(16).padStart(2, '0')
         }
 }
-

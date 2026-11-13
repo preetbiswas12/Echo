@@ -437,4 +437,3 @@ private fun rememberCacheKey(variant: PinVariant): String {
         "${pinVariant}_{$isLightTheme}_{$density}"
     }
 }
-

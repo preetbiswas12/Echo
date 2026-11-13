@@ -24,4 +24,3 @@ fun BaseRoom.matches(roomIdOrAlias: RoomIdOrAlias): Boolean {
         }
     }
 }
-

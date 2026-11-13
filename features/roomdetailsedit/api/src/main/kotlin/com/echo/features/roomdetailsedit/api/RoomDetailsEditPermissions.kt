@@ -35,4 +35,3 @@ fun RoomPermissions.roomDetailsEditPermissions(): RoomDetailsEditPermissions {
         canEditAvatar = canOwnUserSendState(StateEventType.RoomAvatar),
     )
 }
-

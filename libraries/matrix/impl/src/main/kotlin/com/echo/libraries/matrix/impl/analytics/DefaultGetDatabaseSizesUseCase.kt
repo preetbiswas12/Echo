@@ -7,13 +7,13 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.data.bytes
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.analytics.GetDatabaseSizesUseCase
 import com.echo.libraries.matrix.api.analytics.SdkStoreSizes
 import com.echo.libraries.matrix.api.core.SessionId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import java.io.File
 import kotlin.math.max
 
@@ -62,4 +62,3 @@ class DefaultGetDatabaseSizesUseCase(
         return max(databaseSize, walSize)
     }
 }
-

@@ -52,4 +52,3 @@ fun BaseRoom.getDirectRoomMember(roomMembersState: RoomMembersState): State<Room
 fun BaseRoom.getCurrentRoomMember(roomMembersState: RoomMembersState): State<RoomMember?> {
     return getRoomMemberAsState(roomMembersState = roomMembersState, userId = sessionId)
 }
-

@@ -44,4 +44,3 @@ fun aSpaceSettingsState(
     showSecurityAndPrivacy = showSecurityAndPrivacy,
     eventSink = eventSink,
 )
-

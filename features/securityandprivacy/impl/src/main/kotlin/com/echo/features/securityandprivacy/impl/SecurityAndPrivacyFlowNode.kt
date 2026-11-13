@@ -19,8 +19,6 @@ import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.securityandprivacy.api.SecurityAndPrivacyEntryPoint
 import com.echo.features.securityandprivacy.api.securityAndPrivacyPermissions
@@ -34,6 +32,8 @@ import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.powerlevels.use
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
@@ -107,4 +107,3 @@ class SecurityAndPrivacyFlowNode(
         BackstackView(modifier)
     }
 }
-

@@ -19,4 +19,3 @@ fun AccountManagementAction.toRustAction(): RustAccountManagementAction {
         AccountManagementAction.DevicesList -> RustAccountManagementAction.DevicesList
     }
 }
-

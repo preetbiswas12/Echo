@@ -171,4 +171,3 @@ sealed interface TimelineItemThreadInfo {
     data class ThreadRoot(val summary: ThreadSummary, val latestEventText: String?) : TimelineItemThreadInfo
     data class ThreadResponse(val threadRootId: ThreadId) : TimelineItemThreadInfo
 }
-

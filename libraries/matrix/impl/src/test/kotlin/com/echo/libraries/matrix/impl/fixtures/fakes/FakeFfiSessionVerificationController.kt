@@ -15,4 +15,3 @@ import org.matrix.rustcomponents.sdk.SessionVerificationControllerDelegate
 class FakeFfiSessionVerificationController : SessionVerificationController(NoHandle) {
     override fun setDelegate(delegate: SessionVerificationControllerDelegate?) {}
 }
-

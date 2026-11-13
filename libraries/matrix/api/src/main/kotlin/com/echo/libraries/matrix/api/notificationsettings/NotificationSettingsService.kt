@@ -122,4 +122,3 @@ interface NotificationSettingsService {
     /** The push rules as raw JSON, for debugging and bug reports; `null` when the server returned none. */
     suspend fun getRawPushRules(): Result<String?>
 }
-

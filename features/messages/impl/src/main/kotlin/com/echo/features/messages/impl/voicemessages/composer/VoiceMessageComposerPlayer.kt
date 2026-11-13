@@ -8,10 +8,10 @@
 
 package com.echo.features.messages.impl.voicemessages.composer
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.mediaplayer.api.MediaPlayer
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
@@ -245,4 +245,3 @@ class VoiceMessageComposerPlayer(
         }
     }
 }
-

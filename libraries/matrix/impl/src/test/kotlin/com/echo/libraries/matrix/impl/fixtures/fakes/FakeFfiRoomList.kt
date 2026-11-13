@@ -33,4 +33,3 @@ class FakeFfiRoomList(
 
     override fun destroy() = Unit
 }
-

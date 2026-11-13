@@ -7,11 +7,11 @@
 
 package com.echo.features.enterprise.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.enterprise.api.ClientBuilderEnterpriseHook
 import com.echo.libraries.matrix.api.MatrixClientBuilder
 import com.echo.libraries.matrix.api.core.SessionId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 /**
  * Default implementation of [ClientBuilderEnterpriseHook] that does nothing for FOSS.
@@ -28,4 +28,3 @@ class DefaultClientBuilderEnterpriseHook : ClientBuilderEnterpriseHook {
         return clientBuilder
     }
 }
-

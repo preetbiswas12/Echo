@@ -31,5 +31,3 @@ dependencies {
     implementation(libs.network.retrofit.converter.serialization)
     implementation(libs.serialization.json)
 }
-
-

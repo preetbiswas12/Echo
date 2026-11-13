@@ -24,4 +24,3 @@ class AppMigration03(
         migration01.migrate(isFreshInstall)
     }
 }
-

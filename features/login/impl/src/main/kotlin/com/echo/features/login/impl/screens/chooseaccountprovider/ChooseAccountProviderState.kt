@@ -23,4 +23,3 @@ data class ChooseAccountProviderState(
         get() = selectedAccountProvider != null &&
             (loginModeState.loginMode is AsyncData.Uninitialized || loginModeState.loginMode is AsyncData.Loading)
 }
-

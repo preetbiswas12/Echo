@@ -36,4 +36,3 @@ fun AsyncLoading(modifier: Modifier = Modifier) {
 internal fun AsyncLoadingPreview() = ElementPreview {
     AsyncLoading()
 }
-

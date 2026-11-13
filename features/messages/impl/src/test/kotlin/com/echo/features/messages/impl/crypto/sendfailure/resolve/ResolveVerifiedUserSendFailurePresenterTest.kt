@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.crypto.sendfailure.resolve
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.crypto.sendfailure.VerifiedUserSendFailure
 import com.echo.features.messages.impl.crypto.sendfailure.VerifiedUserSendFailureFactory
 import com.echo.features.messages.impl.fixtures.aMessageEvent
@@ -23,6 +22,7 @@ import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -360,4 +360,3 @@ class ResolveVerifiedUserSendFailurePresenterTest {
         )
     }
 }
-

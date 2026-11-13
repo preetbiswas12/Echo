@@ -16,4 +16,3 @@ import kotlin.reflect.KClass
 @Target(AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.FUNCTION, AnnotationTarget.CLASS)
 @MapKey
 annotation class NodeKey(val value: KClass<out Node>)
-

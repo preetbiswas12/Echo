@@ -756,4 +756,3 @@ private class CenterStartOfAnchorPositionProvider(
         )
     }
 }
-

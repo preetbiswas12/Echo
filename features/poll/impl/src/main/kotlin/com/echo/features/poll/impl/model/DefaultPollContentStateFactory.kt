@@ -8,7 +8,6 @@
 
 package com.echo.features.poll.impl.model
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.poll.api.pollcontent.PollAnswerItem
 import com.echo.features.poll.api.pollcontent.PollContentState
 import com.echo.features.poll.api.pollcontent.PollContentStateFactory
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.poll.isDisclosed
 import com.echo.libraries.matrix.api.timeline.item.event.PollContent
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.toImmutableList
 
 @ContributesBinding(RoomScope::class)
@@ -77,4 +77,3 @@ class DefaultPollContentStateFactory(
         )
     }
 }
-

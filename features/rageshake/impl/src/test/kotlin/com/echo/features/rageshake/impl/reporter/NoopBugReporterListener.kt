@@ -16,4 +16,3 @@ class NoopBugReporterListener : BugReporterListener {
     override fun onProgress(progress: Int) = Unit
     override fun onUploadSucceed() = Unit
 }
-

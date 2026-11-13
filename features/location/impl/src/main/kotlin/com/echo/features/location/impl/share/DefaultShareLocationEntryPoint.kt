@@ -10,11 +10,11 @@ package com.echo.features.location.impl.share
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.location.api.ShareLocationEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.matrix.api.timeline.Timeline
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultShareLocationEntryPoint : ShareLocationEntryPoint {
@@ -29,4 +29,3 @@ class DefaultShareLocationEntryPoint : ShareLocationEntryPoint {
         )
     }
 }
-

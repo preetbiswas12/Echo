@@ -10,14 +10,14 @@ package com.echo.libraries.push.impl.notifications
 
 import android.service.notification.StatusBarNotification
 import androidx.core.app.NotificationManagerCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.ThreadId
 import com.echo.libraries.push.api.notifications.NotificationIdProvider
 import com.echo.libraries.push.impl.notifications.factories.NotificationCreator
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 interface ActiveNotificationsProvider {
@@ -86,4 +86,3 @@ class DefaultActiveNotificationsProvider(
         return getNotificationsForSession(sessionId).size
     }
 }
-

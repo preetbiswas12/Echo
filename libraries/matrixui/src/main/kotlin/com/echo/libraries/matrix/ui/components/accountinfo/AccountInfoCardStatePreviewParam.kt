@@ -40,4 +40,3 @@ private fun anAccountInfoCardState(
     matrixUser = matrixUser,
     mode = mode,
 )
-

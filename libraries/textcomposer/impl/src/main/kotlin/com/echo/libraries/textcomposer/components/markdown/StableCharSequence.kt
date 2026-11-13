@@ -32,4 +32,3 @@ class StableCharSequence(initialText: CharSequence = "") {
         return "StableCharSequence(value='$value', needsDisplaying=$needsDisplaying)"
     }
 }
-

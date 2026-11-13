@@ -20,4 +20,3 @@ sealed interface BugReportEvent {
     data class SetSendPushRules(val sendPushRules: Boolean) : BugReportEvent
     data class SetGhIssueNumber(val ghIssueNumber: Int?) : BugReportEvent
 }
-

@@ -20,4 +20,3 @@ data class ThreadsListState(
     val threads: ImmutableList<ThreadListRowItem>,
     val eventSink: (ThreadsListEvent) -> Unit,
 )
-

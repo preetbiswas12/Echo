@@ -7,7 +7,6 @@
 
 package com.echo.libraries.slashcommands.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.matrix.api.core.MatrixPatterns
@@ -20,6 +19,7 @@ import com.echo.libraries.slashcommands.api.ChatEffect
 import com.echo.libraries.slashcommands.api.MessagePrefix
 import com.echo.libraries.slashcommands.api.SlashCommand
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
 
@@ -440,4 +440,3 @@ class CommandParser(
         return message.substring(partsSize + gapsNumber).trim().takeIf { it.isNotEmpty() }
     }
 }
-

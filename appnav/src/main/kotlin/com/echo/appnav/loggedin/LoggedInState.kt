@@ -24,4 +24,3 @@ data class LoggedInState(
     val localNetworkPermissionDialog: LocalNetworkPermissionDialog,
     val eventSink: (LoggedInEvent) -> Unit,
 )
-

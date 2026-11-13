@@ -186,4 +186,3 @@ internal fun HeaderFooterPageScrollablePreview() = ElementPreview {
         isScrollable = true,
     )
 }
-

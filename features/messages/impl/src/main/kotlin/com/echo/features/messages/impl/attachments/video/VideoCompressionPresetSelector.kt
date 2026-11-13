@@ -7,9 +7,9 @@
 
 package com.echo.features.messages.impl.attachments.video
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 
 @Inject
@@ -29,4 +29,3 @@ class VideoCompressionPresetSelector {
         }
     }
 }
-

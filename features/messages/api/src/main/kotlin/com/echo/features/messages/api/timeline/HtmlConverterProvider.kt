@@ -24,4 +24,3 @@ interface HtmlConverterProvider {
     /** Returns the converter built by the last [Update] call. */
     fun provide(): HtmlConverter
 }
-

@@ -25,4 +25,3 @@ fun ClientException.isNetworkError(): Boolean {
 
 fun Throwable.isNetworkError(): Boolean =
     (this as? ClientException)?.isNetworkError() == true
-

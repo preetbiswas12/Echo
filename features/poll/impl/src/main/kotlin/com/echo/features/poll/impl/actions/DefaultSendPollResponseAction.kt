@@ -8,13 +8,13 @@
 
 package com.echo.features.poll.impl.actions
 
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.PollVote
 import com.echo.features.poll.api.actions.SendPollResponseAction
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.PollVote
 
 @ContributesBinding(RoomScope::class)
 class DefaultSendPollResponseAction(
@@ -29,4 +29,3 @@ class DefaultSendPollResponseAction(
         }
     }
 }
-

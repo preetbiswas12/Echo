@@ -30,4 +30,3 @@ object NotificationConfig {
     @ColorInt
     val NOTIFICATION_ACCENT_COLOR: Int = "#FF0DBD8B".toColorInt()
 }
-

@@ -19,4 +19,3 @@ internal fun anEventTimelineItemDebugInfo(
     originalJson = originalJson,
     latestEditJson = latestEditJson
 )
-

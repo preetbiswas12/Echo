@@ -9,7 +9,6 @@
 package com.echo.libraries.textcomposer.impl.mentions
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.api.permalink.PermalinkData
@@ -18,6 +17,7 @@ import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.libraries.textcomposer.mentions.MentionType
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -57,4 +57,3 @@ class IntentionalMentionSpanProviderTest : RobolectricTest() {
         assertThat(roomType.roomIdOrAlias).isEqualTo(RoomAlias("#room:matrix.org").toRoomIdOrAlias())
     }
 }
-

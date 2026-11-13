@@ -8,8 +8,8 @@
 
 package com.echo.features.home.impl.filters
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.R
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class RoomListFiltersEmptyStateResourcesTest {
@@ -82,4 +82,3 @@ class RoomListFiltersEmptyStateResourcesTest {
         assertThat(result?.subtitle).isEqualTo(R.string.screen_roomlist_filter_mixed_empty_state_subtitle)
     }
 }
-

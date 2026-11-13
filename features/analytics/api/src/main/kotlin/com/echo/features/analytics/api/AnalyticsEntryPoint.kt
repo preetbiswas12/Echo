@@ -11,4 +11,3 @@ package com.echo.features.analytics.api
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 fun interface AnalyticsEntryPoint : SimpleFeatureEntryPoint
-

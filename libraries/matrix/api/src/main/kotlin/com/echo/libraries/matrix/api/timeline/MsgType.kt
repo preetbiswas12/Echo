@@ -17,4 +17,3 @@ enum class MsgType {
     // For future support
     MSG_TYPE_CONFETTI,
 }
-

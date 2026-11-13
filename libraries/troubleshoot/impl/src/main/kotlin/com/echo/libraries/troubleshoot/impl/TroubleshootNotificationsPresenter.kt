@@ -13,11 +13,11 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
+import com.echo.libraries.architecture.Presenter
+import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootNavigator
 import dev.zacsweers.metro.Assisted
 import dev.zacsweers.metro.AssistedFactory
 import dev.zacsweers.metro.AssistedInject
-import com.echo.libraries.architecture.Presenter
-import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootNavigator
 import kotlinx.coroutines.launch
 
 @AssistedInject
@@ -62,4 +62,3 @@ class TroubleshootNotificationsPresenter(
         )
     }
 }
-

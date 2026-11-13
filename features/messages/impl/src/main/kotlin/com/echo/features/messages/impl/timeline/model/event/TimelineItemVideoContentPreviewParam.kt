@@ -50,4 +50,3 @@ fun aTimelineItemVideoContent(
     formattedFileSize = "14MB",
     fileExtension = "mp4"
 )
-

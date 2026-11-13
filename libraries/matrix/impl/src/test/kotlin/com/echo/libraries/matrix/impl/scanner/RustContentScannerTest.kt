@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl.scanner
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
 import com.echo.libraries.matrix.test.media.aMediaSource
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -58,4 +58,3 @@ class RustContentScannerTest {
         }
     }
 }
-

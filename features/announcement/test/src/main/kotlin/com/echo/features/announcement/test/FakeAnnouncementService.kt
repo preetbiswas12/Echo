@@ -46,4 +46,3 @@ class FakeAnnouncementService(
         renderResult(modifier)
     }
 }
-

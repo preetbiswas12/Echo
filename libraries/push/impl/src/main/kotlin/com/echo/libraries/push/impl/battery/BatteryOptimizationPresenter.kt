@@ -16,12 +16,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.compose.LifecycleResumeEffect
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.push.api.battery.BatteryOptimizationEvent
 import com.echo.libraries.push.api.battery.BatteryOptimizationState
 import com.echo.libraries.push.impl.push.MutableBatteryOptimizationStore
 import com.echo.libraries.push.impl.store.PushDataStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -71,4 +71,3 @@ class BatteryOptimizationPresenter(
         )
     }
 }
-

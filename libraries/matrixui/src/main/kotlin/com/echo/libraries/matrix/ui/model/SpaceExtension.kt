@@ -46,4 +46,3 @@ val SpaceRoomVisibility.label: String
             SpaceRoomVisibility.SpaceMembers -> stringResource(CommonStrings.common_space_members)
         }
     }
-

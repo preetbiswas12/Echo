@@ -114,4 +114,3 @@ private class PlainTextNodeVisitor : NodeVisitor {
         return builder.toString().trim()
     }
 }
-

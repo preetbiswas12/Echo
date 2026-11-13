@@ -15,4 +15,3 @@ sealed interface SecureBackupSetupEvent {
     data object Done : SecureBackupSetupEvent
     data object DismissDialog : SecureBackupSetupEvent
 }
-

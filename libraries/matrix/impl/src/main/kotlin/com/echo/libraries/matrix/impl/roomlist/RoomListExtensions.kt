@@ -124,4 +124,3 @@ internal fun RoomListServiceInterface.roomOrNull(roomId: RoomId): Room? {
         room(roomId.value)
     }
 }
-

@@ -111,4 +111,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setBlockedUsersView(
         )
     }
 }
-

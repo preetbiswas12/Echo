@@ -8,14 +8,14 @@
 
 package com.echo.libraries.preferences.impl.store.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.libraries.preferences.impl.store.DefaultSessionPreferencesStoreFactory
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 import kotlinx.coroutines.CoroutineScope
 
 @BindingContainer
@@ -31,4 +31,3 @@ object SessionPreferencesBindingContainer {
             .get(sessionId, sessionCoroutineScope)
     }
 }
-

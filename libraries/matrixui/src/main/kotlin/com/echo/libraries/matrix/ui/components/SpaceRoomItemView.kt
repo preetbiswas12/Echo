@@ -232,4 +232,3 @@ internal fun SpaceRoomItemViewPreview(@PreviewParameter(SpaceRoomPreviewParam::c
         }
     )
 }
-

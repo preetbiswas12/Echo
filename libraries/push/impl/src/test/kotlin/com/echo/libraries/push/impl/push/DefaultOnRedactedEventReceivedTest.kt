@@ -13,7 +13,6 @@ import android.service.notification.StatusBarNotification
 import androidx.core.app.NotificationCompat
 import androidx.core.app.Person
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.AN_EVENT_ID
@@ -31,6 +30,7 @@ import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
@@ -149,4 +149,3 @@ class DefaultOnRedactedEventReceivedTest : RobolectricTest() {
         )
     }
 }
-

@@ -17,4 +17,3 @@ fun RustLiveLocationException.map(): LiveLocationException {
         else -> LiveLocationException.Other(this)
     }
 }
-

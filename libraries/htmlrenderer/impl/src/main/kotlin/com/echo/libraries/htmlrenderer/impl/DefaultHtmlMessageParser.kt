@@ -13,8 +13,6 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.htmlrenderer.api.BlockNode
 import com.echo.libraries.htmlrenderer.api.CodeBlockNode
 import com.echo.libraries.htmlrenderer.api.DocumentNode
@@ -31,6 +29,8 @@ import com.echo.libraries.htmlrenderer.api.spans.InlineCodeSpanStyle
 import com.echo.libraries.matrix.api.permalink.PermalinkBuilder
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.toImmutableList
@@ -262,4 +262,3 @@ private const val TAG_A = "a"
 private const val TAG_MX_REPLY = "mx-reply"
 
 private const val MENTION_ID_PREFIX = "mention_"
-

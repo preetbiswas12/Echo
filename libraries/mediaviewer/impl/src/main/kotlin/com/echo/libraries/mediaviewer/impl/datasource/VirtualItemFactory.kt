@@ -8,12 +8,12 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.virtual.VirtualTimelineItem
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.Inject
 
 @Inject
 class VirtualItemFactory(
@@ -41,4 +41,3 @@ class VirtualItemFactory(
         }
     }
 }
-

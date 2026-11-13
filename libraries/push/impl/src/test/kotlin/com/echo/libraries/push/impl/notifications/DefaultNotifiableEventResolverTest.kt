@@ -9,7 +9,6 @@
 package com.echo.libraries.push.impl.notifications
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.exception.NotificationResolverException
@@ -64,6 +63,7 @@ import com.echo.services.toolbox.impl.strings.AndroidStringProvider
 import com.echo.services.toolbox.test.systemclock.A_FAKE_TIMESTAMP
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
@@ -1088,4 +1088,3 @@ class DefaultNotifiableEventResolverTest : RobolectricTest() {
         )
     }
 }
-

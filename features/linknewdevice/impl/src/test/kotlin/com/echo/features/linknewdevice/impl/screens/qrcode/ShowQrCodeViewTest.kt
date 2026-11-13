@@ -41,4 +41,3 @@ class ShowQrCodeViewTest : RobolectricTest() {
         }
     }
 }
-

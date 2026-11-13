@@ -12,4 +12,3 @@ sealed interface SetupPinFailure {
     data object ForbiddenPin : SetupPinFailure
     data object PinsDoNotMatch : SetupPinFailure
 }
-

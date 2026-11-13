@@ -7,9 +7,9 @@
 
 package com.echo.features.preferences.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.preferences.api.store.NotificationSound
 import com.echo.libraries.preferences.api.store.NotificationSound.Companion.toStored
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class NotificationSoundStorageTest {
@@ -78,4 +78,3 @@ class NotificationSoundStorageTest {
         }
     }
 }
-

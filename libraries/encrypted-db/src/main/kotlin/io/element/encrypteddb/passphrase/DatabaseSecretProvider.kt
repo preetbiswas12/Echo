@@ -24,4 +24,3 @@ interface DatabaseSecretProvider {
      */
     fun reset(): Boolean
 }
-

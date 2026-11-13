@@ -23,4 +23,3 @@ internal object NoOpClientSessionDelegate : ClientSessionDelegate {
         error("retrieveSessionFromKeychain should never be called for Android")
     }
 }
-

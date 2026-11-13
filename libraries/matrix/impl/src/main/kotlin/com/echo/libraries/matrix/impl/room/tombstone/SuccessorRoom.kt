@@ -18,4 +18,3 @@ fun RustSuccessorRoom.map(): SuccessorRoom {
         reason = reason
     )
 }
-

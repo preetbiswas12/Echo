@@ -9,9 +9,9 @@
 package com.echo.libraries.mediaupload.impl
 
 import androidx.media3.transformer.VideoEncoderSettings
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 @Suppress("NOTHING_TO_INLINE")
 class VideoCompressorConfigFactoryTest : RobolectricTest() {
@@ -145,4 +145,3 @@ class VideoCompressorConfigFactoryTest : RobolectricTest() {
         assertThat(videoCompressorConfig.videoCompressorHelper.maxSize).isEqualTo(referenceSize)
     }
 }
-

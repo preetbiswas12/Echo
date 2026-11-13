@@ -19,4 +19,3 @@ sealed interface AppDeveloperSettingsEvent {
     data class ToggleTracingLogPack(val logPack: TraceLogPack, val enabled: Boolean) : AppDeveloperSettingsEvent
     data class CopyToClipboard(val text: String) : AppDeveloperSettingsEvent
 }
-

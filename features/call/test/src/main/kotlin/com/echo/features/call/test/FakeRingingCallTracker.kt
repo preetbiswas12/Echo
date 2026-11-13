@@ -22,4 +22,3 @@ class FakeRingingCallTracker : RingingCallTracker {
         ended += callData
     }
 }
-

@@ -17,5 +17,3 @@ dependencies {
     implementation(projects.libraries.accountselect.api)
     implementation(projects.tests.testutils)
 }
-
-

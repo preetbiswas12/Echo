@@ -20,4 +20,3 @@ class FakeClock : Clock {
 
     override fun now(): Instant = instant
 }
-

@@ -14,9 +14,6 @@ import androidx.compose.material3.ComposeMaterial3Flags.isAnchoredDraggableCompo
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.startup.AppInitializer
 import androidx.work.Configuration
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.createGraphFactory
-import io.element.android.call.ui.ElementCallActivity
 import com.echo.libraries.architecture.bindings
 import com.echo.libraries.di.DependencyInjectionGraphOwner
 import com.echo.libraries.matrix.api.SdkMetadata
@@ -29,6 +26,9 @@ import com.echo.x.info.logApplicationInfo
 import com.echo.x.initializer.CacheCleanerInitializer
 import com.echo.x.initializer.CrashInitializer
 import com.echo.x.initializer.PlatformInitializer
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.createGraphFactory
+import io.element.android.call.ui.ElementCallActivity
 
 // The private constructor is there so the native call screen's host can be a delegate: Android instantiates
 // the Application through the public no-arg one.
@@ -81,4 +81,3 @@ class ElementXApplication private constructor(
         )
     }
 }
-

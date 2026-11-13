@@ -27,4 +27,3 @@ enum class MembershipChange {
     KNOCK_DENIED,
     NOT_IMPLEMENTED
 }
-

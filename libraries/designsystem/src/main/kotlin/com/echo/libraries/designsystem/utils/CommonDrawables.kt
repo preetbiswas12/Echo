@@ -11,4 +11,3 @@ package com.echo.libraries.designsystem.utils
 import com.echo.libraries.designsystem.R
 
 typealias CommonDrawables = R.drawable
-

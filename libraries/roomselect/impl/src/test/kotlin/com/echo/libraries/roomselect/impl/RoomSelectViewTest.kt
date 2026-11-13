@@ -238,4 +238,3 @@ private fun aLongRoomList() = List(30) { index ->
         name = "Room $index",
     )
 }.toImmutableList()
-

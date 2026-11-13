@@ -13,4 +13,3 @@ data class FullScreenIntentPermissionsState(
     val shouldDisplayBanner: Boolean,
     val eventSink: (FullScreenIntentPermissionsEvent) -> Unit,
 )
-

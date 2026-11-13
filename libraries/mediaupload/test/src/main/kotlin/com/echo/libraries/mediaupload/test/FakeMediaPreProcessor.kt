@@ -123,4 +123,3 @@ class FakeMediaPreProcessor(
         cleanUpCallCount += 1
     }
 }
-

@@ -16,7 +16,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.compound.theme.Theme
 import com.echo.compound.theme.mapToTheme
 import com.echo.features.location.api.LocationService
@@ -38,6 +37,7 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.sessionstorage.api.SessionData
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -196,4 +196,3 @@ class PreferencesRootPresenter(
         }
     }
 }
-

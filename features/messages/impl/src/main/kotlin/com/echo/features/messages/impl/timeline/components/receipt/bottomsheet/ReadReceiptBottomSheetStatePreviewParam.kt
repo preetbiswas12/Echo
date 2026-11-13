@@ -30,4 +30,3 @@ class ReadReceiptBottomSheetStatePreviewParam : PreviewParameterProvider<ReadRec
             )
         }
 }
-

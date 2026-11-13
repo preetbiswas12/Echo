@@ -20,4 +20,3 @@ data class TimelineItemReactions(
             .map { it.key }
             .toImmutableList()
 }
-

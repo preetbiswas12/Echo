@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.components.customreaction
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.aTimelineItemEvent
 import com.echo.features.messages.impl.timeline.aTimelineItemReactions
 import com.echo.libraries.emoji.api.recentemojis.EmptyGetRecentEmojis
@@ -16,6 +15,7 @@ import com.echo.libraries.emoji.test.fakeEmojiPickerPresenterFactory
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -64,4 +64,3 @@ class CustomReactionPresenterTest {
         }
     }
 }
-

@@ -43,4 +43,3 @@ fun aModerationAndSafetyState(
     numberOfBlockedUsers = numberOfBlockedUsers,
     eventSink = eventSink
 )
-

@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.auth.HomeServerLoginCompatibilityChecker
 import com.echo.libraries.matrix.impl.ClientBuilderProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
@@ -38,4 +38,3 @@ class RustHomeServerLoginCompatibilityChecker(
         }
     }
 }
-

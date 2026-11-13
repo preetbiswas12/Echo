@@ -11,10 +11,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
+import com.echo.features.callnative.api.NativeCallScreenHost
 import io.element.android.call.api.ElementCallController
 import io.element.android.call.ui.ElementCallActivity
 import io.element.android.call.ui.theme.ElementCallStyle
-import com.echo.features.callnative.api.NativeCallScreenHost
 
 /**
  * The native call screen's host, which `ElementXApplication` implements by delegating here: the library looks
@@ -44,4 +44,3 @@ class ElementCallActivityHostDelegate : ElementCallActivity.Host {
     override fun CallScreenContent(content: @Composable (style: ElementCallStyle?) -> Unit) =
         host.CallScreenContent(content)
 }
-

@@ -26,4 +26,3 @@ val LinkColor = Color(0xFF0086E6)
 val SnackBarLabelColorLight = LightColorTokens.colorGray700
 @OptIn(CoreColorToken::class)
 val SnackBarLabelColorDark = DarkColorTokens.colorGray700
-

@@ -12,4 +12,3 @@ import io.element.android.emojibasebindings.EmojibaseStore
 interface EmojibaseProvider {
     suspend fun getStore(): EmojibaseStore
 }
-

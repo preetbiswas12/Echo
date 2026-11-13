@@ -14,4 +14,3 @@ import com.echo.libraries.textcomposer.model.MessageComposerMode
 class FakeMessageComposerContext(
     override var composerMode: MessageComposerMode = MessageComposerMode.Normal
 ) : MessageComposerContext
-

@@ -8,11 +8,11 @@
 
 package com.echo.x.di
 
-import dev.zacsweers.metro.GraphExtension
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.architecture.NodeFactoriesBindings
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.GraphExtension
+import dev.zacsweers.metro.Provides
 
 @GraphExtension(SessionScope::class)
 interface SessionGraph : NodeFactoriesBindings {
@@ -23,4 +23,3 @@ interface SessionGraph : NodeFactoriesBindings {
         fun create(@Provides matrixClient: MatrixClient): SessionGraph
     }
 }
-

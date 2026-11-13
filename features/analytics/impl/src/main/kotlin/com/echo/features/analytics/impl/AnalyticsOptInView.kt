@@ -177,4 +177,3 @@ internal fun AnalyticsOptInViewPreview(@PreviewParameter(AnalyticsOptInStatePrev
         onClickTerms = {},
     )
 }
-

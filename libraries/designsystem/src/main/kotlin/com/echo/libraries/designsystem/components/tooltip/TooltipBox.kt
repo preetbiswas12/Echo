@@ -35,4 +35,3 @@ fun TooltipBox(
     enableUserInput = enableUserInput,
     content = content,
 )
-

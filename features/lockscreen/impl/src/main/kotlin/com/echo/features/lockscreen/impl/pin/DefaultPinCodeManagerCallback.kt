@@ -15,4 +15,3 @@ open class DefaultPinCodeManagerCallback : PinCodeManager.Callback {
 
     override fun onPinCodeRemoved() = Unit
 }
-

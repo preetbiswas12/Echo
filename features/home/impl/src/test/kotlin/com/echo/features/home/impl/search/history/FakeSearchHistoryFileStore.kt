@@ -31,4 +31,3 @@ class FakeSearchHistoryFileStore(
         return true
     }
 }
-

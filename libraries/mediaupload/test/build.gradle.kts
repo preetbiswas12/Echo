@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.libraries.core)
     implementation(projects.tests.testutils)
 }
-
-

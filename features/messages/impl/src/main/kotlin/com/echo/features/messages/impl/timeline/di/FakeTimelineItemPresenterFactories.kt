@@ -32,4 +32,3 @@ fun aFakeTimelineItemPresenterFactories() = TimelineItemPresenterFactories(
         ),
     )
 )
-

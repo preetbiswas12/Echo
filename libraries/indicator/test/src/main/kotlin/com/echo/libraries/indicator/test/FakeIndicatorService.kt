@@ -36,4 +36,3 @@ class FakeIndicatorService : IndicatorService {
         return showSettingChatBackupIndicatorResult
     }
 }
-

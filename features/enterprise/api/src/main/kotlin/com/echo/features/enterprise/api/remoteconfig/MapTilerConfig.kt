@@ -23,4 +23,3 @@ data class MapTilerConfig(
     /** The base URL to use for MapTiler. This is optional and can be null. */
     val baseUrl: String?,
 )
-

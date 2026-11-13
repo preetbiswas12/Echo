@@ -9,8 +9,6 @@
 package com.echo.features.startchat.impl
 
 import androidx.compose.runtime.mutableStateOf
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.CreatedRoom
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.enterprise.test.FakeSessionEnterpriseService
 import com.echo.features.startchat.api.ConfirmingStartDmWithMatrixUser
@@ -28,6 +26,8 @@ import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.CreatedRoom
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -163,4 +163,3 @@ class DefaultStartDMActionTest {
         )
     }
 }
-

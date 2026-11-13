@@ -24,4 +24,3 @@ interface ShowLocationEntryPoint : FeatureEntryPoint {
         inputs: Inputs,
     ): Node
 }
-

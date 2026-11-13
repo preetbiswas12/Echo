@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemPollContent
 import com.echo.features.poll.api.pollcontent.PollContentStateFactory
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.timeline.item.event.PollContent
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemContentPollFactory(
@@ -39,4 +39,3 @@ class TimelineItemContentPollFactory(
         )
     }
 }
-

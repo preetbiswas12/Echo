@@ -8,8 +8,6 @@
 
 package com.echo.features.invite.impl
 
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.libraries.core.extensions.mapFailure
 import com.echo.libraries.di.SessionScope
@@ -20,6 +18,8 @@ import com.echo.libraries.matrix.api.exception.ClientException
 import com.echo.libraries.matrix.api.exception.ErrorKind
 import com.echo.libraries.matrix.api.room.join.JoinRoom
 import com.echo.libraries.push.api.notifications.NotificationCleaner
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.JoinedRoom
 
 interface AcceptInvite {
     suspend operator fun invoke(roomId: RoomId): Result<RoomId>
@@ -56,4 +56,3 @@ class DefaultAcceptInvite(
         }.map { roomId }
     }
 }
-

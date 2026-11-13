@@ -172,4 +172,3 @@ private suspend fun Context.getCameraProvider(): ProcessCameraProvider =
             )
         }
     }
-

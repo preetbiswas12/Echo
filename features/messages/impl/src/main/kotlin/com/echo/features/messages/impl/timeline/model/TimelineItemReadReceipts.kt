@@ -19,4 +19,3 @@ data class ReadReceiptData(
     val userId: UserId,
     val formattedDate: String,
 )
-

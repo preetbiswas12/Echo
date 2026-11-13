@@ -8,13 +8,13 @@
 package com.echo.libraries.cachestore.impl.di
 
 import android.content.Context
+import com.echo.libraries.cachestore.impl.CacheDatabase
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.cachestore.impl.CacheDatabase
-import com.echo.libraries.di.annotations.ApplicationContext
 import io.element.encrypteddb.SqlCipherDriverFactory
 import io.element.encrypteddb.passphrase.RandomDatabaseSecretProvider
 import io.element.encrypteddb.utils.ReplaceDatabaseKey
@@ -54,4 +54,3 @@ object CacheStoreBindingContainer {
         return CacheDatabase(driver)
     }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.pusher.SetHttpPusherData
 import com.echo.libraries.matrix.api.pusher.UnsetHttpPusherData
@@ -24,6 +23,7 @@ import com.echo.libraries.pushstore.test.userpushstore.FakeUserPushStoreFactory
 import com.echo.libraries.pushstore.test.userpushstore.clientsecret.FakePushClientSecret
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -183,4 +183,3 @@ class DefaultPusherSubscriberTest {
         )
     }
 }
-

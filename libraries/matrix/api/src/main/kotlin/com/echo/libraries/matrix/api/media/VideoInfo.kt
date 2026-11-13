@@ -20,4 +20,3 @@ data class VideoInfo(
     val thumbnailSource: MediaSource?,
     val blurhash: String?
 )
-

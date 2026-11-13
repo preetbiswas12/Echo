@@ -8,12 +8,12 @@
 
 package com.echo.features.home.impl.spaces
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.test.InMemorySeenInvitesStore
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -38,4 +38,3 @@ class HomeSpacesPresenterTest {
         seenInvitesStore = seenInvitesStore,
     )
 }
-

@@ -283,4 +283,3 @@ internal fun RoomDirectoryViewPreview(@PreviewParameter(RoomDirectoryStatePrevie
         onBackClick = {},
     )
 }
-

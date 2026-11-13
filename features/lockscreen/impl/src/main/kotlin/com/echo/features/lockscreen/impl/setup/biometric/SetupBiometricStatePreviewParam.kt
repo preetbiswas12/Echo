@@ -23,4 +23,3 @@ fun aSetupBiometricState(
     isBiometricSetupDone = isBiometricSetupDone,
     eventSink = {}
 )
-

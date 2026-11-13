@@ -65,4 +65,3 @@ fun aPreferencesAccountState(
     canDeactivateAccount = canDeactivateAccount,
     snackbarMessage = snackbarMessage,
 )
-

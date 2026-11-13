@@ -23,4 +23,3 @@ interface GetCurrentPushProvider {
      */
     suspend fun getCurrentPushProvider(sessionId: SessionId): String?
 }
-

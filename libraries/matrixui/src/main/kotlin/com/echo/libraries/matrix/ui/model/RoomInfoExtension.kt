@@ -57,4 +57,3 @@ fun RoomInfo.dmUserStatus(): DisplayedStatus? {
         null
     }
 }
-

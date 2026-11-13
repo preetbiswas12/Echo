@@ -172,4 +172,3 @@ fun aFallbackNotifiableEvent(
     timestamp = timestamp,
     cause = cause,
 )
-

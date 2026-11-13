@@ -33,4 +33,3 @@ fun UserPreferences(
 internal fun UserPreferencesPreview(@PreviewParameter(MatrixUserPreviewParam::class) matrixUser: MatrixUser) = ElementPreview {
     UserPreferences(matrixUser)
 }
-

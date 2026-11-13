@@ -41,4 +41,3 @@ fun RoomListFilter.into(): MatrixRoomListFilter {
         RoomListFilter.Invites -> MatrixRoomListFilter.Invite
     }
 }
-

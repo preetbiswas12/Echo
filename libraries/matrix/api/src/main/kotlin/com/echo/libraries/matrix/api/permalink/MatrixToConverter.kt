@@ -26,4 +26,3 @@ interface MatrixToConverter {
      */
     fun convert(uri: Uri): Uri?
 }
-

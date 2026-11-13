@@ -8,12 +8,12 @@
 
 package com.echo.appnav.loggedin
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.CryptoSessionStateChange
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.matrix.api.encryption.RecoveryState
 import com.echo.libraries.matrix.api.verification.SessionVerifiedStatus
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.CryptoSessionStateChange
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -60,4 +60,3 @@ class AnalyticsVerificationStateMappingTest {
             .isEqualTo(CryptoSessionStateChange.RecoveryState.Disabled)
     }
 }
-

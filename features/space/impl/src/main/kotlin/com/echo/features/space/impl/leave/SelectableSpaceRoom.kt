@@ -16,4 +16,3 @@ data class SelectableSpaceRoom(
     val joinedMembersCount: Int,
     val isSelected: Boolean,
 )
-

@@ -13,4 +13,3 @@ fun aCrashDetectionState() = CrashDetectionState(
     crashDetected = false,
     eventSink = {}
 )
-

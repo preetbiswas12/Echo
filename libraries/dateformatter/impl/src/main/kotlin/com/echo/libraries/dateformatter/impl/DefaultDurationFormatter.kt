@@ -12,11 +12,11 @@ import android.icu.text.MeasureFormat.FormatWidth
 import android.icu.util.Measure
 import android.icu.util.MeasureUnit
 import android.text.format.DateUtils
+import com.echo.libraries.dateformatter.api.DurationFormatter
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import dev.zacsweers.metro.binding
-import com.echo.libraries.dateformatter.api.DurationFormatter
 import java.util.Locale
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.hours
@@ -67,4 +67,3 @@ class DefaultDurationFormatter(
         }
     }
 }
-

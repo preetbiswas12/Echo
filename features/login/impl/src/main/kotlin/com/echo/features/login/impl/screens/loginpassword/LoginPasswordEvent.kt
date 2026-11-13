@@ -14,4 +14,3 @@ sealed interface LoginPasswordEvent {
     data object Submit : LoginPasswordEvent
     data object ClearError : LoginPasswordEvent
 }
-

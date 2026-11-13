@@ -24,4 +24,3 @@ class FakePusherSubscriber(
         return unregisterPusherResult(matrixClient, pushKey, gateway)
     }
 }
-

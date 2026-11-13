@@ -121,4 +121,3 @@ internal fun EnterNumberViewPreview(
         onBackClick = { },
     )
 }
-

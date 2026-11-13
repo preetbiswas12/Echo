@@ -12,4 +12,3 @@ import kotlinx.coroutines.flow.flow
 
 /** Create a Flow emitting a single error event. It should be useful for tests. */
 fun <T> errorFlow(throwable: Throwable) = flow<T> { throw throwable }
-

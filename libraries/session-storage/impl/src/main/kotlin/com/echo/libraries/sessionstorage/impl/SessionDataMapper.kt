@@ -56,4 +56,3 @@ internal fun DbSessionData.toApiModel(): SessionData {
         userAvatarData = userAvatarData,
     )
 }
-

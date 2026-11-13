@@ -9,10 +9,10 @@
 package com.echo.features.login.impl
 
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.login.api.LoginIntentResolver
 import com.echo.features.login.api.LoginParams
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultLoginIntentResolver : LoginIntentResolver {
@@ -28,4 +28,3 @@ class DefaultLoginIntentResolver : LoginIntentResolver {
         )
     }
 }
-

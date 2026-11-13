@@ -19,4 +19,3 @@ class FakeFfiTaskHandle(
     override fun cancel() = cancelResult()
     override fun destroy() = Unit
 }
-

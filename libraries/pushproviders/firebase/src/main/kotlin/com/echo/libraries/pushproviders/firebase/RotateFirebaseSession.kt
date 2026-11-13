@@ -8,9 +8,9 @@
 
 package com.echo.libraries.pushproviders.firebase
 
+import com.echo.libraries.core.extensions.runCatchingExceptions
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.core.extensions.runCatchingExceptions
 
 fun interface RotateFirebaseSession {
     suspend operator fun invoke(): Result<Unit>
@@ -33,4 +33,3 @@ class DefaultRotateFirebaseSession(
         }
     }
 }
-

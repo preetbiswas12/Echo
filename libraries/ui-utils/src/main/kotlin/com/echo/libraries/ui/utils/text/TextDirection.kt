@@ -26,4 +26,3 @@ fun isRtlChar(char: Char): Boolean = when (Character.getDirectionality(char)) {
     Character.DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE -> true
     else -> false
 }
-

@@ -8,11 +8,11 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.pushproviders.unifiedpush.network.DiscoveryResponse
 import com.echo.libraries.pushproviders.unifiedpush.network.DiscoveryUnifiedPush
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import okhttp3.ResponseBody.Companion.toResponseBody
@@ -198,4 +198,3 @@ class DefaultUnifiedPushGatewayResolverTest {
         coroutineDispatchers = testCoroutineDispatchers()
     )
 }
-

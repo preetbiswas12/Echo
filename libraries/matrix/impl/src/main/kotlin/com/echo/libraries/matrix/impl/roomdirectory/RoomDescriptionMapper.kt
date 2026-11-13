@@ -39,4 +39,3 @@ internal fun PublicRoomJoinRule?.map(): RoomDescription.JoinRule {
         null -> RoomDescription.JoinRule.UNKNOWN
     }
 }
-

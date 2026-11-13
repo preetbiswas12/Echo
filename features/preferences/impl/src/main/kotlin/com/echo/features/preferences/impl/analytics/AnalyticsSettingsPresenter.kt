@@ -9,9 +9,9 @@
 package com.echo.features.preferences.impl.analytics
 
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.Inject
 import com.echo.features.analytics.api.preferences.AnalyticsPreferencesState
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 
 @Inject
 class AnalyticsSettingsPresenter(
@@ -26,4 +26,3 @@ class AnalyticsSettingsPresenter(
         )
     }
 }
-

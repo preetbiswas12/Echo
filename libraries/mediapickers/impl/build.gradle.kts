@@ -22,5 +22,3 @@ dependencies {
     implementation(projects.libraries.di)
     api(projects.libraries.mediapickers.api)
 }
-
-

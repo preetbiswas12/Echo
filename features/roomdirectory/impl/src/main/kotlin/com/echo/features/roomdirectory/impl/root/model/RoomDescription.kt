@@ -29,4 +29,3 @@ fun MatrixRoomDescription.toFeatureModel(): RoomDescription {
         }
     )
 }
-

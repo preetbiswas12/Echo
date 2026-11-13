@@ -29,4 +29,3 @@ data class SuccessorRoom(
      */
     val reason: String?,
 )
-

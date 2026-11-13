@@ -20,4 +20,3 @@ sealed interface NewEventState {
     data object FromMe : NewEventState
     data object FromOther : NewEventState
 }
-

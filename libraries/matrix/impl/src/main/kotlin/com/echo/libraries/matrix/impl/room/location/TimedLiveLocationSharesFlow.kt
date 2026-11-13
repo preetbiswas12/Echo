@@ -53,4 +53,3 @@ internal fun Flow<List<LiveLocationShare>>.timedByExpiry(
         reschedule(liveShares)
     }
 }
-

@@ -19,4 +19,3 @@ class FakeLoginIntentResolver(
         return parseResult(uriString)
     }
 }
-

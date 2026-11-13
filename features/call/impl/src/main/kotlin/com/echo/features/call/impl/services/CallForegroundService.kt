@@ -96,4 +96,3 @@ class CallForegroundService : Service() {
         return null
     }
 }
-

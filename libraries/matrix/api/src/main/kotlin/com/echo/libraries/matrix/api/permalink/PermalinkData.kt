@@ -56,4 +56,3 @@ sealed interface PermalinkData : Parcelable {
 
     data class FallbackLink(val uri: Uri, val isLegacyGroupLink: Boolean = false) : PermalinkData
 }
-

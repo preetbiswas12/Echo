@@ -10,12 +10,12 @@ package com.echo.features.roomaliasresolver.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.roomaliasresolver.api.RoomAliasResolverEntryPoint
 import com.echo.libraries.matrix.api.room.alias.ResolvedRoomAlias
 import com.echo.libraries.matrix.test.A_ROOM_ALIAS
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -55,4 +55,3 @@ class DefaultRoomAliasResolverEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

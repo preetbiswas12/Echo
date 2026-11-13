@@ -186,4 +186,3 @@ class FakeNotificationSettingsService(
         return getRawPushRulesResult()
     }
 }
-

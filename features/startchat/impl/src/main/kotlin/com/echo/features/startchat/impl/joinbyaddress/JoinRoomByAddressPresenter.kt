@@ -16,9 +16,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.startchat.impl.StartChatNavigator
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.data.tryOrNull
@@ -26,6 +23,9 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.api.room.alias.RoomAliasHelper
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlin.time.Duration.Companion.seconds
@@ -148,4 +148,3 @@ class JoinRoomByAddressPresenter(
         }
     }
 }
-

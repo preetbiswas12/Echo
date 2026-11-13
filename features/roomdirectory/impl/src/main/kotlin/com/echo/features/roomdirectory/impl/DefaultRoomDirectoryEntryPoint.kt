@@ -10,11 +10,11 @@ package com.echo.features.roomdirectory.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.roomdirectory.api.RoomDirectoryEntryPoint
 import com.echo.features.roomdirectory.impl.root.RoomDirectoryNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomDirectoryEntryPoint : RoomDirectoryEntryPoint {
@@ -26,4 +26,3 @@ class DefaultRoomDirectoryEntryPoint : RoomDirectoryEntryPoint {
         return parentNode.createNode<RoomDirectoryNode>(buildContext, listOf(callback))
     }
 }
-

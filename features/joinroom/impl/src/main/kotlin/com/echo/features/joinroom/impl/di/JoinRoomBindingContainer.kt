@@ -8,10 +8,6 @@
 
 package com.echo.features.joinroom.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
 import com.echo.features.joinroom.impl.JoinRoomPresenter
@@ -23,6 +19,10 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.room.join.JoinRoom
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
+import im.vector.app.features.analytics.plan.JoinedRoom
 import java.util.Optional
 
 @BindingContainer
@@ -66,4 +66,3 @@ object JoinRoomBindingContainer {
         }
     }
 }
-

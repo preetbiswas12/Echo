@@ -16,8 +16,6 @@ import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.poll.api.create.CreatePollEntryPoint
 import com.echo.features.poll.api.create.CreatePollMode
@@ -27,6 +25,8 @@ import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.timeline.Timeline
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(RoomScope::class)
@@ -82,4 +82,3 @@ class PollHistoryFlowNode(
         BackstackView()
     }
 }
-

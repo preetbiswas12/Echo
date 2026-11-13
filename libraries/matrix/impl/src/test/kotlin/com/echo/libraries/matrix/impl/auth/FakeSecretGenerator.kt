@@ -19,4 +19,3 @@ class FakeSecretGenerator(
     override fun generatePassphrase(size: Int): ClientSecret.Passphrase? = passphrase(size)?.let { ClientSecret.Passphrase(it) }
     override fun generateKey(size: Int): ClientSecret.RawKey = ClientSecret.RawKey(key(size))
 }
-

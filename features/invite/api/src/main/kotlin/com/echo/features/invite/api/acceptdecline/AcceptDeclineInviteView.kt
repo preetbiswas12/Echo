@@ -34,4 +34,3 @@ fun interface AcceptDeclineInviteView {
         modifier: Modifier,
     )
 }
-

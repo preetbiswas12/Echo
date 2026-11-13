@@ -7,10 +7,10 @@
 
 package com.echo.features.location.impl.common
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.impl.aPermissionsState
 import com.echo.features.location.impl.common.actions.FakeLocationActions
 import com.echo.features.location.impl.common.permissions.PermissionsState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class LocationConstraintsCheckTest {
@@ -103,4 +103,3 @@ class LocationConstraintsCheckTest {
         assertThat(result).isEqualTo(LocationConstraintsCheck.NotEnoughPowerLevel)
     }
 }
-

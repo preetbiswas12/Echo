@@ -30,4 +30,3 @@ class FakeSearchHistoryStore : SearchHistoryStore {
         state.value = emptyList()
     }
 }
-

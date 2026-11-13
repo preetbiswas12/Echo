@@ -26,4 +26,3 @@ interface RageShake {
 
     fun setInterceptor(interceptor: (() -> Unit)?)
 }
-

@@ -30,4 +30,3 @@ enum class ScreenOrientation {
     PORTRAIT,
     LANDSCAPE
 }
-

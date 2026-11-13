@@ -8,10 +8,10 @@
 
 package com.echo.appnav.loggedin
 
-import im.vector.app.features.analytics.plan.CryptoSessionStateChange
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.libraries.matrix.api.encryption.RecoveryState
 import com.echo.libraries.matrix.api.verification.SessionVerifiedStatus
+import im.vector.app.features.analytics.plan.CryptoSessionStateChange
+import im.vector.app.features.analytics.plan.UserProperties
 
 fun SessionVerifiedStatus.toAnalyticsUserPropertyValue(): UserProperties.VerificationState? {
     return when (this) {
@@ -49,4 +49,3 @@ fun RecoveryState.toAnalyticsStateChangeValue(): CryptoSessionStateChange.Recove
         else -> null
     }
 }
-

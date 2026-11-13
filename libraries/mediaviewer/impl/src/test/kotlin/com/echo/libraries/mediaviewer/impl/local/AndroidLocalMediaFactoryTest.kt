@@ -9,7 +9,6 @@
 package com.echo.libraries.mediaviewer.impl.local
 
 import android.graphics.Bitmap
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.file.getMimeType
 import com.echo.libraries.androidutils.filesize.FakeFileSizeFormatter
 import com.echo.libraries.core.mimetype.MimeTypes
@@ -21,6 +20,7 @@ import com.echo.libraries.mediaviewer.api.MediaInfo
 import com.echo.libraries.mediaviewer.api.anImageMediaInfo
 import com.echo.libraries.mediaviewer.test.util.FileExtensionExtractorWithoutValidation
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 import java.io.File
@@ -96,4 +96,3 @@ class AndroidLocalMediaFactoryTest : RobolectricTest() {
         )
     }
 }
-

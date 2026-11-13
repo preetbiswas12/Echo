@@ -23,4 +23,3 @@ class MessageComposerModeSpecialPreviewParam : PreviewParameterProvider<MessageC
             )
         }
 }
-

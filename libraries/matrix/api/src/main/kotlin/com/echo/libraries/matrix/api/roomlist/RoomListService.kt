@@ -78,4 +78,3 @@ interface RoomListService {
 fun RoomList.loadedStateFlow(): Flow<RoomList.LoadingState.Loaded> {
     return loadingState.filterIsInstance()
 }
-

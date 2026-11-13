@@ -9,14 +9,14 @@
 package com.echo.libraries.emoji.impl
 
 import android.content.Context
+import com.echo.libraries.core.coroutine.CoroutineDispatchers
+import com.echo.libraries.di.annotations.AppCoroutineScope
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import io.element.android.emojibasebindings.EmojibaseDatasource
 import io.element.android.emojibasebindings.EmojibaseStore
-import com.echo.libraries.core.coroutine.CoroutineDispatchers
-import com.echo.libraries.di.annotations.AppCoroutineScope
-import com.echo.libraries.di.annotations.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.async
@@ -34,4 +34,3 @@ class DefaultEmojibaseProvider(
 
     override suspend fun getStore(): EmojibaseStore = deferred.await()
 }
-

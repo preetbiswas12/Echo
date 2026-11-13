@@ -76,4 +76,3 @@ interface PinCodeManager {
      */
     suspend fun getRemainingPinCodeAttemptsNumber(): Int
 }
-

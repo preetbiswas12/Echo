@@ -27,4 +27,3 @@ fun interface DeepLinkCreator {
      */
     fun create(sessionId: SessionId, roomId: RoomId?, threadId: ThreadId?, eventId: EventId?): String
 }
-

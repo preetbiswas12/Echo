@@ -47,4 +47,3 @@ fun aCallNotificationData(
     textContent = textContent,
     audioOnly = audioOnly
 )
-

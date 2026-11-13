@@ -62,4 +62,3 @@ internal fun FloatingActionButtonPreview() = ElementThemedPreview {
         }
     }
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl
 
+import com.echo.libraries.matrix.api.SdkMetadata
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.matrix.api.SdkMetadata
 import org.matrix.rustcomponents.sdk.sdkGitSha
 
 @ContributesBinding(AppScope::class)
@@ -18,4 +18,3 @@ class RustSdkMetadata : SdkMetadata {
     override val sdkGitSha: String
         get() = sdkGitSha()
 }
-

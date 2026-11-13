@@ -20,4 +20,3 @@ class FakeLogFilesRemover(
         performLambda(predicate)
     }
 }
-

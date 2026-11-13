@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UniqueId
 import com.echo.libraries.mediaviewer.impl.model.GroupedMediaItems
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
@@ -19,6 +18,7 @@ import com.echo.libraries.mediaviewer.impl.model.aMediaItemImage
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemLoadingIndicator
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemVideo
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemVoice
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -209,4 +209,3 @@ class MediaItemsPostProcessorTest {
         )
     }
 }
-

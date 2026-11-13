@@ -24,4 +24,3 @@ class FakeNotifiableEventResolver(
         return resolveEventsResult(sessionId, notificationEventRequests)
     }
 }
-

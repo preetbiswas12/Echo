@@ -16,4 +16,3 @@ sealed interface OutgoingVerificationViewEvent {
     data object Cancel : OutgoingVerificationViewEvent
     data object Reset : OutgoingVerificationViewEvent
 }
-

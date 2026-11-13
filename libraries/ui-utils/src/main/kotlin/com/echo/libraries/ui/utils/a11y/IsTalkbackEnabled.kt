@@ -33,4 +33,3 @@ fun isTalkbackActive(): Boolean {
     }
     return isTouchExplorationEnabled
 }
-

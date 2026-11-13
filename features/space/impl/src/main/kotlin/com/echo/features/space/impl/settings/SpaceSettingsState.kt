@@ -22,4 +22,3 @@ data class SpaceSettingsState(
     val showSecurityAndPrivacy: Boolean,
     val eventSink: (SpaceSettingsEvent) -> Unit
 )
-

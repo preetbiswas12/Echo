@@ -78,4 +78,3 @@ private suspend fun org.matrix.rustcomponents.sdk.IdentityResetHandle.cancelAndD
     cancel()
     destroy()
 }
-

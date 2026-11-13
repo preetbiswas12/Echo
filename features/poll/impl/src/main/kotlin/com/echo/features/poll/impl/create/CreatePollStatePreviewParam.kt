@@ -193,4 +193,3 @@ private fun aCreatePollState(
         eventSink = {}
     )
 }
-

@@ -30,4 +30,3 @@ interface NotificationService {
      */
     suspend fun getNotifications(ids: Map<RoomId, List<EventId>>): GetNotificationDataResult
 }
-

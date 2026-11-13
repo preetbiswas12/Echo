@@ -8,8 +8,8 @@
 
 package com.echo.features.location.impl.common.actions
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.Location
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import java.net.URLEncoder
 import java.util.Locale
@@ -77,4 +77,3 @@ internal class AndroidLocationActionsTest {
         assertThat(actual).isEqualTo(expected)
     }
 }
-

@@ -790,4 +790,3 @@ internal fun MediaViewerViewLandscapePreview(@PreviewParameter(MediaViewerStateP
         onBackClick = {},
     )
 }
-

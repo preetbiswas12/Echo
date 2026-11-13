@@ -30,4 +30,3 @@ interface UserProfileEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

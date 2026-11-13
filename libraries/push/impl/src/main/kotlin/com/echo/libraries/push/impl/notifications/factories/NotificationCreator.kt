@@ -17,8 +17,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationCompat.MessagingStyle
 import androidx.core.app.Person
 import coil3.ImageLoader
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.designsystem.components.avatar.AvatarSize
@@ -48,6 +46,8 @@ import com.echo.libraries.push.impl.notifications.shortcut.createShortcutId
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.appnavstate.api.ROOM_OPENED_FROM_NOTIFICATION
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface NotificationCreator {
     /**
@@ -584,4 +584,3 @@ private fun NotificationCompat.Builder.configureWith(notificationAccountParams: 
 }
 
 fun NotifiableMessageEvent.isSmartReplyError() = outGoingMessage && outGoingMessageFailed
-

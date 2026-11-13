@@ -43,4 +43,3 @@ internal fun aRustRoomMember(
     status = status,
     call = call,
 )
-

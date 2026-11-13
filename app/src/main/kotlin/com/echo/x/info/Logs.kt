@@ -9,9 +9,9 @@
 package com.echo.x.info
 
 import android.content.Context
+import com.echo.BuildConfig
 import com.echo.libraries.androidutils.system.getVersionCodeFromManifest
 import com.echo.libraries.core.log.logger.wrapInBox
-import com.echo.BuildConfig
 import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -29,4 +29,3 @@ fun logApplicationInfo(context: Context, sdkGitSha: String) {
         .wrapInBox(minBoxInsideWidth = 80)
         .forEach { Timber.d(it) }
 }
-

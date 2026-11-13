@@ -17,4 +17,3 @@ interface MessageSummaryFormatter {
     }
     fun format(content: TimelineItemEventContent): String
 }
-

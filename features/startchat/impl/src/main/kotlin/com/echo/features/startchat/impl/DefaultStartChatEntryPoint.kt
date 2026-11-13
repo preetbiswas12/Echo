@@ -10,10 +10,10 @@ package com.echo.features.startchat.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.startchat.api.StartChatEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultStartChatEntryPoint : StartChatEntryPoint {
@@ -25,4 +25,3 @@ class DefaultStartChatEntryPoint : StartChatEntryPoint {
         return parentNode.createNode<StartChatFlowNode>(buildContext, listOf(callback))
     }
 }
-

@@ -33,4 +33,3 @@ interface MatrixClientProvider {
      */
     fun getOrNull(sessionId: SessionId): MatrixClient?
 }
-

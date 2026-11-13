@@ -21,4 +21,3 @@ sealed interface ConfigureRoomEvent {
     data class SetParentSpace(val space: SpaceRoom?) : ConfigureRoomEvent
     data object CancelCreateRoom : ConfigureRoomEvent
 }
-

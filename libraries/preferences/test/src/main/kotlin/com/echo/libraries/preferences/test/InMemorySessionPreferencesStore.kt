@@ -89,4 +89,3 @@ class InMemorySessionPreferencesStore(
         isSendPublicReadReceiptsEnabled.tryEmit(true)
     }
 }
-

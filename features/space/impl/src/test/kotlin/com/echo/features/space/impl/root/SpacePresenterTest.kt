@@ -10,10 +10,6 @@
 
 package com.echo.features.space.impl.root
 
-import com.google.common.truth.Truth.assertThat
-import com.google.testing.junit.testparameterinjector.KotlinTestParameters.namedTestValues
-import com.google.testing.junit.testparameterinjector.TestParameter
-import com.google.testing.junit.testparameterinjector.TestParameterInjector
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
@@ -49,6 +45,10 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import com.google.testing.junit.testparameterinjector.KotlinTestParameters.namedTestValues
+import com.google.testing.junit.testparameterinjector.TestParameter
+import com.google.testing.junit.testparameterinjector.TestParameterInjector
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -698,4 +698,3 @@ class SpacePresenterTest {
         )
     }
 }
-

@@ -70,4 +70,3 @@ data class AvatarData(
 fun AvatarData.getBestName(): String {
     return name?.takeIf { it.isNotEmpty() } ?: id
 }
-

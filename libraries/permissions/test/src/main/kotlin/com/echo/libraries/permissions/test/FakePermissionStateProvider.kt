@@ -38,4 +38,3 @@ class FakePermissionStateProvider(
 
     override fun isPermissionAsked(permission: String): Flow<Boolean> = permissionAskedFlow
 }
-

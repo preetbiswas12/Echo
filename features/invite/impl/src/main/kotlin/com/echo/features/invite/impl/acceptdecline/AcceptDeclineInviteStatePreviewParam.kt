@@ -53,4 +53,3 @@ open class AcceptDeclineInviteStatePreviewParam : PreviewParameterProvider<Accep
             ),
         )
 }
-

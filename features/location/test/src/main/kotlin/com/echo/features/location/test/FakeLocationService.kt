@@ -26,4 +26,3 @@ class FakeLocationService(
 
     override val mapTilerConfig = MutableStateFlow(mapTilerConfig)
 }
-

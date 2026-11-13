@@ -36,4 +36,3 @@ class FakePermissionsPresenter : PermissionsPresenter {
     @Composable
     override fun present(): PermissionsState = state
 }
-

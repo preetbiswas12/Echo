@@ -23,9 +23,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.features.lockscreen.impl.R
 import com.echo.features.lockscreen.impl.storage.LockScreenStore
@@ -34,6 +31,9 @@ import com.echo.libraries.cryptography.api.SecretKeyRepository
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
@@ -213,4 +213,3 @@ class DefaultBiometricAuthenticatorManager(
         else -> null
     }
 }
-

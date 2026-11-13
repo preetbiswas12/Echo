@@ -26,4 +26,3 @@ sealed interface VoiceMessageComposerEvent {
     data class LifecycleEvent(val event: Lifecycle.Event) : VoiceMessageComposerEvent
     data object DismissSendFailureDialog : VoiceMessageComposerEvent
 }
-

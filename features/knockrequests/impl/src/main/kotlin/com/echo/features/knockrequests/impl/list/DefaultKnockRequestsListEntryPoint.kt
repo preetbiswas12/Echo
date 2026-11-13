@@ -10,10 +10,10 @@ package com.echo.features.knockrequests.impl.list
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.knockrequests.api.list.KnockRequestsListEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultKnockRequestsListEntryPoint : KnockRequestsListEntryPoint {
@@ -21,4 +21,3 @@ class DefaultKnockRequestsListEntryPoint : KnockRequestsListEntryPoint {
         return parentNode.createNode<KnockRequestsListNode>(buildContext)
     }
 }
-

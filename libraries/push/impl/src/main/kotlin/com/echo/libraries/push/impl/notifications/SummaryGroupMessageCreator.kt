@@ -9,12 +9,12 @@
 package com.echo.libraries.push.impl.notifications
 
 import android.app.Notification
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.push.impl.R
 import com.echo.libraries.push.impl.notifications.factories.NotificationAccountParams
 import com.echo.libraries.push.impl.notifications.factories.NotificationCreator
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface SummaryGroupMessageCreator {
     fun createSummaryNotification(
@@ -61,4 +61,3 @@ class DefaultSummaryGroupMessageCreator(
         )
     }
 }
-

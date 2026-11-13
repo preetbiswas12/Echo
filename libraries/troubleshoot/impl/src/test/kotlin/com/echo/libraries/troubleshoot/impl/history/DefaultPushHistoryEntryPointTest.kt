@@ -10,7 +10,6 @@ package com.echo.libraries.troubleshoot.impl.history
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.test.FakeMatrixClient
@@ -19,6 +18,7 @@ import com.echo.libraries.troubleshoot.api.PushHistoryEntryPoint
 import com.echo.services.analytics.test.FakeScreenTracker
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -58,4 +58,3 @@ class DefaultPushHistoryEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

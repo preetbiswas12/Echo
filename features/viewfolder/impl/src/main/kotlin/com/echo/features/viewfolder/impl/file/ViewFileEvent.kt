@@ -13,4 +13,3 @@ sealed interface ViewFileEvent {
     data object Share : ViewFileEvent
     data class CopyToClipboard(val text: String) : ViewFileEvent
 }
-

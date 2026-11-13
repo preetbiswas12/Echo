@@ -9,10 +9,10 @@
 package com.echo.features.lockscreen.impl.unlock
 
 import androidx.biometric.BiometricPrompt
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.BiometricUnlockError
 import com.echo.libraries.architecture.AsyncData
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class PinUnlockStateTest {
@@ -75,4 +75,3 @@ class PinUnlockStateTest {
         }
     }
 }
-

@@ -17,4 +17,3 @@ data class DependencyLicensesListState(
     val filter: String,
     val eventSink: (DependencyLicensesListEvent) -> Unit,
 )
-

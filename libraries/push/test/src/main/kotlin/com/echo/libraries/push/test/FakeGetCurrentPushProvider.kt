@@ -16,4 +16,3 @@ class FakeGetCurrentPushProvider(
 ) : GetCurrentPushProvider {
     override suspend fun getCurrentPushProvider(sessionId: SessionId): String? = currentPushProvider
 }
-

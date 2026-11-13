@@ -607,4 +607,3 @@ private object PreviewItems {
         iconSource = IconSource.Vector(CompoundIcons.ShareAndroid())
     )
 }
-

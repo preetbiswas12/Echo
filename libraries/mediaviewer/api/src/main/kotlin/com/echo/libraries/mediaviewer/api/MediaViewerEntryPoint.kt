@@ -70,4 +70,3 @@ interface MediaViewerEntryPoint : FeatureEntryPoint {
         data class TimelineFilesAndAudios(val timelineMode: Timeline.Mode) : MediaViewerMode
     }
 }
-

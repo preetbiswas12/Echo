@@ -164,4 +164,3 @@ internal fun SingleSelectionListItemCustomFormattertPreview() {
         )
     }
 }
-

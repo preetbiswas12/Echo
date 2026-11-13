@@ -9,7 +9,6 @@
 package com.echo.features.lockscreen.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.fixtures.aLockScreenConfig
@@ -24,6 +23,7 @@ import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.libraries.sessionstorage.test.observer.FakeSessionObserver
 import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -99,4 +99,3 @@ private fun TestScope.createDefaultLockScreenService(
     appForegroundStateService = appForegroundStateService,
     biometricAuthenticatorManager = biometricAuthenticatorManager,
 )
-

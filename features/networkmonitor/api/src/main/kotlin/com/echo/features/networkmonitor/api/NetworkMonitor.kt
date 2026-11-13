@@ -32,4 +32,3 @@ interface NetworkMonitor {
      */
     val isInAirGappedEnvironment: StateFlow<Boolean>
 }
-

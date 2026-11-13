@@ -15,4 +15,3 @@ fun EventOrTransactionId.toRustEventOrTransactionId() = when (this) {
     is EventOrTransactionId.Event -> RustEventOrTransactionId.EventId(id.value)
     is EventOrTransactionId.Transaction -> RustEventOrTransactionId.TransactionId(id.value)
 }
-

@@ -8,10 +8,10 @@
 
 package com.echo.features.call.impl.utils
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.call.impl.BuildConfig
 import com.echo.libraries.matrix.api.widget.CallAnalyticCredentialsProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultCallAnalyticCredentialsProvider : CallAnalyticCredentialsProvider {
@@ -21,4 +21,3 @@ class DefaultCallAnalyticCredentialsProvider : CallAnalyticCredentialsProvider {
     override val rageshakeSubmitUrl: String? = BuildConfig.RAGESHAKE_URL.takeIf { it.isNotBlank() }
     override val sentryDsn: String? = BuildConfig.SENTRY_DSN.takeIf { it.isNotBlank() }
 }
-

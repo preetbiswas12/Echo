@@ -8,11 +8,11 @@
 
 package com.echo.libraries.cryptography.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.cryptography.api.AESEncryptionSpecs
 import com.echo.libraries.cryptography.api.EncryptionDecryptionService
 import com.echo.libraries.cryptography.api.EncryptionResult
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import javax.crypto.Cipher
 import javax.crypto.SecretKey
 import javax.crypto.spec.GCMParameterSpec
@@ -46,4 +46,3 @@ class AESEncryptionDecryptionService : EncryptionDecryptionService {
         return cipher.doFinal(encryptionResult.encryptedByteArray)
     }
 }
-

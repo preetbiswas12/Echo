@@ -8,8 +8,6 @@
 
 package com.echo.features.messages.impl.pinned
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.RoomScope
@@ -17,6 +15,8 @@ import com.echo.libraries.matrix.api.room.CreateTimelineParams
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.sync.SyncService
 import com.echo.libraries.matrix.api.timeline.Timeline
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -95,4 +95,3 @@ class DefaultPinnedEventsTimelineProvider(
         }
     }
 }
-

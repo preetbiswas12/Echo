@@ -64,4 +64,3 @@ fun anOtherAccount(
     user = user,
     unreadCount = unreadCount,
 )
-

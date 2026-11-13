@@ -24,4 +24,3 @@ fun FileInfo.map(): RustFileInfo = RustFileInfo(
     thumbnailInfo = thumbnailInfo?.map(),
     thumbnailSource = null
 )
-

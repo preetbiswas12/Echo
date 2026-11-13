@@ -30,4 +30,3 @@ data class RoomDetailsEditState(
     val isSpace: Boolean,
     val eventSink: (RoomDetailsEditEvent) -> Unit
 )
-

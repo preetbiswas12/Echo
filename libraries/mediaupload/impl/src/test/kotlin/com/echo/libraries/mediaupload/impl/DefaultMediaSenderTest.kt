@@ -9,7 +9,6 @@
 package com.echo.libraries.mediaupload.impl
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.media.FileInfo
@@ -27,6 +26,7 @@ import com.echo.libraries.mediaupload.test.FakeMediaPreProcessor
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.StandardTestDispatcher
@@ -206,4 +206,3 @@ class DefaultMediaSenderTest : RobolectricTest() {
         mediaOptimizationConfigProvider = mediaOptimizationConfigProvider,
     )
 }
-

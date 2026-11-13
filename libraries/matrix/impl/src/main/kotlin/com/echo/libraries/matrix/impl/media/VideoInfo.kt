@@ -34,4 +34,3 @@ fun VideoInfo.map(): RustVideoInfo = RustVideoInfo(
     thumbnailSource = null,
     blurhash = blurhash
 )
-

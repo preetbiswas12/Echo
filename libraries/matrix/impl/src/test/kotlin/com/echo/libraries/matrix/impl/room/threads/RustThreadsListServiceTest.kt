@@ -8,7 +8,6 @@
 package com.echo.libraries.matrix.impl.room.threads
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.threads.ThreadListPaginationStatus
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustTimelineItemContentMsgLike
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiTaskHandle
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_TIMESTAMP
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
@@ -143,4 +143,3 @@ class RustThreadsListServiceTest {
         ),
     )
 }
-

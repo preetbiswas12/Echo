@@ -8,7 +8,6 @@
 
 package com.echo.features.lockscreen.impl.settings
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
@@ -21,6 +20,7 @@ import com.echo.features.lockscreen.impl.storage.LockScreenStore
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -162,4 +162,3 @@ class LockScreenSettingsPresenterTest {
         )
     }
 }
-

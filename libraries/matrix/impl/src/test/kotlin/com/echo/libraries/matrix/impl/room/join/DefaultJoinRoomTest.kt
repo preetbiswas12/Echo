@@ -8,8 +8,6 @@
 
 package com.echo.libraries.matrix.impl.room.join
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
@@ -24,6 +22,8 @@ import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -141,4 +141,3 @@ class DefaultJoinRoomTest {
         )
     }
 }
-

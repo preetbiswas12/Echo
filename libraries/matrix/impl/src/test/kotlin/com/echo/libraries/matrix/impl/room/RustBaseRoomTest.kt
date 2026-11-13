@@ -10,7 +10,6 @@ package com.echo.libraries.matrix.impl.room
 
 import app.cash.turbine.TurbineTestContext
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.CurrentUserMembership
 import com.echo.libraries.matrix.api.room.RoomInfo
 import com.echo.libraries.matrix.api.room.RoomMember
@@ -25,6 +24,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.defaultRoomPowerLevelValues
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.shareIn
@@ -180,4 +180,3 @@ class RustBaseRoomTest {
         )
     }
 }
-

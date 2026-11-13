@@ -112,4 +112,3 @@ internal fun OnBoardingPagePreview() = ElementPreview {
         }
     )
 }
-

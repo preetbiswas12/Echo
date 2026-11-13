@@ -47,4 +47,3 @@ class FakeKnockRequest(
         markAsSeenLambda()
     }
 }
-

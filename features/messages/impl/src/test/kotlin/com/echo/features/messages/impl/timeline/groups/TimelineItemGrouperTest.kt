@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.groups
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.fixtures.aMessageEvent
 import com.echo.features.messages.impl.timeline.aTimelineItemDebugInfo
 import com.echo.features.messages.impl.timeline.aTimelineItemReactions
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.core.FakeSendHandle
 import com.echo.libraries.matrix.ui.messages.reply.aProfileDetailsReady
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -219,4 +219,3 @@ class TimelineItemGrouperTest {
         assertThat(result).isEqualTo(listOf(r0, r1))
     }
 }
-

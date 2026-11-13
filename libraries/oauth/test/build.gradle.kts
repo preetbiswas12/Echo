@@ -19,5 +19,3 @@ dependencies {
     api(projects.libraries.oauth.api)
     implementation(projects.tests.testutils)
 }
-
-

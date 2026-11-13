@@ -28,4 +28,3 @@ class FakeMediaViewerNavigator(
         onItemDeletedLambda()
     }
 }
-

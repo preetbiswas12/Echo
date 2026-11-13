@@ -102,4 +102,3 @@ private fun backgroundColorFor(flickState: FlickToDismissState): Color {
     )
     return ElementTheme.colors.bgCanvasDefault.copy(alpha = animatedAlpha)
 }
-

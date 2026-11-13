@@ -26,4 +26,3 @@ class FakeNotJoinedRoom(
 
     override fun close() = Unit
 }
-

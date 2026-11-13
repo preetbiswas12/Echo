@@ -8,8 +8,8 @@
 
 package com.echo.features.space.impl.leave
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
@@ -127,4 +127,3 @@ class LeaveSpaceStateTest {
         assertThat(sut.selectedRoomsCount).isEqualTo(0)
     }
 }
-

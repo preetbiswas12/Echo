@@ -17,4 +17,3 @@ fun interface BugReporterMultipartBodyListener {
      */
     fun onWrite(totalWritten: Long, contentLength: Long)
 }
-

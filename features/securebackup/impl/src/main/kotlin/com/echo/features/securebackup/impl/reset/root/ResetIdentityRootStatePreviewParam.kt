@@ -23,4 +23,3 @@ class ResetIdentityRootStatePreviewParam : PreviewParameterProvider<ResetIdentit
             )
         )
 }
-

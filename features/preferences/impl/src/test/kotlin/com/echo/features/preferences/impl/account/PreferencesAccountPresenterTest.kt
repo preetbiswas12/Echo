@@ -7,7 +7,6 @@
 
 package com.echo.features.preferences.impl.account
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.enterprise.test.FakeSessionEnterpriseService
 import com.echo.features.rageshake.api.RageshakeFeatureAvailability
@@ -29,6 +28,7 @@ import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -172,4 +172,3 @@ class PreferencesAccountPresenterTest {
         sessionEnterpriseService = sessionEnterpriseService,
     )
 }
-

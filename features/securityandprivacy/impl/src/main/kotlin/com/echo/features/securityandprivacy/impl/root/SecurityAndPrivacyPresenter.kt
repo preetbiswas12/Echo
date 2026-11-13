@@ -19,9 +19,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.securityandprivacy.api.SecurityAndPrivacyPermissions
 import com.echo.features.securityandprivacy.api.securityAndPrivacyPermissions
@@ -46,6 +43,9 @@ import com.echo.libraries.matrix.api.room.join.JoinRule
 import com.echo.libraries.matrix.api.room.powerlevels.permissionsAsState
 import com.echo.libraries.matrix.api.roomdirectory.RoomVisibility
 import com.echo.libraries.matrix.api.spaces.SpaceRoom
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.collections.immutable.toImmutableList
@@ -521,4 +521,3 @@ private fun SecurityAndPrivacyHistoryVisibility.map(): RoomHistoryVisibility {
 private fun RoomInfo.firstDisplayableAlias(serverName: String): RoomAlias? {
     return aliases.firstOrNull { it.matchesServer(serverName) } ?: aliases.firstOrNull()
 }
-

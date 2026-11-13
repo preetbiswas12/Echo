@@ -15,4 +15,3 @@ fun SendTarget.map() = when (this) {
     is SendTarget.Redaction -> org.matrix.rustcomponents.sdk.SendTarget.Redaction
     is SendTarget.Reaction -> org.matrix.rustcomponents.sdk.SendTarget.Reaction(key)
 }
-

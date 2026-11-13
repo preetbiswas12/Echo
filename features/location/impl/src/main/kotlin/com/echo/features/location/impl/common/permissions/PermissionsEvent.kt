@@ -11,4 +11,3 @@ package com.echo.features.location.impl.common.permissions
 sealed interface PermissionsEvent {
     data object RequestPermissions : PermissionsEvent
 }
-

@@ -47,4 +47,3 @@ class TranslationsScreenshotTest(
         ScreenshotTest.runTest(paparazzi = paparazziRule, preview = preview, localeStr = localeStr)
     }
 }
-

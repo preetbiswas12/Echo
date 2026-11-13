@@ -8,8 +8,8 @@
 
 package com.echo.features.location.api.internal
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.remoteconfig.MapTilerConfig
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MapTilerStaticMapUrlBuilderTest {
@@ -230,4 +230,3 @@ class MapTilerStaticMapUrlBuilderTest {
         ).isEqualTo("https://base.url/aLightMapId/static/-4.56,1.23,7.8/0x0.webp?key=anApiKey&attribution=topright")
     }
 }
-

@@ -7,11 +7,11 @@
 
 package com.echo.features.createroom.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.createroom.impl.configureroom.JoinRuleItem
 import com.echo.libraries.matrix.api.room.join.AllowRule
 import com.echo.libraries.matrix.api.room.join.JoinRule
 import com.echo.libraries.matrix.test.A_ROOM_ID
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
 
@@ -27,4 +27,3 @@ class JoinRuleItemTest {
             .isEqualTo(JoinRule.KnockRestricted(persistentListOf(AllowRule.RoomMembership(A_ROOM_ID))))
     }
 }
-

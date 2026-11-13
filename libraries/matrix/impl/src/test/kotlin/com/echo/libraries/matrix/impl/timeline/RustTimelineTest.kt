@@ -10,7 +10,6 @@
 package com.echo.libraries.matrix.impl.timeline
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.Timeline
@@ -24,6 +23,7 @@ import com.echo.services.toolbox.api.systemclock.SystemClock
 import com.echo.services.toolbox.test.systemclock.A_FAKE_TIMESTAMP
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -108,4 +108,3 @@ private fun TestScope.createRustTimeline(
         roomContentForwarder = roomContentForwarder,
     )
 }
-

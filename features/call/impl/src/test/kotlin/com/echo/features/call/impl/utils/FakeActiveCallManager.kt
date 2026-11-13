@@ -36,4 +36,3 @@ class FakeActiveCallManager(
         this.activeCall.value = value
     }
 }
-

@@ -56,4 +56,3 @@ class FakeActiveNotificationsProvider(
         return countResult(sessionId)
     }
 }
-

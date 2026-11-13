@@ -14,4 +14,3 @@ class FakeRoomDetailsNavigator(
 ) : RoomDetailsNavigator {
     override fun onDone() = onDoneResult()
 }
-

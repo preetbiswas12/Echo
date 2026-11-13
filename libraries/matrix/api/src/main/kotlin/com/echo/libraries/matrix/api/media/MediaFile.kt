@@ -29,4 +29,3 @@ interface MediaFile : Closeable {
 fun MediaFile.toFile(): File {
     return File(path())
 }
-

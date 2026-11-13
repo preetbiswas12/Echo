@@ -13,4 +13,3 @@ class SimpleUserAgentProvider(
 ) : UserAgentProvider {
     override fun provide(): String = userAgent
 }
-

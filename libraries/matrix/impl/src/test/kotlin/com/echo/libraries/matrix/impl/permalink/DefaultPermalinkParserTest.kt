@@ -7,10 +7,10 @@
 
 package com.echo.libraries.matrix.impl.permalink
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultPermalinkParserTest : RobolectricTest() {
@@ -42,4 +42,3 @@ class DefaultPermalinkParserTest : RobolectricTest() {
         matrixToConverter = DefaultMatrixToConverter(),
     )
 }
-

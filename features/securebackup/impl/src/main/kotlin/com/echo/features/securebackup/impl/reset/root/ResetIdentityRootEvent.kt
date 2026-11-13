@@ -12,4 +12,3 @@ sealed interface ResetIdentityRootEvent {
     data object Continue : ResetIdentityRootEvent
     data object DismissDialog : ResetIdentityRootEvent
 }
-

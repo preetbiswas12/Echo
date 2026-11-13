@@ -20,7 +20,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.preferences.impl.R
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.AsyncData
@@ -48,6 +47,7 @@ import com.echo.libraries.pushproviders.api.PushProvider
 import com.echo.libraries.pushstore.api.UserPushStore
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
@@ -539,4 +539,3 @@ class NotificationSettingsPresenter(
         }
     }
 }
-

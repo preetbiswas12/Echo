@@ -15,4 +15,3 @@ sealed interface IncomingVerificationViewEvent {
     data object ConfirmVerification : IncomingVerificationViewEvent
     data object DeclineVerification : IncomingVerificationViewEvent
 }
-

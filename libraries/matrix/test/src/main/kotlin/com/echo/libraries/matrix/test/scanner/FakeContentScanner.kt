@@ -17,4 +17,3 @@ class FakeContentScanner(
         return scan.invoke(mediaSource)
     }
 }
-

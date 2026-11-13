@@ -14,4 +14,3 @@ data class IdentityStateChange(
     val userId: UserId,
     val identityState: IdentityState,
 )
-

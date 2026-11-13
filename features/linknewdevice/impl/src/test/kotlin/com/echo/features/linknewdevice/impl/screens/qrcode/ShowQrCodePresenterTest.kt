@@ -9,7 +9,6 @@
 
 package com.echo.features.linknewdevice.impl.screens.qrcode
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileHandler
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
@@ -18,6 +17,7 @@ import com.echo.libraries.matrix.test.linknewdevice.FakeLinkMobileHandler
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -124,4 +124,3 @@ class ShowQrCodePresenterTest {
         linkNewMobileHandler = linkNewMobileHandler,
     )
 }
-

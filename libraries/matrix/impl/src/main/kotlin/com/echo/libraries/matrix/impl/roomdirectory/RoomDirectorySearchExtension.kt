@@ -35,4 +35,3 @@ internal fun RoomDirectorySearch.resultsFlow(): Flow<List<RoomDirectorySearchEnt
     }.catch {
         Timber.d(it, "timelineDiffFlow() failed")
     }.buffer(Channel.UNLIMITED)
-

@@ -17,8 +17,6 @@ import androidx.lifecycle.lifecycleScope
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.compound.theme.ForcedDarkElementTheme
@@ -42,6 +40,8 @@ import com.echo.libraries.mediaviewer.impl.datasource.FocusedTimelineMediaGaller
 import com.echo.libraries.mediaviewer.impl.datasource.TimelineMediaGalleryDataSource
 import com.echo.libraries.mediaviewer.impl.model.hasEvent
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(RoomScope::class)
 @AssistedInject
@@ -180,4 +180,3 @@ internal fun MediaViewerEntryPoint.MediaViewerMode.getTimelineMode(): Timeline.M
         MediaViewerEntryPoint.MediaViewerMode.EventGallery -> null
     }
 }
-

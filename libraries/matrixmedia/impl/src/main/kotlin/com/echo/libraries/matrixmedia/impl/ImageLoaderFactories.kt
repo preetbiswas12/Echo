@@ -15,10 +15,10 @@ import coil3.gif.AnimatedImageDecoder
 import coil3.gif.GifDecoder
 import coil3.network.okhttp.OkHttpNetworkFetcherFactory
 import coil3.svg.SvgDecoder
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.media.MatrixMediaLoader
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import okhttp3.OkHttpClient
 
 interface ImageLoaderFactory {
@@ -66,4 +66,3 @@ class DefaultImageLoaderFactory(
             .build()
     }
 }
-

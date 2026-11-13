@@ -379,4 +379,3 @@ internal fun RoomMemberModerationViewPreview(@PreviewParameter(InternalRoomMembe
         }
     }
 }
-

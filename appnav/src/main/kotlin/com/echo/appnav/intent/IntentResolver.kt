@@ -9,7 +9,6 @@
 package com.echo.appnav.intent
 
 import android.content.Intent
-import dev.zacsweers.metro.Inject
 import com.echo.features.login.api.LoginIntentResolver
 import com.echo.features.login.api.LoginParams
 import com.echo.features.share.api.ShareIntentData
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
 import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.libraries.oauth.api.OAuthIntentResolver
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 
 sealed interface ResolvedIntent {
@@ -80,4 +80,3 @@ private fun Intent.canBeIgnored(): Boolean {
     return action == Intent.ACTION_MAIN &&
         categories?.contains(Intent.CATEGORY_LAUNCHER) == true
 }
-

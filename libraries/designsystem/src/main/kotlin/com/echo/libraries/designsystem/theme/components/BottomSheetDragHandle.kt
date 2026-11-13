@@ -65,4 +65,3 @@ fun BottomSheetDragHandle(
 internal fun BottomSheetDragHandlePreview() = ElementPreview {
     BottomSheetDragHandle()
 }
-

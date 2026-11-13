@@ -12,11 +12,11 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import com.echo.libraries.androidutils.system.DateTimeObserver.Event
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.androidutils.system.DateTimeObserver.Event
-import com.echo.libraries.di.annotations.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 import java.time.Instant
@@ -59,4 +59,3 @@ class DefaultDateTimeObserver(
         })
     }
 }
-

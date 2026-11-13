@@ -12,12 +12,12 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.share.api.OnSharedData
 import com.echo.features.share.api.ShareIntentData
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -57,4 +57,3 @@ class DefaultOnSharedData(
         }
     }
 }
-

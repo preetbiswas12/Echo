@@ -13,4 +13,3 @@ sealed interface EditRoomAddressEvent {
     data object DismissError : EditRoomAddressEvent
     data class RoomAddressChanged(val roomAddress: String) : EditRoomAddressEvent
 }
-

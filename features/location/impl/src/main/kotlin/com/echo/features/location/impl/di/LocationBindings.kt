@@ -7,12 +7,11 @@
 
 package com.echo.features.location.impl.di
 
+import com.echo.features.location.impl.live.service.LiveLocationSharingService
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.location.impl.live.service.LiveLocationSharingService
 
 @ContributesTo(AppScope::class)
 interface LocationBindings {
     fun inject(service: LiveLocationSharingService)
 }
-

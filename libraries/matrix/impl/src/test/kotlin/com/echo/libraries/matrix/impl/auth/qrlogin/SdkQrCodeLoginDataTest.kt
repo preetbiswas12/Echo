@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.auth.qrlogin
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiQrCodeData
 import com.echo.libraries.matrix.test.A_HOMESERVER_URL
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class SdkQrCodeLoginDataTest {
@@ -34,4 +34,3 @@ class SdkQrCodeLoginDataTest {
         assertThat(sut.serverName()).isEqualTo(A_HOMESERVER_URL)
     }
 }
-

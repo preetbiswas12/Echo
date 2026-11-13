@@ -85,4 +85,3 @@ internal fun Int.toEmojiResource(): EmojiResource {
         else -> error("Cannot happen ($this)!")
     }
 }
-

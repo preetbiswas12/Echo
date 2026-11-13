@@ -9,7 +9,6 @@
 package com.echo.features.messages.impl.typing
 
 import app.cash.turbine.Event
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.RoomMembersState
@@ -24,6 +23,7 @@ import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.libraries.preferences.test.InMemorySessionPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -220,4 +220,3 @@ class TypingNotificationPresenterTest {
         isNameAmbiguous = true,
     )
 }
-

@@ -54,4 +54,3 @@ internal fun TimelineItemReadMarkerView(
 internal fun TimelineItemReadMarkerViewPreview() = ElementPreview {
     TimelineItemReadMarkerView()
 }
-

@@ -24,4 +24,3 @@ interface MigrationStore {
      */
     suspend fun setApplicationMigrationVersion(version: Int)
 }
-

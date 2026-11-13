@@ -166,4 +166,3 @@ internal fun PreferencesAccountViewPreview(@PreviewParameter(PreferencesAccountS
             onDeactivateClick = {},
         )
     }
-

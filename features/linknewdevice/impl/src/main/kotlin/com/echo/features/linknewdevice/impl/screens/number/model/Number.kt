@@ -54,4 +54,3 @@ data class Number(
         return digits.all { it is Digit.Filled }
     }
 }
-

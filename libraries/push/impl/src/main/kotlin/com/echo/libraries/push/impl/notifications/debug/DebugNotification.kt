@@ -11,4 +11,3 @@ package com.echo.libraries.push.impl.notifications.debug
 fun CharSequence.annotateForDebug(@Suppress("UNUSED_PARAMETER") prefix: Int): CharSequence {
     return this // "$prefix-$this"
 }
-

@@ -11,4 +11,3 @@ package com.echo.features.login.impl.screens.qrcode.intro
 sealed interface QrCodeIntroEvent {
     data object Continue : QrCodeIntroEvent
 }
-

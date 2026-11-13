@@ -10,10 +10,10 @@ package com.echo.features.verifysession.impl.incoming
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.verifysession.api.IncomingVerificationEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultIncomingVerificationEntryPoint : IncomingVerificationEntryPoint {
@@ -26,4 +26,3 @@ class DefaultIncomingVerificationEntryPoint : IncomingVerificationEntryPoint {
         return parentNode.createNode<IncomingVerificationNode>(buildContext, listOf(params, callback))
     }
 }
-

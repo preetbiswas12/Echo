@@ -8,14 +8,14 @@
 
 package com.echo.features.rageshake.impl.reporter
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.appconfig.RageshakeConfig
 import com.echo.features.enterprise.api.BugReportUrl
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.api.sessionIdFlow
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flatMapLatest
@@ -46,4 +46,3 @@ class DefaultBugReporterUrlProvider(
         }
     }
 }
-

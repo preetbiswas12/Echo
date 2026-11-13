@@ -17,4 +17,3 @@ fun RustIdentityState.map(): IdentityState = when (this) {
     RustIdentityState.PIN_VIOLATION -> IdentityState.PinViolation
     RustIdentityState.VERIFICATION_VIOLATION -> IdentityState.VerificationViolation
 }
-

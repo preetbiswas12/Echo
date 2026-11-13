@@ -14,4 +14,3 @@ data class DesktopNoticeState(
     val canContinue: Boolean,
     val eventSink: (DesktopNoticeEvent) -> Unit,
 )
-

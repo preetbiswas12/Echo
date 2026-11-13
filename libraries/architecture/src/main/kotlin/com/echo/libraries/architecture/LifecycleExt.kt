@@ -20,4 +20,3 @@ fun Lifecycle.logLifecycle(name: String) {
         onDestroy = { Timber.tag("Lifecycle").d("onDestroy $name") },
     )
 }
-

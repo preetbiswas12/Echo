@@ -27,4 +27,3 @@ enum class MediaGalleryMode(val stringResource: Int) {
     Images(R.string.screen_media_browser_list_mode_media),
     Files(R.string.screen_media_browser_list_mode_files),
 }
-

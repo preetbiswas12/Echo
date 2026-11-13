@@ -11,14 +11,14 @@ package com.echo.features.joinroom.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.test.declineandblock.FakeDeclineInviteAndBlockEntryPoint
 import com.echo.features.joinroom.api.JoinRoomEntryPoint
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.JoinedRoom
 import org.junit.Rule
 import org.junit.Test
 import java.util.Optional
@@ -58,4 +58,3 @@ class DefaultJoinRoomEntryPointTest {
         assertThat(result.plugins).contains(inputs)
     }
 }
-

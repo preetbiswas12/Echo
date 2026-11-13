@@ -8,10 +8,10 @@
 
 package com.echo.libraries.mediaviewer.impl.model
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EVENT_ID_2
 import com.echo.libraries.matrix.test.AN_EVENT_ID_3
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
 
@@ -31,4 +31,3 @@ class GroupedMediaItemsTest {
         assertThat(sut.hasEvent(AN_EVENT_ID_3)).isFalse()
     }
 }
-

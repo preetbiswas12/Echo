@@ -15,4 +15,3 @@ fun RustPollAnswer.map(): PollAnswer = PollAnswer(
     id = id,
     text = text,
 )
-

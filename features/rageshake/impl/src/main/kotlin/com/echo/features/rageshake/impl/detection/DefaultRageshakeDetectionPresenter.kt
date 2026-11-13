@@ -14,8 +14,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.detection.RageshakeDetectionEvent
 import com.echo.features.rageshake.api.detection.RageshakeDetectionPresenter
 import com.echo.features.rageshake.api.detection.RageshakeDetectionState
@@ -24,6 +22,8 @@ import com.echo.features.rageshake.api.preferences.RageshakePreferencesPresenter
 import com.echo.features.rageshake.api.screenshot.ImageResult
 import com.echo.features.rageshake.impl.rageshake.RageShake
 import com.echo.features.rageshake.impl.screenshot.ScreenshotHolder
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -114,4 +114,3 @@ class DefaultRageshakeDetectionPresenter(
         showDialog.value = true
     }
 }
-

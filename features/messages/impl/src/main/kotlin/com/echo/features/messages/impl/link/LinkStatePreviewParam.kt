@@ -34,4 +34,3 @@ fun aLinkState(
     linkClick = linkClick,
     eventSink = eventSink,
 )
-

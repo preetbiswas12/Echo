@@ -40,4 +40,3 @@ class PollFormStateSaverTest {
         assertThat(restored).isEqualTo(state)
     }
 }
-

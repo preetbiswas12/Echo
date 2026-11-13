@@ -17,4 +17,3 @@ enum class RoomSummaryDisplayType {
     INVITE,
     KNOCKED,
 }
-

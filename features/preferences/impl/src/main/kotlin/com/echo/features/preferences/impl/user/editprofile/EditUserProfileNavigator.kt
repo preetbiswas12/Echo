@@ -10,4 +10,3 @@ package com.echo.features.preferences.impl.user.editprofile
 interface EditUserProfileNavigator {
     fun close()
 }
-

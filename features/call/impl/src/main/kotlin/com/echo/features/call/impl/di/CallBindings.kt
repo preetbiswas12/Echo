@@ -8,11 +8,11 @@
 
 package com.echo.features.call.impl.di
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.call.impl.receivers.DeclineCallBroadcastReceiver
 import com.echo.features.call.impl.ui.ElementCallActivity
 import com.echo.features.call.impl.ui.IncomingCallActivity
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(AppScope::class)
 interface CallBindings {
@@ -20,4 +20,3 @@ interface CallBindings {
     fun inject(callActivity: IncomingCallActivity)
     fun inject(declineCallBroadcastReceiver: DeclineCallBroadcastReceiver)
 }
-

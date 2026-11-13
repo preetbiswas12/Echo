@@ -33,7 +33,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import io.element.android.emojibasebindings.Emoji
 import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.echo.libraries.designsystem.text.toSp
@@ -41,6 +40,7 @@ import com.echo.libraries.designsystem.theme.components.Icon
 import com.echo.libraries.designsystem.theme.components.IconSource
 import com.echo.libraries.designsystem.theme.components.SearchBar
 import com.echo.libraries.emoji.impl.R
+import io.element.android.emojibasebindings.Emoji
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableSet
 import kotlinx.collections.immutable.persistentSetOf
@@ -172,4 +172,3 @@ internal fun EmojiPickerViewPreview(@PreviewParameter(DefaultEmojiPickerStatePre
         modifier = Modifier.fillMaxWidth(),
     )
 }
-

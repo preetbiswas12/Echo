@@ -10,14 +10,14 @@ package com.echo.features.location.impl.live
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringSetPreferencesKey
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.androidutils.hash.hash
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
 import kotlin.time.Instant
@@ -92,4 +92,3 @@ class LiveLocationStore(
         store.edit { prefs -> prefs.clear() }
     }
 }
-

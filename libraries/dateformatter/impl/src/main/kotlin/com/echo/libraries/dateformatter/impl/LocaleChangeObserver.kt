@@ -13,10 +13,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Build
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.di.annotations.ApplicationContext
 
 fun interface LocaleChangeObserver {
     fun addListener(listener: LocaleChangeListener)
@@ -54,4 +54,3 @@ class DefaultLocaleChangeObserver(
         context.registerReceiver(receiver, filter)
     }
 }
-

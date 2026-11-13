@@ -40,4 +40,3 @@ fun Throwable.mapAuthenticationException(): AuthenticationException {
         else -> AuthenticationException.Generic(message)
     }
 }
-

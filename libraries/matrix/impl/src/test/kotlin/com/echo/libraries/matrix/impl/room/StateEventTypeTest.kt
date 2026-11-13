@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.room
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.StateEventType
+import com.google.common.truth.Truth.assertThat
 import org.junit.Ignore
 import org.junit.Test
 import uniffi.ruma_events.StateEventType as RustStateEventType
@@ -72,4 +72,3 @@ class StateEventTypeTest {
         // assertThat(StateEventType.Custom("foo").map()).isEqualTo(stateEventTypeFromString("foo"))
     }
 }
-

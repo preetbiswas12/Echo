@@ -24,4 +24,3 @@ fun ForceOrientationInMobileDevices(orientation: ScreenOrientation) {
         ForceOrientation(orientation = orientation)
     }
 }
-

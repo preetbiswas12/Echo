@@ -15,4 +15,3 @@ class FakeNativeCallEntryPoint(
 ) : NativeCallEntryPoint {
     override fun startCall(callData: CallData) = startCallLambda(callData)
 }
-

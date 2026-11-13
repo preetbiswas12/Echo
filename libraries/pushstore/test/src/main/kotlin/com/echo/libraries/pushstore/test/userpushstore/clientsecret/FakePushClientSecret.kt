@@ -24,4 +24,3 @@ class FakePushClientSecret(
         return getUserIdFromSecretResult(clientSecret)
     }
 }
-

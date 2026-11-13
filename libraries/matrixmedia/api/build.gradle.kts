@@ -19,5 +19,3 @@ dependencies {
     implementation(projects.libraries.matrix.api)
     implementation(libs.coil.compose)
 }
-
-

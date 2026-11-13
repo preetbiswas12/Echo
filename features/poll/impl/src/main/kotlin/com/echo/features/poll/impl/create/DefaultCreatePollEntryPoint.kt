@@ -10,10 +10,10 @@ package com.echo.features.poll.impl.create
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.poll.api.create.CreatePollEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultCreatePollEntryPoint : CreatePollEntryPoint {
@@ -28,4 +28,3 @@ class DefaultCreatePollEntryPoint : CreatePollEntryPoint {
         )
     }
 }
-

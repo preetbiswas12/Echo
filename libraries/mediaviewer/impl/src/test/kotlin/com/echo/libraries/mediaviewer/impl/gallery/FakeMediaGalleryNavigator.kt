@@ -23,4 +23,3 @@ class FakeMediaGalleryNavigator(
         onForwardClickLambda(eventId)
     }
 }
-

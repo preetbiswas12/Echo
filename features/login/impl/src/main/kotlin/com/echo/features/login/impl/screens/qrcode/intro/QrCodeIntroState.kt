@@ -17,4 +17,3 @@ data class QrCodeIntroState(
     val canContinue: Boolean,
     val eventSink: (QrCodeIntroEvent) -> Unit
 )
-

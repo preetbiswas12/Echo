@@ -26,4 +26,3 @@ data class EditUserProfileState(
     val canChangeAvatarUrl: Boolean,
     val eventSink: (EditUserProfileEvent) -> Unit
 )
-

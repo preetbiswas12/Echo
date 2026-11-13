@@ -12,8 +12,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.deeplink.api.DeepLinkCreator
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.EventId
@@ -22,6 +20,8 @@ import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.ThreadId
 import com.echo.libraries.push.impl.intent.IntentProvider
 import com.echo.x.MainActivity
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultIntentProvider(
@@ -42,4 +42,3 @@ class DefaultIntentProvider(
         }
     }
 }
-

@@ -30,4 +30,3 @@ data class PollAnswerItem(
     val votesCount: Int,
     val percentage: Float,
 )
-

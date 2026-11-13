@@ -18,4 +18,3 @@ interface MediaUploadHandler {
     /** Cancel the upload process. */
     fun cancel()
 }
-

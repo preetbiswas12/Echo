@@ -46,4 +46,3 @@ fun aRecoveryKeyViewState(
 internal fun aFormattedRecoveryKey(): String {
     return "Estm dfyU adhD h8y6 Estm dfyU adhD h8y6 Estm dfyU adhD h8y6"
 }
-

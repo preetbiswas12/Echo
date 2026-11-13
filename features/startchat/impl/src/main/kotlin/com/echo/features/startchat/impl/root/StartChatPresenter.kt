@@ -13,7 +13,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.startchat.api.StartDMAction
 import com.echo.features.startchat.impl.userlist.SelectionMode
 import com.echo.features.startchat.impl.userlist.UserListDataStore
@@ -24,6 +23,7 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.usersearch.api.UserRepository
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -70,4 +70,3 @@ class StartChatPresenter(
         )
     }
 }
-

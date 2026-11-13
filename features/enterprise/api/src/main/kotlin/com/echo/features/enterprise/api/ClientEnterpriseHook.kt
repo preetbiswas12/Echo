@@ -15,4 +15,3 @@ import com.echo.libraries.matrix.api.MatrixClient
 fun interface ClientEnterpriseHook {
     suspend operator fun invoke(client: MatrixClient)
 }
-

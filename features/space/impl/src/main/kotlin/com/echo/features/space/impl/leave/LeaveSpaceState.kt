@@ -56,4 +56,3 @@ data class LeaveSpaceState(
      */
     val selectedRoomsCount = selectableRooms.count { it.isSelected }
 }
-

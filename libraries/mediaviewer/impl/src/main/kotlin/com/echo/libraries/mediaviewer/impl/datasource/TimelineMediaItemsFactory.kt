@@ -8,11 +8,11 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.core.UniqueId
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.Flow
@@ -77,4 +77,3 @@ private fun MatrixTimelineItem.Event.isUnchanged(
         previousItem.event.eventId == event.eventId &&
         previousItem.event.timestamp == event.timestamp
 }
-

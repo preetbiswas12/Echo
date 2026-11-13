@@ -10,4 +10,3 @@ package com.echo.features.linknewdevice.impl.screens.desktop
 sealed interface DesktopNoticeEvent {
     data object Continue : DesktopNoticeEvent
 }
-

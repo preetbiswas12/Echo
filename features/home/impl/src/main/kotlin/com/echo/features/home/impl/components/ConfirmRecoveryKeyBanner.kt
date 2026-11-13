@@ -44,4 +44,3 @@ internal fun ConfirmRecoveryKeyBannerPreview() = ElementPreview {
         onDismissClick = {},
     )
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.features.migration.impl.migrations
 
+import com.echo.features.rageshake.api.logs.LogFilesRemover
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoSet
-import com.echo.features.rageshake.api.logs.LogFilesRemover
 
 /**
  * Remove existing logs from the device to remove any leaks of sensitive data.
@@ -25,4 +25,3 @@ class AppMigration01(
         logFilesRemover.perform()
     }
 }
-

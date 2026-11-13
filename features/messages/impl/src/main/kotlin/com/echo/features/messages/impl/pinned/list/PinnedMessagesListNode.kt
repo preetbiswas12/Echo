@@ -18,8 +18,6 @@ import androidx.compose.ui.platform.LocalView
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.messages.impl.actionlist.ActionListPresenter
 import com.echo.features.messages.impl.timeline.di.LocalTimelineItemPresenterFactories
@@ -41,6 +39,8 @@ import com.echo.libraries.matrix.api.timeline.item.TimelineItemDebugInfo
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.libraries.ui.utils.a11y.hasExternalKeyboard
 import com.echo.libraries.ui.utils.a11y.isTalkbackActive
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(RoomScope::class)
 @AssistedInject
@@ -142,4 +142,3 @@ class PinnedMessagesListNode(
         }
     }
 }
-

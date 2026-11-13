@@ -7,7 +7,6 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.components.receipt.aReadReceiptData
 import com.echo.features.messages.impl.timeline.groups.collapseRedactedRuns
 import com.echo.features.messages.impl.timeline.groups.computeGroupIdWith
@@ -16,6 +15,7 @@ import com.echo.features.messages.impl.timeline.model.TimelineItemReadReceipts
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemRedactedContent
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UniqueId
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -181,4 +181,3 @@ class CollapseRedactedRunsTest {
         assertThat(grown.id).isEqualTo(first.id)
     }
 }
-

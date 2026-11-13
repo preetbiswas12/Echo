@@ -60,4 +60,3 @@ fun aListOfSpaceRooms(): List<SpaceRoom> {
         aSpaceRoom(roomId = RoomId("!spaceId2:example.com")),
     )
 }
-

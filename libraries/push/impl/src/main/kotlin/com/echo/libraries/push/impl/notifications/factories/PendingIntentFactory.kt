@@ -12,7 +12,6 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.uri.createIgnoredUri
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.EventId
@@ -24,6 +23,7 @@ import com.echo.libraries.push.impl.notifications.NotificationActionIds
 import com.echo.libraries.push.impl.notifications.NotificationBroadcastReceiver
 import com.echo.libraries.push.impl.notifications.TestNotificationReceiver
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Inject
 
 @Inject
 class PendingIntentFactory(
@@ -121,4 +121,3 @@ class PendingIntentFactory(
         )
     }
 }
-

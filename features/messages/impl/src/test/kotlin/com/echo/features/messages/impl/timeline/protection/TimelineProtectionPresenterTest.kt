@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.protection
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.libraries.matrix.api.media.MediaPreviewConfig
 import com.echo.libraries.matrix.api.media.MediaPreviewService
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.ui.media.contentvalidation.DefaultContentValida
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -140,4 +140,3 @@ class TimelineProtectionPresenterTest {
         contentScannerService = contentScannerService,
     )
 }
-

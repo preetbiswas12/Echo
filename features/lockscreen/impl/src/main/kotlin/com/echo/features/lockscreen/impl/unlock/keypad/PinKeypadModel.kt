@@ -16,4 +16,3 @@ sealed interface PinKeypadModel {
     data object Back : PinKeypadModel
     data class Number(val number: Char) : PinKeypadModel
 }
-

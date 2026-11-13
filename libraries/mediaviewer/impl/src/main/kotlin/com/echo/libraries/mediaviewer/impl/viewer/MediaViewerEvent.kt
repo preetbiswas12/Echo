@@ -33,4 +33,3 @@ sealed interface MediaViewerEvent {
     data class CancelLoadingMedia(val data: MediaViewerPageData.MediaViewerData) : MediaViewerEvent
     data class ValidateMedia(val mediaSource: MediaSource, val thumbnailMediaSource: MediaSource?) : MediaViewerEvent
 }
-

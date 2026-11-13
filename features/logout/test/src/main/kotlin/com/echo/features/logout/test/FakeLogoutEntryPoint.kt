@@ -20,4 +20,3 @@ class FakeLogoutEntryPoint : LogoutEntryPoint {
         callback: LogoutEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

@@ -7,7 +7,6 @@
 
 package com.echo.features.contentscanner.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.matrix.api.scanner.ContentScanner
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.ui.media.contentvalidation.NoopContentValidatio
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
@@ -206,4 +206,3 @@ class DefaultContentScannerServiceTest {
         )
     }
 }
-

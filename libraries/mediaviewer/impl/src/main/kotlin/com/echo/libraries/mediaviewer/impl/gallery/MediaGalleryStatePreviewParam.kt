@@ -155,4 +155,3 @@ fun aGroupedMediaItems(
     imageAndVideoItems = imageAndVideoItems.toImmutableList(),
     fileItems = fileItems.toImmutableList(),
 )
-

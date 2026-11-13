@@ -18,4 +18,3 @@ data class StartChatState(
     val startDmAction: AsyncAction<RoomId>,
     val eventSink: (StartChatEvent) -> Unit,
 )
-

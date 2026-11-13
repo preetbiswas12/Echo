@@ -8,16 +8,16 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.mapCatchingExceptions
 import com.echo.libraries.di.CacheDirectory
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.matrix.api.mxc.MxcTools
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import java.io.File
 
 /**
@@ -110,4 +110,3 @@ class DefaultNotificationMediaRepo(
  * Subdirectory of the application's cache directory where file are stored.
  */
 private const val CACHE_NOTIFICATION_SUBDIR = "temp/notif"
-

@@ -868,4 +868,3 @@ internal fun GlobalSearchViewPreview(
         )
     }
 }
-

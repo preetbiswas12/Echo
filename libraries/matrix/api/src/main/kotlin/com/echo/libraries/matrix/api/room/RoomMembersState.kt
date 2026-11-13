@@ -42,4 +42,3 @@ fun RoomMembersState.getDirectRoomMember(roomInfo: RoomInfo, sessionId: SessionI
         ?.takeIf { roomInfo.isDm }
         ?.find { !it.isServiceMember && it.userId != sessionId && it.membership.isActive() }
 }
-

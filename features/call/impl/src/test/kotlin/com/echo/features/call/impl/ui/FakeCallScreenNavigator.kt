@@ -16,4 +16,3 @@ class FakeCallScreenNavigator : CallScreenNavigator {
         closeCalled = true
     }
 }
-

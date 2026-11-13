@@ -34,4 +34,3 @@ internal suspend fun ElementCallController.followConnectivity(isOnline: Flow<Boo
             reportConnectivity(it)
         }
 }
-

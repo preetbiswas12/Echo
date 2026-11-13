@@ -8,8 +8,6 @@
 
 package com.echo.features.home.impl.datasource
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.home.impl.model.RoomListRoomSummary
 import com.echo.libraries.androidutils.diff.DiffCacheUpdater
 import com.echo.libraries.androidutils.diff.MutableListDiffCache
@@ -25,6 +23,8 @@ import com.echo.libraries.matrix.api.roomlist.RoomListService
 import com.echo.libraries.matrix.api.roomlist.RoomSummary
 import com.echo.libraries.matrix.api.roomlist.updateVisibleRange
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -218,4 +218,3 @@ class RoomListDataSource(
         }
     }
 }
-

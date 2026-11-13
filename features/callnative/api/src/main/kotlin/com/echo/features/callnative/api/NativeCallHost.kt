@@ -24,4 +24,3 @@ interface NativeCallHost {
     @Composable
     fun Render(modifier: Modifier, content: @Composable (Modifier) -> Unit)
 }
-

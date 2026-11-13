@@ -17,7 +17,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.clipboard.ClipboardHelper
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -31,6 +30,7 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -111,4 +111,3 @@ class BlockedUsersPresenter(
         }
     }
 }
-

@@ -9,15 +9,15 @@
 package com.echo.libraries.preferences.impl.store
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.libraries.preferences.api.store.SessionPreferencesStoreFactory
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import java.util.concurrent.ConcurrentHashMap
 
@@ -46,4 +46,3 @@ class DefaultSessionPreferencesStoreFactory(
         cache.remove(sessionId)
     }
 }
-

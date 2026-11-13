@@ -14,4 +14,3 @@ data class Receipt(
     val userId: UserId,
     val timestamp: Long,
 )
-

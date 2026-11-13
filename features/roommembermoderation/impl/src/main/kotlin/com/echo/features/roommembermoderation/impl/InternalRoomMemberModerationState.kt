@@ -27,4 +27,3 @@ data class InternalRoomMemberModerationState(
 ) : RoomMemberModerationState {
     val canDisplayActions = actions.isNotEmpty()
 }
-

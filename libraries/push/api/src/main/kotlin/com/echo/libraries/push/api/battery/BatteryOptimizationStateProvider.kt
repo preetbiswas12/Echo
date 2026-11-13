@@ -15,4 +15,3 @@ fun aBatteryOptimizationState(
     shouldDisplayBanner = shouldDisplayBanner,
     eventSink = eventSink,
 )
-

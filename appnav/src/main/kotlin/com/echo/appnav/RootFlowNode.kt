@@ -27,10 +27,6 @@ import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.transitionhandler.rememberBackstackFader
 import com.bumble.appyx.navmodel.backstack.transitionhandler.rememberBackstackSlider
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.intent.IntentResolver
 import com.echo.appnav.intent.ResolvedIntent
@@ -80,6 +76,10 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
 import com.echo.services.appnavstate.api.ROOM_OPENED_FROM_NOTIFICATION
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.drop
@@ -717,4 +717,3 @@ class RootFlowNode(
 }
 
 private suspend fun SessionStore.getLatestSessionId() = getLatestSession()?.userId?.let(::SessionId)
-

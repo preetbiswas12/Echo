@@ -8,10 +8,10 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID_2
 import com.echo.libraries.push.api.notifications.NotificationIdProvider
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class NotificationIdProviderTest {
@@ -27,4 +27,3 @@ class NotificationIdProviderTest {
         assertThat(sut.getSummaryNotificationId(A_SESSION_ID)).isNotEqualTo(sut.getSummaryNotificationId(A_SESSION_ID_2))
     }
 }
-

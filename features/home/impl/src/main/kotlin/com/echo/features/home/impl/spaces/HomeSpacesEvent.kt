@@ -9,4 +9,3 @@
 package com.echo.features.home.impl.spaces
 
 sealed interface HomeSpacesEvent
-

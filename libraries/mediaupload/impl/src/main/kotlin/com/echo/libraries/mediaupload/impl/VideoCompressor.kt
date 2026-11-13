@@ -29,12 +29,12 @@ import androidx.media3.transformer.ProgressHolder
 import androidx.media3.transformer.TransformationRequest
 import androidx.media3.transformer.Transformer
 import androidx.media3.transformer.VideoEncoderSettings
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.file.createTmpFile
 import com.echo.libraries.androidutils.file.safeDelete
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.delay
@@ -200,4 +200,3 @@ sealed interface VideoTranscodingEvent {
     data class Progress(val value: Float) : VideoTranscodingEvent
     data class Completed(val file: File) : VideoTranscodingEvent
 }
-

@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.timeline
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
@@ -32,4 +32,3 @@ class DefaultMarkAsFullyRead(
         }
     }
 }
-

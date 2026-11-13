@@ -66,4 +66,3 @@ class SecureBackupSetupStateMachine : FlowReduxStateMachine<SecureBackupSetupSta
         data object ClearError : Event
     }
 }
-

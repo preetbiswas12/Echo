@@ -69,4 +69,3 @@ internal fun InviteSenderViewPreview() = ElementPreview {
         )
     )
 }
-

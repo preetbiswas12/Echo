@@ -11,4 +11,3 @@ data class DeviceUnlockState(
     val showApplicationPinCode: Boolean,
     val eventSink: (DeviceUnlockEvent) -> Unit,
 )
-

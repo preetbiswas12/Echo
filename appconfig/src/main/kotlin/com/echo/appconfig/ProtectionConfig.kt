@@ -13,4 +13,3 @@ object ProtectionConfig {
      */
     const val MAX_ROOM_NAME_LENGTH = 128
 }
-

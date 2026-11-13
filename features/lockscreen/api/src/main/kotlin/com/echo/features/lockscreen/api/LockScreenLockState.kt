@@ -12,4 +12,3 @@ sealed interface LockScreenLockState {
     data object Unlocked : LockScreenLockState
     data object Locked : LockScreenLockState
 }
-

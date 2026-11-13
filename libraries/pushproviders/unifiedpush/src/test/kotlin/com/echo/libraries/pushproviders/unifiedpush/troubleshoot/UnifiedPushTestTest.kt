@@ -8,7 +8,6 @@
 
 package com.echo.libraries.pushproviders.unifiedpush.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.pushproviders.api.Distributor
 import com.echo.libraries.pushproviders.unifiedpush.UnifiedPushConfig
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
@@ -16,6 +15,7 @@ import com.echo.libraries.troubleshoot.api.test.TestFilterData
 import com.echo.libraries.troubleshoot.test.FakeNotificationTroubleshootNavigator
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -108,4 +108,3 @@ class UnifiedPushTestTest {
         assertThat(sut.isRelevant(TestFilterData(currentPushProviderName = "other"))).isFalse()
     }
 }
-

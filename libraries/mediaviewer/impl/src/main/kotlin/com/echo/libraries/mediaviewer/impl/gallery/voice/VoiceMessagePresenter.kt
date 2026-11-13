@@ -9,14 +9,14 @@
 package com.echo.libraries.mediaviewer.impl.gallery.voice
 
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.mediaviewer.impl.gallery.di.MediaItemPresenterFactory
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.voiceplayer.api.VoiceMessagePresenterFactory
 import com.echo.libraries.voiceplayer.api.VoiceMessageState
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlin.time.Duration
 
 @AssistedInject
@@ -43,4 +43,3 @@ class VoiceMessagePresenter(
         return presenter.present()
     }
 }
-

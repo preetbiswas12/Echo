@@ -17,4 +17,3 @@ class FakeHtmlMessageParser(
 ) : HtmlMessageParser {
     override fun parse(document: Document): DocumentNode = parseResult(document)
 }
-

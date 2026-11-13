@@ -9,8 +9,6 @@
 package com.echo.features.rolesandpermissions.impl.roles
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.RoomModeration
 import com.echo.features.rolesandpermissions.impl.RoomMemberListDataSource
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -35,6 +33,8 @@ import com.echo.libraries.previewutils.room.aRoomMemberList
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.RoomModeration
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableList
@@ -598,4 +598,3 @@ internal fun TestScope.createChangeRolesPresenter(
         roomCoroutineScope = this,
     )
 }
-

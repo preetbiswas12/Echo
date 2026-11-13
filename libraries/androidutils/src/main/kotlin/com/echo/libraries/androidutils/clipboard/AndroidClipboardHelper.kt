@@ -15,10 +15,10 @@ import android.content.Context
 import android.os.Build
 import android.os.PersistableBundle
 import androidx.core.content.getSystemService
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.di.annotations.ApplicationContext
 
 @ContributesBinding(AppScope::class)
 @SingleIn(AppScope::class)
@@ -54,4 +54,3 @@ class AndroidClipboardHelper(
         }
     }
 }
-

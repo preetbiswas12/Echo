@@ -32,4 +32,3 @@ interface MatrixWidgetDriver : AutoCloseable {
      */
     suspend fun send(message: String)
 }
-

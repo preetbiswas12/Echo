@@ -16,7 +16,6 @@ import com.bumble.appyx.navmodel.backstack.activeElement
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
 import com.bumble.appyx.testing.unit.common.helper.parentNodeTestHelper
 import com.bumble.appyx.utils.customisations.NodeCustomisationDirectoryImpl
-import com.google.common.truth.Truth.assertThat
 import com.echo.appnav.room.joined.JoinedRoomFlowNode
 import com.echo.features.joinroom.api.JoinRoomEntryPoint
 import com.echo.features.roomaliasresolver.api.RoomAliasResolverEntryPoint
@@ -34,6 +33,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.node.FakeNodeFactoriesBindings
 import com.echo.tests.testutils.node.FakeParentNode
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -156,4 +156,3 @@ class RoomFlowNodeTest : RobolectricTest() {
         ): Node = node(buildContext) {}
     }
 }
-

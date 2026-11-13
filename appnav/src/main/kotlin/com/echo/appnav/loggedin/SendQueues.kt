@@ -9,13 +9,13 @@
 package com.echo.appnav.loggedin
 
 import androidx.annotation.VisibleForTesting
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.sync.SyncService
 import com.echo.libraries.matrix.api.sync.SyncState
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.combine
@@ -54,4 +54,3 @@ class SendQueues(
             .launchIn(coroutineScope)
     }
 }
-

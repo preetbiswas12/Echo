@@ -17,4 +17,3 @@ sealed interface PictureInPictureEvent {
     data class OnPictureInPictureModeChanged(val isInPip: Boolean) : PictureInPictureEvent
     data class SetPipOrientation(val orientation: Int?) : PictureInPictureEvent
 }
-

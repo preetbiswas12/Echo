@@ -19,4 +19,3 @@ class MediaItemDateSeparatorPreviewParam : PreviewParameterProvider<MediaItem.Da
             aMediaItemDateSeparator(formattedDate = "A long date that should be truncated"),
         )
 }
-

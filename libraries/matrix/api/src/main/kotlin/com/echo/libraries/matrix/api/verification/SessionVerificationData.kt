@@ -27,4 +27,3 @@ sealed interface SessionVerificationData {
 data class VerificationEmoji(
     val number: Int,
 )
-

@@ -38,4 +38,3 @@ fun aRoomAliasResolverState(
 )
 
 private val A_ROOM_ALIAS = RoomAlias("#exa:matrix.org")
-

@@ -12,7 +12,6 @@ import android.net.Uri
 import android.text.Spanned
 import android.text.style.URLSpan
 import androidx.core.text.getSpans
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.api.timeline.TextPillificator
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomAlias
@@ -31,6 +30,7 @@ import com.echo.libraries.textcomposer.mentions.MentionSpanTheme
 import com.echo.libraries.textcomposer.mentions.MentionType
 import com.echo.libraries.textcomposer.mentions.getMentionSpans
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultTextPillificatorTest : RobolectricTest() {
@@ -304,4 +304,3 @@ class DefaultTextPillificatorTest : RobolectricTest() {
         )
     }
 }
-

@@ -12,4 +12,3 @@ sealed interface RoomDetailsAction {
     data object Edit : RoomDetailsAction
     data object AddTopic : RoomDetailsAction
 }
-

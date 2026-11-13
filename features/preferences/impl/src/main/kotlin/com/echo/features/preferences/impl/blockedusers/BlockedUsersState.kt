@@ -19,4 +19,3 @@ data class BlockedUsersState(
     val snackbarMessage: SnackbarMessage?,
     val eventSink: (BlockedUsersEvent) -> Unit,
 )
-

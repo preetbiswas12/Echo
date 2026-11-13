@@ -9,7 +9,6 @@
 package com.echo.features.rageshake.impl.detection
 
 import android.graphics.Bitmap
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rageshake.api.detection.RageshakeDetectionEvent
 import com.echo.features.rageshake.api.screenshot.ImageResult
 import com.echo.features.rageshake.impl.preferences.DefaultRageshakePreferencesPresenter
@@ -19,6 +18,7 @@ import com.echo.features.rageshake.impl.screenshot.FakeScreenshotHolder
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
@@ -187,4 +187,3 @@ class RageshakeDetectionPresenterTest {
         }
     }
 }
-

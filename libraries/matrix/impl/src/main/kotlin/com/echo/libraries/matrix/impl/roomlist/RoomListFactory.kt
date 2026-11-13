@@ -98,4 +98,3 @@ private fun RoomListLoadingState.toLoadingState(): RoomList.LoadingState {
         RoomListLoadingState.NotLoaded -> RoomList.LoadingState.NotLoaded
     }
 }
-

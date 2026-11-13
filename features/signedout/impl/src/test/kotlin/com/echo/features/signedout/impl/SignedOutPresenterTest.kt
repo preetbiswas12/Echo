@@ -11,7 +11,6 @@ package com.echo.features.signedout.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -19,6 +18,7 @@ import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -95,4 +95,3 @@ internal fun createSignedOutPresenter(
         sessionStore = sessionStore,
     )
 }
-

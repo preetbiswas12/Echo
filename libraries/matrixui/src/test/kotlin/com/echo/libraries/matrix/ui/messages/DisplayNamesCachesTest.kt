@@ -7,7 +7,6 @@
 
 package com.echo.libraries.matrix.ui.messages
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.UserId
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.api.user.DisplayedStatus
 import com.echo.libraries.matrix.api.user.UserStatus
 import com.echo.libraries.matrix.test.room.aRoomMember
 import com.echo.libraries.matrix.test.room.aRoomSummary
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -86,4 +86,3 @@ class DisplayNamesCachesTest {
         assertThat(cache.getDisplayName(unnamedRoomId.toRoomIdOrAlias())).isNull()
     }
 }
-

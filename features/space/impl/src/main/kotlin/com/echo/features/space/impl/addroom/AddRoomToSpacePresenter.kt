@@ -19,7 +19,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingState
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.spaces.SpaceRoomList
 import com.echo.libraries.matrix.api.spaces.SpaceService
 import com.echo.libraries.matrix.ui.model.SelectRoomInfo
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -156,4 +156,3 @@ class AddRoomToSpacePresenter(
         }
     }
 }
-

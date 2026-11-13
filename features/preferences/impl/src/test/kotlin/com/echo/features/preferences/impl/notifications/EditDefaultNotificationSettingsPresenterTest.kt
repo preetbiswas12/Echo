@@ -8,7 +8,6 @@
 
 package com.echo.features.preferences.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.preferences.impl.notifications.edit.EditDefaultNotificationSettingPresenter
 import com.echo.features.preferences.impl.notifications.edit.EditDefaultNotificationSettingStateEvent
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.roomlist.FakeRoomListService
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -203,4 +203,3 @@ class EditDefaultNotificationSettingsPresenterTest {
         )
     }
 }
-

@@ -57,4 +57,3 @@ enum class PasswordStrengthRanking {
     Strong,
     VeryStrong,
 }
-

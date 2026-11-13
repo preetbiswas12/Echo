@@ -77,4 +77,3 @@ internal fun UnreadIndicatorAtomPreview() = ElementPreview {
         UnreadIndicatorAtom(count = 999)
     }
 }
-

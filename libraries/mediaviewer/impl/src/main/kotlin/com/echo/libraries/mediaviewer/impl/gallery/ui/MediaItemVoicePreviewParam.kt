@@ -29,4 +29,3 @@ class MediaItemVoicePreviewParam : PreviewParameterProvider<MediaItem.Voice> {
             ),
         )
 }
-

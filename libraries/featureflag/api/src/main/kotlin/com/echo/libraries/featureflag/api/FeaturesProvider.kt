@@ -19,4 +19,3 @@ package com.echo.libraries.featureflag.api
 fun interface FeaturesProvider {
     fun provide(): List<Feature>
 }
-

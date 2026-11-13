@@ -14,4 +14,3 @@ enum class TimelineItemEventOrigin {
     PAGINATION,
     CACHE,
 }
-

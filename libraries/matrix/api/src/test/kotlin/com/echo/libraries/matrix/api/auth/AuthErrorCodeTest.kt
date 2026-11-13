@@ -36,4 +36,3 @@ class AuthErrorCodeTest {
         assertThat(error.errorCode).isEqualTo(AuthErrorCode.UNKNOWN)
     }
 }
-

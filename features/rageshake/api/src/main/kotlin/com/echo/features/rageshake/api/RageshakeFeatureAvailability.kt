@@ -17,4 +17,3 @@ fun interface RageshakeFeatureAvailability {
     /** Whether the rageshake and bug report entry points should be offered to the user. */
     fun isAvailable(): Flow<Boolean>
 }
-

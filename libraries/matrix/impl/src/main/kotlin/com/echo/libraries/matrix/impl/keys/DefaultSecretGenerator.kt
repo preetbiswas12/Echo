@@ -9,9 +9,9 @@
 package com.echo.libraries.matrix.impl.keys
 
 import android.util.Base64
+import com.echo.libraries.androidutils.crypto.ClientSecret
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.androidutils.crypto.ClientSecret
 import java.security.SecureRandom
 
 @ContributesBinding(AppScope::class)
@@ -28,4 +28,3 @@ class DefaultSecretGenerator : SecretGenerator {
         return ClientSecret.RawKey(key)
     }
 }
-

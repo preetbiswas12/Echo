@@ -9,7 +9,6 @@
 package com.echo.libraries.permissions.impl.troubleshoot
 
 import android.os.Build
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.permissions.impl.action.FakePermissionActions
 import com.echo.libraries.permissions.test.FakePermissionStateProvider
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
@@ -17,6 +16,7 @@ import com.echo.libraries.troubleshoot.test.FakeNotificationTroubleshootNavigato
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -111,4 +111,3 @@ class NotificationTroubleshootCheckPermissionTestTest {
         }
     }
 }
-

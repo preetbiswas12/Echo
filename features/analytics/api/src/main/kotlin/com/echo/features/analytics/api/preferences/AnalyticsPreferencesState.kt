@@ -16,4 +16,3 @@ data class AnalyticsPreferencesState(
     val policyUrl: String,
     val eventSink: (AnalyticsOptInEvent) -> Unit,
 )
-

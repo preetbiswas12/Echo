@@ -17,4 +17,3 @@ interface NodeInputs : Plugin
 inline fun <reified I : NodeInputs> Node.inputs(): I {
     return requireNotNull(plugins<I>().firstOrNull()) { "Make sure to actually pass NodeInputs plugin to your node" }
 }
-

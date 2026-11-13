@@ -8,10 +8,10 @@
 
 package com.echo.features.securebackup.impl.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.test.AN_EXCEPTION
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class SecureBackupRootStateTest {
@@ -62,4 +62,3 @@ class SecureBackupRootStateTest {
         }
     }
 }
-

@@ -7,14 +7,14 @@
 
 package com.echo.libraries.matrix.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.core.uri.ensureProtocol
 import com.echo.libraries.matrix.api.TemporaryMatrixClient
 import com.echo.libraries.matrix.api.TemporaryMatrixClientFactory
 import com.echo.libraries.matrix.impl.paths.SessionPathsFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import java.net.URL
 
@@ -47,4 +47,3 @@ class RustTemporaryMatrixClientFactory(
         }
     }
 }
-

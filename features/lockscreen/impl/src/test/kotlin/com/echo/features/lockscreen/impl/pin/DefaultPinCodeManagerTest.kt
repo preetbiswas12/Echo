@@ -9,13 +9,13 @@
 package com.echo.features.lockscreen.impl.pin
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.pin.storage.InMemoryLockScreenStore
 import com.echo.features.lockscreen.impl.storage.LockScreenStore
 import com.echo.libraries.cryptography.api.EncryptionDecryptionService
 import com.echo.libraries.cryptography.api.SecretKeyRepository
 import com.echo.libraries.cryptography.impl.AESEncryptionDecryptionService
 import com.echo.libraries.cryptography.test.SimpleSecretKeyRepository
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -57,4 +57,3 @@ fun createDefaultPinCodeManager(
     secretKeyRepository = secretKeyRepository,
     encryptionDecryptionService = encryptionDecryptionService,
 )
-

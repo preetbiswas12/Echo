@@ -25,4 +25,3 @@ fun aAnalyticsOptInState(
     hasPolicyLink = hasPolicyLink,
     eventSink = {}
 )
-

@@ -15,4 +15,3 @@ class FakeComputeCacheSizeUseCase : ComputeCacheSizeUseCase {
         "O kB"
     }
 }
-

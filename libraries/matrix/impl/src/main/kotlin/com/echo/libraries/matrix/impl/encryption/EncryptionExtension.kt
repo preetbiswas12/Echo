@@ -39,4 +39,3 @@ internal fun EncryptionInterface.recoveryStateFlow(): Flow<RecoveryState> = mxCa
     }
     recoveryStateListener(listener)
 }
-

@@ -29,4 +29,3 @@ internal fun ElementTimelineItemPreview(
         content = content,
     )
 }
-

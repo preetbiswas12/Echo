@@ -24,4 +24,3 @@ interface BugReportEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

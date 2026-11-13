@@ -9,11 +9,11 @@
 package com.echo.libraries.pushproviders.firebase
 
 import android.content.Context
+import com.echo.libraries.di.annotations.ApplicationContext
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailabilityLight
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 import timber.log.Timber
 
 interface IsPlayServiceAvailable {
@@ -42,4 +42,3 @@ class DefaultIsPlayServiceAvailable(
         }
     }
 }
-

@@ -13,4 +13,3 @@ fun lambdaError(
 ): Nothing {
     throw AssertionError(message)
 }
-

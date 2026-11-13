@@ -8,14 +8,14 @@
 
 package com.echo.features.login.impl.qrcode
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.login.impl.di.QrCodeLoginScope
 import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginData
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
 import com.echo.libraries.matrix.api.auth.qrlogin.QrLoginException
 import com.echo.libraries.matrix.api.core.SessionId
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -43,4 +43,3 @@ class DefaultQrCodeLoginManager(
         _currentLoginStep.value = QrCodeLoginStep.Uninitialized
     }
 }
-

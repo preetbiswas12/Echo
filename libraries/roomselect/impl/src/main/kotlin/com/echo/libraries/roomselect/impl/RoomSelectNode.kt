@@ -15,9 +15,6 @@ import androidx.compose.ui.Modifier
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.libraries.architecture.NodeInputs
 import com.echo.libraries.architecture.appyx.launchMolecule
@@ -26,6 +23,9 @@ import com.echo.libraries.architecture.inputs
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.roomselect.api.RoomSelectEntryPoint
 import com.echo.libraries.roomselect.api.RoomSelectMode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(AppScope::class)
 @AssistedInject
@@ -65,4 +65,3 @@ class RoomSelectNode(
         )
     }
 }
-

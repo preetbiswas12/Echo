@@ -17,4 +17,3 @@ data class TimelineItemsFactoryConfig(
     val computeReadReceipts: Boolean,
     val computeReactions: Boolean,
 )
-

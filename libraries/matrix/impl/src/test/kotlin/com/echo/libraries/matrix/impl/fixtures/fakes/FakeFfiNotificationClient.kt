@@ -23,4 +23,3 @@ class FakeFfiNotificationClient(
 
     override fun close() = closeResult()
 }
-

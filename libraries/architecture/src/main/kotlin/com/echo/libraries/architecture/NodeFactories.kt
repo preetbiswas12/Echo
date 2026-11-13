@@ -42,4 +42,3 @@ fun interface NodeFactoriesBindings {
     @Multibinds
     fun nodeFactories(): Map<KClass<out Node>, AssistedNodeFactory<*>>
 }
-

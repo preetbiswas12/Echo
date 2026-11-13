@@ -28,4 +28,3 @@ interface EncryptedPinCodeStorage {
      */
     suspend fun deleteEncryptedPinCode()
 }
-

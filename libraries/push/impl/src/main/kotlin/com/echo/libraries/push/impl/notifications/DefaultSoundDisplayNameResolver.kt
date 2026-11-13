@@ -10,11 +10,11 @@ package com.echo.libraries.push.impl.notifications
 import android.content.Context
 import android.media.RingtoneManager
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.push.api.notifications.SoundDisplayNameResolver
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -33,4 +33,3 @@ class DefaultSoundDisplayNameResolver(
         }.getOrNull()
     }
 }
-

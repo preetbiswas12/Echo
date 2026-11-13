@@ -32,4 +32,3 @@ private fun aVerificationEmojiList() = listOf(
     VerificationEmoji(number = 48),
     VerificationEmoji(number = 63),
 )
-

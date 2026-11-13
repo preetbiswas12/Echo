@@ -150,4 +150,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setStartChatView(
         )
     }
 }
-

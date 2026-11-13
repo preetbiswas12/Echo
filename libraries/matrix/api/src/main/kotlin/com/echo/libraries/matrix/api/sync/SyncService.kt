@@ -45,4 +45,3 @@ interface SyncService {
      */
     val heartBeat: Flow<Unit>
 }
-

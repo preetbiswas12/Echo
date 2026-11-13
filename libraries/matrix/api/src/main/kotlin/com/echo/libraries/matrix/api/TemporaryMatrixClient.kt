@@ -16,4 +16,3 @@ import java.lang.AutoCloseable
  * with it, such as temporary files.
  */
 interface TemporaryMatrixClient : ClientUrlContentFetcher, AutoCloseable
-

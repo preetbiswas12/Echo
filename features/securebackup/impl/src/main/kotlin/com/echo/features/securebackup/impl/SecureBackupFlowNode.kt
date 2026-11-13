@@ -17,8 +17,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.securebackup.api.SecureBackupEntryPoint
 import com.echo.features.securebackup.api.SecureBackupSetupEntryPoint
@@ -32,6 +30,8 @@ import com.echo.libraries.architecture.appyx.canPop
 import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SessionScope::class)
@@ -142,4 +142,3 @@ class SecureBackupFlowNode(
         BackstackView()
     }
 }
-

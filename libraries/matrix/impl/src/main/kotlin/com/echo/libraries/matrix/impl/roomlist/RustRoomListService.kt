@@ -104,4 +104,3 @@ private fun RoomListServiceSyncIndicator.toSyncIndicator(): RoomListService.Sync
         RoomListServiceSyncIndicator.HIDE -> RoomListService.SyncIndicator.Hide
     }
 }
-

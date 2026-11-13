@@ -33,4 +33,3 @@ sealed interface ModerationAction {
     data object BanUser : ModerationAction
     data object UnbanUser : ModerationAction
 }
-

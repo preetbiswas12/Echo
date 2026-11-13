@@ -10,9 +10,9 @@ package com.echo.libraries.androidutils.service
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 
 interface ServiceBinder {
     fun bindService(service: Intent, conn: ServiceConnection, flags: Int): Boolean
@@ -31,4 +31,3 @@ class DefaultServiceBinder(
         context.unbindService(conn)
     }
 }
-

@@ -67,4 +67,3 @@ internal fun aPollHistoryItem(
     formattedDate = formattedDate,
     state = state,
 )
-

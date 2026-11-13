@@ -32,4 +32,3 @@ internal fun aRustTimelineItemContentMsgLike(
         threadSummary = null,
     ),
 )
-

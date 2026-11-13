@@ -14,4 +14,3 @@ sealed interface ThreadListPaginationStatus {
 
     data object Loading : ThreadListPaginationStatus
 }
-

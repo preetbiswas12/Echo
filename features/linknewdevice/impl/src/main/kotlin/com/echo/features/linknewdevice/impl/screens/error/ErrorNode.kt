@@ -12,12 +12,12 @@ import androidx.compose.ui.Modifier
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.inputs
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(SessionScope::class)
 @AssistedInject
@@ -43,4 +43,3 @@ class ErrorNode(
         )
     }
 }
-

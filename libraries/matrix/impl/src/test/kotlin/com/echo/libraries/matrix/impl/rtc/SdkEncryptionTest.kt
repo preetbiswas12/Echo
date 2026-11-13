@@ -49,4 +49,3 @@ class SdkEncryptionTest {
         const val ALICE = "@alice:example.org"
     }
 }
-

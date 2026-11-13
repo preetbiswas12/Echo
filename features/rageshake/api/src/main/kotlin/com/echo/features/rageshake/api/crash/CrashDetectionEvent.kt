@@ -12,4 +12,3 @@ sealed interface CrashDetectionEvent {
     data object ResetAllCrashData : CrashDetectionEvent
     data object ResetAppHasCrashed : CrashDetectionEvent
 }
-

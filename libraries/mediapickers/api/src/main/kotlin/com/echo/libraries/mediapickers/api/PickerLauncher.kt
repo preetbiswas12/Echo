@@ -51,4 +51,3 @@ class NoOpPickerLauncher<Input, Output>(
     override fun launch() = onResult()
     override fun launch(customInput: Input) = onResult()
 }
-

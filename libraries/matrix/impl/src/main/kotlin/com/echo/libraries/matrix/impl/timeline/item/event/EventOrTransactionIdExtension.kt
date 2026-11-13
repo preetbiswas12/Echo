@@ -17,4 +17,3 @@ fun RustEventOrTransactionId.map(): EventOrTransactionId = when (this) {
     is RustEventOrTransactionId.EventId -> EventOrTransactionId.Event(EventId(eventId))
     is RustEventOrTransactionId.TransactionId -> EventOrTransactionId.Transaction(TransactionId(transactionId))
 }
-

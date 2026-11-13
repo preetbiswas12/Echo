@@ -15,4 +15,3 @@ import kotlinx.serialization.Serializable
 data class DiscoveryResponse(
     @SerialName("unifiedpush") val unifiedpush: DiscoveryUnifiedPush = DiscoveryUnifiedPush()
 )
-

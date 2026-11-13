@@ -16,9 +16,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -26,6 +23,9 @@ import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.matrix.api.linknewdevice.CheckCodeSender
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
 import com.echo.libraries.matrix.api.logs.LoggerTags
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -106,4 +106,3 @@ class EnterNumberPresenter(
         )
     }
 }
-

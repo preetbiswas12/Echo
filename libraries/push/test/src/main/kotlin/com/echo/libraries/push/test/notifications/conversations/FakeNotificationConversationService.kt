@@ -25,4 +25,3 @@ class FakeNotificationConversationService : NotificationConversationService {
 
     override suspend fun onAvailableRoomsChanged(sessionId: SessionId, roomIds: Set<RoomId>) = Unit
 }
-

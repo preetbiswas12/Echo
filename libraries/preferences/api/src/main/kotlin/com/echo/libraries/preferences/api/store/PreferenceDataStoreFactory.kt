@@ -24,4 +24,3 @@ interface PreferenceDataStoreFactory {
      */
     fun create(name: String): DataStore<Preferences>
 }
-

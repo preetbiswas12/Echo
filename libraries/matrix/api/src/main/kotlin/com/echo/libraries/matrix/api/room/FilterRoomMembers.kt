@@ -28,4 +28,3 @@ suspend fun BaseRoom.filterMembers(query: String, coroutineContext: CoroutineCon
     }
     filteredMembers
 }
-

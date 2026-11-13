@@ -75,4 +75,3 @@ data class NotificationSoundChannelConfig(
     val callRingtoneVersion: Int,
     val callRingtoneDisplayName: String?,
 )
-

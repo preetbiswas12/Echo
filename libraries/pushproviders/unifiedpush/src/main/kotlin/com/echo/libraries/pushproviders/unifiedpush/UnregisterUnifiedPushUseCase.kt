@@ -9,11 +9,11 @@
 package com.echo.libraries.pushproviders.unifiedpush
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.pushproviders.api.PusherSubscriber
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.unifiedpush.android.connector.UnifiedPush
 import timber.log.Timber
 
@@ -69,4 +69,3 @@ class DefaultUnregisterUnifiedPushUseCase(
         }
     }
 }
-

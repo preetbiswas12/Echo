@@ -7,8 +7,6 @@
 
 package com.echo.features.linknewdevice.impl
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
@@ -16,6 +14,8 @@ import com.echo.libraries.matrix.api.linknewdevice.ErrorType
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileHandler
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
 import com.echo.libraries.matrix.api.logs.LoggerTags
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -103,4 +103,3 @@ class LinkNewMobileHandler(
         }
     }
 }
-

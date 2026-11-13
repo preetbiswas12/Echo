@@ -28,4 +28,3 @@ fun AccountDeactivationConfirmationDialog(
         destructiveSubmit = true,
     )
 }
-

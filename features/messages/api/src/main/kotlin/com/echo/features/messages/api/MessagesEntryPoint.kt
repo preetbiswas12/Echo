@@ -63,4 +63,3 @@ interface MessagesEntryPoint : FeatureEntryPoint {
         suspend fun attachThread(threadId: ThreadId, focusedEventId: EventId?)
     }
 }
-

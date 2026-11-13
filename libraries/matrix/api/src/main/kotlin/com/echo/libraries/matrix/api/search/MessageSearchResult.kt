@@ -25,4 +25,3 @@ data class MessageSearchResult(
     /** Origin server timestamp, in milliseconds since the epoch. */
     val timestamp: Long,
 )
-

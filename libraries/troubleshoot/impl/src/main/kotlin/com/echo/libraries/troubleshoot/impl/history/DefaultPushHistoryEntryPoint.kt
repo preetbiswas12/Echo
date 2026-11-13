@@ -10,10 +10,10 @@ package com.echo.libraries.troubleshoot.impl.history
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.troubleshoot.api.PushHistoryEntryPoint
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultPushHistoryEntryPoint : PushHistoryEntryPoint {
@@ -25,4 +25,3 @@ class DefaultPushHistoryEntryPoint : PushHistoryEntryPoint {
         return parentNode.createNode<PushHistoryNode>(buildContext, listOf(callback))
     }
 }
-

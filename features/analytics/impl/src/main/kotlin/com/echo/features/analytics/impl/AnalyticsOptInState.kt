@@ -15,4 +15,3 @@ data class AnalyticsOptInState(
     val hasPolicyLink: Boolean,
     val eventSink: (AnalyticsOptInEvent) -> Unit
 )
-

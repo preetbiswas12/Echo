@@ -19,4 +19,3 @@ class FakeJoinedRoomLoadedFlowNodeCallback : JoinedRoomLoadedFlowNode.Callback {
     override fun navigateToGlobalNotificationSettings() = lambdaError()
     override fun navigateToDeveloperSettings() = lambdaError()
 }
-

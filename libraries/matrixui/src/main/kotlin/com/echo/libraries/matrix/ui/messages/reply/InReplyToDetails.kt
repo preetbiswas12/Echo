@@ -70,4 +70,3 @@ fun InReplyTo.map(
     is InReplyTo.NotLoaded -> InReplyToDetails.Loading(eventId)
     is InReplyTo.Pending -> InReplyToDetails.Loading(eventId)
 }
-

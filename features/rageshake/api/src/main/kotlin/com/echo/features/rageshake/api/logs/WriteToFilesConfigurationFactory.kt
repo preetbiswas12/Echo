@@ -19,4 +19,3 @@ fun BugReporter.createWriteToFilesConfiguration(): WriteToFilesConfiguration {
         numberOfFiles = 7 * 24,
     )
 }
-

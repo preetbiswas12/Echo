@@ -8,11 +8,11 @@
 
 package com.echo.features.messages.impl.draft
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.draft.ComposerDraft
 import com.echo.libraries.matrix.api.room.draft.ComposerDraftType
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_THREAD_ID
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -71,4 +71,3 @@ class VolatileComposerDraftStoreTest {
         assertThat(loadedThreadDraft).isNull()
     }
 }
-

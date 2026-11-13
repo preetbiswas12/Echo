@@ -159,4 +159,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setKnockRequestsListView(
         )
     }
 }
-

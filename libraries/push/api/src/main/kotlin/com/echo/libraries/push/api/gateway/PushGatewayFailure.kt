@@ -16,4 +16,3 @@ sealed class PushGatewayFailure : Exception() {
      */
     class RateLimited : PushGatewayFailure()
 }
-

@@ -14,8 +14,6 @@ import androidx.work.ListenableWorker
 import androidx.work.WorkerParameters
 import androidx.work.impl.utils.taskexecutor.WorkManagerTaskExecutor
 import androidx.work.workDataOf
-import com.google.common.truth.Truth.assertThat
-import com.google.common.util.concurrent.ListenableFuture
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.SdkPendingTask
 import com.echo.libraries.matrix.api.search.SearchBackfillStrategy
@@ -29,6 +27,8 @@ import com.echo.tests.testutils.FakeLifecycleOwner
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.test.TestScope
@@ -218,4 +218,3 @@ private class FakeListenableFuture<T> : ListenableFuture<T> {
     override fun isCancelled(): Boolean = false
     override fun isDone(): Boolean = false
 }
-

@@ -116,4 +116,3 @@ fun mapPowerLevels(roomPowerLevels: RustRoomPowerLevels): RoomPowerLevels {
         users = roomPowerLevels.userPowerLevels().mapKeys { (key, _) -> UserId(key) }.toImmutableMap()
     )
 }
-

@@ -8,12 +8,12 @@
 
 package com.echo.features.login.impl.screens.qrcode.intro
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.libraries.permissions.test.FakePermissionsPresenter
 import com.echo.libraries.permissions.test.FakePermissionsPresenterFactory
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -66,4 +66,3 @@ class QrCodeIntroPresenterTest {
         )
     }
 }
-

@@ -12,7 +12,6 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.SessionId
@@ -29,6 +28,7 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.test.FakeWorkManagerScheduler
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
@@ -254,4 +254,3 @@ internal fun createLogoutPresenter(
     encryptionService = encryptionService,
     workManagerScheduler = workManagerScheduler,
 )
-

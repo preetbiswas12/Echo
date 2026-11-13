@@ -105,4 +105,3 @@ class KonsistArchitectureTest {
         assertTrue("FailingComposableWithNonImmutableSealedInterface should make this test fail.", failingTestFound)
     }
 }
-

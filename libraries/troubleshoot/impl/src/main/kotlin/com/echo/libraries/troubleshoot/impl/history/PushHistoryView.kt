@@ -273,4 +273,3 @@ internal fun PushHistoryViewPreview(
         onBackClick = {},
     )
 }
-

@@ -9,12 +9,12 @@
 package com.echo.libraries.pushproviders.unifiedpush
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.pushproviders.api.Distributor
 import com.echo.libraries.pushproviders.unifiedpush.registration.EndpointRegistrationHandler
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withTimeout
@@ -48,4 +48,3 @@ class DefaultRegisterUnifiedPushUseCase(
         }
     }
 }
-

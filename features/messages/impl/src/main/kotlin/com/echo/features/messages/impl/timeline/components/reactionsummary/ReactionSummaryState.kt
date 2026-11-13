@@ -22,4 +22,3 @@ data class ReactionSummaryState(
         val selectedEventId: EventId
     )
 }
-

@@ -42,4 +42,3 @@ class AvatarDataTest {
         assertThat(data.initialLetter).isEqualTo("T")
     }
 }
-

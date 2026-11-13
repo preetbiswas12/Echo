@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.api.notification
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.notification.aNotificationData
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class NotificationDataTest {
@@ -41,4 +41,3 @@ class NotificationDataTest {
         assertThat(sut.getDisambiguatedDisplayName(A_USER_ID)).isEqualTo("Alice (@alice:server.org)")
     }
 }
-

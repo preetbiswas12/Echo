@@ -8,13 +8,13 @@
 
 package com.echo.features.poll.impl.history.model
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.poll.api.pollcontent.PollContentStateFactory
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.event.PollContent
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.withContext
 
@@ -65,4 +65,3 @@ class PollHistoryItemsFactory(
         }
     }
 }
-

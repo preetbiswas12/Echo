@@ -9,10 +9,10 @@
 package com.echo.features.createroom.impl.configureroom
 
 import android.net.Uri
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.file.safeDelete
 import com.echo.libraries.matrix.api.room.alias.RoomAliasHelper
 import com.echo.libraries.matrix.api.spaces.SpaceRoom
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.getAndUpdate
@@ -119,4 +119,3 @@ class CreateRoomConfigStore(
         cachedAvatarUri = null
     }
 }
-

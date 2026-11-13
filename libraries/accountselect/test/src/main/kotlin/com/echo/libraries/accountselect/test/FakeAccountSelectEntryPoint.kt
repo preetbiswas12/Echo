@@ -21,4 +21,3 @@ class FakeAccountSelectEntryPoint(
         callback: AccountSelectEntryPoint.Callback,
     ): Node = createNodeResult(buildContext, callback)
 }
-

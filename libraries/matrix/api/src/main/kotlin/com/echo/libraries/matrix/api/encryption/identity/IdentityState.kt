@@ -35,4 +35,3 @@ enum class IdentityState {
 }
 
 fun IdentityState.isAViolation() = this == IdentityState.PinViolation || this == IdentityState.VerificationViolation
-

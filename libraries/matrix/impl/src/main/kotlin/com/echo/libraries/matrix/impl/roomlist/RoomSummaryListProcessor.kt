@@ -144,4 +144,3 @@ class RoomSummaryListProcessor(
 }
 
 private fun List<RoomListEntriesUpdate>.description(): String = joinToString { it.describe() }
-

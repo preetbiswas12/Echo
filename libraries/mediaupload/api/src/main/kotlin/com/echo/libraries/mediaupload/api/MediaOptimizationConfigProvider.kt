@@ -29,4 +29,3 @@ fun interface MediaOptimizationConfigProviderFactory {
      */
     fun create(client: MatrixClient): MediaOptimizationConfigProvider
 }
-

@@ -12,13 +12,13 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.core.content.FileProvider
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 import java.io.File
@@ -62,4 +62,3 @@ class DefaultFileShare(
         return FileProvider.getUriForFile(context, authority, this).normalizeScheme()
     }
 }
-

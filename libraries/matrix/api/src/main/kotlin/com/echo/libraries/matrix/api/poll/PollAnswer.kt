@@ -12,4 +12,3 @@ data class PollAnswer(
     val id: String,
     val text: String
 )
-

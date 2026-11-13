@@ -8,11 +8,11 @@
 
 package com.echo.tests.konsist
 
+import com.echo.libraries.architecture.Presenter
 import com.lemonappdev.konsist.api.Konsist
 import com.lemonappdev.konsist.api.ext.list.constructors
 import com.lemonappdev.konsist.api.ext.list.withAllParentsOf
 import com.lemonappdev.konsist.api.verify.assertTrue
-import com.echo.libraries.architecture.Presenter
 import org.junit.Test
 
 class KonsistPresenterTest {
@@ -30,4 +30,3 @@ class KonsistPresenterTest {
             }
     }
 }
-

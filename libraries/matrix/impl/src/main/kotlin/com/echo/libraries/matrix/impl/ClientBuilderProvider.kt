@@ -22,4 +22,3 @@ class RustClientBuilderProvider : ClientBuilderProvider {
         return ClientBuilder()
     }
 }
-

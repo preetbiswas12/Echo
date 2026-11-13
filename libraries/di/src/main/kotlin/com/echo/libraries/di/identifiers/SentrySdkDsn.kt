@@ -9,4 +9,3 @@ package com.echo.libraries.di.identifiers
 
 @JvmInline
 value class SentrySdkDsn(val value: String)
-

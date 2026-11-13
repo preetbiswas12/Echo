@@ -8,9 +8,9 @@
 
 package com.echo.libraries.dateformatter.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.extensions.safeCapitalize
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 
 @Inject
 class DateFormatterMonth(
@@ -32,4 +32,3 @@ class DateFormatterMonth(
             .safeCapitalize()
     }
 }
-

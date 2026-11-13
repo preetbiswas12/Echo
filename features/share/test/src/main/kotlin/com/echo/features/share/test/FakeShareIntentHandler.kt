@@ -20,4 +20,3 @@ class FakeShareIntentHandler(
         return onIncomingShareIntent(intent)
     }
 }
-

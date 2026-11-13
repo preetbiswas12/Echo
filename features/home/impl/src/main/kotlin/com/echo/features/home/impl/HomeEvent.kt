@@ -13,4 +13,3 @@ sealed interface HomeEvent {
     data object DismissMultiAccountAnnouncement : HomeEvent
     data object DismissSwipeAvatarAnnouncement : HomeEvent
 }
-

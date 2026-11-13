@@ -8,12 +8,11 @@
 
 package com.echo.features.cachecleaner.impl
 
+import com.echo.features.cachecleaner.api.CacheCleaner
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.cachecleaner.api.CacheCleaner
 
 @ContributesTo(AppScope::class)
 interface CacheCleanerBindings {
     fun cacheCleaner(): CacheCleaner
 }
-

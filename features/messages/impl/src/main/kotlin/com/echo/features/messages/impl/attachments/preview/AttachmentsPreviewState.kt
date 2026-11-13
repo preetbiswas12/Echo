@@ -54,4 +54,3 @@ sealed interface SendActionState {
         else -> null
     }
 }
-

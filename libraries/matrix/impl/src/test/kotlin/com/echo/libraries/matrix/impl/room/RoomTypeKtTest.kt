@@ -19,4 +19,3 @@ class RoomTypeKtTest {
         assert(RustRoomType.Custom("m.other").map() == RoomType.Other("m.other"))
     }
 }
-

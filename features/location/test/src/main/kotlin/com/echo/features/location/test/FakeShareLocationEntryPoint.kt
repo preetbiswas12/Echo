@@ -21,4 +21,3 @@ class FakeShareLocationEntryPoint : ShareLocationEntryPoint {
         timelineMode: Timeline.Mode,
     ): Node = lambdaError()
 }
-

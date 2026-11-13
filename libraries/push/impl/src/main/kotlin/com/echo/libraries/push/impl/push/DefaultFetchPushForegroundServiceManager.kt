@@ -15,12 +15,12 @@ import android.content.Intent
 import android.os.Build
 import android.os.PowerManager
 import androidx.core.content.ContextCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.push.api.push.FetchPushForegroundServiceManager
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -93,4 +93,3 @@ class DefaultFetchPushForegroundServiceManager(
             .firstOrNull { it.service.className == FetchPushForegroundService::class.java.name }
     }
 }
-

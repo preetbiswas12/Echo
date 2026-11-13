@@ -63,4 +63,3 @@ internal class TimelineItemsSubscriber(
         subscriptionCount--
     }
 }
-

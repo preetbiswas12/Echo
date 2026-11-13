@@ -21,4 +21,3 @@ interface SecureBackupSetupEntryPoint : FeatureEntryPoint {
         inputs: Inputs,
     ): Node
 }
-

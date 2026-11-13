@@ -9,9 +9,9 @@ package com.echo.features.preferences.impl.developer
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.echo.features.preferences.api.ExtraDeveloperOptionsRenderer
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.features.preferences.api.ExtraDeveloperOptionsRenderer
 
 @ContributesBinding(AppScope::class)
 class NoopExtraDeveloperOptionsRenderer : ExtraDeveloperOptionsRenderer {
@@ -20,4 +20,3 @@ class NoopExtraDeveloperOptionsRenderer : ExtraDeveloperOptionsRenderer {
         // No-op
     }
 }
-

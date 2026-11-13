@@ -175,4 +175,3 @@ fun aPollContent(
     isEdited = isEdited,
     threadInfo = threadInfo,
 )
-

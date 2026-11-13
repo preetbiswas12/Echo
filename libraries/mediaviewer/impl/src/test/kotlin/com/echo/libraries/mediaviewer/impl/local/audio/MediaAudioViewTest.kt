@@ -96,4 +96,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setMediaAudioView(
         }
     }
 }
-

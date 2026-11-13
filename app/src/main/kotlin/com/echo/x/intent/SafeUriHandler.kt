@@ -17,4 +17,3 @@ class SafeUriHandler(private val activity: Activity) : UriHandler {
         activity.openUrlInExternalApp(uri)
     }
 }
-

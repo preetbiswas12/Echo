@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiTimelineItem
 import com.echo.libraries.matrix.impl.timeline.item.event.EventTimelineItemMapper
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.impl.timeline.item.virtual.VirtualTimelineItemM
 import com.echo.libraries.matrix.test.A_UNIQUE_ID
 import com.echo.libraries.matrix.test.A_UNIQUE_ID_2
 import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.TestScope
@@ -177,4 +177,3 @@ internal fun TestScope.createMatrixTimelineDiffProcessor(
         timelineItemMapper = timelineItemFactory,
     )
 }
-

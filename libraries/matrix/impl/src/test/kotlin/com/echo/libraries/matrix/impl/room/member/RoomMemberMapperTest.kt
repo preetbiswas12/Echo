@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.room.member
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.RoomMembershipState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import uniffi.matrix_sdk.RoomMemberRole
 import org.matrix.rustcomponents.sdk.MembershipState as RustMembershipState
@@ -42,4 +42,3 @@ class RoomMemberMapperTest {
         assertThat(RoomMemberMapper.mapMembership(RustMembershipState.Leave)).isEqualTo(RoomMembershipState.LEAVE)
     }
 }
-

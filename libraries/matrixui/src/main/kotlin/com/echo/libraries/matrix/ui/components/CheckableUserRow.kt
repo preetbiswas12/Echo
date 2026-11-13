@@ -162,4 +162,3 @@ internal fun CheckableUnresolvedUserRowPreview() = ElementThemedPreview {
         )
     }
 }
-

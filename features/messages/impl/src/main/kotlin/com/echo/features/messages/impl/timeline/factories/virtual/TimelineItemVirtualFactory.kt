@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.factories.virtual
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemLastForwardIndicatorModel
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemLoadingIndicatorModel
@@ -18,6 +17,7 @@ import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemTyping
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemVirtualModel
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.virtual.VirtualTimelineItem
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemVirtualFactory(
@@ -46,4 +46,3 @@ class TimelineItemVirtualFactory(
         }
     }
 }
-

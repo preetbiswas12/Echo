@@ -57,4 +57,3 @@ internal fun ReplySwipeIndicatorPreview() = ElementPreview {
         Row { ReplySwipeIndicator(swipeProgress = { 3f }) }
     }
 }
-

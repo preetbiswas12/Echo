@@ -22,4 +22,3 @@ fun interface VoiceMessageComposerPresenter : Presenter<VoiceMessageComposerStat
         fun create(timelineMode: Timeline.Mode): VoiceMessageComposerPresenter
     }
 }
-

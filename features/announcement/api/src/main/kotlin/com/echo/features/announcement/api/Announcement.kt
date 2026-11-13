@@ -22,4 +22,3 @@ sealed interface Announcement {
 
     data object SwipeAvatarToSwitchAccount : Announcement
 }
-

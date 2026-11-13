@@ -22,4 +22,3 @@ fun DisplayedStatus.toText(): String = when (this) {
     is DisplayedStatus.UserSet -> "${status.emoji} ${status.text}"
     is DisplayedStatus.InCall -> "🎧 ${stringResource(CommonStrings.common_on_a_call)}"
 }
-

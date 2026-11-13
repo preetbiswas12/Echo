@@ -18,4 +18,3 @@ open class EmptyStatePreviewParam : PreviewParameterProvider<EmptyState> {
             EmptyState(1.seconds),
         )
 }
-

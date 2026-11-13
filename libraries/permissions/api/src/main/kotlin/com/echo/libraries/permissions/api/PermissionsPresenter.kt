@@ -21,4 +21,3 @@ interface PermissionsPresenter : Presenter<PermissionsState> {
         fun create(permission: String): PermissionsPresenter
     }
 }
-

@@ -39,4 +39,3 @@ interface PollContentStateFactory {
      */
     suspend fun create(eventId: EventId?, isEditable: Boolean, isOwn: Boolean, content: PollContent): PollContentState
 }
-

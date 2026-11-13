@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.test.FakeClientBuilderEnterpriseHook
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
 import com.echo.libraries.matrix.api.core.SessionId
@@ -33,6 +32,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -165,4 +165,3 @@ private fun TestScope.createRustMatrixClientInnerFactory(
         },
     )
 }
-

@@ -13,4 +13,3 @@ import kotlin.time.Duration.Companion.minutes
 object VoiceMessageConfig {
     val maxVoiceMessageDuration = 30.minutes
 }
-

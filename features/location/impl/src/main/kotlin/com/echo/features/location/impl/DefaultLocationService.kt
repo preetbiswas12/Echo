@@ -8,14 +8,14 @@
 
 package com.echo.features.location.impl
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.enterprise.api.remoteconfig.CustomMapTilerConfigProvider
 import com.echo.features.enterprise.api.remoteconfig.MapTilerConfig
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.api.buildTimeMapTilerConfig
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -36,4 +36,3 @@ class DefaultLocationService(
         initialValue = buildTimeMapTilerConfig(),
     )
 }
-

@@ -66,4 +66,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setMediaDeleteConfirmationBo
         )
     }
 }
-

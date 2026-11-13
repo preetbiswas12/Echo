@@ -43,4 +43,3 @@ class FakeFfiTimeline : Timeline(NoHandle) {
 
     override suspend fun fetchMembers() = Unit
 }
-

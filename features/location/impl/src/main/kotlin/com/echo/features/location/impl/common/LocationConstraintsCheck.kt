@@ -50,4 +50,3 @@ fun LocationConstraintsCheck.toDialogState(): LocationConstraintsDialogState {
         LocationConstraintsCheck.NotEnoughPowerLevel -> LocationConstraintsDialogState.NotEnoughPowerLevel
     }
 }
-

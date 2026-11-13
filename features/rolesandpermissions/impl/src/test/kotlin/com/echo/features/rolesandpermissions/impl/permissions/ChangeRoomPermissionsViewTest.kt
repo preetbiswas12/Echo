@@ -180,4 +180,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setChangeRoomPermissionsRule
         )
     }
 }
-

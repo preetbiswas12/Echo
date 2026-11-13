@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.actionlist
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.aUserEventPermissions
 import com.echo.features.messages.impl.actionlist.model.TimelineItemAction
 import com.echo.features.messages.impl.actionlist.model.TimelineItemActionPostProcessor
@@ -48,6 +47,7 @@ import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.test.runTest
@@ -1610,4 +1610,3 @@ private fun createActionListPresenter(
         getRecentEmojis = recentEmojis,
     )
 }
-

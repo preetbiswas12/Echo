@@ -33,4 +33,3 @@ fun OnLifecycleEvent(onEvent: (owner: LifecycleOwner, event: Lifecycle.Event) ->
         }
     }
 }
-

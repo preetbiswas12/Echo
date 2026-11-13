@@ -39,4 +39,3 @@ interface HtmlMessageParser {
         const val INLINE_CODE_ANNOTATION_TAG = "inline_code"
     }
 }
-

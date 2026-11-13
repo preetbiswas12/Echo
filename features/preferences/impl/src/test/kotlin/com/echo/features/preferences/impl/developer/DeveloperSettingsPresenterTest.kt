@@ -11,7 +11,6 @@
 package com.echo.features.preferences.impl.developer
 
 import androidx.compose.ui.graphics.Color
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.features.preferences.impl.developer.appsettings.anAppDeveloperSettingsState
@@ -43,6 +42,7 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
@@ -327,4 +327,3 @@ class DeveloperSettingsPresenterTest {
         )
     }
 }
-

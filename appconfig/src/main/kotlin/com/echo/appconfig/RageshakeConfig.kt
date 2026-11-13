@@ -43,4 +43,3 @@ object RageshakeConfig {
      */
     const val MAX_DESCRIPTION_SIZE = 40 * 1024
 }
-

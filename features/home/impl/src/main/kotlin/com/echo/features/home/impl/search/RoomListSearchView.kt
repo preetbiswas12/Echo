@@ -202,4 +202,3 @@ internal fun RoomListSearchContentPreview(@PreviewParameter(RoomListSearchStateP
         eventSink = {},
     )
 }
-

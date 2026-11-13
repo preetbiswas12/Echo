@@ -56,4 +56,3 @@ internal fun RoomStateEvent.toFfiEventIn(eventType: String): FfiEventIn? {
         encryption = ClearText,
     )
 }
-

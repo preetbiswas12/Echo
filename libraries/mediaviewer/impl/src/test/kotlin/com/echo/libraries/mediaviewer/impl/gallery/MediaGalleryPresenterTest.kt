@@ -12,7 +12,6 @@ package com.echo.libraries.mediaviewer.impl.gallery
 
 import android.net.Uri
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarMessage
@@ -41,6 +40,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -538,4 +538,3 @@ class MediaGalleryPresenterTest {
         )
     }
 }
-

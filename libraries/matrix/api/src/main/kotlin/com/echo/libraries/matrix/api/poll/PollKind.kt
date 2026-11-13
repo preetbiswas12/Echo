@@ -17,4 +17,3 @@ enum class PollKind {
 
 val PollKind.isDisclosed: Boolean
     get() = this == PollKind.Disclosed
-

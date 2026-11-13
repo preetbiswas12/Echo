@@ -11,5 +11,3 @@ plugins {
 android {
     namespace = "com.echo.libraries.cachestore.api"
 }
-
-

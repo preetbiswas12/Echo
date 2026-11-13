@@ -13,4 +13,3 @@ data class LeaveSpaceRoom(
     val isLastOwner: Boolean,
     val areCreatorsPrivileged: Boolean,
 )
-

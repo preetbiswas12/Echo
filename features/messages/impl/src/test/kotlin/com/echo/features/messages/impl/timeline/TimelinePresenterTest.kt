@@ -9,7 +9,6 @@
 package com.echo.features.messages.impl.timeline
 
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.test.FakeActiveLiveLocationShareManager
 import com.echo.features.messages.impl.FakeMessagesNavigator
 import com.echo.features.messages.impl.crypto.sendfailure.resolve.ResolveVerifiedUserSendFailureEvent
@@ -88,6 +87,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -2092,4 +2092,3 @@ class TimelinePresenterTest {
         )
     }
 }
-

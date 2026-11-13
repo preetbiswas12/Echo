@@ -15,8 +15,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.test.AndroidComposeUiTest
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.preferences.impl.R
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.libraries.ui.strings.CommonStrings
@@ -30,6 +28,8 @@ import com.echo.tests.testutils.clickOn
 import com.echo.tests.testutils.ensureCalledOnce
 import com.echo.tests.testutils.pressBack
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Interaction
 import org.junit.Test
 
 class MediaSettingsViewTest : RobolectricTest() {
@@ -171,4 +171,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setMediaSettingsView(
         }
     }
 }
-

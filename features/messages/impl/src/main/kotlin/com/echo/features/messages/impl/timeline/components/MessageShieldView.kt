@@ -184,4 +184,3 @@ internal fun MessageShieldViewPreview() {
         }
     }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.startchat.impl.joinbyaddress
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.startchat.impl.FakeStartChatNavigator
 import com.echo.features.startchat.impl.StartChatNavigator
 import com.echo.libraries.matrix.api.MatrixClient
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.room.alias.FakeRoomAliasHelper
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import java.util.Optional
@@ -241,4 +241,3 @@ class JoinBaseRoomByAddressPresenterTest {
         )
     }
 }
-

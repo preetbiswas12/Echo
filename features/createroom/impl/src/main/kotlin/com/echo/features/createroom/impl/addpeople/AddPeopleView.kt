@@ -91,4 +91,3 @@ internal fun AddPeopleViewPreview(@PreviewParameter(InvitePeopleStatePreviewPara
         onFinish = {},
     )
 }
-

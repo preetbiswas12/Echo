@@ -216,4 +216,3 @@ private fun ActionState?.toButtonState(): FormattingOptionState =
 internal fun TextFormattingPreview() = ElementPreview {
     TextFormatting(state = aRichTextEditorState())
 }
-

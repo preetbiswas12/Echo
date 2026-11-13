@@ -46,4 +46,3 @@ class MatrixTimelineItemMapper(
         fetchDetailsForEvent(eventId)
     }
 }
-

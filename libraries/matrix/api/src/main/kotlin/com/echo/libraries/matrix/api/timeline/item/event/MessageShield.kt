@@ -44,4 +44,3 @@ val MessageShield.isCritical: Boolean
         is MessageShield.VerificationViolation -> isCritical
         is MessageShield.MismatchedSender -> isCritical
     }
-

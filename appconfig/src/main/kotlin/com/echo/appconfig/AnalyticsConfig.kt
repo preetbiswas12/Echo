@@ -11,4 +11,3 @@ package com.echo.appconfig
 object AnalyticsConfig {
     const val POLICY_LINK = BuildConfig.URL_POLICY
 }
-

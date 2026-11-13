@@ -11,4 +11,3 @@ package com.echo.features.rageshake.api.detection
 import com.echo.libraries.architecture.Presenter
 
 interface RageshakeDetectionPresenter : Presenter<RageshakeDetectionState>
-

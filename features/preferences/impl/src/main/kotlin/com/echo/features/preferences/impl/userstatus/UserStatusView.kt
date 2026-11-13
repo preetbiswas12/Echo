@@ -377,4 +377,3 @@ internal fun UserStatusViewPreview(@PreviewParameter(UserStatusStatePreviewParam
         emojiPickerRenderer = NoOpEmojiPickerRenderer,
     )
 }
-

@@ -9,7 +9,6 @@
 package com.echo.libraries.matrix.impl.room
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomHero
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomInfo
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoom
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -71,4 +71,3 @@ class RoomInfoExtTest {
         }
     }
 }
-

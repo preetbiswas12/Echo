@@ -43,4 +43,3 @@ class FakeFfiSearchService(
         return FakeFfiTaskHandle()
     }
 }
-

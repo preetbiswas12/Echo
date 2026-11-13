@@ -9,8 +9,6 @@
 package com.echo.features.startchat.impl
 
 import androidx.compose.runtime.MutableState
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.CreatedRoom
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.startchat.api.ConfirmingStartDmWithMatrixUser
 import com.echo.features.startchat.api.StartDMAction
@@ -22,6 +20,8 @@ import com.echo.libraries.matrix.api.room.StartDMResult
 import com.echo.libraries.matrix.api.room.startDM
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.CreatedRoom
 
 @ContributesBinding(SessionScope::class)
 class DefaultStartDMAction(
@@ -59,4 +59,3 @@ class DefaultStartDMAction(
         }
     }
 }
-

@@ -32,5 +32,3 @@ dependencies {
     implementation(libs.molecule.runtime)
     implementation(libs.androidx.compose.ui.test.junit)
 }
-
-

@@ -16,10 +16,6 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.getSystemService
 import coil3.SingletonImageLoader
 import coil3.annotation.DelicateCoilApi
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import dev.zacsweers.metro.binding
 import com.echo.appconfig.ElementCallConfig
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.CurrentCall
@@ -37,6 +33,10 @@ import com.echo.libraries.push.api.notifications.NotificationIdProvider
 import com.echo.libraries.push.api.notifications.OnMissedCallNotificationHandler
 import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import dev.zacsweers.metro.binding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Job
@@ -432,4 +432,3 @@ sealed interface CallState {
      */
     data object InCall : CallState
 }
-

@@ -36,4 +36,3 @@ class FakeFfiRoomDirectorySearch(
         listener?.onUpdate(roomEntriesUpdate)
     }
 }
-

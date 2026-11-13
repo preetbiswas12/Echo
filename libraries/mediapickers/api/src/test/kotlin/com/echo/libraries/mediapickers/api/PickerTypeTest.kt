@@ -10,9 +10,9 @@ package com.echo.libraries.mediapickers.api
 
 import android.net.Uri
 import androidx.activity.result.contract.ActivityResultContracts
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class PickerTypeTest : RobolectricTest() {
@@ -51,4 +51,3 @@ class PickerTypeTest : RobolectricTest() {
         assertThat(pickerType.getDefaultRequest()).isEqualTo(uri)
     }
 }
-

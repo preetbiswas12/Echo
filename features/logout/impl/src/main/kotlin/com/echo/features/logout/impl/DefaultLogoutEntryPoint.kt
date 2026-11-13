@@ -10,10 +10,10 @@ package com.echo.features.logout.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.logout.api.LogoutEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultLogoutEntryPoint : LogoutEntryPoint {
@@ -25,4 +25,3 @@ class DefaultLogoutEntryPoint : LogoutEntryPoint {
         return parentNode.createNode<LogoutNode>(buildContext, listOf(callback))
     }
 }
-

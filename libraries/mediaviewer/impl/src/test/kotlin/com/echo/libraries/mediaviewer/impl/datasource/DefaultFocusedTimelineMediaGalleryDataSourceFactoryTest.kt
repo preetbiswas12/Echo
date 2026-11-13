@@ -8,10 +8,10 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemImage
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -31,4 +31,3 @@ class DefaultFocusedTimelineMediaGalleryDataSourceFactoryTest {
         assertThat(result).isInstanceOf(TimelineMediaGalleryDataSource::class.java)
     }
 }
-

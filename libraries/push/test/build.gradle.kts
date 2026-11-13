@@ -27,5 +27,3 @@ dependencies {
     implementation(libs.coil.test)
     implementation(libs.test.robolectric)
 }
-
-

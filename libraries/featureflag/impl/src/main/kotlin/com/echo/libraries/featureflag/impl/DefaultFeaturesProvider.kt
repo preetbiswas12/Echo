@@ -8,14 +8,13 @@
 
 package com.echo.libraries.featureflag.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.featureflag.api.Feature
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.api.FeaturesProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 @ContributesIntoSet(AppScope::class)
 class DefaultFeaturesProvider : FeaturesProvider {
     override fun provide(): List<Feature> = FeatureFlags.entries
 }
-

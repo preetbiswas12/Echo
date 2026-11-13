@@ -62,4 +62,3 @@ internal fun FocusRequestStateViewPreview(
         onClearFocusRequestState = {},
     )
 }
-

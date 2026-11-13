@@ -7,11 +7,11 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemRedactedContent
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EVENT_ID_2
 import com.echo.libraries.matrix.test.AN_EVENT_ID_3
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import org.junit.Test
@@ -75,4 +75,3 @@ class TimelineStateTest {
         assertThat(state.canSelect(notForwardable)).isFalse()
     }
 }
-

@@ -17,4 +17,3 @@ class FakeDurationFormatter(
         return formatLambda(duration)
     }
 }
-

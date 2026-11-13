@@ -175,4 +175,3 @@ internal fun PdfPagesErrorViewPreview() = ElementPreview {
         error = IOException("file not in PDF format or corrupted"),
     )
 }
-

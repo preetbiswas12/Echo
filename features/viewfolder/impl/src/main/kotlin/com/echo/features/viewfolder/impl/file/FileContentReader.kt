@@ -8,10 +8,10 @@
 
 package com.echo.features.viewfolder.impl.file
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import java.io.File
 
@@ -29,4 +29,3 @@ class DefaultFileContentReader(
         }
     }
 }
-

@@ -31,4 +31,3 @@ fun aMentionSpanProvider(
         mentionSpanTheme = mentionSpanTheme,
     )
 }
-

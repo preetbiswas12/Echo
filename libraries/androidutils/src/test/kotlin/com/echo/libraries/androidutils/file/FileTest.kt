@@ -87,4 +87,3 @@ class FileTest {
         assertThat(usedNames).containsExactly("image.png", "image_1.png").inOrder()
     }
 }
-

@@ -25,4 +25,3 @@ interface ContentScanner {
      */
     suspend fun scan(mediaSource: MediaSource): Result<Boolean>
 }
-

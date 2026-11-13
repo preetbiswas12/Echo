@@ -17,7 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.securebackup.impl.loggerTagDisable
 import com.echo.features.securebackup.impl.loggerTagRoot
 import com.echo.libraries.architecture.AsyncAction
@@ -29,6 +28,7 @@ import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.designsystem.utils.snackbar.collectSnackbarMessageAsState
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.EncryptionService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -96,4 +96,3 @@ class SecureBackupRootPresenter(
         }.runCatchingUpdatingState(action)
     }
 }
-

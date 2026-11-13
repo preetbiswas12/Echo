@@ -29,4 +29,3 @@ fun LogLevel.toLogLevelItem(): LogLevelItem {
         LogLevel.TRACE -> LogLevelItem.TRACE
     }
 }
-

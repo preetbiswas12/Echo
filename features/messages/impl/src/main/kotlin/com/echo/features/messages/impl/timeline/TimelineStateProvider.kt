@@ -306,4 +306,3 @@ internal fun aTimelineRoomInfo(
     typingNotificationState = typingNotificationState,
     predecessorRoom = predecessorRoom,
 )
-

@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.libraries.uiStrings)
     implementation(projects.libraries.matrix.api)
 }
-
-

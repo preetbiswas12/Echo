@@ -22,4 +22,3 @@ annotation class PreviewWithHeight1280
 
 @Preview(heightDp = 1600)
 annotation class PreviewWithExtraLargeHeight
-

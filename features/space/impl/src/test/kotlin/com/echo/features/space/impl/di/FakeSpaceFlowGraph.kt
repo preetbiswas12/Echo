@@ -24,4 +24,3 @@ class FakeSpaceFlowGraph : SpaceFlowGraph {
         return emptyMap()
     }
 }
-

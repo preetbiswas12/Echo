@@ -195,4 +195,3 @@ sealed interface CropDragTarget {
         data object Left : Edge
     }
 }
-

@@ -12,7 +12,6 @@ import com.bumble.appyx.core.modality.AncestryInfo
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.navmodel.backstack.activeElement
 import com.bumble.appyx.utils.customisations.NodeCustomisationDirectoryImpl
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.securityandprivacy.api.SecurityAndPrivacyEntryPoint
 import com.echo.libraries.matrix.api.room.history.RoomHistoryVisibility
 import com.echo.libraries.matrix.api.room.join.JoinRule
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -103,4 +103,3 @@ class SecurityAndPrivacyFlowNodeTest : RobolectricTest() {
 
     private fun SecurityAndPrivacyFlowNode.currentNavTarget() = backstack.activeElement
 }
-

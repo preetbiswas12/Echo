@@ -39,5 +39,3 @@ dependencies {
     testImplementation(projects.libraries.roomselect.test)
     testImplementation(projects.libraries.testtags)
 }
-
-

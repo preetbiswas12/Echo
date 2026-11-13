@@ -23,4 +23,3 @@ class FakeMediaViewerEntryPoint : MediaViewerEntryPoint {
         callback: MediaViewerEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

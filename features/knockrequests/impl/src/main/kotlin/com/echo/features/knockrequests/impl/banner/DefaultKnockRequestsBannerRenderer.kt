@@ -10,9 +10,9 @@ package com.echo.features.knockrequests.impl.banner
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.knockrequests.api.banner.KnockRequestsBannerRenderer
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class DefaultKnockRequestsBannerRenderer(
@@ -27,4 +27,3 @@ class DefaultKnockRequestsBannerRenderer(
         )
     }
 }
-

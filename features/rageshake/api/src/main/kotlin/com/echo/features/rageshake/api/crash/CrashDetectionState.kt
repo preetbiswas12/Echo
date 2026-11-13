@@ -13,4 +13,3 @@ data class CrashDetectionState(
     val crashDetected: Boolean,
     val eventSink: (CrashDetectionEvent) -> Unit
 )
-

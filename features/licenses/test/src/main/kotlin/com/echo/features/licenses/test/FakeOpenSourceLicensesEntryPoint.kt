@@ -21,4 +21,3 @@ class FakeOpenSourceLicensesEntryPoint : OpenSourceLicensesEntryPoint {
         lambdaError()
     }
 }
-

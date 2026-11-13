@@ -12,11 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.ui.safety.rememberHideInvitesAvatar
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.collections.immutable.toImmutableList
@@ -54,4 +54,3 @@ class HomeSpacesPresenter(
         )
     }
 }
-

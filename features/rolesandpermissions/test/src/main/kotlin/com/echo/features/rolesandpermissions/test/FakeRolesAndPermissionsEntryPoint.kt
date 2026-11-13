@@ -18,4 +18,3 @@ class FakeRolesAndPermissionsEntryPoint : RolesAndPermissionsEntryPoint {
         lambdaError()
     }
 }
-

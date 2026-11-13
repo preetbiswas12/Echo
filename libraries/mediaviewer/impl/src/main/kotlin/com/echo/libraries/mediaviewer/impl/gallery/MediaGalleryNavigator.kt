@@ -14,4 +14,3 @@ interface MediaGalleryNavigator {
     fun onViewInTimelineClick(eventId: EventId)
     fun onForwardClick(eventId: EventId)
 }
-

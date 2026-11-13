@@ -46,4 +46,3 @@ internal fun aCallNotificationData(
         audioOnly = audioOnly
     )
 }
-

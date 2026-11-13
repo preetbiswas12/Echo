@@ -26,4 +26,3 @@ fun loginError(
         AuthErrorCode.UNKNOWN -> CommonStrings.error_unknown
     }
 }
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.poll
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.poll.PollKind
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.PollKind as RustPollKind
 
@@ -38,4 +38,3 @@ class PollKindKtTest {
         assertThat(rustPollKind).isEqualTo(RustPollKind.UNDISCLOSED)
     }
 }
-

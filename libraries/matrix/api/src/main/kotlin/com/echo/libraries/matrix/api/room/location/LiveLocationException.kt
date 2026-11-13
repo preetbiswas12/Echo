@@ -12,4 +12,3 @@ sealed class LiveLocationException(message: String?) : Exception(message) {
     class Network : LiveLocationException("Network error")
     class Other(val exception: Exception) : LiveLocationException(exception.message)
 }
-

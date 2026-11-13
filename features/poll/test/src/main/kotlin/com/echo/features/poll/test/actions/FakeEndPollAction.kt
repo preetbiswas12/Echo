@@ -24,4 +24,3 @@ class FakeEndPollAction : EndPollAction {
         return Result.success(Unit)
     }
 }
-

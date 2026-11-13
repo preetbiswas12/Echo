@@ -12,4 +12,3 @@ sealed interface NotificationsOptInEvent {
     data object ContinueClicked : NotificationsOptInEvent
     data object NotNowClicked : NotificationsOptInEvent
 }
-

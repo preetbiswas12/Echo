@@ -10,10 +10,10 @@ package com.echo.features.rolesandpermissions.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rolesandpermissions.api.RolesAndPermissionsEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class DefaultRolesAndPermissionsEntryPoint : RolesAndPermissionsEntryPoint {
@@ -25,4 +25,3 @@ class DefaultRolesAndPermissionsEntryPoint : RolesAndPermissionsEntryPoint {
         return parentNode.createNode<RolesAndPermissionsFlowNode>(buildContext, listOf(callback))
     }
 }
-

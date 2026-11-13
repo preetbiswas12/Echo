@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.paths
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.di.BaseDirectory
 import com.echo.libraries.di.CacheDirectory
 import com.echo.libraries.matrix.api.paths.SessionPaths
+import dev.zacsweers.metro.Inject
 import java.io.File
 import java.util.UUID
 
@@ -28,4 +28,3 @@ class SessionPathsFactory(
         )
     }
 }
-

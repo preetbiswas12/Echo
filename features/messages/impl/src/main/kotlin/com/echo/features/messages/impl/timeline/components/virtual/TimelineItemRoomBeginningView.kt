@@ -100,4 +100,3 @@ internal fun TimelineItemRoomBeginningViewPreview() = ElementPreview {
         }
     }
 }
-

@@ -9,13 +9,13 @@
 package com.echo.features.messages.impl.timeline.groups
 
 import androidx.annotation.VisibleForTesting
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.TimelineItemThreadInfo
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemRedactedContent
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.UniqueId
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.toImmutableList
 
 @SingleIn(RoomScope::class)
@@ -146,4 +146,3 @@ internal fun List<TimelineItem>.collapseRedactedRuns(groupIds: MutableMap<String
     flushRun()
     return result
 }
-

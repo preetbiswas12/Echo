@@ -165,4 +165,3 @@ fun ThreadListPaginationState.map(): ThreadListPaginationStatus = when (this) {
     is ThreadListPaginationState.Idle -> ThreadListPaginationStatus.Idle(hasMoreToLoad = !endReached)
     ThreadListPaginationState.Loading -> ThreadListPaginationStatus.Loading
 }
-

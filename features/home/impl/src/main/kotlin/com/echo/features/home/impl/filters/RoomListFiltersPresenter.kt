@@ -11,9 +11,9 @@ package com.echo.features.home.impl.filters
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.home.impl.filters.selection.FilterSelectionStrategy
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 
 @Inject
@@ -40,4 +40,3 @@ class RoomListFiltersPresenter(
         )
     }
 }
-

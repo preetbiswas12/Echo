@@ -41,4 +41,3 @@ class FakeFeatureFlagService(
         return getAvailableFeaturesResult(includeFinishedFeatures, isInLabs)
     }
 }
-

@@ -26,4 +26,3 @@ class DefaultFirebaseTroubleshooter(
         return rotateFirebaseSession()
     }
 }
-

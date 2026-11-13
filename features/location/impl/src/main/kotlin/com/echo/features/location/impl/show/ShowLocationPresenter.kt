@@ -19,9 +19,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.location.api.Location
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.api.ShowLocationMode
@@ -51,6 +48,9 @@ import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.getBestName
 import com.echo.libraries.matrix.api.room.joinedRoomMembers
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.combine
@@ -234,4 +234,3 @@ class ShowLocationPresenter(
         )
     }
 }
-

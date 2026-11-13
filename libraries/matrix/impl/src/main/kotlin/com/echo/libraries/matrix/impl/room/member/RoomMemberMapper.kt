@@ -62,4 +62,3 @@ object RoomMemberMapper {
             is RustMembershipState.Custom -> TODO()
         }
 }
-

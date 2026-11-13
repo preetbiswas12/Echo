@@ -83,4 +83,3 @@ internal fun ColorsSchemeBlackPreview() = ElementTheme(
         ElementTheme.materialColors,
     )
 }
-

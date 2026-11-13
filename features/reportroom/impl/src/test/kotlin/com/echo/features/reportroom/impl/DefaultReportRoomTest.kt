@@ -8,13 +8,13 @@
 
 package com.echo.features.reportroom.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -149,4 +149,3 @@ class DefaultReportRoomTest {
         assert(failureReportRoomLambda).isCalledOnce()
     }
 }
-

@@ -9,11 +9,11 @@
 package com.echo.features.announcement.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.impl.store.AnnouncementStatus
 import com.echo.features.announcement.impl.store.AnnouncementStore
 import com.echo.features.announcement.impl.store.InMemoryAnnouncementStore
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -114,4 +114,3 @@ class DefaultAnnouncementServiceTest {
         announcementPresenter = announcementPresenter,
     )
 }
-

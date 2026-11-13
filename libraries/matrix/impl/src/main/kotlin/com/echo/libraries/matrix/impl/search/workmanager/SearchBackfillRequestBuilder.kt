@@ -14,11 +14,6 @@ import androidx.work.Constraints
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.workDataOf
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.impl.search.workmanager.SearchBackfillWorker.Companion.SESSION_ID_PARAM
@@ -27,6 +22,11 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerRequestWrapper
 import com.echo.libraries.workmanager.api.WorkManagerWorkerType
 import com.echo.libraries.workmanager.api.workManagerTag
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
@@ -90,4 +90,3 @@ class DefaultSearchBackfillRequestBuilder(
         return Result.success(listOf(WorkManagerRequestWrapper(request, type)))
     }
 }
-

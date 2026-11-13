@@ -13,4 +13,3 @@ interface LiveLocationReceiver {
     suspend fun onLocationUpdate(location: Location)
     suspend fun onUnrecoverableError()
 }
-

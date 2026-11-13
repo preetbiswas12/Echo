@@ -35,4 +35,3 @@ class FakeCallWidgetSettingsProvider(
         return provideFn(baseUrl, widgetId, encrypted, direct, isAudioCall, hasActiveCall)
     }
 }
-

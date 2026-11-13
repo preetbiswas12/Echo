@@ -11,12 +11,12 @@ package com.echo.features.createroom.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.createroom.api.CreateRoomEntryPoint
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -50,4 +50,3 @@ class DefaultCreateRoomEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

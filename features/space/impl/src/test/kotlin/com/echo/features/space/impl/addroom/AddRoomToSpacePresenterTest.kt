@@ -10,7 +10,6 @@
 package com.echo.features.space.impl.addroom
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.matrix.api.core.RoomId
@@ -30,6 +29,7 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -401,4 +401,3 @@ private fun aSelectRoomInfoList(): ImmutableList<SelectRoomInfo> = listOf(
     aSelectRoomInfo(roomId = A_ROOM_ID, name = "Room 1"),
     aSelectRoomInfo(roomId = A_ROOM_ID_2, name = "Room 2"),
 ).toImmutableList()
-

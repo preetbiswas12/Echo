@@ -25,4 +25,3 @@ internal fun VoiceMessageSendingFailedDialog(
         submitText = stringResource(CommonStrings.action_ok),
     )
 }
-

@@ -8,15 +8,15 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import com.google.firebase.messaging.FirebaseMessagingService
-import com.google.firebase.messaging.RemoteMessage
-import com.google.firebase.messaging.RemoteMessage.PRIORITY_HIGH
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.bindings
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.push.api.push.FetchPushForegroundServiceManager
 import com.echo.libraries.pushproviders.api.PushHandler
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
+import com.google.firebase.messaging.RemoteMessage.PRIORITY_HIGH
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -81,4 +81,3 @@ class VectorFirebaseMessagingService : FirebaseMessagingService() {
         }
     }
 }
-

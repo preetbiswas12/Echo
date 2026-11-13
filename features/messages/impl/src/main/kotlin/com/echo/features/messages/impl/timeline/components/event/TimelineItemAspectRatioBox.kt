@@ -42,4 +42,3 @@ fun TimelineItemAspectRatioBox(
         content = content
     )
 }
-

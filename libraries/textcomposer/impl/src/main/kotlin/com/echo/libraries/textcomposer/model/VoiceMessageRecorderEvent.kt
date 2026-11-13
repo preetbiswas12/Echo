@@ -13,4 +13,3 @@ sealed interface VoiceMessageRecorderEvent {
     data object Stop : VoiceMessageRecorderEvent
     data object Cancel : VoiceMessageRecorderEvent
 }
-

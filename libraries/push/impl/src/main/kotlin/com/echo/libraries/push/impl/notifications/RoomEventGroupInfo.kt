@@ -29,4 +29,3 @@ data class RoomEventGroupInfo(
     // true if the room is also joined by another account signed in on this device
     val showSessionId: Boolean = false,
 )
-

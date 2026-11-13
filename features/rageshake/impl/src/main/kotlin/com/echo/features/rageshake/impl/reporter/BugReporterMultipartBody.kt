@@ -418,4 +418,3 @@ class BugReporterMultipartBody internal constructor(
         }
     }
 }
-

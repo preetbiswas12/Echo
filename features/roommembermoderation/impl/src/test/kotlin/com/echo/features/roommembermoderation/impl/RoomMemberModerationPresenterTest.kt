@@ -9,7 +9,6 @@
 package com.echo.features.roommembermoderation.impl
 
 import app.cash.turbine.TurbineTestContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.roommembermoderation.api.ModerationAction
 import com.echo.features.roommembermoderation.api.ModerationActionState
 import com.echo.features.roommembermoderation.api.RoomMemberModerationEvent
@@ -35,6 +34,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableList
@@ -400,4 +400,3 @@ class RoomMemberModerationPresenterTest {
         return awaitItem() as InternalRoomMemberModerationState
     }
 }
-

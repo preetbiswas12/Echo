@@ -42,4 +42,3 @@ fun aSelectRoomInfo(
     isDm = isDm,
     isTombstoned = isTombstoned,
 )
-

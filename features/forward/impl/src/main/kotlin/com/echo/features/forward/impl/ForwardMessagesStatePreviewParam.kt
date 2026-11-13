@@ -37,4 +37,3 @@ fun aForwardMessagesState(
     forwardAction = forwardAction,
     eventSink = eventSink
 )
-

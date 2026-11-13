@@ -43,4 +43,3 @@ data class License(
 data class Scm(
     val url: String,
 ) : Parcelable
-

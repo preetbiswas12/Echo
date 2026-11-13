@@ -10,11 +10,11 @@ package com.echo.features.invite.impl.declineandblock
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.declineandblock.DeclineInviteAndBlockEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultDeclineAndBlockEntryPoint : DeclineInviteAndBlockEntryPoint {
@@ -28,4 +28,3 @@ class DefaultDeclineAndBlockEntryPoint : DeclineInviteAndBlockEntryPoint {
         return parentNode.createNode<DeclineAndBlockNode>(buildContext, plugins = listOf(inputs, callback))
     }
 }
-

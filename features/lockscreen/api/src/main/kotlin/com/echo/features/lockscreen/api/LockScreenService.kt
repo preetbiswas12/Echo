@@ -61,4 +61,3 @@ fun LockScreenService.handleSecureFlag(activity: ComponentActivity) {
         }
         .launchIn(activity.lifecycleScope)
 }
-

@@ -28,4 +28,3 @@ class BiometricUnlockError(val code: Int, message: String) : Exception(message) 
         private val LOCKOUT_ERROR_CODES = arrayOf(BiometricPrompt.ERROR_LOCKOUT, BiometricPrompt.ERROR_LOCKOUT_PERMANENT)
     }
 }
-

@@ -15,4 +15,3 @@ class FakeQrCodeDataParser : QrCodeDataParser {
         return FakeFfiQrCodeData()
     }
 }
-

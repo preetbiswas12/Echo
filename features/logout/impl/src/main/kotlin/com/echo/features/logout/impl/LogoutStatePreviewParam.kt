@@ -66,4 +66,3 @@ fun aLogoutState(
     logoutAction = logoutAction,
     eventSink = eventSink,
 )
-

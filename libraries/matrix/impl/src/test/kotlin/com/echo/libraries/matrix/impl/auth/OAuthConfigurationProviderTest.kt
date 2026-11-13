@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.auth.FAKE_REDIRECT_URL
 import com.echo.libraries.matrix.test.auth.FakeOAuthRedirectUrlProvider
 import com.echo.libraries.matrix.test.core.aBuildMeta
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class OAuthConfigurationProviderTest {
@@ -27,4 +27,3 @@ class OAuthConfigurationProviderTest {
         assertThat(result.redirectUri).isEqualTo(FAKE_REDIRECT_URL)
     }
 }
-

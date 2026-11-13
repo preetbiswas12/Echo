@@ -29,4 +29,3 @@ data class TimelineItemSelectionData(
 
 /** Shared instance so that two default [TimelineItemSelectionData] stay equal, and the rows keep skipping. */
 private val NoSelectionProgress: () -> Float = { 0f }
-

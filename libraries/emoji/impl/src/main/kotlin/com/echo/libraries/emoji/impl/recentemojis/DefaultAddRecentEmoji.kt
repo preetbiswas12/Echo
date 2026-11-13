@@ -8,11 +8,11 @@
 
 package com.echo.libraries.emoji.impl.recentemojis
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.emoji.api.recentemojis.AddRecentEmoji
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 
 @ContributesBinding(SessionScope::class)
@@ -24,4 +24,3 @@ class DefaultAddRecentEmoji(
         client.addRecentEmoji(emoji)
     }
 }
-

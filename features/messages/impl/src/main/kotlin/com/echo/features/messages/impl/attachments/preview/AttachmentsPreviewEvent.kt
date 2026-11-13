@@ -25,4 +25,3 @@ sealed interface AttachmentsPreviewEvent {
     data object ClearImageEditError : AttachmentsPreviewEvent
     data class SetCurrentCarouselIndex(val index: Int) : AttachmentsPreviewEvent
 }
-

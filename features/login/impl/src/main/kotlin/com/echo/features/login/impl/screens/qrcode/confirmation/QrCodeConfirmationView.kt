@@ -156,4 +156,3 @@ internal fun QrCodeConfirmationViewPreview(@PreviewParameter(QrCodeConfirmationS
         )
     }
 }
-

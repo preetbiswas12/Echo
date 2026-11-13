@@ -110,4 +110,3 @@ class FakePushService(
         onServiceUnregisteredResult(userId)
     }
 }
-

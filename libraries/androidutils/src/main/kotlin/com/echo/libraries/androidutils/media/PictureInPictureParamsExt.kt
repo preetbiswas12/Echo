@@ -27,4 +27,3 @@ fun PictureInPictureParams.Builder.setAspectRatioFromOrientation(orientation: In
     }
     return setAspectRatio(aspectRatio)
 }
-

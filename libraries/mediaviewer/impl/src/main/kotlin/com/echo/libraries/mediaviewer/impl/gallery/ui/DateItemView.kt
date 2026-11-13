@@ -49,4 +49,3 @@ internal fun DateItemViewPreview(
 ) = ElementPreview {
     DateItemView(date)
 }
-

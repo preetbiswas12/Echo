@@ -10,8 +10,6 @@ package com.echo.libraries.deeplink.impl
 
 import android.content.Intent
 import android.net.Uri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.text.urlDecoded
 import com.echo.libraries.deeplink.api.DeeplinkData
 import com.echo.libraries.deeplink.api.DeeplinkParser
@@ -19,6 +17,8 @@ import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.ThreadId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultDeeplinkParser : DeeplinkParser {
@@ -46,4 +46,3 @@ class DefaultDeeplinkParser : DeeplinkParser {
         }
     }
 }
-

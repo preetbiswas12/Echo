@@ -23,4 +23,3 @@ class FakeClientBuilderEnterpriseHook(
         return beforeClientCreationWithSessionResult(clientBuilder, sessionId)
     }
 }
-

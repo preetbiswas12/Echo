@@ -17,4 +17,3 @@ class FakeUnifiedPushGatewayResolver(
         return getGatewayResult(endpoint)
     }
 }
-

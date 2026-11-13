@@ -218,4 +218,3 @@ internal fun RoomListFiltersViewPreview(@PreviewParameter(RoomListFiltersStatePr
         state = state,
     )
 }
-

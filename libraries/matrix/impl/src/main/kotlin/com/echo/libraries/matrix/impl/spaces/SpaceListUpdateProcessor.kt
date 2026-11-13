@@ -111,4 +111,3 @@ private fun SpaceListUpdate.description(): String = when (this) {
     is SpaceListUpdate.Set -> "Set($index, ${value.roomId})"
     is SpaceListUpdate.Truncate -> "Truncate($length)"
 }
-

@@ -11,7 +11,6 @@ package com.echo.features.roomdetails.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.test.FakeElementCallEntryPoint
 import com.echo.features.knockrequests.test.FakeKnockRequestsListEntryPoint
 import com.echo.features.messages.test.FakeMessagesEntryPoint
@@ -33,6 +32,7 @@ import com.echo.libraries.mediaviewer.test.FakeMediaViewerEntryPoint
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -99,4 +99,3 @@ class DefaultRoomDetailsEntryPointTest {
             .isEqualTo(RoomDetailsFlowNode.NavTarget.RoomNotificationSettings(showUserDefinedSettingStyle = true))
     }
 }
-

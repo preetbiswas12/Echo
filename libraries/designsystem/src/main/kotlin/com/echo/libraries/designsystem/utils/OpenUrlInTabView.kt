@@ -28,4 +28,3 @@ fun OpenUrlInTabView(url: MutableState<String?>) {
         }
     }
 }
-

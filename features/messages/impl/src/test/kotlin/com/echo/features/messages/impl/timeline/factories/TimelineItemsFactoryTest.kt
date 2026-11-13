@@ -8,7 +8,6 @@
 package com.echo.features.messages.impl.timeline.factories
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.fixtures.aTimelineItemsFactory
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.TimelineItemGroupPosition
@@ -27,6 +26,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.timeline.aMessageContent
 import com.echo.libraries.matrix.test.timeline.aRedactedContent
 import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -324,4 +324,3 @@ class TimelineItemsFactoryTest {
         const val FIVE_MINUTES = 5 * ONE_MINUTE
     }
 }
-

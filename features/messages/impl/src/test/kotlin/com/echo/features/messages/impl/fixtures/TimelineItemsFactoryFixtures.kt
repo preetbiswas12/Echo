@@ -118,4 +118,3 @@ internal fun aTimelineEventFormatter(): TimelineEventFormatter {
         }
     }
 }
-

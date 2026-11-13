@@ -7,12 +7,12 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.exception.ClientException
 import com.echo.libraries.matrix.api.paths.SessionPaths
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -91,4 +91,3 @@ class RustTemporaryMatrixClientTest {
         return RustTemporaryMatrixClient(client, paths, StandardTestDispatcher(testScheduler))
     }
 }
-

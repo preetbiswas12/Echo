@@ -8,13 +8,13 @@
 
 package com.echo.features.home.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.test.FakeDateFormatter
 import com.echo.libraries.eventformatter.api.RoomLatestEventFormatter
 import com.echo.libraries.eventformatter.test.FakeRoomLatestEventFormatter
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.aRoomSummary
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class RoomListRoomSummaryFactoryTest {
@@ -46,4 +46,3 @@ fun aRoomListRoomSummaryFactory(
     dateFormatter = dateFormatter,
     roomLatestEventFormatter = roomLatestEventFormatter,
 )
-

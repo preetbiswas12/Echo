@@ -41,4 +41,3 @@ interface TimelineEventFormatter {
      */
     fun format(content: EventContent, isOutgoing: Boolean, sender: UserId, senderDisambiguatedDisplayName: String): CharSequence?
 }
-

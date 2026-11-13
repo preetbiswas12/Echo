@@ -165,4 +165,3 @@ class QrCodeErrorScreenTypePreviewParam : PreviewParameterProvider<QrCodeErrorSc
         QrCodeErrorScreenType.UnknownError
     )
 }
-

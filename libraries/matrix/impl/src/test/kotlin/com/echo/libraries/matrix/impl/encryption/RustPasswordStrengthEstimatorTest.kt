@@ -7,10 +7,10 @@
 
 package com.echo.libraries.matrix.impl.encryption
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.encryption.PasswordStrengthRanking
 import com.echo.libraries.matrix.test.encryption.FakePasswordStrengthEstimator
 import com.echo.libraries.matrix.test.encryption.aPasswordStrengthEstimate
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.PasswordStrengthEstimate as SdkPasswordStrengthEstimate
 import org.matrix.rustcomponents.sdk.PasswordStrengthRanking as SdkPasswordStrengthRanking
@@ -50,4 +50,3 @@ class RustPasswordStrengthEstimatorTest {
         assertThat(fake.estimate("hunter2")).isEqualTo(estimate)
     }
 }
-

@@ -29,4 +29,3 @@ interface MessagesNavigator {
     fun navigateToCurrentLiveLocation()
     fun close()
 }
-

@@ -22,4 +22,3 @@ class FakeCurrentCallTracker : CurrentCallTracker {
         calls += CurrentCall.None
     }
 }
-

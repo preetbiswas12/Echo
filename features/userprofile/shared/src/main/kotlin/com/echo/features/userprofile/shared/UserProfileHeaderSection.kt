@@ -177,4 +177,3 @@ internal fun UserProfileHeaderSectionWithVerificationViolationPreview() = Elemen
         withdrawVerificationClick = {},
     )
 }
-

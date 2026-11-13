@@ -13,8 +13,6 @@ import app.cash.molecule.moleculeFlow
 import app.cash.turbine.Event
 import app.cash.turbine.TurbineTestContext
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.RoomModeration
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.RoomMember.Role.Admin
@@ -27,6 +25,8 @@ import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.defaultRoomPowerLevelValues
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.RoomModeration
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -321,4 +321,3 @@ class ChangeRoomPermissionsPresenterTest {
         return awaitItem()
     }
 }
-

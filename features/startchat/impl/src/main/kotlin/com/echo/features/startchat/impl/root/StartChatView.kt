@@ -265,4 +265,3 @@ internal fun StartChatViewPreview(@PreviewParameter(StartChatStatePreviewParam::
             onRoomDirectorySearchClick = {},
         )
     }
-

@@ -23,4 +23,3 @@ fun rememberFileSizeFormatter(): FileSizeFormatter {
         AndroidFileSizeFormatter(context, sdkIntProvider)
     }
 }
-

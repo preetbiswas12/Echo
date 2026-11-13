@@ -136,4 +136,3 @@ internal fun extrapolatePlaybackProgress(
     val elapsedProgress = elapsedMs.coerceAtLeast(0L) * playbackSpeed.coerceAtLeast(0f) / durationMs
     return (progress + elapsedProgress).coerceAtMost(1f)
 }
-

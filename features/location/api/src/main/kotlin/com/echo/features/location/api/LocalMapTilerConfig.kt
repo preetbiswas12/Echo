@@ -29,4 +29,3 @@ fun buildTimeMapTilerConfig(): MapTilerConfig? {
         baseUrl = BuildConfig.MAPTILER_BASE_URL,
     )
 }
-

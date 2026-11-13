@@ -12,7 +12,6 @@ import android.app.Notification
 import android.service.notification.StatusBarNotification
 import androidx.core.app.NotificationManagerCompat
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.A_SESSION_ID_2
 import com.echo.libraries.matrix.test.A_THREAD_ID
 import com.echo.libraries.push.api.notifications.NotificationIdProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test
@@ -182,4 +182,3 @@ class DefaultActiveNotificationsProviderTest : RobolectricTest() {
         )
     }
 }
-

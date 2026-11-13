@@ -16,4 +16,3 @@ fun interface OnSharedData {
      */
     operator fun invoke(data: ShareIntentData)
 }
-

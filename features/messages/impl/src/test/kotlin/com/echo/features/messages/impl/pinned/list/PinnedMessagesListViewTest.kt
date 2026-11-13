@@ -116,4 +116,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setPinnedMessagesListView(
         )
     }
 }
-

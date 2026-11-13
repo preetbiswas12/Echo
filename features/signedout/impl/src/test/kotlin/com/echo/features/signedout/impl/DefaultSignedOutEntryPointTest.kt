@@ -10,10 +10,10 @@ package com.echo.features.signedout.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.signedout.api.SignedOutEntryPoint
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -44,4 +44,3 @@ class DefaultSignedOutEntryPointTest {
         assertThat(result.plugins).contains(SignedOutNode.Inputs(params.sessionId))
     }
 }
-

@@ -47,4 +47,3 @@ fun anOngoingPollContent() = aPollContent(
 fun anEndedPollContent() = anOngoingPollContent().copy(
     endTime = 1702400215U
 )
-

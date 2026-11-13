@@ -12,11 +12,11 @@ import android.content.Context
 import android.content.Intent
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.lockscreen.api.LockScreenEntryPoint
 import com.echo.features.lockscreen.impl.unlock.activity.PinUnlockActivity
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultLockScreenEntryPoint : LockScreenEntryPoint {
@@ -44,4 +44,3 @@ class DefaultLockScreenEntryPoint : LockScreenEntryPoint {
         return PinUnlockActivity.newIntent(context)
     }
 }
-

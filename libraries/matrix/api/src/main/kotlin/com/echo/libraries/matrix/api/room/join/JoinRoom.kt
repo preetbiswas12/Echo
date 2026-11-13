@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.api.room.join
 
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
+import im.vector.app.features.analytics.plan.JoinedRoom
 
 /**
  * Joins a room and reports the join to analytics, so that callers do not have to do both.
@@ -33,4 +33,3 @@ interface JoinRoom {
         data object UnauthorizedJoin : Failures()
     }
 }
-

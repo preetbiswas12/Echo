@@ -15,14 +15,14 @@ import android.provider.OpenableColumns
 import android.webkit.MimeTypeMap
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.push.api.notifications.sound.NotificationSoundCopier
 import com.echo.libraries.push.api.notifications.sound.NotificationSoundCopier.CopyResult
 import com.echo.libraries.push.api.notifications.sound.NotificationSoundCopier.SoundSlot
 import com.echo.libraries.push.impl.notifications.notificationSoundFileProviderAuthority
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -206,4 +206,3 @@ private fun InputStream.copyToCapped(out: java.io.OutputStream, maxBytes: Long):
     out.flush()
     return totalBytes
 }
-

@@ -21,9 +21,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.core.net.toUri
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -38,6 +35,9 @@ import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProvider
 import com.echo.libraries.mediaupload.api.MediaPreProcessor
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -228,4 +228,3 @@ class EditUserProfilePresenter(
         }.onFailure { Timber.e(it, "Unable to update avatar") }
     }
 }
-

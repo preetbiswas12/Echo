@@ -19,4 +19,3 @@ data class DeclineAndBlockState(
 ) {
     val canDecline = blockUser || reportRoom && reportReason.isNotEmpty()
 }
-

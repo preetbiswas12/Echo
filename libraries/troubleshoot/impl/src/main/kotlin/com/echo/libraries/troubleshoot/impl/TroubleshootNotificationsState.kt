@@ -14,4 +14,3 @@ data class TroubleshootNotificationsState(
 ) {
     val hasFailedTests: Boolean = testSuiteState.mainState.isFailure()
 }
-

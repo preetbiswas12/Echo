@@ -135,4 +135,3 @@ internal fun RoomListDeclineInviteMenuPreview(
         eventSink = {},
     )
 }
-

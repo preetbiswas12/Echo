@@ -45,4 +45,3 @@ fun anUnsignedDeviceSendFailure(userDisplayName: String = USER_NAME_ALICE) = Ver
 fun aChangedIdentitySendFailure(userDisplayName: String = USER_NAME_ALICE) = VerifiedUserSendFailure.ChangedIdentity(
     userDisplayName = userDisplayName,
 )
-

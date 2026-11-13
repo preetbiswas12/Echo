@@ -14,4 +14,3 @@ interface ChangeRoomPermissionsEvent {
     data object Exit : ChangeRoomPermissionsEvent
     data object ResetPendingActions : ChangeRoomPermissionsEvent
 }
-

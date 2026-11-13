@@ -16,4 +16,3 @@ class FakeUserLocationStateFactory : UserLocationState.Factory {
         return UserLocationState(null)
     }
 }
-

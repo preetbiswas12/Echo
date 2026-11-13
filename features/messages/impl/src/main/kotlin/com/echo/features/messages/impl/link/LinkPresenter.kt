@@ -12,9 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import io.element.android.wysiwyg.link.Link
 
 @Inject
@@ -53,4 +53,3 @@ class LinkPresenter(
         )
     }
 }
-

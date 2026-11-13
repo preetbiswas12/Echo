@@ -15,14 +15,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.migration.api.MigrationState
 import com.echo.features.migration.impl.migrations.AppMigration
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
@@ -78,4 +78,3 @@ class MigrationPresenter(
         )
     }
 }
-

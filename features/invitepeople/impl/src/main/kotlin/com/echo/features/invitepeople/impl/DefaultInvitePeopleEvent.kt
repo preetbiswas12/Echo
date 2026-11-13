@@ -17,4 +17,3 @@ sealed interface DefaultInvitePeopleEvent : InvitePeopleEvent {
     data object DismissUnknownUsersModal : DefaultInvitePeopleEvent
     data object RemoveUnknownUsers : DefaultInvitePeopleEvent
 }
-

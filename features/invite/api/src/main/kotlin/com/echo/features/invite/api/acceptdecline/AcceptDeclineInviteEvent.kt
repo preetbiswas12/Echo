@@ -17,4 +17,3 @@ interface AcceptDeclineInviteEvent {
     data class AcceptInvite(val invite: InviteData) : AcceptDeclineInviteEvent
     data class DeclineInvite(val invite: InviteData, val blockUser: Boolean, val shouldConfirm: Boolean) : AcceptDeclineInviteEvent
 }
-

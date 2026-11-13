@@ -193,4 +193,3 @@ internal fun ManageAuthorizedSpacesViewPreview(
 ) = ElementPreview {
     ManageAuthorizedSpacesView(state = state)
 }
-

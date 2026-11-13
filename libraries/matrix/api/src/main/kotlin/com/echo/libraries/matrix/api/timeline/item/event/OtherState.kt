@@ -41,4 +41,3 @@ sealed interface OtherState {
     data object SpaceParent : OtherState
     data class Custom(val eventType: String) : OtherState
 }
-

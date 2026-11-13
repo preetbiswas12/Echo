@@ -18,4 +18,3 @@ fun BuildMeta.isElement(): Boolean {
         BuildType.DEBUG -> applicationId == "com.echo.x.debug"
     }
 }
-

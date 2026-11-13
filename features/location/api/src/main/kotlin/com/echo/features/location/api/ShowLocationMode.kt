@@ -28,4 +28,3 @@ sealed interface ShowLocationMode : Parcelable {
         val senderId: UserId
     ) : ShowLocationMode
 }
-

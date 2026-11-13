@@ -319,4 +319,3 @@ internal fun InvitePeopleViewPreview(@PreviewParameter(DefaultInvitePeopleStateP
     ElementPreview {
         InvitePeopleView(state = state)
     }
-

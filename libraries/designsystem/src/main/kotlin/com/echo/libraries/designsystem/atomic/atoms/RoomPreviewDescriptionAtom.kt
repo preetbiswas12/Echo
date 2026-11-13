@@ -31,4 +31,3 @@ fun RoomPreviewDescriptionAtom(
         overflow = TextOverflow.Ellipsis,
     )
 }
-

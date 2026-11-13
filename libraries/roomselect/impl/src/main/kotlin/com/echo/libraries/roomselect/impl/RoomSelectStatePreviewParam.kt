@@ -130,4 +130,3 @@ internal fun aRoomSelectRoomList() = persistentListOf(
         roomId = RoomId("!room4:domain"),
     ),
 )
-

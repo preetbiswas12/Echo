@@ -204,4 +204,3 @@ internal fun RolesAndPermissionsViewPreview(@PreviewParameter(RolesAndPermission
         )
     }
 }
-

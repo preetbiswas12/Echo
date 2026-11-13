@@ -23,4 +23,3 @@ class AppMigration03Test {
         logsFileRemover.performLambda.assertions().isCalledOnce()
     }
 }
-

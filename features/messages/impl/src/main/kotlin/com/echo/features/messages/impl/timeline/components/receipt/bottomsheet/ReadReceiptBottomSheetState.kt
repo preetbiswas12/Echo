@@ -14,4 +14,3 @@ data class ReadReceiptBottomSheetState(
     val selectedEvent: TimelineItem.Event?,
     val eventSink: (ReadReceiptBottomSheetEvent) -> Unit,
 )
-

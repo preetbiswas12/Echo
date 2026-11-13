@@ -35,4 +35,3 @@ class KonsistConfigTest {
             .isGreaterThan(100)
     }
 }
-

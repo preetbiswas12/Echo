@@ -25,4 +25,3 @@ class FakeRoomAliasHelper(
         return isRoomAliasValidLambda(roomAlias)
     }
 }
-

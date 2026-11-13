@@ -19,4 +19,3 @@ interface PinnedMessagesBannerFormatter {
      */
     fun format(event: EventTimelineItem): CharSequence
 }
-

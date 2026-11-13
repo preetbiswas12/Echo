@@ -15,4 +15,3 @@ interface NotificationTroubleshootNavigator {
     /** Opens the blocked users screen, so the user can unblock someone whose messages were being filtered out. */
     fun navigateToBlockedUsers()
 }
-

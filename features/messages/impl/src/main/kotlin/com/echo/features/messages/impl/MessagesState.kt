@@ -90,4 +90,3 @@ enum class SharedHistoryIcon {
     /** history_visibility: world_readable. */
     WORLD_READABLE
 }
-

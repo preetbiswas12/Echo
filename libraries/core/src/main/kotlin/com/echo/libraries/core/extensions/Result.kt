@@ -104,4 +104,3 @@ inline fun <T> Result<T>.finally(block: (exception: Throwable?) -> Unit): Result
     onFailure(block)
     return this
 }
-

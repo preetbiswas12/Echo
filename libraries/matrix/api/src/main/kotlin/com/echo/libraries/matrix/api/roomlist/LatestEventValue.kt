@@ -35,4 +35,3 @@ sealed interface LatestEventValue {
         val invitedProfile: ProfileDetails,
     ) : LatestEventValue
 }
-

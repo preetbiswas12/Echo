@@ -11,4 +11,3 @@ package com.echo.features.poll.api.history
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 interface PollHistoryEntryPoint : SimpleFeatureEntryPoint
-

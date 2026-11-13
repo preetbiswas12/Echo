@@ -102,4 +102,3 @@ class AsyncImageStateHandlerTest {
         updateContentValidationState.assertions().isCalledOnce().with(value(ContentValidationValue.Unknown))
     }
 }
-

@@ -33,4 +33,3 @@ data class PusherData(
     @SerialName("default_payload")
     val defaultPayload: Map<String, String>,
 )
-

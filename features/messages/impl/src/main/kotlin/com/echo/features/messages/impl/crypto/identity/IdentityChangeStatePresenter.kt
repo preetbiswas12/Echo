@@ -12,12 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.ui.room.roomMemberIdentityStateChange
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -66,4 +66,3 @@ class IdentityChangeStatePresenter(
             }
     }
 }
-

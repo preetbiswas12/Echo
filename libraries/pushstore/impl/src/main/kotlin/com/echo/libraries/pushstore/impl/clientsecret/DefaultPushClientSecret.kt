@@ -8,12 +8,12 @@
 
 package com.echo.libraries.pushstore.impl.clientsecret
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretFactory
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultPushClientSecret(
@@ -34,4 +34,3 @@ class DefaultPushClientSecret(
         return pushClientSecretStore.getUserIdFromSecret(clientSecret)
     }
 }
-

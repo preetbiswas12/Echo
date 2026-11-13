@@ -10,11 +10,11 @@ package com.echo.libraries.mediaviewer.impl.gallery.di
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlin.reflect.KClass
 
 /**
@@ -76,4 +76,3 @@ inline fun <reified C : MediaItem.Event, S : Any> MediaItemPresenterFactories.re
     content = content,
     contentClass = C::class
 )
-

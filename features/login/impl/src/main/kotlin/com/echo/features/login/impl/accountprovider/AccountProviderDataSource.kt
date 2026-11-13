@@ -8,13 +8,13 @@
 
 package com.echo.features.login.impl.accountprovider
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -88,4 +88,3 @@ class AccountProviderDataSource(
         accountProvider.emit(data)
     }
 }
-

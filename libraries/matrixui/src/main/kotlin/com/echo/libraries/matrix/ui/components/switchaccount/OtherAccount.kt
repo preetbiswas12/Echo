@@ -19,4 +19,3 @@ data class OtherAccount(
     val user: MatrixUser,
     val unreadCount: Int,
 )
-

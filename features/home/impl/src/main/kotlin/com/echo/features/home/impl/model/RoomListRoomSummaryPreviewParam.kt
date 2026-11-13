@@ -227,4 +227,3 @@ internal fun aRoomListRoomSummary(
     isSpace = isSpace,
     dmUserStatus = dmUserStatus,
 )
-

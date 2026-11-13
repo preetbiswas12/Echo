@@ -25,4 +25,3 @@ class FakeChangeRoomMemberRolesEntryPoint : ChangeRoomMemberRolesEntryPoint {
         lambdaError()
     }
 }
-

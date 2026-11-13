@@ -8,7 +8,6 @@
 
 package com.echo.libraries.pushproviders.firebase.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.pushproviders.firebase.FakeFirebaseTroubleshooter
 import com.echo.libraries.pushproviders.firebase.FirebaseConfig
 import com.echo.libraries.pushproviders.firebase.InMemoryFirebaseStore
@@ -17,6 +16,7 @@ import com.echo.libraries.troubleshoot.api.test.TestFilterData
 import com.echo.libraries.troubleshoot.test.FakeNotificationTroubleshootNavigator
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -100,4 +100,3 @@ class FirebaseTokenTestTest {
         private const val FAKE_TOKEN = "abcdefghijk"
     }
 }
-

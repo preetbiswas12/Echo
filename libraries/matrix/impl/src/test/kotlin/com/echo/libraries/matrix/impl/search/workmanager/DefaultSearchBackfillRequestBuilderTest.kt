@@ -11,13 +11,13 @@ import android.net.NetworkCapabilities
 import androidx.work.BackoffPolicy
 import androidx.work.PeriodicWorkRequest
 import androidx.work.hasKeyWithValueOfType
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerWorkerType
 import com.echo.libraries.workmanager.api.workManagerTag
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import kotlin.time.Duration.Companion.hours
@@ -78,4 +78,3 @@ class DefaultSearchBackfillRequestBuilderTest : RobolectricTest() {
         networkMonitor = FakeNetworkMonitor().apply { givenIsInAirGappedEnvironment(isInAirGapEnvironment) },
     )
 }
-

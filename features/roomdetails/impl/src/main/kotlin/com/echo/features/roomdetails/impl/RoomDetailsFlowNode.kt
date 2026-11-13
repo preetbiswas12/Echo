@@ -20,9 +20,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.annotations.ContributesNode
 import com.echo.appconfig.LearnMoreConfig
 import com.echo.features.call.api.CallData
@@ -63,6 +60,9 @@ import com.echo.libraries.mediaviewer.api.MediaGalleryEntryPoint
 import com.echo.libraries.mediaviewer.api.MediaViewerEntryPoint
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -488,4 +488,3 @@ class RoomDetailsFlowNode(
         OpenUrlInTabView(learnMoreUrl)
     }
 }
-

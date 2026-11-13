@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.voicemessages.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UniqueId
@@ -24,6 +23,7 @@ import com.echo.libraries.matrix.test.timeline.aRedactedContent
 import com.echo.libraries.mediaplayer.api.MediaPlayer
 import com.echo.libraries.mediaplayer.test.FakeMediaPlayer
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -106,4 +106,3 @@ fun aRedactedMatrixTimeline(eventId: EventId) = listOf<MatrixTimelineItem>(
         ),
     )
 )
-

@@ -77,4 +77,3 @@ class DefaultSeenInvitesStore(
         dataStoreFile.safeDelete()
     }
 }
-

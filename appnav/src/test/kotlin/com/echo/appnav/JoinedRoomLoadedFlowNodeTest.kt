@@ -17,7 +17,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.activeElement
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
 import com.bumble.appyx.testing.unit.common.helper.parentNodeTestHelper
-import com.google.common.truth.Truth.assertThat
 import com.echo.appnav.di.RoomGraphFactory
 import com.echo.appnav.di.TimelineBindings
 import com.echo.appnav.room.RoomNavigationTarget
@@ -42,6 +41,7 @@ import com.echo.services.appnavstate.api.ActiveRoomsHolder
 import com.echo.services.appnavstate.test.FakeActiveRoomsHolder
 import com.echo.services.appnavstate.test.FakeAppNavigationStateService
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -243,4 +243,3 @@ class JoinedRoomLoadedFlowNodeTest : RobolectricTest() {
         assertThat(activeRoomsHolder.getActiveRoom(A_SESSION_ID)).isNull()
     }
 }
-

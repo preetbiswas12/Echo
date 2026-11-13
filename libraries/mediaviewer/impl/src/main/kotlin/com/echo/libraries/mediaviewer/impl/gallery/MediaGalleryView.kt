@@ -607,4 +607,3 @@ internal fun MediaGalleryViewPreview(
         )
     }
 }
-

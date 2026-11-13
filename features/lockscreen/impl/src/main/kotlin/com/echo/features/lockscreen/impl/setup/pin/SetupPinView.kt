@@ -150,4 +150,3 @@ internal fun SetupPinViewPreview(@PreviewParameter(SetupPinStatePreviewParam::cl
         )
     }
 }
-

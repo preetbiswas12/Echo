@@ -14,4 +14,3 @@ data class PollHistoryItem(
     val formattedDate: String,
     val state: PollContentState,
 )
-

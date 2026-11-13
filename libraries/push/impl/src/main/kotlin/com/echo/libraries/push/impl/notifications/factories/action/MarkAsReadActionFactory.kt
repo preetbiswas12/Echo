@@ -12,7 +12,6 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
-import dev.zacsweers.metro.Inject
 import com.echo.appconfig.NotificationConfig
 import com.echo.libraries.androidutils.uri.createIgnoredUri
 import com.echo.libraries.designsystem.icons.CompoundDrawables
@@ -24,6 +23,7 @@ import com.echo.libraries.push.impl.notifications.NotificationBroadcastReceiver
 import com.echo.libraries.push.impl.notifications.RoomEventGroupInfo
 import com.echo.services.toolbox.api.strings.StringProvider
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Inject
 
 @Inject
 class MarkAsReadActionFactory(
@@ -59,4 +59,3 @@ class MarkAsReadActionFactory(
             .build()
     }
 }
-

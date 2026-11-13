@@ -10,10 +10,10 @@ package com.echo.libraries.roomselect.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.roomselect.api.RoomSelectEntryPoint
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomSelectEntryPoint : RoomSelectEntryPoint {
@@ -36,4 +36,3 @@ class DefaultRoomSelectEntryPoint : RoomSelectEntryPoint {
         )
     }
 }
-

@@ -51,4 +51,3 @@ interface PermissionsStore {
     /** Forgets every recorded permission; exposed for debugging from the developer options. */
     suspend fun resetStore()
 }
-

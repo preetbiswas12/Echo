@@ -10,11 +10,11 @@ package com.echo.libraries.accountselect.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.accountselect.api.AccountSelectEntryPoint
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -45,4 +45,3 @@ class DefaultAccountSelectEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

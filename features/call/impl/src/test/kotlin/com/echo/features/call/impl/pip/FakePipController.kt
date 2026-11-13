@@ -25,4 +25,3 @@ class FakePipController(
 
     override fun exitPip() = exitPipResult()
 }
-

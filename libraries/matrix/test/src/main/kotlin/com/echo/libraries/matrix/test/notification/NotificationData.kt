@@ -53,4 +53,3 @@ fun aNotificationData(
         roomJoinRule = roomJoinRule,
     )
 }
-

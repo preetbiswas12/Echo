@@ -7,12 +7,12 @@
 
 package com.echo.features.contentscanner.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.scanner.ContentScanner
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.scanner.FakeContentScanner
 import com.echo.libraries.matrix.ui.media.contentvalidation.DefaultContentValidationState
 import com.echo.libraries.matrix.ui.media.contentvalidation.NoopContentValidationState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultEventContentValidationCacheTest {
@@ -42,4 +42,3 @@ class DefaultEventContentValidationCacheTest {
         assertThat(state).isInstanceOf(DefaultContentValidationState::class.java)
     }
 }
-

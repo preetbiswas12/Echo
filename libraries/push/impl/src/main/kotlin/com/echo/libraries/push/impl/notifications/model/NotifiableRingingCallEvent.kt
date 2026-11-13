@@ -34,4 +34,3 @@ data class NotifiableRingingCallEvent(
     val timestamp: Long,
     val expirationTimestamp: Long,
 ) : NotifiableEvent
-

@@ -485,4 +485,3 @@ private fun ContentToPreview(state: SecurityAndPrivacyState) {
         onLinkClick = {},
     )
 }
-

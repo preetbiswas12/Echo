@@ -42,4 +42,3 @@ fun aSecureBackupEnterRecoveryKeyState(
     submitAction = submitAction,
     eventSink = eventSink,
 )
-

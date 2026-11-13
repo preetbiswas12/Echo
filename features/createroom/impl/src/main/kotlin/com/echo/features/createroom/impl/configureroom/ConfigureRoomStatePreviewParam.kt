@@ -156,4 +156,3 @@ fun aConfigureRoomState(
     spaces = spaces.toImmutableList(),
     eventSink = eventSink,
 )
-

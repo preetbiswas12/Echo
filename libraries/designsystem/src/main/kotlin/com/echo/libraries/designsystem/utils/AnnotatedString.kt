@@ -26,4 +26,3 @@ fun annotatedTextWithBold(text: String, boldText: String): AnnotatedString {
         }
     }
 }
-

@@ -20,4 +20,3 @@ sealed interface SendQueueUpdate {
     data class SentEvent(val transactionId: TransactionId, val eventId: EventId) : SendQueueUpdate
     data class MediaUpload(val relatedTo: TransactionId, val file: MediaSource?, val index: Long, val progress: Float) : SendQueueUpdate
 }
-

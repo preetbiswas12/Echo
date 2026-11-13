@@ -47,4 +47,3 @@ class ByteSizeTest {
         assertThat(gigaBytes.into(ByteUnit.GB)).isEqualTo(gigaBytes.value)
     }
 }
-

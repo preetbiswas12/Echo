@@ -52,4 +52,3 @@ data class NotifiableMessageEvent(
     val imageUri: Uri?
         get() = imageUriString?.toUri()
 }
-

@@ -21,9 +21,6 @@ import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
@@ -40,6 +37,9 @@ import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.matrixmedia.api.ImageLoaderHolder
 import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
 
@@ -128,4 +128,3 @@ class NotLoggedInFlowNode(
         BackstackView()
     }
 }
-

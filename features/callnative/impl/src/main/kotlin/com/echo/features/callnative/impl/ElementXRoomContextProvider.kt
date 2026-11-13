@@ -7,12 +7,12 @@
 
 package com.echo.features.callnative.impl
 
-import io.element.android.call.api.ElementCallRoomContext
-import io.element.android.call.api.ElementCallRoomContextProvider
-import io.element.android.call.api.ElementCallRoomMember
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.room.RoomMembersState
 import com.echo.libraries.matrix.api.room.roomMembers
+import io.element.android.call.api.ElementCallRoomContext
+import io.element.android.call.api.ElementCallRoomContextProvider
+import io.element.android.call.api.ElementCallRoomMember
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -20,9 +20,9 @@ import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import timber.log.Timber
+import com.echo.libraries.matrix.api.core.RoomId as MatrixRoomId
 import io.element.android.call.api.rtc.id.RoomId as ElementCallRoomId
 import io.element.android.call.api.rtc.id.UserId as ElementCallUserId
-import com.echo.libraries.matrix.api.core.RoomId as MatrixRoomId
 
 /**
  * Tells the call what the room is called and who is in it.
@@ -72,4 +72,3 @@ class ElementXRoomContextProvider(
             )
         }
 }
-

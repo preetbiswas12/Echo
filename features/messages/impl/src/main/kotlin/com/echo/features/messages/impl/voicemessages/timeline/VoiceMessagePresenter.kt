@@ -9,14 +9,14 @@
 package com.echo.features.messages.impl.voicemessages.timeline
 
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.messages.impl.timeline.di.TimelineItemPresenterFactory
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemVoiceContent
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.voiceplayer.api.VoiceMessagePresenterFactory
 import com.echo.libraries.voiceplayer.api.VoiceMessageState
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 
 @AssistedInject
 class VoiceMessagePresenter(
@@ -41,4 +41,3 @@ class VoiceMessagePresenter(
         return presenter.present()
     }
 }
-

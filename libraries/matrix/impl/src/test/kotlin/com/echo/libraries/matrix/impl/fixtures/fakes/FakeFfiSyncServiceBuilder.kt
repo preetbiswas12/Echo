@@ -17,4 +17,3 @@ class FakeFfiSyncServiceBuilder : SyncServiceBuilder(NoHandle) {
     override fun withSharePos(enable: Boolean): SyncServiceBuilder = this
     override suspend fun finish(): SyncService = FakeFfiSyncService()
 }
-

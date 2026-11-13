@@ -40,4 +40,3 @@ class MultipleTapToUnlockTest {
         assertThat(sut.unlock(backgroundScope)).isTrue()
     }
 }
-

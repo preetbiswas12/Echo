@@ -12,4 +12,3 @@ sealed interface SetupBiometricEvent {
     data object AllowBiometric : SetupBiometricEvent
     data object UsePin : SetupBiometricEvent
 }
-

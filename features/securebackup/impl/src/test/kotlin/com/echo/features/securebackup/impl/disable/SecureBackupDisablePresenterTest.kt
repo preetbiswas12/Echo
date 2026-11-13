@@ -11,13 +11,13 @@ package com.echo.features.securebackup.impl.disable
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -91,4 +91,3 @@ class SecureBackupDisablePresenterTest {
         )
     }
 }
-

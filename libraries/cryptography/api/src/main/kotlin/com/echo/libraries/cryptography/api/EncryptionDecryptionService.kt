@@ -47,4 +47,3 @@ interface EncryptionDecryptionService {
      */
     fun decrypt(key: SecretKey, encryptionResult: EncryptionResult): ByteArray
 }
-

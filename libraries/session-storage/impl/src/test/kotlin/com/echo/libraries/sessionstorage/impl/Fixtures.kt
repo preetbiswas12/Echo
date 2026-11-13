@@ -32,4 +32,3 @@ internal fun aDbSessionData(
     userAvatarUrl = null,
     userAvatarData = null,
 )
-

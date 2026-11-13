@@ -232,4 +232,3 @@ internal fun ImmutableList<Float>.normalisedData(maxSamplesCount: Int): Immutabl
 
     return result.toImmutableList()
 }
-

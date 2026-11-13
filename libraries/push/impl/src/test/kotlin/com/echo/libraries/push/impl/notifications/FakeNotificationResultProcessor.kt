@@ -28,4 +28,3 @@ class FakeNotificationResultProcessor(
         stop.invoke()
     }
 }
-

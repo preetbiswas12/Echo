@@ -11,4 +11,3 @@ package com.echo.libraries.push.impl.notifications.fixtures
 import android.app.Notification
 
 val A_NOTIFICATION = Notification()
-

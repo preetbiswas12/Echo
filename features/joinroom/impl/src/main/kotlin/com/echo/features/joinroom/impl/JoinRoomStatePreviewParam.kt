@@ -247,4 +247,3 @@ internal fun anInviteData(
 
 private val A_ROOM_ID = RoomId("!exa:matrix.org")
 private val A_ROOM_ALIAS = RoomAlias("#exa:matrix.org")
-

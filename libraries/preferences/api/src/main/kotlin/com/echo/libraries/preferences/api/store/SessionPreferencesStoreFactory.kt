@@ -30,4 +30,3 @@ interface SessionPreferencesStoreFactory {
      */
     fun remove(sessionId: SessionId)
 }
-

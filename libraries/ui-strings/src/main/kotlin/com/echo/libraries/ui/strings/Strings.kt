@@ -10,4 +10,3 @@ package com.echo.libraries.ui.strings
 object Strings {
     const val NICE_SEPARATOR = " • "
 }
-

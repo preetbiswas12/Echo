@@ -13,11 +13,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.emoji.api.picker.EmojiPickerPresenter
 import com.echo.libraries.emoji.api.recentemojis.GetRecentEmojis
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableSet
 
 @Inject
@@ -74,4 +74,3 @@ private sealed interface InternalTarget {
     data object None : InternalTarget
     data class Showing(val event: TimelineItem.Event) : InternalTarget
 }
-

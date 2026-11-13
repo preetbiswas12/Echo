@@ -65,4 +65,3 @@ class RecoveryKeyVisualTransformationTest {
         assertThat(sut.transformedToOriginal(10)).isEqualTo(8)
     }
 }
-

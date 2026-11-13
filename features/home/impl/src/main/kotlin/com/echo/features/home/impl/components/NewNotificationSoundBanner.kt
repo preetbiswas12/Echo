@@ -42,4 +42,3 @@ internal fun NewNotificationSoundBannerPreview() = ElementPreview {
         onDismissClick = {},
     )
 }
-

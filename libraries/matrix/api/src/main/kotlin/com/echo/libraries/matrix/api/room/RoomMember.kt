@@ -106,4 +106,3 @@ fun RoomMember.toMatrixUser() = MatrixUser(
     avatarUrl = avatarUrl.takeUnless { membership == RoomMembershipState.BAN },
     displayedStatus = displayedStatus,
 )
-

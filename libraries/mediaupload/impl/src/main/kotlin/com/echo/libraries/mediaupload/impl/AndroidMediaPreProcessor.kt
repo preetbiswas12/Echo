@@ -13,8 +13,6 @@ import android.graphics.BitmapFactory
 import android.media.MediaMetadataRetriever
 import android.net.Uri
 import androidx.exifinterface.media.ExifInterface
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
 import com.echo.libraries.androidutils.file.createTmpFile
 import com.echo.libraries.androidutils.file.getFileName
@@ -39,6 +37,8 @@ import com.echo.libraries.mediaupload.api.MediaOptimizationConfig
 import com.echo.libraries.mediaupload.api.MediaPreProcessor
 import com.echo.libraries.mediaupload.api.MediaUploadInfo
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.filterIsInstance
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.onEach
@@ -437,4 +437,3 @@ private fun Int.rotatesRightAngle(): Boolean {
         this == ExifInterface.ORIENTATION_TRANSPOSE ||
         this == ExifInterface.ORIENTATION_TRANSVERSE
 }
-

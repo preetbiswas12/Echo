@@ -12,5 +12,3 @@ plugins {
 android {
     namespace = "com.echo.features.announcement.api"
 }
-
-

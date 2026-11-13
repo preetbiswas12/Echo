@@ -52,4 +52,3 @@ fun rememberLoginFlowTransitionHandler(): ModifierTransitionHandler<LoginFlowNod
         LoginFlowTransitionHandler(slider, fader)
     }
 }
-

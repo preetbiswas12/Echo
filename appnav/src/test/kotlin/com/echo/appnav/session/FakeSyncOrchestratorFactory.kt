@@ -17,4 +17,3 @@ class FakeSyncOrchestratorFactory : SyncOrchestrator.Factory {
         sessionCoroutineScope: CoroutineScope,
     ): SyncOrchestrator = lambdaError()
 }
-

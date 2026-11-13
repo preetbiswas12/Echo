@@ -29,4 +29,3 @@ data class FallbackNotifiableEvent(
     val timestamp: Long,
     val cause: String?,
 ) : NotifiableEvent
-

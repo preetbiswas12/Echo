@@ -47,4 +47,3 @@ class FakeFfiGrantLoginWithQrCodeHandler(
         scanProgressListener?.onUpdate(progress)
     }
 }
-

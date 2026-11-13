@@ -21,4 +21,3 @@ fun <NavTarget> rememberDefaultTransitionHandler(): ModifierTransitionHandler<Na
         transitionSpec = { spring(stiffness = Spring.StiffnessMediumLow) },
     )
 }
-

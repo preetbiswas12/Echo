@@ -8,9 +8,9 @@
 package com.echo.libraries.push.impl.notifications.sound
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.push.api.notifications.sound.NotificationSoundCopier
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
@@ -78,4 +78,3 @@ class DefaultNotificationSoundCopierTest : RobolectricTest() {
         assertThat(result).isEqualTo(NotificationSoundCopier.CopyResult.UnplayableSource)
     }
 }
-

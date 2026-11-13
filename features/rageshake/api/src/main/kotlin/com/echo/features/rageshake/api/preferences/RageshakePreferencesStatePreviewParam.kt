@@ -31,4 +31,3 @@ fun aRageshakePreferencesState(
     sensitivity = sensitivity,
     eventSink = eventSink,
 )
-

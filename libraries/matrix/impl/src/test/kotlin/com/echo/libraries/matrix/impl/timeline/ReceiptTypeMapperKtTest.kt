@@ -7,8 +7,8 @@
  */
 package com.echo.libraries.matrix.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.ReceiptType
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.ReceiptType as RustReceiptType
 
@@ -20,4 +20,3 @@ class ReceiptTypeMapperKtTest {
         assertThat(ReceiptType.FULLY_READ.toRustReceiptType()).isEqualTo(RustReceiptType.FULLY_READ)
     }
 }
-

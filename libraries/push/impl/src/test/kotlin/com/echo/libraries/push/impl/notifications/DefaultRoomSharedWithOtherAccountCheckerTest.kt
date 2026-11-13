@@ -7,7 +7,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
@@ -21,6 +20,7 @@ import com.echo.libraries.matrix.test.FakeMatrixClientProvider
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -103,4 +103,3 @@ class DefaultRoomSharedWithOtherAccountCheckerTest {
         matrixClientProvider = FakeMatrixClientProvider(getClient),
     )
 }
-

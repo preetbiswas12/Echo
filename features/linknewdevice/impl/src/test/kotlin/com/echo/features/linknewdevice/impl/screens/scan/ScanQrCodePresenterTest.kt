@@ -9,7 +9,6 @@
 
 package com.echo.features.linknewdevice.impl.screens.scan
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.linknewdevice.impl.LinkNewDesktopHandler
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeDecodeException
@@ -21,6 +20,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -108,4 +108,3 @@ private fun createPresenter(
 ) = ScanQrCodePresenter(
     linkNewDesktopHandler = LinkNewDesktopHandler(matrixClient),
 )
-

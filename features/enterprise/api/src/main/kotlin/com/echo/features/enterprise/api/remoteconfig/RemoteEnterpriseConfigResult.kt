@@ -42,4 +42,3 @@ sealed interface RemoteEnterpriseConfigResult<out T> {
         is NotFound -> null
     }
 }
-

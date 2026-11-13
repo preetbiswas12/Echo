@@ -72,4 +72,3 @@ private fun aTimelineItemEncryptedContent(
 ) = TimelineItemEncryptedContent(
     data = data
 )
-

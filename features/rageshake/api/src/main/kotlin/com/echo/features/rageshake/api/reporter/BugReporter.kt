@@ -58,4 +58,3 @@ interface BugReporter {
      */
     fun saveLogCat(): File?
 }
-

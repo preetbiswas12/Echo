@@ -10,11 +10,11 @@
 
 package com.echo.appnav.loggedin
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.media.MediaPreviewConfig
 import com.echo.libraries.matrix.api.media.MediaPreviewValue
 import com.echo.libraries.matrix.test.media.FakeMediaPreviewService
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -161,4 +161,3 @@ class MediaPreviewConfigMigrationTest {
         sessionCoroutineScope = this
     )
 }
-

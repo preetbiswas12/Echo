@@ -8,7 +8,6 @@
 
 package com.echo.features.invite.impl.acceptdecline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
 import com.echo.features.invite.api.acceptdecline.ConfirmingDeclineInvite
@@ -25,6 +24,7 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -216,4 +216,3 @@ class AcceptDeclineInvitePresenterTest {
         )
     }
 }
-

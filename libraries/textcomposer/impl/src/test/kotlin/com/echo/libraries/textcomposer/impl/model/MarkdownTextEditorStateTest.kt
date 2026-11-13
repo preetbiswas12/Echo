@@ -11,7 +11,6 @@ package com.echo.libraries.textcomposer.impl.model
 import android.net.Uri
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
@@ -31,6 +30,7 @@ import com.echo.libraries.textcomposer.model.Suggestion
 import com.echo.libraries.textcomposer.model.SuggestionType
 import com.echo.libraries.textcomposer.model.aMarkdownTextEditorState
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MarkdownTextEditorStateTest : RobolectricTest() {
@@ -206,4 +206,3 @@ class MarkdownTextEditorStateTest : RobolectricTest() {
         )
     }
 }
-

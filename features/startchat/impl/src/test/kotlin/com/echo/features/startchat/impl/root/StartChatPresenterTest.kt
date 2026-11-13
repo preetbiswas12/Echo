@@ -9,7 +9,6 @@
 package com.echo.features.startchat.impl.root
 
 import androidx.compose.runtime.MutableState
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.startchat.api.ConfirmingStartDmWithMatrixUser
 import com.echo.features.startchat.api.StartDMAction
 import com.echo.features.startchat.impl.userlist.FakeUserListPresenter
@@ -29,6 +28,7 @@ import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -166,4 +166,3 @@ internal fun createStartChatPresenter(
         buildMeta = aBuildMeta(),
     )
 }
-

@@ -20,4 +20,3 @@ class RecoveryKeyTools {
         return recoveryKeyWithoutSpace.length == RECOVERY_KEY_LENGTH && recoveryKeyWithoutSpace.all { BASE_58_ALPHABET.contains(it) }
     }
 }
-

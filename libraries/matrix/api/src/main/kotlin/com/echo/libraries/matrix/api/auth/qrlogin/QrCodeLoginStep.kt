@@ -17,4 +17,3 @@ sealed interface QrCodeLoginStep {
     data class Failed(val error: QrLoginException) : QrCodeLoginStep
     data object Finished : QrCodeLoginStep
 }
-

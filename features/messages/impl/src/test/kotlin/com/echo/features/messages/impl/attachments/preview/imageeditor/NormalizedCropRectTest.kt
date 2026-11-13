@@ -178,4 +178,3 @@ internal fun NormalizedCropRect.assertIsSimilarTo(expectedResult: NormalizedCrop
     assertThat(right).isWithin(0.0001f).of(expectedResult.right)
     assertThat(bottom).isWithin(0.0001f).of(expectedResult.bottom)
 }
-

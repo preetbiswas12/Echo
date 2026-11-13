@@ -55,4 +55,3 @@ internal fun List<FfiToDeviceRecipient>.toDeliveries(failures: Map<String, List<
         error = if (failed) "The message could not be delivered to this device" else null,
     )
 }
-

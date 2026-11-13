@@ -27,4 +27,3 @@ internal fun aRustSession(
     oauthData = null,
     slidingSyncVersion = proxy,
 )
-

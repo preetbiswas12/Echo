@@ -16,12 +16,12 @@ import androidx.core.net.toUri
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.libraries.mediaviewer.test.viewer.aLocalMedia
 import com.echo.tests.testutils.fake.registerFakeMediaStoreContentProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -109,4 +109,3 @@ class AndroidLocalMediaActionsTest : RobolectricTest() {
         aBuildMeta()
     )
 }
-

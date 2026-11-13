@@ -14,4 +14,3 @@ data class MatrixSearchUserResults(
     val results: ImmutableList<MatrixUser>,
     val limited: Boolean,
 )
-

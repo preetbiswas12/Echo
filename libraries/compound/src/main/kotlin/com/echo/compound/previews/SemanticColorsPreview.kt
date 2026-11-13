@@ -205,4 +205,3 @@ private fun getSemanticColors(): ImmutableMap<String, Color> {
         )
     }
 }
-

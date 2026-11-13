@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.virtual
 data object TimelineItemLastForwardIndicatorModel : TimelineItemVirtualModel {
     override val type: String = "TimelineItemLastForwardIndicatorModel"
 }
-

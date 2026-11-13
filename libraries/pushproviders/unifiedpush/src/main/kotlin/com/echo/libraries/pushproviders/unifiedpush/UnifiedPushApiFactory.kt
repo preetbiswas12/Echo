@@ -8,10 +8,10 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.network.RetrofitFactory
 import com.echo.libraries.pushproviders.unifiedpush.network.UnifiedPushApi
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface UnifiedPushApiFactory {
     fun create(baseUrl: String): UnifiedPushApi
@@ -26,4 +26,3 @@ class DefaultUnifiedPushApiFactory(
             .create(UnifiedPushApi::class.java)
     }
 }
-

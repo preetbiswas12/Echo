@@ -8,8 +8,8 @@
 package com.echo.libraries.cachestore.impl
 
 import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.cachestore.api.CacheData
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
@@ -82,4 +82,3 @@ class DatabaseCacheStoreTest {
         assertThat(database.cacheDataQueries.selectData(A_KEY).executeAsOneOrNull()).isNull()
     }
 }
-

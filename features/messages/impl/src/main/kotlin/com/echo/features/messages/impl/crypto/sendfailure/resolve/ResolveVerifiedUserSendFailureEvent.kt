@@ -19,4 +19,3 @@ sealed interface ResolveVerifiedUserSendFailureEvent {
     data object Retry : ResolveVerifiedUserSendFailureEvent
     data object Dismiss : ResolveVerifiedUserSendFailureEvent
 }
-

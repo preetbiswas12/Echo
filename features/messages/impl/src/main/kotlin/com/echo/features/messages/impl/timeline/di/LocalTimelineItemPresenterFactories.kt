@@ -16,4 +16,3 @@ import androidx.compose.runtime.staticCompositionLocalOf
 val LocalTimelineItemPresenterFactories = staticCompositionLocalOf {
     TimelineItemPresenterFactories(emptyMap())
 }
-

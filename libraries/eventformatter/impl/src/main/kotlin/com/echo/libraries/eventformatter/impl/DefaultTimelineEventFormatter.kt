@@ -8,7 +8,6 @@
 
 package com.echo.libraries.eventformatter.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.eventformatter.api.TimelineEventFormatter
@@ -33,6 +32,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.UnknownContent
 import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplayName
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultTimelineEventFormatter(
@@ -80,4 +80,3 @@ class DefaultTimelineEventFormatter(
         }
     }
 }
-

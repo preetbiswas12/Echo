@@ -60,4 +60,3 @@ class RustSqliteStoreBuilder(
         return clientBuilder.sqliteStore(this.inner)
     }
 }
-

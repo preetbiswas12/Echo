@@ -132,4 +132,3 @@ internal class RoomMemberListFetcher(
 
     private fun pendingWithCurrentMembers() = RoomMembersState.Pending(_membersFlow.value.roomMembers().orEmpty().toImmutableList())
 }
-

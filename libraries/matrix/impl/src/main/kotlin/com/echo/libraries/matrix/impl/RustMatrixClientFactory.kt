@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.enterprise.api.ClientBuilderEnterpriseHook
 import com.echo.libraries.androidutils.crypto.ClientSecret
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -30,6 +29,7 @@ import com.echo.libraries.network.useragent.UserAgentProvider
 import com.echo.libraries.sessionstorage.api.SessionData
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.withContext
 import org.matrix.rustcomponents.sdk.ClientBuilder
@@ -255,4 +255,3 @@ fun SessionData.toSession() = Session(
     slidingSyncVersion = SlidingSyncVersion.NATIVE,
     oauthData = oAuthData,
 )
-

@@ -18,8 +18,6 @@ import coil3.request.ImageRequest
 import coil3.request.transformations
 import coil3.toBitmap
 import coil3.transform.CircleCropTransformation
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.media.MediaSource
@@ -28,6 +26,8 @@ import com.echo.libraries.matrixmedia.api.InitialsAvatarBitmapGenerator
 import com.echo.libraries.matrixmedia.api.MediaRequestData
 import com.echo.libraries.push.api.notifications.NotificationBitmapLoader
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -102,4 +102,3 @@ class DefaultNotificationBitmapLoader(
         return imageLoader.execute(imageRequest).image?.toBitmap()
     }
 }
-

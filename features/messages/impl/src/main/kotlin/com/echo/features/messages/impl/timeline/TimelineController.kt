@@ -159,4 +159,3 @@ sealed interface EventFocusResult {
     data object FocusedOnLive : EventFocusResult
     data class IsInThread(val threadId: ThreadId) : EventFocusResult
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.libraries.network.interceptors
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.network.headers.HttpHeaders
 import com.echo.libraries.network.useragent.UserAgentProvider
+import dev.zacsweers.metro.Inject
 import okhttp3.Interceptor
 import okhttp3.Response
 
@@ -26,4 +26,3 @@ class UserAgentInterceptor(
         return chain.proceed(newRequest)
     }
 }
-

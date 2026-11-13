@@ -11,7 +11,6 @@ package com.echo.features.login.impl.qrcode
 import com.bumble.appyx.core.modality.AncestryInfo
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.utils.customisations.NodeCustomisationDirectoryImpl
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.di.FakeQrCodeLoginGraph
 import com.echo.features.login.impl.screens.qrcode.confirmation.QrCodeConfirmationStep
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -23,6 +22,7 @@ import com.echo.libraries.matrix.test.auth.qrlogin.FakeMatrixQrCodeLoginData
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -197,4 +197,3 @@ class QrCodeLoginFlowNodeTest : RobolectricTest() {
 
     private fun QrCodeLoginFlowNode.currentNavTarget() = backstack.elements.value.last().key.navTarget
 }
-

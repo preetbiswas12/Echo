@@ -14,4 +14,3 @@ import androidx.core.net.toUri
 const val IGNORED_SCHEMA = "ignored"
 
 fun createIgnoredUri(path: String): Uri = "$IGNORED_SCHEMA://$path".toUri()
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.api.auth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.auth.aMatrixHomeServerDetails
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MatrixHomeServerDetailsTest {
@@ -49,4 +49,3 @@ class MatrixHomeServerDetailsTest {
         assertThat(sut.isSupported).isFalse()
     }
 }
-

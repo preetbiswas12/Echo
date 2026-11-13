@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.crypto.identity
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.components.avatar.AvatarSize
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.encryption.EncryptionService
@@ -26,6 +25,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -183,4 +183,3 @@ class IdentityChangeStatePresenterTest {
         )
     }
 }
-

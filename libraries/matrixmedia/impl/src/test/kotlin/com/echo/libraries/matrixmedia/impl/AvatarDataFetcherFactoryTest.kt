@@ -18,9 +18,9 @@ import coil3.request.ImageRequest
 import coil3.request.ImageResult
 import coil3.request.Options
 import coil3.request.SuccessResult
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.components.avatar.anAvatarData
 import com.echo.libraries.matrix.test.media.FakeMatrixMediaLoader
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import org.junit.Test
 
@@ -76,4 +76,3 @@ private class FakeImageLoader : ImageLoader {
         return ImageLoader.Builder(mockk())
     }
 }
-

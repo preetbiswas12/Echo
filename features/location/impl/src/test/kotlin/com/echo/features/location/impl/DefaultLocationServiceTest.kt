@@ -8,11 +8,11 @@
 
 package com.echo.features.location.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.remoteconfig.CustomMapTilerConfigProvider
 import com.echo.features.enterprise.test.remoteconfig.aMapTilerConfig
 import com.echo.features.location.api.buildTimeMapTilerConfig
 import com.echo.libraries.matrix.test.AN_EXCEPTION
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -61,4 +61,3 @@ class DefaultLocationServiceTest {
         sessionCoroutineScope = sessionCoroutineScope,
     )
 }
-

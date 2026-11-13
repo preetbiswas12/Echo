@@ -26,4 +26,3 @@ fun <T : Any> Subject.match(expectedResult: ExpectedResult<T>) {
         isInstanceOf(expectedResult.resultClass)
     }
 }
-

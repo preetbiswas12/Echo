@@ -24,4 +24,3 @@ class RustMediaFile(private val inner: MediaFileHandle) : MediaFile {
         inner.close()
     }
 }
-

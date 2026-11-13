@@ -26,4 +26,3 @@ class MediaItemAudioPreviewParam : PreviewParameterProvider<MediaItem.Audio> {
             ),
         )
 }
-

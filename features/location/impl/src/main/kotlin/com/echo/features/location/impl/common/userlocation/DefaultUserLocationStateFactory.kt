@@ -11,8 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.mapNotNull
 import org.maplibre.compose.location.LocationAccuracy
 import org.maplibre.compose.location.LocationEvent
@@ -48,4 +48,3 @@ class DefaultUserLocationStateFactory : UserLocationState.Factory {
         return UserLocationState(location)
     }
 }
-

@@ -9,4 +9,3 @@
 package com.echo.libraries.ui.strings
 
 typealias CommonPlurals = R.plurals
-

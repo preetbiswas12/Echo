@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
@@ -50,6 +49,7 @@ import com.echo.libraries.matrix.ui.media.contentvalidation.NoopContentValidatio
 import com.echo.libraries.mediaviewer.api.MediaInfo
 import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 
 @Inject
@@ -363,4 +363,3 @@ class EventItemFactory(
         duration = duration,
     )
 }
-

@@ -17,11 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import com.freeletics.flowredux.compose.StateAndDispatch
-import com.freeletics.flowredux.compose.rememberStateAndDispatch
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.securebackup.impl.R
 import com.echo.features.securebackup.impl.loggerTagSetup
 import com.echo.features.securebackup.impl.setup.views.RecoveryKeyUserStory
@@ -32,6 +27,11 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.encryption.EnableRecoveryProgress
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.api.exception.isNetworkError
+import com.freeletics.flowredux.compose.StateAndDispatch
+import com.freeletics.flowredux.compose.rememberStateAndDispatch
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
@@ -164,4 +164,3 @@ class SecureBackupSetupPresenter(
         }
     }
 }
-

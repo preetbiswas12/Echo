@@ -8,10 +8,10 @@
 
 package com.echo.features.joinroom.impl.di
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
+import dev.zacsweers.metro.ContributesBinding
 
 interface KnockRoom {
     suspend operator fun invoke(
@@ -33,4 +33,3 @@ class DefaultKnockRoom(private val client: MatrixClient) : KnockRoom {
             .map { }
     }
 }
-

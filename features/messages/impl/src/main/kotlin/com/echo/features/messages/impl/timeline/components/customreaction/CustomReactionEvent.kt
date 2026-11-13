@@ -14,4 +14,3 @@ sealed interface CustomReactionEvent {
     data class ShowCustomReactionSheet(val event: TimelineItem.Event) : CustomReactionEvent
     data object DismissCustomReactionSheet : CustomReactionEvent
 }
-

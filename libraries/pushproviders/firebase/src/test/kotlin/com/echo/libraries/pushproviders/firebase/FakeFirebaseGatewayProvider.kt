@@ -15,4 +15,3 @@ class FakeFirebaseGatewayProvider(
 ) : FirebaseGatewayProvider {
     override fun getFirebaseGateway() = firebaseGatewayResult()
 }
-

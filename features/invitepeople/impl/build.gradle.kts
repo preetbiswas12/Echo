@@ -46,5 +46,3 @@ dependencies {
     testImplementation(projects.libraries.usersearch.test)
     testImplementation(projects.services.apperror.test)
 }
-
-

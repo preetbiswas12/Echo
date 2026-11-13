@@ -8,9 +8,9 @@
 
 package com.echo.libraries.pushstore.impl.clientsecret
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.pushstore.test.userpushstore.clientsecret.InMemoryPushClientSecretStore
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -56,4 +56,3 @@ internal class DefaultPushClientSecretTest {
         )
     }
 }
-

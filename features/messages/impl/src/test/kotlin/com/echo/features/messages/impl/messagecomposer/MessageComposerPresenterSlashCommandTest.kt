@@ -11,7 +11,6 @@ package com.echo.features.messages.impl.messagecomposer
 
 import android.net.Uri
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.test.FakeLocationService
 import com.echo.features.messages.api.timeline.TextPillificator
@@ -66,6 +65,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -335,4 +335,3 @@ class MessageComposerPresenterSlashCommandTest {
         return awaitItem()
     }
 }
-

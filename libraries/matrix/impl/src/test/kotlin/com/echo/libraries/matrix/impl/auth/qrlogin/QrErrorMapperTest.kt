@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.auth.qrlogin
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeDecodeException
 import com.echo.libraries.matrix.api.auth.qrlogin.QrLoginException
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.HumanQrLoginException as RustHumanQrLoginException
 import org.matrix.rustcomponents.sdk.QrCodeDecodeException as RustQrCodeDecodeException
@@ -36,4 +36,3 @@ class QrErrorMapperTest {
         assertThat(QrErrorMapper.map(RustHumanQrLoginException.SlidingSyncNotAvailable())).isEqualTo(QrLoginException.SlidingSyncNotAvailable)
     }
 }
-

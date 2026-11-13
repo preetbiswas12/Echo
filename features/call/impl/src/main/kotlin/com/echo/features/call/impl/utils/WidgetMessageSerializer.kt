@@ -8,10 +8,10 @@
 
 package com.echo.features.call.impl.utils
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.call.impl.data.WidgetMessage
 import com.echo.libraries.androidutils.json.JsonProvider
 import com.echo.libraries.core.extensions.runCatchingExceptions
+import dev.zacsweers.metro.Inject
 
 @Inject
 class WidgetMessageSerializer(
@@ -25,4 +25,3 @@ class WidgetMessageSerializer(
         return json().encodeToString(WidgetMessage.serializer(), message)
     }
 }
-

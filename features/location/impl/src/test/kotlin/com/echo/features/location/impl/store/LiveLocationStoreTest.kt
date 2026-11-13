@@ -11,7 +11,6 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.mutablePreferencesOf
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.impl.live.LiveLocationStore
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import com.echo.libraries.preferences.test.FakePreferenceDataStoreFactory
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
@@ -127,4 +127,3 @@ class LiveLocationStoreTest {
         }
     }
 }
-

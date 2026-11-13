@@ -14,4 +14,3 @@ fun aTimelineItemReactions() = TimelineItemReactions(
     // Use values from AggregatedReactionPreviewParam
     reactions = AggregatedReactionPreviewParam().values.toImmutableList()
 )
-

@@ -16,4 +16,3 @@ data class QrCodeScanState(
     val authenticationAction: AsyncAction<MatrixQrCodeLoginData>,
     val eventSink: (QrCodeScanEvent) -> Unit
 )
-

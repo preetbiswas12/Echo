@@ -42,4 +42,3 @@ enum class UserProfileVerificationState {
     UNVERIFIED,
     VERIFICATION_VIOLATION,
 }
-

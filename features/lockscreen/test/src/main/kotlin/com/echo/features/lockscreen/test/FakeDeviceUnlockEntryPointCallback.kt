@@ -17,4 +17,3 @@ class FakeDeviceUnlockEntryPointCallback(
     override fun onCancel() = onCancelLambda()
     override fun onUnlock() = onUnlockedLambda()
 }
-

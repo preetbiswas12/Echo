@@ -57,4 +57,3 @@ interface NotificationTroubleshootTest {
         error("Quick fix not implemented, you need to override this method in your test")
     }
 }
-

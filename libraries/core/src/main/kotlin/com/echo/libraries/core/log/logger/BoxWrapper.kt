@@ -29,4 +29,3 @@ fun List<String>.wrapInBox(
     }
     return listOf(topBorder) + boxedLines + listOf(bottomBorder)
 }
-

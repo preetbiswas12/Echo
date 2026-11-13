@@ -17,10 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Composer
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.api.live.ActiveLiveLocationShareManager
 import com.echo.features.location.impl.common.LocationConstraintsCheck
@@ -50,6 +46,10 @@ import com.echo.libraries.matrix.api.room.powerlevels.permissionsAsState
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.textcomposer.model.MessageComposerMode
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Composer
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.launch
 import kotlin.time.Duration.Companion.hours
@@ -258,4 +258,3 @@ private fun Timeline.Mode.canShareLiveLocation() = when (this) {
 }
 
 private fun generateBody(uri: String): String = "Location was shared at $uri"
-

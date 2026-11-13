@@ -95,4 +95,3 @@ internal fun PreferenceSwitchPreview() = ElementThemedPreview {
         )
     }
 }
-

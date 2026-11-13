@@ -14,4 +14,3 @@ data class FileInfo(
     val thumbnailInfo: ThumbnailInfo?,
     val thumbnailSource: MediaSource?
 )
-

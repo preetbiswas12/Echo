@@ -101,4 +101,3 @@ private object CustomHtmlToDomParser {
         .addAttributes("a", "href", "data-mention-type", "contenteditable")
         .addAttributes("ol", "start")
 }
-

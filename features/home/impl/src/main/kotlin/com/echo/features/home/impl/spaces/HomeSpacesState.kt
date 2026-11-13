@@ -26,4 +26,3 @@ sealed interface CurrentSpace {
     object Root : CurrentSpace
     data class Space(val spaceRoom: SpaceRoom) : CurrentSpace
 }
-

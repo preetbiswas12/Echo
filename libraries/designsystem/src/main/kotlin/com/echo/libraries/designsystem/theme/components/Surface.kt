@@ -53,4 +53,3 @@ internal fun SurfacePreview() = ElementThemedPreview {
         Spacer(modifier = Modifier.size(64.dp))
     }
 }
-

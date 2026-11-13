@@ -18,4 +18,3 @@ interface HomeServerLoginCompatibilityChecker {
      */
     suspend fun check(url: String): Result<Boolean>
 }
-

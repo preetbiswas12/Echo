@@ -21,9 +21,6 @@ import android.os.RemoteException
 import androidx.annotation.VisibleForTesting
 import androidx.core.graphics.scale
 import androidx.core.os.BundleCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.login.impl.BuildConfig
 import com.echo.libraries.androidutils.service.ServiceBinder
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -35,6 +32,9 @@ import com.echo.libraries.matrix.api.auth.ElementClassicSession
 import com.echo.libraries.matrix.api.auth.HomeServerLoginCompatibilityChecker
 import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -438,4 +438,3 @@ class DefaultElementClassicConnection(
         const val MAX_AVATAR_SIZE_PX = 512
     }
 }
-

@@ -14,10 +14,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
+import dev.zacsweers.metro.Inject
 
 @Inject
 class DesktopNoticePresenter(
@@ -55,4 +55,3 @@ class DesktopNoticePresenter(
         )
     }
 }
-

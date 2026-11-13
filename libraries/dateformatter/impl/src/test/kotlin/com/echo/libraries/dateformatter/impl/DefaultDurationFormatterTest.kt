@@ -8,8 +8,8 @@
 package com.echo.libraries.dateformatter.impl
 
 import android.os.Build
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.annotation.Config
 import java.util.Locale
@@ -129,4 +129,3 @@ class DefaultDurationFormatterTest : RobolectricTest() {
         assertThat(formatter.format(500.milliseconds)).isEqualTo("1 second")
     }
 }
-

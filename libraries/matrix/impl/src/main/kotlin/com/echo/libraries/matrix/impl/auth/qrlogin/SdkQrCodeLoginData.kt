@@ -18,4 +18,3 @@ class SdkQrCodeLoginData(
         return rustQrCodeData.serverName()
     }
 }
-

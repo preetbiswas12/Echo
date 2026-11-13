@@ -46,4 +46,3 @@ internal fun TimelineItemAudioViewPreview(@PreviewParameter(TimelineItemAudioCon
             contentValidationValue = ContentValidationValue.Valid,
         )
     }
-

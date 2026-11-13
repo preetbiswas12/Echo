@@ -14,8 +14,6 @@ import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.net.Uri
 import androidx.core.content.IntentCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.share.api.ShareIntentData
 import com.echo.features.share.api.ShareIntentHandler
 import com.echo.features.share.api.UriToShare
@@ -29,6 +27,8 @@ import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeImage
 import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeText
 import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeVideo
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -108,4 +108,3 @@ class DefaultShareIntentHandler(
         }
     }
 }
-

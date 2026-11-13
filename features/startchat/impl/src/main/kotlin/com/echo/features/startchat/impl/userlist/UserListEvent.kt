@@ -15,4 +15,3 @@ sealed interface UserListEvent {
     data class RemoveFromSelection(val matrixUser: MatrixUser) : UserListEvent
     data class OnSearchActiveChanged(val active: Boolean) : UserListEvent
 }
-

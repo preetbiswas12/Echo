@@ -21,4 +21,3 @@ class FakeNotificationMediaRepo : NotificationMediaRepo {
         return Result.failure(IllegalStateException("Fake class"))
     }
 }
-

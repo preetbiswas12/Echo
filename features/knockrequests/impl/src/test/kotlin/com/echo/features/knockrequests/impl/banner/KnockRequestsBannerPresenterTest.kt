@@ -8,7 +8,6 @@
 
 package com.echo.features.knockrequests.impl.banner
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.knockrequests.api.KnockRequestPermissions
 import com.echo.features.knockrequests.impl.data.KnockRequestsService
 import com.echo.libraries.matrix.api.room.knock.KnockRequest
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.room.knock.FakeKnockRequest
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
@@ -228,4 +228,3 @@ private fun TestScope.createKnockRequestsBannerPresenter(
         sessionCoroutineScope = this,
     )
 }
-

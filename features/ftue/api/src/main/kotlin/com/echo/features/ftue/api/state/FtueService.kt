@@ -29,4 +29,3 @@ sealed interface FtueState {
     /** The FTUE state is complete. The FTUE flow should not be displayed anymore. */
     data object Complete : FtueState
 }
-

@@ -10,4 +10,3 @@ package com.echo.features.preferences.impl.location
 sealed interface LocationSettingsEvent {
     data class SetLiveLocationMinimumDistanceUpdate(val value: Int) : LocationSettingsEvent
 }
-

@@ -47,4 +47,3 @@ class EventsRecorder<T>(
         events.clear()
     }
 }
-

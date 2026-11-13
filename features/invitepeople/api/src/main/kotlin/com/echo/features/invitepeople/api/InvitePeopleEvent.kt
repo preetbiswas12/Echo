@@ -16,4 +16,3 @@ interface InvitePeopleEvent {
     data object CloseSearch : InvitePeopleEvent
     data object ClearError : InvitePeopleEvent
 }
-

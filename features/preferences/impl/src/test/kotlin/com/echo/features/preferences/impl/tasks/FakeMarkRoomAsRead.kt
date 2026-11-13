@@ -19,4 +19,3 @@ class FakeMarkRoomAsRead(
         return invokeLambda(roomId)
     }
 }
-

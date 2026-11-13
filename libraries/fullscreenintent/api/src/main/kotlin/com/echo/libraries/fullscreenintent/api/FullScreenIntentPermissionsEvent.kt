@@ -12,4 +12,3 @@ sealed interface FullScreenIntentPermissionsEvent {
     data object Dismiss : FullScreenIntentPermissionsEvent
     data object OpenSettings : FullScreenIntentPermissionsEvent
 }
-

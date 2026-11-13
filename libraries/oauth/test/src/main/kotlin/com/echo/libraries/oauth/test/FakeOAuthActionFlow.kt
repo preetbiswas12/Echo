@@ -31,4 +31,3 @@ class FakeOAuthActionFlow : OAuthActionFlow {
         mutableStateFlow.value = null
     }
 }
-

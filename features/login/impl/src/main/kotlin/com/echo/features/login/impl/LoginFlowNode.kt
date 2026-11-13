@@ -23,9 +23,6 @@ import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.operation.replace
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.login.api.LoginEntryPoint
@@ -49,6 +46,9 @@ import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.auth.OAuthDetails
 import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.libraries.oauth.api.OAuthActionFlow
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -294,4 +294,3 @@ class LoginFlowNode(
         BackstackView(transitionHandler = rememberLoginFlowTransitionHandler())
     }
 }
-

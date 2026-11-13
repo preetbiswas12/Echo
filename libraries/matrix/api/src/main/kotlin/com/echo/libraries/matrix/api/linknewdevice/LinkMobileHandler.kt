@@ -42,4 +42,3 @@ sealed interface LinkMobileStep {
     data object SyncingSecrets : LinkMobileStep
     data object Done : LinkMobileStep
 }
-

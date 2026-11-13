@@ -23,4 +23,3 @@ fun RoomNotificationSettingsState.roomNotificationSettings(): RoomNotificationSe
         else -> null
     }
 }
-

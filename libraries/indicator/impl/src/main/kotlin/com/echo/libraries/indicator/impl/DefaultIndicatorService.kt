@@ -17,13 +17,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.indicator.api.IndicatorService
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.api.encryption.RecoveryState
 import com.echo.libraries.matrix.api.verification.SessionVerificationService
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultIndicatorService(
@@ -66,4 +66,3 @@ class DefaultIndicatorService(
         }
     }
 }
-

@@ -55,4 +55,3 @@ fun createPaparazziRule(
         maxPercentDifference = 0.01,
     )
 }
-

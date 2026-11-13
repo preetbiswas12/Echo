@@ -45,4 +45,3 @@ data class PinUnlockState(
     }
     val showBiometricUnlockError = biometricUnlockErrorMessage != null
 }
-

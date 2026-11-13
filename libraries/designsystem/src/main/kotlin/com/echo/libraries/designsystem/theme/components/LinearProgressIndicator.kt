@@ -84,4 +84,3 @@ internal fun LinearProgressIndicatorPreview() = ElementThemedPreview(vertical = 
         )
     }
 }
-

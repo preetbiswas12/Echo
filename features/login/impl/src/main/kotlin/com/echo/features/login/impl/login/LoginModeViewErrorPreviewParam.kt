@@ -17,4 +17,3 @@ class LoginModeViewErrorPreviewParam : PreviewParameterProvider<Exception> {
         get() = ChangeServerErrorPreviewParam().values +
             AuthenticationException.AccountAlreadyLoggedIn("@alice:matrix.org")
 }
-

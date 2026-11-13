@@ -17,4 +17,3 @@ data class FileViewerState(
     val snackbarMessage: SnackbarMessage?,
     val eventSink: (FileViewerEvent) -> Unit,
 )
-

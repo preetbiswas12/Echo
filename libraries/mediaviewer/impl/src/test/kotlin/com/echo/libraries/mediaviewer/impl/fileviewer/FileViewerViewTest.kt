@@ -85,4 +85,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setFileViewerView(
         )
     }
 }
-

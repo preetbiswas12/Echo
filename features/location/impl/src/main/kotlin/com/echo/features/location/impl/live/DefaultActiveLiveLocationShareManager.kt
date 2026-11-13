@@ -7,9 +7,6 @@
 
 package com.echo.features.location.impl.live
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import dev.zacsweers.metro.binding
 import com.echo.features.location.api.Location
 import com.echo.features.location.api.live.ActiveLiveLocationShareManager
 import com.echo.features.location.impl.live.service.LiveLocationReceiver
@@ -23,6 +20,9 @@ import com.echo.libraries.matrix.api.room.location.LiveLocationException
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import dev.zacsweers.metro.binding
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.delay
@@ -246,4 +246,3 @@ class DefaultActiveLiveLocationShareManager(
         syncedActiveShareIds.value = emptySet()
     }
 }
-

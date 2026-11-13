@@ -13,4 +13,3 @@ import com.echo.features.leaveroom.api.LeaveRoomEvent
 sealed interface InternalLeaveRoomEvent : LeaveRoomEvent {
     data object ResetState : InternalLeaveRoomEvent
 }
-

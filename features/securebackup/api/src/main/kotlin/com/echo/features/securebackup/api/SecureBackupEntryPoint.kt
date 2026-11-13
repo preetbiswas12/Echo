@@ -44,4 +44,3 @@ interface SecureBackupEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

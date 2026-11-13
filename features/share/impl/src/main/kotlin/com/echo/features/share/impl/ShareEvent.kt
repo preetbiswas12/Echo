@@ -11,4 +11,3 @@ package com.echo.features.share.impl
 sealed interface ShareEvent {
     data object ClearError : ShareEvent
 }
-

@@ -39,4 +39,3 @@ fun alphaAnimation(
         label = label
     )
 }
-

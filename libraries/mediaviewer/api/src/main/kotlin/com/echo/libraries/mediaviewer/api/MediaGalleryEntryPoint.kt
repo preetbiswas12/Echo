@@ -27,4 +27,3 @@ interface MediaGalleryEntryPoint : FeatureEntryPoint {
         fun forward(eventId: EventId)
     }
 }
-

@@ -20,4 +20,3 @@ fun aMatrixHomeServerDetails(
     supportsPasswordLogin = supportsPasswordLogin,
     supportsOAuthLogin = supportsOAuthLogin,
 )
-

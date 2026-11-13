@@ -15,12 +15,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -83,4 +83,3 @@ class LinkNewDeviceRootPresenter(
         )
     }
 }
-

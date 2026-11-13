@@ -113,4 +113,3 @@ fun aLoadedPinnedMessagesListState(
     displayThreadSummaries = displayThreadSummaries,
     eventSink = eventSink,
 )
-

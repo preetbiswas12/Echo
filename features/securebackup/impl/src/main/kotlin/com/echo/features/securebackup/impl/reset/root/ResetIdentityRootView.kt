@@ -139,4 +139,3 @@ internal fun ResetIdentityRootViewPreview(@PreviewParameter(ResetIdentityRootSta
         )
     }
 }
-

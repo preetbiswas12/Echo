@@ -29,4 +29,3 @@ fun aDirectLogoutState(
     logoutAction = logoutAction,
     eventSink = eventSink,
 )
-

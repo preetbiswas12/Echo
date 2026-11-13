@@ -141,4 +141,3 @@ private fun TextPreview(
     textAlign = TextAlign.Center,
     color = textColor,
 )
-

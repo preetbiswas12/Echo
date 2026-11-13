@@ -41,4 +41,3 @@ fun CheckboxListItem(
         onClick = { onChange(!checked) },
     )
 }
-

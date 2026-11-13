@@ -15,4 +15,3 @@ data class ModerationAndSafetyState(
 ) {
     val showBlockedUsersItem = numberOfBlockedUsers > 0
 }
-

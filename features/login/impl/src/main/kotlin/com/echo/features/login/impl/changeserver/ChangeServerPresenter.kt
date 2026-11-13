@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.login.impl.accesscontrol.DefaultAccountProviderAccessControl
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.error.ChangeServerError
@@ -23,6 +22,7 @@ import com.echo.libraries.architecture.runCatchingUpdatingState
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
 import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.auth.MatrixHomeServerDetails
+import dev.zacsweers.metro.Inject
 
 @Inject
 class ChangeServerPresenter(
@@ -75,4 +75,3 @@ class ChangeServerPresenter(
         }.runCatchingUpdatingState(changeServerAction, errorTransform = ChangeServerError::from)
     }
 }
-

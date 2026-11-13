@@ -24,4 +24,3 @@ import org.matrix.rtc.MatrixBackend
 fun interface MatrixRtcBackendFactory {
     fun create(client: MatrixClient): MatrixBackend
 }
-

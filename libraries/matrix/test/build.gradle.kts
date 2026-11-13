@@ -24,5 +24,3 @@ dependencies {
     implementation(projects.tests.testutils)
     implementation(libs.kotlinx.collections.immutable)
 }
-
-

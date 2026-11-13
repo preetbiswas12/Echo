@@ -21,10 +21,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.core.net.toUri
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.CreatedRoom
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -50,6 +46,10 @@ import com.echo.libraries.mediaupload.api.MediaPreProcessor
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.CreatedRoom
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -315,4 +315,3 @@ class ConfigureRoomPresenter(
         return matrixClient.uploadMedia(MimeTypes.Jpeg, byteArray).getOrThrow()
     }
 }
-

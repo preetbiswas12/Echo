@@ -49,4 +49,3 @@ class RustAnalyticsSdkSpan(
         Timber.d("Exited span sentry.trace='$parentTraceId'")
     }
 }
-

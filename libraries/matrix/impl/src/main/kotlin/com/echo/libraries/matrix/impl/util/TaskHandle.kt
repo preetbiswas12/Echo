@@ -29,4 +29,3 @@ class TaskHandleBag(private val taskHandles: MutableSet<TaskHandle> = CopyOnWrit
         taskHandles.clear()
     }
 }
-

@@ -32,4 +32,3 @@ internal fun MediaSource.toRustMediaSource(): RustMediaSource {
         if (isTest) RustMediaSource(NoHandle) else throw e
     }
 }
-

@@ -7,9 +7,6 @@
 
 package com.echo.features.callnative.impl
 
-import io.element.android.call.api.ElementCallData
-import io.element.android.call.api.ElementCallEndReason
-import io.element.android.call.api.ElementCallLifecycleListener
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.CurrentCall
 import com.echo.features.call.api.CurrentCallTracker
@@ -17,6 +14,9 @@ import com.echo.features.call.api.RingingCallTracker
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import io.element.android.call.api.ElementCallData
+import io.element.android.call.api.ElementCallEndReason
+import io.element.android.call.api.ElementCallLifecycleListener
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
@@ -67,4 +67,3 @@ class ElementXCallLifecycleListener(
         isAudioCall = isAudioCall,
     )
 }
-

@@ -17,4 +17,3 @@ class FakeFfiSqliteStoreBuilder : SqliteStoreBuilder(NoHandle) {
     override fun poolMaxSize(poolMaxSize: UInt?): SqliteStoreBuilder = this
     override fun systemIsMemoryConstrained(): SqliteStoreBuilder = this
 }
-

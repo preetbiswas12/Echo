@@ -29,4 +29,3 @@ class NetworkBlockedChecker(
         return connectivityManager.activeNetworkInfo?.detailedState == NetworkInfo.DetailedState.BLOCKED
     }
 }
-

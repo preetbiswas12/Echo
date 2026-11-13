@@ -9,7 +9,6 @@
 package com.echo.features.login.impl.screens.confirmaccountprovider
 
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.features.login.impl.accesscontrol.DefaultAccountProviderAccessControl
@@ -36,6 +35,7 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -599,4 +599,3 @@ class ConfirmAccountProviderPresenterTest {
         ),
     )
 }
-

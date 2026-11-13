@@ -37,5 +37,3 @@ dependencies {
     testImplementation(projects.libraries.matrix.test)
     testCommonDependencies(libs, includeTestComposeView = true)
 }
-
-

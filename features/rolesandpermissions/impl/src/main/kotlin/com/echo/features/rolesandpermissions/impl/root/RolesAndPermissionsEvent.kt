@@ -16,4 +16,3 @@ sealed interface RolesAndPermissionsEvent {
     data object ResetPermissions : RolesAndPermissionsEvent
     data object CancelPendingAction : RolesAndPermissionsEvent
 }
-

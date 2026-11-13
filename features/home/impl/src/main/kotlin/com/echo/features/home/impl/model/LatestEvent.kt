@@ -32,4 +32,3 @@ sealed interface LatestEvent {
         }
     }
 }
-

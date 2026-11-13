@@ -14,9 +14,9 @@ import androidx.core.text.buildSpannedString
 import androidx.core.text.getSpans
 import androidx.core.text.inSpans
 import androidx.core.text.toSpannable
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 import org.robolectric.Shadows.shadowOf
@@ -257,4 +257,3 @@ class LinkifierHelperTest : RobolectricTest() {
         assertThat(urlSpans.first().url).isEqualTo("https://github.com/element-hq/element-android?")
     }
 }
-

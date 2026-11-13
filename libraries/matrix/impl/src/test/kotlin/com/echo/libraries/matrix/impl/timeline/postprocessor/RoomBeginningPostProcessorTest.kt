@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.timeline.postprocessor
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.test.A_USER_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class RoomBeginningPostProcessorTest {
@@ -152,4 +152,3 @@ class RoomBeginningPostProcessorTest {
         assertThat(processedItems).isEqualTo(listOf(otherMemberJoinEvent))
     }
 }
-

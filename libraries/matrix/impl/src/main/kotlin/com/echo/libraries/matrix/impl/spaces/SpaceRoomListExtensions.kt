@@ -77,4 +77,3 @@ internal fun SpaceRoomListInterface.spaceUpdateFlow(): Flow<Optional<SpaceRoom>>
     }.catch {
         Timber.d(it, "spaceUpdateFlow() failed")
     }.buffer(Channel.UNLIMITED)
-

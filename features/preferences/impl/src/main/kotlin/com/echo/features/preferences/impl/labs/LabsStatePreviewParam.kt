@@ -47,4 +47,3 @@ internal fun aFeatureList() = listOf(
         icon = IconSource.Resource(CompoundDrawables.ic_compound_video_call),
     )
 )
-

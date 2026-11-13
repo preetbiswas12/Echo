@@ -15,4 +15,3 @@ class ForwardEventException(
 ) : Exception() {
     override val message: String? = "Failed to deliver event to $roomIds rooms"
 }
-

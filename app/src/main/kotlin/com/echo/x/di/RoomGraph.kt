@@ -8,13 +8,13 @@
 
 package com.echo.x.di
 
-import dev.zacsweers.metro.GraphExtension
-import dev.zacsweers.metro.Provides
 import com.echo.appnav.di.TimelineBindings
 import com.echo.libraries.architecture.NodeFactoriesBindings
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.room.JoinedRoom
+import dev.zacsweers.metro.GraphExtension
+import dev.zacsweers.metro.Provides
 
 @GraphExtension(RoomScope::class)
 interface RoomGraph : NodeFactoriesBindings, TimelineBindings {
@@ -26,4 +26,3 @@ interface RoomGraph : NodeFactoriesBindings, TimelineBindings {
         ): RoomGraph
     }
 }
-

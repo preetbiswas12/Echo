@@ -8,9 +8,9 @@
 
 package com.echo.libraries.pushstore.impl.clientsecret
 
+import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretFactory
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretFactory
 import java.util.UUID
 
 @ContributesBinding(AppScope::class)
@@ -19,4 +19,3 @@ class DefaultPushClientSecretFactory : PushClientSecretFactory {
         return UUID.randomUUID().toString()
     }
 }
-

@@ -19,4 +19,3 @@ class FakeFolderExplorer : FolderExplorer {
 
     override suspend fun getItems(path: String): List<Item> = result
 }
-

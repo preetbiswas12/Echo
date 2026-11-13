@@ -61,4 +61,3 @@ fun aRoomDetailsEditState(
     isSpace = isSpace,
     eventSink = eventSink,
 )
-

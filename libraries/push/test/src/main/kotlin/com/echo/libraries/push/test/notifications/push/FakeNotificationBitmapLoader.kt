@@ -26,4 +26,3 @@ class FakeNotificationBitmapLoader(
         return getUserIconResult(avatarData, imageLoader)
     }
 }
-

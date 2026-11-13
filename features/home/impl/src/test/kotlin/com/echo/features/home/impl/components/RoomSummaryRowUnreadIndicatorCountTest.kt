@@ -7,9 +7,9 @@
 
 package com.echo.features.home.impl.components
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.model.createRoomListRoomSummary
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class RoomSummaryRowUnreadIndicatorCountTest {
@@ -76,4 +76,3 @@ class RoomSummaryRowUnreadIndicatorCountTest {
         assertThat(room.unreadIndicatorCount(showUnreadCount = false, showAllActivity = false)).isNull()
     }
 }
-

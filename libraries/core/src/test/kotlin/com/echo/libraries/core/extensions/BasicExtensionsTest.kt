@@ -81,4 +81,3 @@ class BasicExtensionsTest {
         assertEquals("ca enleve etre", "ça enlève être".normalized())
     }
 }
-

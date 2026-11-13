@@ -20,4 +20,3 @@ fun interface MediaOptimizationSelectorPresenter : Presenter<MediaOptimizationSe
         ): MediaOptimizationSelectorPresenter
     }
 }
-

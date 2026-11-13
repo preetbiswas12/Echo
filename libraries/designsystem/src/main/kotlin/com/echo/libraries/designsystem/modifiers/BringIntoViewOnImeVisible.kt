@@ -50,4 +50,3 @@ fun Modifier.bringIntoViewOnImeVisible(): Modifier {
         .bringIntoViewRequester(bringIntoViewRequester)
         .onFocusChanged { hasFocus = it.hasFocus }
 }
-

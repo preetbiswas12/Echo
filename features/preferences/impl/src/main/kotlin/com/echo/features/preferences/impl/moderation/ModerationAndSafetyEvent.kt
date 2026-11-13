@@ -14,4 +14,3 @@ sealed interface ModerationAndSafetyEvent {
     data class SetHideInviteAvatars(val value: Boolean) : ModerationAndSafetyEvent
     data class SetTimelineMediaPreviewValue(val value: MediaPreviewValue) : ModerationAndSafetyEvent
 }
-

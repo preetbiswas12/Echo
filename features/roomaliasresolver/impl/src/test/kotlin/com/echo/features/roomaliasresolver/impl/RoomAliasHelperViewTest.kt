@@ -84,4 +84,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setRoomAliasResolverView(
         )
     }
 }
-

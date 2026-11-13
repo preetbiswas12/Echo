@@ -9,7 +9,6 @@
 package com.echo.features.roomdetails.impl.members
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.roommembermoderation.api.RoomMemberModerationState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -24,6 +23,7 @@ import com.echo.libraries.matrix.test.room.powerlevels.FakeRoomPermissions
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -256,4 +256,3 @@ private fun TestScope.createPresenter(
     },
     encryptionService = encryptedService,
 )
-

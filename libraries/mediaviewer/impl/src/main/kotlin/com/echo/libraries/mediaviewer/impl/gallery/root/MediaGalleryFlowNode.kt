@@ -15,8 +15,6 @@ import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.libraries.architecture.BackstackWithOverlayBox
 import com.echo.libraries.architecture.BaseFlowNode
@@ -39,6 +37,8 @@ import com.echo.libraries.mediaviewer.impl.model.eventId
 import com.echo.libraries.mediaviewer.impl.model.mediaInfo
 import com.echo.libraries.mediaviewer.impl.model.mediaSource
 import com.echo.libraries.mediaviewer.impl.model.thumbnailSource
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(RoomScope::class)
@@ -150,4 +150,3 @@ class MediaGalleryFlowNode(
         BackstackWithOverlayBox(modifier)
     }
 }
-

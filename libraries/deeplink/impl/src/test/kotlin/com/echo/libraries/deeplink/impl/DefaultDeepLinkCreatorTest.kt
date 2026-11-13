@@ -8,7 +8,6 @@
 
 package com.echo.libraries.deeplink.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_THREAD_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultDeepLinkCreatorTest {
@@ -56,4 +56,3 @@ class DefaultDeepLinkCreatorTest {
             .isEqualTo("elementx://open/%40a%2F%3Adomain/%21a%2FRoomId%3Adomain//%24an%2FEventId")
     }
 }
-

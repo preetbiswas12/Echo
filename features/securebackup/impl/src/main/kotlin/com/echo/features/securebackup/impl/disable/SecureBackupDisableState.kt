@@ -17,4 +17,3 @@ data class SecureBackupDisableState(
     val appName: String,
     val eventSink: (SecureBackupDisableEvent) -> Unit
 )
-

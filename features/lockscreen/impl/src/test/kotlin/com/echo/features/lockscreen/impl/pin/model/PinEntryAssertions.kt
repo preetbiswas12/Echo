@@ -18,4 +18,3 @@ fun PinEntry.assertEmpty() {
     val isEmpty = digits.all { it is PinDigit.Empty }
     assertThat(isEmpty).isTrue()
 }
-

@@ -19,4 +19,3 @@ class FakeKnockRoom(
         lambda(roomIdOrAlias, message, serverNames)
     }
 }
-

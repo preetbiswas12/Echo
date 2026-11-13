@@ -31,4 +31,3 @@ class FakeRoomLatestEventFormatter : RoomLatestEventFormatter {
         this.result = result
     }
 }
-

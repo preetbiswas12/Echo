@@ -9,11 +9,11 @@
 package com.echo.features.login.impl.qrcode
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.auth.FakeMatrixAuthenticationService
 import com.echo.libraries.matrix.test.auth.qrlogin.FakeMatrixQrCodeLoginData
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -65,4 +65,3 @@ class DefaultQrCodeLoginManagerTest {
         }
     }
 }
-

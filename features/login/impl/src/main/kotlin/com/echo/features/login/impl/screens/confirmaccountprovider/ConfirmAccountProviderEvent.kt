@@ -16,4 +16,3 @@ sealed interface ConfirmAccountProviderEvent {
     data class Continue(val accountProvider: String) : ConfirmAccountProviderEvent
     data object ClearError : ConfirmAccountProviderEvent
 }
-

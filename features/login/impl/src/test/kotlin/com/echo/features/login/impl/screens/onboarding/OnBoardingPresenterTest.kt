@@ -8,7 +8,6 @@
 
 package com.echo.features.login.impl.screens.onboarding
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.appconfig.OnBoardingConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.api.IsEnterpriseBuild
@@ -46,6 +45,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
@@ -387,4 +387,3 @@ fun createLoginModePresenter(
     ),
     saveAccountProviderToHistory = saveAccountProviderToHistory,
 )
-

@@ -25,4 +25,3 @@ internal fun aRustRoomHero(
     status = status,
     call = call,
 )
-

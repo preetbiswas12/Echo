@@ -8,12 +8,11 @@
 
 package com.echo.features.lockscreen.impl.unlock.di
 
+import com.echo.features.lockscreen.impl.unlock.activity.PinUnlockActivity
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.lockscreen.impl.unlock.activity.PinUnlockActivity
 
 @ContributesTo(AppScope::class)
 interface PinUnlockBindings {
     fun inject(activity: PinUnlockActivity)
 }
-

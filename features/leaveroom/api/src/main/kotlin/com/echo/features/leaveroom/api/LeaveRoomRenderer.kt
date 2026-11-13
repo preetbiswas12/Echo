@@ -30,4 +30,3 @@ fun interface LeaveRoomRenderer {
         modifier: Modifier,
     )
 }
-

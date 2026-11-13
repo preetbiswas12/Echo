@@ -14,4 +14,3 @@ sealed interface MediaSettingsEvent {
     data class SetCompressMedia(val compress: Boolean) : MediaSettingsEvent
     data class SetVideoUploadQuality(val videoPreset: VideoCompressionPreset) : MediaSettingsEvent
 }
-

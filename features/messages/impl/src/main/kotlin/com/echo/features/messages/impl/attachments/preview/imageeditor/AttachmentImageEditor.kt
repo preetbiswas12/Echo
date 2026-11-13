@@ -13,8 +13,6 @@ import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.net.Uri
 import androidx.exifinterface.media.ExifInterface
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.messages.impl.attachments.preview.resolvedImageMimeType
 import com.echo.libraries.androidutils.bitmap.rotateToExifMetadataOrientation
 import com.echo.libraries.androidutils.bitmap.writeBitmap
@@ -26,6 +24,8 @@ import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeAnimatedImage
 import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeImage
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.mediaviewer.api.local.LocalMedia
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import java.io.File
 import kotlin.math.roundToInt
@@ -200,4 +200,3 @@ private fun String?.isEditableStillImageMimeType(): Boolean {
         !this.isMimeTypeAnimatedImage() &&
         this != MimeTypes.Svg
 }
-

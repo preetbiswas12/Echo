@@ -11,7 +11,6 @@ package com.echo.libraries.push.impl.notifications
 import android.app.Notification
 import android.service.notification.StatusBarNotification
 import androidx.compose.ui.graphics.Color
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.features.lockscreen.api.LockScreenService
@@ -65,6 +64,7 @@ import com.echo.tests.testutils.lambda.LambdaTwoParamsRecorder
 import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -840,4 +840,3 @@ fun TestScope.createDefaultNotificationDrawerManager(
         sessionObserver = sessionObserver,
     )
 }
-

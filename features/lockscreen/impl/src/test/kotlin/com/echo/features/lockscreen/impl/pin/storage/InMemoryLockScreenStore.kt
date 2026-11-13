@@ -51,4 +51,3 @@ class InMemoryLockScreenStore : LockScreenStore {
         isBiometricUnlockAllowed.value = isAllowed
     }
 }
-

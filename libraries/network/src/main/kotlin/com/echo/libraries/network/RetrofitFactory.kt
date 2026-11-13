@@ -8,9 +8,9 @@
 
 package com.echo.libraries.network
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.json.JsonProvider
 import com.echo.libraries.core.uri.ensureTrailingSlash
+import dev.zacsweers.metro.Inject
 import okhttp3.Call
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
@@ -27,4 +27,3 @@ class RetrofitFactory(
         .callFactory(callFactory())
         .build()
 }
-

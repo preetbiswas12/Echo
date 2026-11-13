@@ -78,4 +78,3 @@ class PowerLevelRoomMemberComparatorTest {
         assert(ordered[2].userId == A_USER_ID_3)
     }
 }
-

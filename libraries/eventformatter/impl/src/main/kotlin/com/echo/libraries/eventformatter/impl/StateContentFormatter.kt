@@ -8,12 +8,12 @@
 
 package com.echo.libraries.eventformatter.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.eventformatter.impl.mode.RenderingMode
 import com.echo.libraries.matrix.api.timeline.item.event.OtherState
 import com.echo.libraries.matrix.api.timeline.item.event.StateContent
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 
 @Inject
@@ -221,4 +221,3 @@ class StateContentFormatter(
         }
     }
 }
-

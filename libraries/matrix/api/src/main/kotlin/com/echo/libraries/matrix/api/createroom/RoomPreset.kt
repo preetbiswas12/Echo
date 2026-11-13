@@ -12,4 +12,3 @@ enum class RoomPreset {
     PUBLIC_CHAT,
     TRUSTED_PRIVATE_CHAT,
 }
-

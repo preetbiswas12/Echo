@@ -119,4 +119,3 @@ internal fun TimelineItemStateEventRowPreview() = ElementPreview {
         eventSink = {}
     )
 }
-

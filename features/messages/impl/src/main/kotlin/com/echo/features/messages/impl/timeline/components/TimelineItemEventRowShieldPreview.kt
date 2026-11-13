@@ -68,4 +68,3 @@ internal fun TimelineItemEventRowShieldPreview() = ElementPreview {
 private fun aWarningShield() = MessageShield.AuthenticityNotGuaranteed(isCritical = false)
 
 internal fun aCriticalShield() = MessageShield.UnverifiedIdentity(isCritical = true)
-

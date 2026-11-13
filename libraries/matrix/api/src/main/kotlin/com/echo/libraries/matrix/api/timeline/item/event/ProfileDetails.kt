@@ -78,4 +78,3 @@ fun ProfileDetails.toMatrixUser(userId: UserId): MatrixUser {
         )
     }
 }
-

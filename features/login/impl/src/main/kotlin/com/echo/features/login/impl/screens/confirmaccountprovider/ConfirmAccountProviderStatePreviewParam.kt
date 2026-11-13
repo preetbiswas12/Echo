@@ -49,4 +49,3 @@ internal fun aConfirmAccountProviderState(
     changeServerState = changeServerState,
     eventSink = eventSink
 )
-

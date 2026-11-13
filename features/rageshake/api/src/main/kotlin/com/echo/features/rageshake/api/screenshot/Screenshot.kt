@@ -63,4 +63,3 @@ sealed interface ImageResult {
     data class Error(val exception: Exception) : ImageResult
     data class Success(val data: Bitmap) : ImageResult
 }
-

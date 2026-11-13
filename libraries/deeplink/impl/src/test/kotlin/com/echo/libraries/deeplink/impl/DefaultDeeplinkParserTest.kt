@@ -10,7 +10,6 @@ package com.echo.libraries.deeplink.impl
 
 import android.content.Intent
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.deeplink.api.DeeplinkData
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_THREAD_ID
 import com.echo.tests.testutils.assertThrowsInDebug
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultDeeplinkParserTest : RobolectricTest() {
@@ -91,4 +91,3 @@ class DefaultDeeplinkParserTest : RobolectricTest() {
         }
     }
 }
-

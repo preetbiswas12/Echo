@@ -22,4 +22,3 @@ fun RustAssetType.into(): AssetType = when (this) {
     RustAssetType.PIN -> AssetType.PIN
     RustAssetType.UNKNOWN -> AssetType.UNKNOWN
 }
-

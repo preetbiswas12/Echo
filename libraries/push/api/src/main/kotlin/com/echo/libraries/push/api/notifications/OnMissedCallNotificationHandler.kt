@@ -29,4 +29,3 @@ interface OnMissedCallNotificationHandler {
         eventId: EventId,
     )
 }
-

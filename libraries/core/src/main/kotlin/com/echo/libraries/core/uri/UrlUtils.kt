@@ -38,4 +38,3 @@ fun String.ensureTrailingSlash(): String {
         else -> this
     }
 }
-

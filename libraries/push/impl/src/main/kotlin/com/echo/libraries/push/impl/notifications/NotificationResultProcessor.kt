@@ -7,9 +7,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.ElementCallEntryPoint
 import com.echo.libraries.core.extensions.runCatchingExceptions
@@ -32,6 +29,9 @@ import com.echo.libraries.push.impl.push.MutableBatteryOptimizationStore
 import com.echo.libraries.push.impl.push.OnNotifiableEventReceived
 import com.echo.libraries.push.impl.push.OnRedactedEventReceived
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
@@ -268,4 +268,3 @@ class DefaultNotificationResultProcessor(
         )
     }
 }
-

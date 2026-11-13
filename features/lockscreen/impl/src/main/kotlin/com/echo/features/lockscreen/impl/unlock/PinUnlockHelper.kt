@@ -12,11 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberUpdatedState
-import dev.zacsweers.metro.Inject
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.biometric.DefaultBiometricUnlockCallback
 import com.echo.features.lockscreen.impl.pin.DefaultPinCodeManagerCallback
 import com.echo.features.lockscreen.impl.pin.PinCodeManager
+import dev.zacsweers.metro.Inject
 
 @Inject
 class PinUnlockHelper(
@@ -52,4 +52,3 @@ class PinUnlockHelper(
         }
     }
 }
-

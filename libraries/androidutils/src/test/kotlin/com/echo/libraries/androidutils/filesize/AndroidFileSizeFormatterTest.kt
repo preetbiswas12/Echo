@@ -9,9 +9,9 @@
 package com.echo.libraries.androidutils.filesize
 
 import android.os.Build
-import com.google.common.truth.Truth.assertThat
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
@@ -73,4 +73,3 @@ class AndroidFileSizeFormatterTest : RobolectricTest() {
         sdkIntProvider = FakeBuildVersionSdkIntProvider(sdkInt = sdkLevel)
     )
 }
-

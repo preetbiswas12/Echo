@@ -36,4 +36,3 @@ data class Answer(
     val text: String,
     val canDelete: Boolean,
 )
-

@@ -18,9 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
@@ -30,6 +27,9 @@ import com.echo.libraries.matrix.api.notificationsettings.NotificationSettingsSe
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
 import com.echo.libraries.matrix.api.room.RoomNotificationSettings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.debounce
@@ -206,4 +206,3 @@ class RoomNotificationSettingsPresenter(
         }.runCatchingUpdatingState(action)
     }
 }
-

@@ -10,10 +10,10 @@ package com.echo.features.migration.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.migration.api.MigrationEntryPoint
 import com.echo.features.migration.api.MigrationState
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultMigrationEntryPoint(
@@ -31,4 +31,3 @@ class DefaultMigrationEntryPoint(
         modifier = modifier,
     )
 }
-

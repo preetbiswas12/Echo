@@ -9,8 +9,8 @@
 package com.echo.libraries.androidutils.assets
 
 import android.content.Context
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
 
@@ -44,4 +44,3 @@ class AssetReader(
         cache.clear()
     }
 }
-

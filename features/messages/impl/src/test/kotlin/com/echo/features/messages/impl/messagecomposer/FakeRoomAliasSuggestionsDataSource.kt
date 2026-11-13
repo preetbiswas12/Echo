@@ -26,4 +26,3 @@ class FakeRoomAliasSuggestionsDataSource(
         roomAliasSuggestions.value = newData
     }
 }
-

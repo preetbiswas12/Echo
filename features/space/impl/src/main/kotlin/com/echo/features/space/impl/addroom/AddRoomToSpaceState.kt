@@ -24,4 +24,3 @@ data class AddRoomToSpaceState(
 ) {
     val canSave: Boolean = selectedRooms.isNotEmpty() && !saveAction.isLoading()
 }
-

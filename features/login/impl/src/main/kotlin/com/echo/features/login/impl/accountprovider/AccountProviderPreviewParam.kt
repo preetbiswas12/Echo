@@ -33,4 +33,3 @@ fun anAccountProviderGeneric(
 ) = AccountProvider.Generic(
     serverName = serverName,
 )
-

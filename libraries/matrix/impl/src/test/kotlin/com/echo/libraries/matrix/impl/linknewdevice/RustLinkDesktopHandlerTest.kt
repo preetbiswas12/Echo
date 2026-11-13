@@ -10,7 +10,6 @@
 package com.echo.libraries.matrix.impl.linknewdevice
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.linknewdevice.ErrorType
 import com.echo.libraries.matrix.api.linknewdevice.LinkDesktopStep
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiContinuationMessageSender
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.QR_CODE_DATA
 import com.echo.tests.testutils.ExpectedResult
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.match
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.awaitCancellation
@@ -171,4 +171,3 @@ class RustLinkDesktopHandlerTest {
         qrCodeDataParser = FakeQrCodeDataParser(),
     )
 }
-

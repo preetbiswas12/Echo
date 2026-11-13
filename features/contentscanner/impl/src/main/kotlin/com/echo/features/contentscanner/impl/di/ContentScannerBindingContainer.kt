@@ -7,16 +7,16 @@
 
 package com.echo.features.contentscanner.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.features.contentscanner.impl.DefaultContentScannerService
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.RoomCoroutineScope
 import com.echo.libraries.matrix.api.scanner.ContentScanner
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 
 @BindingContainer
@@ -40,4 +40,3 @@ object ContentScannerBindingContainer {
         }
     }
 }
-

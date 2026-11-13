@@ -10,7 +10,6 @@ package com.echo.features.logout.impl.direct
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewParameter
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.logout.api.direct.DirectLogoutEvent
 import com.echo.features.logout.api.direct.DirectLogoutState
 import com.echo.features.logout.api.direct.DirectLogoutStatePreviewParam
@@ -19,6 +18,7 @@ import com.echo.features.logout.impl.ui.LogoutActionDialog
 import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultDirectLogoutView : DirectLogoutView {
@@ -48,4 +48,3 @@ internal fun DefaultDirectLogoutViewPreview(
 ) = ElementPreview {
     DefaultDirectLogoutView().Render(state = state)
 }
-

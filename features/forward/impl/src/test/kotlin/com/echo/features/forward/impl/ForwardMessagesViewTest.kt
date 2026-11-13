@@ -67,4 +67,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setForwardMessagesView(
         )
     }
 }
-

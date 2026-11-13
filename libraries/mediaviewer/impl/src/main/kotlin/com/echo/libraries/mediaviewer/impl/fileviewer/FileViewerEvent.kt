@@ -11,4 +11,3 @@ sealed interface FileViewerEvent {
     data object Share : FileViewerEvent
     data object SaveOnDisk : FileViewerEvent
 }
-

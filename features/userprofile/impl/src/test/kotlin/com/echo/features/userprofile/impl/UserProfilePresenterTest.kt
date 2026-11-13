@@ -13,7 +13,6 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.test.FakeSessionEnterpriseService
 import com.echo.features.startchat.api.ConfirmingStartDmWithMatrixUser
 import com.echo.features.startchat.api.StartDMAction
@@ -45,6 +44,7 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -417,4 +417,3 @@ class UserProfilePresenterTest {
         )
     }
 }
-

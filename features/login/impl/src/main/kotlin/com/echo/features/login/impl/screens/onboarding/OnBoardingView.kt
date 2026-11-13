@@ -385,4 +385,3 @@ internal fun OnBoardingViewPreview(
         onLearnMoreClick = {},
     )
 }
-

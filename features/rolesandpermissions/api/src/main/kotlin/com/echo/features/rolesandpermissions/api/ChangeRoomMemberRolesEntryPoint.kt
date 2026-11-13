@@ -43,4 +43,3 @@ enum class ChangeRoomMemberRolesListType {
     Admins,
     Moderators
 }
-

@@ -39,4 +39,3 @@ interface MessageSearch {
      */
     suspend fun paginate(): Result<Unit>
 }
-

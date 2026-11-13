@@ -63,4 +63,3 @@ internal fun TimelineLoadingMoreIndicatorPreview() = ElementPreview {
         TimelineLoadingMoreIndicator(Timeline.PaginationDirection.FORWARDS)
     }
 }
-

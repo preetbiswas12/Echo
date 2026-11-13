@@ -16,4 +16,3 @@ data class ReportMessageState(
     val result: AsyncAction<Unit>,
     val eventSink: (ReportMessageEvent) -> Unit
 )
-

@@ -17,4 +17,3 @@ class FakeSqliteStoreBuilder : SqliteStoreBuilder {
         return clientBuilder
     }
 }
-

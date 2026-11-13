@@ -34,4 +34,3 @@ internal fun aRustRoomPreviewInfo(
     joinRule = joinRule,
     heroes = null,
 )
-

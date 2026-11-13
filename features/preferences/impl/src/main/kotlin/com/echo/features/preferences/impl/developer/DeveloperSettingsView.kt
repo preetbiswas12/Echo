@@ -254,4 +254,3 @@ internal fun DeveloperSettingsViewPreview(
         onBackClick = {},
     )
 }
-

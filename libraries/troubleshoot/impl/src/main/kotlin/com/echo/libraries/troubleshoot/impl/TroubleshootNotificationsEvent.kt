@@ -13,4 +13,3 @@ sealed interface TroubleshootNotificationsEvent {
     data object RetryFailedTests : TroubleshootNotificationsEvent
     data class QuickFix(val testIndex: Int) : TroubleshootNotificationsEvent
 }
-

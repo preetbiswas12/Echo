@@ -15,4 +15,3 @@ enum class SyncState {
     Terminated,
     Offline,
 }
-

@@ -150,4 +150,3 @@ internal fun LocationSettingsViewPreview(@PreviewParameter(LocationSettingsState
         onOpenAppSettingsClick = {}
     )
 }
-

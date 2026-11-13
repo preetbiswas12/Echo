@@ -72,4 +72,3 @@ internal fun AnalyticsPreferencesViewPreview(@PreviewParameter(AnalyticsPreferen
             state = state,
         )
     }
-

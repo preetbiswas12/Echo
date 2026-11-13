@@ -29,4 +29,3 @@ sealed interface PermissionsEvent {
     data object CloseDialog : PermissionsEvent
     data object OpenSystemSettingAndCloseDialog : PermissionsEvent
 }
-

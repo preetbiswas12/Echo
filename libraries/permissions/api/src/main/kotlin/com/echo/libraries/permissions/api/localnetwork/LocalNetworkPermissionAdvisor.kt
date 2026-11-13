@@ -19,4 +19,3 @@ interface LocalNetworkPermissionAdvisor {
      */
     suspend fun shouldRequestPermissionFor(homeserverUrl: String): Boolean
 }
-

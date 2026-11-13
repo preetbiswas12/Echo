@@ -22,4 +22,3 @@ internal fun BackupUploadState.isBackingUp(): Boolean {
         BackupUploadState.Error -> false
     }
 }
-

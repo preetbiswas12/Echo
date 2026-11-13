@@ -18,4 +18,3 @@ fun Modifier.clearFocusOnTap(focusManager: FocusManager): Modifier = pointerInpu
         focusManager.clearFocus()
     })
 }
-

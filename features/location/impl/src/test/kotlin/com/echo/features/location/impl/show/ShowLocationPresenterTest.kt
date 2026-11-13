@@ -11,7 +11,6 @@ package com.echo.features.location.impl.show
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.test.remoteconfig.aMapTilerConfig
 import com.echo.features.location.api.Location
 import com.echo.features.location.api.LocationService
@@ -37,6 +36,7 @@ import com.echo.libraries.matrix.test.room.location.aLiveLocationShare
 import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -552,4 +552,3 @@ class ShowLocationPresenterTest {
         }
     }
 }
-

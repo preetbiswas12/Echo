@@ -21,4 +21,3 @@ class MediaItemVideoPreviewParam : PreviewParameterProvider<MediaItem.Video> {
             ),
         )
 }
-

@@ -10,4 +10,3 @@ package com.echo.features.linknewdevice.impl.screens.root
 sealed interface LinkNewDeviceRootEvent {
     data object CloseDialog : LinkNewDeviceRootEvent
 }
-

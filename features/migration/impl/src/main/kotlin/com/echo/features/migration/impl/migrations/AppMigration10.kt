@@ -7,12 +7,12 @@
 
 package com.echo.features.migration.impl.migrations
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerScheduler
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 /**
  * Remove existing fetch notifications work manager requests since their format has changed.
@@ -37,4 +37,3 @@ class AppMigration10(
         }
     }
 }
-

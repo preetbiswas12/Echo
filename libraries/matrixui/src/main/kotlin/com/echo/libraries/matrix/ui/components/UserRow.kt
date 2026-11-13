@@ -98,4 +98,3 @@ internal fun UserRow(
         trailingContent?.invoke()
     }
 }
-

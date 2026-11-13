@@ -10,11 +10,11 @@ package com.echo.libraries.matrix.impl.permalink
 
 import android.net.Uri
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.appconfig.MatrixConfiguration
 import com.echo.libraries.core.extensions.replacePrefix
 import com.echo.libraries.matrix.api.permalink.MatrixToConverter
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 /**
  * Mapping of an input URI to a matrix.to compliant URI.
@@ -60,4 +60,3 @@ class DefaultMatrixToConverter : MatrixToConverter {
         )
     }
 }
-

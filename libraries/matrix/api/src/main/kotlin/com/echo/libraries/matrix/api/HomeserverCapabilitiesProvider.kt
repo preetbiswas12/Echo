@@ -30,4 +30,3 @@ interface HomeserverCapabilitiesProvider {
      */
     suspend fun canChangeAvatarUrl(): Result<Boolean>
 }
-

@@ -10,7 +10,6 @@
 
 package com.echo.libraries.troubleshoot.impl.history
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.EventId
@@ -26,6 +25,7 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -185,4 +185,3 @@ class PushHistoryPresenterTest {
         )
     }
 }
-

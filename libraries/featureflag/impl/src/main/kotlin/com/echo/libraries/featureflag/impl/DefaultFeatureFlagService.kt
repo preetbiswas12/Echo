@@ -8,13 +8,13 @@
 
 package com.echo.libraries.featureflag.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.featureflag.api.Feature
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeaturesProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 
@@ -54,4 +54,3 @@ class DefaultFeatureFlagService(
         }
     }
 }
-

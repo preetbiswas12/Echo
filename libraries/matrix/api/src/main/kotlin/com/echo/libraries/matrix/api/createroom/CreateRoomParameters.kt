@@ -28,4 +28,3 @@ data class CreateRoomParameters(
     val roomAliasName: Optional<String> = Optional.empty(),
     val isSpace: Boolean = false,
 )
-

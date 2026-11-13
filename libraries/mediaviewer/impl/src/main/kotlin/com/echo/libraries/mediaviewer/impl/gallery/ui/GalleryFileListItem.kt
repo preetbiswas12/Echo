@@ -150,4 +150,3 @@ internal fun GalleryFileListItemContent(
         }
     }
 }
-

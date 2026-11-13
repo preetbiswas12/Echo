@@ -8,13 +8,13 @@
 
 package com.echo.libraries.matrix.ui.messages
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.user.DisplayedStatus
 import com.echo.libraries.matrix.ui.model.toEmojiText
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableMap
@@ -62,4 +62,3 @@ class RoomMemberProfilesCache {
         return cache.value[userId]?.displayedStatus
     }
 }
-

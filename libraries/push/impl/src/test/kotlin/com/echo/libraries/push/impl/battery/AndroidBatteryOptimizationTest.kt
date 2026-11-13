@@ -12,11 +12,11 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.provider.Settings
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.services.toolbox.api.intent.ExternalIntentLauncher
 import com.echo.services.toolbox.test.intent.FakeExternalIntentLauncher
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class AndroidBatteryOptimizationTest : RobolectricTest() {
@@ -110,4 +110,3 @@ class AndroidBatteryOptimizationTest : RobolectricTest() {
         )
     }
 }
-

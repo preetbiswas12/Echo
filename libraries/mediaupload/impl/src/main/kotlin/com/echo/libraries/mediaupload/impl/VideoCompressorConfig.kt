@@ -53,4 +53,3 @@ internal data class VideoCompressorConfig(
     val newBitRate: Int,
     val newFrameRate: Int,
 )
-

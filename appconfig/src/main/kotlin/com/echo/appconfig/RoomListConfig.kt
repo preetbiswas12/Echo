@@ -14,4 +14,3 @@ object RoomListConfig {
 
     const val HAS_DROP_DOWN_MENU = SHOW_INVITE_MENU_ITEM || SHOW_REPORT_PROBLEM_MENU_ITEM
 }
-

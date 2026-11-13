@@ -16,4 +16,3 @@ internal class FakeFfiMediaSource(
     override fun url(): String = fakeUrl
     override fun toJson(): String = """{"url":"$fakeUrl"}"""
 }
-

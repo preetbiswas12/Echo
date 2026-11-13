@@ -8,10 +8,10 @@
 
 package com.echo.libraries.dateformatter.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultDateFormatter(
@@ -46,4 +46,3 @@ class DefaultDateFormatter(
         }
     }
 }
-

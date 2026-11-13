@@ -65,4 +65,3 @@ internal fun MessageStateEventContainerPreview() = ElementPreview {
         onLongClick = {},
     )
 }
-

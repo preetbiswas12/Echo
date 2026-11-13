@@ -47,4 +47,3 @@ internal fun HorizontalDividerPreview() = ElementThemedPreview {
         HorizontalDivider()
     }
 }
-

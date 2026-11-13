@@ -13,4 +13,3 @@ internal enum class FormattingOptionState {
     Selected,
     Disabled
 }
-

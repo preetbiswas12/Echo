@@ -19,4 +19,3 @@ sealed interface TimelineProtectionEvent {
         val validationState: ContentValidationState,
     ) : TimelineProtectionEvent
 }
-

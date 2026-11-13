@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.core)
     api(projects.libraries.mediapickers.api)
 }
-
-

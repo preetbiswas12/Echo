@@ -17,4 +17,3 @@ fun createDummyPostNotificationPermissionsState() = PermissionsState(
     permissionAlreadyDenied = false,
     eventSink = { }
 )
-

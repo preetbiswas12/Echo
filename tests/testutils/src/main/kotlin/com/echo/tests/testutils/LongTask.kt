@@ -38,4 +38,3 @@ suspend fun awaitWithLatch(timeout: Duration = 300.milliseconds, block: (Complet
         latch.complete(Unit)
     }
 }
-

@@ -50,4 +50,3 @@ fun aEditUserProfileState(
     canChangeAvatarUrl = canChangeAvatarUrl,
     eventSink = eventSink,
 )
-

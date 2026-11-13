@@ -21,4 +21,3 @@ class FakeMediaUploadHandler(
         result = Result.failure(CancellationException())
     }
 }
-

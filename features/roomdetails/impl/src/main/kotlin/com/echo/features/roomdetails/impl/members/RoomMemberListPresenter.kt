@@ -18,7 +18,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.roommembermoderation.api.RoomMemberModerationEvent.ShowActionsForUser
 import com.echo.features.roommembermoderation.api.RoomMemberModerationState
 import com.echo.libraries.architecture.AsyncData
@@ -37,6 +36,7 @@ import com.echo.libraries.matrix.api.room.roomMembers
 import com.echo.libraries.matrix.api.room.toMatrixUser
 import com.echo.libraries.matrix.ui.room.PowerLevelRoomMemberComparator
 import com.echo.libraries.matrix.ui.room.roomMemberIdentityStateChange
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.persistentMapOf
@@ -183,4 +183,3 @@ class RoomMemberListPresenter(
             }
         }
 }
-

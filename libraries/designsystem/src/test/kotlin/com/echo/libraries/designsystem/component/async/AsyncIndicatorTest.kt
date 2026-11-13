@@ -16,11 +16,11 @@ import androidx.compose.runtime.rememberCoroutineScope
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.components.async.AsyncIndicatorItem
 import com.echo.libraries.designsystem.components.async.AsyncIndicatorState
 import com.echo.libraries.designsystem.components.async.hasEntered
 import com.echo.libraries.designsystem.components.async.hasExited
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -270,4 +270,3 @@ class AsyncIndicatorTest {
         )
     }
 }
-

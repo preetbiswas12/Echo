@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.auth.qrlogin
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.QrLoginProgress
 
@@ -26,4 +26,3 @@ class QrLoginProgressExtensionsKtTest {
             .isEqualTo(QrCodeLoginStep.Finished)
     }
 }
-

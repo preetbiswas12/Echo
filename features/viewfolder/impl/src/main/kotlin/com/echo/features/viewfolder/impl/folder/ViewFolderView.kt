@@ -147,4 +147,3 @@ internal fun ViewFolderViewPreview(@PreviewParameter(ViewFolderStatePreviewParam
         onBackClick = {},
     )
 }
-

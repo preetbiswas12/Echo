@@ -83,4 +83,3 @@ internal fun aTypingRoomMember(
 ) = TypingRoomMember(
     disambiguatedDisplayName = disambiguatedDisplayName,
 )
-

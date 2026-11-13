@@ -298,4 +298,3 @@ internal fun LoginPasswordViewPreview(@PreviewParameter(LoginPasswordStatePrevie
         onBackClick = {},
     )
 }
-

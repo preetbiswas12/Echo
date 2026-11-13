@@ -25,4 +25,3 @@ sealed class QrCodeDecodeException(message: String) : Exception(message) {
 //        }
     }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaupload.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
@@ -16,6 +15,7 @@ import com.echo.libraries.mediaupload.api.MediaOptimizationConfig
 import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProvider
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 
 @ContributesBinding(SessionScope::class)
@@ -35,4 +35,3 @@ class DefaultMediaOptimizationConfigProvider(
         )
     }
 }
-

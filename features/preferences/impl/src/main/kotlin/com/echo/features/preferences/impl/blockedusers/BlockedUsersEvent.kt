@@ -16,4 +16,3 @@ sealed interface BlockedUsersEvent {
     data object ConfirmUnblock : BlockedUsersEvent
     data object Cancel : BlockedUsersEvent
 }
-

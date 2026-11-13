@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.room.location
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.location.AssetType
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class AssetTypeKtTest {
@@ -19,4 +19,3 @@ class AssetTypeKtTest {
         assertThat(AssetType.PIN.into()).isEqualTo(org.matrix.rustcomponents.sdk.AssetType.PIN)
     }
 }
-

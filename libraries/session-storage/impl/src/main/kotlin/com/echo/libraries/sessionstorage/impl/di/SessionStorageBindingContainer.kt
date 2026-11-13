@@ -9,13 +9,13 @@
 package com.echo.libraries.sessionstorage.impl.di
 
 import android.content.Context
+import com.echo.libraries.di.annotations.ApplicationContext
+import com.echo.libraries.sessionstorage.impl.SessionDatabase
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.di.annotations.ApplicationContext
-import com.echo.libraries.sessionstorage.impl.SessionDatabase
 import io.element.encrypteddb.SqlCipherDriverFactory
 import io.element.encrypteddb.passphrase.RandomDatabaseSecretProvider
 import io.element.encrypteddb.utils.ReplaceDatabaseKey
@@ -55,4 +55,3 @@ object SessionStorageBindingContainer {
         return SessionDatabase(driver)
     }
 }
-

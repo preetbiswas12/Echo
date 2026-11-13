@@ -12,7 +12,6 @@ import android.os.PowerManager
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.getSystemService
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.api.CallData
 import com.echo.features.call.impl.notifications.RingingCallNotificationCreator
 import com.echo.features.call.impl.notifications.aCallNotificationData
@@ -42,6 +41,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.plantTestTimber
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coVerify
 import io.mockk.mockk
 import io.mockk.verify
@@ -532,4 +532,3 @@ class DefaultActiveCallManagerTest : RobolectricTest() {
         systemClock = systemClock,
     )
 }
-

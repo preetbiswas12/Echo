@@ -34,4 +34,3 @@ fun RoomCallState.hasPermissionToJoin() = when (this) {
     is StandBy -> canStartCall
     is OnGoing -> canJoinCall
 }
-

@@ -9,9 +9,9 @@
 package com.echo.libraries.mediaviewer.impl.util
 
 import android.webkit.MimeTypeMap
+import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
 
 @ContributesBinding(AppScope::class)
 class FileExtensionExtractorWithValidation : FileExtensionExtractor {
@@ -25,4 +25,3 @@ class FileExtensionExtractorWithValidation : FileExtensionExtractor {
         }
     }
 }
-

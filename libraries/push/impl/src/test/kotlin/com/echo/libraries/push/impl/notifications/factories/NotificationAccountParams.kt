@@ -22,4 +22,3 @@ fun aNotificationAccountParams(
     color = color,
     showSessionId = showSessionId,
 )
-

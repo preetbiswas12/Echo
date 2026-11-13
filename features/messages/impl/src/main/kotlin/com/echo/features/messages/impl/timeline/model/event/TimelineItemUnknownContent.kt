@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.event
 object TimelineItemUnknownContent : TimelineItemEventContent {
     override val type: String = "TimelineItemUnknownContent"
 }
-

@@ -9,8 +9,6 @@
 package com.echo.features.roomdetails.impl
 
 import androidx.lifecycle.Lifecycle
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.leaveroom.api.LeaveRoomEvent
 import com.echo.features.leaveroom.api.LeaveRoomState
 import com.echo.features.roomcall.api.aStandByCallState
@@ -63,6 +61,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
 import com.echo.tests.testutils.testWithLifecycleOwner
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -773,4 +773,3 @@ class RoomDetailsPresenterTest {
         )
     }
 }
-

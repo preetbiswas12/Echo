@@ -8,7 +8,6 @@
 
 package com.echo.features.roomdirectory.impl.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.roomdirectory.RoomDirectoryList
 import com.echo.libraries.matrix.api.roomdirectory.RoomDirectoryService
 import com.echo.libraries.matrix.test.roomdirectory.FakeRoomDirectoryList
@@ -20,6 +19,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.test.TestScope
@@ -133,4 +133,3 @@ internal fun TestScope.createRoomDirectoryPresenter(
         roomDirectoryService = roomDirectoryService,
     )
 }
-

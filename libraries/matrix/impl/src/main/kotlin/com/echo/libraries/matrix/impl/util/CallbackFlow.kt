@@ -25,4 +25,3 @@ internal fun <T> mxCallbackFlow(block: suspend ProducerScope<T>.() -> TaskHandle
             taskHandle?.cancelAndDestroy()
         }
     }
-

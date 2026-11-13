@@ -22,4 +22,3 @@ data class SessionVerificationRequestDetails(
     val deviceDisplayName: String?,
     val firstSeenTimestamp: Long,
 ) : Parcelable
-

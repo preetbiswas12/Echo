@@ -33,4 +33,3 @@ class FakeFfiRoomListDynamicEntriesController : RoomListDynamicEntriesController
     // Same failure as the generated bindings when a destroyed object is used
     private fun checkNotDestroyed() = check(!isDestroyed) { "RoomListDynamicEntriesController object has already been destroyed" }
 }
-

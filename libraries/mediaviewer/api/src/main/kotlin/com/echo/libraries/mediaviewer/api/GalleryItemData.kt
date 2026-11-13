@@ -27,4 +27,3 @@ data class GalleryItemData(
         File,
     }
 }
-

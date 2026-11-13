@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.A_FAILURE_REASON
@@ -25,6 +24,7 @@ import com.echo.services.toolbox.api.systemclock.SystemClock
 import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -171,4 +171,3 @@ private fun createPushLoopbackTest(
     clock = clock,
     stringProvider = stringProvider
 )
-

@@ -14,4 +14,3 @@ class FakeLocalNetworkPermissionAdvisor(
 ) : LocalNetworkPermissionAdvisor {
     override suspend fun shouldRequestPermissionFor(homeserverUrl: String): Boolean = shouldPrompt
 }
-

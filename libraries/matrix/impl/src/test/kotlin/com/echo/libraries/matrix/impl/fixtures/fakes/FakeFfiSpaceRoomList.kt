@@ -62,4 +62,3 @@ class FakeFfiSpaceRoomList(
         spaceRoomListEntriesListener?.onUpdate(rooms)
     }
 }
-

@@ -9,11 +9,11 @@
 package com.echo.features.licenses.impl
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.licenses.impl.model.DependencyLicenseItem
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -42,4 +42,3 @@ class AssetLicensesProvider(
         }
     }
 }
-

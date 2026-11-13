@@ -27,4 +27,3 @@ sealed interface SteadyStateException {
      */
     data class Connection(val message: String) : SteadyStateException
 }
-

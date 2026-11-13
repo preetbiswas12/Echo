@@ -47,4 +47,3 @@ private fun aMediaPlayerControllerState(
     seekingToMillis = seekingToMillis,
     playbackSpeed = playbackSpeed,
 )
-

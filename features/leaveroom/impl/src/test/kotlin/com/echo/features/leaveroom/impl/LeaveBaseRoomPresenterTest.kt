@@ -11,7 +11,6 @@ package com.echo.features.leaveroom.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.leaveroom.api.LeaveRoomEvent
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
@@ -24,6 +23,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filterIsInstance
@@ -239,4 +239,3 @@ private fun TestScope.createLeaveRoomPresenter(
     dispatchers = testCoroutineDispatchers(false),
     notificationConversationService = FakeNotificationConversationService(),
 )
-

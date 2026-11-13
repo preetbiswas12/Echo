@@ -24,4 +24,3 @@ class NotificationClickHandler {
         _state.tryEmit(Unit)
     }
 }
-

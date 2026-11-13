@@ -10,8 +10,6 @@ package com.echo.features.ftue.impl.state
 
 import android.Manifest
 import android.os.Build
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.ftue.api.state.FtueService
 import com.echo.features.ftue.api.state.FtueState
 import com.echo.features.lockscreen.api.LockScreenService
@@ -24,6 +22,8 @@ import com.echo.libraries.permissions.api.PermissionStateProvider
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
@@ -154,4 +154,3 @@ sealed interface FtueStep {
     data object AnalyticsOptIn : FtueStep
     data object LockscreenSetup : FtueStep
 }
-

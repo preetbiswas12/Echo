@@ -41,4 +41,3 @@ interface NotificationBitmapLoader {
         imageLoader: ImageLoader,
     ): IconCompat?
 }
-

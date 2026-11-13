@@ -48,5 +48,3 @@ dependencies {
     testImplementation(projects.libraries.permissions.test)
     testImplementation(projects.services.analytics.test)
 }
-
-

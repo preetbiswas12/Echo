@@ -17,13 +17,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingState
 import com.echo.libraries.emoji.api.picker.EmojiPickerPresenter
 import com.echo.libraries.emoji.api.recentemojis.EmptyGetRecentEmojis
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -116,4 +116,3 @@ class UserStatusPresenter(
         }
     }
 }
-

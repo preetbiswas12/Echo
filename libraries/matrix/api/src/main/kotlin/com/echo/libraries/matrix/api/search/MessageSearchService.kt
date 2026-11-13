@@ -34,4 +34,3 @@ interface MessageSearchService {
      */
     fun createMessageSearch(scope: CoroutineScope, roomId: RoomId? = null): MessageSearch
 }
-

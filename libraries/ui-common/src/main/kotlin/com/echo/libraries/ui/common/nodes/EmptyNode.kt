@@ -28,4 +28,3 @@ fun emptyNode(
         modifier = modifier,
     )
 }
-

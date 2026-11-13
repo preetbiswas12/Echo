@@ -8,8 +8,6 @@
 
 package com.echo.libraries.matrix.impl.tracing
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.data.ByteUnit
 import com.echo.libraries.core.data.megaBytes
 import com.echo.libraries.core.meta.BuildMeta
@@ -17,6 +15,8 @@ import com.echo.libraries.matrix.api.tracing.LogLevel
 import com.echo.libraries.matrix.api.tracing.TracingConfiguration
 import com.echo.libraries.matrix.api.tracing.TracingService
 import com.echo.libraries.matrix.api.tracing.WriteToFilesConfiguration
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rustcomponents.sdk.SentryConfig
 import org.matrix.rustcomponents.sdk.TracingFileConfiguration
 import org.matrix.rustcomponents.sdk.reloadTracingFileWriter
@@ -74,4 +74,3 @@ fun TracingConfiguration.map(buildMeta: BuildMeta): org.matrix.rustcomponents.sd
         )
     }
 )
-

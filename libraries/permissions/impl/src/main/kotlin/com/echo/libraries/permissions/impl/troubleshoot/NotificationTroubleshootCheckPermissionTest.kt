@@ -10,7 +10,6 @@ package com.echo.libraries.permissions.impl.troubleshoot
 
 import android.Manifest
 import android.os.Build
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.permissions.api.PermissionStateProvider
 import com.echo.libraries.permissions.impl.R
@@ -21,6 +20,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestDele
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 
@@ -62,4 +62,3 @@ class NotificationTroubleshootCheckPermissionTest(
         permissionActions.openSettings(Manifest.permission.POST_NOTIFICATIONS)
     }
 }
-

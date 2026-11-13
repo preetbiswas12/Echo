@@ -63,4 +63,3 @@ enum class ThemeOption : DropdownOption {
         override fun getText(): String = stringResource(R.string.theme_black)
     }
 }
-

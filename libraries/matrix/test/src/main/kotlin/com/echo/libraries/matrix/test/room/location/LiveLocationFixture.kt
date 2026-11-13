@@ -36,4 +36,3 @@ fun aLiveLocationShare(
         endTimestamp = endTimestamp,
     )
 }
-

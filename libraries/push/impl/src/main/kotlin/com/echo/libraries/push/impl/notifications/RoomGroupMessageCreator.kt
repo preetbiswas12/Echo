@@ -11,8 +11,6 @@ package com.echo.libraries.push.impl.notifications
 import android.app.Notification
 import android.graphics.Bitmap
 import coil3.ImageLoader
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.designsystem.components.avatar.AvatarSize
 import com.echo.libraries.matrix.api.core.RoomId
@@ -24,6 +22,8 @@ import com.echo.libraries.push.impl.notifications.factories.NotificationCreator
 import com.echo.libraries.push.impl.notifications.factories.isSmartReplyError
 import com.echo.libraries.push.impl.notifications.model.NotifiableMessageEvent
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface RoomGroupMessageCreator {
     suspend fun createRoomMessage(
@@ -110,4 +110,3 @@ class DefaultRoomGroupMessageCreator(
         }
     }
 }
-

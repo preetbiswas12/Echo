@@ -25,4 +25,3 @@ class MutablePresenter<State>(initialState: State) : Presenter<State> {
         return stateFlow.collectAsState().value
     }
 }
-

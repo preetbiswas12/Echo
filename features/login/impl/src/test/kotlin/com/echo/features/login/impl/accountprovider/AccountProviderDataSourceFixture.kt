@@ -23,4 +23,3 @@ fun anAccountProviderDataSource(
     appPreferencesStore = appPreferencesStore,
     coroutineScope = coroutineScope,
 )
-

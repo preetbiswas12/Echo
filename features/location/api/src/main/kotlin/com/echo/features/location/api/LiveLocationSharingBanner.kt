@@ -98,4 +98,3 @@ internal fun LiveLocationSharingBannerPreview() = ElementPreview {
         onStopClick = {},
     )
 }
-

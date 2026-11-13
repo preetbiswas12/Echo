@@ -36,4 +36,3 @@ interface SessionEnterpriseService {
      */
     suspend fun arePublicRoomsDisabledByHomeserver(): Boolean
 }
-

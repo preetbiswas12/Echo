@@ -27,4 +27,3 @@ class FakeNetworkMonitor(
         isInAirGappedEnvironment.value = isInAirGapped
     }
 }
-

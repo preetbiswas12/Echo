@@ -26,4 +26,3 @@ interface StartChatEntryPoint : FeatureEntryPoint {
         fun navigateToRoomDirectory()
     }
 }
-

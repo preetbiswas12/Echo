@@ -59,4 +59,3 @@ data class RoomDescription(
         size = size,
     )
 }
-

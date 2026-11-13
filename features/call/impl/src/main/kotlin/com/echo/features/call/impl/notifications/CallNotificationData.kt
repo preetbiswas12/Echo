@@ -31,4 +31,3 @@ data class CallNotificationData(
     val expirationTimestamp: Long,
     val audioOnly: Boolean,
 ) : Parcelable
-

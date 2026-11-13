@@ -10,12 +10,12 @@ package com.echo.appnav.root
 
 import com.bumble.appyx.core.state.MutableSavedStateMap
 import com.bumble.appyx.core.state.SavedStateMap
-import dev.zacsweers.metro.Inject
 import com.echo.appnav.session.MatrixSessionCache
 import com.echo.features.preferences.api.CacheService
 import com.echo.libraries.matrixmedia.api.ImageLoaderHolder
 import com.echo.libraries.preferences.api.store.SessionPreferencesStoreFactory
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
@@ -87,4 +87,3 @@ class RootNavStateFlowFactory(
         return this?.get(SAVE_INSTANCE_KEY) as? Int ?: 0
     }
 }
-

@@ -10,9 +10,6 @@
 
 package com.echo.libraries.permissions.impl
 
-import com.google.accompanist.permissions.ExperimentalPermissionsApi
-import com.google.accompanist.permissions.PermissionStatus
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsStore
 import com.echo.libraries.permissions.impl.action.FakePermissionActions
@@ -22,6 +19,9 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.accompanist.permissions.ExperimentalPermissionsApi
+import com.google.accompanist.permissions.PermissionStatus
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -236,4 +236,3 @@ private fun aFakePermissionState(
     permission = permission,
     initialStatus = initialStatus,
 )
-

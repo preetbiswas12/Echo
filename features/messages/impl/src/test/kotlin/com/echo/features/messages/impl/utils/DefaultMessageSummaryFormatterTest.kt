@@ -8,7 +8,6 @@
 package com.echo.features.messages.impl.utils
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.Location
 import com.echo.features.messages.impl.timeline.model.event.RtcNotificationState
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemLocationContent
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.timeline.aProfileDetails
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
@@ -102,4 +102,3 @@ private fun aLocationContent(isLive: Boolean) = TimelineItemLocationContent(
         )
     }
 )
-

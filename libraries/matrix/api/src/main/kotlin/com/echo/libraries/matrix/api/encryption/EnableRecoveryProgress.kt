@@ -16,4 +16,3 @@ sealed interface EnableRecoveryProgress {
     data object RoomKeyUploadError : EnableRecoveryProgress
     data class Done(val recoveryKey: String) : EnableRecoveryProgress
 }
-

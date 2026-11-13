@@ -19,8 +19,6 @@ import android.os.CancellationSignal
 import android.provider.MediaStore
 import android.util.Size
 import androidx.core.net.toUri
-import com.vanniktech.blurhash.BlurHash
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.bitmap.resizeToMax
 import com.echo.libraries.androidutils.file.createTmpFile
 import com.echo.libraries.androidutils.media.runAndRelease
@@ -28,6 +26,8 @@ import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.media.ThumbnailInfo
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import com.vanniktech.blurhash.BlurHash
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.suspendCancellableCoroutine
 import timber.log.Timber
 import java.io.File
@@ -142,4 +142,3 @@ data class ThumbnailResult(
     val info: ThumbnailInfo,
     val blurhash: String,
 )
-

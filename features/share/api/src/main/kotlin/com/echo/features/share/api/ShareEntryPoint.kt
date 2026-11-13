@@ -53,4 +53,3 @@ interface ShareEntryPoint : FeatureEntryPoint {
         fun onSessionVerificationRequired(sessionId: SessionId)
     }
 }
-

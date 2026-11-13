@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.platform
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.platform.InitPlatformService
 import com.echo.libraries.matrix.api.tracing.TracingConfiguration
 import com.echo.libraries.matrix.impl.tracing.map
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rustcomponents.sdk.initPlatform
 
 @ContributesBinding(AppScope::class)
@@ -27,4 +27,3 @@ class RustInitPlatformService(
         )
     }
 }
-

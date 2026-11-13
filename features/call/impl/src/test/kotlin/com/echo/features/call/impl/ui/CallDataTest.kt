@@ -8,10 +8,10 @@
 
 package com.echo.features.call.impl.ui
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.api.CallData
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class CallDataTest {
@@ -21,4 +21,3 @@ class CallDataTest {
             .isEqualTo("CallData(sessionId=$A_SESSION_ID, roomId=$A_ROOM_ID, isAudioCall=false)")
     }
 }
-

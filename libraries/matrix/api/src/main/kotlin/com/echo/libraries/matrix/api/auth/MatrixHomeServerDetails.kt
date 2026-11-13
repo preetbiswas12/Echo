@@ -15,4 +15,3 @@ data class MatrixHomeServerDetails(
 ) {
     val isSupported = supportsPasswordLogin || supportsOAuthLogin
 }
-

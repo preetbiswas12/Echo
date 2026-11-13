@@ -67,4 +67,3 @@ fun aWalter() = aRoomMember(
     "Walter",
     membership = RoomMembershipState.INVITE
 )
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.pinned.banner
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.pinned.DefaultPinnedEventsTimelineProvider
 import com.echo.libraries.eventformatter.test.FakePinnedMessagesBannerFormatter
 import com.echo.libraries.matrix.api.room.JoinedRoom
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -243,4 +243,3 @@ internal fun TestScope.createPinnedEventsTimelineProvider(
     syncService = syncService,
     dispatchers = testCoroutineDispatchers(),
 )
-

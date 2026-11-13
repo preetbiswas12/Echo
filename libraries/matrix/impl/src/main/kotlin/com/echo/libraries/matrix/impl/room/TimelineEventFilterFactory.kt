@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.room
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.room.StateEventType
 import com.echo.libraries.matrix.api.room.join.JoinRule
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import uniffi.matrix_sdk_ui.MembershipChangeFilter
 import uniffi.matrix_sdk_ui.TimelineEventCondition
 import uniffi.matrix_sdk_ui.TimelineEventFilter
@@ -56,4 +56,3 @@ class RustTimelineEventFilterFactory : TimelineEventFilterFactory {
         }
     }
 }
-

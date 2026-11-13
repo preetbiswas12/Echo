@@ -9,12 +9,12 @@
 package com.echo.libraries.featureflag.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.featureflag.api.Feature
 import com.echo.libraries.featureflag.api.FeaturesProvider
 import com.echo.libraries.featureflag.test.FakeFeature
 import com.echo.libraries.matrix.test.core.aBuildMeta
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -169,4 +169,3 @@ private fun createDefaultFeatureFlagService(
     buildMeta = buildMeta,
     featuresProviders = setOf(FeaturesProvider { features })
 )
-

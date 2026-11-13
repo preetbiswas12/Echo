@@ -10,11 +10,11 @@ package com.echo.libraries.sessionstorage.impl
 
 import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.session.SessionData
 import com.echo.libraries.sessionstorage.api.LoggedInState
 import com.echo.libraries.sessionstorage.api.LoginType
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.runTest
@@ -330,4 +330,3 @@ class DatabaseSessionStoreTest {
         assertThat(notAlteredSession).isEqualTo(firstSessionData)
     }
 }
-

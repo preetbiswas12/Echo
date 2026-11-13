@@ -11,7 +11,6 @@
 
 package com.echo.features.verifysession.impl.outgoing
 
-import com.freeletics.flowredux.dsl.FlowReduxStateMachine
 import com.echo.features.verifysession.impl.util.andLogStateChange
 import com.echo.features.verifysession.impl.util.logReceivedEvents
 import com.echo.libraries.core.bool.orFalse
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.api.encryption.RecoveryState
 import com.echo.libraries.matrix.api.verification.SessionVerificationData
 import com.echo.libraries.matrix.api.verification.SessionVerificationService
 import com.echo.libraries.matrix.api.verification.VerificationRequest
+import com.freeletics.flowredux.dsl.FlowReduxStateMachine
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.TimeoutCancellationException
@@ -215,4 +215,3 @@ class OutgoingVerificationStateMachine(
         data object Reset : Event
     }
 }
-

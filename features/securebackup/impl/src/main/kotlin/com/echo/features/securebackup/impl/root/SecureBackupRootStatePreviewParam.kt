@@ -68,4 +68,3 @@ fun aSecureBackupRootState(
     snackbarMessage = snackbarMessage,
     eventSink = {},
 )
-

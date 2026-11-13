@@ -12,10 +12,10 @@ import androidx.compose.runtime.mutableStateOf
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.designsystem.components.async.AsyncActionIndicatorEffect
 import com.echo.libraries.designsystem.components.async.AsyncIndicatorState
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.test.advanceTimeBy
@@ -121,4 +121,3 @@ class AsyncActionIndicatorTest {
         state.currentAnimationState.targetState
     }
 }
-

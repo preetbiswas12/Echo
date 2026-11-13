@@ -8,13 +8,13 @@
 
 package com.echo.features.roomaliasresolver.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.features.roomaliasresolver.impl.RoomAliasResolverPresenter
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomAlias
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 
 @BindingContainer
 @ContributesTo(SessionScope::class)
@@ -33,4 +33,3 @@ object RoomAliasResolverBindingContainer {
         }
     }
 }
-

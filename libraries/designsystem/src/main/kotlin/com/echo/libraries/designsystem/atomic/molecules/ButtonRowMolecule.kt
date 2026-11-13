@@ -43,4 +43,3 @@ internal fun ButtonRowMoleculePreview() = ElementPreview {
         TextButton(text = "Button 2", onClick = {})
     }
 }
-

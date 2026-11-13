@@ -29,4 +29,3 @@ class EndpointRegistrationHandler {
         _state.emit(result)
     }
 }
-

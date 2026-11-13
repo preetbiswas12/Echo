@@ -8,13 +8,13 @@
 
 package com.echo.features.leaveroom.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.leaveroom.api.LeaveRoomState
 import com.echo.features.leaveroom.impl.LeaveRoomPresenter
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(SessionScope::class)
 @BindingContainer
@@ -22,4 +22,3 @@ interface LeaveRoomBindingContainer {
     @Binds
     fun bindLeaveRoomPresenter(presenter: LeaveRoomPresenter): Presenter<LeaveRoomState>
 }
-

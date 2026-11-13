@@ -65,4 +65,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setProtectedView(
         )
     }
 }
-

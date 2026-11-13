@@ -8,8 +8,6 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.flatMap
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -18,6 +16,8 @@ import com.echo.libraries.pushproviders.api.PusherSubscriber
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.api.toUserList
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 private val loggerTag = LoggerTag("FirebaseNewInstallationIdHandler", LoggerTag.PushLoggerTag)
@@ -68,4 +68,3 @@ class DefaultFirebaseNewInstallationIdHandler(
             }
     }
 }
-

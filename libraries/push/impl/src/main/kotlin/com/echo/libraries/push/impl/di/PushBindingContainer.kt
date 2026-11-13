@@ -10,15 +10,15 @@ package com.echo.libraries.push.impl.di
 
 import android.content.Context
 import androidx.core.app.NotificationManagerCompat
+import com.echo.libraries.architecture.Presenter
+import com.echo.libraries.di.annotations.ApplicationContext
+import com.echo.libraries.push.api.battery.BatteryOptimizationState
+import com.echo.libraries.push.impl.battery.BatteryOptimizationPresenter
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.Binds
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.architecture.Presenter
-import com.echo.libraries.di.annotations.ApplicationContext
-import com.echo.libraries.push.api.battery.BatteryOptimizationState
-import com.echo.libraries.push.impl.battery.BatteryOptimizationPresenter
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -33,4 +33,3 @@ interface PushBindingContainer {
     @Binds
     fun bindBatteryOptimizationPresenter(presenter: BatteryOptimizationPresenter): Presenter<BatteryOptimizationState>
 }
-

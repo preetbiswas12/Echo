@@ -11,4 +11,3 @@ package com.echo.libraries.matrix.test
 import com.echo.libraries.matrix.api.SdkMetadata
 
 class FakeSdkMetadata(override val sdkGitSha: String) : SdkMetadata
-

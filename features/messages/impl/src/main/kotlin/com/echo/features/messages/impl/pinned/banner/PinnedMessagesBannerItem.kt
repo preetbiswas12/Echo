@@ -15,4 +15,3 @@ data class PinnedMessagesBannerItem(
     val eventId: EventId,
     val formatted: AnnotatedString,
 )
-

@@ -14,11 +14,11 @@ import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.os.Build
 import androidx.core.content.getSystemService
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.audio.api.AudioFocus
 import com.echo.libraries.audio.api.AudioFocusRequester
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -131,4 +131,3 @@ private fun AudioFocusRequester.willPausedWhenDucked(): Boolean {
         AudioFocusRequester.MediaViewer -> false
     }
 }
-

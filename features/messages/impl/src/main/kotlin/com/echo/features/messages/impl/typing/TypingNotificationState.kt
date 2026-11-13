@@ -21,4 +21,3 @@ data class TypingNotificationState(
     /** Whether to reserve space for the typing notifications at the bottom of the timeline. */
     val reserveSpace: Boolean,
 )
-

@@ -317,4 +317,3 @@ private class PreviewEditText(context: Context) : EditText(context) {
         return super.dispatchTouchEvent(event)
     }
 }
-

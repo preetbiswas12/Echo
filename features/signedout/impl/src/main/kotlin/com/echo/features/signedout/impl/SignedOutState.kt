@@ -14,4 +14,3 @@ data class SignedOutState(
     val signedOutMatrixUser: MatrixUser,
     val eventSink: (SignedOutEvent) -> Unit,
 )
-

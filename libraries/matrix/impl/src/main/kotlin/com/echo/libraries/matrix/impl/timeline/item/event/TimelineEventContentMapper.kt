@@ -288,4 +288,3 @@ private fun BeaconInfo.map(): LiveLocationInfo {
         timestamp = ts.toLong(),
     )
 }
-

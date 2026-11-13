@@ -41,4 +41,3 @@ internal fun TimelineItemRedactedViewPreview() = ElementPreview {
         onContentLayoutChange = {},
     )
 }
-

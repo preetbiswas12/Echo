@@ -20,8 +20,6 @@ import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appconfig.LearnMoreConfig
 import com.echo.features.ftue.impl.sessionverification.choosemode.ChooseSelfVerificationModeNode
@@ -34,6 +32,8 @@ import com.echo.libraries.architecture.createNode
 import com.echo.libraries.designsystem.utils.OpenUrlInTabView
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.verification.VerificationRequest
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
 
@@ -159,4 +159,3 @@ class FtueSessionVerificationFlowNode(
         OpenUrlInTabView(learnMoreUrl)
     }
 }
-

@@ -10,9 +10,9 @@ package com.echo.features.login.impl.screens.onboarding
 
 import android.annotation.SuppressLint
 import android.content.Context
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 
 fun interface OnBoardingLogoResIdProvider {
     fun get(): Int?
@@ -30,4 +30,3 @@ class DefaultOnBoardingLogoResIdProvider(
         return resId
     }
 }
-

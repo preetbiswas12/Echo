@@ -8,14 +8,14 @@
 
 package com.echo.libraries.deeplink.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.text.urlEncoded
 import com.echo.libraries.deeplink.api.DeepLinkCreator
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.ThreadId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultDeepLinkCreator : DeepLinkCreator {
@@ -39,4 +39,3 @@ class DefaultDeepLinkCreator : DeepLinkCreator {
             .removeSuffix("/")
     }
 }
-

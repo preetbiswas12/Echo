@@ -260,4 +260,3 @@ internal fun PollHistoryViewPreview(
         goBack = {},
     )
 }
-

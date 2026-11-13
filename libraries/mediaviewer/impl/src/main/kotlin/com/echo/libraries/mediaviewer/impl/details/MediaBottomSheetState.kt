@@ -29,4 +29,3 @@ sealed interface MediaBottomSheetState {
         val thumbnailSource: MediaSource?,
     ) : MediaBottomSheetState
 }
-

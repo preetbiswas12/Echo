@@ -10,10 +10,10 @@ package com.echo.libraries.troubleshoot.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.troubleshoot.api.NotificationTroubleShootEntryPoint
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultNotificationTroubleShootEntryPoint : NotificationTroubleShootEntryPoint {
@@ -25,4 +25,3 @@ class DefaultNotificationTroubleShootEntryPoint : NotificationTroubleShootEntryP
         return parentNode.createNode<TroubleshootNotificationsNode>(buildContext, listOf(callback))
     }
 }
-

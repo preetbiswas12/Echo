@@ -93,4 +93,3 @@ internal fun AccountProviderViewPreview(@PreviewParameter(AccountProviderPreview
         onClick = { }
     )
 }
-

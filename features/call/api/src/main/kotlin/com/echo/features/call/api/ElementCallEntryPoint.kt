@@ -47,4 +47,3 @@ interface ElementCallEntryPoint {
         textContent: String?,
     )
 }
-

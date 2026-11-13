@@ -15,4 +15,3 @@ data class AudioDetails(
     val duration: Duration,
     val waveform: ImmutableList<Float>,
 )
-

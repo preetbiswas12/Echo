@@ -17,4 +17,3 @@ data class InvitableUser(
     val isAlreadyInvited: Boolean,
     val isUnresolved: Boolean,
 )
-

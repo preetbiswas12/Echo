@@ -36,4 +36,3 @@ internal fun aCallScreenState(
         eventSink = eventSink,
     )
 }
-

@@ -27,4 +27,3 @@ fun withReleaseBehavior(lambda: () -> Unit) {
     lambda()
     isInDebug = BuildConfig.DEBUG
 }
-

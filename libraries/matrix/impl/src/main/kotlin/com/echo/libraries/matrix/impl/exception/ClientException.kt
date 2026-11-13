@@ -33,4 +33,3 @@ fun Throwable.mapClientException(): ClientException {
         else -> ClientException.Other(message ?: "Unknown error", this)
     }
 }
-

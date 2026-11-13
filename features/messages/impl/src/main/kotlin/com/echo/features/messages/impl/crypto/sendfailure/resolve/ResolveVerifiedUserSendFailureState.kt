@@ -17,4 +17,3 @@ data class ResolveVerifiedUserSendFailureState(
     val retryAction: AsyncAction<Unit>,
     val eventSink: (ResolveVerifiedUserSendFailureEvent) -> Unit
 )
-

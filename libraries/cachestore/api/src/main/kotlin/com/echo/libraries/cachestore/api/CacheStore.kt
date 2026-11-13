@@ -37,4 +37,3 @@ interface CacheStore {
     /** Empties the whole cache. */
     suspend fun deleteAll()
 }
-

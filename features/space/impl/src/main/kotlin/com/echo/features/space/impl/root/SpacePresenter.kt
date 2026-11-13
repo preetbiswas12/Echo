@@ -19,8 +19,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.JoinedRoom.Trigger
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
@@ -41,6 +39,8 @@ import com.echo.libraries.matrix.api.spaces.SpaceRoom
 import com.echo.libraries.matrix.api.spaces.SpaceRoomList
 import com.echo.libraries.matrix.api.spaces.SpaceService
 import com.echo.libraries.matrix.ui.safety.rememberHideInvitesAvatar
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.JoinedRoom.Trigger
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
@@ -261,4 +261,3 @@ class SpacePresenter(
 private fun SpaceRoom.cannotBeRejoined(): Boolean {
     return state == CurrentUserMembership.LEFT && joinRule == JoinRule.Invite
 }
-

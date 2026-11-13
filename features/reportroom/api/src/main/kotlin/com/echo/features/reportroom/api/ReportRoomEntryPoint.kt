@@ -20,4 +20,3 @@ fun interface ReportRoomEntryPoint : FeatureEntryPoint {
         roomId: RoomId,
     ): Node
 }
-

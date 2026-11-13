@@ -8,7 +8,6 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -27,6 +26,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -153,4 +153,3 @@ class DefaultFirebaseNewInstallationIdHandlerTest {
         )
     }
 }
-

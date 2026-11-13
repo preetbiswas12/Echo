@@ -25,4 +25,3 @@ sealed interface Attachment : Parcelable {
         val sendAsFile: Boolean = false,
     ) : Attachment
 }
-

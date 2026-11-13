@@ -83,4 +83,3 @@ private fun String.escapeToken(): String = buildString(length + ESCAPE_HEADROOM)
         append(char)
     }
 }
-

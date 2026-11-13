@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.roomdirectory
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.roomdirectory.RoomDescription
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomDescription
 import com.echo.libraries.matrix.test.A_ROOM_ALIAS
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.roomdirectory.aRoomDescription
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.PublicRoomJoinRule
 
@@ -46,4 +46,3 @@ class RoomDescriptionMapperTest {
         assertThat(null.map()).isEqualTo(RoomDescription.JoinRule.UNKNOWN)
     }
 }
-

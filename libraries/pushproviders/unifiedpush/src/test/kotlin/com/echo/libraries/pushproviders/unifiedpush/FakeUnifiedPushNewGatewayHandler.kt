@@ -17,4 +17,3 @@ class FakeUnifiedPushNewGatewayHandler(
         return handleResult(endpoint, pushGateway, clientSecret)
     }
 }
-

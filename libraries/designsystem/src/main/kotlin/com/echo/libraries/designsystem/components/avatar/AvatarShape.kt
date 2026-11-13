@@ -31,4 +31,3 @@ fun AvatarType.avatarShape(avatarSize: Dp): Shape {
         is AvatarType.User -> avatarShape()
     }
 }
-

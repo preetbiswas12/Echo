@@ -22,4 +22,3 @@ fun interface EmojiPickerPresenter : Presenter<EmojiPickerState> {
         fun create(getRecentEmojis: GetRecentEmojis): EmojiPickerPresenter
     }
 }
-

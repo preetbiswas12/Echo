@@ -19,4 +19,3 @@ data class LockScreenConfig(
     val isStrongBiometricsEnabled: Boolean,
     val isWeakBiometricsEnabled: Boolean,
 )
-

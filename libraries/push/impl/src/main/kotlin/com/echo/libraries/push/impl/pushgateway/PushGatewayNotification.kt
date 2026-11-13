@@ -23,4 +23,3 @@ data class PushGatewayNotification(
     @SerialName("devices")
     val devices: List<PushGatewayDevice>,
 )
-

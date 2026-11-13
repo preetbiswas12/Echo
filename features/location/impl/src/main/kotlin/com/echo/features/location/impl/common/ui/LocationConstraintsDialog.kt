@@ -59,4 +59,3 @@ sealed interface LocationConstraintsDialogState {
     data object LocationServiceDisabled : LocationConstraintsDialogState
     data object NotEnoughPowerLevel : LocationConstraintsDialogState
 }
-

@@ -36,4 +36,3 @@ internal class UserDefinedRoomNotificationSettingsStatePreviewParam : PreviewPar
             ),
         )
 }
-

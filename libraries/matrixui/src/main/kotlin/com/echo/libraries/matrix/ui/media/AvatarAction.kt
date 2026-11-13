@@ -36,4 +36,3 @@ sealed class AvatarAction(
         destructive = true
     )
 }
-

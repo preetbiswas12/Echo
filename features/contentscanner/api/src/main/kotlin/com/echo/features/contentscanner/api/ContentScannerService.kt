@@ -26,4 +26,3 @@ fun interface ContentScannerService {
      */
     fun scan(mediaSources: List<MediaSource>, contentValidationState: ContentValidationState)
 }
-

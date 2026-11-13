@@ -11,7 +11,6 @@ package com.echo.libraries.push.impl.notifications
 import android.content.Context
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import com.google.common.truth.Truth.assertThat
 import com.echo.appconfig.NotificationConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
@@ -32,6 +31,7 @@ import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
 import com.echo.services.toolbox.impl.strings.AndroidStringProvider
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
@@ -294,4 +294,3 @@ fun createRoomGroupMessageCreator(
         roomSharedWithOtherAccountChecker = roomSharedWithOtherAccountChecker,
     )
 }
-

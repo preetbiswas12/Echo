@@ -41,4 +41,3 @@ fun roomNotificationSettingsItems(): ImmutableList<RoomNotificationSettingsItem>
         }
         .toImmutableList()
 }
-

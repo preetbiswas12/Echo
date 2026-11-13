@@ -28,4 +28,3 @@ sealed interface OAuthPrompt {
      */
     data class Unknown(val value: String) : OAuthPrompt
 }
-

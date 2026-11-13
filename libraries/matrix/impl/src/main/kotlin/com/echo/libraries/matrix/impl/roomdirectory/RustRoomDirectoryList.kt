@@ -84,4 +84,3 @@ class RustRoomDirectoryList(
         }
             .flowOn(coroutineContext)
 }
-

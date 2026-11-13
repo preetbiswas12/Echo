@@ -26,4 +26,3 @@ interface DeclineInviteAndBlockEntryPoint : FeatureEntryPoint {
         fun onDeclineSuccess()
     }
 }
-

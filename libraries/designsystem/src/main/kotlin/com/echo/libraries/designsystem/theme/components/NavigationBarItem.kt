@@ -53,4 +53,3 @@ object ElementNavigationBarItemDefaults {
         selectedIndicatorColor = Color.Transparent,
     )
 }
-

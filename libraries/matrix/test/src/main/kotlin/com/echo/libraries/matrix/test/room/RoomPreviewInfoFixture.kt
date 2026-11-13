@@ -54,4 +54,3 @@ fun aRoomPreviewInfo(
     isHistoryWorldReadable = isHistoryWorldReadable,
     membership = currentUserMembership,
 )
-

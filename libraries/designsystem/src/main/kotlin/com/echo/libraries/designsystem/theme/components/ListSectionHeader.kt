@@ -122,4 +122,3 @@ internal fun ListSectionHeaderWithDescriptionAndDividerPreview() {
         )
     }
 }
-

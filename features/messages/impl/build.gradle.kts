@@ -108,5 +108,3 @@ dependencies {
     testImplementation(projects.libraries.slashcommands.test)
     testImplementation(projects.libraries.htmlrenderer.test)
 }
-
-

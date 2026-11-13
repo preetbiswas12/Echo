@@ -9,7 +9,6 @@
 package com.echo.libraries.matrix.impl.room.member
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomMembersState
 import com.echo.libraries.matrix.api.room.roomMembers
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomMember
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.A_USER_ID_4
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -187,4 +187,3 @@ class RoomMemberListFetcherTest {
         }
     }
 }
-

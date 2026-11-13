@@ -10,10 +10,10 @@ package com.echo.features.preferences.impl.location
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -43,4 +43,3 @@ class LocationSettingsPresenter(
         )
     }
 }
-

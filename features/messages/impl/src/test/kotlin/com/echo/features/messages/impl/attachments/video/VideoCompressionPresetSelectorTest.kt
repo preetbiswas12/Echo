@@ -7,9 +7,9 @@
 
 package com.echo.features.messages.impl.attachments.video
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
 
@@ -90,4 +90,3 @@ class VideoCompressionPresetSelectorTest {
         assertThat(result).isInstanceOf(AsyncData.Loading::class.java)
     }
 }
-

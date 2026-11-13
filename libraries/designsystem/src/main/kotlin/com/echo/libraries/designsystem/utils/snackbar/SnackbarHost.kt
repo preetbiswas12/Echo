@@ -37,4 +37,3 @@ fun SnackbarHost(hostState: SnackbarHostState, modifier: Modifier = Modifier) {
         )
     }
 }
-

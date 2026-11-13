@@ -21,4 +21,3 @@ interface RoomDirectoryService {
      */
     fun createRoomDirectoryList(scope: CoroutineScope): RoomDirectoryList
 }
-

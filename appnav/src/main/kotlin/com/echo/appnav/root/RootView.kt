@@ -68,4 +68,3 @@ internal fun RootViewPreview(@PreviewParameter(RootStatePreviewParam::class) roo
         Text("Children")
     }
 }
-

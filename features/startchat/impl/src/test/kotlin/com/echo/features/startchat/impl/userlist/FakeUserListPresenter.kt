@@ -22,4 +22,3 @@ class FakeUserListPresenter : UserListPresenter {
         return state
     }
 }
-

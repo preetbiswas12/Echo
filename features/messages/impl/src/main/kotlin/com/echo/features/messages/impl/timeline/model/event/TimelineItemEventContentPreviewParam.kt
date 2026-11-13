@@ -150,4 +150,3 @@ fun anAttachmentItem(
     formattedFileSize = formattedFileSize,
     fileExtension = fileExtension,
 )
-

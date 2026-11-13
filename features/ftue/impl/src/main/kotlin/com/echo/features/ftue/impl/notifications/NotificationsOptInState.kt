@@ -14,4 +14,3 @@ data class NotificationsOptInState(
     val notificationsPermissionState: PermissionsState,
     val eventSink: (NotificationsOptInEvent) -> Unit
 )
-

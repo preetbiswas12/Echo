@@ -76,4 +76,3 @@ internal fun CaptionWarningBottomSheetPreview() = ElementPreview(fillMaxSize = t
         onDismiss = {},
     )
 }
-

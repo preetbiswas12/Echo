@@ -9,7 +9,6 @@
 package com.echo.features.home.impl
 
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.api.HomeEntryPoint
 import com.echo.features.invite.test.declineandblock.FakeDeclineInviteAndBlockEntryPoint
 import com.echo.libraries.matrix.api.core.EventId
@@ -21,6 +20,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -65,4 +65,3 @@ class DefaultHomeEntryPointTest : RobolectricTest() {
         assertThat(result.plugins).contains(callback)
     }
 }
-

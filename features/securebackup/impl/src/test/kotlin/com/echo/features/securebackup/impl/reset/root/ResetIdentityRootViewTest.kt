@@ -94,4 +94,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setResetRootView(
         ResetIdentityRootView(state = state, onContinue = onContinue, onBack = onBack)
     }
 }
-

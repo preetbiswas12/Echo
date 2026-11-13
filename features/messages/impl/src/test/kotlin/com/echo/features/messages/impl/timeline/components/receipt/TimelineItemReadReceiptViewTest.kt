@@ -60,4 +60,3 @@ class TimelineItemReadReceiptViewTest : RobolectricTest() {
         ),
     )
 }
-

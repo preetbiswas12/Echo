@@ -389,4 +389,3 @@ fun aMediaViewerState(
     currentUserId = currentUserId,
     eventSink = eventSink,
 )
-

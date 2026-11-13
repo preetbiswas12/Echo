@@ -11,4 +11,3 @@ package com.echo.features.forward.impl
 sealed interface ForwardMessagesEvent {
     data object ClearError : ForwardMessagesEvent
 }
-

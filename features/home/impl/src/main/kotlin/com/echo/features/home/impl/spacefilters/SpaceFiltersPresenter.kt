@@ -15,10 +15,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.spaces.SpaceServiceFilter
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.map
@@ -104,4 +104,3 @@ private sealed interface SelectionMode {
     data object Selecting : SelectionMode
     data class Selected(val filter: SpaceServiceFilter) : SelectionMode
 }
-

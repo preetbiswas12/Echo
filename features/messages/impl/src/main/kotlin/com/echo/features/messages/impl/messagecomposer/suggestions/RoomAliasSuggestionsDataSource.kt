@@ -8,11 +8,11 @@
 
 package com.echo.features.messages.impl.messagecomposer.suggestions
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.roomlist.RoomListService
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -50,4 +50,3 @@ class DefaultRoomAliasSuggestionsDataSource(
             }
     }
 }
-

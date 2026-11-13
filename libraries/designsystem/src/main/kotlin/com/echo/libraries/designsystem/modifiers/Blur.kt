@@ -90,4 +90,3 @@ fun Modifier.blurCompat(
         else -> this // Added in case we find a way to make this work on older devices
     }
 }
-

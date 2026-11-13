@@ -20,4 +20,3 @@ open class ImageVectorPreviewParam : PreviewParameterProvider<ImageVector?> {
             null,
         )
 }
-

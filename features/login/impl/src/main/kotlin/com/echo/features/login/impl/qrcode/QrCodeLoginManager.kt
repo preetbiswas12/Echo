@@ -31,4 +31,3 @@ interface QrCodeLoginManager {
 
     fun reset()
 }
-

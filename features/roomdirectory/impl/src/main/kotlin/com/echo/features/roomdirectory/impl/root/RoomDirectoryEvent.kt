@@ -12,4 +12,3 @@ sealed interface RoomDirectoryEvent {
     data class Search(val query: String) : RoomDirectoryEvent
     data object LoadMore : RoomDirectoryEvent
 }
-

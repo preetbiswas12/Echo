@@ -10,7 +10,6 @@ package com.echo.features.location.impl.show
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.Location
 import com.echo.features.location.api.ShowLocationEntryPoint
 import com.echo.features.location.api.ShowLocationMode
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -77,4 +77,3 @@ class DefaultShowLocationEntryPointTest {
         assertThat(result.plugins).contains(inputs)
     }
 }
-

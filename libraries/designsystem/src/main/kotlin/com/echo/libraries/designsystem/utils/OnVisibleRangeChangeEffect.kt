@@ -33,4 +33,3 @@ fun OnVisibleRangeChangeEffect(lazyListState: LazyListState, onChange: (IntRange
             }
     }
 }
-

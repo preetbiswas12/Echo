@@ -76,4 +76,3 @@ internal fun CompoundTypographyPreview() = ElementTheme {
 private fun TypographyTokenPreview(style: TextStyle, text: String) {
     Text(text = text, style = style)
 }
-

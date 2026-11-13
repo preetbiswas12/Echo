@@ -26,4 +26,3 @@ interface LocationService {
     /** Whether location sharing and map rendering are available; `false` disables the whole feature in the UI. */
     fun isServiceAvailable(): StateFlow<Boolean> = mapTilerConfig.mapState { it != null }
 }
-

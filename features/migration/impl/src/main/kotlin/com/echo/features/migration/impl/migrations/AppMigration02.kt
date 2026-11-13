@@ -8,11 +8,11 @@
 
 package com.echo.features.migration.impl.migrations
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.SessionPreferencesStoreFactory
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.coroutineScope
 
 /**
@@ -38,4 +38,3 @@ class AppMigration02(
         }
     }
 }
-

@@ -68,4 +68,3 @@ fun aChooseAccountProviderState(
     loginModeState = loginModeState,
     eventSink = eventSink,
 )
-

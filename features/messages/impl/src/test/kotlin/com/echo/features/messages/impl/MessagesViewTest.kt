@@ -29,8 +29,6 @@ import androidx.compose.ui.test.performTouchInput
 import androidx.compose.ui.test.swipeRight
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.compose.ui.text.AnnotatedString
-import io.element.android.emojibasebindings.Emoji
-import io.element.android.emojibasebindings.EmojibaseCategory
 import com.echo.features.messages.impl.actionlist.ActionListEvent
 import com.echo.features.messages.impl.actionlist.ActionListState
 import com.echo.features.messages.impl.actionlist.anActionListState
@@ -84,6 +82,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.pressBack
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.setSafeContent
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import org.junit.Test
@@ -830,4 +830,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setMessagesView(
         }
     }
 }
-

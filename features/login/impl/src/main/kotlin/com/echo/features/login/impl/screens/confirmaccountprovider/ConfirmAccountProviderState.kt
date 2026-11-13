@@ -34,4 +34,3 @@ data class ConfirmAccountProviderState(
         get() = loginModeState.loginMode is AsyncData.Failure ||
             changeServerState.changeServerAction is AsyncData.Failure
 }
-

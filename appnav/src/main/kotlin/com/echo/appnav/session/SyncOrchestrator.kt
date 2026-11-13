@@ -9,9 +9,6 @@
 package com.echo.appnav.session
 
 import androidx.annotation.VisibleForTesting
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -22,6 +19,9 @@ import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.recordTransaction
 import com.echo.services.analyticsproviders.api.AnalyticsUserData
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.combine
@@ -213,4 +213,3 @@ private enum class SyncStateAction {
     StopSync,
     NoOp,
 }
-

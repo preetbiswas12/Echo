@@ -89,4 +89,3 @@ class RustSyncService(
         .filter { it == RoomListServiceState.RUNNING }
         .map {}
 }
-

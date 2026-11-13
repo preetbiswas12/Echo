@@ -9,11 +9,11 @@
 package com.echo.libraries.matrix.impl.roomdirectory
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomDescription
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.libraries.matrix.test.A_ROOM_ID_3
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -73,4 +73,3 @@ class RoomDirectorySearchProcessorTest {
         }
     }
 }
-

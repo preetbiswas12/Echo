@@ -8,10 +8,10 @@
 
 package com.echo.features.joinroom.impl.di
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 interface ForgetRoom {
     suspend operator fun invoke(roomId: RoomId): Result<Unit>
@@ -24,4 +24,3 @@ class DefaultForgetRoom(private val client: MatrixClient) : ForgetRoom {
             ?: Result.failure(IllegalStateException("Room not found"))
     }
 }
-

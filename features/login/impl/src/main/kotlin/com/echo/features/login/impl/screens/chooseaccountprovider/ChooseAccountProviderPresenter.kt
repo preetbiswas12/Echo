@@ -13,13 +13,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.login.impl.login.LoginModeEvent
 import com.echo.features.login.impl.login.LoginModeState
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 
 @Inject
@@ -69,4 +69,3 @@ class ChooseAccountProviderPresenter(
         )
     }
 }
-

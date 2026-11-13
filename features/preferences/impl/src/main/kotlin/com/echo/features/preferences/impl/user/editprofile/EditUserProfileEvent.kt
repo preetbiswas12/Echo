@@ -17,4 +17,3 @@ sealed interface EditUserProfileEvent {
     data object Save : EditUserProfileEvent
     data object CloseDialog : EditUserProfileEvent
 }
-

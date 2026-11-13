@@ -32,4 +32,3 @@ data class ConfigureRoomState(
         (config.visibilityState is RoomVisibilityState.Private || roomAddressValidity == RoomAddressValidity.Valid) &&
         config.visibilityState.joinRuleItem in availableJoinRules
 }
-

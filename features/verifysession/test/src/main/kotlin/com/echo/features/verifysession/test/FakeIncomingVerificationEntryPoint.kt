@@ -21,4 +21,3 @@ class FakeIncomingVerificationEntryPoint : IncomingVerificationEntryPoint {
         callback: IncomingVerificationEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

@@ -7,13 +7,13 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.hasJoined
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 /**
  * Check whether a room is also joined by another account signed in on this device.
@@ -38,4 +38,3 @@ class DefaultRoomSharedWithOtherAccountChecker(
             }
     }
 }
-

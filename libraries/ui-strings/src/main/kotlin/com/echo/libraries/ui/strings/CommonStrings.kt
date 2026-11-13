@@ -9,4 +9,3 @@
 package com.echo.libraries.ui.strings
 
 typealias CommonStrings = R.string
-

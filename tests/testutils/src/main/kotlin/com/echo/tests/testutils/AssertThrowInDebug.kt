@@ -23,4 +23,3 @@ fun assertThrowsInDebug(lambda: () -> Any?) {
         lambda()
     }
 }
-

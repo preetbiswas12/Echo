@@ -11,4 +11,3 @@ package com.echo.features.ftue.api
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 interface FtueEntryPoint : SimpleFeatureEntryPoint
-

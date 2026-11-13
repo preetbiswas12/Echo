@@ -20,4 +20,3 @@ data class EditNotificationSettingRoomInfo(
     val avatarData: AvatarData,
     val notificationMode: RoomNotificationMode?
 )
-

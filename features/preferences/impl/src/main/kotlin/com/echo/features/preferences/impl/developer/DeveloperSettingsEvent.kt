@@ -21,4 +21,3 @@ sealed interface DeveloperSettingsEvent {
     data object DismissPushRulesError : DeveloperSettingsEvent
     data class CopyToClipboard(val text: String) : DeveloperSettingsEvent
 }
-

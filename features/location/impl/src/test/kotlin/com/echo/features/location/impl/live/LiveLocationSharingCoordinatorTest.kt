@@ -7,12 +7,12 @@
 
 package com.echo.features.location.impl.live
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.Location
 import com.echo.features.location.impl.live.service.LiveLocationReceiver
 import com.echo.features.location.impl.live.service.LiveLocationSharingCoordinator
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID_2
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -120,4 +120,3 @@ private fun liveLocationReceiver(
     override suspend fun onLocationUpdate(location: Location) = onLocation(location)
     override suspend fun onUnrecoverableError() = Unit
 }
-

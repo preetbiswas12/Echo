@@ -20,4 +20,3 @@ interface InitPlatformService {
      */
     fun init(tracingConfiguration: TracingConfiguration)
 }
-

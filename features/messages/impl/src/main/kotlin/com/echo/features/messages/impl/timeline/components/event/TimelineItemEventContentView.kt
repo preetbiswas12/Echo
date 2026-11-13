@@ -340,4 +340,3 @@ private fun ValidateMediaHelper(
         updatedEventSink(TimelineEvent.ValidateMedia(eventId, mediaSources, contentValidationState))
     }
 }
-

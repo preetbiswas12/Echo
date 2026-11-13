@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.features.roomdirectory.api)
     implementation(projects.services.analytics.api)
 }
-
-

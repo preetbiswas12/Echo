@@ -8,12 +8,12 @@
 
 package com.echo.features.migration.impl.migrations
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.test.FakeAnnouncementService
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -41,4 +41,3 @@ class AppMigration08Test {
             .with(value(Announcement.NewNotificationSound))
     }
 }
-

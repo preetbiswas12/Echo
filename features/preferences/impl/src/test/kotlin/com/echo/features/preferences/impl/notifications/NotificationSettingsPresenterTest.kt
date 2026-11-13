@@ -8,7 +8,6 @@
 
 package com.echo.features.preferences.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.ShowAllActivityInRoomListFeature
@@ -41,6 +40,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
@@ -1181,4 +1181,3 @@ class NotificationSettingsPresenterTest {
         )
     }
 }
-

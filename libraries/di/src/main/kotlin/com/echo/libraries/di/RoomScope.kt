@@ -9,4 +9,3 @@
 package com.echo.libraries.di
 
 abstract class RoomScope private constructor()
-

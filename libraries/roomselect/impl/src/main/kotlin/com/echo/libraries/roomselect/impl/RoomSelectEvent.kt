@@ -17,4 +17,3 @@ sealed interface RoomSelectEvent {
     data object ToggleAccountListExpanded : RoomSelectEvent
     data class SelectAccount(val sessionId: SessionId) : RoomSelectEvent
 }
-

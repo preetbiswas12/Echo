@@ -9,7 +9,6 @@
 package com.echo.libraries.matrix.ui.messages
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.FormattedBody
 import com.echo.libraries.matrix.api.timeline.item.event.MessageFormat
 import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class ToHtmlDocumentTest : RobolectricTest() {
@@ -128,4 +128,3 @@ class ToHtmlDocumentTest : RobolectricTest() {
         assertThat(document?.text()).isEqualTo("Look at this !")
     }
 }
-

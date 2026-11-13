@@ -74,4 +74,3 @@ internal fun IconToggleButtonPreview() = ElementThemedPreview(vertical = false) 
         }
     }
 }
-

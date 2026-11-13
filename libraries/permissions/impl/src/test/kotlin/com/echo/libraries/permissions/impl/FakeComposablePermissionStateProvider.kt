@@ -55,4 +55,3 @@ class FakePermissionState(
         status = if (hasPermission) PermissionStatus.Granted else PermissionStatus.Denied(shouldShowRationale)
     }
 }
-

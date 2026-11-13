@@ -19,4 +19,3 @@ sealed interface KnockRequestsListEvent {
     data object RetryCurrentAction : KnockRequestsListEvent
     data object ConfirmCurrentAction : KnockRequestsListEvent
 }
-

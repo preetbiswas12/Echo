@@ -22,8 +22,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.core.plugin.plugins
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.room.RoomNavigationTarget
 import com.echo.libraries.architecture.BackstackView
@@ -42,6 +40,8 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.LoadJoine
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.NotificationToMessage
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.OpenRoom
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
@@ -145,4 +145,3 @@ class JoinedRoomFlowNode(
         )
     }
 }
-

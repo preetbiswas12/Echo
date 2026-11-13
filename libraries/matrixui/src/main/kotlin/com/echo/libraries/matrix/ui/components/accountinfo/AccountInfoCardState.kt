@@ -31,4 +31,3 @@ sealed interface AccountInfoCardMode {
         val signInFormattedTimestamp: String,
     ) : AccountInfoCardMode
 }
-

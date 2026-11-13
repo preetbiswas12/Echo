@@ -8,8 +8,8 @@
 
 package com.echo.libraries.mediaviewer.impl.util
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class FileExtensionExtractorWithValidationTest : RobolectricTest() {
@@ -25,4 +25,3 @@ class FileExtensionExtractorWithValidationTest : RobolectricTest() {
         assertThat(sut.extractFromName("test.bla")).isEqualTo("bin")
     }
 }
-

@@ -28,4 +28,3 @@ fun anAnnouncementState(
     announcement = announcement,
     eventSink = eventSink,
 )
-

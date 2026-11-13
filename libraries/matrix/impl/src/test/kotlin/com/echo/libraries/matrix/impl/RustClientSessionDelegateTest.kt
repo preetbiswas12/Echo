@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.core.SdkBackgroundTaskError
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSession
 import com.echo.libraries.sessionstorage.api.SessionStore
@@ -16,6 +15,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -76,4 +76,3 @@ fun TestScope.aRustClientSessionDelegate(
     appCoroutineScope = this,
     analyticsService = analyticsService,
 )
-

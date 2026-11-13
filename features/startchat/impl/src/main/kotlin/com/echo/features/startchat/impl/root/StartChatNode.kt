@@ -17,15 +17,15 @@ import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.core.plugin.plugins
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.annotations.ContributesNode
 import com.echo.features.startchat.impl.StartChatNavigator
 import com.echo.libraries.deeplink.api.usecase.InviteFriendsUseCase
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.MobileScreen
 
 @ContributesNode(SessionScope::class)
 @AssistedInject
@@ -66,4 +66,3 @@ class StartChatNode(
         inviteFriendsUseCase.execute(activity)
     }
 }
-

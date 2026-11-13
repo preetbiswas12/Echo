@@ -19,4 +19,3 @@ class FakeScreenshotHolder(private val screenshotUri: String? = null) : Screensh
 
     override fun reset() = Unit
 }
-

@@ -25,8 +25,6 @@ import com.bumble.appyx.core.lifecycle.subscribe
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.knockrequests.api.banner.KnockRequestsBannerRenderer
@@ -78,6 +76,8 @@ import com.echo.libraries.ui.utils.a11y.isTalkbackActive
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.LoadMessagesUi
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.finishLongRunningTransaction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -371,4 +371,3 @@ class MessagesNode(
         }
     }
 }
-

@@ -167,4 +167,3 @@ class TantivyQueryEscaperTest {
         assertThat("   ".escapeForTantivy()).isEqualTo("")
     }
 }
-

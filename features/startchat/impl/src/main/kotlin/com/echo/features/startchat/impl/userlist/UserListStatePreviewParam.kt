@@ -90,4 +90,3 @@ fun aRecentDirectRoomList(
     .map {
         RecentDirectRoom(RoomId("!aRoom:id"), it)
     }
-

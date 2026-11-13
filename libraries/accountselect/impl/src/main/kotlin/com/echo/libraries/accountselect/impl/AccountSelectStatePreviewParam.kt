@@ -26,4 +26,3 @@ private fun anAccountSelectState(
 ) = AccountSelectState(
     accounts = accounts.toImmutableList(),
 )
-

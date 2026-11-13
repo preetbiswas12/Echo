@@ -24,4 +24,3 @@ fun aLocationSettingsState(
     liveLocationMinimumDistanceUpdate = liveLocationMinimumDistanceUpdate,
     eventSink = eventSink
 )
-

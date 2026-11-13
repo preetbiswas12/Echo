@@ -41,4 +41,3 @@ sealed interface InReplyTo {
         val message: String,
     ) : InReplyTo
 }
-

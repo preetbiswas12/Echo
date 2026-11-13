@@ -30,4 +30,3 @@ class FakeLinkMobileHandler(
         mutableLinkMobileStep.emit(step)
     }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.login.impl.screens.loginpassword
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.accountprovider.SaveAccountProviderToHistory
 import com.echo.features.login.impl.accountprovider.anAccountProviderDataSource
@@ -26,6 +25,7 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -196,4 +196,3 @@ class LoginPasswordPresenterTest {
         saveAccountProviderToHistory = SaveAccountProviderToHistory(accountProviderDataSource, appPreferencesStore),
     )
 }
-

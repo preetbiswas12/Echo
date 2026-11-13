@@ -135,4 +135,3 @@ internal fun TimelineItemStickerViewPreview(@PreviewParameter(
         contentValidationState = NoopContentValidationState(),
     )
 }
-

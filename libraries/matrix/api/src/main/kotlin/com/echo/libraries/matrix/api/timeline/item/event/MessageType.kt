@@ -136,4 +136,3 @@ data class OtherMessageType(
     val isKeyVerificationRequest: Boolean
         get() = msgType == "m.key.verification.request"
 }
-

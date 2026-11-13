@@ -10,11 +10,11 @@ package com.echo.features.invite.impl.acceptdecline
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteView
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultAcceptDeclineInviteView : AcceptDeclineInviteView {
@@ -33,4 +33,3 @@ class DefaultAcceptDeclineInviteView : AcceptDeclineInviteView {
         )
     }
 }
-

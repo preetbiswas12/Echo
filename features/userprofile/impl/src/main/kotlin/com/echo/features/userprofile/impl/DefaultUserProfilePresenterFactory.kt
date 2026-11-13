@@ -8,13 +8,13 @@
 
 package com.echo.features.userprofile.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.userprofile.api.UserProfilePresenterFactory
 import com.echo.features.userprofile.api.UserProfileState
 import com.echo.features.userprofile.impl.root.UserProfilePresenter
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultUserProfilePresenterFactory(
@@ -22,4 +22,3 @@ class DefaultUserProfilePresenterFactory(
 ) : UserProfilePresenterFactory {
     override fun create(userId: UserId): Presenter<UserProfileState> = factory.create(userId)
 }
-

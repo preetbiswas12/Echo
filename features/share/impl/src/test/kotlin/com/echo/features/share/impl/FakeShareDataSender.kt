@@ -19,4 +19,3 @@ class FakeShareDataSender(
         return sendResult(client, shareIntentData, roomIds)
     }
 }
-

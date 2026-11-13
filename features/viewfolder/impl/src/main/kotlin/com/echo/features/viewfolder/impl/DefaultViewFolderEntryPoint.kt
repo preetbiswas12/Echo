@@ -10,11 +10,11 @@ package com.echo.features.viewfolder.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.viewfolder.api.ViewFolderEntryPoint
 import com.echo.features.viewfolder.impl.root.ViewFolderFlowNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultViewFolderEntryPoint : ViewFolderEntryPoint {
@@ -33,4 +33,3 @@ class DefaultViewFolderEntryPoint : ViewFolderEntryPoint {
         )
     }
 }
-

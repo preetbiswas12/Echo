@@ -18,4 +18,3 @@ interface LoginIntentResolver {
      */
     fun parse(uriString: String): LoginParams?
 }
-

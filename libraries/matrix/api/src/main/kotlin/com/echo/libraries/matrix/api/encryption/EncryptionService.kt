@@ -166,4 +166,3 @@ interface IdentityOAuthResetHandle : IdentityResetHandle {
      */
     suspend fun resetOAuth(): Result<Unit>
 }
-

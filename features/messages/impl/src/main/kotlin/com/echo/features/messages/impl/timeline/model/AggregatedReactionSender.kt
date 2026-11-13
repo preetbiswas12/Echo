@@ -17,4 +17,3 @@ data class AggregatedReactionSender(
     val sentTime: String,
     val user: MatrixUser? = null
 )
-

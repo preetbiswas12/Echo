@@ -9,9 +9,9 @@
 package com.echo.features.lockscreen.impl
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.unlock.activity.PinUnlockActivity
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultLockScreenEntryPointIntentTest : RobolectricTest() {
@@ -22,4 +22,3 @@ class DefaultLockScreenEntryPointIntentTest : RobolectricTest() {
         assertThat(result.component?.className).isEqualTo(PinUnlockActivity::class.qualifiedName)
     }
 }
-

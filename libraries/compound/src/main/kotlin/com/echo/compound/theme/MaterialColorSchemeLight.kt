@@ -51,4 +51,3 @@ fun SemanticColors.toMaterialColorSchemeLight(): ColorScheme = lightColorScheme(
     // Note: for dark it will be colorGray300
     scrim = LightColorTokens.colorGray1400,
 )
-

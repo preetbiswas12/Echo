@@ -26,4 +26,3 @@ interface ClientUrlContentFetcher {
      */
     suspend fun getUrl(url: String): Result<ByteArray>
 }
-

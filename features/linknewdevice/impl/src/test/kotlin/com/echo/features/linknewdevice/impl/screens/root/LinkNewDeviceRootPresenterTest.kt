@@ -7,7 +7,6 @@
 
 package com.echo.features.linknewdevice.impl.screens.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -15,6 +14,7 @@ import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.test.linknewdevice.FakeLinkMobileHandler
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -128,4 +128,3 @@ class LinkNewDeviceRootPresenterTest {
         linkNewMobileHandler = linkNewMobileHandler,
     )
 }
-

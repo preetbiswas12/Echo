@@ -8,11 +8,11 @@
 
 package com.echo.libraries.oauth.impl
 
+import com.echo.libraries.oauth.api.OAuthAction
+import com.echo.libraries.oauth.api.OAuthActionFlow
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.oauth.api.OAuthAction
-import com.echo.libraries.oauth.api.OAuthActionFlow
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.MutableStateFlow
 
@@ -33,4 +33,3 @@ class DefaultOAuthActionFlow : OAuthActionFlow {
         mutableStateFlow.value = null
     }
 }
-

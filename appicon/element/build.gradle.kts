@@ -16,5 +16,3 @@ android {
         register("nightly")
     }
 }
-
-

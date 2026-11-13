@@ -12,4 +12,3 @@ sealed interface RoomAliasResolverEvent {
     data object Retry : RoomAliasResolverEvent
     data object DismissError : RoomAliasResolverEvent
 }
-

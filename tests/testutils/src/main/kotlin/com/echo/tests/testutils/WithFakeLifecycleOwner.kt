@@ -65,4 +65,3 @@ class FakeLifecycleOwner(initialState: Lifecycle.State? = null) : LifecycleOwner
         (lifecycle as LifecycleRegistry).currentState = state
     }
 }
-

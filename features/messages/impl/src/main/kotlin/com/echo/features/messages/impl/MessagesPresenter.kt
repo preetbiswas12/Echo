@@ -21,10 +21,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.compose.LifecycleResumeEffect
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.PinUnpinAction
 import com.echo.appconfig.MessageComposerConfig
 import com.echo.features.location.api.live.ActiveLiveLocationShareManager
 import com.echo.features.location.api.live.isCurrentlySharing
@@ -96,6 +92,10 @@ import com.echo.libraries.matrix.ui.room.getDirectRoomMember
 import com.echo.libraries.textcomposer.model.MessageComposerMode
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.PinUnpinAction
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -682,4 +682,3 @@ class MessagesPresenter(
         }
     }
 }
-

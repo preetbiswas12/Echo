@@ -19,4 +19,3 @@ data class FakeFeature(
     override val isFinished: Boolean = false,
     override val isInLabs: Boolean = false,
 ) : Feature
-

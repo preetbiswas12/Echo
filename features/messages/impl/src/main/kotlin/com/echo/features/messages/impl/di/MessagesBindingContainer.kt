@@ -8,9 +8,6 @@
 
 package com.echo.features.messages.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.messages.impl.crypto.identity.IdentityChangeState
 import com.echo.features.messages.impl.crypto.identity.IdentityChangeStatePresenter
 import com.echo.features.messages.impl.crypto.sendfailure.resolve.ResolveVerifiedUserSendFailurePresenter
@@ -31,6 +28,9 @@ import com.echo.features.messages.impl.typing.TypingNotificationPresenter
 import com.echo.features.messages.impl.typing.TypingNotificationState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(RoomScope::class)
 @BindingContainer
@@ -62,4 +62,3 @@ interface MessagesBindingContainer {
     @Binds
     fun bindIdentityChangeStatePresenter(presenter: IdentityChangeStatePresenter): Presenter<IdentityChangeState>
 }
-

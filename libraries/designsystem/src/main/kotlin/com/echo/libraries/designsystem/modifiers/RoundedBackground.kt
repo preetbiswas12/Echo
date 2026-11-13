@@ -30,4 +30,3 @@ fun Modifier.roundedBackground(
     .clip(CircleShape)
     .background(color = color.copy(alpha = alpha))
     .padding(8.dp)
-

@@ -29,4 +29,3 @@ sealed interface SpaceEvent {
     data object RemoveSelectedRooms : SpaceEvent
     data object ClearRemoveAction : SpaceEvent
 }
-

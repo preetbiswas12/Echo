@@ -61,4 +61,3 @@ suspend inline fun <NavTarget : Any> ParentNode<NavTarget>.waitForNavTargetAttac
             continuation.cancel()
         }
     }
-

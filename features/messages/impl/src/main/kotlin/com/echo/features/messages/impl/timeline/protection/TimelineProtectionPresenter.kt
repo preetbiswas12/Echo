@@ -14,8 +14,6 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateSetOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.coroutine.mapState
@@ -24,6 +22,8 @@ import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.media.MediaPreviewService
 import com.echo.libraries.matrix.api.media.isPreviewEnabled
 import com.echo.libraries.matrix.api.room.BaseRoom
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.toImmutableSet
 
 @SingleIn(RoomScope::class)
@@ -70,4 +70,3 @@ class TimelineProtectionPresenter(
         )
     }
 }
-

@@ -69,4 +69,3 @@ fun TimelineItem.mustBeProtected(): Boolean {
         is TimelineItem.GroupedEvents -> false
     }
 }
-

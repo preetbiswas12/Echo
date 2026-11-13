@@ -7,13 +7,13 @@
 
 package com.echo.features.messages.impl.timeline.groups
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.aGroupedEvents
 import com.echo.features.messages.impl.timeline.aTimelineItemEvent
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemRedactedContent
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UniqueId
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
@@ -58,4 +58,3 @@ class GroupabilityTest {
         assertThat(group.isRedactedMessagesGroup()).isFalse()
     }
 }
-

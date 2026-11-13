@@ -531,4 +531,3 @@ fun MatrixClient.roomAliasFromName(name: String): RoomAlias? {
 suspend fun MatrixClient.hasJoined(roomId: RoomId): Boolean {
     return getRoomInfo(roomId).getOrNull()?.currentUserMembership == CurrentUserMembership.JOINED
 }
-

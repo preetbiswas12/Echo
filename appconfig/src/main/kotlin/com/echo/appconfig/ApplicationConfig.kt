@@ -31,4 +31,3 @@ object ApplicationConfig {
      */
     const val DESKTOP_APPLICATION_NAME: String = "Echo"
 }
-

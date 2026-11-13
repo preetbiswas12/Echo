@@ -132,4 +132,3 @@ internal fun DependencyLicensesListViewPreview(
         onOpenLicense = {},
     )
 }
-

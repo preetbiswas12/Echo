@@ -201,4 +201,3 @@ class WebViewWidgetMessageInterceptor(
         json?.let { interceptedMessages.tryEmit(it) }
     }
 }
-

@@ -144,4 +144,3 @@ internal fun ComposerAlertMoleculePreview(
         onSubmitClick = {},
     )
 }
-

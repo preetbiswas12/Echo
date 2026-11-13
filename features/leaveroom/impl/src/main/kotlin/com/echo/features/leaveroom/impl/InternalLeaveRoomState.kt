@@ -27,4 +27,3 @@ sealed interface Confirmation : AsyncAction.Confirming {
     data class LastUserInRoom(val roomId: RoomId) : Confirmation
     data class LastOwnerInRoom(val roomId: RoomId) : Confirmation
 }
-

@@ -9,7 +9,6 @@
 
 package com.echo.features.lockscreen.impl.device
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticatorManager
@@ -19,6 +18,7 @@ import com.echo.features.lockscreen.impl.unlock.PinUnlockHelper
 import com.echo.features.lockscreen.test.FakeDeviceUnlockEntryPointCallback
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.runTest
@@ -150,4 +150,3 @@ class DeviceUnlockPresenterTest {
         )
     }
 }
-

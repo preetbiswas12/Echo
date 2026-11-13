@@ -34,4 +34,3 @@ data class MediaSource(
         url
     }
 }
-

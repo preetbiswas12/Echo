@@ -136,4 +136,3 @@ internal fun UserListViewPreview(@PreviewParameter(UserListStatePreviewParam::cl
         onDeselectUser = {},
     )
 }
-

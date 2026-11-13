@@ -130,4 +130,3 @@ internal fun SlidersPreview() = ElementThemedPreview {
         Slider(onValueChange = { value = it }, value = value, enabled = true, useCustomLayout = true)
     }
 }
-

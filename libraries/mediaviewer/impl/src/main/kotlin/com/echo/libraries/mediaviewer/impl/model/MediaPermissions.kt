@@ -27,4 +27,3 @@ fun RoomPermissions.mediaPermissions(): MediaPermissions {
         canRedactOther = canOwnUserRedactOther(),
     )
 }
-

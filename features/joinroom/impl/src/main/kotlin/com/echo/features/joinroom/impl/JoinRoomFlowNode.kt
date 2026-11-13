@@ -17,8 +17,6 @@ import com.bumble.appyx.core.node.node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteView
@@ -28,6 +26,8 @@ import com.echo.libraries.architecture.BackstackView
 import com.echo.libraries.architecture.BaseFlowNode
 import com.echo.libraries.architecture.inputs
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SessionScope::class)
@@ -108,4 +108,3 @@ class JoinRoomFlowNode(
         }
     }
 }
-

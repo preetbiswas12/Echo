@@ -38,4 +38,3 @@ fun aQrCodeIntroState(
     canContinue = canContinue,
     eventSink = eventSink
 )
-

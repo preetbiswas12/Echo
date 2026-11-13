@@ -12,7 +12,6 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.login.impl.accountprovider.SaveAccountProviderToHistory
 import com.echo.features.login.impl.error.ChangeServerError
 import com.echo.features.login.impl.localnetwork.LocalNetworkPermissionGate
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.auth.OAuthPrompt
 import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.libraries.oauth.api.OAuthActionFlow
+import dev.zacsweers.metro.Inject
 
 /**
  * Presenter responsible for managing the login flow, including handling OAuth actions and
@@ -126,4 +126,3 @@ class LoginModePresenter(
         oAuthActionFlow.reset()
     }
 }
-

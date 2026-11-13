@@ -30,4 +30,3 @@ interface InvitePeopleState {
     /** Where the UI sends its events. */
     val eventSink: (InvitePeopleEvent) -> Unit
 }
-

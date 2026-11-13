@@ -21,8 +21,6 @@ import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.enterprise.api.SessionEnterpriseService
@@ -39,6 +37,8 @@ import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.encryption.IdentityOAuthResetHandle
 import com.echo.libraries.matrix.api.encryption.IdentityPasswordResetHandle
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.first
@@ -175,4 +175,3 @@ class ResetIdentityFlowNode(
         BackstackView(modifier)
     }
 }
-

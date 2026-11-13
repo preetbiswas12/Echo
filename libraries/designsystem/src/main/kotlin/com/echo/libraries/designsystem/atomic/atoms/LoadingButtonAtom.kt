@@ -24,4 +24,3 @@ fun LoadingButtonAtom(
     text = stringResource(CommonStrings.common_loading),
     onClick = {},
 )
-

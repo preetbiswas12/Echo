@@ -11,10 +11,10 @@ package com.echo.libraries.pushproviders.unifiedpush
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface UnifiedPushStore {
     fun getEndpoint(clientSecret: String): String?
@@ -90,4 +90,3 @@ class SharedPreferencesUnifiedPushStore(
         private const val PREFS_DISTRIBUTOR = "DISTRIBUTOR"
     }
 }
-

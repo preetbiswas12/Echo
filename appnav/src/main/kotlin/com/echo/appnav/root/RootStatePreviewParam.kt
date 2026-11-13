@@ -36,4 +36,3 @@ fun aRootState() = RootState(
     crashDetectionState = aCrashDetectionState(),
     errorState = AppErrorState.NoError,
 )
-

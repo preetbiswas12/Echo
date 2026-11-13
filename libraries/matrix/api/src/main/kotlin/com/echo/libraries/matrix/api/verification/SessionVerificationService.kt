@@ -148,4 +148,3 @@ sealed interface VerificationFlowState {
     /** Verification failed with an error. */
     data object DidFail : VerificationFlowState
 }
-

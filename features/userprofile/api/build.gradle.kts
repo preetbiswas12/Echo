@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.libraries.designsystem)
     implementation(projects.libraries.matrix.api)
 }
-
-

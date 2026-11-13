@@ -90,4 +90,3 @@ internal fun SelectionModeTopBarPreview(
 internal class SelectionCountPreviewParam : PreviewParameterProvider<Int> {
     override val values = sequenceOf(0, 1, 5)
 }
-

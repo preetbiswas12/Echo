@@ -23,4 +23,3 @@ fun TraceLogPack.map(): RustTraceLogPack = when (this) {
 fun Collection<TraceLogPack>.map(): List<RustTraceLogPack> {
     return map { it.map() }
 }
-

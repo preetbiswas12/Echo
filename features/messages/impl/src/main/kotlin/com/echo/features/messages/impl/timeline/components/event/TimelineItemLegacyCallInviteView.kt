@@ -51,4 +51,3 @@ fun TimelineItemLegacyCallInviteView(
 internal fun TimelineItemLegacyCallInviteViewPreview() = ElementPreview {
     TimelineItemLegacyCallInviteView()
 }
-

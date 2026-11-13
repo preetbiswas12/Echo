@@ -28,4 +28,3 @@ class FakeComposerDraftService : ComposerDraftService {
         isVolatile: Boolean
     ) = saveDraftLambda(roomId, threadRoot, draft, isVolatile)
 }
-

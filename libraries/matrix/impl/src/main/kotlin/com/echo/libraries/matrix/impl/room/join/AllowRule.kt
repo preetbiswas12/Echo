@@ -25,4 +25,3 @@ fun AllowRule.map(): RustAllowRule {
         is AllowRule.Custom -> RustAllowRule.Custom(json)
     }
 }
-

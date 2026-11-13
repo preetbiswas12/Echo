@@ -8,7 +8,6 @@
 
 package com.echo.features.login.impl.screens.qrcode.scan
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.qrcode.FakeQrCodeLoginManager
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
@@ -18,6 +17,7 @@ import com.echo.libraries.matrix.test.auth.qrlogin.FakeMatrixQrCodeLoginDataFact
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -112,4 +112,3 @@ class QrCodeScanPresenterTest {
         coroutineDispatchers = coroutineDispatchers,
     )
 }
-

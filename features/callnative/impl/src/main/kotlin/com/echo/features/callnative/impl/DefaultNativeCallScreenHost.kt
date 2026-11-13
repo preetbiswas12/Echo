@@ -11,16 +11,16 @@ import android.content.Context
 import android.content.Intent
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import io.element.android.call.api.ElementCallController
-import io.element.android.call.impl.ElementCallPictureInPicture
-import io.element.android.call.ui.theme.ElementCallStyle
 import com.echo.compound.theme.ElementTheme
 import com.echo.compound.theme.Theme
 import com.echo.features.callnative.api.NativeCallScreenHost
 import com.echo.features.lockscreen.api.LockScreenService
 import com.echo.features.lockscreen.api.handleSecureFlag
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import io.element.android.call.api.ElementCallController
+import io.element.android.call.impl.ElementCallPictureInPicture
+import io.element.android.call.ui.theme.ElementCallStyle
 
 /**
  * App-scoped, like the call screen it serves: that screen can open over the lock screen with no
@@ -56,4 +56,3 @@ class DefaultNativeCallScreenHost(
         }
     }
 }
-

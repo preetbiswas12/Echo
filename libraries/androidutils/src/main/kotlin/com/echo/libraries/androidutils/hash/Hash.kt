@@ -24,4 +24,3 @@ fun String.hash() = try {
     // Should not happen, but just in case
     hashCode().toString()
 }
-

@@ -9,4 +9,3 @@
 package com.echo.libraries.designsystem.icons
 
 typealias CompoundDrawables = com.echo.compound.R.drawable
-

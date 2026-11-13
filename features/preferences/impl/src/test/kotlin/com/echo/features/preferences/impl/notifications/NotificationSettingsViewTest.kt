@@ -17,7 +17,6 @@ import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
-import com.google.testing.junit.testparameterinjector.TestParameter
 import com.echo.features.preferences.impl.R
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -30,6 +29,7 @@ import com.echo.tests.testutils.ensureCalledOnce
 import com.echo.tests.testutils.ensureCalledOnceWithParam
 import com.echo.tests.testutils.pressBack
 import com.echo.tests.testutils.robolectric.RobolectricTestParameter
+import com.google.testing.junit.testparameterinjector.TestParameter
 import org.junit.Test
 import org.robolectric.annotation.Config
 
@@ -332,4 +332,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setNotificationSettingsView(
         )
     }
 }
-

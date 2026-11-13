@@ -20,4 +20,3 @@ fun anEncryptionInfo(senderId: String, shield: ShieldState) = EventEncryptionInf
     shieldState = shield,
     shieldStateStrict = shield,
 )
-

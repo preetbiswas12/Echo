@@ -8,11 +8,11 @@
 
 package com.echo.features.preferences.impl.root
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.preferences.impl.R
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface VersionFormatter {
     fun get(): String
@@ -31,4 +31,3 @@ class DefaultVersionFormatter(
         )
     }
 }
-

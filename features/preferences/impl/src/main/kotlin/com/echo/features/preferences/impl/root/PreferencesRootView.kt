@@ -353,4 +353,3 @@ private fun ContentToPreview(state: PreferencesRootState) {
         onDeactivateClick = {},
     )
 }
-

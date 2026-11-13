@@ -169,4 +169,3 @@ internal fun IncomingCallScreenPreview(
         onCancel = {},
     )
 }
-

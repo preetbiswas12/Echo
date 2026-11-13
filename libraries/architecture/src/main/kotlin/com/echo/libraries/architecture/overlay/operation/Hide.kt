@@ -43,4 +43,3 @@ class Hide<T : Any> : OverlayOperation<T> {
 fun <T : Any> Overlay<T>.hide() {
     accept(Hide())
 }
-

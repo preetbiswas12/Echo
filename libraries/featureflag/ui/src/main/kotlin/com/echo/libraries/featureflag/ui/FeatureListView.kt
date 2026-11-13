@@ -58,4 +58,3 @@ internal fun FeatureListViewPreview() = ElementPreview {
         onCheckedChange = { _, _ -> }
     )
 }
-

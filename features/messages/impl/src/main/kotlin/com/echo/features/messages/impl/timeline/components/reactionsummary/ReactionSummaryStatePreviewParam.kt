@@ -27,4 +27,3 @@ fun aReactionSummaryState(): ReactionSummaryState {
         eventSink = {}
     )
 }
-

@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl.storage
 
+import com.echo.libraries.matrix.api.paths.SessionPaths
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.matrix.api.paths.SessionPaths
 
 interface SqliteStoreBuilderProvider {
     fun provide(sessionPaths: SessionPaths): SqliteStoreBuilder
@@ -21,4 +21,3 @@ class RustSqliteStoreBuilderProvider : SqliteStoreBuilderProvider {
         return RustSqliteStoreBuilder(sessionPaths)
     }
 }
-

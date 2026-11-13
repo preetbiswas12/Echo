@@ -14,7 +14,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.features.lockscreen.impl.pin.PinCodeManager
 import com.echo.features.lockscreen.impl.pin.model.PinEntry
@@ -22,6 +21,7 @@ import com.echo.features.lockscreen.impl.setup.pin.validation.PinValidator
 import com.echo.features.lockscreen.impl.setup.pin.validation.SetupPinFailure
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.delay
 
 /**
@@ -111,4 +111,3 @@ class SetupPinPresenter(
         )
     }
 }
-

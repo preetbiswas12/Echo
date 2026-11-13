@@ -22,4 +22,3 @@ interface ExtraDeveloperOptionsRenderer {
     @Composable
     fun Render(modifier: Modifier)
 }
-

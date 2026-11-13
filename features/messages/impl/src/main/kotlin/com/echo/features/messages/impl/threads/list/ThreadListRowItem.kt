@@ -15,4 +15,3 @@ data class ThreadListRowItem(
     val latestEventText: String?,
     val formattedTimestamp: String,
 )
-

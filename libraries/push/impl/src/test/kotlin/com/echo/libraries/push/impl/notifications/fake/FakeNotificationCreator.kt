@@ -116,4 +116,3 @@ class FakeNotificationCreator(
         return createUnregistrationNotificationResult(notificationAccountParams)
     }
 }
-

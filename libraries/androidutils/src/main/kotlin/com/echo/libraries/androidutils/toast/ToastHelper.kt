@@ -12,4 +12,3 @@ import androidx.annotation.StringRes
 interface ToastHelper {
     fun show(@StringRes resId: Int)
 }
-

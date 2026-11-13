@@ -20,4 +20,3 @@ data class LocalMedia(
     val uri: Uri,
     val info: MediaInfo,
 ) : Parcelable
-

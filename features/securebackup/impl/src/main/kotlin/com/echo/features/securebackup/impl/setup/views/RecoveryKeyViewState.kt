@@ -20,4 +20,3 @@ enum class RecoveryKeyUserStory {
     Change,
     Enter,
 }
-

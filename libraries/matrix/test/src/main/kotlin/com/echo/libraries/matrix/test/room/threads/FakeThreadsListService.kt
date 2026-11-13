@@ -46,4 +46,3 @@ class FakeThreadsListService(
         this.items.emit(items)
     }
 }
-

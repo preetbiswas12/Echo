@@ -14,4 +14,3 @@ class FakeSyncPendingNotificationsRequestBuilder(
 ) : SyncPendingNotificationsRequestBuilder {
     override suspend fun build(): Result<List<WorkManagerRequestWrapper>> = build.invoke()
 }
-

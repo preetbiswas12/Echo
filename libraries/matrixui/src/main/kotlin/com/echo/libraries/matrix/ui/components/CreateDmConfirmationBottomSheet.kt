@@ -180,4 +180,3 @@ class CreateDmConfirmationBottomSheetStatePreviewParam : PreviewParameterProvide
         CreateDmConfirmationBottomSheetState(matrixUser = aMatrixUser(), isUserIdentityUnknown = true),
     )
 }
-

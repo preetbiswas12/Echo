@@ -10,10 +10,10 @@ package com.echo.features.roomdetailsedit.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.roomdetailsedit.api.RoomDetailsEditEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomDetailsEditEntryPoint : RoomDetailsEditEntryPoint {
@@ -21,4 +21,3 @@ class DefaultRoomDetailsEditEntryPoint : RoomDetailsEditEntryPoint {
         return parentNode.createNode<RoomDetailsEditNode>(buildContext)
     }
 }
-

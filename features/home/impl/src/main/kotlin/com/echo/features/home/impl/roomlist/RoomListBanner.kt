@@ -38,4 +38,3 @@ internal fun RoomListContentState.Rooms.toRoomListBanner(): RoomListBanner? {
         else -> null
     }
 }
-

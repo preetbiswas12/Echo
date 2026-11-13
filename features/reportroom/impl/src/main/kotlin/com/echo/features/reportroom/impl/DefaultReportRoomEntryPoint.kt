@@ -10,11 +10,11 @@ package com.echo.features.reportroom.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.reportroom.api.ReportRoomEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultReportRoomEntryPoint : ReportRoomEntryPoint {
@@ -26,4 +26,3 @@ class DefaultReportRoomEntryPoint : ReportRoomEntryPoint {
         return parentNode.createNode<ReportRoomNode>(buildContext, plugins = listOf(ReportRoomNode.Inputs(roomId)))
     }
 }
-

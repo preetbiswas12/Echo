@@ -16,14 +16,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.core.content.FileProvider
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.mediapickers.api.ComposePickerLauncher
 import com.echo.libraries.mediapickers.api.NoOpPickerLauncher
 import com.echo.libraries.mediapickers.api.PickerLauncher
 import com.echo.libraries.mediapickers.api.PickerProvider
 import com.echo.libraries.mediapickers.api.PickerType
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import java.io.File
 
 @ContributesBinding(AppScope::class)
@@ -184,4 +184,3 @@ class DefaultPickerProvider(
         return FileProvider.getUriForFile(context, authority, file)
     }
 }
-

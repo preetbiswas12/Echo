@@ -8,8 +8,8 @@
 
 package com.echo.features.cachecleaner.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -61,4 +61,3 @@ class DefaultCacheCleanerTest {
         cacheDir = temporaryFolder.root,
     )
 }
-

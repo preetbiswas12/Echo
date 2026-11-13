@@ -65,4 +65,3 @@ internal fun anEmptyContentState(
 ) = RoomListContentState.Empty(
     securityBannerState = securityBannerState,
 )
-

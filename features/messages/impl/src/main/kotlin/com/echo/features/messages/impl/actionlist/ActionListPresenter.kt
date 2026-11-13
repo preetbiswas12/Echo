@@ -15,10 +15,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.messages.impl.UserEventPermissions
 import com.echo.features.messages.impl.actionlist.model.TimelineItemAction
 import com.echo.features.messages.impl.actionlist.model.TimelineItemActionComparator
@@ -51,6 +47,10 @@ import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -269,4 +269,3 @@ private fun Iterable<TimelineItemAction>.postFilter(content: TimelineItemEventCo
         }
     }
 }
-

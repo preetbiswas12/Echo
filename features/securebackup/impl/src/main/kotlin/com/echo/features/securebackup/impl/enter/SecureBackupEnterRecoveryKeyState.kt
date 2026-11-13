@@ -17,4 +17,3 @@ data class SecureBackupEnterRecoveryKeyState(
     val submitAction: AsyncAction<Unit>,
     val eventSink: (SecureBackupEnterRecoveryKeyEvent) -> Unit
 )
-

@@ -58,4 +58,3 @@ interface KnockRequest {
     /** Marks the request as seen, without accepting or declining it. */
     suspend fun markAsSeen(): Result<Unit>
 }
-

@@ -8,10 +8,10 @@
 
 package com.echo.features.preferences.impl.utils
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
 import com.echo.libraries.ui.utils.MultipleTapToUnlock
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -36,4 +36,3 @@ class ShowDeveloperSettingsProvider(
         }
     }
 }
-

@@ -13,4 +13,3 @@ class FakeVersionFormatter : VersionFormatter {
         return "A Version"
     }
 }
-

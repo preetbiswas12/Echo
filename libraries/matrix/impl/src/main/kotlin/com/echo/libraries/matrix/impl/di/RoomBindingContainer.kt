@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.RoomCoroutineScope
 import com.echo.libraries.matrix.api.room.BaseRoom
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 import kotlinx.coroutines.CoroutineScope
 
 @BindingContainer
@@ -25,4 +25,3 @@ object RoomBindingContainer {
         return room.roomCoroutineScope
     }
 }
-

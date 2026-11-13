@@ -20,4 +20,3 @@ import org.robolectric.annotation.Config
 @RunWith(RobolectricTestParameterInjector::class)
 @Config(sdk = [36])
 open class RobolectricTestParameter
-

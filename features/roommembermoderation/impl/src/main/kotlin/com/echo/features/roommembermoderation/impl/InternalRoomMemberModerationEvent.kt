@@ -16,4 +16,3 @@ sealed interface InternalRoomMemberModerationEvent : RoomMemberModerationEvent {
     data class DoUnbanUser(val reason: String) : InternalRoomMemberModerationEvent
     data object Reset : InternalRoomMemberModerationEvent
 }
-

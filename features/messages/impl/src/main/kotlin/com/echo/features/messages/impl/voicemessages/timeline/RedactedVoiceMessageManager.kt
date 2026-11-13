@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.voicemessages.timeline
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.event.RedactedContent
 import com.echo.libraries.mediaplayer.api.MediaPlayer
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 
 interface RedactedVoiceMessageManager {
@@ -42,4 +42,3 @@ class DefaultRedactedVoiceMessageManager(
         }
     }
 }
-

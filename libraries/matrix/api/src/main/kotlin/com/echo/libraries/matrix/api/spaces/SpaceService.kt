@@ -70,4 +70,3 @@ interface SpaceService {
      */
     suspend fun removeChildFromSpace(spaceId: RoomId, childId: RoomId): Result<Unit>
 }
-

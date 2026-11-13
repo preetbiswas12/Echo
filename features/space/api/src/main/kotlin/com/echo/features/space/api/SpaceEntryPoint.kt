@@ -32,4 +32,3 @@ interface SpaceEntryPoint : FeatureEntryPoint {
         fun navigateToRoomMemberList()
     }
 }
-

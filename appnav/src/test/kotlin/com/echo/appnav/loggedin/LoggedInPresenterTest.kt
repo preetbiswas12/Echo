@@ -11,9 +11,6 @@
 package com.echo.appnav.loggedin
 
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.CryptoSessionStateChange
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
 import com.echo.libraries.matrix.api.MatrixClient
@@ -50,6 +47,9 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.CryptoSessionStateChange
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.runTest
@@ -390,4 +390,3 @@ class LoggedInPresenterTest {
         )
     }
 }
-

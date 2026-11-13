@@ -76,4 +76,3 @@ class AttachmentImageEditsTest {
         assertThat(edits.hasChanges).isFalse()
     }
 }
-

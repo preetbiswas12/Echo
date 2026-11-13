@@ -18,4 +18,3 @@ internal fun OAuthPrompt.toRustPrompt(): RustOAuthPrompt {
         is OAuthPrompt.Unknown -> RustOAuthPrompt.Unknown(value)
     }
 }
-

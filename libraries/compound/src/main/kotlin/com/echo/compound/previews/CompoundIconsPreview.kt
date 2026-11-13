@@ -143,4 +143,3 @@ internal fun IconsPreview(
         }
     }
 }
-

@@ -44,4 +44,3 @@ sealed interface ButtonVisuals {
         }
     }
 }
-

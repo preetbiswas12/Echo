@@ -23,4 +23,3 @@ fun anAboutState(
 ) = AboutState(
     elementLegals = elementLegals.toImmutableList(),
 )
-

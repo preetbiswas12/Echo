@@ -214,4 +214,3 @@ fun aReadReceiptBottomSheetState(
     selectedEvent = selectedEvent,
     eventSink = eventSink,
 )
-

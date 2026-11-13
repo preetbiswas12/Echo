@@ -16,4 +16,3 @@ sealed class RecoveryException(message: String) : Exception(message) {
     data object BackupExistsOnServer : RecoveryException("BackupExistsOnServer")
     data class Client(val exception: ClientException) : RecoveryException(exception.message ?: "Unknown error")
 }
-

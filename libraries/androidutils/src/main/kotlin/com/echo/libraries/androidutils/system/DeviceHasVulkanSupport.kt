@@ -8,8 +8,8 @@
 package com.echo.libraries.androidutils.system
 
 import android.content.Context
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.Inject
 
 private const val VULKAN_VERSION_1_0 = 0x400003
 
@@ -29,4 +29,3 @@ class DeviceHasVulkanSupport(
         return context.packageManager.hasSystemFeature("android.hardware.vulkan.version", VULKAN_VERSION_1_0)
     }
 }
-

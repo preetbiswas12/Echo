@@ -10,4 +10,3 @@ package com.echo.features.login.impl.screens.classic.loginwithclassic
 interface LoginWithClassicNavigator {
     fun navigateToMissingKeyBackup()
 }
-

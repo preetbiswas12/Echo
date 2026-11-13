@@ -8,9 +8,9 @@
 
 package com.echo.features.poll.impl.create
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.poll.impl.PollConstants
 import com.echo.libraries.matrix.api.poll.PollKind
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -135,4 +135,3 @@ private fun aValidPollFormState(): PollFormState {
 
 private fun PollFormState.withBlankAnswers(numAnswers: Int): PollFormState =
     copy(answers = List(numAnswers) { "" }.toImmutableList())
-

@@ -23,4 +23,3 @@ data class PermissionsState(
     val isAnyGranted: Boolean
         get() = permissions is Permissions.SomeGranted || permissions is Permissions.AllGranted
 }
-

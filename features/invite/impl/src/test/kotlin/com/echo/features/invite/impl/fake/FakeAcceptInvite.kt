@@ -20,4 +20,3 @@ class FakeAcceptInvite(
         lambda(roomId)
     }
 }
-

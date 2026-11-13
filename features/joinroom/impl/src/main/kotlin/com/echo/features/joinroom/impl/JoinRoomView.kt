@@ -651,4 +651,3 @@ internal fun JoinRoomViewPreview(@PreviewParameter(JoinRoomStatePreviewParam::cl
         onDeclineInviteAndBlockUser = { },
     )
 }
-

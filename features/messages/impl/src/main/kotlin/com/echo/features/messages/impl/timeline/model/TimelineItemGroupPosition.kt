@@ -57,4 +57,3 @@ sealed interface TimelineItemGroupPosition {
         else -> false
     }
 }
-

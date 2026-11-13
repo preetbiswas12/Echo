@@ -76,4 +76,3 @@ internal class MigrationCallback(
         super.onUpgrade(db, oldVersion, newVersion)
     }
 }
-

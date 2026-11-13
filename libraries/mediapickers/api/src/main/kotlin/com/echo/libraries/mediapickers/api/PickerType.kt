@@ -76,4 +76,3 @@ sealed interface PickerType<Input, Output> {
         }
     }
 }
-

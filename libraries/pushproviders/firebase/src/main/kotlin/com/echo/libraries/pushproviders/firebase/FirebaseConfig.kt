@@ -18,4 +18,3 @@ object FirebaseConfig {
     const val INDEX = 0
     const val NAME = "Firebase"
 }
-

@@ -14,9 +14,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.classic.ElementClassicConnection
 import com.echo.features.login.impl.classic.ElementClassicConnectionState
@@ -27,6 +24,9 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.uri.ensureProtocol
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 
 @AssistedInject
@@ -103,4 +103,3 @@ class LoginWithClassicPresenter(
         )
     }
 }
-

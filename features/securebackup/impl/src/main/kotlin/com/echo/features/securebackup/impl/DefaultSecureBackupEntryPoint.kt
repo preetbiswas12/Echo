@@ -10,10 +10,10 @@ package com.echo.features.securebackup.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.securebackup.api.SecureBackupEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultSecureBackupEntryPoint : SecureBackupEntryPoint {
@@ -29,4 +29,3 @@ class DefaultSecureBackupEntryPoint : SecureBackupEntryPoint {
         )
     }
 }
-

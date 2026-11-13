@@ -27,4 +27,3 @@ interface InvitePeoplePresenter : Presenter<InvitePeopleState> {
         ): InvitePeoplePresenter
     }
 }
-

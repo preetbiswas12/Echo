@@ -7,10 +7,10 @@
 
 package com.echo.features.home.impl.search.history
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -144,4 +144,3 @@ class DefaultSearchHistoryStoreTest {
         jsonProvider = { Json { ignoreUnknownKeys = true } }
     )
 }
-

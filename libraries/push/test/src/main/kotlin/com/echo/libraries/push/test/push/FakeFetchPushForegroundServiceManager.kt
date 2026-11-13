@@ -21,4 +21,3 @@ class FakeFetchPushForegroundServiceManager(
         return unlock.invoke()
     }
 }
-

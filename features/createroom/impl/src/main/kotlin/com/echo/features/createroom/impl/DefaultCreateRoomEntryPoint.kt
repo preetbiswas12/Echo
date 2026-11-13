@@ -10,11 +10,11 @@ package com.echo.features.createroom.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.createroom.api.CreateRoomEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultCreateRoomEntryPoint : CreateRoomEntryPoint {
@@ -46,4 +46,3 @@ class DefaultCreateRoomEntryPoint : CreateRoomEntryPoint {
         return Builder(parentNode, buildContext, callback)
     }
 }
-

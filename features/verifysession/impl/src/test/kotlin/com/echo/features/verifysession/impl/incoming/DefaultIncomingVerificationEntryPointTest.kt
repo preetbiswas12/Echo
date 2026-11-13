@@ -10,10 +10,10 @@ package com.echo.features.verifysession.impl.incoming
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.verifysession.api.IncomingVerificationEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -49,4 +49,3 @@ class DefaultIncomingVerificationEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

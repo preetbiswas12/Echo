@@ -109,4 +109,3 @@ class SdkRoomEventsTest {
         const val A_CONTENT = """{"application":"m.call"}"""
     }
 }
-

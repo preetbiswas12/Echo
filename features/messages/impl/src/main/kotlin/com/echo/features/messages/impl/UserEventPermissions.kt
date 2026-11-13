@@ -42,4 +42,3 @@ fun RoomPermissions.userEventPermissions(): UserEventPermissions {
         canPinUnpin = canOwnUserPinUnpin()
     )
 }
-

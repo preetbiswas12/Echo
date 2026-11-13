@@ -14,7 +14,6 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.v2.runComposeUiTest
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.utils.FakeMentionSpanFormatter
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.test.A_USER_ID
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.libraries.textcomposer.mentions.MentionSpanProvider
 import com.echo.libraries.textcomposer.mentions.MentionSpanTheme
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultHtmlConverterProviderTest : RobolectricTest() {
@@ -52,4 +52,3 @@ class DefaultHtmlConverterProviderTest : RobolectricTest() {
         assertThat(htmlConverter).isNotNull()
     }
 }
-

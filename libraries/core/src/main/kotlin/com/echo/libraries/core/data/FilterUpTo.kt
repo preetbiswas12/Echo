@@ -29,4 +29,3 @@ inline fun <T> Iterable<T>.filterUpTo(count: Int, predicate: (T) -> Boolean): Li
     }
     return result
 }
-

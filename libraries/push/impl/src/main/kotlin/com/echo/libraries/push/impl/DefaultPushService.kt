@@ -8,10 +8,6 @@
 
 package com.echo.libraries.push.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import dev.zacsweers.metro.binding
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.UserId
@@ -31,6 +27,10 @@ import com.echo.libraries.pushstore.api.UserPushStoreFactory
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretStore
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import dev.zacsweers.metro.binding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
@@ -206,4 +206,3 @@ class DefaultPushService(
         serviceUnregisteredHandler.handle(userId)
     }
 }
-

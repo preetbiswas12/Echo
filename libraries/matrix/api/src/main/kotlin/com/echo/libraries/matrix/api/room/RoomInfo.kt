@@ -84,4 +84,3 @@ data class RoomInfo(
     val aliases: List<RoomAlias>
         get() = listOfNotNull(canonicalAlias) + alternativeAliases
 }
-

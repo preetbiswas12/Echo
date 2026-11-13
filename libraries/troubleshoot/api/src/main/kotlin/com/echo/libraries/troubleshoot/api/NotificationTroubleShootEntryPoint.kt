@@ -25,4 +25,3 @@ interface NotificationTroubleShootEntryPoint : FeatureEntryPoint {
         fun navigateToBlockedUsers()
     }
 }
-

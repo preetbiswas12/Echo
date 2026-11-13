@@ -48,4 +48,3 @@ val ULong.gigaBytes get() = ByteSize(toLong(), ByteUnit.GB)
 val ULong.megaBytes get() = ByteSize(toLong(), ByteUnit.MB)
 val ULong.kiloBytes get() = ByteSize(toLong(), ByteUnit.KB)
 val ULong.bytes get() = ByteSize(toLong(), ByteUnit.BYTES)
-

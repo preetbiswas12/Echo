@@ -40,4 +40,3 @@ suspend fun MatrixWidgetSettings.generateWidgetWebViewUrl(
         theme = theme,
     )
 )
-

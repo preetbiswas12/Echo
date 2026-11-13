@@ -19,4 +19,3 @@ internal sealed class CreatePollException : Exception() {
         override val cause: Throwable?
     ) : CreatePollException()
 }
-

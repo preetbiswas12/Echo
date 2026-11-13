@@ -19,4 +19,3 @@ class FakeCancelKnockRoom(
         lambda(roomId)
     }
 }
-

@@ -116,4 +116,3 @@ class DefaultServiceUnregisteredHandlerTest {
         sessionStore = sessionStore,
     )
 }
-

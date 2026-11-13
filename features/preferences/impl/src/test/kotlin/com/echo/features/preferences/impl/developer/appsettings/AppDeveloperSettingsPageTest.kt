@@ -102,4 +102,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setAppDeveloperSettingsView(
         )
     }
 }
-

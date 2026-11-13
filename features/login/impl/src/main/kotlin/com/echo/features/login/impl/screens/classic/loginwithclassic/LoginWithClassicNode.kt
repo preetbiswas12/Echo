@@ -13,9 +13,6 @@ import androidx.compose.ui.platform.LocalContext
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.login.impl.util.openLearnMorePage
 import com.echo.libraries.architecture.NodeInputs
@@ -23,6 +20,9 @@ import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.inputs
 import com.echo.libraries.matrix.api.auth.OAuthDetails
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(AppScope::class)
 @AssistedInject
@@ -65,4 +65,3 @@ class LoginWithClassicNode(
         )
     }
 }
-

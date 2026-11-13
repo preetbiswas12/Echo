@@ -15,4 +15,3 @@ fun aTimelineProtectionState(
     protectionState = protectionState,
     eventSink = eventSink,
 )
-

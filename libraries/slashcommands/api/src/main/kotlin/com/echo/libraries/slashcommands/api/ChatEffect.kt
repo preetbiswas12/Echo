@@ -11,4 +11,3 @@ enum class ChatEffect {
     CONFETTI,
     SNOWFALL
 }
-

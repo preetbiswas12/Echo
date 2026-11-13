@@ -31,8 +31,6 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.text.buildSpannedString
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.compound.theme.ElementTheme
 import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
@@ -47,6 +45,8 @@ import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.persistentListOf
 
 /**
@@ -290,4 +290,3 @@ internal fun MentionSpanThemeInTimelinePreview() = ElementPreview {
         }
     }
 }
-

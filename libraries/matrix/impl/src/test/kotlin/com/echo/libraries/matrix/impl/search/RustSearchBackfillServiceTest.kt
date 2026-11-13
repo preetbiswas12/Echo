@@ -7,7 +7,6 @@
 
 package com.echo.libraries.matrix.impl.search
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.search.SearchBackfillStrategy
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
@@ -20,6 +19,7 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestWrapper
 import com.echo.libraries.workmanager.test.FakeWorkManagerScheduler
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.TaskHandle
@@ -196,4 +196,3 @@ class RustSearchBackfillServiceTest {
         workManagerScheduler = workManagerScheduler,
     )
 }
-

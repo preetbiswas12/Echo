@@ -14,4 +14,3 @@ object ElementCallConfig {
      */
     const val RINGING_CALL_DURATION_SECONDS = 90
 }
-

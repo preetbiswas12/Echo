@@ -8,7 +8,6 @@
 
 package com.echo.features.rageshake.impl.crash.ui
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rageshake.api.crash.CrashDetectionEvent
 import com.echo.features.rageshake.impl.crash.A_CRASH_DATA
 import com.echo.features.rageshake.impl.crash.DefaultCrashDetectionPresenter
@@ -17,6 +16,7 @@ import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flowOf
@@ -126,4 +126,3 @@ class CrashDetectionPresenterTest {
         rageshakeFeatureAvailability = { isFeatureAvailableFlow },
     )
 }
-

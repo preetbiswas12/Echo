@@ -40,4 +40,3 @@ fun anAttachmentThumbnailInfo(
     )
 
 const val A_BLUR_HASH = "TQF5:I_NtRE4kXt7Z#MwkCIARPjr"
-

@@ -14,4 +14,3 @@ sealed interface CreatePollMode {
     data object NewPoll : CreatePollMode
     data class EditPoll(val eventId: EventId) : CreatePollMode
 }
-

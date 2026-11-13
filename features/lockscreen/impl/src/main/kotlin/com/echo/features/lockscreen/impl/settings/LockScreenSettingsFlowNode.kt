@@ -19,8 +19,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.lockscreen.impl.pin.DefaultPinCodeManagerCallback
 import com.echo.features.lockscreen.impl.pin.PinCodeManager
@@ -31,6 +29,8 @@ import com.echo.libraries.architecture.BaseFlowNode
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.ui.common.nodes.emptyNode
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
@@ -132,4 +132,3 @@ class LockScreenSettingsFlowNode(
         BackstackView()
     }
 }
-

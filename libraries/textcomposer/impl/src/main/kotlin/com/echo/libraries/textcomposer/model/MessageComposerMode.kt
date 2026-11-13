@@ -61,4 +61,3 @@ fun MessageComposerMode.showCaptionCompatibilityWarning(): Boolean {
         else -> false
     }
 }
-

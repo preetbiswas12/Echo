@@ -29,4 +29,3 @@ class FakeFfiNotificationSettings(
         isOneToOne: Boolean,
     ): RoomNotificationSettings = roomNotificationSettings
 }
-

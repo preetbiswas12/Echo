@@ -8,11 +8,11 @@
 
 package com.echo.libraries.eventformatter.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.timeline.item.event.MembershipChange
 import com.echo.libraries.matrix.api.timeline.item.event.RoomMembershipContent
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 
 @Inject
@@ -135,4 +135,3 @@ class RoomMembershipContentFormatter(
         }
     }
 }
-

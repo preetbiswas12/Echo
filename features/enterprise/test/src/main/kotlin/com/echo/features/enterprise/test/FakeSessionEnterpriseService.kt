@@ -37,4 +37,3 @@ class FakeSessionEnterpriseService(
         return arePublicRoomsDisabledResult()
     }
 }
-

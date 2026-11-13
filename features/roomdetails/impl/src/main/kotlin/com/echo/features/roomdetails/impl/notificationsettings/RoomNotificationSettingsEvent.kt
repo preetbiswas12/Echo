@@ -17,4 +17,3 @@ sealed interface RoomNotificationSettingsEvent {
     data object ClearSetNotificationError : RoomNotificationSettingsEvent
     data object ClearRestoreDefaultError : RoomNotificationSettingsEvent
 }
-

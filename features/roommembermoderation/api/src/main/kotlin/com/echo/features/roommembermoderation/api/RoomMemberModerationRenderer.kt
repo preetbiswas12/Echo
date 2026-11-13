@@ -32,4 +32,3 @@ interface RoomMemberModerationRenderer {
         modifier: Modifier,
     )
 }
-

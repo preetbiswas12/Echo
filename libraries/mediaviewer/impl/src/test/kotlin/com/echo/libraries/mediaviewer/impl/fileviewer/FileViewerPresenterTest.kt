@@ -9,7 +9,6 @@ package com.echo.libraries.mediaviewer.impl.fileviewer
 
 import android.content.ActivityNotFoundException
 import androidx.core.net.toFile
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.filesize.FakeFileSizeFormatter
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.mimetype.MimeTypes
@@ -24,6 +23,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -98,4 +98,3 @@ class FileViewerPresenterTest : RobolectricTest() {
         localMediaActions = localMediaActions,
     )
 }
-

@@ -11,4 +11,3 @@ package com.echo.features.knockrequests.api.list
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 interface KnockRequestsListEntryPoint : SimpleFeatureEntryPoint
-

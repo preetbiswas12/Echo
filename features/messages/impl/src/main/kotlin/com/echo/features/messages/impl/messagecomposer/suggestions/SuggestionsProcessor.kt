@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.messagecomposer.suggestions
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.data.filterUpTo
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.RoomMember
@@ -19,6 +18,7 @@ import com.echo.libraries.slashcommands.api.SlashCommandService
 import com.echo.libraries.textcomposer.mentions.ResolvedSuggestion
 import com.echo.libraries.textcomposer.model.Suggestion
 import com.echo.libraries.textcomposer.model.SuggestionType
+import dev.zacsweers.metro.Inject
 
 /**
  * This class is responsible for processing suggestions when `@`, `/` or `#` are type in the composer.
@@ -149,4 +149,3 @@ class SuggestionsProcessor(
         private const val MAX_BATCH_ITEMS = 100
     }
 }
-

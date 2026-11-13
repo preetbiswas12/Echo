@@ -41,4 +41,3 @@ internal fun TimelineItemUnknownViewPreview() = ElementPreview {
         onContentLayoutChange = {},
     )
 }
-

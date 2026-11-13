@@ -7,8 +7,8 @@
 
 package com.echo.features.callnative.impl
 
-import io.element.android.call.api.ElementCallController
 import com.echo.libraries.matrix.api.core.SessionId
+import io.element.android.call.api.ElementCallController
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 
@@ -31,4 +31,3 @@ class FakeElementCallControllers(
     override fun withRunningCall(): ElementCallController? =
         controller?.takeIf { it.state.value != null }
 }
-

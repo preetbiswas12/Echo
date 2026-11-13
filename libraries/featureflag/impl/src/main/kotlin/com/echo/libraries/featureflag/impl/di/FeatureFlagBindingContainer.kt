@@ -8,13 +8,13 @@
 
 package com.echo.libraries.featureflag.impl.di
 
+import com.echo.libraries.featureflag.impl.FeatureFlagProvider
+import com.echo.libraries.featureflag.impl.PreferencesFeatureFlagProvider
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.ElementsIntoSet
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.featureflag.impl.FeatureFlagProvider
-import com.echo.libraries.featureflag.impl.PreferencesFeatureFlagProvider
 
 @BindingContainer
 @ContributesTo(AppScope::class)
@@ -30,4 +30,3 @@ object FeatureFlagBindingContainer {
         }
     }
 }
-

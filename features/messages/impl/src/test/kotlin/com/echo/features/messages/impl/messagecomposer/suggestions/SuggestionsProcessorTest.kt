@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.messagecomposer.suggestions
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.RoomMembersState
 import com.echo.libraries.matrix.api.room.RoomMembershipState
@@ -22,6 +21,7 @@ import com.echo.libraries.slashcommands.test.FakeSlashCommandService
 import com.echo.libraries.textcomposer.mentions.ResolvedSuggestion
 import com.echo.libraries.textcomposer.model.Suggestion
 import com.echo.libraries.textcomposer.model.SuggestionType
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -481,4 +481,3 @@ class SuggestionsProcessorTest {
         )
     }
 }
-

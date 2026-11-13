@@ -21,4 +21,3 @@ class FakeSignedOutEntryPoint(
         params: SignedOutEntryPoint.Params,
     ): Node = createNodeResult(buildContext, params)
 }
-

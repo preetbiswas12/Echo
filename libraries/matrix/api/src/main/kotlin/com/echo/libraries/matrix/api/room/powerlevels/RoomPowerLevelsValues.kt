@@ -22,4 +22,3 @@ data class RoomPowerLevelsValues(
     val beacon: Long,
     val beaconInfo: Long,
 )
-

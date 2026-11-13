@@ -64,4 +64,3 @@ fun aRichTextEditorState(
         initialFocus = initialFocus,
     )
 }
-

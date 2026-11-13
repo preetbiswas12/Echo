@@ -97,4 +97,3 @@ fun MessageLikeEventType.map(): MessageEventType = when (this) {
     MessageLikeEventType.Voice -> MessageEventType.Voice
     is MessageLikeEventType.Custom -> MessageEventType.Other(type = toString())
 }
-

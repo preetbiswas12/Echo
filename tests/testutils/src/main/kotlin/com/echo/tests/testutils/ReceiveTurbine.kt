@@ -68,4 +68,3 @@ suspend fun <T : Any> ReceiveTurbine<T>.consumeItemsUntilPredicate(
     }
     return items
 }
-

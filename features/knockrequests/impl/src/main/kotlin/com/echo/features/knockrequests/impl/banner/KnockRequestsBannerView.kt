@@ -233,4 +233,3 @@ internal fun KnockRequestsBannerViewPreview(@PreviewParameter(KnockRequestsBanne
         onViewRequestsClick = {},
     )
 }
-

@@ -9,12 +9,12 @@
 
 package com.echo.libraries.matrix.impl.search
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.search.MessageSearchPaginationState
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSearchServiceResult
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiSearchService
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
@@ -205,4 +205,3 @@ class RustMessageSearchTest {
         assertThat(closed).isTrue()
     }
 }
-

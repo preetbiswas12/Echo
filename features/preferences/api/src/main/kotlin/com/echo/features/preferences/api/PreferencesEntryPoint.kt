@@ -63,4 +63,3 @@ interface PreferencesEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

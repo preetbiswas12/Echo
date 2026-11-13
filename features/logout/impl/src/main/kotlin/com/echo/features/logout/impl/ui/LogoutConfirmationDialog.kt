@@ -27,4 +27,3 @@ fun LogoutConfirmationDialog(
         onDismiss = onDismiss,
     )
 }
-

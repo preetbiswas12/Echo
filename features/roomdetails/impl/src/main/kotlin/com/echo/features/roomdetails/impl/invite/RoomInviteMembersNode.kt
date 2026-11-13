@@ -16,9 +16,6 @@ import com.bumble.appyx.core.lifecycle.subscribe
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.annotations.ContributesNode
 import com.echo.features.invitepeople.api.InvitePeopleEvent
 import com.echo.features.invitepeople.api.InvitePeoplePresenter
@@ -31,6 +28,9 @@ import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.MobileScreen
 
 @ContributesNode(RoomScope::class)
 @AssistedInject
@@ -94,4 +94,3 @@ class RoomInviteMembersNode(
         }
     }
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.features.messages.impl.attachments
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.attachments.preview.SendActionState
 import com.echo.features.messages.impl.attachments.preview.aMediaUploadInfo
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class SendActionStateTest {
@@ -35,4 +35,3 @@ class SendActionStateTest {
         assertThat(state.mediaUploadInfoList()).isEqualTo(data)
     }
 }
-

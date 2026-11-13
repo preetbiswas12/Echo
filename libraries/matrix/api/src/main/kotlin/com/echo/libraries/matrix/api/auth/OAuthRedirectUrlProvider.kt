@@ -15,4 +15,3 @@ interface OAuthRedirectUrlProvider {
     /** Returns the redirect URL, built from the app's custom URL scheme so that the system hands the callback back to the app. */
     fun provide(): String
 }
-

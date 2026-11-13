@@ -33,4 +33,3 @@ fun TooltipScope.PlainTooltip(
     shape = shape,
     content = content,
 )
-

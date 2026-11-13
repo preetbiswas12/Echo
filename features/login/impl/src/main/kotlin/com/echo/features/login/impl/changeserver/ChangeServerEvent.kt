@@ -16,4 +16,3 @@ sealed interface ChangeServerEvent {
     data object RequestLocalNetworkPermission : ChangeServerEvent
     data object DismissLocalNetworkPermission : ChangeServerEvent
 }
-

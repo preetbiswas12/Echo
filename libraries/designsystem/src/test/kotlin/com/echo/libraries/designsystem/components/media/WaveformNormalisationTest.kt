@@ -38,4 +38,3 @@ class WaveformNormalisationTest {
         assertThat(waveform.normalisedData(3)).hasSize(3)
     }
 }
-

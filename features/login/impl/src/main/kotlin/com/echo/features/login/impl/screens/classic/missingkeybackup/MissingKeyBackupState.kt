@@ -10,4 +10,3 @@ package com.echo.features.login.impl.screens.classic.missingkeybackup
 data class MissingKeyBackupState(
     val appName: String,
 )
-

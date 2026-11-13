@@ -19,4 +19,3 @@ class FakeUserPushStoreFactory(
         return userPushStore(userId)
     }
 }
-

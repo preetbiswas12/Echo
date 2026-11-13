@@ -33,4 +33,3 @@ interface ThreadsListService {
     /** Releases the SDK resources and stops the item subscription; the service is unusable afterwards. */
     fun destroy()
 }
-

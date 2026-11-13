@@ -16,10 +16,10 @@ import android.os.PowerManager
 import android.provider.Settings
 import androidx.core.content.getSystemService
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.services.toolbox.api.intent.ExternalIntentLauncher
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 interface BatteryOptimization {
@@ -83,4 +83,3 @@ class AndroidBatteryOptimization(
         }
     }
 }
-

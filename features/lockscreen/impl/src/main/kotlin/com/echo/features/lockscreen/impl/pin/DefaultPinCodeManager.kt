@@ -8,13 +8,13 @@
 
 package com.echo.features.lockscreen.impl.pin
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.lockscreen.impl.storage.LockScreenStore
 import com.echo.libraries.cryptography.api.EncryptionDecryptionService
 import com.echo.libraries.cryptography.api.EncryptionResult
 import com.echo.libraries.cryptography.api.SecretKeyRepository
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.onStart
@@ -102,4 +102,3 @@ class DefaultPinCodeManager(
         return lockScreenStore.getRemainingPinCodeAttemptsNumber()
     }
 }
-

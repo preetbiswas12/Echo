@@ -140,4 +140,3 @@ internal fun CallMenuItemPreview(
         onJoinCallClick = {}
     )
 }
-

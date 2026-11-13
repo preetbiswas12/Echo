@@ -49,4 +49,3 @@ interface ActiveLiveLocationShareManager {
 fun ActiveLiveLocationShareManager.isCurrentlySharing(roomId: RoomId): StateFlow<Boolean> {
     return sharingRoomIds.mapState { roomId in it }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.notification
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.exception.NotificationResolverException
 import com.echo.libraries.matrix.api.notification.NotificationContent
 import com.echo.libraries.matrix.api.timeline.item.event.TextMessageType
@@ -27,6 +26,7 @@ import com.echo.services.toolbox.api.systemclock.SystemClock
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -119,4 +119,3 @@ class RustNotificationServiceTest {
             clock = clock,
         )
 }
-

@@ -18,4 +18,3 @@ sealed interface LeaveSpaceEvent {
     data object LeaveSpace : LeaveSpaceEvent
     data object CloseError : LeaveSpaceEvent
 }
-

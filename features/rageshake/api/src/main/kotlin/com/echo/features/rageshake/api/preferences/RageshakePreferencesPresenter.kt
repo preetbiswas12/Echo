@@ -11,4 +11,3 @@ package com.echo.features.rageshake.api.preferences
 import com.echo.libraries.architecture.Presenter
 
 interface RageshakePreferencesPresenter : Presenter<RageshakePreferencesState>
-

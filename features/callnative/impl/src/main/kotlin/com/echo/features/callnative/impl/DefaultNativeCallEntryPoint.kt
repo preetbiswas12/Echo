@@ -11,15 +11,15 @@ import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
+import com.echo.features.call.api.CallData
+import com.echo.features.callnative.api.NativeCallEntryPoint
+import com.echo.libraries.di.annotations.AppCoroutineScope
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import io.element.android.call.api.ElementCallData
 import io.element.android.call.api.rtc.id.RoomId
 import io.element.android.call.ui.ElementCallActivity
-import com.echo.features.call.api.CallData
-import com.echo.features.callnative.api.NativeCallEntryPoint
-import com.echo.libraries.di.annotations.AppCoroutineScope
-import com.echo.libraries.di.annotations.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -78,4 +78,3 @@ class DefaultNativeCallEntryPoint(
     private fun hasMicrophonePermission(): Boolean =
         ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED
 }
-

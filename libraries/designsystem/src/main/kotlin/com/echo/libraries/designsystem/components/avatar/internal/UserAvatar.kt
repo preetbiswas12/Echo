@@ -32,4 +32,3 @@ internal fun UserAvatar(
         forcedAvatarSize = forcedAvatarSize,
     )
 }
-

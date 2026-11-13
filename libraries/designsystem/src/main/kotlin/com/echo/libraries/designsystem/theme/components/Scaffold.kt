@@ -44,4 +44,3 @@ fun Scaffold(
         content = content,
     )
 }
-

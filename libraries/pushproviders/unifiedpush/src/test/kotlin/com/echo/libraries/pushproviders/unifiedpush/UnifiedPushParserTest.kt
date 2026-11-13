@@ -8,12 +8,12 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.json.DefaultJsonProvider
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.pushproviders.api.PushData
 import com.echo.tests.testutils.assertThrowsInDebug
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class UnifiedPushParserTest {
@@ -87,4 +87,3 @@ private fun String.mutate(oldValue: String, newValue: String): ByteArray {
 fun createUnifiedPushParser() = UnifiedPushParser(
     json = DefaultJsonProvider(),
 )
-

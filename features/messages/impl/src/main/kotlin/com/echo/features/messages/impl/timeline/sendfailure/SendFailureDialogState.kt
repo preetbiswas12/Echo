@@ -28,4 +28,3 @@ sealed interface SendFailureDialogState {
         data object Unknown : SendFailureType
     }
 }
-

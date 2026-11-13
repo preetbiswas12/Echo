@@ -10,7 +10,6 @@ package com.echo.features.preferences.impl.tasks
 
 import androidx.test.platform.app.InstrumentationRegistry
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.invite.test.InMemorySeenInvitesStore
 import com.echo.features.preferences.impl.DefaultCacheService
 import com.echo.libraries.matrix.api.core.SessionId
@@ -24,6 +23,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import okhttp3.OkHttpClient
@@ -69,4 +69,3 @@ class DefaultClearCacheUseCaseTest : RobolectricTest() {
         }
     }
 }
-

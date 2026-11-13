@@ -32,4 +32,3 @@ sealed interface RoomListEvent {
     data class MarkAsUnread(val roomId: RoomId) : ContextMenuEvent
     data class SetRoomIsFavorite(val roomId: RoomId, val isFavorite: Boolean) : ContextMenuEvent
 }
-

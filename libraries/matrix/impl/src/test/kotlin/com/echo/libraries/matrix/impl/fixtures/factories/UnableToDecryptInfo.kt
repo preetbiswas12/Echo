@@ -28,4 +28,3 @@ internal fun aRustUnableToDecryptInfo(
     senderHomeserver = senderHomeserver,
     ownHomeserver = ownHomeserver,
 )
-

@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.room.alias
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.room.alias.RoomAliasHelper
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomAliasHelper : RoomAliasHelper {
@@ -23,4 +23,3 @@ class DefaultRoomAliasHelper : RoomAliasHelper {
         return org.matrix.rustcomponents.sdk.isRoomAliasFormatValid(roomAlias.value)
     }
 }
-

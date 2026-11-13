@@ -22,4 +22,3 @@ data class TimelineItemTextContent(
     override val type: String = "TimelineItemTextContent"
     override val plainText: String = htmlDocument?.toPlainText() ?: body
 }
-

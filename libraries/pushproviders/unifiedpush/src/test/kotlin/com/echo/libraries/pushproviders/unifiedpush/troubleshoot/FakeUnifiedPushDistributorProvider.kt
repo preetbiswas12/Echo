@@ -22,4 +22,3 @@ class FakeUnifiedPushDistributorProvider(
         getDistributorsResult = list
     }
 }
-

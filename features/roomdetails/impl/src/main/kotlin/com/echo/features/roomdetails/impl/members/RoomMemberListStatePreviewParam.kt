@@ -179,4 +179,3 @@ private fun RoomMember.withIdentity(identityState: IdentityState? = null, isInCa
     identityState,
     isInCall
 )
-

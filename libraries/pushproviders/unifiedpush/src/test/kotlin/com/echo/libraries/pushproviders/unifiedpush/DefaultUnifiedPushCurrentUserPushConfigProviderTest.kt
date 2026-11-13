@@ -8,12 +8,12 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_SECRET
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.pushproviders.api.Config
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
 import com.echo.libraries.pushstore.test.userpushstore.clientsecret.FakePushClientSecret
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -72,4 +72,3 @@ class DefaultUnifiedPushCurrentUserPushConfigProviderTest {
         )
     }
 }
-

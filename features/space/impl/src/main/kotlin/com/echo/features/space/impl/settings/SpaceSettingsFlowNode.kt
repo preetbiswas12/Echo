@@ -16,8 +16,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.rolesandpermissions.api.RolesAndPermissionsEntryPoint
 import com.echo.features.roomdetailsedit.api.RoomDetailsEditEntryPoint
@@ -27,6 +25,8 @@ import com.echo.libraries.architecture.BackstackView
 import com.echo.libraries.architecture.BaseFlowNode
 import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SpaceFlowScope::class)
@@ -143,4 +143,3 @@ class SpaceSettingsFlowNode(
 fun initialElement(plugins: List<Plugin>): SpaceSettingsFlowNode.NavTarget {
     return plugins.callback<SpaceSettingsFlowNode.Callback>().initialTarget()
 }
-

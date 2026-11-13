@@ -16,4 +16,3 @@ enum class SelectionMode {
     Single,
     Multiple,
 }
-

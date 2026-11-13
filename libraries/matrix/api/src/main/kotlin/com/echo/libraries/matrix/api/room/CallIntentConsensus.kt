@@ -41,4 +41,3 @@ sealed interface CallIntentConsensus {
      */
     data object None : CallIntentConsensus
 }
-

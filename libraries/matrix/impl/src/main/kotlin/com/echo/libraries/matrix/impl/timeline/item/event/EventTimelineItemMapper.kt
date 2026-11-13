@@ -205,4 +205,3 @@ private fun EventOrTransactionId.eventId(): EventId? {
 private fun EventOrTransactionId.transactionId(): TransactionId? {
     return (this as? EventOrTransactionId.TransactionId)?.let { TransactionId(it.transactionId) }
 }
-

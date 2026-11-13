@@ -9,7 +9,6 @@
 package com.echo.features.messages.impl.messagecomposer
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.messagecomposer.suggestions.DefaultRoomAliasSuggestionsDataSource
 import com.echo.features.messages.impl.messagecomposer.suggestions.RoomAliasSuggestion
 import com.echo.libraries.matrix.test.A_ROOM_ALIAS
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.libraries.matrix.test.room.aRoomSummary
 import com.echo.libraries.matrix.test.roomlist.FakeDynamicRoomList
 import com.echo.libraries.matrix.test.roomlist.FakeRoomListService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -54,4 +54,3 @@ class DefaultRoomAliasSuggestionsDataSourceTest {
         }
     }
 }
-

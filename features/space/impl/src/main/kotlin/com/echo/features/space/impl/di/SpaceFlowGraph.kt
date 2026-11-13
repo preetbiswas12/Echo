@@ -8,12 +8,12 @@
 
 package com.echo.features.space.impl.di
 
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.GraphExtension
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.architecture.NodeFactoriesBindings
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.spaces.SpaceRoomList
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.GraphExtension
+import dev.zacsweers.metro.Provides
 
 @GraphExtension(SpaceFlowScope::class)
 interface SpaceFlowGraph : NodeFactoriesBindings {
@@ -23,4 +23,3 @@ interface SpaceFlowGraph : NodeFactoriesBindings {
         fun create(@Provides spaceRoomList: SpaceRoomList): SpaceFlowGraph
     }
 }
-

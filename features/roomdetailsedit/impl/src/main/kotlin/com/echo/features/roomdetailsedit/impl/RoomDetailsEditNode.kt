@@ -14,12 +14,12 @@ import com.bumble.appyx.core.lifecycle.subscribe
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.annotations.ContributesNode
 import com.echo.libraries.di.RoomScope
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.MobileScreen
 
 @ContributesNode(RoomScope::class)
 @AssistedInject
@@ -47,4 +47,3 @@ class RoomDetailsEditNode(
         )
     }
 }
-

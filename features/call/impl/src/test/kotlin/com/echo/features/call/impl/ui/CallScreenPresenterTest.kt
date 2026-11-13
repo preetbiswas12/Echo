@@ -11,8 +11,6 @@ package com.echo.features.call.impl.ui
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.features.call.api.CallData
 import com.echo.features.call.impl.utils.FakeActiveCallManager
 import com.echo.features.call.impl.utils.FakeCallWidgetProvider
@@ -38,6 +36,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.MobileScreen
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.launch
@@ -332,4 +332,3 @@ class CallScreenPresenterTest {
         )
     }
 }
-

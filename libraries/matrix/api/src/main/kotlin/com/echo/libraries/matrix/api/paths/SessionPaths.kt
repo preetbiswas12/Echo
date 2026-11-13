@@ -18,4 +18,3 @@ data class SessionPaths(
         cacheDirectory.deleteRecursively()
     }
 }
-

@@ -38,4 +38,3 @@ internal fun ShareViewPreview(@PreviewParameter(ShareStatePreviewParam::class) s
         onShareSuccess = {}
     )
 }
-

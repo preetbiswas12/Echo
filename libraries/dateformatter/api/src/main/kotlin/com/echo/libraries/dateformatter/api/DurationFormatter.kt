@@ -60,4 +60,3 @@ fun Long.toHumanReadableDuration(): String {
 }
 
 fun Duration.toHumanReadableDuration() = inWholeMilliseconds.toHumanReadableDuration()
-

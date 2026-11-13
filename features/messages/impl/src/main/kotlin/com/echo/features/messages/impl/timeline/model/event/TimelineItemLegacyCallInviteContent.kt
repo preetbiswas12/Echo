@@ -14,4 +14,3 @@ data object TimelineItemLegacyCallInviteContent : TimelineItemEventContent {
     override val type: String
         get() = EventType.CALL_INVITE
 }
-

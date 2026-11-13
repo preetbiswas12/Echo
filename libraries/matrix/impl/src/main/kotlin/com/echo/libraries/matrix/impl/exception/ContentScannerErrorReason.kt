@@ -32,4 +32,3 @@ fun ContentScannerErrorReason.Companion.fromRust(reason: ErrorReason) = when (re
     MCS_BAD_DECRYPTION -> ContentScannerErrorReason.MCS_BAD_DECRYPTION
     MCS_MEDIA_REQUEST_FAILED -> ContentScannerErrorReason.MCS_MEDIA_REQUEST_FAILED
 }
-

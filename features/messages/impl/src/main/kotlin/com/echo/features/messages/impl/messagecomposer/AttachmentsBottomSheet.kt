@@ -164,4 +164,3 @@ internal fun AttachmentsBottomSheetPreview() = ElementPreview(fillMaxSize = true
         enableTextFormatting = true,
     )
 }
-

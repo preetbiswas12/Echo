@@ -21,4 +21,3 @@ class FakeRoomDirectoryList(
 
     override suspend fun loadMore(): Result<Unit> = loadMoreLambda()
 }
-

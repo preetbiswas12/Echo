@@ -50,4 +50,3 @@ fun RoomPermissions.securityAndPrivacyPermissions(): SecurityAndPrivacyPermissio
         canChangeRoomVisibility = canOwnUserSendState(StateEventType.RoomCanonicalAlias),
     )
 }
-

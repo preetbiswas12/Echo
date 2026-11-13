@@ -40,4 +40,3 @@ data class RoomSelectState(
      */
     val showAccountSwitch = mode == RoomSelectMode.Share && otherAccounts.isNotEmpty()
 }
-

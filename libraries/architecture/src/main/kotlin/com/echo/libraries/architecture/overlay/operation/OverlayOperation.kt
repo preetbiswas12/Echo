@@ -12,4 +12,3 @@ import com.bumble.appyx.core.navigation.Operation
 import com.bumble.appyx.navmodel.backstack.BackStack
 
 interface OverlayOperation<T> : Operation<T, BackStack.State>
-

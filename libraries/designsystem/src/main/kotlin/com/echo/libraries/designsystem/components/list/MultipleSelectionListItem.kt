@@ -149,4 +149,3 @@ internal fun MutipleSelectionListItemSelectedTrailingContentPreview() {
 private fun formatResult(result: List<Int>, options: ImmutableList<ListOption>): String? {
     return options.mapIndexedNotNull { index, value -> value.title.takeIf { result.contains(index) } }.joinToString(", ").takeIf { it.isNotEmpty() }
 }
-

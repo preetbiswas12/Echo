@@ -70,4 +70,3 @@ private fun aSenderNameData(
     userId = userId,
     profileDetails = profileDetails,
 )
-

@@ -7,10 +7,10 @@
 
 package com.echo.libraries.push.impl.notifications.factories
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_THREAD_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class NotificationCreatorTest {
@@ -34,4 +34,3 @@ class NotificationCreatorTest {
         assertThat(NotificationCreator.getMessageNotificationRoomId("")).isNull()
     }
 }
-

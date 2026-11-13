@@ -19,4 +19,3 @@ fun RustBeaconInfoUpdate.map(): BeaconInfoUpdate {
         isLive = live
     )
 }
-

@@ -8,11 +8,11 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.ContributesBinding
 
 fun interface FocusedTimelineMediaGalleryDataSourceFactory {
     fun createFor(
@@ -46,4 +46,3 @@ class DefaultFocusedTimelineMediaGalleryDataSourceFactory(
         )
     }
 }
-

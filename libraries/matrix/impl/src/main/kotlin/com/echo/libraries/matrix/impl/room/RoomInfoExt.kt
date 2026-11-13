@@ -45,4 +45,3 @@ internal fun Room.roomInfoUpdates(dispatchers: CoroutineDispatchers): Flow<RoomI
         }
     )
 }.flowOn(dispatchers.io)
-

@@ -14,14 +14,14 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runCatchingUpdatingState
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.room.alias.ResolvedRoomAlias
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
@@ -75,4 +75,3 @@ class RoomAliasResolverPresenter(
 }
 
 private const val ALIAS_RESOLVE_TIMEOUT_IN_SECONDS = 10
-

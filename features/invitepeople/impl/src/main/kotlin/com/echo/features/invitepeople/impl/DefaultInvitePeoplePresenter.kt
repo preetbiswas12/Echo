@@ -20,10 +20,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invitepeople.api.InvitePeopleEvent
 import com.echo.features.invitepeople.api.InvitePeoplePresenter
 import com.echo.features.invitepeople.api.InvitePeopleState
@@ -53,6 +49,10 @@ import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.libraries.usersearch.api.UserRepository
 import com.echo.services.apperror.api.AppErrorStateService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -366,4 +366,3 @@ class DefaultInvitePeoplePresenter(
         }.runCatchingUpdatingState(roomMembers)
     }
 }
-

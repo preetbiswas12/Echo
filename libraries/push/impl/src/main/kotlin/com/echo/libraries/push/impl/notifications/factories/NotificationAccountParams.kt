@@ -16,4 +16,3 @@ data class NotificationAccountParams(
     @ColorInt val color: Int,
     val showSessionId: Boolean,
 )
-

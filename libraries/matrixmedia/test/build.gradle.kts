@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.tests.testutils)
     implementation(libs.coil.compose)
 }
-
-

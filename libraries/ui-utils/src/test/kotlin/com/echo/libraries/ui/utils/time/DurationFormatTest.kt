@@ -42,4 +42,3 @@ class DurationFormatTest(
         assertEquals(output, seconds.seconds.formatShort())
     }
 }
-

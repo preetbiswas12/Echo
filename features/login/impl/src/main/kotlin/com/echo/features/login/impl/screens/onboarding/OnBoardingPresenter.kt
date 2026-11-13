@@ -17,9 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.appconfig.OnBoardingConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.login.impl.accesscontrol.DefaultAccountProviderAccessControl
@@ -33,6 +30,9 @@ import com.echo.libraries.core.meta.BuildType
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.ui.utils.MultipleTapToUnlock
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -152,4 +152,3 @@ class OnBoardingPresenter(
         )
     }
 }
-

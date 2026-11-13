@@ -45,4 +45,3 @@ fun aSessionData(
         userAvatarData = userAvatarData,
     )
 }
-

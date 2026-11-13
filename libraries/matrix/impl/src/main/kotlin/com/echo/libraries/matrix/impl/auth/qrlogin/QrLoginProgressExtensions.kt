@@ -20,4 +20,3 @@ fun QrLoginProgress.toStep(): QrCodeLoginStep {
         is QrLoginProgress.Done -> QrCodeLoginStep.Finished
     }
 }
-

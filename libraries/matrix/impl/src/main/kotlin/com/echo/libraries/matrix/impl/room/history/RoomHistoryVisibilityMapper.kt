@@ -30,4 +30,3 @@ fun RustRoomHistoryVisibility.map(): RoomHistoryVisibility {
         is RustRoomHistoryVisibility.Custom -> RoomHistoryVisibility.Custom(value)
     }
 }
-

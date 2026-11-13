@@ -242,4 +242,3 @@ internal fun TimelineItemReadReceiptViewPreview(
         )
     }
 }
-

@@ -99,4 +99,3 @@ internal fun UnresolvedUserRowPreview() = ElementThemedPreview {
         UnresolvedUserRow(matrixUser.getAvatarData(size = AvatarSize.UserListItem), matrixUser.userId.value, enabled = false)
     }
 }
-

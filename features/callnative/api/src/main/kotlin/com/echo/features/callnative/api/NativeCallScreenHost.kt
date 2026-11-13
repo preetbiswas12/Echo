@@ -18,4 +18,3 @@ import io.element.android.call.ui.ElementCallActivity
  * implements [ElementCallActivity.Host] by forwarding every member here.
  */
 interface NativeCallScreenHost : ElementCallActivity.Host
-

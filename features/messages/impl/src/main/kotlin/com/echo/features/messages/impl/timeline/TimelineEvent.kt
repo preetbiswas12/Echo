@@ -77,4 +77,3 @@ sealed interface TimelineEvent {
         val validationState: ContentValidationState
     ) : TimelineItemEvent
 }
-

@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.attachments.preview
 fun interface OnDoneListener {
     operator fun invoke()
 }
-

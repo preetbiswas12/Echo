@@ -8,14 +8,14 @@
 
 package com.echo.libraries.matrix.impl.widget
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
 import com.echo.libraries.matrix.api.widget.CallAnalyticCredentialsProvider
 import com.echo.libraries.matrix.api.widget.CallWidgetSettingsProvider
 import com.echo.libraries.matrix.api.widget.MatrixWidgetSettings
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 import org.matrix.rustcomponents.sdk.newVirtualElementCallWidget
 import timber.log.Timber
@@ -78,4 +78,3 @@ class DefaultCallWidgetSettingsProvider(
         return MatrixWidgetSettings.fromRustWidgetSettings(rustWidgetSettings)
     }
 }
-

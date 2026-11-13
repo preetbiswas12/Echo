@@ -15,4 +15,3 @@ sealed interface AnnouncementEvent {
         val announcement: Announcement.Fullscreen,
     ) : AnnouncementEvent
 }
-

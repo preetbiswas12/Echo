@@ -28,4 +28,3 @@ data class NotificationTroubleshootTestState(
         ) : Status
     }
 }
-

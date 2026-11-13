@@ -14,4 +14,3 @@ import io.element.android.wysiwyg.link.Link
 data class ConfirmingLinkClick(
     val link: Link,
 ) : AsyncAction.Confirming
-

@@ -25,4 +25,3 @@ sealed interface AvatarType {
         val isTombstoned: Boolean = false,
     ) : AvatarType
 }
-

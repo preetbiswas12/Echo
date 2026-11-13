@@ -15,4 +15,3 @@ import kotlinx.coroutines.flow.emptyFlow
 class FakeCacheService(
     override val clearedCacheEventFlow: Flow<SessionId> = emptyFlow(),
 ) : CacheService
-

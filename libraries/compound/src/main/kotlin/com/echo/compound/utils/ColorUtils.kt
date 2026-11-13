@@ -16,4 +16,3 @@ import androidx.compose.ui.graphics.Color
 fun Color.toHrf(): String {
     return "0x" + value.toString(16).take(8).uppercase()
 }
-

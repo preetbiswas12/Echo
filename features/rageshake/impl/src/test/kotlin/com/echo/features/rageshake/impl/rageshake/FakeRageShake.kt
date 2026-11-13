@@ -30,4 +30,3 @@ class FakeRageShake(
 
     fun triggerPhoneRageshake() = interceptor?.invoke()
 }
-

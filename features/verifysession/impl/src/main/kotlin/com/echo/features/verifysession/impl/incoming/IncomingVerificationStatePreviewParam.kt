@@ -99,4 +99,3 @@ internal fun anIncomingVerificationState(
     request = verificationRequest,
     eventSink = eventSink,
 )
-

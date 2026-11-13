@@ -8,8 +8,8 @@
 
 package com.echo.libraries.dateformatter.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 
 @Inject
 class DateFormatterFull(
@@ -38,4 +38,3 @@ class DateFormatterFull(
         }
     }
 }
-

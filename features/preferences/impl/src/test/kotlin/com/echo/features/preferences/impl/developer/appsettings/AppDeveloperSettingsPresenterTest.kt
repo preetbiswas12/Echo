@@ -9,7 +9,6 @@
 
 package com.echo.features.preferences.impl.developer.appsettings
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.preferences.impl.developer.tracing.LogLevelItem
 import com.echo.features.rageshake.api.preferences.aRageshakePreferencesState
 import com.echo.libraries.androidutils.clipboard.ClipboardHelper
@@ -27,6 +26,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -217,4 +217,3 @@ class AppDeveloperSettingsPresenterTest {
         )
     }
 }
-

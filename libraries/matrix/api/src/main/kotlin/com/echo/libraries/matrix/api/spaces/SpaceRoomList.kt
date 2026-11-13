@@ -64,4 +64,3 @@ fun SpaceRoomList.loadAllIncrementally(coroutineScope: CoroutineScope) {
         }
         .launchIn(coroutineScope)
 }
-

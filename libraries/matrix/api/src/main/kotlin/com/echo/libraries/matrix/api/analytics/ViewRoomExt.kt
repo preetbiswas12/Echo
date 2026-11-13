@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.api.analytics
 
-import im.vector.app.features.analytics.plan.ViewRoom
 import com.echo.libraries.matrix.api.room.BaseRoom
+import im.vector.app.features.analytics.plan.ViewRoom
 
 fun BaseRoom.toAnalyticsViewRoom(
     trigger: ViewRoom.Trigger? = null,
@@ -30,4 +30,3 @@ fun BaseRoom.toAnalyticsViewRoom(
 private fun BaseRoom.toActiveSpace(): ViewRoom.ActiveSpace {
     return if (info().isPublic == true) ViewRoom.ActiveSpace.Public else ViewRoom.ActiveSpace.Private
 }
-

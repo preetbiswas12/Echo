@@ -46,7 +46,6 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.compound.theme.ElementTheme
 import com.echo.compound.tokens.generated.CompoundIcons
 import com.echo.features.messages.impl.R
@@ -61,6 +60,7 @@ import com.echo.libraries.designsystem.utils.annotatedTextWithBold
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.services.analytics.compose.LocalAnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import im.vector.app.features.analytics.plan.Interaction
 
 @Composable
 fun PinnedMessagesBannerView(
@@ -303,4 +303,3 @@ internal fun PinnedMessagesBannerViewPreview(@PreviewParameter(
         onViewAllClick = {},
     )
 }
-

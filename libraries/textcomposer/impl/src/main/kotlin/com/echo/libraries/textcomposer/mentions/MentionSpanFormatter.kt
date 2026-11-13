@@ -8,12 +8,12 @@
 
 package com.echo.libraries.textcomposer.mentions
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.ui.messages.RoomMemberProfilesCache
 import com.echo.libraries.matrix.ui.messages.RoomNamesCache
+import dev.zacsweers.metro.ContributesBinding
 
 private const val EVERYONE_DISPLAY_TEXT = "@room"
 private const val BUBBLE_ICON = "\uD83D\uDCAC" // 💬
@@ -73,4 +73,3 @@ class DefaultMentionSpanFormatter(
         return "$BUBBLE_ICON > $roomMention"
     }
 }
-

@@ -21,4 +21,3 @@ interface AccountProviderAccessControl {
      */
     suspend fun isAllowedToConnectToAccountProvider(accountProvider: AccountProvider): Boolean
 }
-

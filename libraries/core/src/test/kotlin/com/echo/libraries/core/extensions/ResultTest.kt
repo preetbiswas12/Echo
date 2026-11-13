@@ -57,4 +57,3 @@ class ResultTest {
         assertThat(mapErrorAndCatch.exceptionOrNull()?.message).isEqualTo("initial error")
     }
 }
-

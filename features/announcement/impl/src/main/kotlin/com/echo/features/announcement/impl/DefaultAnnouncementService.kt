@@ -10,13 +10,13 @@ package com.echo.features.announcement.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
 import com.echo.features.announcement.impl.fullscreen.FullscreenAnnouncementView
 import com.echo.features.announcement.impl.store.AnnouncementStatus
 import com.echo.features.announcement.impl.store.AnnouncementStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
@@ -82,4 +82,3 @@ class DefaultAnnouncementService(
         )
     }
 }
-

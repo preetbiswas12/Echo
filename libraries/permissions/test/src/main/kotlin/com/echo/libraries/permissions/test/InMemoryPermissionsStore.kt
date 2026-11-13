@@ -38,4 +38,3 @@ class InMemoryPermissionsStore(
 
     override suspend fun resetStore() = Unit
 }
-

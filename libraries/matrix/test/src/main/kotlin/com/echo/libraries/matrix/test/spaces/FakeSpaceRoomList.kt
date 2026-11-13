@@ -62,4 +62,3 @@ class FakeSpaceRoomList(
         // No op
     }
 }
-

@@ -12,4 +12,3 @@ sealed interface KnockRequestsBannerEvent {
     data object AcceptSingleRequest : KnockRequestsBannerEvent
     data object Dismiss : KnockRequestsBannerEvent
 }
-

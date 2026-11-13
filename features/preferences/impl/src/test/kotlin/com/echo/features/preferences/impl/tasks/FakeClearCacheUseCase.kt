@@ -18,4 +18,3 @@ class FakeClearCacheUseCase : ClearCacheUseCase {
         executeHasBeenCalled = true
     }
 }
-

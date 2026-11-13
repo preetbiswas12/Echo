@@ -17,4 +17,3 @@ object AESEncryptionSpecs {
     const val KEY_SIZE = 128
     const val CIPHER_TRANSFORMATION = "$ALGORITHM/$BLOCK_MODE/$PADDINGS"
 }
-

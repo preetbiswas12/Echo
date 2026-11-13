@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.troubleshoot
 
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.push.api.PushService
@@ -20,6 +19,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestDele
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.services.toolbox.api.strings.StringProvider
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
@@ -119,4 +119,3 @@ class PushLoopbackTest(
 
     override suspend fun reset() = delegate.reset()
 }
-

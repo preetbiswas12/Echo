@@ -20,4 +20,3 @@ class FakeMessageSummaryFormatter : MessageSummaryFormatter {
         result = value
     }
 }
-

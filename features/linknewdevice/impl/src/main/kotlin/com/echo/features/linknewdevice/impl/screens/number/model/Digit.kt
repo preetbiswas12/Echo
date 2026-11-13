@@ -21,4 +21,3 @@ sealed interface Digit {
         }
     }
 }
-

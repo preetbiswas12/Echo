@@ -38,4 +38,3 @@ val lazyColumnContentPadding @Composable
 val scaffoldScrollableContentInsets @Composable
     get() = WindowInsets.safeDrawing
         .only(WindowInsetsSides.Top)
-

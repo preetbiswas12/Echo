@@ -21,4 +21,3 @@ class MyClass {
 
 // This class should be named FakeMyClassMyFactory
 class FakeWrongClassSubInterfaceName : MyClass.MyFactory
-

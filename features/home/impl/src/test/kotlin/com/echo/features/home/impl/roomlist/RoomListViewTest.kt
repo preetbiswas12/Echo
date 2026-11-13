@@ -345,4 +345,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setRoomListView(
         )
     }
 }
-

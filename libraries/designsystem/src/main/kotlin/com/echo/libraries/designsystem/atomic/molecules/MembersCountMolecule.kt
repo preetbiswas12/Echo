@@ -62,4 +62,3 @@ internal fun MembersCountMoleculePreview() = ElementPreview {
         MembersCountMolecule(memberCount = 123_456)
     }
 }
-

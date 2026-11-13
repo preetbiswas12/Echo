@@ -25,4 +25,3 @@ class FakeReportRoom(
         lambda(roomId, shouldReport, reason, shouldLeave)
     }
 }
-

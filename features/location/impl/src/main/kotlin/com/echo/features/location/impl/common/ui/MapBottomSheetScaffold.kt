@@ -190,4 +190,3 @@ fun MapBottomSheetScaffold(
         }
     }
 }
-

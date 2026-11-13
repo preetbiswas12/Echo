@@ -9,14 +9,14 @@ package com.echo.features.callnative.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import io.element.android.call.ui.theme.ElementCallColors
-import io.element.android.call.ui.theme.ElementCallIcons
-import io.element.android.call.ui.theme.ElementCallStyle
-import io.element.android.call.ui.theme.ElementCallTypography
 import com.echo.libraries.designsystem.components.avatar.Avatar
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.designsystem.components.avatar.AvatarSize
 import com.echo.libraries.designsystem.components.avatar.AvatarType
+import io.element.android.call.ui.theme.ElementCallColors
+import io.element.android.call.ui.theme.ElementCallIcons
+import io.element.android.call.ui.theme.ElementCallStyle
+import io.element.android.call.ui.theme.ElementCallTypography
 
 /**
  * How Element X dresses the native call.
@@ -55,4 +55,3 @@ fun rememberElementXCallStyle(): ElementCallStyle {
         )
     }
 }
-

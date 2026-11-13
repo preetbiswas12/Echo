@@ -8,13 +8,13 @@
 
 package com.echo.features.home.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.home.impl.spaces.HomeSpacesPresenter
 import com.echo.features.home.impl.spaces.HomeSpacesState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @BindingContainer
 @ContributesTo(SessionScope::class)
@@ -22,4 +22,3 @@ interface HomeSpacesBindingContainer {
     @Binds
     fun bindHomeSpacesPresenter(presenter: HomeSpacesPresenter): Presenter<HomeSpacesState>
 }
-

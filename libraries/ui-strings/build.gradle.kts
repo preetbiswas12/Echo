@@ -17,5 +17,3 @@ android {
         disable += "Typos"
     }
 }
-
-

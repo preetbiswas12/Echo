@@ -71,4 +71,3 @@ internal fun anIdentityRoomMember(
     displayNameOrDefault = displayNameOrDefault,
     avatarData = avatarData,
 )
-

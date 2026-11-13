@@ -23,4 +23,3 @@ import com.echo.libraries.architecture.Presenter
 fun interface TimelineItemPresenterFactory<C : TimelineItemEventContent, S : Any> {
     fun create(content: C): Presenter<S>
 }
-

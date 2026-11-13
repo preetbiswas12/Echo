@@ -47,4 +47,3 @@ fun GalleryItemInfo.map(): RustGalleryItemInfo = when (this) {
         )
     }
 }
-

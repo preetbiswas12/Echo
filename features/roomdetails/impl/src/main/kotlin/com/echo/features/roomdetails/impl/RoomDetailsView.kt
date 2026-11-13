@@ -38,7 +38,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.compound.theme.ElementTheme
 import com.echo.compound.tokens.generated.CompoundIcons
 import com.echo.features.roomcall.api.hasPermissionToJoin
@@ -94,6 +93,7 @@ import com.echo.libraries.testtags.testTag
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.compose.LocalAnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -936,4 +936,3 @@ private fun ContentToPreview(state: RoomDetailsState) {
         leaveRoomView = {},
     )
 }
-

@@ -13,8 +13,6 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.webkit.MimeTypeMap
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.file.getFileName
 import com.echo.libraries.androidutils.file.getFileSize
 import com.echo.libraries.androidutils.file.getMimeType
@@ -29,6 +27,8 @@ import com.echo.libraries.mediaviewer.api.MediaInfo
 import com.echo.libraries.mediaviewer.api.local.LocalMedia
 import com.echo.libraries.mediaviewer.api.local.LocalMediaFactory
 import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class AndroidLocalMediaFactory(
@@ -150,4 +150,3 @@ class AndroidLocalMediaFactory(
         }
     }
 }
-

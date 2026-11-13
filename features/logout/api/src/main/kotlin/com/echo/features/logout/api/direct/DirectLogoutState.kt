@@ -14,4 +14,3 @@ data class DirectLogoutState(
     val logoutAction: AsyncAction<Unit>,
     val eventSink: (DirectLogoutEvent) -> Unit,
 )
-

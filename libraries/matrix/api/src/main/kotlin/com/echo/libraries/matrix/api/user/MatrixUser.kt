@@ -22,4 +22,3 @@ data class MatrixUser(
     /** Base64 encoded thumbnail of [avatarUrl], stored locally, used as a fallback when the avatar cannot be loaded. */
     val avatarThumbnail: String? = null,
 ) : Parcelable
-

@@ -22,4 +22,3 @@ fun aMissingKeyBackupState(
 ) = MissingKeyBackupState(
     appName = appName,
 )
-

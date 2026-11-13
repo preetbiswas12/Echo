@@ -30,4 +30,3 @@ class FakeMutableFeatureFlagProvider(
 
     override fun hasFeature(feature: Feature): Boolean = true
 }
-

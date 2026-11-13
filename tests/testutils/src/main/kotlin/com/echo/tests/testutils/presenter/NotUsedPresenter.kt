@@ -17,4 +17,3 @@ class NotUsedPresenter<T> : Presenter<T> {
     @Composable
     override fun present(): T = error("Not used")
 }
-

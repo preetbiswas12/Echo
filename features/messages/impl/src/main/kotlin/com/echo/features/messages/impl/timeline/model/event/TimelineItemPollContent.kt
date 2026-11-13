@@ -26,4 +26,3 @@ data class TimelineItemPollContent(
     TimelineItemEventMutableContent {
     override val type: String = "TimelineItemPollContent"
 }
-

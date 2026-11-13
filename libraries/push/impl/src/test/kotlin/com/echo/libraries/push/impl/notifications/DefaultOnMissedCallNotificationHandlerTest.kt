@@ -63,4 +63,3 @@ class DefaultOnMissedCallNotificationHandlerTest {
         dataFactory.messageEventToNotificationsResult.assertions().isCalledOnce()
     }
 }
-

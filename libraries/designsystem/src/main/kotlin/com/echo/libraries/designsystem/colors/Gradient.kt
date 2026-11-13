@@ -46,4 +46,3 @@ fun gradientCriticalColors(): List<Color> = listOf(
     ElementTheme.colors.gradientCriticalStop1,
     ElementTheme.colors.gradientCriticalStop2,
 )
-

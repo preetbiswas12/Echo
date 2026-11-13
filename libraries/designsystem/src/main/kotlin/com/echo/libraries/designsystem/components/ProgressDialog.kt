@@ -195,4 +195,3 @@ internal fun ProgressDialogWithTextAndContentPreview() = ElementPreview {
         )
     }
 }
-

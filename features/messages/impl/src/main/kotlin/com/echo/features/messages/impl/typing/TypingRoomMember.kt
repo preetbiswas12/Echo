@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.typing
 data class TypingRoomMember(
     val disambiguatedDisplayName: String,
 )
-

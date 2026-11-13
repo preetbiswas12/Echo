@@ -8,10 +8,10 @@
 package com.echo.features.home.impl.search.history
 
 import android.content.Context
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.ContributesBinding
 import io.element.encrypteddb.crypto.EncryptedFile
 import java.io.File
 
@@ -45,4 +45,3 @@ class DefaultSearchHistoryFileStore(
         return file.delete()
     }
 }
-

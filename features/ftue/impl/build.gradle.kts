@@ -57,5 +57,3 @@ dependencies {
     testImplementation(projects.features.lockscreen.test)
     testImplementation(projects.services.toolbox.test)
 }
-
-

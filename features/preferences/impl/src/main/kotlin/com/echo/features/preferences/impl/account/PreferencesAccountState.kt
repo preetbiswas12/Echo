@@ -20,4 +20,3 @@ data class PreferencesAccountState(
     val canDeactivateAccount: Boolean,
     val snackbarMessage: SnackbarMessage?,
 )
-

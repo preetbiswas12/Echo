@@ -344,4 +344,3 @@ private fun inReplyToTextContent(): InReplyToDetails.Ready = InReplyToDetails.Re
         displayedStatus = null
     )
 )
-

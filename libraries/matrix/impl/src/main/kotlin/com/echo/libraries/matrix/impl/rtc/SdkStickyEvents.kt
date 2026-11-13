@@ -84,4 +84,3 @@ internal fun StickyEvent.toFfiEventIn(): FfiEventIn? {
         encryption = encryptionInfo.toFfi(),
     )
 }
-

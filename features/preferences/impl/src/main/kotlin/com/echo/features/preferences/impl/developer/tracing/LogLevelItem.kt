@@ -33,4 +33,3 @@ enum class LogLevelItem : DropdownOption {
         override fun getText(): String = "Trace"
     }
 }
-

@@ -60,4 +60,3 @@ fun a11yReactionDetails(
         )
     }
 }
-

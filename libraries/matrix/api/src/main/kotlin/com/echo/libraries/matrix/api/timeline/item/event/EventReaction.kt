@@ -14,4 +14,3 @@ data class EventReaction(
     val key: String,
     val senders: ImmutableList<ReactionSender>
 )
-

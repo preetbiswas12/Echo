@@ -9,4 +9,3 @@
 package com.echo.features.home.impl.roomlist
 
 internal fun RoomListState.contentAsRooms() = contentState as RoomListContentState.Rooms
-

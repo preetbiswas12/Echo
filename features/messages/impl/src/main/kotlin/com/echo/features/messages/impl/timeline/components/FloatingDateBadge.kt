@@ -147,4 +147,3 @@ internal fun FloatingDateBadgePreview() = ElementPreview {
         FloatingDateBadge(dateText = "March 9, 2026")
     }
 }
-

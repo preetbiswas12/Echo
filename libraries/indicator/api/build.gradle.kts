@@ -13,5 +13,3 @@ plugins {
 android {
     namespace = "com.echo.libraries.indicator.api"
 }
-
-

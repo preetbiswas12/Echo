@@ -214,4 +214,3 @@ sealed interface GetRoomResult {
             is NotJoined -> notJoinedRoom.localRoom
         }
 }
-

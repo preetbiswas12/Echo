@@ -24,4 +24,3 @@ fun interface SecurityAndPrivacyEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

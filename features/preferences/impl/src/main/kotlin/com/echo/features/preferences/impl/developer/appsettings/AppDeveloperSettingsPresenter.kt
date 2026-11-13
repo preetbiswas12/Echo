@@ -17,7 +17,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.snapshots.SnapshotStateList
-import dev.zacsweers.metro.Inject
 import com.echo.features.preferences.impl.developer.tracing.toLogLevel
 import com.echo.features.preferences.impl.developer.tracing.toLogLevelItem
 import com.echo.features.preferences.impl.model.EnabledFeature
@@ -32,6 +31,7 @@ import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.ui.model.FeatureUiModel
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -175,4 +175,3 @@ private fun customElementCallUrlValidator(url: String?): Boolean {
         if (parsedUrl.host.isNullOrBlank()) error("Missing host")
     }.isSuccess
 }
-

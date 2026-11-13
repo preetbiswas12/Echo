@@ -9,10 +9,10 @@
 package com.echo.libraries.oauth.impl
 
 import android.content.Intent
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.libraries.oauth.api.OAuthIntentResolver
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultOAuthIntentResolver(
@@ -22,4 +22,3 @@ class DefaultOAuthIntentResolver(
         return oAuthUrlParser.parse(intent.dataString.orEmpty())
     }
 }
-

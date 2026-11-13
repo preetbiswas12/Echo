@@ -25,4 +25,3 @@ class FakePermalinkBuilder(
         return permalinkForRoomAliasLambda(roomAlias)
     }
 }
-

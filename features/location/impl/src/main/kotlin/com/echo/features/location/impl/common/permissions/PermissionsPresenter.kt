@@ -15,4 +15,3 @@ interface PermissionsPresenter : Presenter<PermissionsState> {
         fun create(permissions: List<String>): PermissionsPresenter
     }
 }
-

@@ -374,4 +374,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setMediaViewerView(
         )
     }
 }
-

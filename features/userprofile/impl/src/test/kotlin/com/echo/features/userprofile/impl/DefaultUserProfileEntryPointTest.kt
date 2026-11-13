@@ -11,7 +11,6 @@ package com.echo.features.userprofile.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.test.FakeElementCallEntryPoint
 import com.echo.features.userprofile.api.UserProfileEntryPoint
 import com.echo.features.verifysession.test.FakeOutgoingVerificationEntryPoint
@@ -21,6 +20,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.mediaviewer.test.FakeMediaViewerEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -64,4 +64,3 @@ class DefaultUserProfileEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

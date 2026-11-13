@@ -16,4 +16,3 @@ sealed interface NavigationEvent {
         val userId: UserId,
     ) : NavigationEvent
 }
-

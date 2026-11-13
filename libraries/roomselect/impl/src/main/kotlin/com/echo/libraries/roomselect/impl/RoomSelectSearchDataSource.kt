@@ -8,9 +8,6 @@
 
 package com.echo.libraries.roomselect.impl
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.room.CurrentUserMembership
@@ -22,6 +19,9 @@ import com.echo.libraries.matrix.api.roomlist.updateVisibleRange
 import com.echo.libraries.matrix.ui.model.SelectRoomInfo
 import com.echo.libraries.matrix.ui.model.toSelectRoomInfo
 import com.echo.libraries.roomselect.api.RoomSelectMode
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -149,4 +149,3 @@ data class RoomSelectRooms(
         )
     }
 }
-

@@ -32,4 +32,3 @@ internal object IntentProvider {
         )!!
     }
 }
-

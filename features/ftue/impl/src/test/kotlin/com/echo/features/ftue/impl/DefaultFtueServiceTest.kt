@@ -10,7 +10,6 @@ package com.echo.features.ftue.impl
 
 import android.os.Build
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.ftue.api.state.FtueState
 import com.echo.features.ftue.impl.state.DefaultFtueService
 import com.echo.features.ftue.impl.state.FtueStep
@@ -28,6 +27,7 @@ import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.noop.NoopAnalyticsService
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -209,4 +209,3 @@ internal fun TestScope.createDefaultFtueService(
     lockScreenService = lockScreenService,
     sessionPreferencesStore = sessionPreferencesStore,
 )
-

@@ -52,4 +52,3 @@ sealed interface LocalEventSendState {
         val eventId: EventId
     ) : LocalEventSendState
 }
-

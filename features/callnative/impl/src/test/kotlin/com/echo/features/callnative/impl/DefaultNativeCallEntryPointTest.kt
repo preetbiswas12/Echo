@@ -10,15 +10,15 @@ package com.echo.features.callnative.impl
 import android.Manifest
 import android.app.Application
 import androidx.test.platform.app.InstrumentationRegistry
+import com.echo.features.call.api.CallData
+import com.echo.libraries.matrix.test.A_ROOM_ID
+import com.echo.libraries.matrix.test.A_SESSION_ID
+import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.google.common.truth.Truth.assertThat
 import io.element.android.call.api.ElementCallConnection
 import io.element.android.call.api.ElementCallSnapshot
 import io.element.android.call.test.FakeElementCallController
 import io.element.android.call.ui.ElementCallActivity
-import com.echo.features.call.api.CallData
-import com.echo.libraries.matrix.test.A_ROOM_ID
-import com.echo.libraries.matrix.test.A_SESSION_ID
-import com.echo.tests.testutils.robolectric.RobolectricTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceTimeBy
@@ -139,4 +139,3 @@ class DefaultNativeCallEntryPointTest : RobolectricTest() {
         val A_CALL_DATA = CallData(sessionId = A_SESSION_ID, roomId = A_ROOM_ID, isAudioCall = true)
     }
 }
-

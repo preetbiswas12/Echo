@@ -71,4 +71,3 @@ fun anOnBoardingState(
     onBoardingLogoResId = customLogoResId,
     eventSink = eventSink,
 )
-

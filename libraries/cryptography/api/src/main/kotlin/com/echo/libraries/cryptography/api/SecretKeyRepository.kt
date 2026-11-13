@@ -38,4 +38,3 @@ interface SecretKeyRepository {
      */
     suspend fun deleteKey(alias: String)
 }
-

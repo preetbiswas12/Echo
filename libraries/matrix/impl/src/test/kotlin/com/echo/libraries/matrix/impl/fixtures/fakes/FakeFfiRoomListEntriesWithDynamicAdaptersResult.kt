@@ -20,4 +20,3 @@ class FakeFfiRoomListEntriesWithDynamicAdaptersResult(
     override fun entriesStream(): TaskHandle = entriesStream
     override fun destroy() = Unit
 }
-

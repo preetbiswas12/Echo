@@ -25,10 +25,10 @@ import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performTouchInput
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.compose.ui.unit.dp
-import com.google.common.truth.Truth.assertThat
 import com.echo.compound.theme.ElementTheme
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.setSafeContent
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
@@ -290,4 +290,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setWaveformPlaybackView(
         }
     }
 }
-

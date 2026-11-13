@@ -456,4 +456,3 @@ sealed interface ErrorKind {
      */
     data class Custom(val errcode: String) : ErrorKind
 }
-

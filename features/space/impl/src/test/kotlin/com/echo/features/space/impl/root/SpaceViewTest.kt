@@ -259,4 +259,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setSpaceView(
         )
     }
 }
-

@@ -196,4 +196,3 @@ fun ContentValidationState.collectMediaState(url: String?): State<ContentValidat
         getMediaStateFlow(url).collect { value = it }
     }
 }
-

@@ -59,4 +59,3 @@ class DiffCacheUpdater<ListItem, CachedItem>(
         Timber.v("Time to apply diff on new list of ${newOriginalList.size} items: $timeToDiff ms")
     }
 }
-

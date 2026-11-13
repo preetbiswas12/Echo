@@ -50,4 +50,3 @@ class FakeRoomListService(
 
     override val syncIndicator: StateFlow<RoomListService.SyncIndicator> = syncIndicatorStateFlow
 }
-

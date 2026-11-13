@@ -8,7 +8,6 @@
 package com.echo.appnav.verification
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.appnav.session.MatrixSessionCache
 import com.echo.appnav.session.SyncOrchestrator
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
@@ -27,6 +26,7 @@ import com.echo.libraries.matrix.test.verification.FakeSessionVerificationServic
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -189,4 +189,3 @@ class IncomingVerificationRequestObserverTest {
         firstSeenTimestamp = 0,
     )
 }
-

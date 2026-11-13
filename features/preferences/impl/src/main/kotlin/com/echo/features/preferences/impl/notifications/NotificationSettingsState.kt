@@ -84,4 +84,3 @@ data class NotificationSettingsState(
      */
     val showAdvancedSettings: Boolean = currentPushDistributor.isFailure() || availablePushDistributors.size > 1
 }
-

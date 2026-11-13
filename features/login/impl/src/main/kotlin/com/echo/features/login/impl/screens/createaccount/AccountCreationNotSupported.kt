@@ -9,4 +9,3 @@
 package com.echo.features.login.impl.screens.createaccount
 
 class AccountCreationNotSupported : Exception()
-

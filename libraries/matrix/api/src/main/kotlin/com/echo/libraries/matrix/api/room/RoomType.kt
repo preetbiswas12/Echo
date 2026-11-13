@@ -13,4 +13,3 @@ sealed interface RoomType {
     data object Room : RoomType
     data class Other(val type: String) : RoomType
 }
-

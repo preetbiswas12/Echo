@@ -12,4 +12,3 @@ data class FormattedBody(
     val format: MessageFormat,
     val body: String
 )
-

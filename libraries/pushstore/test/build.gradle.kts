@@ -21,5 +21,3 @@ dependencies {
     implementation(projects.tests.testutils)
     implementation(projects.libraries.pushstore.api)
 }
-
-

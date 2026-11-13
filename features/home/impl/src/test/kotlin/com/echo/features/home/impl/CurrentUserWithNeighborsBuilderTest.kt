@@ -8,7 +8,6 @@
 
 package com.echo.features.home.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.ui.components.aMatrixUser
 import com.echo.libraries.sessionstorage.api.SessionData
 import com.echo.libraries.sessionstorage.test.aSessionData
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class CurrentUserWithNeighborsBuilderTest {
@@ -247,4 +247,3 @@ class CurrentUserWithNeighborsBuilderTest {
         )
     }
 }
-

@@ -14,9 +14,9 @@ import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationManagerCompat
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 import timber.log.Timber
 
 interface NotificationDisplayer {
@@ -79,4 +79,3 @@ class DefaultNotificationDisplayer(
         private const val NOTIFICATION_ID_UNREGISTRATION = 889
     }
 }
-

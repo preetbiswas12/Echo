@@ -60,4 +60,3 @@ class SharedPreferencesFirebaseStore(
         private const val PREFS_KEY_FCM_INSTALLATION_ID = "FCM_TOKEN"
     }
 }
-

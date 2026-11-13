@@ -54,4 +54,3 @@ fun SpaceFiltersState.selectedFilter(): SpaceServiceFilter? {
 fun SpaceServiceFilter?.into(): RoomListFilter? {
     return this?.let { RoomListFilter.Identifiers(descendants) }
 }
-

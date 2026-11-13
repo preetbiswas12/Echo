@@ -74,4 +74,3 @@ internal fun SimpleModalBottomSheetPreview() = ElementPreview(fillMaxSize = true
         )
     }
 }
-

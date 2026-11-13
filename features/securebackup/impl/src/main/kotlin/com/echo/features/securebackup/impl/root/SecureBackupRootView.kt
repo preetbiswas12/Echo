@@ -248,4 +248,3 @@ internal fun SecureBackupRootViewPreview(
         onLearnMoreClick = {},
     )
 }
-

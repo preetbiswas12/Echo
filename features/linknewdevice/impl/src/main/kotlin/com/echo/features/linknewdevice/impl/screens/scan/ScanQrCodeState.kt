@@ -13,4 +13,3 @@ data class ScanQrCodeState(
     val scanAction: AsyncAction<Unit>,
     val eventSink: (ScanQrCodeEvent) -> Unit,
 )
-

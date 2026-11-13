@@ -39,4 +39,3 @@ internal fun TimelineItemStateViewPreview() = ElementPreview {
         content = aTimelineItemStateEventContent(),
     )
 }
-

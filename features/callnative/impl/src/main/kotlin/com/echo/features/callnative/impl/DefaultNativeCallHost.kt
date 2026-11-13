@@ -12,11 +12,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
-import io.element.android.call.ui.ElementCallOverlay
 import com.echo.features.callnative.api.NativeCallHost
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.ContributesBinding
+import io.element.android.call.ui.ElementCallOverlay
 
 /**
  * Draws the session's native call around the logged-in content.
@@ -47,4 +47,3 @@ class DefaultNativeCallHost(
         )
     }
 }
-

@@ -36,4 +36,3 @@ interface BugReporterListener {
      */
     fun onUploadSucceed()
 }
-

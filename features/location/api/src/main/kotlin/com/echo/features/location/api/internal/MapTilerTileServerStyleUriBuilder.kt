@@ -26,4 +26,3 @@ internal class MapTilerTileServerStyleUriBuilder : TileServerStyleUriBuilder {
         return "$baseUrl/$mapId/style.json?key=${mapTilerConfig.apiKey}"
     }
 }
-

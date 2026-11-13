@@ -57,4 +57,3 @@ internal fun RoomAvatar(
         }
     }
 }
-

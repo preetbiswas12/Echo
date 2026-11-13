@@ -11,4 +11,3 @@ package com.echo.features.licenses.api
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 interface OpenSourceLicensesEntryPoint : SimpleFeatureEntryPoint
-

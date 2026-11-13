@@ -14,7 +14,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.factories.event.TimelineItemContentFactory
 import com.echo.features.messages.impl.utils.messagesummary.MessageSummaryFormatter
 import com.echo.libraries.architecture.Presenter
@@ -24,6 +23,7 @@ import com.echo.libraries.designsystem.components.avatar.AvatarSize
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.threads.ThreadListPaginationStatus
 import com.echo.libraries.matrix.ui.model.getAvatarData
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.onStart
@@ -126,4 +126,3 @@ class ThreadsListPresenter(
         )
     }
 }
-

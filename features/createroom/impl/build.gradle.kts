@@ -54,5 +54,3 @@ dependencies {
     testImplementation(projects.libraries.featureflag.test)
     testImplementation(projects.features.enterprise.test)
 }
-
-

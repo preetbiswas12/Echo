@@ -72,4 +72,3 @@ internal fun RageshakePreferencesViewPreview(@PreviewParameter(
 ) state: RageshakePreferencesState) = ElementPreview {
     RageshakePreferencesView(state)
 }
-

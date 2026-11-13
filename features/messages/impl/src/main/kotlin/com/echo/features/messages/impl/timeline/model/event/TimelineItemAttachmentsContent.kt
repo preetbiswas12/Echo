@@ -36,4 +36,3 @@ data class AttachmentItem(
     val formattedFileSize: String,
     val fileExtension: String,
 )
-

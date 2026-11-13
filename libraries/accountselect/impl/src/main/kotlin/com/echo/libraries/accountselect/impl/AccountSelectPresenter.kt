@@ -11,11 +11,11 @@ package com.echo.libraries.accountselect.impl
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.api.user.toMatrixUser
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -38,4 +38,3 @@ class AccountSelectPresenter(
         )
     }
 }
-

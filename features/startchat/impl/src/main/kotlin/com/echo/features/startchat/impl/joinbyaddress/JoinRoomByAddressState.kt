@@ -25,4 +25,3 @@ sealed interface RoomAddressState {
     data object RoomNotFound : RoomAddressState
     data class RoomFound(val resolved: ResolvedRoomAlias) : RoomAddressState
 }
-

@@ -12,4 +12,3 @@ sealed interface LogoutEvent {
     data class Logout(val ignoreSdkError: Boolean) : LogoutEvent
     data object CloseDialogs : LogoutEvent
 }
-

@@ -11,8 +11,8 @@ package com.echo.libraries.push.impl.notifications
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.bindings
+import dev.zacsweers.metro.Inject
 
 /**
  * Receives actions broadcast by notification (on click, on dismiss, inline replies, etc.).
@@ -34,4 +34,3 @@ class NotificationBroadcastReceiver : BroadcastReceiver() {
         const val KEY_TEXT_REPLY = "key_text_reply"
     }
 }
-

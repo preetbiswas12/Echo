@@ -13,4 +13,3 @@ import com.echo.libraries.featureflag.api.Feature
 interface MutableFeatureFlagProvider : FeatureFlagProvider {
     suspend fun setFeatureEnabled(feature: Feature, enabled: Boolean)
 }
-

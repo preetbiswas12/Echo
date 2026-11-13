@@ -38,4 +38,3 @@ fun aLinkNewDeviceRootState(
     qrCodeData = qrCodeData,
     eventSink = eventSink,
 )
-

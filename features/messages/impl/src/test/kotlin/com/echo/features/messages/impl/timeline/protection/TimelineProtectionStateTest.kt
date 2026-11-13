@@ -8,9 +8,9 @@
 
 package com.echo.features.messages.impl.timeline.protection
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EVENT_ID_2
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentSetOf
 import org.junit.Test
 
@@ -58,4 +58,3 @@ class TimelineProtectionStateTest {
         assertThat(sutRenderOnly.hideMediaContent(AN_EVENT_ID, isMine = true)).isFalse()
     }
 }
-

@@ -19,4 +19,3 @@ class FakeKnockRequestsListEntryPoint : KnockRequestsListEntryPoint {
         buildContext: BuildContext,
     ): Node = lambdaError()
 }
-

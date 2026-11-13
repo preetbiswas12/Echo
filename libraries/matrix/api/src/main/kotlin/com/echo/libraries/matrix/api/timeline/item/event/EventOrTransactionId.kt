@@ -36,4 +36,3 @@ sealed interface EventOrTransactionId {
 
 fun EventId.toEventOrTransactionId() = EventOrTransactionId.Event(this)
 fun TransactionId.toEventOrTransactionId() = EventOrTransactionId.Transaction(this)
-

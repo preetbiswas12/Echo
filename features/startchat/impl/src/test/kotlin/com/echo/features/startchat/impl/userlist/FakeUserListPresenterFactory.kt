@@ -19,4 +19,3 @@ class FakeUserListPresenterFactory(
         userListDataStore: UserListDataStore,
     ): UserListPresenter = fakeUserListPresenter
 }
-

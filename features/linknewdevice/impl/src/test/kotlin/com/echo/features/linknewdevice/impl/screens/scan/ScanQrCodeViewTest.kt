@@ -72,4 +72,3 @@ class ScanQrCodeViewTest : RobolectricTest() {
         }
     }
 }
-

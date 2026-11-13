@@ -15,4 +15,3 @@ class DateFormatterModePreviewParam : PreviewParameterProvider<DateFormatterMode
     override val values: Sequence<DateFormatterMode>
         get() = DateFormatterMode.entries.asSequence()
 }
-

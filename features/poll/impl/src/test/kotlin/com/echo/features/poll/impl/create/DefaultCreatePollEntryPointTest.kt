@@ -10,7 +10,6 @@ package com.echo.features.poll.impl.create
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.test.FakeMessageComposerContext
 import com.echo.features.poll.api.create.CreatePollEntryPoint
 import com.echo.features.poll.api.create.CreatePollMode
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -62,4 +62,3 @@ class DefaultCreatePollEntryPointTest {
         assertThat(result.plugins).contains(CreatePollNode.Inputs(timelineMode = params.timelineMode, mode = params.mode))
     }
 }
-

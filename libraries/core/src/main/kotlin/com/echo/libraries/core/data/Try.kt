@@ -25,4 +25,3 @@ inline fun <A> tryOrNull(onException: ((Exception) -> Unit) = { }, operation: ()
         null
     }
 }
-

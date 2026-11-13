@@ -26,4 +26,3 @@ fun RtcCallIntent.map(): CallIntent = when (this) {
     RtcCallIntent.VIDEO -> CallIntent.VIDEO
     RtcCallIntent.AUDIO -> CallIntent.AUDIO
 }
-

@@ -13,13 +13,13 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.logout.api.direct.DirectLogoutEvent
 import com.echo.features.logout.api.direct.DirectLogoutState
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runCatchingUpdatingState
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -65,4 +65,3 @@ class DirectLogoutPresenter(
         }.runCatchingUpdatingState(logoutAction)
     }
 }
-

@@ -23,4 +23,3 @@ interface ClipboardHelper {
         onSuccessOnOldDevice: () -> Unit,
     )
 }
-

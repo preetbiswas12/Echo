@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.roomselect.api)
     implementation(projects.tests.testutils)
 }
-
-

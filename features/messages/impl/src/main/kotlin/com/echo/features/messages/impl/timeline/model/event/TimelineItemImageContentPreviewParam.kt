@@ -50,4 +50,3 @@ fun aTimelineItemImageContent(
     formattedFileSize = "4MB",
     fileExtension = "jpg"
 )
-

@@ -181,4 +181,3 @@ class FakeFfiClient(
 
     override fun close() = closeResult()
 }
-

@@ -9,8 +9,8 @@
 package com.echo.features.migration.impl.migrations
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -33,4 +33,3 @@ class AppMigration04Test : RobolectricTest() {
         assertThat(file.exists()).isFalse()
     }
 }
-

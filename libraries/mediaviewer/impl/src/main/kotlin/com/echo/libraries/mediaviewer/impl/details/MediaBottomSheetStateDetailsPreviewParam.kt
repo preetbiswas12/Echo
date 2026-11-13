@@ -50,4 +50,3 @@ fun aMediaBottomSheetStateDetails(
     mediaInfo = mediaInfo,
     thumbnailSource = null,
 )
-

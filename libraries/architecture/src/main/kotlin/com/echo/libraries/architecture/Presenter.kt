@@ -14,4 +14,3 @@ fun interface Presenter<State> {
     @Composable
     fun present(): State
 }
-

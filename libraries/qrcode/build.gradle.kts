@@ -22,5 +22,3 @@ dependencies {
     implementation(libs.google.zxing)
     implementation(libs.google.guava)
 }
-
-

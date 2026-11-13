@@ -51,10 +51,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Popup
 import com.echo.compound.theme.ElementTheme
-import io.element.android.emojibasebindings.Emoji
 import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.echo.libraries.designsystem.theme.components.Text
+import io.element.android.emojibasebindings.Emoji
 import kotlinx.collections.immutable.ImmutableSet
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
@@ -311,4 +311,3 @@ internal fun EmojiItemWithPopupPreview() = ElementPreview {
         )
     }
 }
-

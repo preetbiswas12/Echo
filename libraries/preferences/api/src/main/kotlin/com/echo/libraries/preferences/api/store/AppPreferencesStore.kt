@@ -151,4 +151,3 @@ interface AppPreferencesStore {
     /** Erases every app preference, so they all fall back to their defaults. */
     suspend fun reset()
 }
-

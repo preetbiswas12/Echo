@@ -23,4 +23,3 @@ import com.echo.libraries.mediaviewer.impl.model.MediaItem
 fun interface MediaItemPresenterFactory<C : MediaItem.Event, S : Any> {
     fun create(content: C): Presenter<S>
 }
-

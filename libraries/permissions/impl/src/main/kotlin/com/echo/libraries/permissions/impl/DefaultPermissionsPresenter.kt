@@ -17,6 +17,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
+import com.echo.libraries.core.log.logger.LoggerTag
+import com.echo.libraries.permissions.api.PermissionsEvent
+import com.echo.libraries.permissions.api.PermissionsPresenter
+import com.echo.libraries.permissions.api.PermissionsState
+import com.echo.libraries.permissions.api.PermissionsStore
+import com.echo.libraries.permissions.impl.action.PermissionActions
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
 import com.google.accompanist.permissions.PermissionStatus
@@ -27,12 +33,6 @@ import dev.zacsweers.metro.Assisted
 import dev.zacsweers.metro.AssistedFactory
 import dev.zacsweers.metro.AssistedInject
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.core.log.logger.LoggerTag
-import com.echo.libraries.permissions.api.PermissionsEvent
-import com.echo.libraries.permissions.api.PermissionsPresenter
-import com.echo.libraries.permissions.api.PermissionsState
-import com.echo.libraries.permissions.api.PermissionsStore
-import com.echo.libraries.permissions.impl.action.PermissionActions
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -144,4 +144,3 @@ class DefaultPermissionsPresenter(
     }
      */
 }
-

@@ -18,4 +18,3 @@ class FakeClientBuilderProvider(
         return provideResult()
     }
 }
-

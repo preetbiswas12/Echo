@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.server
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.FakeMatrixClient
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultUserServerResolverTest {
@@ -27,4 +27,3 @@ class DefaultUserServerResolverTest {
         assertThat(result).isEqualTo("dummy.org")
     }
 }
-

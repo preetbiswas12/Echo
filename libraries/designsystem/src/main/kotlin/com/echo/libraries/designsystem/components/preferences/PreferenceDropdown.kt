@@ -218,4 +218,3 @@ internal fun PreferenceDropdownPreview() = ElementThemedPreview {
         )
     }
 }
-

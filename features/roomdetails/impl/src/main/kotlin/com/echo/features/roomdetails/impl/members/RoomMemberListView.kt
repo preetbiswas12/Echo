@@ -383,4 +383,3 @@ internal fun RoomMemberListViewPreview(@PreviewParameter(RoomMemberListStatePrev
         },
     )
 }
-

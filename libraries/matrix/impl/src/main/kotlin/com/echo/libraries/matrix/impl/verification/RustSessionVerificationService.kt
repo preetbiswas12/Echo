@@ -310,4 +310,3 @@ private fun RustSessionVerificationData.map(): SessionVerificationData {
         }
     }
 }
-

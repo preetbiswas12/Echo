@@ -9,7 +9,6 @@
 package com.echo.libraries.push.impl.push
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
 import com.echo.libraries.matrix.api.MatrixClient
@@ -35,6 +34,7 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -221,4 +221,3 @@ class SyncOnNotifiableEventTest {
         )
     }
 }
-

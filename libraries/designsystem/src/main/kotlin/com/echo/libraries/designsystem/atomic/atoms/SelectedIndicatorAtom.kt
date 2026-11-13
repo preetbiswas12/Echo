@@ -80,4 +80,3 @@ internal fun SelectedIndicatorAtomPreview() = ElementPreview {
         )
     }
 }
-

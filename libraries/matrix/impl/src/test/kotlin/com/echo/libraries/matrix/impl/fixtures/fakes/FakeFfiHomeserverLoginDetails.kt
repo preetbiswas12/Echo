@@ -22,4 +22,3 @@ class FakeFfiHomeserverLoginDetails(
     override fun supportsPasswordLogin(): Boolean = supportsPasswordLogin
     override fun supportsSsoLogin(): Boolean = supportsSsoLogin
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.ftue.impl.sessionverification.choosemode
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.logout.api.direct.DirectLogoutEvent
 import com.echo.features.logout.api.direct.DirectLogoutState
 import com.echo.features.logout.api.direct.aDirectLogoutState
@@ -25,6 +24,7 @@ import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -161,4 +161,3 @@ class ChooseSessionVerificationModePresenterTest {
         directLogoutPresenter = directLogoutPresenter,
     )
 }
-

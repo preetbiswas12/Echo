@@ -7,7 +7,6 @@
 
 package com.echo.features.preferences.impl.tasks
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.FakeMatrixClient
@@ -15,6 +14,7 @@ import com.echo.libraries.push.test.notifications.FakeNotificationCleaner
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -59,4 +59,3 @@ class MarkAllRoomsAsReadTest {
         clearAllMessagesEventsLambda.assertions().isNeverCalled()
     }
 }
-

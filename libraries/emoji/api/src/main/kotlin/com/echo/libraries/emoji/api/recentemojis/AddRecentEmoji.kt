@@ -17,4 +17,3 @@ fun interface AddRecentEmoji {
      */
     suspend operator fun invoke(emoji: String): Result<Unit>
 }
-

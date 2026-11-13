@@ -17,8 +17,6 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
-import com.google.testing.junit.testparameterinjector.KotlinTestParameters.namedTestValues
-import com.google.testing.junit.testparameterinjector.TestParameter
 import com.echo.features.login.impl.R
 import com.echo.features.login.impl.login.LoginMode
 import com.echo.features.login.impl.login.aLoginModeState
@@ -35,6 +33,8 @@ import com.echo.tests.testutils.ensureCalledOnce
 import com.echo.tests.testutils.ensureCalledOnceWithParam
 import com.echo.tests.testutils.pressBack
 import com.echo.tests.testutils.robolectric.RobolectricTestParameter
+import com.google.testing.junit.testparameterinjector.KotlinTestParameters.namedTestValues
+import com.google.testing.junit.testparameterinjector.TestParameter
 import org.junit.Test
 
 class OnboardingViewTest : RobolectricTestParameter() {
@@ -263,4 +263,3 @@ class OnboardingViewTest : RobolectricTestParameter() {
         }
     }
 }
-

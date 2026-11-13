@@ -32,4 +32,3 @@ sealed interface ResolvedPushEvent {
         override val eventId: EventId = redactedEventId
     }
 }
-

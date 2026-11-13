@@ -10,4 +10,3 @@ package com.echo.features.roomdetails.impl
 interface RoomDetailsNavigator {
     fun onDone()
 }
-

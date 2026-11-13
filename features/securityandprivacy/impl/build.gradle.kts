@@ -47,5 +47,3 @@ dependencies {
     testImplementation(projects.libraries.testtags)
     testImplementation(projects.features.enterprise.test)
 }
-
-

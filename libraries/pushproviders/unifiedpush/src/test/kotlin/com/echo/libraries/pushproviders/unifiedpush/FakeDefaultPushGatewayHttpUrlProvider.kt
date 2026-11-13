@@ -17,4 +17,3 @@ class FakeDefaultPushGatewayHttpUrlProvider(
         return provideResult()
     }
 }
-

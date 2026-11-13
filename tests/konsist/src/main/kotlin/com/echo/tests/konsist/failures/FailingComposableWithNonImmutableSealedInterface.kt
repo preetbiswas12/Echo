@@ -19,4 +19,3 @@ fun FailingComposableWithNonImmutableSealedInterface(
     sealedInterface: SealedInterface
 ) {
 }
-

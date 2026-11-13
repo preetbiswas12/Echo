@@ -8,7 +8,6 @@
 
 package com.echo.features.space.impl.leave
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.spaces.LeaveSpaceHandle
@@ -25,6 +24,7 @@ import com.echo.libraries.previewutils.room.aSpaceRoom
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -265,4 +265,3 @@ private fun aLeaveSpaceRoom(
     isLastOwner = isLastOwner,
     areCreatorsPrivileged = areCreatorsPrivileged,
 )
-

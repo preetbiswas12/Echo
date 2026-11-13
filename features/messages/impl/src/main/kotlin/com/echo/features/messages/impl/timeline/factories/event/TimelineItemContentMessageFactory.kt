@@ -11,7 +11,6 @@ package com.echo.features.messages.impl.timeline.factories.event
 import android.text.style.URLSpan
 import androidx.core.text.getSpans
 import androidx.core.text.toSpannable
-import dev.zacsweers.metro.Inject
 import com.echo.features.location.api.Location
 import com.echo.features.messages.api.timeline.HtmlConverterProvider
 import com.echo.features.messages.api.timeline.TextPillificator
@@ -59,6 +58,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.VoiceMessageType
 import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplayName
 import com.echo.libraries.matrix.ui.messages.toHtmlDocument
 import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import org.jsoup.nodes.Document
@@ -480,4 +480,3 @@ private fun String.withLinks(): CharSequence? {
     val spannable = safeLinkify().toSpannable() ?: return null
     return spannable.takeIf { spannable.getSpans<URLSpan>(0, length).isNotEmpty() }
 }
-

@@ -11,11 +11,11 @@ package com.echo.libraries.indicator.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.RecoveryState
 import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.libraries.matrix.test.verification.FakeSessionVerificationService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -121,4 +121,3 @@ class DefaultIndicatorServiceTest {
         }
     }
 }
-

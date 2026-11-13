@@ -31,4 +31,3 @@ data class MessageComposerState(
     val slashCommandAction: AsyncAction<Unit>,
     val eventSink: (MessageComposerEvent) -> Unit,
 )
-

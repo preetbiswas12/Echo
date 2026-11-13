@@ -18,4 +18,3 @@ sealed interface CreateTimelineParams {
     data object PinnedOnly : CreateTimelineParams
     data class Threaded(val threadRootEventId: ThreadId) : CreateTimelineParams
 }
-

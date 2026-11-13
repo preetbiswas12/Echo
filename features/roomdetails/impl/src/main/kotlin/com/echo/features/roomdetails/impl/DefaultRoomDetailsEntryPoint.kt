@@ -10,12 +10,12 @@ package com.echo.features.roomdetails.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.roomdetails.api.RoomDetailsEntryPoint
 import com.echo.features.roomdetails.api.RoomDetailsEntryPoint.InitialTarget
 import com.echo.features.roomdetails.impl.RoomDetailsFlowNode.NavTarget
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomDetailsEntryPoint : RoomDetailsEntryPoint {
@@ -38,4 +38,3 @@ internal fun InitialTarget.toNavTarget() = when (this) {
     is InitialTarget.RoomNotificationSettings -> NavTarget.RoomNotificationSettings(showUserDefinedSettingStyle = true)
     InitialTarget.RoomMemberList -> NavTarget.RoomMemberList
 }
-

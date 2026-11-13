@@ -12,13 +12,13 @@ import android.content.Context
 import android.media.MediaMetadataRetriever
 import android.net.Uri
 import android.util.Size
+import com.echo.libraries.core.extensions.runCatchingExceptions
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.Assisted
 import dev.zacsweers.metro.AssistedFactory
 import dev.zacsweers.metro.AssistedInject
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.core.extensions.runCatchingExceptions
-import com.echo.libraries.di.annotations.ApplicationContext
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 
@@ -73,4 +73,3 @@ class DefaultVideoMetadataExtractor(
         }
     }
 }
-

@@ -18,10 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.features.call.api.CallData
 import com.echo.features.call.impl.data.WidgetMessage
 import com.echo.features.call.impl.utils.ActiveCallManager
@@ -40,6 +36,10 @@ import com.echo.libraries.network.useragent.UserAgentProvider
 import com.echo.services.analytics.api.ScreenTracker
 import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.MobileScreen
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.launchIn
@@ -260,4 +260,3 @@ class CallScreenPresenter(
         widgetDriver?.close()
     }
 }
-

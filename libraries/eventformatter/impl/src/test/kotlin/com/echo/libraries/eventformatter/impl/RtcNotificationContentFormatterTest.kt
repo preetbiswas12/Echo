@@ -8,7 +8,6 @@
 package com.echo.libraries.eventformatter.impl
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.api.timeline.item.event.CallNotifyContent
 import com.echo.libraries.matrix.test.A_USER_ID_2
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.services.toolbox.impl.strings.AndroidStringProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
@@ -105,4 +105,3 @@ class RtcNotificationContentFormatterTest : RobolectricTest() {
         assertThat(result.toString()).isEqualTo(expected)
     }
 }
-

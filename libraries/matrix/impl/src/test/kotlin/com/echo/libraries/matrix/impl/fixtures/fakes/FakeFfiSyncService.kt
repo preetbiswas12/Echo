@@ -23,4 +23,3 @@ class FakeFfiSyncService(
     }
     override suspend fun stop() {}
 }
-

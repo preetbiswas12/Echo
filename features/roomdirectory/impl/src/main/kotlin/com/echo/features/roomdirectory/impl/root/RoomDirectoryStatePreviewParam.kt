@@ -65,4 +65,3 @@ fun aRoomDescriptionList(): ImmutableList<RoomDescription> {
         )
     )
 }
-

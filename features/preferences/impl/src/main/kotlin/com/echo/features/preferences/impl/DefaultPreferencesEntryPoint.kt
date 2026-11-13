@@ -10,11 +10,11 @@ package com.echo.features.preferences.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.preferences.api.PreferencesEntryPoint
 import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultPreferencesEntryPoint : PreferencesEntryPoint {
@@ -48,4 +48,3 @@ internal fun PreferencesEntryPoint.InitialTarget.toNavTarget() = when (this) {
     PreferencesEntryPoint.InitialTarget.NotificationTroubleshoot -> PreferencesFlowNode.NavTarget.TroubleshootNotifications
     PreferencesEntryPoint.InitialTarget.DeveloperSettings -> PreferencesFlowNode.NavTarget.DeveloperSettings
 }
-

@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.FakeClientBuilderProvider
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClientBuilder
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiHomeserverLoginDetails
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -54,4 +54,3 @@ class RustHomeserverLoginCompatibilityCheckerTest {
         coroutineDispatchers = testCoroutineDispatchers(),
     )
 }
-

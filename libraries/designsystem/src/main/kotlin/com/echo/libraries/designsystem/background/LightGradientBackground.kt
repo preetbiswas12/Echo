@@ -53,4 +53,3 @@ fun LightGradientBackground(
 internal fun LightGradientBackgroundPreview() = ElementPreview {
     LightGradientBackground()
 }
-

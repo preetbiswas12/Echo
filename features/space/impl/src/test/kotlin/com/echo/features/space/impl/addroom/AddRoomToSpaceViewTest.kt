@@ -127,4 +127,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setAddRoomToSpaceView(
         )
     }
 }
-

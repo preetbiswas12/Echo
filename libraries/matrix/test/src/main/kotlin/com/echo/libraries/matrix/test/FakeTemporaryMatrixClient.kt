@@ -19,4 +19,3 @@ class FakeTemporaryMatrixClient(
     override suspend fun getUrl(url: String): Result<ByteArray> = getUrlResult(url)
     override fun close() = closeLambda()
 }
-

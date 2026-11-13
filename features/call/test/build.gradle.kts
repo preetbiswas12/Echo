@@ -23,5 +23,3 @@ dependencies {
     implementation(projects.libraries.matrix.test)
     implementation(projects.tests.testutils)
 }
-
-

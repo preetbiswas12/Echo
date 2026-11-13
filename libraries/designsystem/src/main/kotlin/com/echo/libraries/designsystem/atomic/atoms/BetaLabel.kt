@@ -50,4 +50,3 @@ fun BetaLabel(
 internal fun BetaLabelPreview() = ElementPreview {
     BetaLabel()
 }
-

@@ -22,4 +22,3 @@ import com.echo.features.call.api.CallData
 fun interface NativeCallEntryPoint {
     fun startCall(callData: CallData)
 }
-

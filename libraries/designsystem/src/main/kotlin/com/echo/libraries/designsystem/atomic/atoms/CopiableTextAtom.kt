@@ -81,4 +81,3 @@ internal fun CopiableTextAtomPreview() = ElementPreview {
         copiable = true
     )
 }
-

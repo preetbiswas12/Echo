@@ -41,4 +41,3 @@ class FakeMatrixWidgetDriver(
         incomingMessages.tryEmit(message)
     }
 }
-

@@ -9,9 +9,6 @@
 package com.echo.appnav
 
 import androidx.annotation.VisibleForTesting
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.coroutine.childScope
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
@@ -21,6 +18,9 @@ import com.echo.libraries.matrix.api.room.RoomMembershipObserver
 import com.echo.libraries.matrix.api.timeline.item.event.MembershipChange
 import com.echo.libraries.push.api.notifications.NotificationCleaner
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -91,4 +91,3 @@ class LoggedInEventProcessor(
         snackbarDispatcher.post(SnackbarMessage(message))
     }
 }
-

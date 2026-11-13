@@ -31,5 +31,3 @@ dependencies {
     testImplementation(projects.libraries.matrix.test)
     testImplementation(projects.libraries.featureflag.test)
 }
-
-

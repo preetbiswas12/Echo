@@ -17,9 +17,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.viewfolder.api.ViewFolderEntryPoint
 import com.echo.features.viewfolder.impl.file.ViewFileNode
@@ -31,6 +28,9 @@ import com.echo.libraries.architecture.NodeInputs
 import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.architecture.inputs
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(AppScope::class)
@@ -136,4 +136,3 @@ class ViewFolderFlowNode(
         BackstackView()
     }
 }
-

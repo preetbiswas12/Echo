@@ -28,4 +28,3 @@ internal fun Throwable.toFfiBackendException(): FfiBackendException = when (this
     )
     else -> FfiBackendException.Failed(errcode = null, status = null, retryAfterMs = null, permanent = false, reason = message ?: javaClass.simpleName)
 }
-

@@ -19,4 +19,3 @@ interface PreferencesAccountCallback {
     fun startSignOutFlow()
     fun startAccountDeactivationFlow()
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.features.login.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.api.LoginParams
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultLoginIntentResolverTest : RobolectricTest() {
@@ -78,4 +78,3 @@ class DefaultLoginIntentResolverTest : RobolectricTest() {
         )
     }
 }
-

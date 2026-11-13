@@ -22,4 +22,3 @@ interface LocalMediaRenderer {
     @Composable
     fun Render(localMedia: LocalMedia)
 }
-

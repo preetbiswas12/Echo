@@ -86,5 +86,3 @@ dependencies {
     testImplementation(libs.androidx.camera.camera2)
     testImplementation(libs.androidx.camera.lifecycle)
 }
-
-

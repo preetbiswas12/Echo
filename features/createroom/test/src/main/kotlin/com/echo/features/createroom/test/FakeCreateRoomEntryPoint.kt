@@ -27,4 +27,3 @@ class FakeCreateRoomEntryPoint : CreateRoomEntryPoint {
         callback: CreateRoomEntryPoint.Callback,
     ): Builder = lambdaError()
 }
-

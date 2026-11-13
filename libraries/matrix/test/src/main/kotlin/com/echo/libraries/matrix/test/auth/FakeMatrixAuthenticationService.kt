@@ -120,4 +120,3 @@ class FakeMatrixAuthenticationService(
         return doSecretsContainBackupKeyResult(userId, secrets, backupInfo)
     }
 }
-

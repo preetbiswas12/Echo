@@ -9,10 +9,10 @@
 package com.echo.features.migration.impl.migrations
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 /**
  * Remove notifications.bin file, used to store notification data locally.
@@ -31,4 +31,3 @@ class AppMigration04(
         runCatchingExceptions { context.getDatabasePath(NOTIFICATION_FILE_NAME).delete() }
     }
 }
-

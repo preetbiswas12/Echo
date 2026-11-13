@@ -43,4 +43,3 @@ interface RoomDirectoryList {
         val items: List<RoomDescription>,
     )
 }
-

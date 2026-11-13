@@ -33,4 +33,3 @@ sealed interface VoiceMessageState {
         val levels: ImmutableList<Float>,
     ) : VoiceMessageState
 }
-

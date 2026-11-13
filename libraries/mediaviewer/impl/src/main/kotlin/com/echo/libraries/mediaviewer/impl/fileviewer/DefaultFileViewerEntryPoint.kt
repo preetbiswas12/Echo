@@ -9,10 +9,10 @@ package com.echo.libraries.mediaviewer.impl.fileviewer
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.mediaviewer.api.FileViewerEntryPoint
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultFileViewerEntryPoint : FileViewerEntryPoint {
@@ -28,4 +28,3 @@ class DefaultFileViewerEntryPoint : FileViewerEntryPoint {
         )
     }
 }
-

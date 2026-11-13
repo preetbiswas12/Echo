@@ -23,7 +23,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.compound.tokens.generated.CompoundIcons
 import com.echo.features.messages.impl.R
 import com.echo.features.messages.impl.actionlist.ActionListEvent
@@ -62,6 +61,7 @@ import com.echo.libraries.ui.common.layout.ContentAvoidingLayoutData
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.compose.LocalAnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import im.vector.app.features.analytics.plan.Interaction
 import io.element.android.wysiwyg.link.Link
 
 @Composable
@@ -359,4 +359,3 @@ internal fun PinnedMessagesListViewPreview(@PreviewParameter(PinnedMessagesListS
             emojiPickerRenderer = NoOpEmojiPickerRenderer,
         )
     }
-

@@ -9,4 +9,3 @@
 package com.echo.libraries.matrix.api.core
 
 typealias SpaceId = RoomId
-

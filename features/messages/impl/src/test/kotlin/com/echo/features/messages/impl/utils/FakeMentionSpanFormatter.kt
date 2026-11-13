@@ -18,4 +18,3 @@ class FakeMentionSpanFormatter(
         return formatLambda(mentionType)
     }
 }
-

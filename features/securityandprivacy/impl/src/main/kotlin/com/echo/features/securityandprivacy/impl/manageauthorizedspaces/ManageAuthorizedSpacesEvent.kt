@@ -14,4 +14,3 @@ sealed interface ManageAuthorizedSpacesEvent {
     data object Done : ManageAuthorizedSpacesEvent
     data class ToggleSpace(val roomId: RoomId) : ManageAuthorizedSpacesEvent
 }
-

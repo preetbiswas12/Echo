@@ -16,4 +16,3 @@ data class TracingConfiguration(
     val writesToFilesConfiguration: WriteToFilesConfiguration,
     val sdkSentryDsn: String?,
 )
-

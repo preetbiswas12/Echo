@@ -20,4 +20,3 @@ fun aMapTilerConfig(
     lightStyleId = lightStyleId,
     darkStyleId = darkStyleId,
 )
-

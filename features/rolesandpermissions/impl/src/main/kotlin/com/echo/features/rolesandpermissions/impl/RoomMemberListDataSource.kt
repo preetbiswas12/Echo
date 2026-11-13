@@ -8,12 +8,12 @@
 
 package com.echo.features.rolesandpermissions.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.bool.orFalse
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.roomMembers
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.withContext
 
 @Inject
@@ -37,4 +37,3 @@ class RoomMemberListDataSource(
         filteredMembers
     }
 }
-

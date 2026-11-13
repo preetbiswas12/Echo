@@ -10,13 +10,13 @@ package com.echo.libraries.mediaviewer.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.matrix.api.media.MediaSource
 import com.echo.libraries.mediaviewer.api.AvatarInfo
 import com.echo.libraries.mediaviewer.api.MediaViewerEntryPoint
 import com.echo.libraries.mediaviewer.impl.viewer.MediaViewerNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultMediaViewerEntryPoint : MediaViewerEntryPoint {
@@ -44,4 +44,3 @@ class DefaultMediaViewerEntryPoint : MediaViewerEntryPoint {
         )
     }
 }
-

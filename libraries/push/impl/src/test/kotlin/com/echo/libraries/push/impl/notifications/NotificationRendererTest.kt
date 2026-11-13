@@ -129,4 +129,3 @@ fun createNotificationRenderer(
     sessionStore = sessionStore,
     analyticsService = analyticsService,
 )
-

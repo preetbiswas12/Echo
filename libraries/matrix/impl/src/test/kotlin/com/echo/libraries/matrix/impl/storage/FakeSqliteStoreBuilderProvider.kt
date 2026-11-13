@@ -14,4 +14,3 @@ class FakeSqliteStoreBuilderProvider : SqliteStoreBuilderProvider {
         return FakeSqliteStoreBuilder()
     }
 }
-

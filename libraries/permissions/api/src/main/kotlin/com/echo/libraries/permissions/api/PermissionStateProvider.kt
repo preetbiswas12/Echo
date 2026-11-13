@@ -47,4 +47,3 @@ interface PermissionStateProvider {
      */
     fun isPermissionAsked(permission: String): Flow<Boolean>
 }
-

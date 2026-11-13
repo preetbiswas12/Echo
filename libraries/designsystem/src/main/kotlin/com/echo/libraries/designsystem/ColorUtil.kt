@@ -47,4 +47,3 @@ fun Boolean.toIconSecondaryEnabledColor(): Color {
         ElementTheme.colors.iconDisabled
     }
 }
-

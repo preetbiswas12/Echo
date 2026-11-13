@@ -15,4 +15,3 @@ interface ScreenshotHolder {
     fun getFileUri(): String?
     fun reset()
 }
-

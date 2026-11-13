@@ -142,4 +142,3 @@ internal class RecordingShadowWebView : ShadowWebView() {
         return false
     }
 }
-

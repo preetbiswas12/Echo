@@ -228,4 +228,3 @@ fun aTimelineItemPollActionList(): ImmutableList<TimelineItemAction> {
         .sortedWith(TimelineItemActionComparator())
         .toImmutableList()
 }
-

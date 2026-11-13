@@ -19,4 +19,3 @@ interface ContinuationMessageSender {
     /** Tells the other device that the user approved the linking, so the flow can carry on. */
     suspend fun confirm(): Result<Unit>
 }
-

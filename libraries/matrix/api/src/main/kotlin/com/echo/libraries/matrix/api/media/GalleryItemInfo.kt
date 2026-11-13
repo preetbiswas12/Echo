@@ -34,4 +34,3 @@ sealed interface GalleryItemInfo {
         val fileInfo: FileInfo,
     ) : GalleryItemInfo
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.auth.MatrixHomeServerDetails
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiHomeserverLoginDetails
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class HomeserverDetailsKtTest {
@@ -36,4 +36,3 @@ class HomeserverDetailsKtTest {
         )
     }
 }
-

@@ -24,4 +24,3 @@ internal fun DbCacheData.toApiModel(): CacheData {
         updatedAt = updatedAt,
     )
 }
-

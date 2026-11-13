@@ -58,4 +58,3 @@ fun PushDataUnifiedPush.toPushData(clientSecret: String): PushData? {
         clientSecret = clientSecret
     )
 }
-

@@ -65,4 +65,3 @@ internal fun EmptyViewPreview(
 ) = ElementPreview {
     EmptyView(state = state)
 }
-

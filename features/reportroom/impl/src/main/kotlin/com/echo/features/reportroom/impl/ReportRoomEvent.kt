@@ -14,4 +14,3 @@ sealed interface ReportRoomEvent {
     data object Report : ReportRoomEvent
     data object ClearReportAction : ReportRoomEvent
 }
-

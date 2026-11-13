@@ -42,4 +42,3 @@ sealed interface TimelineItemTextBasedContent :
     val htmlBody: String?
         get() = htmlDocument?.body()?.html()
 }
-

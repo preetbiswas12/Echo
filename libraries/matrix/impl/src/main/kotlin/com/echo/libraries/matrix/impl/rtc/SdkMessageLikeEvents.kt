@@ -66,4 +66,3 @@ internal fun FfiEventIn.redactedEventId(): String? {
     val content = runCatchingExceptions { json.parseToJsonElement(contentJson) as? JsonObject }.getOrNull()
     return (content?.get("redacts") as? JsonPrimitive)?.contentOrNull
 }
-

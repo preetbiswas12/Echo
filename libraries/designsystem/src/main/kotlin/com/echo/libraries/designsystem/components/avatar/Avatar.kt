@@ -117,4 +117,3 @@ internal fun AvatarPreview() = ElementThemedPreview(
         }
     }
 }
-

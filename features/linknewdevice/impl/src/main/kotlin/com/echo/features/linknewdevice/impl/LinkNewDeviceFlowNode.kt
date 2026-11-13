@@ -24,8 +24,6 @@ import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.operation.replace
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.enterprise.api.SessionEnterpriseService
@@ -52,6 +50,8 @@ import com.echo.libraries.matrix.api.linknewdevice.ErrorType
 import com.echo.libraries.matrix.api.linknewdevice.LinkDesktopStep
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
 import com.echo.libraries.matrix.api.logs.LoggerTags
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn
@@ -379,4 +379,3 @@ class LinkNewDeviceFlowNode(
         PermanentChild(permanentNavModel = permanentNavModel, navTarget = NavTarget.LockScreen)
     }
 }
-

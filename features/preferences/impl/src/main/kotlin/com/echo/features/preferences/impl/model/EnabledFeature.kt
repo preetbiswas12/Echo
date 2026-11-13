@@ -14,4 +14,3 @@ data class EnabledFeature(
     val feature: Feature,
     val isEnabled: Boolean,
 )
-

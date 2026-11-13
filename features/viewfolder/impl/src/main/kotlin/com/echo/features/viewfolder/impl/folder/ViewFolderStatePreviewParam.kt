@@ -33,4 +33,3 @@ fun aViewFolderState(
     title = title,
     content = content.toImmutableList(),
 )
-

@@ -117,4 +117,3 @@ fun aPreferencesRootState(
     snackbarMessage = snackbarMessage,
     eventSink = eventSink,
 )
-

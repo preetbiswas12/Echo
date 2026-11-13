@@ -39,5 +39,3 @@ dependencies {
     testImplementation(projects.services.analytics.test)
     testImplementation(projects.libraries.testtags)
 }
-
-

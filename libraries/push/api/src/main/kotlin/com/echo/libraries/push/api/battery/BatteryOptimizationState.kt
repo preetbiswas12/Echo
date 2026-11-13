@@ -12,4 +12,3 @@ data class BatteryOptimizationState(
     val shouldDisplayBanner: Boolean,
     val eventSink: (BatteryOptimizationEvent) -> Unit,
 )
-

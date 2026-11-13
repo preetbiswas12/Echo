@@ -32,4 +32,3 @@ fun RustSessionVerificationRequestDetails.toVerificationRequest(currentUserId: U
         VerificationRequest.Incoming.User(details)
     }
 }
-

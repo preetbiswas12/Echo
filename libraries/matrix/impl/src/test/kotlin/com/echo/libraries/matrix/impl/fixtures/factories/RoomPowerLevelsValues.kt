@@ -39,4 +39,3 @@ internal fun aRustRoomPowerLevelsValues(
     beacon = beacon,
     beaconInfo = beaconInfo,
 )
-

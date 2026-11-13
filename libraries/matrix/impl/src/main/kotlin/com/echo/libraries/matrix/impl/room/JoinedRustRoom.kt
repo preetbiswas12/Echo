@@ -588,4 +588,3 @@ class JoinedRustRoom(
         )
     }
 }
-

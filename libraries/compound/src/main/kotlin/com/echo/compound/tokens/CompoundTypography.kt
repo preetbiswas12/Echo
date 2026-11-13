@@ -76,4 +76,3 @@ internal val compoundTypography = Typography(
     labelMedium = compoundBodySmMedium,
     labelSmall = compoundBodyXsMedium,
 )
-

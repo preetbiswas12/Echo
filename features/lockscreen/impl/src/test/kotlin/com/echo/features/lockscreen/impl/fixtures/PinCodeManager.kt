@@ -23,4 +23,3 @@ internal fun aPinCodeManager(
 ): PinCodeManager {
     return DefaultPinCodeManager(secretKeyRepository, encryptionDecryptionService, lockScreenStore)
 }
-

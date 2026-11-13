@@ -8,13 +8,13 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.push.api.notifications.OnMissedCallNotificationHandler
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultOnMissedCallNotificationHandler(
@@ -45,4 +45,3 @@ class DefaultOnMissedCallNotificationHandler(
         notifiableEvent?.let { defaultNotificationDrawerManager.onNotifiableEventReceived(it) }
     }
 }
-

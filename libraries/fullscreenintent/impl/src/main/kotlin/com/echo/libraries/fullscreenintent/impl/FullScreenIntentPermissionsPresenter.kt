@@ -24,9 +24,6 @@ import androidx.core.net.toUri
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.compose.LifecycleResumeEffect
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.fullscreenintent.api.FullScreenIntentPermissionsEvent
@@ -34,6 +31,9 @@ import com.echo.libraries.fullscreenintent.api.FullScreenIntentPermissionsState
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import com.echo.services.toolbox.api.intent.ExternalIntentLauncher
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
@@ -106,4 +106,3 @@ class FullScreenIntentPermissionsPresenter(
         }
     }
 }
-

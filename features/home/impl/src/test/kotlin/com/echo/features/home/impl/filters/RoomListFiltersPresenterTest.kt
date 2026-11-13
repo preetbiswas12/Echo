@@ -8,11 +8,11 @@
 
 package com.echo.features.home.impl.filters
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.filters.selection.DefaultFilterSelectionStrategy
 import com.echo.features.home.impl.filters.selection.FilterSelectionState
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -143,4 +143,3 @@ private fun TestScope.createRoomListFiltersPresenter(): RoomListFiltersPresenter
         filterSelectionStrategy = DefaultFilterSelectionStrategy(),
     )
 }
-

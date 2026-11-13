@@ -15,4 +15,3 @@ sealed interface DeclineAndBlockEvent {
     data object Decline : DeclineAndBlockEvent
     data object ClearDeclineAction : DeclineAndBlockEvent
 }
-

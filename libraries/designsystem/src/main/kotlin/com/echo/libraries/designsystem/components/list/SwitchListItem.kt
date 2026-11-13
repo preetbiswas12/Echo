@@ -39,4 +39,3 @@ fun SwitchListItem(
         onClick = { onChange(!value) },
     )
 }
-

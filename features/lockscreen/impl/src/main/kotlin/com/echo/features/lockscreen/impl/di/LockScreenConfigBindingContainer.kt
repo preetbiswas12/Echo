@@ -7,11 +7,11 @@
 
 package com.echo.features.lockscreen.impl.di
 
+import com.echo.features.lockscreen.impl.LockScreenConfig
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.features.lockscreen.impl.LockScreenConfig
 
 @ContributesTo(AppScope::class)
 @BindingContainer
@@ -27,4 +27,3 @@ object LockScreenConfigBindingContainer {
         isWeakBiometricsEnabled = com.echo.appconfig.LockScreenConfig.IS_WEAK_BIOMETRICS_ENABLED,
     )
 }
-

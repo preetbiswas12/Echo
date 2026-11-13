@@ -13,12 +13,12 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.staticCompositionLocalOf
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.compound.theme.ElementTheme
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.ui.messages.RoomMemberProfilesCache
 import com.echo.libraries.matrix.ui.messages.RoomNamesCache
 import com.echo.libraries.matrix.ui.model.toEmojiText
+import dev.zacsweers.metro.ContributesBinding
 
 interface MentionSpanUpdater {
     fun updateMentionSpans(text: CharSequence): CharSequence
@@ -73,4 +73,3 @@ private object NoOpMentionSpanUpdater : MentionSpanUpdater {
 }
 
 val LocalMentionSpanUpdater = staticCompositionLocalOf<MentionSpanUpdater> { NoOpMentionSpanUpdater }
-

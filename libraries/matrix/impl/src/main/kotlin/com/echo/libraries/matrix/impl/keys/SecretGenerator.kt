@@ -28,4 +28,3 @@ interface SecretGenerator {
      */
     fun generateKey(size: Int = KEY_SIZE): ClientSecret.RawKey
 }
-

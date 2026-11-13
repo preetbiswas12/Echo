@@ -97,4 +97,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setReportRoomView(
         )
     }
 }
-

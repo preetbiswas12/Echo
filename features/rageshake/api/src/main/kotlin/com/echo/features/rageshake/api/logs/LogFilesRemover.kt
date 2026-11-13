@@ -20,4 +20,3 @@ interface LogFilesRemover {
      */
     suspend fun perform(predicate: (File) -> Boolean = { true })
 }
-

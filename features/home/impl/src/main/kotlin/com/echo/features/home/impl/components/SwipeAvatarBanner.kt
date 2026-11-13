@@ -41,4 +41,3 @@ internal fun SwipeAvatarBannerPreview() = ElementPreview {
         onDismissClick = {},
     )
 }
-

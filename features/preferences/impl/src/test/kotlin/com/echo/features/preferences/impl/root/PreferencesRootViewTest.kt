@@ -473,4 +473,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setView(
         )
     }
 }
-

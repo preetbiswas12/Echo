@@ -141,4 +141,3 @@ internal fun ReportMessageViewPreview(@PreviewParameter(ReportMessageStatePrevie
         state = state,
     )
 }
-

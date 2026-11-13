@@ -11,4 +11,3 @@ enum class LinkDeviceType {
     Mobile,
     Desktop,
 }
-

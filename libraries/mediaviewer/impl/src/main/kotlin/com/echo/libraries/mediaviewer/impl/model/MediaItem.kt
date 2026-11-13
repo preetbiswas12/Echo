@@ -148,4 +148,3 @@ fun MediaItem.isMediaValid(): Boolean? = when (this) {
     is MediaItem.Event -> validationState.getCurrentOverallState() == ContentValidationValue.Valid
     else -> null
 }
-

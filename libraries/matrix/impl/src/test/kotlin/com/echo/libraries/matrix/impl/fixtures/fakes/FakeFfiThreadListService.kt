@@ -56,4 +56,3 @@ class FakeFfiThreadListService(
         paginationStateListener?.onUpdate(state)
     }
 }
-

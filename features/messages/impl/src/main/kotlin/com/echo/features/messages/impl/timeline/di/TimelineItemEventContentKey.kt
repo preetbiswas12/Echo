@@ -8,8 +8,8 @@
 
 package com.echo.features.messages.impl.timeline.di
 
-import dev.zacsweers.metro.MapKey
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
+import dev.zacsweers.metro.MapKey
 import kotlin.reflect.KClass
 
 /**
@@ -19,4 +19,3 @@ import kotlin.reflect.KClass
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
 annotation class TimelineItemEventContentKey(val value: KClass<out TimelineItemEventContent>)
-

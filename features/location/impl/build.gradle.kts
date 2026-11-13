@@ -60,5 +60,3 @@ dependencies {
     testImplementation(projects.features.location.test)
     testImplementation(projects.features.enterprise.test)
 }
-
-

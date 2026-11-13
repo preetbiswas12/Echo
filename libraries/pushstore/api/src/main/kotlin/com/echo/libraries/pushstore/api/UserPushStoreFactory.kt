@@ -21,4 +21,3 @@ interface UserPushStoreFactory {
      */
     fun getOrCreate(userId: SessionId): UserPushStore
 }
-

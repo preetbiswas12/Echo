@@ -13,4 +13,3 @@ class FakePipSupportProvider(
 ) : PipSupportProvider {
     override fun isPipSupported() = isPipSupported
 }
-

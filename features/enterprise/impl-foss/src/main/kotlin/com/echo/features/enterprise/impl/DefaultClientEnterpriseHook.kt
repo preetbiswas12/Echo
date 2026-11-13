@@ -7,10 +7,10 @@
 
 package com.echo.features.enterprise.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.enterprise.api.ClientEnterpriseHook
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 /**
  * Default implementation of [ClientEnterpriseHook] that does nothing for FOSS.
@@ -21,4 +21,3 @@ class DefaultClientEnterpriseHook : ClientEnterpriseHook {
         // No-op
     }
 }
-

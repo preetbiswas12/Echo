@@ -21,4 +21,3 @@ class FakeMessagesEntryPoint : MessagesEntryPoint {
         callback: MessagesEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

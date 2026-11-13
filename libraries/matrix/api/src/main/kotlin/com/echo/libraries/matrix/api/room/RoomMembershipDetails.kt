@@ -19,4 +19,3 @@ data class RoomMembershipDetails(
 ) {
     val membershipChangeReason: String? = currentUserMember.membershipChangeReason
 }
-

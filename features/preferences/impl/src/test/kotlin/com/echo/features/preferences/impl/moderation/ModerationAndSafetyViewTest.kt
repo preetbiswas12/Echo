@@ -187,4 +187,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setModerationAndSafetyView(
         )
     }
 }
-

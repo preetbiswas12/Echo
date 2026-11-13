@@ -8,9 +8,6 @@
 
 package com.echo.libraries.push.impl.push
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.core.meta.BuildMeta
@@ -32,6 +29,9 @@ import com.echo.libraries.workmanager.api.WorkManagerScheduler
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.flow.first
@@ -176,4 +176,3 @@ enum class PushRequestStatus(val value: Long) {
      */
     FAILED(2),
 }
-

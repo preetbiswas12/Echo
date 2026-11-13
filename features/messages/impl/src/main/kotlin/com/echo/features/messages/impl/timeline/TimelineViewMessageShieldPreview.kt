@@ -55,4 +55,3 @@ internal fun TimelineViewMessageShieldPreview() = ElementPreview {
         )
     }
 }
-

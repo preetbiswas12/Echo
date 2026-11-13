@@ -9,13 +9,13 @@ package com.echo.libraries.permissions.impl.localnetwork
 
 import android.Manifest
 import android.os.Build
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.network.LocalNetworkAddressClassifier
 import com.echo.libraries.androidutils.network.LocalNetworkClassification
 import com.echo.libraries.permissions.api.PermissionStateProvider
 import com.echo.libraries.permissions.api.localnetwork.LocalNetworkPermissionAdvisor
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultLocalNetworkPermissionAdvisor(
@@ -34,4 +34,3 @@ class DefaultLocalNetworkPermissionAdvisor(
         }
     }
 }
-

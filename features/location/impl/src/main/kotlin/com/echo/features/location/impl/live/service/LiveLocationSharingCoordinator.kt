@@ -10,14 +10,14 @@ package com.echo.features.location.impl.live.service
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.location.api.Location
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.concurrent.atomics.AtomicLong
@@ -107,4 +107,3 @@ class LiveLocationSharingCoordinator internal constructor(
         }
     }
 }
-

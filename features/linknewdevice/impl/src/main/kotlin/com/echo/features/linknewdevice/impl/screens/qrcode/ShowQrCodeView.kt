@@ -121,4 +121,3 @@ internal fun ShowQrCodeViewPreview(
         onBackClick = { },
     )
 }
-

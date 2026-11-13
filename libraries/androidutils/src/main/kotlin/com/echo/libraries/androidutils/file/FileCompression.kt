@@ -41,4 +41,3 @@ fun compressFile(file: File): File? {
         null
     }
 }
-

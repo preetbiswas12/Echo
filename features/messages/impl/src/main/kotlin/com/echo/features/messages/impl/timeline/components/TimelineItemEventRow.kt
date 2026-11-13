@@ -1275,4 +1275,3 @@ internal fun ThreadSummaryViewPreview() {
         )
     }
 }
-

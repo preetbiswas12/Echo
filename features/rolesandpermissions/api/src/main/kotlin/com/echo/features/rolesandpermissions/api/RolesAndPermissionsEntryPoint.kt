@@ -24,4 +24,3 @@ fun interface RolesAndPermissionsEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

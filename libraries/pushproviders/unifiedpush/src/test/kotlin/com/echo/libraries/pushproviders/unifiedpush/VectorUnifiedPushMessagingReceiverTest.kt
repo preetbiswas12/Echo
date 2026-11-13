@@ -13,7 +13,6 @@ package com.echo.libraries.pushproviders.unifiedpush
 import android.content.Intent
 import androidx.test.platform.app.InstrumentationRegistry
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.A_ROOM_ID
@@ -28,6 +27,7 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -295,4 +295,3 @@ private fun aPushEndpoint(
     pubKeySet = pubKeySet,
     temporary = temporary,
 )
-

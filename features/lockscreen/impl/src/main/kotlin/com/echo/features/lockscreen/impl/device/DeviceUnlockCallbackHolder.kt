@@ -7,10 +7,10 @@
 
 package com.echo.features.lockscreen.impl.device
 
+import com.echo.features.lockscreen.api.DeviceUnlockEntryPoint
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.Inject
 import dev.zacsweers.metro.SingleIn
-import com.echo.features.lockscreen.api.DeviceUnlockEntryPoint
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -28,4 +28,3 @@ class DeviceUnlockCallbackHolder {
         _deviceUnlockCallback.value = null
     }
 }
-

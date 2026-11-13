@@ -81,4 +81,3 @@ class QrCodeIntroViewTest : RobolectricTest() {
         }
     }
 }
-

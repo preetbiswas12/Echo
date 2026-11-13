@@ -14,9 +14,6 @@ import android.net.Uri
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.FileProvider
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.extensions.flatMap
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.core.log.logger.LoggerTag
@@ -60,6 +57,9 @@ import com.echo.libraries.push.impl.notifications.model.ResolvedPushEvent
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import timber.log.Timber
 
 private val loggerTag = LoggerTag("DefaultNotifiableEventResolver", LoggerTag.NotificationLoggerTag)
@@ -543,4 +543,3 @@ internal fun buildNotifiableMessageEvent(
     type = type,
     hasMentionOrReply = hasMentionOrReply,
 )
-

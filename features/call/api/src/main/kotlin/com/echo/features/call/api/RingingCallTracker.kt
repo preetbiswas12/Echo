@@ -26,4 +26,3 @@ interface RingingCallTracker {
     /** The call is over. Clears the active call, and stops a ring that is still in progress. */
     suspend fun onCallEnded(callData: CallData)
 }
-

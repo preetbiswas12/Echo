@@ -8,10 +8,6 @@
 
 package com.echo.features.invite.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
 import com.echo.features.invite.impl.SeenInvitesStoreFactory
@@ -19,6 +15,10 @@ import com.echo.features.invite.impl.acceptdecline.AcceptDeclineInvitePresenter
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 
 @ContributesTo(SessionScope::class)
 @BindingContainer
@@ -39,4 +39,3 @@ interface InviteBindingContainer {
         }
     }
 }
-

@@ -7,15 +7,15 @@
 
 package com.echo.features.messages.impl.voicemessages.timeline.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.IntoMap
 import com.echo.features.messages.impl.timeline.di.TimelineItemEventContentKey
 import com.echo.features.messages.impl.timeline.di.TimelineItemPresenterFactory
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemVoiceContent
 import com.echo.features.messages.impl.voicemessages.timeline.VoiceMessagePresenter
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.IntoMap
 
 @BindingContainer
 @ContributesTo(RoomScope::class)
@@ -25,4 +25,3 @@ interface VoiceMessagePresenterBindingContainer {
     @TimelineItemEventContentKey(TimelineItemVoiceContent::class)
     fun bindVoiceMessagePresenterFactory(factory: VoiceMessagePresenter.Factory): TimelineItemPresenterFactory<*, *>
 }
-

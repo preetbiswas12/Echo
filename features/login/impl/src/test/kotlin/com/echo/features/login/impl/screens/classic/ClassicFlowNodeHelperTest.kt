@@ -11,7 +11,6 @@ package com.echo.features.login.impl.screens.classic
 
 import androidx.core.graphics.createBitmap
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.classic.ElementClassicConnection
 import com.echo.features.login.impl.classic.ElementClassicConnectionState
 import com.echo.features.login.impl.classic.FakeElementClassicConnection
@@ -26,6 +25,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.advanceTimeBy
 import kotlinx.coroutines.test.runTest
@@ -283,4 +283,3 @@ private fun createHelper(
     elementClassicConnection = elementClassicConnection,
     sessionStore = sessionStore,
 )
-

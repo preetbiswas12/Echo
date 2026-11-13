@@ -8,8 +8,8 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.meta.BuildMeta
+import dev.zacsweers.metro.Inject
 
 /**
  * Util class for creating notifications action Ids, using the application id.
@@ -27,4 +27,3 @@ import com.echo.libraries.core.meta.BuildMeta
     val dismissEvent = "${buildMeta.applicationId}.NotificationActions.DISMISS_EVENT_NOTIF_ACTION"
     val diagnostic = "${buildMeta.applicationId}.NotificationActions.DIAGNOSTIC"
 }
-

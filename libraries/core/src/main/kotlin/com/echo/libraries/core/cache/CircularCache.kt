@@ -30,4 +30,3 @@ class CircularCache<T : Any>(cacheSize: Int, factory: (Int) -> Array<T?>) {
         writeIndex++
     }
 }
-

@@ -21,4 +21,3 @@ fun VideoCompressionPreset.compressorHelper(): VideoCompressorHelper = when (thi
     VideoCompressionPreset.HIGH -> VideoCompressorHelper(1920)
     VideoCompressionPreset.LOW -> VideoCompressorHelper(640)
 }
-

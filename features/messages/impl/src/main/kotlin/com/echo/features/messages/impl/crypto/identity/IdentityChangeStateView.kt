@@ -130,4 +130,3 @@ internal fun IdentityChangeStateViewPreview(
         onLinkClick = { _, _ -> },
     )
 }
-

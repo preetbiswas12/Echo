@@ -149,4 +149,3 @@ class FetchPushForegroundService : Service() {
         }
     }
 }
-

@@ -17,11 +17,6 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
 import androidx.work.workDataOf
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
@@ -33,6 +28,11 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestWrapper
 import com.echo.libraries.workmanager.api.WorkManagerWorkerType
 import com.echo.libraries.workmanager.api.workManagerTag
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
 
@@ -106,4 +106,3 @@ class DefaultSyncPendingNotificationsRequestBuilder(
         return Result.success(listOf(WorkManagerRequestWrapper(request, type)))
     }
 }
-

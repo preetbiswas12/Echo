@@ -9,10 +9,10 @@ package com.echo.features.linknewdevice.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.linknewdevice.api.LinkNewDeviceEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultLinkNewDeviceEntryPoint : LinkNewDeviceEntryPoint {
@@ -29,4 +29,3 @@ class DefaultLinkNewDeviceEntryPoint : LinkNewDeviceEntryPoint {
         )
     }
 }
-

@@ -14,4 +14,3 @@ class FakeEditUserProfileNavigator(
 ) : EditUserProfileNavigator {
     override fun close() = closeLambda()
 }
-

@@ -9,11 +9,11 @@
 package com.echo.features.messages.impl.pinned.banner
 
 import androidx.compose.ui.text.AnnotatedString
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.pinned.isDisplayableAsPinnedEvent
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.eventformatter.api.PinnedMessagesBannerFormatter
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.withContext
 
 @Inject
@@ -40,4 +40,3 @@ class PinnedMessagesBannerItemFactory(
         }
     }
 }
-

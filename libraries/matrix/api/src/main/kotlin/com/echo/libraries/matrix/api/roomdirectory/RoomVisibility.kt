@@ -27,4 +27,3 @@ sealed interface RoomVisibility {
      */
     data class Custom(val value: String) : RoomVisibility
 }
-

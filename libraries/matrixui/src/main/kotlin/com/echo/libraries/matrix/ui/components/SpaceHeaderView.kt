@@ -138,4 +138,3 @@ internal fun SpaceHeaderViewPreview() = ElementPreview {
         numberOfMembers = 999,
     )
 }
-

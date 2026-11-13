@@ -8,8 +8,6 @@
 
 package com.echo.libraries.troubleshoot.impl
 
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.NotificationTroubleshoot
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.push.api.GetCurrentPushProvider
@@ -18,6 +16,8 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTest
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.libraries.troubleshoot.api.test.TestFilterData
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.NotificationTroubleshoot
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -120,4 +120,3 @@ fun List<NotificationTroubleshootTestState>.computeMainState(): AsyncAction<Unit
         }
     }
 }
-

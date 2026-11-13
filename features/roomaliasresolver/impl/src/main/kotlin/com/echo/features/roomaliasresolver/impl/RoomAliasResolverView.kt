@@ -152,4 +152,3 @@ internal fun RoomAliasResolverViewPreview(@PreviewParameter(RoomAliasResolverSta
         onBackClick = { }
     )
 }
-

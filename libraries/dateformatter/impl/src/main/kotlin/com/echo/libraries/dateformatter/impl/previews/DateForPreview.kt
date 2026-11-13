@@ -52,4 +52,3 @@ val dateForPreviews = listOf(
         date = "1979-04-06T18:35:24.00Z",
     ),
 )
-

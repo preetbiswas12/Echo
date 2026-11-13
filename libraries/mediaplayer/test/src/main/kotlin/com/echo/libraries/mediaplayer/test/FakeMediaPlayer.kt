@@ -104,4 +104,3 @@ class FakeMediaPlayer(
         // no-op
     }
 }
-

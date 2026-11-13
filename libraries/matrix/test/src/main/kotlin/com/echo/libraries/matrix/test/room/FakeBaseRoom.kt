@@ -222,4 +222,3 @@ fun defaultRoomPowerLevelValues() = RoomPowerLevelsValues(
     beacon = 0,
     beaconInfo = 0,
 )
-

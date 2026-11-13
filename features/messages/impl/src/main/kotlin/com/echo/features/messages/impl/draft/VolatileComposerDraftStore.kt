@@ -8,10 +8,10 @@
 
 package com.echo.features.messages.impl.draft
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.ThreadId
 import com.echo.libraries.matrix.api.room.draft.ComposerDraft
+import dev.zacsweers.metro.Inject
 
 /**
  * A volatile draft store that keeps drafts in memory only.
@@ -37,4 +37,3 @@ class VolatileComposerDraftStore : ComposerDraftStore {
         }
     }
 }
-

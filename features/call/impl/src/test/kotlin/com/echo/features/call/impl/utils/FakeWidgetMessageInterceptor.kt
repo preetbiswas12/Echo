@@ -23,4 +23,3 @@ class FakeWidgetMessageInterceptor : WidgetMessageInterceptor {
         interceptedMessages.tryEmit(message)
     }
 }
-

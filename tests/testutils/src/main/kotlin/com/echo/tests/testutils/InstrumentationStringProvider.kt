@@ -30,4 +30,3 @@ class InstrumentationStringProvider : StringProvider {
         return resource.getString(resId, *formatArgs)
     }
 }
-

@@ -47,4 +47,3 @@ fun SetupState.recoveryKey(): String? = when (this) {
     is SetupState.CreatedAndSaved -> formattedRecoveryKey
     else -> null
 }
-

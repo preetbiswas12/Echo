@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.libraries.matrix.test.FakeMatrixClient
@@ -17,6 +16,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestStat
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -85,4 +85,3 @@ class IgnoredUsersTestTest {
         }
     }
 }
-

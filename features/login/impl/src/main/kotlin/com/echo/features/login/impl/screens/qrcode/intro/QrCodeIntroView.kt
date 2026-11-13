@@ -105,4 +105,3 @@ internal fun QrCodeIntroViewPreview(@PreviewParameter(QrCodeIntroStatePreviewPar
         onContinue = {},
     )
 }
-

@@ -10,7 +10,6 @@ package com.echo.features.invitepeople.impl
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.invitepeople.api.InvitePeopleEvent
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -51,6 +50,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.delay
@@ -927,4 +927,3 @@ fun TestScope.createDefaultInvitePeoplePresenter(
         matrixClient = matrixClient,
     )
 }
-

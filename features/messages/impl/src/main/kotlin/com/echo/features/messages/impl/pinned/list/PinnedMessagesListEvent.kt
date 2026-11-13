@@ -18,4 +18,3 @@ sealed interface PinnedMessagesListEvent {
     data class OpenThread(val threadRootId: ThreadId) : PinnedMessagesListEvent
     data class ToggleReaction(val emoji: String, val eventOrTransactionId: EventOrTransactionId) : PinnedMessagesListEvent
 }
-

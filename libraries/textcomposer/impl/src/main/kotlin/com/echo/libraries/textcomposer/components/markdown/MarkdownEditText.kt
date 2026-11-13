@@ -66,4 +66,3 @@ internal class MarkdownEditText(
         return null
     }
 }
-

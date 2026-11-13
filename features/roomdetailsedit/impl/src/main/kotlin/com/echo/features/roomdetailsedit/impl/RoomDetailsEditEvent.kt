@@ -18,4 +18,3 @@ sealed interface RoomDetailsEditEvent {
     data object Save : RoomDetailsEditEvent
     data object CloseDialog : RoomDetailsEditEvent
 }
-

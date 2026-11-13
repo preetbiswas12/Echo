@@ -19,4 +19,3 @@ data class RoomDirectoryState(
 ) {
     val displayEmptyState = roomDescriptions.isEmpty() && !displayLoadMoreIndicator
 }
-

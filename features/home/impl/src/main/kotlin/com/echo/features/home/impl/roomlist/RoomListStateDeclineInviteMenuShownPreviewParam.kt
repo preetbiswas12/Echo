@@ -34,4 +34,3 @@ internal fun aDeclineInviteMenuShown(
 ) = RoomListState.DeclineInviteMenu.Shown(
     roomSummary = roomSummary,
 )
-

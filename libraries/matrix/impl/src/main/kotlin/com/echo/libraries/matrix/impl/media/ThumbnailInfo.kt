@@ -24,4 +24,3 @@ fun ThumbnailInfo.map(): RustThumbnailInfo = RustThumbnailInfo(
     mimetype = mimetype,
     size = size?.toULong()
 )
-

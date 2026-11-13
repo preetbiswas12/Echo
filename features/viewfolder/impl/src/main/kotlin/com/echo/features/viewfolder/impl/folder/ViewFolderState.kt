@@ -15,4 +15,3 @@ data class ViewFolderState(
     val title: String,
     val content: ImmutableList<Item>,
 )
-

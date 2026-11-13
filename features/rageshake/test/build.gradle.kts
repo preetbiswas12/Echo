@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.features.rageshake.api)
     implementation(projects.tests.testutils)
 }
-
-

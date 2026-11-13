@@ -12,7 +12,6 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.exifinterface.media.ExifInterface
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.bitmap.calculateInSampleSize
 import com.echo.libraries.androidutils.bitmap.resizeToMax
 import com.echo.libraries.androidutils.bitmap.rotateToExifMetadataOrientation
@@ -20,6 +19,7 @@ import com.echo.libraries.androidutils.file.createTmpFile
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.InputStream
@@ -119,4 +119,3 @@ sealed interface ResizeMode {
     data class Approximate(val desiredWidth: Int, val desiredHeight: Int) : ResizeMode
     data class Strict(val maxWidth: Int, val maxHeight: Int) : ResizeMode
 }
-

@@ -44,4 +44,3 @@ sealed interface PinnedMessagesBannerState {
         val eventSink: (PinnedMessagesBannerEvent) -> Unit
     ) : Visible
 }
-

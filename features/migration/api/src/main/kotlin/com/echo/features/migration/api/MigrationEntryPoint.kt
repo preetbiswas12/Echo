@@ -21,4 +21,3 @@ interface MigrationEntryPoint {
         modifier: Modifier,
     )
 }
-

@@ -7,11 +7,11 @@
 
 package com.echo.libraries.permissions.impl.localnetwork
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.network.LocalNetworkAddressClassifier
 import com.echo.libraries.androidutils.network.LocalNetworkClassification
 import com.echo.libraries.permissions.test.FakePermissionStateProvider
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -77,4 +77,3 @@ private class FakeLocalNetworkAddressClassifier(
 ) : LocalNetworkAddressClassifier {
     override suspend fun classify(url: String): LocalNetworkClassification = classification
 }
-

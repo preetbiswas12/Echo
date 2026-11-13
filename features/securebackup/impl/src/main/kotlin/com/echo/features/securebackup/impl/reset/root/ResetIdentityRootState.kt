@@ -12,4 +12,3 @@ data class ResetIdentityRootState(
     val displayConfirmationDialog: Boolean,
     val eventSink: (ResetIdentityRootEvent) -> Unit,
 )
-

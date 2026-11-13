@@ -18,4 +18,3 @@ val activationKeys = setOf(
     Key.DirectionCenter,
     Key.Spacebar,
 )
-

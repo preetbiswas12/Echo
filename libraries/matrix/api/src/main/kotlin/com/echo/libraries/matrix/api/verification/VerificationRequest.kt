@@ -32,4 +32,3 @@ sealed interface VerificationRequest : Parcelable {
         data class User(override val details: SessionVerificationRequestDetails) : Incoming(details)
     }
 }
-

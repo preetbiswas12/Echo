@@ -17,4 +17,3 @@ class FakeRoomDirectoryService(
 ) : RoomDirectoryService {
     override fun createRoomDirectoryList(scope: CoroutineScope) = createRoomDirectoryListFactory(scope)
 }
-

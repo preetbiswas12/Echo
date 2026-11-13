@@ -64,4 +64,3 @@ class FakeBugReporter(val mode: Mode = Mode.Success) : BugReporter {
         return null
     }
 }
-

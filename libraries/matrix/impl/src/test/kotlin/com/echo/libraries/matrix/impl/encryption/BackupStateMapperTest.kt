@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.encryption
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.encryption.BackupState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.BackupState as RustBackupState
 
@@ -26,4 +26,3 @@ class BackupStateMapperTest {
         assertThat(sut.map(RustBackupState.DISABLING)).isEqualTo(BackupState.DISABLING)
     }
 }
-

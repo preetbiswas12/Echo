@@ -37,4 +37,3 @@ fun MatrixUser.getFullName(): String {
         }
     }
 }
-

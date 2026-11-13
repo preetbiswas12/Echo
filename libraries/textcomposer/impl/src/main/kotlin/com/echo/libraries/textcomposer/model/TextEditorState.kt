@@ -79,4 +79,3 @@ sealed interface TextEditorState {
         is Rich -> richTextEditorState.lineCount
     }
 }
-

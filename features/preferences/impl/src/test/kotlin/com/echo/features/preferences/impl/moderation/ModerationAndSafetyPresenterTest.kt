@@ -7,7 +7,6 @@
 
 package com.echo.features.preferences.impl.moderation
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.media.MediaPreviewValue
 import com.echo.libraries.matrix.test.A_USER_ID
@@ -17,6 +16,7 @@ import com.echo.libraries.preferences.test.InMemorySessionPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -152,4 +152,3 @@ class ModerationAndSafetyPresenterTest {
         sessionCoroutineScope = this,
     )
 }
-

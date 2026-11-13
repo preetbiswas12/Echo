@@ -19,4 +19,3 @@ interface TemporaryMatrixClientFactory {
      */
     suspend fun create(serverName: String): Result<TemporaryMatrixClient>
 }
-

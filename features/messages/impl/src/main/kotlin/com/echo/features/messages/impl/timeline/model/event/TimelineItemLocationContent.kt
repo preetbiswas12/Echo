@@ -121,4 +121,3 @@ private fun rememberIsLiveLocationActive(
         value = false
     }.value
 }
-

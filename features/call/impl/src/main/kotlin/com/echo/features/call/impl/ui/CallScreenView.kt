@@ -290,4 +290,3 @@ internal class JavascriptBackHandlerBridge(
         callback()
     }
 }
-

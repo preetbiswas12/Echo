@@ -17,4 +17,3 @@ data class FeatureUiModel(
     val icon: IconSource?,
     val isEnabled: Boolean
 )
-

@@ -37,4 +37,3 @@ private fun MatrixTimelineItem.isDisplayableAsPinnedEvent(): Boolean {
 private fun MatrixTimelineItem.isDayDivider(): Boolean {
     return this is MatrixTimelineItem.Virtual && virtual is VirtualTimelineItem.DayDivider
 }
-

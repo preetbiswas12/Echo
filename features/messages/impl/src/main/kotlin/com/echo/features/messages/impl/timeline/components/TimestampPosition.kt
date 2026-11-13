@@ -36,4 +36,3 @@ enum class TimestampPosition {
         val Default: TimestampPosition = Aligned
     }
 }
-

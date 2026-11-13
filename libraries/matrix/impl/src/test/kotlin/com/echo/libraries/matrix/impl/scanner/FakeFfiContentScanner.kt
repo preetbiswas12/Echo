@@ -22,4 +22,3 @@ class FakeFfiContentScanner(
         return scan.invoke(client, mediaSource)
     }
 }
-

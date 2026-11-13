@@ -14,7 +14,6 @@ import android.os.Build
 import androidx.core.net.toUri
 import androidx.exifinterface.media.ExifInterface
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.media.AudioInfo
@@ -31,6 +30,7 @@ import com.echo.tests.testutils.fake.FakeTemporaryUriDeleter
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Ignore
@@ -573,4 +573,3 @@ class AndroidMediaPreProcessorTest : RobolectricTest() {
             }
         }
 }
-

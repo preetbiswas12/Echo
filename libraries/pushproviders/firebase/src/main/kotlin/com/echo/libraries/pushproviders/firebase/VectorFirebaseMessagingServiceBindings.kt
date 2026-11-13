@@ -15,4 +15,3 @@ import dev.zacsweers.metro.ContributesTo
 interface VectorFirebaseMessagingServiceBindings {
     fun inject(service: VectorFirebaseMessagingService)
 }
-

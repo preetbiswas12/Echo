@@ -322,4 +322,3 @@ internal class HtmlMessageContentPreviewParam : PreviewParameterProvider<Documen
         const val MENTION_ID = "mention_0"
     }
 }
-

@@ -72,4 +72,3 @@ class FakePushHistoryService(
         return removeOldPushRequests.invoke(sessionId)
     }
 }
-

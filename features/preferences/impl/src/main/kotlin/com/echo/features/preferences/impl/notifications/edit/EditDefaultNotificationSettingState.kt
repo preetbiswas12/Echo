@@ -20,4 +20,3 @@ data class EditDefaultNotificationSettingState(
     val displayMentionsOnlyDisclaimer: Boolean,
     val eventSink: (EditDefaultNotificationSettingStateEvent) -> Unit,
 )
-

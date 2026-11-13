@@ -8,8 +8,6 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.SessionId
@@ -17,6 +15,8 @@ import com.echo.libraries.pushproviders.api.Config
 import com.echo.libraries.pushproviders.api.Distributor
 import com.echo.libraries.pushproviders.api.PushProvider
 import com.echo.libraries.pushproviders.api.PusherSubscriber
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 import timber.log.Timber
 
 private val loggerTag = LoggerTag("FirebasePushProvider", LoggerTag.PushLoggerTag)
@@ -92,4 +92,3 @@ class FirebasePushProvider(
         private val firebaseDistributor = Distributor("Firebase", "Firebase")
     }
 }
-

@@ -18,4 +18,3 @@ class FakeFfiGrantLoginWithQrCodeTask(
     override fun cancel() = cancelResult()
     override fun close() = Unit
 }
-

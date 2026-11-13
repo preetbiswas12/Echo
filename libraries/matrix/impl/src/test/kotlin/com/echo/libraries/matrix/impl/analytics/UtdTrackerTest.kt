@@ -8,11 +8,11 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Error
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustUnableToDecryptInfo
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Error
 import org.junit.Test
 import uniffi.matrix_sdk_crypto.UtdCause
 
@@ -238,4 +238,3 @@ class UtdTrackerTest {
         )
     }
 }
-

@@ -23,11 +23,11 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
+import com.echo.libraries.designsystem.modifiers.squareSize
+import com.echo.libraries.designsystem.utils.ForceMaxBrightness
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.common.BitMatrix
 import com.google.zxing.qrcode.QRCodeWriter
-import com.echo.libraries.designsystem.modifiers.squareSize
-import com.echo.libraries.designsystem.utils.ForceMaxBrightness
 
 private fun String.toBitMatrix(size: Int): BitMatrix {
     return QRCodeWriter().encode(
@@ -90,4 +90,3 @@ internal fun QrCodeViewPreview() {
         data = "RANDOM_QRCODE_DATA",
     )
 }
-

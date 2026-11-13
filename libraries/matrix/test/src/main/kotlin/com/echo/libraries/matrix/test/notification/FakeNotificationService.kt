@@ -24,4 +24,3 @@ class FakeNotificationService : NotificationService {
         return getNotificationsResult
     }
 }
-

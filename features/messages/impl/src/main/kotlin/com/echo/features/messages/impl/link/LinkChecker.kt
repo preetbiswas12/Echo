@@ -8,10 +8,10 @@
 
 package com.echo.features.messages.impl.link
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.data.tryOrNull
 import com.echo.libraries.core.extensions.containsRtLOverride
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import io.element.android.wysiwyg.link.Link
 import java.net.URI
 
@@ -37,4 +37,3 @@ class DefaultLinkChecker : LinkChecker {
         }
     }
 }
-

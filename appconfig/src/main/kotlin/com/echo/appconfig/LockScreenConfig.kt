@@ -33,4 +33,3 @@ object LockScreenConfig {
     /** Authentication with weak methods (most face/iris unlock implementations) is supported. */
     const val IS_WEAK_BIOMETRICS_ENABLED: Boolean = true
 }
-

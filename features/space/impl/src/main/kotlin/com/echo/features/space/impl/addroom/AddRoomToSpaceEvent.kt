@@ -17,4 +17,3 @@ sealed interface AddRoomToSpaceEvent {
     data object Dismiss : AddRoomToSpaceEvent
     data class UpdateSearchVisibleRange(val range: IntRange) : AddRoomToSpaceEvent
 }
-

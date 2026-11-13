@@ -79,4 +79,3 @@ data class IdentityRoomMember(
     val displayNameOrDefault: String,
     val avatarData: AvatarData,
 )
-

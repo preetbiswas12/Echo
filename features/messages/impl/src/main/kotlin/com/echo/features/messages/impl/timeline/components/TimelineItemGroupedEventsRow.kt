@@ -291,4 +291,3 @@ internal fun TimelineItemRedactedMessagesGroupPreview() = ElementPreview {
         eventSink = {},
     )
 }
-

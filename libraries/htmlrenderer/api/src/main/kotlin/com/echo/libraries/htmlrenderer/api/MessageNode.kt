@@ -105,4 +105,3 @@ data class ListNode(
 data class ListItemNode(
     val children: ImmutableList<BlockNode>,
 ) : MessageNode
-

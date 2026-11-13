@@ -34,4 +34,3 @@ class AggregatedReactionTest {
         assertEquals(true, reaction.isHighlighted)
     }
 }
-

@@ -15,4 +15,3 @@ data class LinkState(
     val linkClick: AsyncAction<Link>,
     val eventSink: (LinkEvent) -> Unit,
 )
-

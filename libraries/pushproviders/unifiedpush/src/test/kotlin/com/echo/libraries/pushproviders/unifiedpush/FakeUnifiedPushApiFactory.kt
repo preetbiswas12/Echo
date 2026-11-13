@@ -30,4 +30,3 @@ class FakeUnifiedPushApi(
         return discoveryResponse()
     }
 }
-

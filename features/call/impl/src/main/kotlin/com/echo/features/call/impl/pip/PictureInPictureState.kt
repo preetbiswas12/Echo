@@ -13,4 +13,3 @@ data class PictureInPictureState(
     val isInPictureInPicture: Boolean,
     val eventSink: (PictureInPictureEvent) -> Unit,
 )
-

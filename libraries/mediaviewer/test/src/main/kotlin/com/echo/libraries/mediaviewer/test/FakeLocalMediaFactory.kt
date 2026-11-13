@@ -56,4 +56,3 @@ class FakeLocalMediaFactory(
         return aLocalMedia(uri, mediaInfo)
     }
 }
-

@@ -12,7 +12,6 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.compose.runtime.Composable
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.test.FakeElementCallEntryPoint
 import com.echo.features.forward.test.FakeForwardEntryPoint
 import com.echo.features.knockrequests.test.FakeKnockRequestsListEntryPoint
@@ -43,6 +42,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -119,4 +119,3 @@ class DefaultMessagesEntryPointTest {
             .isEqualTo(MessagesFlowNode.NavTarget.PinnedMessagesList)
     }
 }
-

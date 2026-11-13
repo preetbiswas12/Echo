@@ -297,4 +297,3 @@ internal fun ReactionSummaryViewContentPreview(
 ) = ElementPreview {
     ReactionSummaryViewContent(summary = state.target as ReactionSummaryState.Summary)
 }
-

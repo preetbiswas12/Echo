@@ -8,7 +8,6 @@
 
 package com.echo.features.space.impl.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.room.RoomType
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.libraries.matrix.test.A_ROOM_ID_3
 import com.echo.libraries.previewutils.room.aSpaceRoom
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class SpaceStateTest {
@@ -124,4 +124,3 @@ class SpaceStateTest {
         assertThat(state.isRemoveButtonEnabled).isFalse()
     }
 }
-

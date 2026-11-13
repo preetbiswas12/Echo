@@ -23,8 +23,6 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
 import com.echo.features.home.impl.datasource.RoomListDataSource
@@ -60,6 +58,8 @@ import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.watchers.AnalyticsColdStartWatcher
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.collections.immutable.toImmutableSet
 import kotlinx.coroutines.CoroutineScope
@@ -349,4 +349,3 @@ class RoomListPresenter(
         }
     }
 }
-

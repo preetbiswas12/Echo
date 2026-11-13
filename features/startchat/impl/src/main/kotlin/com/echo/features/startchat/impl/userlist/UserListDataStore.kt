@@ -8,8 +8,8 @@
 
 package com.echo.features.startchat.impl.userlist
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.user.MatrixUser
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
@@ -29,4 +29,3 @@ class UserListDataStore {
 
     val selectedUsers = _selectedUsers.asStateFlow()
 }
-

@@ -104,4 +104,3 @@ internal fun LabsViewPreview(@PreviewParameter(LabsStatePreviewParam::class) sta
         LabsView(state = state, onBack = {})
     }
 }
-

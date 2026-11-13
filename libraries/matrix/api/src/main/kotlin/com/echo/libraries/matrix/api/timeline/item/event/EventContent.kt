@@ -160,4 +160,3 @@ fun MessageContent.mediaSources(): List<MediaSource> {
         else -> emptyList()
     }
 }
-

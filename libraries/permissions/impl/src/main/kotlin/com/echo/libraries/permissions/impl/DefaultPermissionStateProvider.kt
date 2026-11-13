@@ -11,12 +11,12 @@ package com.echo.libraries.permissions.impl
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.permissions.api.PermissionStateProvider
 import com.echo.libraries.permissions.api.PermissionsStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.Flow
 
 @SingleIn(AppScope::class)
@@ -40,4 +40,3 @@ class DefaultPermissionStateProvider(
 
     override fun isPermissionAsked(permission: String): Flow<Boolean> = permissionsStore.isPermissionAsked(permission)
 }
-

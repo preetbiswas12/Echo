@@ -15,4 +15,3 @@ import com.echo.compound.theme.ElementTheme
 val bgCanvasWithTransparency: Color
     @Composable
     get() = ElementTheme.colors.bgCanvasDefault.copy(alpha = 0.6f)
-

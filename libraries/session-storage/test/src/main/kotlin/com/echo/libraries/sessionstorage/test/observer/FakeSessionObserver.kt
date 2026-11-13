@@ -34,4 +34,3 @@ class FakeSessionObserver : SessionObserver {
         listeners.forEach { it.onSessionDeleted(userId, wasLastSession = wasLastSession) }
     }
 }
-

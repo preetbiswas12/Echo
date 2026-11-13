@@ -177,4 +177,3 @@ internal class BigIconStylePreviewParam : PreviewParameterProvider<BigIcon.Style
             BigIcon.Style.SuccessSolid,
         )
 }
-

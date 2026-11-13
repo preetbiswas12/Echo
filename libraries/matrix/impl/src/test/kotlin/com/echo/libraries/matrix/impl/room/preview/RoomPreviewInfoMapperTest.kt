@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.room.preview
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.CurrentUserMembership
 import com.echo.libraries.matrix.api.room.RoomType
 import com.echo.libraries.matrix.api.room.join.JoinRule
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.api.room.preview.RoomPreviewInfo
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomPreviewInfo
 import com.echo.libraries.matrix.test.A_ROOM_ALIAS
 import com.echo.libraries.matrix.test.A_ROOM_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.Membership
 import org.matrix.rustcomponents.sdk.JoinRule as RustJoinRule
@@ -71,4 +71,3 @@ class RoomPreviewInfoMapperTest {
         )
     }
 }
-

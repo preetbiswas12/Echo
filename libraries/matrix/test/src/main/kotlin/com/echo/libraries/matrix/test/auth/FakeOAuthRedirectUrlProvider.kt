@@ -17,4 +17,3 @@ class FakeOAuthRedirectUrlProvider(
 ) : OAuthRedirectUrlProvider {
     override fun provide() = provideResult
 }
-

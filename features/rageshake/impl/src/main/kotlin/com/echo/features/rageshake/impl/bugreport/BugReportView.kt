@@ -251,4 +251,3 @@ internal fun BugReportViewNightPreview(@PreviewParameter(BugReportStatePreviewPa
         onViewLogs = {},
     )
 }
-

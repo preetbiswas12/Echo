@@ -7,7 +7,6 @@
 
 package com.echo.libraries.matrix.ui.model
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.powerlevels.RoomPowerLevels
 import com.echo.libraries.matrix.test.A_USER_ID
@@ -15,6 +14,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.defaultRoomPowerLevelValues
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableMap
 import org.junit.Test
 
@@ -77,4 +77,3 @@ class RoomInfoExtensionTest {
         assertThat(roomInfo.roleOf(A_USER_ID_3)).isEqualTo(RoomMember.Role.User)
     }
 }
-

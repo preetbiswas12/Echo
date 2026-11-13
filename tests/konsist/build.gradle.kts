@@ -37,5 +37,3 @@ tasks.withType<Test>().configureEach {
     val isNotCheckTask = gradle.startParameter.taskNames.any { it.contains("check", ignoreCase = true).not() }
     outputs.upToDateWhen { isNotCheckTask }
 }
-
-

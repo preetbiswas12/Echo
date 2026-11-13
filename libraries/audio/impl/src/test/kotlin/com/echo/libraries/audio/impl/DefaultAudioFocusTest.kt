@@ -11,9 +11,9 @@ package com.echo.libraries.audio.impl
 import android.media.AudioAttributes
 import android.media.AudioManager
 import androidx.core.content.getSystemService
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.audio.api.AudioFocusRequester
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 import org.robolectric.Shadows.shadowOf
@@ -78,4 +78,3 @@ class DefaultAudioFocusTest : RobolectricTest() {
         return requireNotNull(request.audioFocusRequest).audioAttributes.usage
     }
 }
-

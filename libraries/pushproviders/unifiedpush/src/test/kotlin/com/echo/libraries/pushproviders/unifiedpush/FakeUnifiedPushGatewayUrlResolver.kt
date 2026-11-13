@@ -17,4 +17,3 @@ class FakeUnifiedPushGatewayUrlResolver(
         return resolveResult(gatewayResult, instance)
     }
 }
-

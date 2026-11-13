@@ -26,4 +26,3 @@ fun Modifier.centerBottomEdge(scope: BoxScope): Modifier = this.then(
         }
     }
 )
-

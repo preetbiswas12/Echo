@@ -9,13 +9,13 @@
 package com.echo.features.rageshake.impl.reporter
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.appconfig.RageshakeConfig
 import com.echo.features.enterprise.api.BugReportUrl
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.test.InMemorySessionStore
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import org.junit.Test
@@ -58,4 +58,3 @@ private fun createDefaultBugReporterUrlProvider(
     enterpriseService = enterpriseService,
     sessionStore = sessionStore,
 )
-

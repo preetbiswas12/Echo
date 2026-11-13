@@ -26,4 +26,3 @@ class DefaultRichTextEditorStateFactory : RichTextEditorStateFactory {
         return rememberRichTextEditorState()
     }
 }
-

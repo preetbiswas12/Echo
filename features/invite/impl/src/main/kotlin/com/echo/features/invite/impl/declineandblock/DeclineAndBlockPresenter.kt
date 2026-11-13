@@ -16,9 +16,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.impl.DeclineInvite
 import com.echo.libraries.architecture.AsyncAction
@@ -26,6 +23,9 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarMessage
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -92,4 +92,3 @@ class DeclineAndBlockPresenter(
         }
     }
 }
-

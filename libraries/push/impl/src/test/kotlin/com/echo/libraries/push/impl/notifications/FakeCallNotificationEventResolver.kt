@@ -22,4 +22,3 @@ class FakeCallNotificationEventResolver(
         return resolveEventLambda(sessionId, notificationData, forceNotify)
     }
 }
-

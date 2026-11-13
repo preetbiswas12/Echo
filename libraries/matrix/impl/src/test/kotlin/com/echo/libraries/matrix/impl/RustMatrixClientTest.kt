@@ -10,7 +10,6 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.data.bytes
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
 import com.echo.libraries.matrix.api.paths.SessionPaths
@@ -38,6 +37,7 @@ import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -408,4 +408,3 @@ class RustMatrixClientTest {
         },
     )
 }
-

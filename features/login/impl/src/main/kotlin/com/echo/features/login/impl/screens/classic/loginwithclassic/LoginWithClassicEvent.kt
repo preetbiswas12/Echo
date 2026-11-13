@@ -11,4 +11,3 @@ sealed interface LoginWithClassicEvent {
     data object Submit : LoginWithClassicEvent
     data object ClearError : LoginWithClassicEvent
 }
-

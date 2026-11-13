@@ -78,4 +78,3 @@ internal fun OrganizationHeaderPreview() = ElementPreview {
         numberOfRooms = 88,
     )
 }
-

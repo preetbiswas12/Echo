@@ -15,4 +15,3 @@ fun interface MaxUploadSizeProvider {
     /** Returns the maximum size in bytes a single upload may have, as advertised by the homeserver. */
     suspend fun getMaxUploadSize(): Result<Long>
 }
-

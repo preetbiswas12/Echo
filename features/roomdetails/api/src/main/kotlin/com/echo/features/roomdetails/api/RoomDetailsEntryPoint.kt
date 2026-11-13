@@ -53,4 +53,3 @@ interface RoomDetailsEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

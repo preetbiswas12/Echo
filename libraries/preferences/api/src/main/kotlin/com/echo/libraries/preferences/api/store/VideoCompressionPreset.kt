@@ -21,4 +21,3 @@ enum class VideoCompressionPreset {
     /** Low quality compression, suitable for low-resolution videos or when bandwidth is a concern. */
     LOW
 }
-

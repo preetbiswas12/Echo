@@ -10,10 +10,10 @@ package com.echo.features.signedout.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.signedout.api.SignedOutEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultSignedOutEntryPoint : SignedOutEntryPoint {
@@ -28,4 +28,3 @@ class DefaultSignedOutEntryPoint : SignedOutEntryPoint {
         )
     }
 }
-

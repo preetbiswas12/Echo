@@ -29,4 +29,3 @@ fun GroupedMediaItems.hasEvent(eventId: EventId): Boolean {
         .filterIsInstance<MediaItem.Event>()
         .any { it.eventId() == eventId }
 }
-

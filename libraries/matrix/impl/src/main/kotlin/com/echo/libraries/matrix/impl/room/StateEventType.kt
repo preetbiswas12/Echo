@@ -106,4 +106,3 @@ fun TimelineEventType.Companion.fromState(stateEventType: StateEventType): Timel
     StateEventType.RoomRetention -> TimelineEventType.RoomRetention
     is StateEventType.Custom -> timelineEventTypeFromString(stateEventType.type)
 }
-

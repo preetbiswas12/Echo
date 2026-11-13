@@ -23,4 +23,3 @@ class ParcelFileDescriptorFactory(private val context: Context) {
         }
     }
 }
-

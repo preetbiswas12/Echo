@@ -8,7 +8,6 @@
 
 package com.echo.libraries.troubleshoot.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.push.test.FakeGetCurrentPushProvider
@@ -18,6 +17,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestStat
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -190,4 +190,3 @@ internal fun createTroubleshootNotificationsPresenter(
         troubleshootTestSuite = troubleshootTestSuite,
     )
 }
-

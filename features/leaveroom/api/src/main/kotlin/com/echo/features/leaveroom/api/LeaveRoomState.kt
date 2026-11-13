@@ -18,4 +18,3 @@ interface LeaveRoomState {
     /** Where the host screen sends its events to start or confirm leaving a room. */
     val eventSink: (LeaveRoomEvent) -> Unit
 }
-

@@ -10,10 +10,10 @@ package com.echo.features.announcement.impl.store
 
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.announcement.api.Announcement
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -68,4 +68,3 @@ private fun Announcement.toKey() = when (this) {
     Announcement.MultiAccount -> multiAccountKey
     Announcement.SwipeAvatarToSwitchAccount -> swipeAvatarToSwitchAccountKey
 }
-

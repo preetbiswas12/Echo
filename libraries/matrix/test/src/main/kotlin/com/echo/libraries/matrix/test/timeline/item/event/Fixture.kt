@@ -24,4 +24,3 @@ fun aRoomMembershipContent(
     change = change,
     reason = reason,
 )
-

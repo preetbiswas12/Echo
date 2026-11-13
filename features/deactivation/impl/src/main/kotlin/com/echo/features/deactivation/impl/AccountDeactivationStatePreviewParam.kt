@@ -51,4 +51,3 @@ internal fun anAccountDeactivationState(
     accountDeactivationAction = accountDeactivationAction,
     eventSink = eventSink,
 )
-

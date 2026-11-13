@@ -18,4 +18,3 @@ class QrCodeConfirmationStepPreviewParam : PreviewParameterProvider<QrCodeConfir
             QrCodeConfirmationStep.DisplayVerificationCode("123456789"),
         )
 }
-

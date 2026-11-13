@@ -20,8 +20,6 @@ import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.operation.replace
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.createroom.api.CreateRoomEntryPoint
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesEntryPoint
@@ -43,6 +41,8 @@ import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.spaces.SpaceService
 import com.echo.libraries.matrix.api.spaces.loadAllIncrementally
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.launch
@@ -223,4 +223,3 @@ class SpaceFlowNode(
     @Composable
     override fun View(modifier: Modifier) = BackstackView()
 }
-

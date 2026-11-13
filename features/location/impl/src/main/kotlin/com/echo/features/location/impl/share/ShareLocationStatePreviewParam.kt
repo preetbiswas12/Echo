@@ -99,4 +99,3 @@ fun aShareLocationState(
         eventSink = eventSink,
     )
 }
-

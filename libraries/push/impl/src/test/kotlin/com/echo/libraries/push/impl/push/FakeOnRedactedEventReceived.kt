@@ -18,4 +18,3 @@ class FakeOnRedactedEventReceived(
         onRedactedEventsReceivedResult(redactions)
     }
 }
-

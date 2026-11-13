@@ -11,4 +11,3 @@ data class LocationSettingsState(
     val liveLocationMinimumDistanceUpdate: Int,
     val eventSink: (LocationSettingsEvent) -> Unit
 )
-

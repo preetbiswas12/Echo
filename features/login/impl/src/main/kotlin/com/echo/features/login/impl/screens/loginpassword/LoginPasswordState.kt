@@ -35,4 +35,3 @@ data class LoginFormState(
         val Default = LoginFormState("", "")
     }
 }
-

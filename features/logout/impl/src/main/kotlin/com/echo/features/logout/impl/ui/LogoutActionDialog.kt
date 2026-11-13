@@ -48,4 +48,3 @@ fun LogoutActionDialog(
         is AsyncAction.Success -> Unit
     }
 }
-

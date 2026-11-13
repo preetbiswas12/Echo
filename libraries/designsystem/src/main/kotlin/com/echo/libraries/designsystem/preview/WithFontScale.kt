@@ -28,4 +28,3 @@ fun WithFontScale(fontScale: Float, content: @Composable () -> Unit) {
         content()
     }
 }
-

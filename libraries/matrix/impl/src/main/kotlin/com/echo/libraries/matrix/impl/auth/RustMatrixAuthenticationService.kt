@@ -8,9 +8,6 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.enterprise.api.ClientEnterpriseHook
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.androidutils.crypto.ClientSecret
@@ -47,6 +44,9 @@ import com.echo.libraries.matrix.impl.paths.SessionPathsFactory
 import com.echo.libraries.sessionstorage.api.LoginType
 import com.echo.libraries.sessionstorage.api.SessionData
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
@@ -474,4 +474,3 @@ class RustMatrixAuthenticationService(
         } ?: Timber.w("Timed out waiting for a known verification status")
     }
 }
-

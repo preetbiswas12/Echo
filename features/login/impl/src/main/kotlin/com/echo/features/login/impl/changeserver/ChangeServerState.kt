@@ -19,4 +19,3 @@ data class ChangeServerState(
     val localNetworkPermissionDialog: LocalNetworkPermissionDialog,
     val eventSink: (ChangeServerEvent) -> Unit
 )
-

@@ -16,4 +16,3 @@ fun aCacheData(
     value = value,
     updatedAt = updatedAt,
 )
-

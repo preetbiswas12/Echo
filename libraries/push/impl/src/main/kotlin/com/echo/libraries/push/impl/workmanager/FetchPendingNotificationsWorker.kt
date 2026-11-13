@@ -12,12 +12,6 @@ import android.content.Context
 import android.os.Build
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesIntoMap
-import dev.zacsweers.metro.binding
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.core.extensions.runCatchingExceptions
@@ -42,6 +36,12 @@ import com.echo.services.analytics.api.recordTransaction
 import com.echo.services.analyticsproviders.api.AnalyticsTransaction
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesIntoMap
+import dev.zacsweers.metro.binding
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
@@ -283,4 +283,3 @@ class FetchPendingNotificationsWorker(
 }
 
 private fun <T : AnalyticsTransaction> Collection<T>.finish() = forEach { it.finish() }
-

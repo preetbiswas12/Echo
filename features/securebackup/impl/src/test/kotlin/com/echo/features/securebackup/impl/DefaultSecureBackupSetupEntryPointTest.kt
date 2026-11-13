@@ -10,7 +10,6 @@ package com.echo.features.securebackup.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.securebackup.api.SecureBackupSetupEntryPoint
 import com.echo.features.securebackup.impl.setup.SecureBackupSetupNode
 import com.echo.features.securebackup.impl.setup.SecureBackupSetupPresenter
@@ -20,6 +19,7 @@ import com.echo.libraries.androidutils.toast.FakeToastHelper
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -59,4 +59,3 @@ class DefaultSecureBackupSetupEntryPointTest {
         assertThat(result.plugins).contains(SecureBackupSetupNode.Inputs(isChangeRecoveryKeyUserStory = true))
     }
 }
-

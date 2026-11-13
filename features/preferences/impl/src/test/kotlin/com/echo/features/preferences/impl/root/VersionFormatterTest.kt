@@ -8,9 +8,9 @@
 
 package com.echo.features.preferences.impl.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -32,4 +32,3 @@ class VersionFormatterTest {
         const val VERSION = "version: "
     }
 }
-

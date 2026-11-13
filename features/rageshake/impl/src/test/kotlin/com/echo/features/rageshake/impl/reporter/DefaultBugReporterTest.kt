@@ -8,7 +8,6 @@
 
 package com.echo.features.rageshake.impl.reporter
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.appconfig.RageshakeConfig
 import com.echo.features.rageshake.api.reporter.BugReporterListener
 import com.echo.features.rageshake.impl.crash.CrashDataStore
@@ -30,6 +29,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.TestScope
@@ -495,4 +495,3 @@ class DefaultBugReporterTest : RobolectricTest() {
         private const val TRUNCATION_MARKER_MAX_SIZE = 200
     }
 }
-

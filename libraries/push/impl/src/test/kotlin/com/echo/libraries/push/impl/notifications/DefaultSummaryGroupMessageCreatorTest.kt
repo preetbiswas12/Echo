@@ -10,7 +10,6 @@ package com.echo.libraries.push.impl.notifications
 
 import android.app.Notification
 import androidx.core.app.NotificationCompat
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.push.impl.notifications.factories.aNotificationAccountParams
 import com.echo.libraries.push.impl.notifications.fake.FakeNotificationCreator
@@ -19,6 +18,7 @@ import com.echo.services.toolbox.test.systemclock.A_FAKE_TIMESTAMP
 import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.nonNull
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -56,4 +56,3 @@ class DefaultSummaryGroupMessageCreatorTest : RobolectricTest() {
         assertThat(result.priority).isEqualTo(NotificationCompat.PRIORITY_DEFAULT)
     }
 }
-

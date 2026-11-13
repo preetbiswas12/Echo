@@ -21,4 +21,3 @@ internal class ProgressWatcherWrapper(private val progressCallback: ProgressCall
 internal fun ProgressCallback.toProgressWatcher(): ProgressWatcher {
     return ProgressWatcherWrapper(this)
 }
-

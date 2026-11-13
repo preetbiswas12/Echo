@@ -8,8 +8,6 @@
 
 package com.echo.features.home.impl.roomlist
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
 import com.echo.features.announcement.test.FakeAnnouncementService
@@ -87,6 +85,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.first
@@ -806,4 +806,3 @@ class RoomListPresenterTest {
         sessionStore = sessionStore,
     )
 }
-

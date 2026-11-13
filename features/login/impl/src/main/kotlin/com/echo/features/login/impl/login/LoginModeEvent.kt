@@ -27,4 +27,3 @@ sealed interface LoginModeEvent {
 
     data object DismissLocalNetworkPermission : LoginModeEvent
 }
-

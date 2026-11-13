@@ -12,7 +12,6 @@ package com.echo.libraries.mediaviewer.impl.viewer
 
 import android.net.Uri
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.api.timeline.HtmlConverterProvider
 import com.echo.features.messages.api.timeline.TextPillificator
 import com.echo.features.messages.test.timeline.FakeHtmlConverterProvider
@@ -60,6 +59,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -1043,4 +1043,3 @@ internal fun createMediaViewerEntryPointParams(
     thumbnailSource = null,
     blurHash = null,
 )
-

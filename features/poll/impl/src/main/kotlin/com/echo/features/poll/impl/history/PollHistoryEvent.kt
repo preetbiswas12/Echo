@@ -17,4 +17,3 @@ sealed interface PollHistoryEvent {
     data class EndPoll(val pollStartId: EventId) : PollHistoryEvent
     data class SelectFilter(val filter: PollHistoryFilter) : PollHistoryEvent
 }
-

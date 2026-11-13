@@ -33,4 +33,3 @@ data class PushHistoryItem(
     val hasBeenResolved: Boolean,
     val comment: String?,
 )
-

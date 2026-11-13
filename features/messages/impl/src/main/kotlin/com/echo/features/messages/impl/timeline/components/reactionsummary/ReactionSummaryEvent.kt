@@ -15,4 +15,3 @@ sealed interface ReactionSummaryEvent {
     data object Clear : ReactionSummaryEvent
     data class ShowReactionSummary(val eventId: EventId, val reactions: List<AggregatedReaction>, val selectedKey: String) : ReactionSummaryEvent
 }
-

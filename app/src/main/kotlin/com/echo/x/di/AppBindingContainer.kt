@@ -12,11 +12,8 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.content.res.Resources
 import androidx.preference.PreferenceManager
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
-import dev.zacsweers.metro.SingleIn
+import com.echo.BuildConfig
+import com.echo.R
 import com.echo.appconfig.ApplicationConfig
 import com.echo.features.enterprise.api.IsEnterpriseBuild
 import com.echo.libraries.androidutils.system.getVersionCodeFromManifest
@@ -28,8 +25,11 @@ import com.echo.libraries.di.BaseDirectory
 import com.echo.libraries.di.CacheDirectory
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.di.annotations.ApplicationContext
-import com.echo.BuildConfig
-import com.echo.R
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
@@ -115,4 +115,3 @@ object AppBindingContainer {
         return SnackbarDispatcher()
     }
 }
-

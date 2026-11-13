@@ -9,8 +9,6 @@
 package com.echo.libraries.mediaupload.impl
 
 import android.net.Uri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.hash.hash
 import com.echo.libraries.core.extensions.flatMap
 import com.echo.libraries.core.extensions.flatMapCatching
@@ -30,6 +28,8 @@ import com.echo.libraries.mediaupload.api.MediaSenderFactory
 import com.echo.libraries.mediaupload.api.MediaSenderRoomFactory
 import com.echo.libraries.mediaupload.api.MediaUploadInfo
 import com.echo.libraries.mediaupload.api.toGalleryItemInfo
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import timber.log.Timber
@@ -304,4 +304,3 @@ class DefaultMediaSender(
 
 private fun mediaId(uri: Uri?): String = uri?.path.orEmpty().hash()
 private fun mediaId(file: File): String = file.path.orEmpty().hash()
-

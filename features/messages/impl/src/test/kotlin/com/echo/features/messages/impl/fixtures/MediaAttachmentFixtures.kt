@@ -15,4 +15,3 @@ fun aMediaAttachment(localMedia: LocalMedia, sendAsFile: Boolean = false) = Atta
     localMedia = localMedia,
     sendAsFile = sendAsFile,
 )
-

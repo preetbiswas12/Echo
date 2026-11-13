@@ -132,4 +132,3 @@ internal fun BlockedUsersViewPreview(@PreviewParameter(BlockedUsersStatePreviewP
         )
     }
 }
-

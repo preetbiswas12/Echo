@@ -35,4 +35,3 @@ data class PollContentState(
 ) {
     val isMultipleSelection = maxSelections > 1u
 }
-

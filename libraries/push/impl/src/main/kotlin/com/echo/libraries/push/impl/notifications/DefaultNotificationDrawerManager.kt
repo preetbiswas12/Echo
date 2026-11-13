@@ -8,9 +8,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.lockscreen.api.LockScreenService
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -37,6 +34,9 @@ import com.echo.services.appnavstate.api.NavigationState
 import com.echo.services.appnavstate.api.currentRoomId
 import com.echo.services.appnavstate.api.currentSessionId
 import com.echo.services.appnavstate.api.currentThreadId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -319,4 +319,3 @@ private fun NotifiableEvent.toFallbackNotifiableEvent(): FallbackNotifiableEvent
         cause = null,
     )
 }
-

@@ -102,4 +102,3 @@ class ChooseSessionVerificationModeViewTest : RobolectricTest() {
         }
     }
 }
-

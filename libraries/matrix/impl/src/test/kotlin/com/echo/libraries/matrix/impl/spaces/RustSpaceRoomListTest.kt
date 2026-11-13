@@ -11,7 +11,6 @@
 package com.echo.libraries.matrix.impl.spaces
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.spaces.SpaceRoomList
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSpaceRoom
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
@@ -104,4 +104,3 @@ class RustSpaceRoomListTest {
         )
     }
 }
-

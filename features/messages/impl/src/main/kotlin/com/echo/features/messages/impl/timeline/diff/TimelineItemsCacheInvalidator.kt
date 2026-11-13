@@ -52,4 +52,3 @@ private fun MutableDiffCache<*>.invalidateAround(position: Int) {
         set(position + 1, null)
     }
 }
-

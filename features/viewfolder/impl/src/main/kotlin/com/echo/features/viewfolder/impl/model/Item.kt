@@ -25,4 +25,3 @@ sealed interface Item {
         val formattedSize: String,
     ) : Item
 }
-

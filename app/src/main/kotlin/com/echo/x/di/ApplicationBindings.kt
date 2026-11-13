@@ -7,12 +7,11 @@
 
 package com.echo.x.di
 
+import com.echo.x.ElementXApplication
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
-import com.echo.x.ElementXApplication
 
 @ContributesTo(AppScope::class)
 interface ApplicationBindings {
     fun inject(application: ElementXApplication)
 }
-

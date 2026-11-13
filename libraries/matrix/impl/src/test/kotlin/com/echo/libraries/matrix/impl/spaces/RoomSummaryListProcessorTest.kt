@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.spaces
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.spaces.SpaceRoom
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSpaceRoom
 import com.echo.libraries.matrix.test.A_ROOM_ID
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID_3
 import com.echo.libraries.matrix.test.A_ROOM_ID_4
 import com.echo.libraries.previewutils.room.aSpaceRoom
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -194,4 +194,3 @@ class RoomSummaryListProcessorTest {
         analyticsService = FakeAnalyticsService(),
     )
 }
-

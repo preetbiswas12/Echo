@@ -405,4 +405,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setRoomDetailView(
         )
     }
 }
-

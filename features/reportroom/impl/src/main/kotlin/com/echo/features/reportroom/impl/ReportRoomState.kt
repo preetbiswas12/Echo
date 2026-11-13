@@ -18,4 +18,3 @@ data class ReportRoomState(
 ) {
     val canReport: Boolean = reason.isNotBlank()
 }
-

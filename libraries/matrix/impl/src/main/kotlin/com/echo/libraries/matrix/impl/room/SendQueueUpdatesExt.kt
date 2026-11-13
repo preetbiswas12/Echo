@@ -27,4 +27,3 @@ fun RoomSendQueueUpdate.map(): SendQueueUpdate = when (this) {
     is RoomSendQueueUpdate.SendError -> SendQueueUpdate.SendError(TransactionId(transactionId))
     is RoomSendQueueUpdate.SentEvent -> SendQueueUpdate.SentEvent(TransactionId(transactionId), EventId(eventId))
 }
-

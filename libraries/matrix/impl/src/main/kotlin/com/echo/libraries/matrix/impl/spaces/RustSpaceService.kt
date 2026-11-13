@@ -171,4 +171,3 @@ internal fun SpaceServiceInterface.spaceFilterListUpdate(): Flow<List<SpaceFilte
     }.catch {
         Timber.d(it, "spaceFilterListUpdate() failed")
     }.buffer(Channel.UNLIMITED)
-

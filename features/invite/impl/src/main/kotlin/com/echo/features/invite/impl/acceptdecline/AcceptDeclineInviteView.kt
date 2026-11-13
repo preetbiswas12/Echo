@@ -131,4 +131,3 @@ internal fun AcceptDeclineInviteViewPreview(@PreviewParameter(AcceptDeclineInvit
             onDeclineInviteSuccess = {},
         )
     }
-

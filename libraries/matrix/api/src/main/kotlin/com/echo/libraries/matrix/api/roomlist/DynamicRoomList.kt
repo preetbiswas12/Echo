@@ -44,4 +44,3 @@ suspend fun DynamicRoomList.updateVisibleRange(
         loadMore()
     }
 }
-

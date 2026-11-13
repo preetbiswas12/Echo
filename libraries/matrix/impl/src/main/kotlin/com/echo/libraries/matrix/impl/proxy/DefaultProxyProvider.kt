@@ -12,9 +12,9 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.provider.Settings
 import androidx.core.content.getSystemService
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 import timber.log.Timber
 
 /**
@@ -47,4 +47,3 @@ class DefaultProxyProvider(
             }
     }
 }
-

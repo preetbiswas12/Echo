@@ -20,4 +20,3 @@ object AppMatrixBindingContainer {
     @Provides
     fun provideLifecycleOwner(): LifecycleOwner = ProcessLifecycleOwner.get()
 }
-

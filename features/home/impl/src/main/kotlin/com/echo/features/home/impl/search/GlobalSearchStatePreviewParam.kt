@@ -320,4 +320,3 @@ internal fun aGlobalSearchState(
     showLearnMoreBottomSheet = showLearnMoreBottomSheet,
     eventSink = eventSink
 )
-

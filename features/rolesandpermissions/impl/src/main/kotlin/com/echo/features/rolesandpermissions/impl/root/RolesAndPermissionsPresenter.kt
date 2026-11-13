@@ -16,8 +16,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.RoomModeration
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingState
@@ -28,6 +26,8 @@ import com.echo.libraries.matrix.api.room.powerlevels.UserRoleChange
 import com.echo.libraries.matrix.api.room.powerlevels.userCountWithRole
 import com.echo.libraries.matrix.ui.model.roleOf
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.RoomModeration
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -113,4 +113,3 @@ class RolesAndPermissionsPresenter(
         }
     }
 }
-

@@ -21,4 +21,3 @@ value class RoomAlias(val value: String) : Serializable {
 
     override fun toString(): String = value
 }
-

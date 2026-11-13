@@ -38,4 +38,3 @@ class RegistrationFailure(
     val clientException: ClientException,
     val isRegisteringAgain: Boolean
 ) : Exception(clientException)
-

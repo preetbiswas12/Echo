@@ -11,13 +11,13 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.ftue.api.SessionVerificationEntryPoint
 import com.echo.features.ftue.impl.sessionverification.FtueSessionVerificationFlowNode
 import com.echo.features.securebackup.api.SecureBackupEntryPoint
 import com.echo.features.verifysession.api.OutgoingVerificationEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -61,4 +61,3 @@ class DefaultSessionVerificationEntryPointTest {
         assertThat(result).isInstanceOf(FtueSessionVerificationFlowNode::class.java)
     }
 }
-

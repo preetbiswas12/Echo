@@ -50,4 +50,3 @@ class FakeMediaGalleryDataSource(
         deleteItemLambda(eventId)
     }
 }
-

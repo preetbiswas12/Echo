@@ -8,7 +8,6 @@
 
 package com.echo.features.poll.impl.pollcontent
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.poll.api.pollcontent.PollAnswerItem
 import com.echo.features.poll.api.pollcontent.PollContentState
 import com.echo.features.poll.impl.model.DefaultPollContentStateFactory
@@ -30,6 +29,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_8
 import com.echo.libraries.matrix.test.A_USER_ID_9
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.persistentListOf
@@ -291,4 +291,3 @@ class PollContentStateFactoryTest {
         )
     }
 }
-

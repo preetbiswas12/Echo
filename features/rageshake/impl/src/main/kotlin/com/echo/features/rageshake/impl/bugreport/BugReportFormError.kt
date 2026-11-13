@@ -11,4 +11,3 @@ package com.echo.features.rageshake.impl.bugreport
 sealed class BugReportFormError : Exception() {
     data object DescriptionTooShort : BugReportFormError()
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.auth
 
+import com.echo.libraries.matrix.api.auth.AuthenticationException
 import com.google.common.truth.ThrowableSubject
 import com.google.common.truth.Truth.assertThat
-import com.echo.libraries.matrix.api.auth.AuthenticationException
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.ClientBuildException
 import org.matrix.rustcomponents.sdk.OAuthException
@@ -82,4 +82,3 @@ class AuthenticationExceptionMappingTest {
         hasMessageThat().isEqualTo(message)
     }
 }
-

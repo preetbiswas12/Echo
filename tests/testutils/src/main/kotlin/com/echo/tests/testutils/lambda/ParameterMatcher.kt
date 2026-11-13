@@ -54,4 +54,3 @@ fun nonNull() = object : ParameterMatcher {
     override fun match(param: Any?) = param != null
     override fun toString(): String = "nonNull()"
 }
-

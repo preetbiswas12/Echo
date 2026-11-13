@@ -40,4 +40,3 @@ fun aLoginWithClassicState(
     loginModeState = loginModeState,
     eventSink = eventSink,
 )
-

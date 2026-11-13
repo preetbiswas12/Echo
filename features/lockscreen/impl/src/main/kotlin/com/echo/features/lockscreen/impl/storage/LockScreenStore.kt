@@ -36,4 +36,3 @@ interface LockScreenStore : EncryptedPinCodeStorage {
      */
     suspend fun setIsBiometricUnlockAllowed(isAllowed: Boolean)
 }
-

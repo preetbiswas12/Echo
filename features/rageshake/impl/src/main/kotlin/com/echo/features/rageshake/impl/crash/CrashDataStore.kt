@@ -19,4 +19,3 @@ interface CrashDataStore {
 
     suspend fun reset()
 }
-

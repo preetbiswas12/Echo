@@ -16,9 +16,6 @@ import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.licenses.impl.details.DependenciesDetailsNode
 import com.echo.features.licenses.impl.list.DependencyLicensesListNode
@@ -26,6 +23,9 @@ import com.echo.features.licenses.impl.model.DependencyLicenseItem
 import com.echo.libraries.architecture.BackstackView
 import com.echo.libraries.architecture.BaseFlowNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(AppScope::class)
@@ -70,4 +70,3 @@ class DependenciesFlowNode(
         BackstackView(modifier)
     }
 }
-

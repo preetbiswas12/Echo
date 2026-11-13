@@ -9,7 +9,6 @@
 package com.echo.libraries.pushproviders.unifiedpush
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.A_SECRET
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -18,6 +17,7 @@ import com.echo.libraries.pushproviders.unifiedpush.registration.EndpointRegistr
 import com.echo.libraries.pushproviders.unifiedpush.registration.RegistrationResult
 import com.echo.tests.testutils.fake.FakeAndroidKeyStore
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.TestScope
@@ -82,4 +82,3 @@ class DefaultRegisterUnifiedPushUseCaseTest : RobolectricTest() {
         )
     }
 }
-

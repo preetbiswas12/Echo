@@ -7,9 +7,9 @@
 
 package com.echo.features.home.impl.search.history
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
+import com.google.common.truth.Truth.assertThat
 import kotlinx.serialization.json.Json
 import org.junit.Test
 
@@ -48,4 +48,3 @@ class SearchHistoryResultSerializationTest {
         assertThat(decoded).containsExactlyElementsIn(original).inOrder()
     }
 }
-

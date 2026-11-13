@@ -8,13 +8,13 @@
 
 package com.echo.features.preferences.impl.media
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.libraries.preferences.test.InMemorySessionPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -112,4 +112,3 @@ class MediaSettingsPresenterTest {
         sessionCoroutineScope = this,
     )
 }
-

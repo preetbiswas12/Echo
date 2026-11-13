@@ -8,12 +8,12 @@
 package com.echo.libraries.matrix.impl.roomlist
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.roomlist.RoomListService
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListService
 import com.echo.libraries.matrix.impl.room.RoomSyncSubscriber
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
@@ -58,4 +58,3 @@ private fun TestScope.createRustRoomListService(
     ),
     sessionCoroutineScope = backgroundScope,
 )
-

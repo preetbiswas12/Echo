@@ -28,4 +28,3 @@ internal fun VoiceMessagePermissionRationaleDialog(
         cancelText = stringResource(CommonStrings.action_cancel),
     )
 }
-

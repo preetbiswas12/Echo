@@ -14,11 +14,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.pin.PinCodeManager
 import com.echo.features.lockscreen.impl.unlock.PinUnlockHelper
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.first
 
 @Inject
@@ -83,4 +83,3 @@ class DeviceUnlockPresenter(
         )
     }
 }
-

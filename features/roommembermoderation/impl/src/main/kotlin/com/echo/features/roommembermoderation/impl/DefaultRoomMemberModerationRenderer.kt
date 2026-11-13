@@ -11,12 +11,12 @@ package com.echo.features.roommembermoderation.impl
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.roommembermoderation.api.ModerationAction
 import com.echo.features.roommembermoderation.api.RoomMemberModerationRenderer
 import com.echo.features.roommembermoderation.api.RoomMemberModerationState
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.user.MatrixUser
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(RoomScope::class)
@@ -42,4 +42,3 @@ class DefaultRoomMemberModerationRenderer : RoomMemberModerationRenderer {
         }
     }
 }
-

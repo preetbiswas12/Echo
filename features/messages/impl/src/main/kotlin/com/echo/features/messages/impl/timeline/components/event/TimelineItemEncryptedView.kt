@@ -83,4 +83,3 @@ internal fun TimelineItemEncryptedViewPreview(
         onContentLayoutChange = {},
     )
 }
-

@@ -52,4 +52,3 @@ interface BiometricAuthenticatorManager {
     @Composable
     fun rememberConfirmBiometricAuthenticator(): BiometricAuthenticator
 }
-

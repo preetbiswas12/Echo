@@ -7,13 +7,13 @@
 
 package com.echo.appnav.verification
 
-import dev.zacsweers.metro.Inject
 import com.echo.appnav.session.MatrixSessionCache
 import com.echo.libraries.core.coroutine.withPreviousValue
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.verification.SessionVerificationServiceListener
 import com.echo.libraries.matrix.api.verification.VerificationRequest
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.channelFlow
@@ -79,4 +79,3 @@ class IncomingVerificationRequestObserver(
         }
     }
 }
-

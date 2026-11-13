@@ -19,4 +19,3 @@ fun sheetStateForPreview() = SheetState(
     velocityThreshold = { 400f },
     initialValue = SheetValue.Expanded,
 )
-

@@ -73,4 +73,3 @@ class FakeSpaceService(
         removeChildFromSpaceResult(spaceId, childId)
     }
 }
-

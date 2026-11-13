@@ -20,4 +20,3 @@ class FakeOAuthIntentResolver(
         return resolveResult(intent)
     }
 }
-

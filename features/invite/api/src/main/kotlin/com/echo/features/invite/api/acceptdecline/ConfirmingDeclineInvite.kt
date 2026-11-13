@@ -12,4 +12,3 @@ import com.echo.features.invite.api.InviteData
 import com.echo.libraries.architecture.AsyncAction
 
 data class ConfirmingDeclineInvite(val inviteData: InviteData, val blockUser: Boolean) : AsyncAction.Confirming
-

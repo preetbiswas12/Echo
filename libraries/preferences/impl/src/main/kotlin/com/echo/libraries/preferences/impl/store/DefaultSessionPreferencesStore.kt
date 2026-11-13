@@ -106,4 +106,3 @@ class DefaultSessionPreferencesStore(
         return store.data.map { prefs -> prefs[key] ?: default() }
     }
 }
-

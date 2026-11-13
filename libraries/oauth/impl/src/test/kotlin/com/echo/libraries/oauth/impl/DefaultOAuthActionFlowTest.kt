@@ -7,8 +7,8 @@
 
 package com.echo.libraries.oauth.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.oauth.api.OAuthAction
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.runTest
@@ -31,4 +31,3 @@ class DefaultOAuthActionFlowTest {
         assertThat(data).containsExactly(OAuthAction.GoBack(), null)
     }
 }
-

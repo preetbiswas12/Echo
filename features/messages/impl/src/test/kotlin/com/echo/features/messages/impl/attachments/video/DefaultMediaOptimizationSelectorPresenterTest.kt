@@ -10,7 +10,6 @@ package com.echo.features.messages.impl.attachments.video
 
 import android.net.Uri
 import android.util.Size
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.test.attachments.video.FakeVideoMetadataExtractor
 import com.echo.features.messages.test.attachments.video.FakeVideoMetadataExtractorFactory
 import com.echo.libraries.architecture.AsyncData
@@ -27,6 +26,7 @@ import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -295,4 +295,3 @@ class DefaultMediaOptimizationSelectorPresenterTest : RobolectricTest() {
         )
     }
 }
-

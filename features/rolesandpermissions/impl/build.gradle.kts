@@ -43,5 +43,3 @@ dependencies {
     testImplementation(projects.services.analytics.test)
     testImplementation(projects.libraries.matrix.test)
 }
-
-

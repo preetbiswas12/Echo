@@ -99,4 +99,3 @@ fun aLocationShareItem(
     assetType = assetType,
     isOwnUser = isOwnUser,
 )
-

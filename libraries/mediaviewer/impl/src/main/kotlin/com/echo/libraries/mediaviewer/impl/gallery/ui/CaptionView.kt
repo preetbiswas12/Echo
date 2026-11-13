@@ -33,4 +33,3 @@ fun CaptionView(
         color = ElementTheme.colors.textPrimary,
     )
 }
-

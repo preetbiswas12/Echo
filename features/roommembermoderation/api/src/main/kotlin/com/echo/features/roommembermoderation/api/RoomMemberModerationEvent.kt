@@ -17,4 +17,3 @@ interface RoomMemberModerationEvent {
     data class ShowActionsForUser(val user: MatrixUser) : RoomMemberModerationEvent
     data class ProcessAction(val action: ModerationAction, val targetUser: MatrixUser) : RoomMemberModerationEvent
 }
-

@@ -30,4 +30,3 @@ data class CustomElementCallBaseUrlState(
     val baseUrl: String?,
     val validator: (String?) -> Boolean,
 )
-

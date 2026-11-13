@@ -15,4 +15,3 @@ class NoOpSessionObserver : SessionObserver {
     override fun addListener(listener: SessionListener) = Unit
     override fun removeListener(listener: SessionListener) = Unit
 }
-

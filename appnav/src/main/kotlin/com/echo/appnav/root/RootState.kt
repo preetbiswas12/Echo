@@ -17,4 +17,3 @@ data class RootState(
     val crashDetectionState: CrashDetectionState,
     val errorState: AppErrorState,
 )
-

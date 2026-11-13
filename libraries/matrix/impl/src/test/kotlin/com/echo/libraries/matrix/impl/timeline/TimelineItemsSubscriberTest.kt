@@ -9,11 +9,11 @@
 package com.echo.libraries.matrix.impl.timeline
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustEventTimelineItem
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiTimeline
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiTimelineItem
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.test.StandardTestDispatcher
@@ -125,4 +125,3 @@ private fun TestScope.createTimelineItemsSubscriber(
         timelineDiffProcessor = timelineDiffProcessor,
     )
 }
-

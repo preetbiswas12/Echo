@@ -26,4 +26,3 @@ interface SendPollResponseAction {
         answerIds: List<String>,
     ): Result<Unit>
 }
-

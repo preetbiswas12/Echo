@@ -18,4 +18,3 @@ class AspectRatioPreviewParam : PreviewParameterProvider<Float?> {
         20f,
     )
 }
-

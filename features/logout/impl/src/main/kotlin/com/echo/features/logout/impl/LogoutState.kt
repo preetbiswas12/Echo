@@ -25,4 +25,3 @@ data class LogoutState(
     val logoutAction: AsyncAction<Unit>,
     val eventSink: (LogoutEvent) -> Unit,
 )
-

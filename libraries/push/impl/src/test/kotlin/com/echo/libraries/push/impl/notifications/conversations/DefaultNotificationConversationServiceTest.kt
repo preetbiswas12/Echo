@@ -15,7 +15,6 @@ import android.os.Build
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.test.FakeLockScreenService
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
@@ -28,6 +27,7 @@ import com.echo.libraries.push.impl.notifications.shortcut.createShortcutId
 import com.echo.libraries.push.test.notifications.push.FakeNotificationBitmapLoader
 import com.echo.libraries.sessionstorage.test.observer.FakeSessionObserver
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -209,4 +209,3 @@ class DefaultNotificationConversationServiceTest : RobolectricTest() {
         coroutineScope = backgroundScope,
     )
 }
-

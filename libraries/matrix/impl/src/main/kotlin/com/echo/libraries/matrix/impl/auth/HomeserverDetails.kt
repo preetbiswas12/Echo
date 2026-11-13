@@ -18,4 +18,3 @@ fun HomeserverLoginDetails.map(): MatrixHomeServerDetails = use {
         supportsOAuthLogin = supportsOauthLogin(),
     )
 }
-

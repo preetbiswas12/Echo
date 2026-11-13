@@ -18,8 +18,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.replace
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.analytics.api.AnalyticsEntryPoint
 import com.echo.features.ftue.impl.notifications.NotificationsOptInNode
@@ -34,6 +32,8 @@ import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.ui.common.nodes.EmptyState
 import com.echo.libraries.ui.common.nodes.emptyNode
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.filterIsInstance
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -151,4 +151,3 @@ class FtueFlowNode(
         BackstackView()
     }
 }
-

@@ -36,4 +36,3 @@ class SendFailureDialogStatePreviewParam : PreviewParameterProvider<SendFailureD
             )
         )
 }
-

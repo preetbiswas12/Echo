@@ -33,4 +33,3 @@ sealed interface KnockRequestsAction {
     data class DeclineAndBan(val knockRequest: KnockRequestPresentable) : KnockRequestsAction
     data object AcceptAll : KnockRequestsAction
 }
-

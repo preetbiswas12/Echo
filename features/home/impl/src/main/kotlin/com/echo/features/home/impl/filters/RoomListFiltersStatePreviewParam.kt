@@ -29,4 +29,3 @@ fun aRoomListFiltersState(
     filterSelectionStates = filterSelectionStates.toImmutableList(),
     eventSink = eventSink,
 )
-

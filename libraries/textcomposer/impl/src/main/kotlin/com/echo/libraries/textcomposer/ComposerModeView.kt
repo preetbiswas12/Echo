@@ -200,4 +200,3 @@ internal fun ComposerModeViewPreview(
         modifier = Modifier.background(ElementTheme.colors.bgSubtleSecondary)
     )
 }
-

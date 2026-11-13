@@ -64,4 +64,3 @@ private fun List<MatrixTimelineItem>.latestEventIdentifier(): UniqueId {
         (it as MatrixTimelineItem.Event).uniqueId
     } ?: UniqueId("fake_id")
 }
-

@@ -194,4 +194,3 @@ private fun AnnotatedString.canPillify(start: Int, end: Int, inlineContentIds: S
     if (getStringAnnotations(start, end).any { it.item in inlineContentIds }) return false
     return true
 }
-

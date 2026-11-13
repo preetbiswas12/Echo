@@ -21,11 +21,6 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.core.net.toUri
 import androidx.lifecycle.Lifecycle
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.Composer
 import com.echo.features.messages.api.MessageComposerContext
 import com.echo.features.messages.api.timeline.voicemessages.composer.VoiceMessageComposerEvent
 import com.echo.features.messages.api.timeline.voicemessages.composer.VoiceMessageComposerPresenter
@@ -47,6 +42,11 @@ import com.echo.libraries.voiceplayer.api.VoiceMessageException
 import com.echo.libraries.voicerecorder.api.VoiceRecorder
 import com.echo.libraries.voicerecorder.api.VoiceRecorderState
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.Composer
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -344,4 +344,3 @@ private fun displayTime(
     else ->
         0.milliseconds
 }
-

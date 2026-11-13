@@ -48,4 +48,3 @@ fun ProvideRoomMemberProfiles(
     }
     CompositionLocalProvider(LocalRoomMemberProfilesCache provides cache, content = content)
 }
-

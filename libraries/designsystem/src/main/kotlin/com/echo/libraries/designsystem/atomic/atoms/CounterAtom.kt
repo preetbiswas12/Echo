@@ -133,4 +133,3 @@ internal fun CounterAtomPreview() = ElementPreview {
         CounterAtom(count = 4, isCritical = true)
     }
 }
-

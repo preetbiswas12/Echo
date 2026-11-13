@@ -14,4 +14,3 @@ package com.echo.features.messages.api.timeline
 interface TextPillificator {
     fun pillify(text: CharSequence, pillifyPermalinks: Boolean = true): CharSequence
 }
-

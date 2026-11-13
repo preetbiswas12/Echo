@@ -85,4 +85,3 @@ enum class AvatarSize(val dp: Dp) {
     LocationPin(32.dp),
     ActiveCallItem(20.dp)
 }
-

@@ -12,12 +12,12 @@ import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.core.content.getSystemService
+import com.echo.libraries.di.annotations.ApplicationContext
 import com.squareup.seismic.ShakeDetector
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
 import dev.zacsweers.metro.binding
-import com.echo.libraries.di.annotations.ApplicationContext
 
 @SingleIn(AppScope::class)
 @ContributesBinding(scope = AppScope::class, binding = binding<RageShake>())
@@ -66,4 +66,3 @@ class DefaultRageShake(
         interceptor?.invoke()
     }
 }
-

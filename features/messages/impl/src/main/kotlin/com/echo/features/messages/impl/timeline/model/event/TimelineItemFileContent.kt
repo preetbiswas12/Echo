@@ -30,4 +30,3 @@ data class TimelineItemFileContent(
 
     val fileExtensionAndSize = formatFileExtensionAndSize(fileExtension, formattedFileSize)
 }
-

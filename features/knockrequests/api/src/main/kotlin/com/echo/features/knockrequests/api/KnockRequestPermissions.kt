@@ -32,4 +32,3 @@ fun RoomPermissions.knockRequestPermissions(): KnockRequestPermissions {
         canBan = canOwnUserBan(),
     )
 }
-

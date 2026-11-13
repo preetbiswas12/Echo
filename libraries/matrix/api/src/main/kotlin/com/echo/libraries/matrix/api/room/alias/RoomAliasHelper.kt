@@ -28,4 +28,3 @@ interface RoomAliasHelper {
      */
     fun isRoomAliasValid(roomAlias: RoomAlias): Boolean
 }
-

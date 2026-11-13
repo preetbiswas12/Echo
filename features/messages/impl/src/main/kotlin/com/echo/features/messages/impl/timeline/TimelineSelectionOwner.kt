@@ -14,4 +14,3 @@ package com.echo.features.messages.impl.timeline
 interface TimelineSelectionOwner {
     fun exitTimelineSelection()
 }
-

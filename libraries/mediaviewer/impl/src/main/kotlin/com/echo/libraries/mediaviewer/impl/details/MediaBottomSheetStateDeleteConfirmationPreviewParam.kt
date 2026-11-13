@@ -35,4 +35,3 @@ fun aMediaBottomSheetStateDeleteConfirmation(
     mediaInfo = mediaInfo,
     thumbnailSource = thumbnailSource,
 )
-

@@ -29,4 +29,3 @@ class FakeSessionPreferencesStoreFactory(
         removeLambda(sessionId)
     }
 }
-

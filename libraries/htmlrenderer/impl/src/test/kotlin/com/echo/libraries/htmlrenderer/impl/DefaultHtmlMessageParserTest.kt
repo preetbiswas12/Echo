@@ -11,7 +11,6 @@ import android.net.Uri
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.htmlrenderer.api.CodeBlockNode
 import com.echo.libraries.htmlrenderer.api.HeaderNode
 import com.echo.libraries.htmlrenderer.api.HtmlMessageParser
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.test.permalink.FakePermalinkBuilder
 import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.jsoup.Jsoup
 import org.junit.Test
 
@@ -258,4 +258,3 @@ class DefaultHtmlMessageParserTest : RobolectricTest() {
         ),
     ) = DefaultHtmlMessageParser(permalinkParser, permalinkBuilder).parse(Jsoup.parse(html))
 }
-

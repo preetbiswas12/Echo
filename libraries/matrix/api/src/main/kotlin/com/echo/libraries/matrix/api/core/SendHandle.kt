@@ -15,4 +15,3 @@ fun interface SendHandle {
     /** Puts the event back in the send queue for another attempt. */
     suspend fun retry(): Result<Unit>
 }
-

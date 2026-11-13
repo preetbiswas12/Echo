@@ -11,7 +11,6 @@ package com.echo.features.roomaliasresolver.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.RoomId
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SERVER_LIST
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.awaitCancellation
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -115,4 +115,3 @@ internal fun aResolvedRoomAlias(
     roomId = roomId,
     servers = servers,
 )
-

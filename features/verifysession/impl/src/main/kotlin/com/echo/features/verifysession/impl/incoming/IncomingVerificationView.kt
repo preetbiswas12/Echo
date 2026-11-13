@@ -294,4 +294,3 @@ internal fun IncomingVerificationViewA11yPreview() = ElementPreview {
         state = anIncomingVerificationState(),
     )
 }
-

@@ -7,11 +7,11 @@
 
 package com.echo.features.securityandprivacy.impl.manageauthorizedspaces
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.spaces.SpaceRoom
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableSet
 import kotlinx.collections.immutable.persistentListOf
@@ -61,4 +61,3 @@ class SpaceSelectionStateHolder {
         update { it.copy(completion = completion) }
     }
 }
-

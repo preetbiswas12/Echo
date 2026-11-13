@@ -97,4 +97,3 @@ internal fun LoggedInViewPreview(@PreviewParameter(LoggedInStatePreviewParam::cl
         navigateToNotificationTroubleshoot = {},
     )
 }
-

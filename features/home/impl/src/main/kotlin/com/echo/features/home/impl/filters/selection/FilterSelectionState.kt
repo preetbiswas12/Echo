@@ -14,4 +14,3 @@ data class FilterSelectionState(
     val filter: RoomListFilter,
     val isSelected: Boolean,
 )
-

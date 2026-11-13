@@ -16,14 +16,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.RageshakeFeatureAvailability
 import com.echo.features.rageshake.api.preferences.RageshakePreferencesEvent
 import com.echo.features.rageshake.api.preferences.RageshakePreferencesPresenter
 import com.echo.features.rageshake.api.preferences.RageshakePreferencesState
 import com.echo.features.rageshake.impl.rageshake.RageShake
 import com.echo.features.rageshake.impl.rageshake.RageshakeDataStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -72,4 +72,3 @@ class DefaultRageshakePreferencesPresenter(
         rageshakeDataStore.setIsEnabled(enabled)
     }
 }
-

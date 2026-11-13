@@ -49,4 +49,3 @@ internal fun TombstonedRoomAvatarPreview() = ElementPreview {
         contentDescription = null,
     )
 }
-

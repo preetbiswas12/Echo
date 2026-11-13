@@ -14,4 +14,3 @@ class FakeLanguageTagProvider(private val languageTag: String?) : LanguageTagPro
     @Composable
     override fun provideLanguageTag() = languageTag
 }
-

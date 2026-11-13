@@ -16,4 +16,3 @@ interface ComposerDraftStore {
     suspend fun loadDraft(roomId: RoomId, threadRoot: ThreadId?): ComposerDraft?
     suspend fun updateDraft(roomId: RoomId, threadRoot: ThreadId?, draft: ComposerDraft?)
 }
-

@@ -39,4 +39,3 @@ fun handleAsyncImageStateChange(
 
     updateContentValidationState?.invoke(updatedContentValidationValue)
 }
-

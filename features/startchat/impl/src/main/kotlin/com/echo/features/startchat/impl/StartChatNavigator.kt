@@ -48,4 +48,3 @@ class DefaultStartChatNavigator(
         overlay.hide()
     }
 }
-

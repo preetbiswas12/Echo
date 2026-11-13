@@ -8,8 +8,6 @@
 
 package com.echo.features.rolesandpermissions.impl.root
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.RoomModeration
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.room.RoomMember
@@ -20,6 +18,8 @@ import com.echo.libraries.matrix.test.room.aRoomMemberList
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.RoomModeration
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
@@ -171,4 +171,3 @@ class RolesAndPermissionPresenterTest {
         )
     }
 }
-

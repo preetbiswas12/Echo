@@ -47,4 +47,3 @@ private fun Context.getContentFileName(uri: Uri): String? = runCatchingException
         return@use cursor.getColumnIndexOrThrow(OpenableColumns.DISPLAY_NAME).let(cursor::getString)
     }
 }.getOrNull()
-

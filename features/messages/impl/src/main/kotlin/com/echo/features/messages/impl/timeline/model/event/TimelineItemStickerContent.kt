@@ -35,4 +35,3 @@ data class TimelineItemStickerContent(
        we allow using the mediaSource (unless the url is empty) */
     val preferredMediaSource = if (mediaSource.safeUrl.isEmpty()) thumbnailSource else mediaSource
 }
-

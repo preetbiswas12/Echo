@@ -19,4 +19,3 @@ sealed class AuthenticationException(message: String?) : Exception(message) {
     class OAuth(message: String?) : AuthenticationException(message)
     class Generic(message: String?) : AuthenticationException(message)
 }
-

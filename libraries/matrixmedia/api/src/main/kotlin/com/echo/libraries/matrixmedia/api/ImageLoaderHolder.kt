@@ -32,4 +32,3 @@ interface ImageLoaderHolder {
      */
     fun remove(sessionId: SessionId)
 }
-

@@ -147,4 +147,3 @@ class FakeEncryptionService(
         const val FAKE_RECOVERY_KEY = "fake"
     }
 }
-

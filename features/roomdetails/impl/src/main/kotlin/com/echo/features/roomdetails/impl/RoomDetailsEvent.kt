@@ -18,4 +18,3 @@ sealed interface RoomDetailsEvent {
     data object MarkAsRead : RoomDetailsEvent
     data object MarkAsUnread : RoomDetailsEvent
 }
-

@@ -22,4 +22,3 @@ enum class ColorationMode {
     RustLogs,
     None,
 }
-

@@ -8,8 +8,8 @@
 
 package com.echo.features.roomdetails.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.history.RoomHistoryVisibility
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
 
@@ -91,4 +91,3 @@ class RoomDetailsStateTest {
         )
     }
 }
-

@@ -124,4 +124,3 @@ fun <P1, P2> ensureCalledOnceWithTwoParams(param1: P1, param2: P2, block: (callb
     block(callback)
     callback.assertSuccess()
 }
-

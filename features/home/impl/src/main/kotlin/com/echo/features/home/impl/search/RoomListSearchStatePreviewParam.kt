@@ -38,4 +38,3 @@ fun aRoomListSearchState(
     results = results,
     eventSink = eventSink,
 )
-

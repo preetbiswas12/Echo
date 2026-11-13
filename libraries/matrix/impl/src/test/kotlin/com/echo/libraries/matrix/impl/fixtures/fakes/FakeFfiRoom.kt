@@ -85,4 +85,3 @@ class FakeFfiRoom(
         // No-op
     }
 }
-

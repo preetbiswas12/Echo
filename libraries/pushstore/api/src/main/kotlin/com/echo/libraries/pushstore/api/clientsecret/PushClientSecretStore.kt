@@ -44,4 +44,3 @@ interface PushClientSecretStore {
      */
     suspend fun getUserIdFromSecret(clientSecret: String): SessionId?
 }
-

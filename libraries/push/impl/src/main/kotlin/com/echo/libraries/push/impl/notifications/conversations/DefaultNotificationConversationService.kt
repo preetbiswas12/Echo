@@ -14,9 +14,6 @@ import android.os.Build
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.lockscreen.api.LockScreenService
 import com.echo.libraries.core.coroutine.withPreviousValue
 import com.echo.libraries.core.extensions.runCatchingExceptions
@@ -36,6 +33,9 @@ import com.echo.libraries.push.impl.notifications.shortcut.filterBySession
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.launchIn
@@ -202,4 +202,3 @@ class DefaultNotificationConversationService(
         }
     }
 }
-

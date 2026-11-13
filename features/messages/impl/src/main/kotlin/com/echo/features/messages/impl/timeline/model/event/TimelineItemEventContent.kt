@@ -169,4 +169,3 @@ fun TimelineItemEventContentWithAttachment.blurHash(): String? {
         else -> null
     }
 }
-

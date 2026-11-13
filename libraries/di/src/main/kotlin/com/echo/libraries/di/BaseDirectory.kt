@@ -26,4 +26,3 @@ import dev.zacsweers.metro.Qualifier
     AnnotationTarget.TYPE,
 )
 public annotation class BaseDirectory
-

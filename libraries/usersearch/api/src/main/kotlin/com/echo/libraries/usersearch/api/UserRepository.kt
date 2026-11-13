@@ -22,4 +22,3 @@ interface UserRepository {
      */
     fun search(query: String): Flow<UserSearchResultState>
 }
-

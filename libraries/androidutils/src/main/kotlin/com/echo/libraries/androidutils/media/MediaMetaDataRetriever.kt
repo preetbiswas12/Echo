@@ -18,4 +18,3 @@ inline fun <T> MediaMetadataRetriever.runAndRelease(block: MediaMetadataRetrieve
         release()
     }
 }
-

@@ -27,4 +27,3 @@ class ReplaceAllOperation<NavTarget : Any>(
         return navElements
     }
 }
-

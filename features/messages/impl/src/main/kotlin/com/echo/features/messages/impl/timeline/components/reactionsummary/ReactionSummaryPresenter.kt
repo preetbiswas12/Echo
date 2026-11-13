@@ -15,12 +15,12 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.roomMembers
 import com.echo.libraries.matrix.api.user.MatrixUser
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 
@@ -72,4 +72,3 @@ class ReactionSummaryPresenter(
         }
     }
 }
-

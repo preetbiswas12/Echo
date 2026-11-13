@@ -12,4 +12,3 @@ sealed class RoomAddress(open val value: String) {
     data class AutoFilled(override val value: String) : RoomAddress(value)
     data class Edited(override val value: String) : RoomAddress(value)
 }
-

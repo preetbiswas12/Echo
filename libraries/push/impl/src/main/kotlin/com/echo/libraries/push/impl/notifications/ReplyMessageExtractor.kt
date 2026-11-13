@@ -25,4 +25,3 @@ class AndroidReplyMessageExtractor : ReplyMessageExtractor {
             ?.toString()
     }
 }
-

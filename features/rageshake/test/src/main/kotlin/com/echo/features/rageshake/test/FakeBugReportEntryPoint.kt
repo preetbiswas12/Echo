@@ -21,4 +21,3 @@ class FakeBugReportEntryPoint(
         callback: BugReportEntryPoint.Callback,
     ): Node = createNodeResult(buildContext, callback)
 }
-

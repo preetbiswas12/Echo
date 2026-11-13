@@ -30,4 +30,3 @@ data class DeveloperSettingsState(
         markAllRoomsAsReadAction is AsyncAction.Loading ||
         pushRulesAction is AsyncAction.Loading
 }
-

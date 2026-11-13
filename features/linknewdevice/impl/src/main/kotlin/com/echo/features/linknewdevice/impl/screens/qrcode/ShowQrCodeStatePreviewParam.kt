@@ -25,4 +25,3 @@ internal fun aShowQrCodeState(
 ) = ShowQrCodeState(
     data = data,
 )
-

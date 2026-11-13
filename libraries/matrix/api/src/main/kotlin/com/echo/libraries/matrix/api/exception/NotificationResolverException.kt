@@ -32,4 +32,3 @@ sealed class NotificationResolverException : Exception() {
      */
     data class UnknownError(override val message: String) : NotificationResolverException()
 }
-

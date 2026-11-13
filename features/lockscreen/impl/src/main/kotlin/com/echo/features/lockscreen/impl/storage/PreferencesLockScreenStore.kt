@@ -13,10 +13,10 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
@@ -86,4 +86,3 @@ class PreferencesLockScreenStore(
         this[remainingAttemptsKey]?.coerceIn(0, lockScreenConfig.maxPinCodeAttemptsBeforeLogout)
             ?: lockScreenConfig.maxPinCodeAttemptsBeforeLogout
 }
-

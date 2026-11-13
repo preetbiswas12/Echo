@@ -92,4 +92,3 @@ private fun AvatarColorRow(colors: ImmutableList<AvatarColors>) {
         }
     }
 }
-

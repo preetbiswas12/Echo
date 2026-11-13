@@ -257,4 +257,3 @@ interface BaseRoom : Closeable {
     /** Same as [destroy], so that a room can be used with `use { }`. */
     override fun close() = destroy()
 }
-

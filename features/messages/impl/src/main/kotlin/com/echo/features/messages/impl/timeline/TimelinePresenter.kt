@@ -20,9 +20,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.location.api.live.ActiveLiveLocationShareManager
 import com.echo.features.messages.impl.MessagesNavigator
 import com.echo.features.messages.impl.R
@@ -72,6 +69,9 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.OpenRoom
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.finishLongRunningTransaction
 import com.echo.services.analyticsproviders.api.AnalyticsUserData
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
@@ -684,4 +684,3 @@ private fun calculateServerNamesForRoom(room: JoinedRoom): List<String> {
         }
         .take(3)
 }
-

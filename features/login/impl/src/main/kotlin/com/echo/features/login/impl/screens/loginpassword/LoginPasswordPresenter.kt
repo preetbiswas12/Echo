@@ -16,15 +16,15 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.accountprovider.SaveAccountProviderToHistory
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.core.SessionId
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -97,4 +97,3 @@ class LoginPasswordPresenter(
         formState.value = updateLambda(formState.value)
     }
 }
-

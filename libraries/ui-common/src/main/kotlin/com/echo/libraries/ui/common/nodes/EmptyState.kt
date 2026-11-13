@@ -16,4 +16,3 @@ import kotlin.time.Duration
 data class EmptyState(
     val delayBeforeShowingContent: Duration,
 )
-

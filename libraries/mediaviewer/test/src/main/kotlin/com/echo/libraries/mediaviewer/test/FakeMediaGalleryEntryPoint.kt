@@ -20,4 +20,3 @@ class FakeMediaGalleryEntryPoint : MediaGalleryEntryPoint {
         callback: MediaGalleryEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

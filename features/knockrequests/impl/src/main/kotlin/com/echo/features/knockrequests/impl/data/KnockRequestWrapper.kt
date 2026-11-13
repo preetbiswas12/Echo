@@ -33,4 +33,3 @@ class KnockRequestWrapper(
 
     suspend fun markAsSeen(): Result<Unit> = inner.markAsSeen()
 }
-

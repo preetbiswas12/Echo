@@ -9,8 +9,6 @@
 package com.echo.features.enterprise.impl
 
 import androidx.compose.ui.graphics.Color
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.features.enterprise.api.BugReportUrl
 import com.echo.features.enterprise.api.EnterpriseService
@@ -22,6 +20,8 @@ import com.echo.libraries.matrix.api.ClientUrlContentFetcher
 import com.echo.libraries.matrix.api.TemporaryMatrixClientFactory
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
 import com.echo.libraries.matrix.api.core.SessionId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.withContext
@@ -84,4 +84,3 @@ class DefaultEnterpriseService(
 private data class MinimalEnterpriseConfig(
     @SerialName("enforce_element_pro") val enforceElementPro: Boolean? = null,
 )
-

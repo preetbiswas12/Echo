@@ -25,13 +25,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.echo.compound.theme.ElementTheme
-import io.element.android.emojibasebindings.Emoji
-import io.element.android.emojibasebindings.EmojiSkin
 import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.echo.libraries.designsystem.text.toSp
 import com.echo.libraries.designsystem.theme.components.Surface
 import com.echo.libraries.designsystem.theme.components.Text
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojiSkin
 import kotlinx.collections.immutable.ImmutableSet
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
@@ -135,4 +135,3 @@ internal fun aSkinList() = persistentListOf(
     EmojiSkin("1F44D-1F3FE", "thumbs up: medium-dark skin tone", "👍🏾"),
     EmojiSkin("1F44D-1F3FF", "thumbs up: dark skin tone", "👍🏿"),
 )
-

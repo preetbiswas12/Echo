@@ -126,4 +126,3 @@ fun aRoomSummary(
     ),
     latestEvent = latestEvent,
 )
-

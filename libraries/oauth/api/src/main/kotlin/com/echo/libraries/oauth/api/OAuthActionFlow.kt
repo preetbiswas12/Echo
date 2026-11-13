@@ -33,4 +33,3 @@ interface OAuthActionFlow {
     /** Clears the pending action, so it is not handled twice. */
     fun reset()
 }
-

@@ -33,4 +33,3 @@ class MediaUploadHandlerImpl(
         filesToUpload.forEach { file -> file.safeDelete() }
     }
 }
-

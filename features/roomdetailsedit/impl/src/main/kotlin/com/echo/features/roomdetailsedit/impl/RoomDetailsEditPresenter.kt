@@ -22,7 +22,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.core.net.toUri
-import dev.zacsweers.metro.Inject
 import com.echo.features.roomdetailsedit.api.RoomDetailsEditPermissions
 import com.echo.features.roomdetailsedit.api.roomDetailsEditPermissions
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
@@ -39,6 +38,7 @@ import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProvider
 import com.echo.libraries.mediaupload.api.MediaPreProcessor
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -235,4 +235,3 @@ class RoomDetailsEditPresenter(
         }
     }
 }
-

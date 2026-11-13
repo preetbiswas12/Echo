@@ -15,4 +15,3 @@ sealed interface BugReportUrl {
         val url: String,
     ) : BugReportUrl
 }
-

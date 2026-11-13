@@ -10,8 +10,6 @@ package com.echo.libraries.push.impl.notifications
 
 import android.app.Notification
 import coil3.ImageLoader
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.ThreadId
@@ -21,6 +19,8 @@ import com.echo.libraries.push.impl.notifications.model.FallbackNotifiableEvent
 import com.echo.libraries.push.impl.notifications.model.InviteNotifiableEvent
 import com.echo.libraries.push.impl.notifications.model.NotifiableMessageEvent
 import com.echo.libraries.push.impl.notifications.model.SimpleNotifiableEvent
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface NotificationDataFactory {
     suspend fun toNotifications(
@@ -209,4 +209,3 @@ sealed interface SummaryNotification {
     data object Removed : SummaryNotification
     data class Update(val notification: Notification) : SummaryNotification
 }
-

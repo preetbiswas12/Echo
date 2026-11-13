@@ -18,4 +18,3 @@ class FakePushGatewayNotifyRequest(
         executeResult(params)
     }
 }
-

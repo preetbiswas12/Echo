@@ -16,4 +16,3 @@ data class PushGatewayNotifyResponse(
     @SerialName("rejected")
     val rejectedPushKeys: List<String>
 )
-

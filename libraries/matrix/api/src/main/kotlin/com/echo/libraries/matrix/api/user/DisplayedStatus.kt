@@ -27,4 +27,3 @@ sealed interface DisplayedStatus : Parcelable {
         val callJoinedTs: Long?,
     ) : DisplayedStatus
 }
-

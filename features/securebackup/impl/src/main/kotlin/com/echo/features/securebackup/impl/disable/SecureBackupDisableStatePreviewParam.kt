@@ -32,4 +32,3 @@ fun aSecureBackupDisableState(
     appName = "Element",
     eventSink = {}
 )
-

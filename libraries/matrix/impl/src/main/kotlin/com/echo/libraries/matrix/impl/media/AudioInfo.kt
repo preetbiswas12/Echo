@@ -24,4 +24,3 @@ fun AudioInfo.map(): RustAudioInfo = RustAudioInfo(
     size = size?.toULong(),
     mimetype = mimetype,
 )
-

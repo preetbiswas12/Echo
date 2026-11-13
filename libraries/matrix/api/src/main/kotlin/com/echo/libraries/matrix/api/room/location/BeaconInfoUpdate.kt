@@ -14,4 +14,3 @@ data class BeaconInfoUpdate(
     val beaconId: BeaconId,
     val isLive: Boolean,
 )
-

@@ -29,5 +29,3 @@ dependencies {
     implementation(projects.tests.testutils)
     implementation(projects.libraries.mediaupload.api)
 }
-
-

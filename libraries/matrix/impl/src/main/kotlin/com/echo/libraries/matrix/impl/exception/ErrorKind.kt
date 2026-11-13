@@ -62,4 +62,3 @@ fun RustErrorKind.map(): ErrorKind {
         is RustErrorKind.WrongRoomKeysVersion -> ErrorKind.WrongRoomKeysVersion(currentVersion)
     }
 }
-

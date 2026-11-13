@@ -8,8 +8,8 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.pushproviders.api.PushData
+import dev.zacsweers.metro.Inject
 
 @Inject
 class FirebasePushParser {
@@ -23,4 +23,3 @@ class FirebasePushParser {
         return pushDataFirebase.toPushData()
     }
 }
-

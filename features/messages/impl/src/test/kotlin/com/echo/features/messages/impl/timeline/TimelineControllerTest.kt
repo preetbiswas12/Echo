@@ -9,7 +9,6 @@
 package com.echo.features.messages.impl.timeline
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.IntentionalMention
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.MsgType
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.TestScope
@@ -254,4 +254,3 @@ internal fun TestScope.createTimelineController(
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

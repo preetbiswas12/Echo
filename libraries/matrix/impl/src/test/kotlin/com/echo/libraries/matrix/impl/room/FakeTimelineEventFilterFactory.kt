@@ -17,4 +17,3 @@ class FakeTimelineEventFilterFactory : TimelineEventFilterFactory {
         return TimelineEventFilter.Exclude(emptyList())
     }
 }
-

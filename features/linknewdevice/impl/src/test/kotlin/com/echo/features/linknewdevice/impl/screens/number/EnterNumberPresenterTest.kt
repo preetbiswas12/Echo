@@ -9,7 +9,6 @@
 
 package com.echo.features.linknewdevice.impl.screens.number
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -20,6 +19,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.runCurrent
@@ -192,4 +192,3 @@ class EnterNumberPresenterTest {
         linkNewMobileHandler = linkNewMobileHandler,
     )
 }
-

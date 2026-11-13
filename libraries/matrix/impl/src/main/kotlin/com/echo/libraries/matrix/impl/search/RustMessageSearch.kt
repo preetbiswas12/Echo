@@ -143,4 +143,3 @@ internal fun SearchServicePaginationState.map(): MessageSearchPaginationState = 
     is SearchServicePaginationState.Idle -> MessageSearchPaginationState.Idle(endReached = endReached)
     SearchServicePaginationState.Loading -> MessageSearchPaginationState.Loading
 }
-

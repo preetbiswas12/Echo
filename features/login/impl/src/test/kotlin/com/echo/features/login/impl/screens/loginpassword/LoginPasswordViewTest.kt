@@ -219,4 +219,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setLoginPasswordView(
         )
     }
 }
-

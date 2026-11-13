@@ -53,4 +53,3 @@ fun anAggregatedReaction(
         senders = senders.toImmutableList()
     )
 }
-

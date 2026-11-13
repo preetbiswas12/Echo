@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.keys
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.crypto.ClientSecret
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultSecretGeneratorTest : RobolectricTest() {
@@ -31,4 +31,3 @@ class DefaultSecretGeneratorTest : RobolectricTest() {
         assertThat(key.bytes).hasLength(123)
     }
 }
-

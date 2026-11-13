@@ -8,7 +8,6 @@
 
 package com.echo.features.call.impl.utils
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.widget.CallWidgetSettingsProvider
 import com.echo.libraries.matrix.test.A_ROOM_ID
@@ -23,6 +22,7 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
 import com.echo.services.appnavstate.impl.DefaultActiveRoomsHolder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -138,4 +138,3 @@ class DefaultCallWidgetProviderTest {
         activeRoomsHolder = activeRoomsHolder,
     )
 }
-

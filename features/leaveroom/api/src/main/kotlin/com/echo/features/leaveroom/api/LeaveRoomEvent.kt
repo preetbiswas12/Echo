@@ -16,4 +16,3 @@ import com.echo.libraries.matrix.api.core.RoomId
 interface LeaveRoomEvent {
     data class LeaveRoom(val roomId: RoomId, val needsConfirmation: Boolean) : LeaveRoomEvent
 }
-

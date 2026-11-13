@@ -38,4 +38,3 @@ suspend fun <State> Presenter<State>.test(
         throw t
     }
 }
-

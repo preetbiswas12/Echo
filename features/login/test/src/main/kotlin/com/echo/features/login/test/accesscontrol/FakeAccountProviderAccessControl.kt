@@ -18,4 +18,3 @@ class FakeAccountProviderAccessControl(
         return isAllowedToConnectToAccountProviderResult(accountProvider)
     }
 }
-

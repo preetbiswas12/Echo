@@ -11,7 +11,6 @@ package com.echo.libraries.roomselect.impl
 import androidx.compose.foundation.text.input.clearText
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import app.cash.turbine.Event
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -50,6 +49,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -710,4 +710,3 @@ internal fun TestScope.createRoomSelectPresenter(
     matrixClientProvider = matrixClientProvider,
     sessionStore = sessionStore,
 )
-

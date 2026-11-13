@@ -10,7 +10,6 @@
 
 package com.echo.features.home.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
 import com.echo.features.announcement.test.FakeAnnouncementService
@@ -41,6 +40,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
@@ -330,4 +330,3 @@ internal fun TestScope.createHomePresenter(
     featureFlagService = featureFlagService,
     appCoroutineScope = appCoroutineScope,
 )
-

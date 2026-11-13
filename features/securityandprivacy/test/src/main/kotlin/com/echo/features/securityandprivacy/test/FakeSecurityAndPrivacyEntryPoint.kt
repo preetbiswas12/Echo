@@ -21,4 +21,3 @@ class FakeSecurityAndPrivacyEntryPoint : SecurityAndPrivacyEntryPoint {
         lambdaError()
     }
 }
-

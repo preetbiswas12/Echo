@@ -11,4 +11,3 @@ package com.echo.libraries.matrix.api
  * An abstraction over the Matrix SDK's `ClientBuilder` to allow sharing it with other modules without exposing the SDK directly.
  */
 interface MatrixClientBuilder
-

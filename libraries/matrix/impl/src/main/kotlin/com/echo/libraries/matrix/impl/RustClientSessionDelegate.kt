@@ -154,4 +154,3 @@ class RustClientSessionDelegate(
         error("retrieveSessionFromKeychain should never be called for Android")
     }
 }
-

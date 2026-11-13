@@ -19,4 +19,3 @@ internal fun aCacheData(
     value_ = value,
     updatedAt = updatedAt.time,
 )
-

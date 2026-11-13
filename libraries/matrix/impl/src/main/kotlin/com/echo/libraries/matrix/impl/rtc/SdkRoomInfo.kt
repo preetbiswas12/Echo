@@ -56,4 +56,3 @@ private suspend fun Room.loadJoinedMemberIds(dispatchers: CoroutineDispatchers):
         Timber.w(it, "MatrixRTC backend: cannot load the members of ${id()}")
     }.getOrDefault(emptyList())
 }
-

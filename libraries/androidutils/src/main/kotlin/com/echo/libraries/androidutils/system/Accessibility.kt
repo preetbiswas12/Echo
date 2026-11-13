@@ -18,4 +18,3 @@ fun Context.getAnimationScale(): Float {
 fun Context.areAnimationsEnabled(): Boolean {
     return getAnimationScale() > 0f
 }
-

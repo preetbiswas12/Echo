@@ -554,4 +554,3 @@ internal fun HomeTopBarMultiAccountPreview() = ElementPreview {
         onMenuActionClick = {},
     )
 }
-

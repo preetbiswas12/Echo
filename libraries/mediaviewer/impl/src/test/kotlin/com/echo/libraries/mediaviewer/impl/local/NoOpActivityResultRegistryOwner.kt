@@ -26,4 +26,3 @@ class NoOpActivityResultRegistry : ActivityResultRegistry() {
         options: ActivityOptionsCompat?,
     ) = Unit
 }
-

@@ -12,4 +12,3 @@ import org.matrix.rustcomponents.sdk.NoHandle
 import org.matrix.rustcomponents.sdk.SpaceService
 
 class FakeFfiSpaceService : SpaceService(NoHandle)
-

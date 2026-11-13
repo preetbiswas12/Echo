@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemReadMarkerModel
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UniqueId
 import com.echo.libraries.matrix.test.AN_EVENT_ID
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -48,4 +48,3 @@ class TimelineItemIndexerTest {
         assertThat(sut.indexOf(AN_EVENT_ID)).isEqualTo(-1)
     }
 }
-

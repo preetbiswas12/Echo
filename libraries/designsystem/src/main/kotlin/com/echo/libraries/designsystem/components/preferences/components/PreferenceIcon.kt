@@ -103,4 +103,3 @@ internal fun PreferenceIconWithBadgePreview(@PreviewParameter(ImageVectorPreview
             showIconBadge = true,
         )
     }
-

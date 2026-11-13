@@ -79,4 +79,3 @@ class KonsistImmutableTest {
             .assertEmpty()
     }
 }
-

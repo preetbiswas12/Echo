@@ -34,5 +34,3 @@ dependencies {
     implementation(projects.libraries.architecture)
     implementation(projects.libraries.matrix.api)
 }
-
-

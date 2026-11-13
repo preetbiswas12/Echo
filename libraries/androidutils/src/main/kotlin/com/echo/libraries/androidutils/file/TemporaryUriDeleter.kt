@@ -10,9 +10,9 @@ package com.echo.libraries.androidutils.file
 
 import android.content.Context
 import android.net.Uri
+import com.echo.libraries.di.annotations.ApplicationContext
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.di.annotations.ApplicationContext
 import timber.log.Timber
 
 interface TemporaryUriDeleter {
@@ -37,4 +37,3 @@ class DefaultTemporaryUriDeleter(
         }
     }
 }
-

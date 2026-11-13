@@ -19,5 +19,3 @@ dependencies {
     api(projects.libraries.matrix.api)
     api(projects.libraries.preferences.api)
 }
-
-

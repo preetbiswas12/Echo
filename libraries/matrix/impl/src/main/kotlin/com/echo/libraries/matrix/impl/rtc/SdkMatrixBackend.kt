@@ -183,4 +183,3 @@ class SdkMatrixBackend(
         override fun cancel() = job.cancel()
     }
 }
-

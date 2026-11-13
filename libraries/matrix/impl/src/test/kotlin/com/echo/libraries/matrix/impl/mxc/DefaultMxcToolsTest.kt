@@ -29,4 +29,3 @@ class DefaultMxcToolsTest {
         assertThat(mxcTools.mxcUri2FilePath("m://server.org/abc123")).isNull()
     }
 }
-

@@ -86,4 +86,3 @@ fun Bitmap.rotateToExifMetadataOrientation(orientation: Int): Bitmap {
 
     return Bitmap.createBitmap(this, 0, 0, width, height, matrix, true)
 }
-

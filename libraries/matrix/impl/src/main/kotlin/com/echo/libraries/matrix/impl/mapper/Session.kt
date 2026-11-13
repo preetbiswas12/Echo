@@ -40,4 +40,3 @@ internal fun Session.toSessionData(
     userAvatarUrl = null,
     userAvatarData = null,
 )
-

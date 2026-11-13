@@ -32,4 +32,3 @@ interface UserListDataSource {
      */
     suspend fun getProfile(userId: UserId): MatrixUser?
 }
-

@@ -11,13 +11,13 @@ package com.echo.libraries.mediaplayer.impl
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.audio.api.AudioFocus
 import com.echo.libraries.audio.api.AudioFocusRequester
 import com.echo.libraries.audio.test.FakeAudioFocus
 import com.echo.libraries.mediaplayer.api.MediaPlayer
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -428,4 +428,3 @@ class DefaultMediaPlayerTest {
         audioFocus = audioFocus,
     )
 }
-

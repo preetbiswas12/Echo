@@ -36,4 +36,3 @@ fun aLoggedInState(
     localNetworkPermissionDialog = localNetworkPermissionDialog,
     eventSink = {},
 )
-

@@ -25,4 +25,3 @@ class FakeIntentProvider : IntentProvider {
         extras: Bundle?,
     ) = Intent(Intent.ACTION_VIEW)
 }
-

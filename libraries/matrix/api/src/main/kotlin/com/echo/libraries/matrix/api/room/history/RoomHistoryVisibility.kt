@@ -49,4 +49,3 @@ sealed interface RoomHistoryVisibility {
      */
     data class Custom(val value: String) : RoomHistoryVisibility
 }
-

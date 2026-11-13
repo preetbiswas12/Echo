@@ -40,5 +40,3 @@ dependencies {
     testImplementation(projects.features.announcement.test)
     testImplementation(projects.features.rageshake.test)
 }
-
-

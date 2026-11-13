@@ -18,4 +18,3 @@ internal fun SessionData.getSessionPaths(): SessionPaths {
         cacheDirectory = File(cachePath),
     )
 }
-

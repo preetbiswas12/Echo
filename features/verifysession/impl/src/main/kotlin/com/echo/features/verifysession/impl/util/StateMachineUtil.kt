@@ -24,4 +24,3 @@ inline fun <State : Any, reified Event : Any> InStateBuilderBlock<State, State, 
         state.noChange()
     }
 }
-

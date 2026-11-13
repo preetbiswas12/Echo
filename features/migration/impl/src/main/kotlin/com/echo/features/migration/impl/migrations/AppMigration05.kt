@@ -8,10 +8,10 @@
 
 package com.echo.features.migration.impl.migrations
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.di.BaseDirectory
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 import java.io.File
 
 @ContributesIntoSet(AppScope::class)
@@ -31,4 +31,3 @@ class AppMigration05(
         }
     }
 }
-

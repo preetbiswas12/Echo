@@ -85,4 +85,3 @@ fun MatrixUserHeader(
 internal fun MatrixUserHeaderPreview(@PreviewParameter(MatrixUserPreviewParam::class) matrixUser: MatrixUser) = ElementPreview {
     MatrixUserHeader(matrixUser)
 }
-

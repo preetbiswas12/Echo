@@ -10,8 +10,8 @@ package com.echo.features.securityandprivacy.impl.manageauthorizedspaces
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 
 @Inject
@@ -49,4 +49,3 @@ class ManageAuthorizedSpacesPresenter(
         )
     }
 }
-

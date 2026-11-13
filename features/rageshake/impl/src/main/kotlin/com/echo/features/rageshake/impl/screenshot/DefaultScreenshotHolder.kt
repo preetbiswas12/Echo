@@ -11,12 +11,12 @@ package com.echo.features.rageshake.impl.screenshot
 import android.content.Context
 import android.graphics.Bitmap
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.androidutils.bitmap.writeBitmap
 import com.echo.libraries.androidutils.file.safeDelete
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import java.io.File
 
 @SingleIn(AppScope::class)
@@ -41,4 +41,3 @@ class DefaultScreenshotHolder(
         file.safeDelete()
     }
 }
-

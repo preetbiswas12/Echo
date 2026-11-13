@@ -12,4 +12,3 @@ object PushGatewayConfig {
     // Push Gateway
     const val URI_PUSH_GATEWAY_PREFIX_PATH = "_matrix/push/v1/"
 }
-

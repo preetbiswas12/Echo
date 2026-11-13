@@ -17,4 +17,3 @@ class FakeFileContentReader : FileContentReader {
 
     override suspend fun getLines(path: String): Result<List<String>> = result
 }
-

@@ -15,4 +15,3 @@ sealed interface ChooseAccountProviderEvent {
     data object Continue : ChooseAccountProviderEvent
     data object ClearError : ChooseAccountProviderEvent
 }
-

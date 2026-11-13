@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.architecture)
     implementation(projects.tests.testutils)
 }
-
-

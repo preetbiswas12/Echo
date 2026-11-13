@@ -8,13 +8,13 @@
 
 package com.echo.features.cachecleaner.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.cachecleaner.api.CacheCleaner
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.CacheDirectory
 import com.echo.libraries.di.annotations.AppCoroutineScope
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -51,4 +51,3 @@ class DefaultCacheCleaner(
         }
     }
 }
-

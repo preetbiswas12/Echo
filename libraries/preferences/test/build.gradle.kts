@@ -21,5 +21,3 @@ dependencies {
     implementation(libs.coroutines.core)
     implementation(libs.androidx.datastore.preferences)
 }
-
-

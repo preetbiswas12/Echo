@@ -288,4 +288,3 @@ internal fun ConfirmAccountProviderViewPreview(
         onLearnMoreClick = {},
     )
 }
-

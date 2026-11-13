@@ -56,4 +56,3 @@ class QrCodeConfirmationViewTest : RobolectricTest() {
         }
     }
 }
-

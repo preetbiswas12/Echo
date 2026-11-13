@@ -14,4 +14,3 @@ object MessageComposerConfig {
      */
     const val ENABLE_RICH_TEXT_EDITING = true
 }
-

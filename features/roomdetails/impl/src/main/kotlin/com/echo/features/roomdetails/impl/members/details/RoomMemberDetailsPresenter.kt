@@ -15,8 +15,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.userprofile.api.UserProfileEvent
 import com.echo.features.userprofile.api.UserProfilePresenterFactory
 import com.echo.features.userprofile.api.UserProfileState
@@ -34,6 +32,8 @@ import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.ui.room.getRoomMemberAsState
 import com.echo.libraries.matrix.ui.room.roomMemberIdentityStateChange
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
@@ -136,4 +136,3 @@ class RoomMemberDetailsPresenter(
         )
     }
 }
-

@@ -19,4 +19,3 @@ data class PermissionsState(
     val permissionAlreadyDenied: Boolean,
     val eventSink: (PermissionsEvent) -> Unit
 )
-

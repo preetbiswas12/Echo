@@ -49,4 +49,3 @@ fun stringWithLink(
         end = learnMoreStartIndex + learnMoreStr.length,
     )
 }
-

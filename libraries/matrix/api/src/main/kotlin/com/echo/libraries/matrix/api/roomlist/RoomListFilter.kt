@@ -93,4 +93,3 @@ sealed interface RoomListFilter {
         val pattern: String
     ) : RoomListFilter
 }
-

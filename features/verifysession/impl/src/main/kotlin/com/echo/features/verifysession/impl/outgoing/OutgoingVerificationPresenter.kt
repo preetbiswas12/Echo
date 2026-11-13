@@ -16,10 +16,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import com.freeletics.flowredux.compose.rememberStateAndDispatch
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.encryption.EncryptionService
@@ -27,6 +23,10 @@ import com.echo.libraries.matrix.api.verification.SessionVerificationService
 import com.echo.libraries.matrix.api.verification.SessionVerifiedStatus
 import com.echo.libraries.matrix.api.verification.VerificationFlowState
 import com.echo.libraries.matrix.api.verification.VerificationRequest
+import com.freeletics.flowredux.compose.rememberStateAndDispatch
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.launchIn
@@ -179,4 +179,3 @@ class OutgoingVerificationPresenter(
             .launchIn(this)
     }
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.features.rageshake.impl.reporter
 
+import com.echo.appconfig.RageshakeConfig
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.appconfig.RageshakeConfig
 
 fun interface BugReportAppNameProvider {
     fun provide(): String
@@ -20,4 +20,3 @@ fun interface BugReportAppNameProvider {
 class DefaultBugReportAppNameProvider : BugReportAppNameProvider {
     override fun provide(): String = RageshakeConfig.BUG_REPORT_APP_NAME
 }
-

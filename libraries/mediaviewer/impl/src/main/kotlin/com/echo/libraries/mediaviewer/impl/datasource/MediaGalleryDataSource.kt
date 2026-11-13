@@ -8,8 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
@@ -17,6 +15,8 @@ import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.api.timeline.item.event.toEventOrTransactionId
 import com.echo.libraries.mediaviewer.impl.model.GroupedMediaItems
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
@@ -125,4 +125,3 @@ class TimelineMediaGalleryDataSource(
         ) ?: Timber.w("Timeline is not ready yet, cannot delete media item with eventId $eventId for room ${room.roomId}")
     }
 }
-

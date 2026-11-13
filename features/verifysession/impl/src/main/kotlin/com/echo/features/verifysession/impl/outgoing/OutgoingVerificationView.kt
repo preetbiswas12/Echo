@@ -345,4 +345,3 @@ internal fun OutgoingVerificationViewPreview(@PreviewParameter(
         onBack = {},
     )
 }
-

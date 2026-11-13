@@ -8,10 +8,10 @@
 
 package com.echo.features.reportroom.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 interface ReportRoom {
     suspend operator fun invoke(
@@ -58,4 +58,3 @@ class DefaultReportRoom(
         return Result.success(Unit)
     }
 }
-

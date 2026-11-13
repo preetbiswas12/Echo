@@ -33,4 +33,3 @@ class UrlUtilsTest {
         assertThat("Http://matrix.org".ensureProtocol()).isEqualTo("Http://matrix.org")
     }
 }
-

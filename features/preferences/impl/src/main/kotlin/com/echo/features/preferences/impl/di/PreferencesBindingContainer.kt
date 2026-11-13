@@ -7,13 +7,13 @@
 
 package com.echo.features.preferences.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.preferences.impl.account.PreferencesAccountPresenter
 import com.echo.features.preferences.impl.account.PreferencesAccountState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(SessionScope::class)
 @BindingContainer
@@ -21,4 +21,3 @@ interface PreferencesBindingContainer {
     @Binds
     fun bindPreferencesAccountPresenter(presenter: PreferencesAccountPresenter): Presenter<PreferencesAccountState>
 }
-

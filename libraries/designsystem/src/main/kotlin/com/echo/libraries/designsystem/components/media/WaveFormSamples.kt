@@ -28,4 +28,3 @@ object WaveFormSamples {
 
     val longRealisticWaveForm = List(4) { realisticWaveForm }.flatten().toImmutableList()
 }
-

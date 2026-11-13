@@ -10,4 +10,3 @@ package com.echo.features.lockscreen.impl.device
 sealed interface DeviceUnlockEvent {
     data object CancelPinCode : DeviceUnlockEvent
 }
-

@@ -25,4 +25,3 @@ sealed class QrLoginException : Exception() {
     data object UnsupportedQrCodeType : QrLoginException()
     data object Unknown : QrLoginException()
 }
-

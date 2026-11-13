@@ -21,4 +21,3 @@ sealed interface LoginMode {
     data object PasswordLogin : LoginMode
     data class OAuth(val oAuthDetails: OAuthDetails) : LoginMode
 }
-

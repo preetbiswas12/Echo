@@ -37,4 +37,3 @@ class FakeStartChatNavigator(
         openRoomDirectoryLambda()
     }
 }
-

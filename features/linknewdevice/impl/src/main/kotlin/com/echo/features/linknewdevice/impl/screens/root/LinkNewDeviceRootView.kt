@@ -145,4 +145,3 @@ internal fun LinkNewDeviceRootViewPreview(
         onUnlockDevice = { },
     )
 }
-

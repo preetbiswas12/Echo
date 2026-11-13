@@ -68,4 +68,3 @@ class FakePickerProvider : PickerProvider {
         this.mimeType = mimeType
     }
 }
-

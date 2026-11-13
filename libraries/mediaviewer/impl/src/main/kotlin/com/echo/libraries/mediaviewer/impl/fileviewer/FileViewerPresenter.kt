@@ -16,9 +16,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.core.net.toUri
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
@@ -34,6 +31,9 @@ import com.echo.libraries.mediaviewer.api.local.LocalMedia
 import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
 import com.echo.libraries.mediaviewer.impl.local.LocalMediaActions
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -142,4 +142,3 @@ class FileViewerPresenter(
         }
     }
 }
-

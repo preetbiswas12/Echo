@@ -18,4 +18,3 @@ internal fun AvatarData.toMediaRequestData(): MediaRequestData {
         kind = MediaRequestData.Kind.Thumbnail(AVATAR_THUMBNAIL_SIZE_IN_PIXEL)
     )
 }
-

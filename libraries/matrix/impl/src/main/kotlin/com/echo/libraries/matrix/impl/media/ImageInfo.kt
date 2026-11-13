@@ -31,4 +31,3 @@ fun ImageInfo.map(): RustImageInfo = RustImageInfo(
     blurhash = blurhash,
     isAnimated = null
 )
-

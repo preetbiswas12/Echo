@@ -67,4 +67,3 @@ internal fun ConnectivityIndicator(
 internal fun ConnectivityIndicatorPreview() = ElementPreview {
     ConnectivityIndicator(verticalPadding = 6.dp)
 }
-

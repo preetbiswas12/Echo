@@ -55,4 +55,3 @@ sealed interface LinkDesktopStep {
 
     data object Done : LinkDesktopStep
 }
-

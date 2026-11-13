@@ -8,7 +8,6 @@
 
 package com.echo.features.login.impl.accesscontrol
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.features.login.impl.changeserver.AccountProviderAccessException
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
@@ -16,6 +15,7 @@ import com.echo.libraries.matrix.test.AN_ACCOUNT_PROVIDER
 import com.echo.libraries.matrix.test.AN_ACCOUNT_PROVIDER_2
 import com.echo.libraries.matrix.test.AN_ACCOUNT_PROVIDER_URL
 import com.echo.libraries.matrix.test.accountprovider.anAccountProviderManaged
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertThrows
 import org.junit.Test
@@ -207,4 +207,3 @@ class DefaultAccountProviderAccessControlTest {
         }
     }
 }
-

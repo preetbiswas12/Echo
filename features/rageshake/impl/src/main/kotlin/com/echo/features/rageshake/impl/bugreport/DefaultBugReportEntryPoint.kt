@@ -10,10 +10,10 @@ package com.echo.features.rageshake.impl.bugreport
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.bugreport.BugReportEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultBugReportEntryPoint : BugReportEntryPoint {
@@ -25,4 +25,3 @@ class DefaultBugReportEntryPoint : BugReportEntryPoint {
         return parentNode.createNode<BugReportFlowNode>(buildContext, listOf(callback))
     }
 }
-

@@ -72,4 +72,3 @@ fun registerFakeMediaStoreContentProvider(): FakeMediaStoreContentProvider {
         ShadowContentResolver.registerProviderInternal(MediaStore.AUTHORITY, this)
     }
 }
-

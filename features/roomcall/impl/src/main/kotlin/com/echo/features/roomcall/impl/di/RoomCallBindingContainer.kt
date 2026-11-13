@@ -8,13 +8,13 @@
 
 package com.echo.features.roomcall.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.roomcall.api.RoomCallState
 import com.echo.features.roomcall.impl.RoomCallStatePresenter
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(RoomScope::class)
 @BindingContainer
@@ -22,4 +22,3 @@ interface RoomCallBindingContainer {
     @Binds
     fun bindRoomCallStatePresenter(presenter: RoomCallStatePresenter): Presenter<RoomCallState>
 }
-

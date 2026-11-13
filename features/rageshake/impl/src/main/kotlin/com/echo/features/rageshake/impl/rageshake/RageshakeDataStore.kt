@@ -21,4 +21,3 @@ interface RageshakeDataStore {
 
     suspend fun reset()
 }
-

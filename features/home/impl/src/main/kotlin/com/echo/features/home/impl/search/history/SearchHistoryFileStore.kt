@@ -32,4 +32,3 @@ interface SearchHistoryFileStore {
      */
     fun delete(): Boolean
 }
-

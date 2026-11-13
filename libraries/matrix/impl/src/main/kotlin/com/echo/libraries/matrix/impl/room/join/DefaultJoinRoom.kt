@@ -8,8 +8,6 @@
 
 package com.echo.libraries.matrix.impl.room.join
 
-import dev.zacsweers.metro.ContributesBinding
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.core.extensions.mapFailure
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
@@ -19,6 +17,8 @@ import com.echo.libraries.matrix.api.exception.ErrorKind
 import com.echo.libraries.matrix.api.room.join.JoinRoom
 import com.echo.libraries.matrix.impl.analytics.toAnalyticsJoinedRoom
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.ContributesBinding
+import im.vector.app.features.analytics.plan.JoinedRoom
 
 @ContributesBinding(SessionScope::class)
 class DefaultJoinRoom(
@@ -57,4 +57,3 @@ class DefaultJoinRoom(
         }.map { }
     }
 }
-

@@ -18,4 +18,3 @@ interface FileExtensionExtractor {
      */
     fun extractFromName(name: String): String
 }
-

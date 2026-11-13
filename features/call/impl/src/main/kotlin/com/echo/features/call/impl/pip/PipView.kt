@@ -20,4 +20,3 @@ interface PipView {
     fun enterPipMode(): Boolean
     fun hangUp()
 }
-

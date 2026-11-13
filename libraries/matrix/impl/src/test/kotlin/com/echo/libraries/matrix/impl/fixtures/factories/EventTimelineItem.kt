@@ -66,4 +66,3 @@ internal fun aRustEventTimelineItem(
     redactionSendState = redactionSendState,
     redactionReason = redactionReason,
 )
-

@@ -8,12 +8,12 @@
 
 package com.echo.features.securebackup.impl.reset
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.api.encryption.IdentityResetHandle
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -65,4 +65,3 @@ class ResetIdentityFlowManager(
         whenResetIsDoneWaitingJob = null
     }
 }
-

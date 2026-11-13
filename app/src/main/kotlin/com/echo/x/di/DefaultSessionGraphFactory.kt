@@ -8,10 +8,10 @@
 
 package com.echo.x.di
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.appnav.di.SessionGraphFactory
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultSessionGraphFactory(
@@ -21,4 +21,3 @@ class DefaultSessionGraphFactory(
         return appGraph.sessionGraphFactory.create(client)
     }
 }
-

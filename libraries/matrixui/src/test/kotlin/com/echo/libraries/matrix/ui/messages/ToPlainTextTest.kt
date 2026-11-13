@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.ui.messages
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.item.event.FormattedBody
 import com.echo.libraries.matrix.api.timeline.item.event.MessageFormat
 import com.echo.libraries.matrix.api.timeline.item.event.TextMessageType
 import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.jsoup.Jsoup
 import org.junit.Test
 
@@ -162,4 +162,3 @@ class ToPlainTextTest : RobolectricTest() {
         assertThat(messageType.toPlainText(permalinkParser = FakePermalinkParser())).isEqualTo("\uD83D\uDE1C")
     }
 }
-

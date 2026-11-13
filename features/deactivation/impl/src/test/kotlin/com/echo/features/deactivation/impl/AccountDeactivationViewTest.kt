@@ -147,4 +147,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setAccountDeactivationView(
         )
     }
 }
-

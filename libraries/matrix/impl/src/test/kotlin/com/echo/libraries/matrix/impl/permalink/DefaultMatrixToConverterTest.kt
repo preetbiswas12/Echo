@@ -9,8 +9,8 @@
 package com.echo.libraries.matrix.impl.permalink
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultMatrixToConverterTest : RobolectricTest() {
@@ -56,4 +56,3 @@ class DefaultMatrixToConverterTest : RobolectricTest() {
         assertThat(DefaultMatrixToConverter().convert(url)).isEqualTo(Uri.parse("https://matrix.to/#/@alice:matrix.org"))
     }
 }
-

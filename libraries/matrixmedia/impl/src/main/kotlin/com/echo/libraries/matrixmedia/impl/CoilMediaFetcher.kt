@@ -116,4 +116,3 @@ internal class CoilMediaFetcher(
         )
     }
 }
-

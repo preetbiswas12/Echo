@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.filesize.FakeFileSizeFormatter
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.dateformatter.test.FakeDateFormatter
@@ -57,6 +56,7 @@ import com.echo.libraries.matrix.ui.media.contentvalidation.NoopEventContentVali
 import com.echo.libraries.mediaviewer.api.MediaInfo
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.mediaviewer.test.util.FileExtensionExtractorWithoutValidation
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
@@ -788,4 +788,3 @@ private fun createEventItemFactory() = EventItemFactory(
     dateFormatter = FakeDateFormatter(),
     contentValidationCache = NoopEventContentValidationCache(noopValidationState),
 )
-

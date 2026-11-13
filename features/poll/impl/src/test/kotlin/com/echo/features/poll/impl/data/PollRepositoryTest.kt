@@ -7,7 +7,6 @@
 
 package com.echo.features.poll.impl.data
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.poll.impl.aPollTimelineItems
 import com.echo.features.poll.impl.anOngoingPollContent
 import com.echo.libraries.matrix.api.poll.PollKind
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_THREAD_ID
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.matrix.test.timeline.FakeTimeline
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -225,4 +225,3 @@ class PollRepositoryTest {
         timelineMode = timelineMode,
     )
 }
-

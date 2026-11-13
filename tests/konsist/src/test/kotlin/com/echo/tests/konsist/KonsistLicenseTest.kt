@@ -69,4 +69,3 @@ private fun String.count(subString: String): Int {
         index += subString.length
     }
 }
-

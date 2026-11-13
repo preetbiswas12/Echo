@@ -10,12 +10,12 @@ package com.echo.features.rolesandpermissions.impl.roles
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesEntryPoint
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesListType
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultChangeRoomMemberRolesEntyPoint : ChangeRoomMemberRolesEntryPoint {
@@ -33,4 +33,3 @@ class DefaultChangeRoomMemberRolesEntyPoint : ChangeRoomMemberRolesEntryPoint {
         )
     }
 }
-

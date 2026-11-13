@@ -9,12 +9,12 @@ package com.echo.features.lockscreen.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.lockscreen.api.DeviceUnlockEntryPoint
 import com.echo.features.lockscreen.impl.device.DeviceUnlockCallbackHolder
 import com.echo.features.lockscreen.impl.device.DeviceUnlockNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultDeviceUnlockEntryPoint(
@@ -33,4 +33,3 @@ class DefaultDeviceUnlockEntryPoint(
         deviceUnlockCallbackHolder.requestUnlock(callback)
     }
 }
-

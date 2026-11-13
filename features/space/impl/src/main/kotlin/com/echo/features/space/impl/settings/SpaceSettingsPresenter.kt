@@ -13,10 +13,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.powerlevels.permissionsAsState
+import dev.zacsweers.metro.Inject
 
 @Inject
 class SpaceSettingsPresenter(
@@ -45,4 +45,3 @@ class SpaceSettingsPresenter(
         )
     }
 }
-

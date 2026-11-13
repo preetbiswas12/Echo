@@ -20,9 +20,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.messages.api.timeline.HtmlConverterProvider
 import com.echo.features.messages.api.timeline.TextPillificator
 import com.echo.libraries.androidutils.text.safeLinkify
@@ -52,6 +49,9 @@ import com.echo.libraries.mediaviewer.impl.local.LocalMediaActions
 import com.echo.libraries.mediaviewer.impl.model.MediaPermissions
 import com.echo.libraries.mediaviewer.impl.model.mediaPermissions
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -369,4 +369,3 @@ private fun MediaViewerEntryPoint.Params.mediaSource() = when (this) {
     is MediaViewerEntryPoint.Params.EventGallery -> null
     is MediaViewerEntryPoint.Params.RoomMedia -> mediaSource
 }
-

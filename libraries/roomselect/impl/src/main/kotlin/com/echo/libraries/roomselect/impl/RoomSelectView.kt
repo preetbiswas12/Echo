@@ -424,4 +424,3 @@ internal fun RoomSelectViewPreview(@PreviewParameter(RoomSelectStatePreviewParam
         onSubmit = {},
     )
 }
-

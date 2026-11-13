@@ -11,4 +11,3 @@ data class CacheData(
     val value: String,
     val updatedAt: Long,
 )
-

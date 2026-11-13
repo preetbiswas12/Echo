@@ -16,4 +16,3 @@ import androidx.compose.runtime.remember
 @Composable
 fun textFieldState(stateValue: String): MutableState<String> =
     remember(stateValue) { mutableStateOf(stateValue) }
-

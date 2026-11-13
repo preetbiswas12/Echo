@@ -44,4 +44,3 @@ internal fun ForwardMessagesViewPreview(@PreviewParameter(ForwardMessagesStatePr
         onForwardSuccess = {}
     )
 }
-

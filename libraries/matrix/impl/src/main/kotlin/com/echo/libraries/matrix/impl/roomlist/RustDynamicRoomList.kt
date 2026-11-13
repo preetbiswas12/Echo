@@ -92,4 +92,3 @@ internal class RustDynamicRoomList(
 
     private fun RoomListDynamicEntriesController.addPages(pageCount: Int) = repeat(pageCount) { addOnePage() }
 }
-

@@ -11,4 +11,3 @@ package com.echo.libraries.emoji.impl.picker
 internal sealed interface EmojiPickerEvent {
     data class ToggleSearchActive(val isActive: Boolean) : EmojiPickerEvent
 }
-

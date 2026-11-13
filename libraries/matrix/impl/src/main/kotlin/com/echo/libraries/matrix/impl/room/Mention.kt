@@ -16,4 +16,3 @@ fun List<IntentionalMention>.map(): Mentions {
     val userIds = filterIsInstance<IntentionalMention.User>().map { it.userId.value }
     return Mentions(userIds, hasRoom)
 }
-

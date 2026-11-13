@@ -12,4 +12,3 @@ sealed interface SecureBackupDisableEvent {
     data object DisableBackup : SecureBackupDisableEvent
     data object DismissDialogs : SecureBackupDisableEvent
 }
-

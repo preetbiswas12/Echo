@@ -143,4 +143,3 @@ fun aSelectableSpaceRoom(
     joinedMembersCount = joinedMembersCount,
     isSelected = isSelected,
 )
-

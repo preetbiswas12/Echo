@@ -17,13 +17,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.roomMembers
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -94,4 +94,3 @@ private fun createDefaultRoomMemberForTyping(userId: UserId): TypingRoomMember {
         disambiguatedDisplayName = userId.value,
     )
 }
-

@@ -23,4 +23,3 @@ data class LoginWithClassicState(
     val loginModeState: LoginModeState,
     val eventSink: (LoginWithClassicEvent) -> Unit,
 )
-

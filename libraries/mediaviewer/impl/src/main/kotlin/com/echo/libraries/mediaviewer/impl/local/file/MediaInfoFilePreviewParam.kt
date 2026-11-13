@@ -22,4 +22,3 @@ open class MediaInfoFilePreviewParam : PreviewParameterProvider<MediaInfo> {
             anApkMediaInfo(),
         )
 }
-

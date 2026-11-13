@@ -22,4 +22,3 @@ class FakeLoginEntryPoint(
         callback: LoginEntryPoint.Callback,
     ): Node = createNodeResult(buildContext, params)
 }
-

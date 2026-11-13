@@ -18,4 +18,3 @@ internal fun aRustRoomNotificationSettings(
     mode = mode,
     isDefault = isDefault
 )
-

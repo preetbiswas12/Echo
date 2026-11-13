@@ -34,4 +34,3 @@ object RoomNotificationSettingsMapper {
             RoomNotificationMode.MUTE -> RustRoomNotificationMode.MUTE
         }
 }
-

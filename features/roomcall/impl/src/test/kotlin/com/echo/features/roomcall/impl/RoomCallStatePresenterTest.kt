@@ -8,7 +8,6 @@
 
 package com.echo.features.roomcall.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.api.CurrentCall
 import com.echo.features.call.api.CurrentCallService
 import com.echo.features.call.test.FakeCurrentCallService
@@ -24,6 +23,7 @@ import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.powerlevels.FakeRoomPermissions
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -428,4 +428,3 @@ class RoomCallStatePresenterTest {
         )
     }
 }
-

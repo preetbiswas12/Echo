@@ -55,5 +55,3 @@ dependencies {
     testImplementation(projects.libraries.designsystem)
     testImplementation(libs.test.composable.preview.scanner)
 }
-
-

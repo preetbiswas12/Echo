@@ -8,9 +8,9 @@
 
 package com.echo.features.home.impl.filters.selection
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.home.impl.filters.RoomListFilter
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.MutableStateFlow
 
 @ContributesBinding(SessionScope::class)
@@ -58,4 +58,3 @@ class DefaultFilterSelectionStrategy : FilterSelectionStrategy {
         return (selectedFilterStates + unselectedFilterStates).toSet()
     }
 }
-

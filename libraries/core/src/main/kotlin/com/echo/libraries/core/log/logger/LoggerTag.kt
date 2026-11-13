@@ -24,4 +24,3 @@ open class LoggerTag(name: String, parentTag: LoggerTag? = null) {
         "${parentTag.value}/$name"
     }
 }
-

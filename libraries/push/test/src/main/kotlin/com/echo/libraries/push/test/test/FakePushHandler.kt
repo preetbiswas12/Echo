@@ -24,4 +24,3 @@ class FakePushHandler(
         handleInvalidResult(providerInfo, data)
     }
 }
-

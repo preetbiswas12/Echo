@@ -22,4 +22,3 @@ sealed interface MessageSearchPaginationState {
      */
     data object Loading : MessageSearchPaginationState
 }
-

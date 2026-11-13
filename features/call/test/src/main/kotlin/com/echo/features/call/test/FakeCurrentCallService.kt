@@ -15,4 +15,3 @@ import kotlinx.coroutines.flow.MutableStateFlow
 class FakeCurrentCallService(
     override val currentCall: MutableStateFlow<CurrentCall> = MutableStateFlow(CurrentCall.None),
 ) : CurrentCallService
-

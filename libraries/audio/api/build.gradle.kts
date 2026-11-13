@@ -12,5 +12,3 @@ plugins {
 android {
     namespace = "com.echo.libraries.audio.api"
 }
-
-

@@ -49,4 +49,3 @@ class DefaultConsoleMessageLogger : ConsoleMessageLogger {
         Timber.tag(tag).log(priority = priority, message = message)
     }
 }
-

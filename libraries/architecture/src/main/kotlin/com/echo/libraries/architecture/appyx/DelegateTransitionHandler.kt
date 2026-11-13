@@ -34,4 +34,3 @@ fun <NavTarget, State> rememberDelegateTransitionHandler(
     handlerProvider: (NavTarget) -> ModifierTransitionHandler<NavTarget, State>,
 ): ModifierTransitionHandler<NavTarget, State> =
     remember(handlerProvider) { DelegateTransitionHandler(handlerProvider = handlerProvider) }
-

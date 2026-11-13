@@ -33,4 +33,3 @@ data class OnBoardingState(
         get() = defaultAccountProvider != null &&
             (loginModeState.loginMode is AsyncData.Uninitialized || loginModeState.loginMode is AsyncData.Loading)
 }
-

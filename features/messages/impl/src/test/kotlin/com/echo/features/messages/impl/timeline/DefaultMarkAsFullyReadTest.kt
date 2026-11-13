@@ -10,7 +10,6 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.test.AN_EVENT_ID
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -53,4 +53,3 @@ class DefaultMarkAsFullyReadTest {
         markAsFullyReadResult.assertions().isCalledOnce().with(value(A_ROOM_ID), value(AN_EVENT_ID))
     }
 }
-

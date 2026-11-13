@@ -11,12 +11,12 @@ package com.echo.libraries.mediaviewer.impl.local
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.viewfolder.api.TextFileViewer
 import com.echo.libraries.audio.api.AudioFocus
 import com.echo.libraries.mediaviewer.api.local.LocalMedia
 import com.echo.libraries.mediaviewer.api.local.LocalMediaRenderer
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import me.saket.telephoto.zoomable.OverzoomEffect
 import me.saket.telephoto.zoomable.ZoomSpec
 import me.saket.telephoto.zoomable.rememberZoomableState
@@ -46,4 +46,3 @@ class DefaultLocalMediaRenderer(
         )
     }
 }
-

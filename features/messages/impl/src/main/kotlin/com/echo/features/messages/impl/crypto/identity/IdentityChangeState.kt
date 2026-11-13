@@ -15,4 +15,3 @@ data class IdentityChangeState(
     val roomMemberIdentityStateChanges: ImmutableList<RoomMemberIdentityStateChange>,
     val eventSink: (IdentityChangeEvent) -> Unit,
 )
-

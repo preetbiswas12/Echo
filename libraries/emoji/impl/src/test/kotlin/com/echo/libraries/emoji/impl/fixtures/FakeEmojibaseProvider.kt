@@ -8,10 +8,10 @@
 
 package com.echo.libraries.emoji.impl.fixtures
 
+import com.echo.libraries.emoji.impl.EmojibaseProvider
 import io.element.android.emojibasebindings.Emoji
 import io.element.android.emojibasebindings.EmojibaseCategory
 import io.element.android.emojibasebindings.EmojibaseStore
-import com.echo.libraries.emoji.impl.EmojibaseProvider
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toPersistentMap
 
@@ -21,4 +21,3 @@ internal class FakeEmojibaseProvider(
     private val store = EmojibaseStore(emojis.toPersistentMap())
     override suspend fun getStore(): EmojibaseStore = store
 }
-

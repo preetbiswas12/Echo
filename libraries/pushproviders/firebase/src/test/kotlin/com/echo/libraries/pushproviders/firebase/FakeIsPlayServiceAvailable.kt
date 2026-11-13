@@ -13,4 +13,3 @@ class FakeIsPlayServiceAvailable(
 ) : IsPlayServiceAvailable {
     override fun isAvailable() = isAvailable
 }
-

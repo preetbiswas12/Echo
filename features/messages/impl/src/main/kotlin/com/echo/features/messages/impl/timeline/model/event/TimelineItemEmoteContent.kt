@@ -22,4 +22,3 @@ data class TimelineItemEmoteContent(
     override val type: String = "TimelineItemEmoteContent"
     override val plainText: String = htmlDocument?.toPlainText() ?: body
 }
-

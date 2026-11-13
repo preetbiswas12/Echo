@@ -19,4 +19,3 @@ sealed interface ShowLocationEvent {
     data object OpenLocationSettings : ShowLocationEvent
     data object StopLocationSharing : ShowLocationEvent
 }
-

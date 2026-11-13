@@ -20,4 +20,3 @@ data class ManageAuthorizedSpacesState(
 ) {
     val isDoneButtonEnabled = selectedIds.isNotEmpty()
 }
-

@@ -27,4 +27,3 @@ sealed interface RoomNavigationTarget : Parcelable {
     @Parcelize
     data object NotificationSettings : RoomNavigationTarget
 }
-

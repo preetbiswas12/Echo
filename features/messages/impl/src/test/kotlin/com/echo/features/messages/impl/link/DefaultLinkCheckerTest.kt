@@ -50,4 +50,3 @@ class DefaultLinkCheckerTest {
         assertThat(sut.isSafe(Link("https://example.org", "https://evil.org"))).isFalse()
     }
 }
-

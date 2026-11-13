@@ -8,13 +8,13 @@
 
 package com.echo.features.analytics.impl.di
 
+import com.echo.features.analytics.api.preferences.AnalyticsPreferencesState
+import com.echo.features.analytics.impl.preferences.AnalyticsPreferencesPresenter
+import com.echo.libraries.architecture.Presenter
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.Binds
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.analytics.api.preferences.AnalyticsPreferencesState
-import com.echo.features.analytics.impl.preferences.AnalyticsPreferencesPresenter
-import com.echo.libraries.architecture.Presenter
 
 @ContributesTo(AppScope::class)
 @BindingContainer
@@ -22,4 +22,3 @@ interface AnalyticsBindingContainer {
     @Binds
     fun bindAnalyticsPreferencesPresenter(presenter: AnalyticsPreferencesPresenter): Presenter<AnalyticsPreferencesState>
 }
-

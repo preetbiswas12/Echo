@@ -13,7 +13,6 @@ import android.provider.Settings
 import androidx.core.app.NotificationChannelCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -22,6 +21,7 @@ import com.echo.libraries.preferences.api.store.NotificationSound
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.slot
@@ -501,4 +501,3 @@ class NotificationChannelsTest : RobolectricTest() {
         appPreferencesStore = appPreferencesStore,
     )
 }
-

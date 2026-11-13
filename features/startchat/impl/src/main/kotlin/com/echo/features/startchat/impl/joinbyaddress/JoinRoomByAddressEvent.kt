@@ -13,4 +13,3 @@ sealed interface JoinRoomByAddressEvent {
     data object Continue : JoinRoomByAddressEvent
     data class UpdateAddress(val address: String) : JoinRoomByAddressEvent
 }
-

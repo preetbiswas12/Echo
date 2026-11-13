@@ -16,4 +16,3 @@ class FakeLinkChecker(
 ) : LinkChecker {
     override fun isSafe(link: Link) = isSafeResult(link)
 }
-

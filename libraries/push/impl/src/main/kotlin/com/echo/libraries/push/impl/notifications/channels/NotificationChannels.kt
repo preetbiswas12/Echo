@@ -21,10 +21,6 @@ import androidx.annotation.ChecksSdkIntAtLeast
 import androidx.core.app.NotificationChannelCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import dev.zacsweers.metro.binding
 import com.echo.appconfig.NotificationConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.core.extensions.runCatchingExceptions
@@ -35,6 +31,10 @@ import com.echo.libraries.preferences.api.store.NotificationSound
 import com.echo.libraries.push.api.notifications.NotificationSoundUpdater
 import com.echo.libraries.push.impl.R
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import dev.zacsweers.metro.binding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
@@ -406,4 +406,3 @@ class DefaultNotificationChannels(
         }
     }
 }
-

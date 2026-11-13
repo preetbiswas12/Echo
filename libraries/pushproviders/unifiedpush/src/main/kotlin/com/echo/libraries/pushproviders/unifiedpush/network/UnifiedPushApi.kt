@@ -14,4 +14,3 @@ interface UnifiedPushApi {
     @GET("_matrix/push/v1/notify")
     suspend fun discover(): DiscoveryResponse
 }
-

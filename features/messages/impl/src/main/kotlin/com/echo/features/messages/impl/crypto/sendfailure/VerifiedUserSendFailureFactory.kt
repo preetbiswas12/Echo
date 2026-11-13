@@ -8,9 +8,9 @@
 
 package com.echo.features.messages.impl.crypto.sendfailure
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.timeline.item.event.LocalEventSendState
+import dev.zacsweers.metro.Inject
 
 @Inject
 class VerifiedUserSendFailureFactory(
@@ -46,4 +46,3 @@ class VerifiedUserSendFailureFactory(
         }
     }
 }
-

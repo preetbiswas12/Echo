@@ -262,4 +262,3 @@ internal fun MessagesViewTopBarPreview() = ElementPreview {
         )
     }
 }
-

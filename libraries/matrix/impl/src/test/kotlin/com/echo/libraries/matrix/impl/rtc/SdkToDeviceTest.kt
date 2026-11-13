@@ -63,4 +63,3 @@ class SdkToDeviceTest {
         const val BOB = "@bob:example.org"
     }
 }
-

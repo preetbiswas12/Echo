@@ -8,10 +8,10 @@
 package com.echo.libraries.androidutils.toast
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.system.toast
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class AndroidToastHelper(
@@ -21,4 +21,3 @@ class AndroidToastHelper(
         context.toast(resId)
     }
 }
-

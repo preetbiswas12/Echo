@@ -36,4 +36,3 @@ fun aTimelineItemFileContent(
     formattedFileSize = "100kB",
     fileExtension = "pdf"
 )
-

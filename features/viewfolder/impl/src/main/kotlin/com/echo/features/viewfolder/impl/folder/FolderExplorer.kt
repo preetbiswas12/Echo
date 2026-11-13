@@ -8,11 +8,11 @@
 
 package com.echo.features.viewfolder.impl.folder
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.viewfolder.impl.model.Item
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import java.io.File
 
@@ -50,4 +50,3 @@ class DefaultFolderExplorer(
         }
     }
 }
-

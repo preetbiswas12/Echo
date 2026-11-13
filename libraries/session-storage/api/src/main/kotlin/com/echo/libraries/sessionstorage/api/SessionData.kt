@@ -49,4 +49,3 @@ data class SessionData(
     /** The optional thumbnail of the avatar of the user ([userAvatarUrl]), base64 encoded. */
     val userAvatarData: String?,
 )
-

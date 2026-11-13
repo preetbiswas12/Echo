@@ -34,4 +34,3 @@ interface OutgoingVerificationEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

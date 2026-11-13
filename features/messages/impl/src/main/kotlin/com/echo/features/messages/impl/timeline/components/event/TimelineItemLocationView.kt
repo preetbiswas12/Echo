@@ -169,4 +169,3 @@ internal fun TimelineItemLocationViewPreview(@PreviewParameter(TimelineItemLocat
             onStopLiveLocationClick = {},
         )
     }
-

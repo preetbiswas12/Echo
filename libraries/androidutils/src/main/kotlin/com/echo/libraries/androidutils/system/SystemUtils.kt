@@ -186,4 +186,3 @@ fun Context.toast(resId: Int) {
 fun Context.toast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
-

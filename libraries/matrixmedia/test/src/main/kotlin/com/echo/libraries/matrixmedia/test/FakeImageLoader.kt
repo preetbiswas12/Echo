@@ -49,4 +49,3 @@ class FakeImageLoader : ImageLoader {
         return executedRequests.map { it.data }
     }
 }
-

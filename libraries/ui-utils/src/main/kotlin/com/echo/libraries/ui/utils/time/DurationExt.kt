@@ -31,4 +31,3 @@ fun Duration.formatShort(): String {
 
     return "$sign${absoluteValue.inWholeMinutes}:$seconds"
 }
-

@@ -16,9 +16,6 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Composer
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.test.FakeLocationService
 import com.echo.features.messages.api.timeline.TextPillificator
@@ -115,6 +112,9 @@ import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
 import com.echo.tests.testutils.waitForPredicate
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Composer
+import im.vector.app.features.analytics.plan.Interaction
 import io.mockk.mockk
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
@@ -1752,4 +1752,3 @@ fun aReplyMode() = MessageComposerMode.Reply(
     replyToDetails = InReplyToDetails.Loading(AN_EVENT_ID),
     hideImage = false,
 )
-

@@ -7,12 +7,11 @@
 
 package com.echo.features.enterprise.impl
 
+import com.echo.features.enterprise.api.IsEnterpriseBuild
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.features.enterprise.api.IsEnterpriseBuild
 
 @ContributesBinding(AppScope::class)
 class DefaultIsEnterpriseBuild : IsEnterpriseBuild {
     override fun invoke(): Boolean = false
 }
-

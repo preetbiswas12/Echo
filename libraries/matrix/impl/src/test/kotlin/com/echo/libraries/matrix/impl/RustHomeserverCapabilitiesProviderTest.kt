@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiHomeserverCapabilities
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -64,4 +64,3 @@ class RustHomeserverCapabilitiesProviderTest {
         capabilities: FakeFfiHomeserverCapabilities = FakeFfiHomeserverCapabilities(),
     ) = RustHomeserverCapabilitiesProvider(capabilities, StandardTestDispatcher(testScheduler))
 }
-

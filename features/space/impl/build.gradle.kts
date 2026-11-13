@@ -51,5 +51,3 @@ dependencies {
     testImplementation(projects.features.invite.test)
     testImplementation(projects.features.rolesandpermissions.test)
 }
-
-

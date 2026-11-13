@@ -72,4 +72,3 @@ fun aPinUnlockState(
     isUnlocked = isUnlocked,
     eventSink = {}
 )
-

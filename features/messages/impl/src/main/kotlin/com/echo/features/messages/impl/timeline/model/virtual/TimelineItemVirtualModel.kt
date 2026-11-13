@@ -14,4 +14,3 @@ import androidx.compose.runtime.Immutable
 sealed interface TimelineItemVirtualModel {
     val type: String
 }
-

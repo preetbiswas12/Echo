@@ -8,7 +8,6 @@
 
 package com.echo.features.preferences.impl.labs
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.preferences.impl.tasks.ClearCacheUseCase
 import com.echo.features.preferences.impl.tasks.FakeClearCacheUseCase
 import com.echo.libraries.featureflag.api.Feature
@@ -19,6 +18,7 @@ import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -118,4 +118,3 @@ class LabsPresenterTest {
         )
     }
 }
-

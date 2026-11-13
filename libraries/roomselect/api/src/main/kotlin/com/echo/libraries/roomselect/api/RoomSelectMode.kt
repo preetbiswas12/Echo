@@ -22,4 +22,3 @@ sealed interface RoomSelectMode {
      */
     data object Share : RoomSelectMode
 }
-

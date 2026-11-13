@@ -12,4 +12,3 @@ sealed interface BatteryOptimizationEvent {
     data object Dismiss : BatteryOptimizationEvent
     data object RequestDisableOptimizations : BatteryOptimizationEvent
 }
-

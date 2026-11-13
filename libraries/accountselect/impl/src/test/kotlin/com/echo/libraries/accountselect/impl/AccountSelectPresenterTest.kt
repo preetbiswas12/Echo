@@ -8,7 +8,6 @@
 
 package com.echo.libraries.accountselect.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID_2
@@ -17,6 +16,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.sessionstorage.test.aSessionData
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -79,4 +79,3 @@ internal fun createAccountSelectPresenter(
 ) = AccountSelectPresenter(
     sessionStore = sessionStore,
 )
-

@@ -9,14 +9,14 @@
 package com.echo.libraries.pushstore.impl
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import com.echo.libraries.pushstore.api.UserPushStore
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import java.util.concurrent.ConcurrentHashMap
 
 @SingleIn(AppScope::class)
@@ -37,4 +37,3 @@ class DefaultUserPushStoreFactory(
         }
     }
 }
-

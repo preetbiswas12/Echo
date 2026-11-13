@@ -25,4 +25,3 @@ fun String.md5() = try {
     // Should not happen, but just in case
     hashCode().toString()
 }
-

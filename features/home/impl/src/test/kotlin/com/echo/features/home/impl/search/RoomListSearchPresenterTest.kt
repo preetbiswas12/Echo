@@ -8,7 +8,6 @@
 
 package com.echo.features.home.impl.search
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.datasource.aRoomListRoomSummaryFactory
 import com.echo.libraries.dateformatter.test.FakeDateFormatter
 import com.echo.libraries.eventformatter.test.FakeRoomLatestEventFormatter
@@ -21,6 +20,7 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -161,4 +161,3 @@ fun TestScope.createRoomListSearchPresenter(
         }
     )
 }
-

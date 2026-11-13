@@ -10,10 +10,10 @@ package com.echo.features.analytics.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.analytics.api.AnalyticsEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultAnalyticsEntryPoint : AnalyticsEntryPoint {
@@ -21,4 +21,3 @@ class DefaultAnalyticsEntryPoint : AnalyticsEntryPoint {
         return parentNode.createNode<AnalyticsOptInNode>(buildContext)
     }
 }
-

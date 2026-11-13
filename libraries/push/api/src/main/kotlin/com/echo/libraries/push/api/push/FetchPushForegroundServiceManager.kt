@@ -26,4 +26,3 @@ interface FetchPushForegroundServiceManager {
      */
     suspend fun stop(): Boolean
 }
-

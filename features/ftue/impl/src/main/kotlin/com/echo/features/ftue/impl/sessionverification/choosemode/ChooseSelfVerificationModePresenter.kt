@@ -14,7 +14,6 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.logout.api.direct.DirectLogoutEvent
 import com.echo.features.logout.api.direct.DirectLogoutState
 import com.echo.libraries.architecture.AsyncData
@@ -23,6 +22,7 @@ import com.echo.libraries.core.coroutine.mapState
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.api.encryption.RecoveryState
+import dev.zacsweers.metro.Inject
 
 @Inject
 class ChooseSelfVerificationModePresenter(
@@ -82,4 +82,3 @@ class ChooseSelfVerificationModePresenter(
         )
     }
 }
-

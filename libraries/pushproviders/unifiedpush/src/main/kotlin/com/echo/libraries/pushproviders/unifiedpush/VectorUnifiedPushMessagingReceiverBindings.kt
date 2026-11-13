@@ -15,4 +15,3 @@ import dev.zacsweers.metro.ContributesTo
 interface VectorUnifiedPushMessagingReceiverBindings {
     fun inject(receiver: VectorUnifiedPushMessagingReceiver)
 }
-

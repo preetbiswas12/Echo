@@ -23,4 +23,3 @@ data class ChooseSelfVerificationModeState(
         val canUseRecoveryKey: Boolean,
     )
 }
-

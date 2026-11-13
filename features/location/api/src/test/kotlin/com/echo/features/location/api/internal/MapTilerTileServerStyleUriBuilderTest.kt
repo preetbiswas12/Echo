@@ -8,8 +8,8 @@
 
 package com.echo.features.location.api.internal
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.remoteconfig.MapTilerConfig
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MapTilerTileServerStyleUriBuilderTest {
@@ -74,4 +74,3 @@ class MapTilerTileServerStyleUriBuilderTest {
         ).isEqualTo("https://custom.url/maps/light/style.json?key=")
     }
 }
-

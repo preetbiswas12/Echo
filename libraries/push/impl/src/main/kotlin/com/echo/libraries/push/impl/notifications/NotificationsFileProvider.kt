@@ -15,4 +15,3 @@ import androidx.core.content.FileProvider
  * having their own.
  */
 class NotificationsFileProvider : FileProvider()
-

@@ -18,4 +18,3 @@ sealed interface PushHistoryEvent {
     data class NavigateTo(val sessionId: SessionId, val roomId: RoomId, val eventId: EventId) : PushHistoryEvent
     data object ClearDialog : PushHistoryEvent
 }
-

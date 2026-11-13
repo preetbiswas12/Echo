@@ -137,4 +137,3 @@ fun aGalleryItem(
         duration = duration,
     )
 }
-

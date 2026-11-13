@@ -66,4 +66,3 @@ fun aUserProfileState(
     displayedStatus = displayedStatus,
     eventSink = eventSink,
 )
-

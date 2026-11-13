@@ -31,4 +31,3 @@ class FakeFfiHomeserverCapabilities(
     override suspend fun forgetsRoomWhenLeaving(): Boolean = forgetsRoomWhenLeaving.invoke()
     override suspend fun extendedProfileFields(): ExtendedProfileFields = extendedProfileFields.invoke()
 }
-

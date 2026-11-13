@@ -73,4 +73,3 @@ interface NotificationCleaner {
      */
     fun clearReadRoomsNotifications(sessionId: SessionId)
 }
-

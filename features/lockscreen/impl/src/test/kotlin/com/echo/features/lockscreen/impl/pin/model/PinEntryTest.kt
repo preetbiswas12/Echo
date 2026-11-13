@@ -70,4 +70,3 @@ class PinEntryTest {
         newPinEntry.assertText("1234")
     }
 }
-

@@ -61,4 +61,3 @@ private fun VerticalRulerItem(width: Dp, color: Color) {
 internal fun VerticalRulerPreview() = ElementPreview {
     VerticalRuler()
 }
-

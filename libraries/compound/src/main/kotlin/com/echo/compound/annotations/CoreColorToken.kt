@@ -15,4 +15,3 @@ package com.echo.compound.annotations
 @Retention(AnnotationRetention.BINARY)
 @Target(AnnotationTarget.PROPERTY, AnnotationTarget.CLASS)
 annotation class CoreColorToken
-

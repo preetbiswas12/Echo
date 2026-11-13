@@ -152,4 +152,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setLogoutView(
         )
     }
 }
-

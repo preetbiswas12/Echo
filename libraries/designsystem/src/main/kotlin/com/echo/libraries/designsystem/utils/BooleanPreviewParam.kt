@@ -14,4 +14,3 @@ open class BooleanPreviewParam : PreviewParameterProvider<Boolean> {
     override val values: Sequence<Boolean>
         get() = sequenceOf(true, false)
 }
-

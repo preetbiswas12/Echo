@@ -224,4 +224,3 @@ internal fun LoginWithClassicViewPreview(@PreviewParameter(LoginWithClassicState
         onLearnMoreClick = {},
     )
 }
-

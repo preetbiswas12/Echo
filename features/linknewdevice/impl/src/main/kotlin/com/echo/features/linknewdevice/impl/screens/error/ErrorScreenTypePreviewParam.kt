@@ -22,4 +22,3 @@ class ErrorScreenTypePreviewParam : PreviewParameterProvider<ErrorScreenType> {
         ErrorScreenType.OtherDeviceAlreadySignedIn,
     )
 }
-

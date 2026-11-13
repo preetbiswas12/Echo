@@ -11,7 +11,6 @@ package com.echo.features.call.impl.notifications
 import androidx.core.graphics.drawable.IconCompat
 import androidx.test.platform.app.InstrumentationRegistry
 import coil3.ImageLoader
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.impl.ui.IncomingCallActivity
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.matrix.test.AN_EVENT_ID
@@ -24,6 +23,7 @@ import com.echo.libraries.matrixmedia.test.FakeImageLoaderHolder
 import com.echo.libraries.push.test.notifications.push.FakeNotificationBitmapLoader
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.robolectric.Shadows.shadowOf
@@ -145,4 +145,3 @@ class RingingCallNotificationCreatorTest : RobolectricTest() {
         notificationBitmapLoader = notificationBitmapLoader,
     )
 }
-

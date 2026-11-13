@@ -28,4 +28,3 @@ fun interface TextFileViewer {
         modifier: Modifier,
     )
 }
-

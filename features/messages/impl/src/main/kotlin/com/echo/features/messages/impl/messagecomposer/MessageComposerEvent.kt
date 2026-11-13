@@ -38,4 +38,3 @@ sealed interface MessageComposerEvent {
     data object SaveDraft : MessageComposerEvent
     data object ClearSlashError : MessageComposerEvent
 }
-

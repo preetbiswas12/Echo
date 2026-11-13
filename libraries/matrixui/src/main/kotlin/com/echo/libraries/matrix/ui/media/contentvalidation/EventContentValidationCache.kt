@@ -18,4 +18,3 @@ interface EventContentValidationCache {
      */
     operator fun get(eventId: EventId): ContentValidationState
 }
-

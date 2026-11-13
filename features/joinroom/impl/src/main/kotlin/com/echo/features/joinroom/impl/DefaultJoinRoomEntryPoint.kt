@@ -10,10 +10,10 @@ package com.echo.features.joinroom.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.joinroom.api.JoinRoomEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultJoinRoomEntryPoint : JoinRoomEntryPoint {
@@ -28,4 +28,3 @@ class DefaultJoinRoomEntryPoint : JoinRoomEntryPoint {
         )
     }
 }
-

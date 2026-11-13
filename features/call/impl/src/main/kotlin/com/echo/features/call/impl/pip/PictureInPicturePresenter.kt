@@ -14,10 +14,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.call.impl.utils.PipController
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.log.logger.LoggerTag
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -103,4 +103,3 @@ class PictureInPicturePresenter(
         }
     }
 }
-

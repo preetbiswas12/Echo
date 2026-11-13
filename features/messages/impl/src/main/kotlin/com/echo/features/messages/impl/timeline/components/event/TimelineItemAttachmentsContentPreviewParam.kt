@@ -73,4 +73,3 @@ class TimelineItemAttachmentsContentPreviewParam : PreviewParameterProvider<Time
             ),
         )
 }
-

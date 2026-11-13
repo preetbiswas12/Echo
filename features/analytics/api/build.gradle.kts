@@ -17,5 +17,3 @@ dependencies {
     implementation(projects.libraries.architecture)
     implementation(projects.libraries.designsystem)
 }
-
-

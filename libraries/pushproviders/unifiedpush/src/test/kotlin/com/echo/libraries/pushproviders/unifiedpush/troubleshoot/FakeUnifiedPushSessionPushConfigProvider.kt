@@ -20,4 +20,3 @@ class FakeUnifiedPushSessionPushConfigProvider(
         return config(sessionId)
     }
 }
-

@@ -11,11 +11,11 @@ package com.echo.features.messages.impl.messagecomposer
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.messages.api.MessageComposerContext
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.textcomposer.model.MessageComposerMode
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 
 @SingleIn(RoomScope::class)
 @ContributesBinding(RoomScope::class)
@@ -23,4 +23,3 @@ class DefaultMessageComposerContext : MessageComposerContext {
     override var composerMode: MessageComposerMode by mutableStateOf(MessageComposerMode.Normal)
         internal set
 }
-

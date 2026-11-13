@@ -32,4 +32,3 @@ interface RoomAliasResolverEntryPoint : FeatureEntryPoint {
         val roomAlias: RoomAlias
     ) : NodeInputs
 }
-

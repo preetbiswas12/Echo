@@ -53,4 +53,3 @@ internal fun LabelledCheckboxPreview() = ElementThemedPreview {
         text = "Some text",
     )
 }
-

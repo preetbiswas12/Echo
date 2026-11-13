@@ -10,7 +10,6 @@
 
 package com.echo.features.knockrequests.impl.list
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.knockrequests.api.KnockRequestPermissions
 import com.echo.features.knockrequests.impl.data.KnockRequestsService
 import com.echo.libraries.architecture.AsyncAction
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.room.knock.FakeKnockRequest
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
@@ -302,4 +302,3 @@ internal fun TestScope.createKnockRequestsListPresenter(
     )
     return KnockRequestsListPresenter(knockRequestsService = knockRequestsService)
 }
-

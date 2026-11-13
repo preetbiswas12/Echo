@@ -20,4 +20,3 @@ class PreviewClock : Clock {
 
     override fun now(): Instant = instant
 }
-

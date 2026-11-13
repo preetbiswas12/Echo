@@ -40,4 +40,3 @@ interface MatrixMediaLoader {
         useCache: Boolean = true,
     ): Result<MediaFile>
 }
-

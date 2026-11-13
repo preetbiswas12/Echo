@@ -372,4 +372,3 @@ internal fun LeaveSpaceViewPreview(
         onChooseOwnersClick = {},
     )
 }
-

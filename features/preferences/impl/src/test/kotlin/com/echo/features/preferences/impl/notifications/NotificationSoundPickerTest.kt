@@ -12,9 +12,9 @@ import android.media.RingtoneManager
 import android.net.Uri
 import android.provider.Settings
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.preferences.api.store.NotificationSound
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class NotificationSoundPickerTest : RobolectricTest() {
@@ -86,4 +86,3 @@ class NotificationSoundPickerTest : RobolectricTest() {
             .isEqualTo(NotificationSound.Custom(customUri.toString()))
     }
 }
-

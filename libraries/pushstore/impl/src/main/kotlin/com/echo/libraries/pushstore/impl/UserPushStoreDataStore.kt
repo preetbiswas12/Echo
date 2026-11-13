@@ -112,4 +112,3 @@ class UserPushStoreDataStore(
         context.preferencesDataStoreFile(preferenceName).delete()
     }
 }
-

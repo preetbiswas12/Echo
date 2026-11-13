@@ -27,4 +27,3 @@ interface SessionListener {
      */
     suspend fun onSessionDeleted(userId: String, wasLastSession: Boolean) {}
 }
-

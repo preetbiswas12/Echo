@@ -8,11 +8,11 @@
 
 package com.echo.features.preferences.impl
 
+import com.echo.features.preferences.api.CacheService
+import com.echo.libraries.matrix.api.core.SessionId
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.features.preferences.api.CacheService
-import com.echo.libraries.matrix.api.core.SessionId
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
 
@@ -26,4 +26,3 @@ class DefaultCacheService : CacheService {
         _clearedCacheEventFlow.emit(sessionId)
     }
 }
-

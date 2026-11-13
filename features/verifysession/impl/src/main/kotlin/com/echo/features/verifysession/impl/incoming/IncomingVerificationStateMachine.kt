@@ -10,12 +10,12 @@
 
 package com.echo.features.verifysession.impl.incoming
 
-import com.freeletics.flowredux.dsl.FlowReduxStateMachine
-import dev.zacsweers.metro.Inject
 import com.echo.features.verifysession.impl.util.andLogStateChange
 import com.echo.features.verifysession.impl.util.logReceivedEvents
 import com.echo.libraries.matrix.api.verification.SessionVerificationData
 import com.echo.libraries.matrix.api.verification.SessionVerificationService
+import com.freeletics.flowredux.dsl.FlowReduxStateMachine
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import com.freeletics.flowredux.dsl.State as MachineState
 
@@ -165,4 +165,3 @@ class IncomingVerificationStateMachine(
         data object DidFail : Event
     }
 }
-

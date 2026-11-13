@@ -19,4 +19,3 @@ interface CacheCleaner {
      */
     fun clearCache()
 }
-

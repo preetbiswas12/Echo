@@ -28,4 +28,3 @@ sealed interface VirtualTimelineItem {
 
     data object TypingNotification : VirtualTimelineItem
 }
-

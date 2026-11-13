@@ -13,4 +13,3 @@ package com.echo.features.enterprise.api.remoteconfig
 fun interface CustomMapTilerConfigProvider {
     suspend fun get(): Result<MapTilerConfig?>
 }
-

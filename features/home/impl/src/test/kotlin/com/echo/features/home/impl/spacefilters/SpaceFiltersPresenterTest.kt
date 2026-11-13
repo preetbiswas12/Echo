@@ -7,12 +7,12 @@
 
 package com.echo.features.home.impl.spacefilters
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.test.spaces.FakeSpaceService
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -266,4 +266,3 @@ class SpaceFiltersPresenterTest {
         )
     }
 }
-

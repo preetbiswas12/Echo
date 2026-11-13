@@ -19,9 +19,6 @@ import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.login.impl.screens.classic.loginwithclassic.LoginWithClassicNode
 import com.echo.features.login.impl.screens.classic.missingkeybackup.MissingKeyBackupNode
@@ -33,6 +30,9 @@ import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.matrix.api.auth.OAuthDetails
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.parcelize.Parcelize
@@ -142,4 +142,3 @@ class ClassicFlowNode(
         )
     }
 }
-

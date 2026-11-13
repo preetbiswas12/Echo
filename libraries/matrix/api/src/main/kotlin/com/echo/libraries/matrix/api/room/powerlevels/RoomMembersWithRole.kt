@@ -47,4 +47,3 @@ fun BaseRoom.usersWithRole(predicate: (RoomMember.Role) -> Boolean): Flow<Immuta
 fun BaseRoom.userCountWithRole(predicate: (RoomMember.Role) -> Boolean): Flow<Int> {
     return usersWithRole(predicate).map { it.size }
 }
-

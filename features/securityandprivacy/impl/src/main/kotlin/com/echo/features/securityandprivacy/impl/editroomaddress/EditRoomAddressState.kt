@@ -20,4 +20,3 @@ data class EditRoomAddressState(
 ) {
     val canBeSaved = roomAddressValidity == RoomAddressValidity.Valid
 }
-

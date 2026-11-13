@@ -17,8 +17,6 @@ import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.pin.DefaultPinCodeManagerCallback
@@ -30,6 +28,8 @@ import com.echo.libraries.architecture.BaseFlowNode
 import com.echo.libraries.architecture.callback
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SessionScope::class)
@@ -103,4 +103,3 @@ class LockScreenSetupFlowNode(
         BackstackView()
     }
 }
-

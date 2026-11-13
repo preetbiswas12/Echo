@@ -19,4 +19,3 @@ class FakeLicensesProvider(
         return provideResult()
     }
 }
-

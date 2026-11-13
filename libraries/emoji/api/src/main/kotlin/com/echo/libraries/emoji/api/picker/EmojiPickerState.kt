@@ -18,4 +18,3 @@ interface EmojiPickerState {
      */
     val isReady: Boolean
 }
-

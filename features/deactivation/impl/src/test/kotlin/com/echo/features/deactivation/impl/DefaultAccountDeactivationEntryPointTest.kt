@@ -10,8 +10,8 @@ package com.echo.features.deactivation.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -33,4 +33,3 @@ class DefaultAccountDeactivationEntryPointTest {
         assertThat(result).isInstanceOf(AccountDeactivationNode::class.java)
     }
 }
-

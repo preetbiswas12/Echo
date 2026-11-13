@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.CreateTimelineParams
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.Timeline
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.timeline.FakeTimeline
 import com.echo.libraries.mediaviewer.impl.model.GroupedMediaItems
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -53,4 +53,3 @@ class LiveMediaTimelineTest {
         room = room,
     )
 }
-

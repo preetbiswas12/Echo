@@ -68,4 +68,3 @@ data class RoomMemberWithIdentityState(
     val identityState: IdentityState?,
     val isInCall: Boolean
 )
-

@@ -108,4 +108,3 @@ interface MatrixAuthenticationService {
      */
     fun listenToNewMatrixClients(lambda: (MatrixClient) -> Unit)
 }
-

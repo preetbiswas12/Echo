@@ -22,4 +22,3 @@ data class SpaceServiceFilter(
     val level: Int,
     val descendants: List<RoomId>,
 )
-

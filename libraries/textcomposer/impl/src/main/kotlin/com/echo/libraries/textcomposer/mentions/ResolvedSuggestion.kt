@@ -38,4 +38,3 @@ sealed interface ResolvedSuggestion {
         val command: SlashCommandSuggestion,
     ) : ResolvedSuggestion
 }
-

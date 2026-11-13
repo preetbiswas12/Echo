@@ -30,4 +30,3 @@ interface InitialsAvatarBitmapGenerator {
         fontSizePercentage: Float = 0.5f,
     ): Bitmap?
 }
-

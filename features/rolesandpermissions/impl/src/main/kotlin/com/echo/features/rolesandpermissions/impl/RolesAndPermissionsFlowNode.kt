@@ -24,8 +24,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesListType
 import com.echo.features.rolesandpermissions.api.RolesAndPermissionsEntryPoint
@@ -44,6 +42,8 @@ import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.powerlevels.canEditRolesAndPermissions
 import com.echo.libraries.matrix.api.room.powerlevels.permissionsFlow
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -156,4 +156,3 @@ class RolesAndPermissionsFlowNode(
         }
     }
 }
-

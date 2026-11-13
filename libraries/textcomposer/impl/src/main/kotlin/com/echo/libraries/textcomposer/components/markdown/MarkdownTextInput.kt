@@ -222,4 +222,3 @@ internal fun MarkdownTextInputPreview() {
         )
     }
 }
-

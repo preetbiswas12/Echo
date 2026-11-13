@@ -44,4 +44,3 @@ data class SpaceRoom(
 
     val visibility = SpaceRoomVisibility.fromJoinRule(joinRule)
 }
-

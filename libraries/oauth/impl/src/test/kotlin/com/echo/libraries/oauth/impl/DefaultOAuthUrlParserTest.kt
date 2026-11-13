@@ -7,10 +7,10 @@
 
 package com.echo.libraries.oauth.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.auth.FAKE_REDIRECT_URL
 import com.echo.libraries.matrix.test.auth.FakeOAuthRedirectUrlProvider
 import com.echo.libraries.oauth.api.OAuthAction
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultOAuthUrlParserTest {
@@ -53,4 +53,3 @@ class DefaultOAuthUrlParserTest {
         )
     }
 }
-

@@ -17,4 +17,3 @@ data class UserRoleChange(
 ) {
     val powerLevel: Long = role.powerLevel
 }
-

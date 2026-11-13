@@ -15,4 +15,3 @@ fun interface RoomSelectNavigator {
      */
     fun navigateToSessionVerification(sessionId: SessionId)
 }
-

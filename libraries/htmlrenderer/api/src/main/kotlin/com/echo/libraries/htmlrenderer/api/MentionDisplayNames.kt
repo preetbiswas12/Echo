@@ -74,4 +74,3 @@ class MentionDisplayNames(
  * The provided value is not expected to change, the display names it contains are observable state instead.
  */
 val LocalMentionDisplayNames = staticCompositionLocalOf { MentionDisplayNames() }
-

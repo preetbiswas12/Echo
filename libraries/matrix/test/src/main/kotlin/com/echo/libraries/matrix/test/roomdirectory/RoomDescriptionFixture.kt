@@ -32,4 +32,3 @@ fun aRoomDescription(
     isWorldReadable = isWorldReadable,
     numberOfMembers = joinedMembers
 )
-

@@ -108,4 +108,3 @@ internal fun aRustRoomInfo(
     isDm = isDm,
     fullyReadEventId = fullyReadEventId,
 )
-

@@ -171,4 +171,3 @@ fun aProfileDetailsReady(
     avatarUrl = avatarUrl,
     displayedStatus = displayedStatus,
 )
-

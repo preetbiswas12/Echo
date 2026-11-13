@@ -11,7 +11,6 @@
 package com.echo.features.verifysession.impl.outgoing
 
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.verifysession.impl.outgoing.OutgoingVerificationState.Step
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.matrix.api.core.UserId
@@ -29,6 +28,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceTimeBy
@@ -445,4 +445,3 @@ internal fun createOutgoingVerificationPresenter(
         encryptionService = encryptionService,
     )
 }
-

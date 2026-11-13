@@ -109,4 +109,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setTroubleshootNotifications
         )
     }
 }
-

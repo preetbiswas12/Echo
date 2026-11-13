@@ -221,4 +221,3 @@ internal fun MessageEventBubblePreview(@PreviewParameter(BubbleStatePreviewParam
         }
     }
 }
-

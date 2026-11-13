@@ -181,4 +181,3 @@ enum class MatrixPatternType {
 }
 
 data class MatrixPatternResult(val type: MatrixPatternType, val value: String, val start: Int, val end: Int)
-

@@ -8,13 +8,13 @@
 
 package com.echo.libraries.matrix.impl.usersearch
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.user.MatrixSearchUserResults
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSearchUsersResults
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustUserProfile
 import com.echo.libraries.matrix.impl.user.UserSearchResultMapper
 import com.echo.libraries.matrix.test.A_USER_ID
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -55,4 +55,3 @@ class UserSearchResultMapperTest {
             )
     }
 }
-

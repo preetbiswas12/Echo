@@ -35,4 +35,3 @@ fun JoinRule.map(): RustJoinRule {
         is JoinRule.KnockRestricted -> RustJoinRule.KnockRestricted(rules.map { it.map() })
     }
 }
-

@@ -74,4 +74,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setSpaceFiltersView(
         SpaceFiltersView(state = state)
     }
 }
-

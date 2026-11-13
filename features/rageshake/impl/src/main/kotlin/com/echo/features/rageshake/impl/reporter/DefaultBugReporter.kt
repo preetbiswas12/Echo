@@ -12,9 +12,6 @@ import android.content.Context
 import android.os.Build
 import androidx.core.net.toFile
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.appconfig.RageshakeConfig
 import com.echo.features.rageshake.api.reporter.BugReporter
 import com.echo.features.rageshake.api.reporter.BugReporterListener
@@ -33,6 +30,9 @@ import com.echo.libraries.matrix.api.SdkMetadata
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.network.useragent.UserAgentProvider
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
@@ -479,4 +479,3 @@ class DefaultBugReporter(
         }
     }
 }
-

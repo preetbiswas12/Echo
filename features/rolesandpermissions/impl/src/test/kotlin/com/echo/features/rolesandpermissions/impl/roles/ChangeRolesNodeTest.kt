@@ -8,9 +8,9 @@
 
 package com.echo.features.rolesandpermissions.impl.roles
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesListType
 import com.echo.libraries.matrix.api.room.RoomMember
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class ChangeRolesNodeTest {
@@ -24,4 +24,3 @@ class ChangeRolesNodeTest {
             .isEqualTo(RoomMember.Role.Owner(false))
     }
 }
-

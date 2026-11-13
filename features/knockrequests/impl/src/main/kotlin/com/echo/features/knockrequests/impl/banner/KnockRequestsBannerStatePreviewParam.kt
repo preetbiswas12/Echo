@@ -72,4 +72,3 @@ fun aKnockRequestsBannerState(
     isVisible = isVisible,
     eventSink = eventSink,
 )
-

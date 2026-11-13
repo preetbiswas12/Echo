@@ -13,4 +13,3 @@ class FakeSystemNotificationsEnabledProvider : SystemNotificationsEnabledProvide
         return true
     }
 }
-

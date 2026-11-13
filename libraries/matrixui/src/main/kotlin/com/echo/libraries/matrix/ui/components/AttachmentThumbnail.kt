@@ -140,4 +140,3 @@ internal fun AttachmentThumbnailPreview(@PreviewParameter(AttachmentThumbnailInf
             .clip(RoundedCornerShape(4.dp))
     )
 }
-

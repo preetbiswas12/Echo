@@ -32,4 +32,3 @@ interface RoomLatestEventFormatter {
      */
     fun format(latestEvent: LatestEventValue.Remote, isDmRoom: Boolean): CharSequence?
 }
-

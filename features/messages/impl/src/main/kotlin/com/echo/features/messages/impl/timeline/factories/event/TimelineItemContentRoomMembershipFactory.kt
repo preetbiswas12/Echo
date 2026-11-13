@@ -8,13 +8,13 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemRoomMembershipContent
 import com.echo.libraries.core.extensions.orEmpty
 import com.echo.libraries.eventformatter.api.TimelineEventFormatter
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.timeline.item.event.EventContent
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemContentRoomMembershipFactory(
@@ -25,4 +25,3 @@ class TimelineItemContentRoomMembershipFactory(
         return TimelineItemRoomMembershipContent(text.orEmpty().toString())
     }
 }
-

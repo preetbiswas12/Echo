@@ -18,4 +18,3 @@ sealed interface OnBoardingEvent {
     data object OnVersionClick : OnBoardingEvent
     data object ClearError : OnBoardingEvent
 }
-

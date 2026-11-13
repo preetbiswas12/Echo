@@ -15,8 +15,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationCompat.MessagingStyle
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.push.impl.notifications.ActiveNotificationsProvider
 import com.echo.libraries.push.impl.notifications.NotificationDisplayer
@@ -24,6 +22,8 @@ import com.echo.libraries.push.impl.notifications.factories.DefaultNotificationC
 import com.echo.libraries.push.impl.notifications.model.ResolvedPushEvent
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 interface OnRedactedEventReceived {
@@ -85,4 +85,3 @@ class DefaultOnRedactedEventReceived(
         }
     }
 }
-

@@ -7,9 +7,9 @@
 
 package com.echo.features.preferences.impl.tasks
 
+import com.echo.libraries.matrix.api.MatrixClient
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.matrix.api.MatrixClient
 import timber.log.Timber
 
 fun interface VacuumStoresUseCase {
@@ -25,4 +25,3 @@ class DefaultVacuumStoresUseCase(
             .onFailure { Timber.e(it, "Failed to vacuum stores") }
     }
 }
-

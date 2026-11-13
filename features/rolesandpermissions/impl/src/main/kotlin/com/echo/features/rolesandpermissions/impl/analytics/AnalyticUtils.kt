@@ -8,10 +8,10 @@
 
 package com.echo.features.rolesandpermissions.impl.analytics
 
-import im.vector.app.features.analytics.plan.RoomModeration
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.powerlevels.RoomPowerLevelsValues
 import com.echo.services.analytics.api.AnalyticsService
+import im.vector.app.features.analytics.plan.RoomModeration
 
 internal fun RoomMember.Role.toAnalyticsMemberRole(): RoomModeration.Role = when (this) {
     is RoomMember.Role.Owner -> RoomModeration.Role.Administrator // TODO - distinguish creator from admin
@@ -50,4 +50,3 @@ internal fun AnalyticsService.trackPermissionChangeAnalytics(initial: RoomPowerL
         capture(RoomModeration(RoomModeration.Action.ChangePermissionsRoomTopic, analyticsMemberRoleForPowerLevel(updated.roomTopic)))
     }
 }
-

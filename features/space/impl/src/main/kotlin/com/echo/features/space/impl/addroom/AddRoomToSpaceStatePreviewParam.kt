@@ -109,4 +109,3 @@ internal fun aSelectRoomInfoList(): ImmutableList<SelectRoomInfo> = listOf(
         isTombstoned = false,
     ),
 ).toImmutableList()
-

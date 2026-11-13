@@ -37,4 +37,3 @@ internal fun textInputRoundedCornerShape(
     )
     return RoundedCornerShape(roundedCornerSizeState.value)
 }
-

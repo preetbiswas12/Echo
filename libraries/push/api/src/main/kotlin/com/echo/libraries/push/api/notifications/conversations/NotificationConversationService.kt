@@ -51,4 +51,3 @@ interface NotificationConversationService {
      */
     suspend fun onAvailableRoomsChanged(sessionId: SessionId, roomIds: Set<RoomId>)
 }
-

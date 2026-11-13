@@ -8,9 +8,9 @@
 
 package com.echo.libraries.pushproviders.firebase
 
+import com.echo.features.enterprise.api.EnterpriseService
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.features.enterprise.api.EnterpriseService
 
 interface FirebaseGatewayProvider {
     fun getFirebaseGateway(): String
@@ -24,4 +24,3 @@ class DefaultFirebaseGatewayProvider(
         return enterpriseService.firebasePushGateway() ?: FirebaseConfig.PUSHER_HTTP_URL
     }
 }
-

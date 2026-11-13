@@ -11,7 +11,6 @@ package com.echo.features.preferences.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.deactivation.test.FakeAccountDeactivationEntryPoint
 import com.echo.features.licenses.test.FakeOpenSourceLicensesEntryPoint
 import com.echo.features.lockscreen.test.FakeLockScreenEntryPoint
@@ -25,6 +24,7 @@ import com.echo.libraries.troubleshoot.test.FakeNotificationTroubleShootEntryPoi
 import com.echo.libraries.troubleshoot.test.FakePushHistoryEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -84,4 +84,3 @@ class DefaultPreferencesEntryPointTest {
             .isEqualTo(PreferencesFlowNode.NavTarget.TroubleshootNotifications)
     }
 }
-

@@ -7,11 +7,11 @@
  */
 package com.echo.libraries.push.impl.pushgateway
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.push.api.gateway.PushGatewayFailure
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import retrofit2.HttpException
 
 interface PushGatewayNotifyRequest {
@@ -69,4 +69,3 @@ class DefaultPushGatewayNotifyRequest(
  * 429 is the standard answer, ntfy answers 507 when a device is over its message quota.
  */
 private val RATE_LIMITED_STATUS_CODES = setOf(429, 507)
-

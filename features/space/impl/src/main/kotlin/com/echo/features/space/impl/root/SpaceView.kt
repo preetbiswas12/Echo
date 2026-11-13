@@ -691,4 +691,3 @@ internal fun SpaceViewPreview(
         onBackClick = {},
     )
 }
-

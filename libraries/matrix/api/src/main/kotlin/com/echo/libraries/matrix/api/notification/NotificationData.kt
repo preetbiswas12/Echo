@@ -135,4 +135,3 @@ enum class CallIntent {
     AUDIO,
     VIDEO
 }
-

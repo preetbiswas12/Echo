@@ -171,4 +171,3 @@ fun rememberMarkdownTextEditorState(
 ): MarkdownTextEditorState {
     return rememberSaveable(saver = MarkdownTextEditorStateSaver) { MarkdownTextEditorState(initialText, initialFocus) }
 }
-

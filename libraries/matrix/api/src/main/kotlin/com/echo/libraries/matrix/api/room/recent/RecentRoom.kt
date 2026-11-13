@@ -31,4 +31,3 @@ fun MatrixClient.getRecentlyVisitedRoomInfoFlow(
         }
     }
 }
-

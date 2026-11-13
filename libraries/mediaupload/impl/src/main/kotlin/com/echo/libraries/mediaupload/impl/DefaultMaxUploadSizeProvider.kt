@@ -8,10 +8,10 @@
 
 package com.echo.libraries.mediaupload.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.mediaupload.api.MaxUploadSizeProvider
+import dev.zacsweers.metro.ContributesBinding
 
 /**
  * Provides the maximum upload size allowed by the Matrix server.
@@ -24,4 +24,3 @@ class DefaultMaxUploadSizeProvider(
         return matrixClient.getMaxFileUploadSize()
     }
 }
-

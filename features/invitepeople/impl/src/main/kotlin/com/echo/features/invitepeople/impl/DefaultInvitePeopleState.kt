@@ -31,4 +31,3 @@ data class DefaultInvitePeopleState(
     val suggestions: ImmutableList<InvitableUser>,
     override val eventSink: (InvitePeopleEvent) -> Unit
 ) : InvitePeopleState
-

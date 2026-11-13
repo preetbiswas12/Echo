@@ -32,4 +32,3 @@ class GalleryMediaUploadHandlerImpl(
         filesToUpload.forEach { file -> file.safeDelete() }
     }
 }
-

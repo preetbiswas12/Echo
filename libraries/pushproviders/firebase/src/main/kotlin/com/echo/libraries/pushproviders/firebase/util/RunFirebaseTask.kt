@@ -7,8 +7,8 @@
 
 package com.echo.libraries.pushproviders.firebase.util
 
-import com.google.android.gms.tasks.Task
 import com.echo.libraries.core.extensions.runCatchingExceptions
+import com.google.android.gms.tasks.Task
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -33,4 +33,3 @@ suspend fun <T> runFirebaseTaskWithResult(closure: () -> Task<T>): Result<T> {
 suspend fun runFirebaseTask(closure: () -> Task<Void?>): Result<Unit> {
     return runFirebaseTaskWithResult<Unit> { closure().continueWith {} }
 }
-

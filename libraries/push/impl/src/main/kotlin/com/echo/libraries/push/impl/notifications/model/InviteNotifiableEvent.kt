@@ -27,4 +27,3 @@ data class InviteNotifiableEvent(
     override val isRedacted: Boolean = false,
     override val isUpdated: Boolean = false
 ) : NotifiableEvent
-

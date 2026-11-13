@@ -21,4 +21,3 @@ class FakePipView(
     override fun hangUp() = handUpResult()
     override fun setPipOrientation(orientation: Int?) = onOrientationChangeResult(orientation)
 }
-

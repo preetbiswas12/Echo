@@ -15,4 +15,3 @@ data class Message(
     val markdown: String,
     val intentionalMentions: List<IntentionalMention>,
 )
-

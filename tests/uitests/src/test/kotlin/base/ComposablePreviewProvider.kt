@@ -69,4 +69,3 @@ object Shard4ComposablePreviewProvider : TestParameterValuesProvider() {
     override fun provideValues(context: Context): List<ComposablePreview<AndroidPreviewInfo>> =
         ComposablePreviewProvider.values.filter { it.index % 4 == 3 }.map { it.value }
 }
-

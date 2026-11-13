@@ -9,7 +9,6 @@
 package com.echo.features.home.impl.datasource
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.FakeDateTimeObserver
 import com.echo.libraries.androidutils.system.DateTimeObserver
 import com.echo.libraries.dateformatter.test.FakeDateFormatter
@@ -23,6 +22,7 @@ import com.echo.libraries.matrix.test.roomlist.FakeDynamicRoomList
 import com.echo.libraries.matrix.test.roomlist.FakeRoomListService
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -276,4 +276,3 @@ class RoomListDataSourceTest {
         analyticsService = analyticsService,
     )
 }
-

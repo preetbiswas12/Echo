@@ -31,4 +31,3 @@ class FakeDnsResolver(
         return parts.size == 4 && parts.all { it.toIntOrNull() != null }
     }
 }
-

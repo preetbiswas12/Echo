@@ -10,7 +10,6 @@ package com.echo.libraries.mediaviewer.impl.viewer
 
 import android.net.Uri
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.matrix.api.media.MatrixMediaLoader
 import com.echo.libraries.matrix.api.timeline.Timeline
@@ -34,6 +33,7 @@ import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -295,4 +295,3 @@ class MediaViewerDataSourceTest {
         contentValidationCache = NoopEventContentValidationCache(),
     )
 }
-

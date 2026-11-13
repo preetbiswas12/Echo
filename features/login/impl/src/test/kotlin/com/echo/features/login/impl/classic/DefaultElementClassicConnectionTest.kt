@@ -13,7 +13,6 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import androidx.core.graphics.createBitmap
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.service.ServiceBinder
 import com.echo.libraries.matrix.api.auth.ElementClassicSession
 import com.echo.libraries.matrix.api.auth.HomeServerLoginCompatibilityChecker
@@ -30,6 +29,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -530,4 +530,3 @@ class DefaultElementClassicConnectionTest : RobolectricTest() {
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

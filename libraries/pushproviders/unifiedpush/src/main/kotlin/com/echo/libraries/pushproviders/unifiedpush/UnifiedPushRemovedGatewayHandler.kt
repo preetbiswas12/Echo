@@ -7,10 +7,6 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.androidutils.throttler.FirstThrottler
 import com.echo.libraries.core.extensions.flatMap
 import com.echo.libraries.core.log.logger.LoggerTag
@@ -19,6 +15,10 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.push.api.PushService
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import timber.log.Timber
 
@@ -124,4 +124,3 @@ class DefaultUnifiedPushRemovedGatewayHandler(
         }
     }
 }
-

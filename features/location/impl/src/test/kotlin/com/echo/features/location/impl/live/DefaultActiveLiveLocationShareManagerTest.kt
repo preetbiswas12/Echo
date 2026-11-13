@@ -11,7 +11,6 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.emptyPreferences
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.impl.live.service.LiveLocationSharingCoordinator
 import com.echo.libraries.matrix.api.room.location.BeaconInfoUpdate
 import com.echo.libraries.matrix.test.AN_EVENT_ID
@@ -29,6 +28,7 @@ import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.Flow
@@ -533,4 +533,3 @@ class DefaultActiveLiveLocationShareManagerTest {
         )
     }
 }
-

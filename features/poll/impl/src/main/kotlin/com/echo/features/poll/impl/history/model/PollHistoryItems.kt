@@ -17,4 +17,3 @@ data class PollHistoryItems(
 ) {
     val size = ongoing.size + past.size
 }
-

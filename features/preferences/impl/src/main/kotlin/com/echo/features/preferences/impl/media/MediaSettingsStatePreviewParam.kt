@@ -32,4 +32,3 @@ fun aMediaSettingsState(
     mediaOptimizationState = mediaOptimizationState,
     eventSink = eventSink
 )
-

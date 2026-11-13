@@ -82,5 +82,3 @@ dependencies {
     testImplementation(projects.services.appnavstate.test)
     testImplementation(projects.services.analytics.test)
 }
-
-

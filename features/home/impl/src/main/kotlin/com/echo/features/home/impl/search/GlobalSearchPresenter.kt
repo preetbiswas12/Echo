@@ -19,7 +19,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.home.impl.search.history.SearchHistoryResult
 import com.echo.features.home.impl.search.history.SearchHistoryStore
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
@@ -52,6 +51,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.VoiceMessageType
 import com.echo.libraries.matrix.api.timeline.item.event.isMediaContent
 import com.echo.libraries.matrix.ui.components.AttachmentThumbnailType
 import com.echo.libraries.matrix.ui.messages.toPlainText
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -409,4 +409,3 @@ class GlobalSearchPresenter(
         )
     }
 }
-

@@ -11,4 +11,3 @@ package com.echo.features.signedout.impl
 sealed interface SignedOutEvent {
     data object Submit : SignedOutEvent
 }
-

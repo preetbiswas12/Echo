@@ -12,13 +12,13 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.IntentCompat
-import dev.zacsweers.metro.Inject
 import com.echo.features.call.api.CallData
 import com.echo.features.call.impl.di.CallBindings
 import com.echo.features.call.impl.notifications.CallNotificationData
 import com.echo.features.call.impl.utils.ActiveCallManager
 import com.echo.libraries.architecture.bindings
 import com.echo.libraries.di.annotations.AppCoroutineScope
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -51,4 +51,3 @@ class DeclineCallBroadcastReceiver : BroadcastReceiver() {
         }
     }
 }
-

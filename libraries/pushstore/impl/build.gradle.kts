@@ -44,5 +44,3 @@ dependencies {
     androidTestImplementation(libs.test.truth)
     androidTestImplementation(libs.test.runner)
 }
-
-

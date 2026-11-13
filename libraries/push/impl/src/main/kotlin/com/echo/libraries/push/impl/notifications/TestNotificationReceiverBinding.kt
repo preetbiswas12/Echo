@@ -15,4 +15,3 @@ import dev.zacsweers.metro.ContributesTo
 interface TestNotificationReceiverBinding {
     fun inject(service: TestNotificationReceiver)
 }
-

@@ -11,7 +11,6 @@ package com.echo.features.share.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.share.api.ShareIntentData
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
@@ -27,6 +26,7 @@ import com.echo.libraries.matrix.test.FakeMatrixClientProvider
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
@@ -172,4 +172,3 @@ internal fun TestScope.createSharePresenter(
         shareDataSender = shareDataSender,
     )
 }
-

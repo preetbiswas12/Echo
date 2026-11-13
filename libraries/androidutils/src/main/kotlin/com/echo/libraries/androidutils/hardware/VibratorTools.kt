@@ -23,4 +23,3 @@ fun Context.vibrate(durationMillis: Long = 100) {
         vibrator.vibrate(durationMillis)
     }
 }
-

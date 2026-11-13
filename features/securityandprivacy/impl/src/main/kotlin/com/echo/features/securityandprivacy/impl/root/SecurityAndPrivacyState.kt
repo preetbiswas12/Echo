@@ -186,4 +186,3 @@ sealed interface SecurityAndPrivacyRoomAccess {
 sealed class SecurityAndPrivacyFailures : Exception() {
     data object SaveFailed : SecurityAndPrivacyFailures()
 }
-

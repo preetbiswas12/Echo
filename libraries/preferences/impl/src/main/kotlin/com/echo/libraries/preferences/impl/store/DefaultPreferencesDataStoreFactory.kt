@@ -12,12 +12,12 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.androidutils.preferences.DefaultPreferencesCorruptionHandlerFactory
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import java.util.concurrent.ConcurrentHashMap
 
 @SingleIn(AppScope::class)
@@ -43,4 +43,3 @@ class DefaultPreferencesDataStoreFactory(
         }
     }
 }
-

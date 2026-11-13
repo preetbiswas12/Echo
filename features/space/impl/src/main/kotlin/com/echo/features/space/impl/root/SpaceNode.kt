@@ -16,8 +16,6 @@ import androidx.lifecycle.lifecycleScope
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteView
 import com.echo.features.space.impl.di.SpaceFlowScope
@@ -28,6 +26,8 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.spaces.SpaceRoomList
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -112,4 +112,3 @@ class SpaceNode(
         )
     }
 }
-

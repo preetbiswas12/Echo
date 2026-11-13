@@ -20,4 +20,3 @@ interface MessageComposerContext {
     /** What the composer is currently doing: writing a new message, editing one, replying, or composing in a thread. */
     val composerMode: MessageComposerMode
 }
-

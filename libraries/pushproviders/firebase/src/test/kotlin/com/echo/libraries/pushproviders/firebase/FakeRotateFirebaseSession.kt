@@ -17,4 +17,3 @@ class FakeRotateFirebaseSession(
         return rotateWithResult()
     }
 }
-

@@ -21,4 +21,3 @@ class FakePushClientSecretFactory : PushClientSecretFactory {
         return A_SECRET_PREFIX + i
     }
 }
-

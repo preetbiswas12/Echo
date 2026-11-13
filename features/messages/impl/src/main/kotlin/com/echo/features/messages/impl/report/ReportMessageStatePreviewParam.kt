@@ -34,4 +34,3 @@ fun aReportMessageState(
     result = result,
     eventSink = {}
 )
-

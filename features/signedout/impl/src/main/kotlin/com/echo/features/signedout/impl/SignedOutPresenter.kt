@@ -13,14 +13,14 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.api.user.toMatrixUser
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
@@ -59,4 +59,3 @@ class SignedOutPresenter(
         )
     }
 }
-

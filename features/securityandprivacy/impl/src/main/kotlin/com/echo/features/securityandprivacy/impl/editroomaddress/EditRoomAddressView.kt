@@ -117,4 +117,3 @@ internal fun EditRoomAddressViewPreview(
         onBackClick = {},
     )
 }
-

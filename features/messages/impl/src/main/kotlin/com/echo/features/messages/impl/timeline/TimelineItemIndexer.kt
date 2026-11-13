@@ -8,9 +8,9 @@
 
 package com.echo.features.messages.impl.timeline
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.libraries.matrix.api.core.EventId
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -66,4 +66,3 @@ class TimelineItemIndexer {
         timelineEventsIndexes[event.eventId] = index
     }
 }
-

@@ -33,4 +33,3 @@ class PreviewStringProvider(
         return resources.getString(resId, *formatArgs)
     }
 }
-

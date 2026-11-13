@@ -47,4 +47,3 @@ class FakeSyncService(
         syncStateFlow.emit(syncState)
     }
 }
-

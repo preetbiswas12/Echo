@@ -41,4 +41,3 @@ class TimelineItemEventForTimestampViewPreviewParam : PreviewParameterProvider<T
             ),
         )
 }
-

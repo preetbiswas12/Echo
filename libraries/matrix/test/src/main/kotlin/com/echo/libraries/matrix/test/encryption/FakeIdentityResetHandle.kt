@@ -39,4 +39,3 @@ class FakeIdentityPasswordResetHandle(
         cancelLambda()
     }
 }
-

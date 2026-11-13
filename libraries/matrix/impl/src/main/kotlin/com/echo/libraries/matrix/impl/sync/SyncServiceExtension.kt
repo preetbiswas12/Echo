@@ -26,4 +26,3 @@ fun SyncServiceInterface.stateFlow(): Flow<SyncServiceState> =
         }
         state(listener)
     }.buffer(Channel.UNLIMITED)
-

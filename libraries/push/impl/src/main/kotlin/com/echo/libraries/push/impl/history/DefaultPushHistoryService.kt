@@ -14,8 +14,6 @@ import android.os.PowerManager
 import androidx.core.content.getSystemService
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
@@ -26,6 +24,8 @@ import com.echo.libraries.push.impl.PushDatabase
 import com.echo.libraries.push.impl.db.PushHistory
 import com.echo.libraries.push.impl.db.PushRequest
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 import kotlin.time.Instant
@@ -121,4 +121,3 @@ class DefaultPushHistoryService(
         }
     }
 }
-

@@ -116,4 +116,3 @@ internal fun PreferenceCheckboxPreview() = ElementThemedPreview {
         )
     }
 }
-

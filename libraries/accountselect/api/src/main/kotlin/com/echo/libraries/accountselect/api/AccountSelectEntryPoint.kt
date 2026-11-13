@@ -26,4 +26,3 @@ interface AccountSelectEntryPoint : FeatureEntryPoint {
         fun onCancel()
     }
 }
-

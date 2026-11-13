@@ -24,4 +24,3 @@ interface LogoutEntryPoint : FeatureEntryPoint {
         fun navigateToSecureBackup()
     }
 }
-

@@ -15,7 +15,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.rageshake.api.RageshakeFeatureAvailability
 import com.echo.libraries.architecture.Presenter
@@ -26,6 +25,7 @@ import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.indicator.api.IndicatorService
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.verification.SessionVerificationService
+import dev.zacsweers.metro.Inject
 
 @Inject
 class PreferencesAccountPresenter(
@@ -80,4 +80,3 @@ class PreferencesAccountPresenter(
         )
     }
 }
-

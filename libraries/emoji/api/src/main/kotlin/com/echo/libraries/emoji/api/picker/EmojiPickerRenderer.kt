@@ -49,4 +49,3 @@ object NoOpEmojiPickerRenderer : EmojiPickerRenderer {
         contentDescription: @Composable (Emoji, Boolean) -> String,
     ) = Unit
 }
-

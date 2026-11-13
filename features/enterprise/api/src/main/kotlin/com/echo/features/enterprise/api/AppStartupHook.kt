@@ -18,4 +18,3 @@ fun interface AppStartupHook {
     /** @param activity The activity which is active while the app starts (i.e. the `MainActivity`). */
     suspend fun onAppStartup(activity: Activity)
 }
-

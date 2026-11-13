@@ -11,11 +11,11 @@ package com.echo.features.analytics.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.analytics.api.AnalyticsOptInEvent
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -61,4 +61,3 @@ class AnalyticsOptInPresenterTest {
         }
     }
 }
-

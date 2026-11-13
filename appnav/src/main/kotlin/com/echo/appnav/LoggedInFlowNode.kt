@@ -37,8 +37,6 @@ import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.operation.replace
 import com.bumble.appyx.navmodel.backstack.operation.singleTop
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.loggedin.LoggedInNode
 import com.echo.appnav.loggedin.MediaPreviewConfigMigration
@@ -100,6 +98,8 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.watchers.AnalyticsRoomListStateWatcher
 import com.echo.services.appnavstate.api.AppNavigationStateService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.launchIn
@@ -745,4 +745,3 @@ private class AttachRoomOperation(
         }
     }
 }
-

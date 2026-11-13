@@ -13,4 +13,3 @@ sealed interface RoomListSearchEvent {
     data object ClearQuery : RoomListSearchEvent
     data class UpdateVisibleRange(val range: IntRange) : RoomListSearchEvent
 }
-

@@ -7,7 +7,6 @@
 
 package com.echo.appnav
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.room.CurrentUserMembership
@@ -19,6 +18,7 @@ import com.echo.libraries.push.test.notifications.FakeNotificationCleaner
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.test.TestScope
@@ -192,4 +192,3 @@ class LoggedInEventProcessorTest {
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

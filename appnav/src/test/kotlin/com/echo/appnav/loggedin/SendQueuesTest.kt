@@ -77,4 +77,3 @@ class SendQueuesTest {
         assert(setRoomSendQueueEnabledLambda).isNeverCalled()
     }
 }
-

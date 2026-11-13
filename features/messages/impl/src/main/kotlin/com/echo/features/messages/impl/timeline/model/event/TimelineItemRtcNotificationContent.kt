@@ -39,4 +39,3 @@ class TimelineItemRtcNotificationContent(
 ) : TimelineItemEventContent {
     override val type: String = EventType.RTC_NOTIFICATION
 }
-

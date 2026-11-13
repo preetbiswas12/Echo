@@ -14,4 +14,3 @@ sealed interface ReadReceiptBottomSheetEvent {
     data class EventSelected(val event: TimelineItem.Event) : ReadReceiptBottomSheetEvent
     data object Dismiss : ReadReceiptBottomSheetEvent
 }
-

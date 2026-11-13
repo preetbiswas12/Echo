@@ -206,4 +206,3 @@ internal fun TimelineItemReactionsLayoutPreview() = ElementPreview {
         }
     )
 }
-

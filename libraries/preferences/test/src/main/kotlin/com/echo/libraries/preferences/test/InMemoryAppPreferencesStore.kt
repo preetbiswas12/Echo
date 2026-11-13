@@ -185,4 +185,3 @@ class InMemoryAppPreferencesStore(
         // No op
     }
 }
-

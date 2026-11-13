@@ -11,7 +11,6 @@ package com.echo.features.poll.impl.history
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.poll.api.actions.EndPollAction
 import com.echo.features.poll.api.actions.SendPollResponseAction
 import com.echo.features.poll.impl.aPollTimelineItems
@@ -33,6 +32,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.getAndUpdate
@@ -172,4 +172,3 @@ internal fun TestScope.createPollHistoryPresenter(
         room = room,
     )
 }
-

@@ -14,4 +14,3 @@ data class ThumbnailInfo(
     val mimetype: String?,
     val size: Long?
 )
-

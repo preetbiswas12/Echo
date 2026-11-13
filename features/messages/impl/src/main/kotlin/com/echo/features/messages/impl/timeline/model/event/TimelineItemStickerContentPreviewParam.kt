@@ -42,4 +42,3 @@ fun aTimelineItemStickerContent(
     formattedFileSize = "4MB",
     fileExtension = "jpg"
 )
-

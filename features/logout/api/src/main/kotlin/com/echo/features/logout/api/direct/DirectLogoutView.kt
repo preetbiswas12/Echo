@@ -24,4 +24,3 @@ fun interface DirectLogoutView {
     @Composable
     fun Render(state: DirectLogoutState)
 }
-

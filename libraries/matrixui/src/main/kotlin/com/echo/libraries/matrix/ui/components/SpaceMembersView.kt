@@ -110,4 +110,3 @@ internal fun SpaceMembersViewPreview() = ElementPreview(
         numberOfMembers = 123,
     )
 }
-

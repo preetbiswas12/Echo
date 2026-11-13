@@ -25,4 +25,3 @@ fun mimeTypeToThumbnailMimeType(mimeType: String) = when (mimeType) {
     MimeTypes.Png -> MimeTypes.Png
     else -> MimeTypes.Jpeg
 }
-

@@ -31,4 +31,3 @@ fun MediaPdfView(
         modifier = modifier,
     )
 }
-

@@ -8,9 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.messages.impl.timeline.factories.TimelineItemsFactoryConfig
 import com.echo.features.messages.impl.timeline.groups.canBeDisplayedInBubbleBlock
 import com.echo.features.messages.impl.timeline.model.AggregatedReaction
@@ -34,6 +31,9 @@ import com.echo.libraries.matrix.api.timeline.item.EventThreadInfo
 import com.echo.libraries.matrix.api.timeline.item.event.getAvatarUrl
 import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplayName
 import com.echo.libraries.matrix.ui.messages.reply.map
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 
@@ -246,4 +246,3 @@ class TimelineItemEventFactory(
         }
     }
 }
-

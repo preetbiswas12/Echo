@@ -19,4 +19,3 @@ sealed interface WriteToFilesConfiguration {
         val filenameSuffix = ".log"
     }
 }
-

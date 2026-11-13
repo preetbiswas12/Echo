@@ -7,11 +7,11 @@
 
 package com.echo.features.messages.impl.timeline.di
 
+import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
+import com.echo.libraries.di.RoomScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Multibinds
-import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
-import com.echo.libraries.di.RoomScope
 import kotlin.reflect.KClass
 
 /**
@@ -25,4 +25,3 @@ interface TimelineItemPresenterFactoriesBindingContainer {
     @Multibinds
     fun multiBindTimelineItemPresenterFactories(): @JvmSuppressWildcards Map<KClass<out TimelineItemEventContent>, TimelineItemPresenterFactory<*, *>>
 }
-

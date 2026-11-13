@@ -48,4 +48,3 @@ class TestParentNode<Child : Node>(
         }
     }
 }
-

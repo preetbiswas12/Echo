@@ -7,10 +7,10 @@
 
 package com.echo.features.linknewdevice.impl.screens.desktop
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.permissions.test.FakePermissionsPresenter
 import com.echo.libraries.permissions.test.FakePermissionsPresenterFactory
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -54,4 +54,3 @@ private fun createPresenter(
 ) = DesktopNoticePresenter(
     permissionsPresenterFactory = permissionsPresenterFactory,
 )
-

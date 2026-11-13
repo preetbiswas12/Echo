@@ -73,4 +73,3 @@ internal fun LinkViewPreview(@PreviewParameter(LinkStatePreviewParam::class) sta
         onLinkValid = {},
     )
 }
-

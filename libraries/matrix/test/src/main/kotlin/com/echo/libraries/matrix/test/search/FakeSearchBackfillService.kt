@@ -39,4 +39,3 @@ class FakeSearchBackfillService(
         return cancelSearchBackfillLambda()
     }
 }
-

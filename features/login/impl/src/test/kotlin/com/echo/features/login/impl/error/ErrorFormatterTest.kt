@@ -8,10 +8,10 @@
 
 package com.echo.features.login.impl.error
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.R
 import com.echo.libraries.matrix.api.auth.AuthenticationException
 import com.echo.libraries.ui.strings.CommonStrings
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class ErrorFormatterTest {
@@ -48,4 +48,3 @@ class ErrorFormatterTest {
 
     // endregion loginError
 }
-

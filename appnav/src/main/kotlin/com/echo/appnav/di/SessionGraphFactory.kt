@@ -13,4 +13,3 @@ import com.echo.libraries.matrix.api.MatrixClient
 interface SessionGraphFactory {
     fun create(client: MatrixClient): Any
 }
-

@@ -19,4 +19,3 @@ class FakeLogoutUseCase(
         logoutLambda(ignoreSdkError)
     }
 }
-

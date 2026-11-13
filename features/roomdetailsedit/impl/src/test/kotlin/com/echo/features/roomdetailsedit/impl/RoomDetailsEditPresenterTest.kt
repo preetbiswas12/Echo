@@ -9,7 +9,6 @@ package com.echo.features.roomdetailsedit.impl
 
 import android.net.Uri
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.core.mimetype.MimeTypes
@@ -38,6 +37,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.matching
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkStatic
@@ -805,4 +805,3 @@ private suspend fun <T> ReceiveTurbine<T>.awaitFirstItem(): T {
     skipItems(1)
     return awaitItem()
 }
-

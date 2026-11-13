@@ -11,11 +11,11 @@ package com.echo.libraries.cryptography.impl
 import android.annotation.SuppressLint
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties
+import com.echo.libraries.cryptography.api.AESEncryptionSpecs
+import com.echo.libraries.cryptography.api.SecretKeyRepository
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.cryptography.api.AESEncryptionSpecs
-import com.echo.libraries.cryptography.api.SecretKeyRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -84,4 +84,3 @@ class KeyStoreSecretKeyRepository(
         }
     }
 }
-

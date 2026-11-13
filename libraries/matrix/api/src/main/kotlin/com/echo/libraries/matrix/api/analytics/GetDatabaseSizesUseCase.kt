@@ -20,4 +20,3 @@ fun interface GetDatabaseSizesUseCase {
      */
     operator fun invoke(sessionId: SessionId): Result<SdkStoreSizes>
 }
-

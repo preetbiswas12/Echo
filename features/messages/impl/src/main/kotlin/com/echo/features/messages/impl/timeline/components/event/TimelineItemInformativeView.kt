@@ -78,4 +78,3 @@ internal fun TimelineItemInformativeViewPreview() = ElementPreview {
         onContentLayoutChange = {},
     )
 }
-

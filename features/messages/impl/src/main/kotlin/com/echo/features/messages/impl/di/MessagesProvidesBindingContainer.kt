@@ -8,10 +8,6 @@
 
 package com.echo.features.messages.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.messages.impl.timeline.TimelineController
 import com.echo.features.messages.impl.timeline.di.LiveTimeline
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -19,6 +15,10 @@ import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.RoomCoroutineScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.Timeline
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 
 @ContributesTo(RoomScope::class)
@@ -37,4 +37,3 @@ object MessagesProvidesBindingContainer {
         dispatchers: CoroutineDispatchers,
     ): TimelineController = TimelineController(joinedRoom, liveTimeline, roomCoroutineScope, dispatchers)
 }
-

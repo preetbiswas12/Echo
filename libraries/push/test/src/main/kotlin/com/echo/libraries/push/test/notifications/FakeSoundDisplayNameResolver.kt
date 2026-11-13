@@ -17,4 +17,3 @@ class FakeSoundDisplayNameResolver(
 ) : SoundDisplayNameResolver {
     override suspend fun resolveCustomSoundTitle(uri: String): String? = resolveLambda(uri)
 }
-

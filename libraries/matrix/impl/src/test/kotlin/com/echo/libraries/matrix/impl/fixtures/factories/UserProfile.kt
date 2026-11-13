@@ -26,4 +26,3 @@ internal fun aRustUserProfile(
     status = status,
     call = call,
 )
-

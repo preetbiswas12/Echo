@@ -45,4 +45,3 @@ interface SearchHistoryStore {
  * Maximum number of entries kept in the search history.
  */
 const val MAX_SEARCH_HISTORY_SIZE = 25
-

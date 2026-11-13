@@ -130,4 +130,3 @@ internal fun ReadReceiptBottomSheetPreview(@PreviewParameter(ReadReceiptBottomSh
         }
     }
 }
-

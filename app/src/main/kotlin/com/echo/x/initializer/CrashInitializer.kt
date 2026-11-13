@@ -23,4 +23,3 @@ class CrashInitializer : Initializer<Unit> {
 
     override fun dependencies(): List<Class<out Initializer<*>>> = emptyList()
 }
-

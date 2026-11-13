@@ -13,7 +13,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.leaveroom.api.LeaveRoomEvent
 import com.echo.features.leaveroom.api.LeaveRoomState
 import com.echo.libraries.architecture.AsyncAction
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.powerlevels.usersWithRole
 import com.echo.libraries.push.api.notifications.conversations.NotificationConversationService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -109,4 +109,3 @@ class LeaveRoomPresenter(
 }
 
 internal class RoomNotFoundException(roomId: RoomId) : IllegalStateException("Room $roomId not found")
-

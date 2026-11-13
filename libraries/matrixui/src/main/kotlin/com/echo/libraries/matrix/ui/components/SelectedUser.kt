@@ -75,4 +75,3 @@ internal fun SelectedUserCannotRemovePreview() = ElementPreview {
         onUserRemove = {},
     )
 }
-

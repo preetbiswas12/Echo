@@ -61,4 +61,3 @@ private fun HorizontalRulerItem(height: Dp, color: Color) {
 internal fun HorizontalRulerPreview() = ElementPreview {
     HorizontalRuler()
 }
-

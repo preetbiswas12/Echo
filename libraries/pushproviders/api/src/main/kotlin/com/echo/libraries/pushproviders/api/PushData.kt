@@ -25,4 +25,3 @@ data class PushData(
     val unread: Int?,
     val clientSecret: String,
 )
-

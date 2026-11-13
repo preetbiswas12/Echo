@@ -28,4 +28,3 @@ fun aPasswordStrengthEstimate(
     score = score,
     normalScore = normalScore,
 )
-

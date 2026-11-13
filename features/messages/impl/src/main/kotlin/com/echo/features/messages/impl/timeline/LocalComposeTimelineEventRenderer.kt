@@ -29,4 +29,3 @@ data class ComposeLocalTimelineEventRendererConfig(
     /** The current user ID, if known. This can be used to display UI sent by/owned by the current user differently. */
     val currentUserId: UserId?,
 )
-

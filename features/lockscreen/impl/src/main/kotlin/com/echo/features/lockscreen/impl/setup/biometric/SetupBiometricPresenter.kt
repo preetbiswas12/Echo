@@ -14,11 +14,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.storage.LockScreenStore
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -57,4 +57,3 @@ class SetupBiometricPresenter(
         )
     }
 }
-

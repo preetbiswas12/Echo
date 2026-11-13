@@ -26,4 +26,3 @@ fun aKnockRequestPresentable(
     override val reason: String? = reason
     override val formattedDate: String? = formattedDate
 }
-

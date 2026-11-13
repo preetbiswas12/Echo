@@ -19,4 +19,3 @@ class FakePreferenceDataStoreFactory : PreferenceDataStoreFactory {
         return AndroidPreferenceDataStoreFactory.create { File.createTempFile("test", ".preferences_pb") }
     }
 }
-

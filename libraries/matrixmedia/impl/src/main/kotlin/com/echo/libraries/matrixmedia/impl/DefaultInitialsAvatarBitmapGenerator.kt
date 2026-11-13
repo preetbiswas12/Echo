@@ -24,8 +24,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.createBitmap
 import coil3.Bitmap
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.compound.theme.AvatarColors
 import com.echo.compound.theme.ElementTheme
 import com.echo.compound.tokens.generated.SemanticColors
@@ -37,6 +35,8 @@ import com.echo.libraries.designsystem.preview.ElementPreview
 import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.echo.libraries.designsystem.theme.components.Text
 import com.echo.libraries.matrixmedia.api.InitialsAvatarBitmapGenerator
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultInitialsAvatarBitmapGenerator : InitialsAvatarBitmapGenerator {
@@ -126,4 +126,3 @@ internal fun InitialsAvatarBitmapGeneratorPreview() = ElementPreview {
         }
     }
 }
-

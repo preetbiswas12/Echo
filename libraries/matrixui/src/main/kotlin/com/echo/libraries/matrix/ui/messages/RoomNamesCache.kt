@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.ui.messages
 
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.api.roomlist.RoomSummary
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableMap
@@ -50,4 +50,3 @@ class RoomNamesCache {
         return cache.value[roomIdOrAlias]
     }
 }
-

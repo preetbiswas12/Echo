@@ -14,4 +14,3 @@ internal object PollConstants {
     const val MAX_ANSWER_LENGTH = 240
     const val DEFAULT_MAX_SELECTIONS = 1
 }
-

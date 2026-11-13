@@ -42,4 +42,3 @@ sealed interface MentionNodeContent {
         override val displayText: String,
     ) : MentionNodeContent
 }
-

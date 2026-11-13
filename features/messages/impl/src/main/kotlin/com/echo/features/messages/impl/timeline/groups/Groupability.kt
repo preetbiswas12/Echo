@@ -106,4 +106,3 @@ internal fun MatrixTimelineItem.Event.canBeDisplayedInBubbleBlock(): Boolean {
         is StateContent -> false
     }
 }
-

@@ -32,4 +32,3 @@ data class EmbeddedEventInfo(
     val senderProfile: ProfileDetails,
     val timestamp: Long,
 )
-

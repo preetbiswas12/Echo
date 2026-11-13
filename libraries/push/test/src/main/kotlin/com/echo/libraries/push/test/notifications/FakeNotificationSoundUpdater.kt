@@ -29,4 +29,3 @@ class FakeNotificationSoundUpdater(
 
     override suspend fun readRingingCallChannelSound(): NotificationSound? = readRingingCallChannelSoundLambda()
 }
-

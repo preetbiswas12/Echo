@@ -8,9 +8,9 @@
 
 package com.echo.features.lockscreen.impl.setup.pin.validation
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.features.lockscreen.impl.pin.model.PinEntry
+import dev.zacsweers.metro.Inject
 
 @Inject
 class PinValidator(private val lockScreenConfig: LockScreenConfig) {
@@ -29,4 +29,3 @@ class PinValidator(private val lockScreenConfig: LockScreenConfig) {
         }
     }
 }
-

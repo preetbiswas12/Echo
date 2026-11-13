@@ -15,4 +15,3 @@ class FileExtensionExtractorWithoutValidation : FileExtensionExtractor {
         return name.substringAfterLast('.', "")
     }
 }
-

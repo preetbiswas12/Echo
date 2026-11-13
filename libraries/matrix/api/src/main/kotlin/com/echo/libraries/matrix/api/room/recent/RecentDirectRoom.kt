@@ -42,4 +42,3 @@ fun MatrixClient.getRecentDirectRooms(): Flow<RecentDirectRoom> = flow {
         }
     }
 }
-

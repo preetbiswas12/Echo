@@ -83,4 +83,3 @@ class BlockUserDialogsTest : RobolectricTest() {
         eventsRecorder.assertSingle(UserProfileEvent.ClearConfirmationDialog)
     }
 }
-

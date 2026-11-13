@@ -51,4 +51,3 @@ object QrErrorMapper {
         is RustHumanQrLoginException.UnsupportedQrCodeType -> QrLoginException.UnsupportedQrCodeType
     }
 }
-

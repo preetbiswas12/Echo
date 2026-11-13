@@ -101,4 +101,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setDefaultDirectLogoutView(
         DefaultDirectLogoutView().Render(state)
     }
 }
-

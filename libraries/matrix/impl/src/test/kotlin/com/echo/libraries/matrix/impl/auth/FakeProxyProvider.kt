@@ -15,4 +15,3 @@ class FakeProxyProvider : ProxyProvider {
         return null
     }
 }
-

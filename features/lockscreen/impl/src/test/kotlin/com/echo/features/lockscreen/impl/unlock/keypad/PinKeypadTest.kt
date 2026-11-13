@@ -133,4 +133,3 @@ class PinKeypadTest : RobolectricTest() {
         return inputModeManager
     }
 }
-

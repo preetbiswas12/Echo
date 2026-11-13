@@ -10,7 +10,6 @@ package com.echo.features.preferences.impl.tasks
 
 import android.content.Context
 import coil3.SingletonImageLoader
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.preferences.impl.DefaultCacheService
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -19,6 +18,7 @@ import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.push.api.PushService
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 
@@ -65,4 +65,3 @@ class DefaultClearCacheUseCase(
         defaultCacheService.onClearedCache(matrixClient.sessionId)
     }
 }
-

@@ -73,4 +73,3 @@ suspend fun LazyListState.animateScrollToItemCenter(index: Int) {
         animateScrollToItem(index, offset)
     }
 }
-

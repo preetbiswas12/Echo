@@ -18,4 +18,3 @@ class FakeFfiCheckCodeSender(
         sendResult(code)
     }
 }
-

@@ -216,4 +216,3 @@ internal fun AnnouncementPreview() = ElementPreview {
         )
     }
 }
-

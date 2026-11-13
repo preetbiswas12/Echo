@@ -18,4 +18,3 @@ class FakeOnNotifiableEventReceived(
         onNotifiableEventsReceivedResult(notifiableEvents)
     }
 }
-

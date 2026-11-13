@@ -18,4 +18,3 @@ class LiveLocationShareComparator(private val currentUser: UserId) : Comparator<
         return p1.startTimestamp.compareTo(p0.startTimestamp)
     }
 }
-

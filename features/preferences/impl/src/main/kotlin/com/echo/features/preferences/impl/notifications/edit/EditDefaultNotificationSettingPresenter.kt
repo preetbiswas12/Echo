@@ -16,9 +16,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingStateNoSuccess
@@ -29,6 +26,9 @@ import com.echo.libraries.matrix.api.room.RoomNotificationMode
 import com.echo.libraries.matrix.api.roomlist.RoomListService
 import com.echo.libraries.matrix.api.roomlist.RoomSummary
 import com.echo.libraries.matrix.ui.model.getAvatarData
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
@@ -161,4 +161,3 @@ class EditDefaultNotificationSettingPresenter(
         }
     }
 }
-

@@ -8,8 +8,6 @@
 
 package com.echo.features.invite.impl
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.test.InMemorySeenInvitesStore
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
@@ -23,6 +21,8 @@ import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -93,4 +93,3 @@ class DefaultAcceptInviteTest {
         assertThat(seenInvitesStore.seenRoomIds().first()).containsExactly(roomId)
     }
 }
-

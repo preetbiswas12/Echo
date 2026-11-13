@@ -10,7 +10,6 @@ package com.echo.libraries.push.impl.workmanager
 import android.net.NetworkCapabilities
 import androidx.work.OneTimeWorkRequest
 import androidx.work.hasKeyWithValueOfType
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
@@ -21,6 +20,7 @@ import com.echo.libraries.workmanager.api.WorkManagerWorkerType
 import com.echo.libraries.workmanager.api.workManagerTag
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.robolectric.annotation.Config
@@ -153,4 +153,3 @@ private fun createSyncPendingNotificationsRequestBuilder(
     networkMonitor = FakeNetworkMonitor().apply { givenIsInAirGappedEnvironment(isInAirGapEnvironment) },
     featureFlagService = featureFlagService,
 )
-

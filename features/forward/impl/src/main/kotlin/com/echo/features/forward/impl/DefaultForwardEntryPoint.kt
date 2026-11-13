@@ -10,10 +10,10 @@ package com.echo.features.forward.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.forward.api.ForwardEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultForwardEntryPoint : ForwardEntryPoint {
@@ -35,4 +35,3 @@ class DefaultForwardEntryPoint : ForwardEntryPoint {
         )
     }
 }
-

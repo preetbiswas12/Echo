@@ -23,4 +23,3 @@ class FakePermalinkParser(
         return result(uriString)
     }
 }
-

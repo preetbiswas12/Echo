@@ -200,4 +200,3 @@ fun aSharedHistoryRoomDetailsState(
     isEncrypted = true,
     roomHistoryVisibility = roomHistoryVisibility,
 )
-

@@ -120,4 +120,3 @@ sealed interface JoinAuthorisationStatus {
     data object Unknown : JoinAuthorisationStatus
     data object Unauthorized : JoinAuthorisationStatus
 }
-

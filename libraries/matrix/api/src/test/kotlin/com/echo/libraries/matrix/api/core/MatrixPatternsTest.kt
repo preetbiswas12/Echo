@@ -9,9 +9,9 @@
 package com.echo.libraries.matrix.api.core
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MatrixPatternsTest {
@@ -190,4 +190,3 @@ class MatrixPatternsTest {
         }
     }
 }
-

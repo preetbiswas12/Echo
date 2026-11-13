@@ -472,4 +472,3 @@ internal fun RoomSummaryRowPreview(@PreviewParameter(RoomListRoomSummaryPreviewP
         showAllActivity = true,
     )
 }
-

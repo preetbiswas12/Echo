@@ -18,14 +18,14 @@ import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.core.plugin.plugins
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.securityandprivacy.impl.SecurityAndPrivacyNavigator
 import com.echo.libraries.androidutils.browser.openUrlInChromeCustomTab
 import com.echo.libraries.architecture.appyx.launchMolecule
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(RoomScope::class)
 @AssistedInject
@@ -57,4 +57,3 @@ class SecurityAndPrivacyNode(
         )
     }
 }
-

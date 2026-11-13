@@ -20,4 +20,3 @@ fun PollKind.toInner(): RustPollKind = when (this) {
     PollKind.Disclosed -> RustPollKind.DISCLOSED
     PollKind.Undisclosed -> RustPollKind.UNDISCLOSED
 }
-

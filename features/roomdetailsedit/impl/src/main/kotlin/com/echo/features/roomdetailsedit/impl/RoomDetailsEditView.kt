@@ -188,4 +188,3 @@ internal fun RoomDetailsEditViewPreview(@PreviewParameter(RoomDetailsEditStatePr
         onDone = {},
     )
 }
-

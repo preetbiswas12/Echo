@@ -8,7 +8,6 @@
 
 package com.echo.features.home.impl.datasource
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.home.impl.model.LatestEvent
 import com.echo.features.home.impl.model.RoomListRoomSummary
 import com.echo.features.home.impl.model.RoomSummaryDisplayType
@@ -25,6 +24,7 @@ import com.echo.libraries.matrix.api.roomlist.RoomSummary
 import com.echo.libraries.matrix.ui.model.dmUserStatus
 import com.echo.libraries.matrix.ui.model.getAvatarData
 import com.echo.libraries.matrix.ui.model.toInviteSender
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 
 @Inject
@@ -111,4 +111,3 @@ class RoomListRoomSummaryFactory(
         }
     }
 }
-

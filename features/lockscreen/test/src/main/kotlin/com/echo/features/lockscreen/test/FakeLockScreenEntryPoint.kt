@@ -25,4 +25,3 @@ class FakeLockScreenEntryPoint : LockScreenEntryPoint {
 
     override fun pinUnlockIntent(context: Context): Intent = lambdaError()
 }
-

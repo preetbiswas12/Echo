@@ -14,4 +14,3 @@ import androidx.compose.runtime.staticCompositionLocalOf
  * A composition local that indicates whether the app is running in UI test mode.
  */
 val LocalUiTestMode = staticCompositionLocalOf { false }
-

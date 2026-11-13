@@ -103,4 +103,3 @@ class StickyEventSetTest {
         const val A_DECLINE_TYPE = "org.matrix.msc4310.rtc.decline"
     }
 }
-

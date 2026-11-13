@@ -10,10 +10,10 @@ package com.echo.features.home.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.home.api.HomeEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultHomeEntryPoint : HomeEntryPoint {
@@ -25,4 +25,3 @@ class DefaultHomeEntryPoint : HomeEntryPoint {
         return parentNode.createNode<HomeFlowNode>(buildContext, listOf(callback))
     }
 }
-

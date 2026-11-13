@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.paths.SessionPathsFactory
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -47,4 +47,3 @@ class RustTemporaryMatrixClientFactoryTest {
         )
     }
 }
-

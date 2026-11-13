@@ -27,4 +27,3 @@ fun RenderingMapsNotSupportedDialog(onSubmit: () -> Unit) {
 internal fun RenderingMapsNotSupportedDialogPreview() = ElementPreview {
     RenderingMapsNotSupportedDialog(onSubmit = {})
 }
-

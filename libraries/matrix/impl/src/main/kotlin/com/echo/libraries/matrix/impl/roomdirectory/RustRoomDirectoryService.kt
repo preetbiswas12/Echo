@@ -22,4 +22,3 @@ class RustRoomDirectoryService(
         return RustRoomDirectoryList(client.roomDirectorySearch(), scope, sessionDispatcher)
     }
 }
-

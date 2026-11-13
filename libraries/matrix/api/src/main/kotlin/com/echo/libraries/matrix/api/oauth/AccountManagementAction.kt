@@ -16,4 +16,3 @@ sealed interface AccountManagementAction {
     data class DeviceView(val deviceId: DeviceId) : AccountManagementAction
     data class DeviceDelete(val deviceId: DeviceId) : AccountManagementAction
 }
-

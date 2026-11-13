@@ -10,11 +10,11 @@ package com.echo.libraries.pushstore.impl.clientsecret
 
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecretStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 
 @ContributesBinding(AppScope::class)
@@ -49,4 +49,3 @@ class DataStorePushClientSecretStore(
 
     private fun getPreferenceKeyForUser(userId: SessionId) = stringPreferencesKey(userId.value)
 }
-

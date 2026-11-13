@@ -32,4 +32,3 @@ fun RoomPreviewTitleAtom(
         color = ElementTheme.colors.textPrimary,
     )
 }
-

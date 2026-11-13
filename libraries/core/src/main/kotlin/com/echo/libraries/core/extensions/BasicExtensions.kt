@@ -126,4 +126,3 @@ fun String.normalized(): String {
         // then keep only ASCII characters and replace non-ASCII characters with an empty string.
         .replace("[^\\p{ASCII}]".toRegex(), "")
 }
-

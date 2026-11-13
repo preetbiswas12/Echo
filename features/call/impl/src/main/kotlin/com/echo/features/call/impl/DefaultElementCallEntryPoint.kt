@@ -9,8 +9,6 @@
 package com.echo.features.call.impl
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.ElementCallEntryPoint
 import com.echo.features.call.impl.notifications.CallNotificationData
@@ -23,6 +21,8 @@ import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UserId
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -84,4 +84,3 @@ class DefaultElementCallEntryPoint(
         activeCallManager.registerIncomingCall(notificationData = incomingCallNotificationData)
     }
 }
-

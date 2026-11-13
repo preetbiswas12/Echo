@@ -13,4 +13,3 @@ data class TimelineItemProfileChangeContent(
 ) : TimelineItemStateContent {
     override val type: String = "TimelineItemProfileChangeContent"
 }
-

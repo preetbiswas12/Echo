@@ -72,4 +72,3 @@ internal fun aDependencyLicenseItem(
     unknownLicenses = listOf(),
     scm = null,
 )
-

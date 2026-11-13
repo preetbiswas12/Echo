@@ -43,4 +43,3 @@ class SdkRtcTransportsTest {
         assertThat(emptyList<RtcTransport>().toJson()).isEqualTo("[]")
     }
 }
-

@@ -8,8 +8,6 @@
 
 package com.echo.libraries.push.impl.push
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
@@ -19,6 +17,8 @@ import com.echo.libraries.push.impl.db.PushRequest
 import com.echo.libraries.push.impl.history.PushHistoryService
 import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.joinAll
@@ -96,4 +96,3 @@ class DefaultSyncOnNotifiableEvent(
         }
     }
 }
-

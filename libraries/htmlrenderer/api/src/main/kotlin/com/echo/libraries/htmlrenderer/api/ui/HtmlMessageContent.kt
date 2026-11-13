@@ -631,4 +631,3 @@ private val InlineCodeHorizontalPadding: Dp = 2.dp
 
 /** The width of the fading edge gradient drawn at the left and right of a [CodeBlockView]. */
 private val CodeBlockFadingEdgeWidth: Dp = 32.dp
-

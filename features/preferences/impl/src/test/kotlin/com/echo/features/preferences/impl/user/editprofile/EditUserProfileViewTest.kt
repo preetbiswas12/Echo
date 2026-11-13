@@ -132,4 +132,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setEditUserProfileView(
         )
     }
 }
-

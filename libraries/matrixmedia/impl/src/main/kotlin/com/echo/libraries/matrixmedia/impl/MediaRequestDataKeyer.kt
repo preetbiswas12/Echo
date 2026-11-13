@@ -28,4 +28,3 @@ internal class MediaRequestDataKeyer : Keyer<MediaRequestData> {
 private fun MediaRequestData.toKey(): String? {
     return source?.let { "${it.safeUrl}_$kind" }
 }
-

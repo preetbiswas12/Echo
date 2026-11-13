@@ -8,8 +8,6 @@
 
 package com.echo.features.joinroom.impl
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
@@ -62,6 +60,8 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
@@ -1254,4 +1254,3 @@ private fun aRoomMembershipDetails() = RoomMembershipDetails(
     currentUserMember = aRoomMember(userId = A_USER_ID, displayName = "Alice"),
     senderMember = aRoomMember(userId = A_USER_ID_2, displayName = "Bob"),
 )
-

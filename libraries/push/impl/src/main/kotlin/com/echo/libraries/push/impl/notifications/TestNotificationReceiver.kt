@@ -11,9 +11,9 @@ package com.echo.libraries.push.impl.notifications
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.bindings
 import com.echo.libraries.push.impl.troubleshoot.NotificationClickHandler
+import dev.zacsweers.metro.Inject
 
 class TestNotificationReceiver : BroadcastReceiver() {
     @Inject lateinit var notificationClickHandler: NotificationClickHandler
@@ -23,4 +23,3 @@ class TestNotificationReceiver : BroadcastReceiver() {
         notificationClickHandler.handleNotificationClick()
     }
 }
-

@@ -10,8 +10,8 @@ package com.echo.features.knockrequests.impl.list
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -35,4 +35,3 @@ class DefaultKnockRequestsListEntryPointTest {
         assertThat(result).isInstanceOf(KnockRequestsListNode::class.java)
     }
 }
-

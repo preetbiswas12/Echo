@@ -48,4 +48,3 @@ internal fun PreferenceRowPreview() = ElementThemedPreview {
         Text(text = "Content")
     }
 }
-

@@ -14,4 +14,3 @@ import kotlinx.collections.immutable.ImmutableList
 data class ConfirmingUnknownUserInvitation(
     val users: ImmutableList<MatrixUser>
 ) : AsyncAction.Confirming
-

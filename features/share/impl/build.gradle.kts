@@ -44,5 +44,3 @@ dependencies {
     testImplementation(projects.libraries.roomselect.test)
     testImplementation(projects.services.appnavstate.impl)
 }
-
-

@@ -268,4 +268,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setJoinRoomView(
         )
     }
 }
-

@@ -142,4 +142,3 @@ object LinkifyHelper {
 fun CharSequence.safeLinkify(): CharSequence {
     return LinkifyHelper.linkify(this, Linkify.WEB_URLS or Linkify.PHONE_NUMBERS or Linkify.EMAIL_ADDRESSES)
 }
-

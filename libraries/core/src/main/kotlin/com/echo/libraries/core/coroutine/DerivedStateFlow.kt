@@ -46,4 +46,3 @@ fun <T1, R> StateFlow<T1>.mapState(transform: (a: T1) -> R): StateFlow<R> {
         flow = this.map { a -> transform(a) }
     )
 }
-

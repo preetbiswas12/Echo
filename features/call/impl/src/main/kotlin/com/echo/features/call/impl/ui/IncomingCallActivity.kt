@@ -18,7 +18,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.core.content.IntentCompat
 import androidx.lifecycle.lifecycleScope
-import dev.zacsweers.metro.Inject
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.ElementCallEntryPoint
@@ -33,6 +32,7 @@ import com.echo.libraries.designsystem.theme.ElementThemeApp
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.launchIn
@@ -175,4 +175,3 @@ class IncomingCallActivity : AppCompatActivity() {
         }
     }
 }
-

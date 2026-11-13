@@ -15,4 +15,3 @@ sealed interface LinkEvent {
     data object Confirm : LinkEvent
     data object Cancel : LinkEvent
 }
-

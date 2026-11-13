@@ -10,10 +10,10 @@ package com.echo.features.space.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.space.api.SpaceEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultSpaceEntryPoint : SpaceEntryPoint {
@@ -29,4 +29,3 @@ class DefaultSpaceEntryPoint : SpaceEntryPoint {
         )
     }
 }
-

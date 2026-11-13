@@ -8,9 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.factories
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.messages.impl.timeline.diff.TimelineItemsCacheInvalidator
 import com.echo.features.messages.impl.timeline.factories.event.TimelineItemEventFactory
 import com.echo.features.messages.impl.timeline.factories.virtual.TimelineItemVirtualFactory
@@ -23,6 +20,9 @@ import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.event.EventTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.event.MessageContent
 import com.echo.libraries.matrix.api.timeline.item.event.OtherMessageType
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.Flow
@@ -109,4 +109,3 @@ private fun EventTimelineItem.isKeyVerificationRequest(): Boolean {
     val messageType = (content as? MessageContent)?.type
     return messageType is OtherMessageType && messageType.isKeyVerificationRequest
 }
-

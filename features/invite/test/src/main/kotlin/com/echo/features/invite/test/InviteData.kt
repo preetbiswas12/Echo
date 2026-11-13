@@ -22,4 +22,3 @@ fun anInviteData(
     roomName = roomName,
     isDm = isDm,
 )
-

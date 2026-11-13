@@ -54,5 +54,3 @@ dependencies {
     testImplementation(projects.services.appnavstate.test)
     testImplementation(projects.features.logout.test)
 }
-
-

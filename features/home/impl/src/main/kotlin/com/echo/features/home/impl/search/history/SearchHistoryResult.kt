@@ -30,4 +30,3 @@ sealed interface SearchHistoryResult {
         override val id: String = roomId.value
     }
 }
-

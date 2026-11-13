@@ -14,4 +14,3 @@ import java.io.Serializable
 value class TransactionId(val value: String) : Serializable {
     override fun toString(): String = value
 }
-

@@ -8,11 +8,11 @@
 
 package com.echo.libraries.cryptography.impl.di
 
+import com.echo.libraries.cryptography.impl.ANDROID_KEYSTORE
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.cryptography.impl.ANDROID_KEYSTORE
 import java.security.KeyStore
 
 @ContributesTo(AppScope::class)
@@ -25,4 +25,3 @@ object CryptographyBindingContainer {
         }
     }
 }
-

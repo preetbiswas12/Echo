@@ -39,4 +39,3 @@ interface CreateRoomEntryPoint : FeatureEntryPoint {
         fun onRoomCreated(roomId: RoomId)
     }
 }
-

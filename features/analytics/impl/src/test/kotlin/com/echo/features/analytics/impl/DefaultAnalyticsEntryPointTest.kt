@@ -10,10 +10,10 @@ package com.echo.features.analytics.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -38,4 +38,3 @@ class DefaultAnalyticsEntryPointTest {
         assertThat(result).isInstanceOf(AnalyticsOptInNode::class.java)
     }
 }
-

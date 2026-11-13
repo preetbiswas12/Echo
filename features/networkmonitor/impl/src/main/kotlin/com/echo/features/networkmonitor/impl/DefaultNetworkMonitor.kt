@@ -15,13 +15,13 @@ import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.channels.awaitClose
@@ -107,4 +107,3 @@ class DefaultNetworkMonitor(
         return if (activeNetwork != null) NetworkStatus.Connected else NetworkStatus.Disconnected
     }
 }
-

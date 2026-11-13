@@ -9,7 +9,6 @@
 package com.echo.libraries.push.impl.battery
 
 import androidx.lifecycle.Lifecycle
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.push.api.battery.BatteryOptimizationEvent
 import com.echo.libraries.push.impl.push.FakeMutableBatteryOptimizationStore
 import com.echo.libraries.push.impl.push.MutableBatteryOptimizationStore
@@ -19,6 +18,7 @@ import com.echo.tests.testutils.FakeLifecycleOwner
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testWithLifecycleOwner
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -169,4 +169,3 @@ class BatteryOptimizationPresenterTest {
         batteryOptimization = batteryOptimization
     )
 }
-

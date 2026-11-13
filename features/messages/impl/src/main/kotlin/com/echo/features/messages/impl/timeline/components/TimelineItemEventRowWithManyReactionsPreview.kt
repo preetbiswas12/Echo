@@ -34,4 +34,3 @@ internal fun TimelineItemEventRowWithManyReactionsPreview() = ElementPreview {
         }
     }
 }
-

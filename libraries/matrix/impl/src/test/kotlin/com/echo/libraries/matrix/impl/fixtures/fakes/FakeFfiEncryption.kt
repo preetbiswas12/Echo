@@ -49,4 +49,3 @@ class FakeFfiEncryption : Encryption(NoHandle) {
         return FakeFfiTaskHandle()
     }
 }
-

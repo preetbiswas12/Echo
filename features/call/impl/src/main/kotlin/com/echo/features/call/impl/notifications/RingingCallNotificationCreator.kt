@@ -16,7 +16,6 @@ import android.provider.Settings
 import androidx.core.app.NotificationCompat
 import androidx.core.app.PendingIntentCompat
 import androidx.core.app.Person
-import dev.zacsweers.metro.Inject
 import com.echo.appconfig.ElementCallConfig
 import com.echo.features.call.impl.receivers.DeclineCallBroadcastReceiver
 import com.echo.features.call.impl.ui.IncomingCallActivity
@@ -31,6 +30,7 @@ import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrixmedia.api.ImageLoaderHolder
 import com.echo.libraries.push.api.notifications.NotificationBitmapLoader
+import dev.zacsweers.metro.Inject
 import kotlin.time.Duration.Companion.seconds
 
 /**
@@ -173,4 +173,3 @@ class RingingCallNotificationCreator(
             }
     }
 }
-

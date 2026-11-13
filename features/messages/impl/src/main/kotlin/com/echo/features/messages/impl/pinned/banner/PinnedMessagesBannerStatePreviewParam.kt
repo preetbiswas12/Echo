@@ -57,4 +57,3 @@ internal fun aLoadedPinnedMessagesBannerState(
     loadedPinnedMessagesCount = knownPinnedMessagesCount,
     eventSink = eventSink
 )
-

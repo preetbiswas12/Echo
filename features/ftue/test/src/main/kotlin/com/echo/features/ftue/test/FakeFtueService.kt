@@ -19,4 +19,3 @@ class FakeFtueService : FtueService {
         state.emit(newState)
     }
 }
-

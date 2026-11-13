@@ -17,4 +17,3 @@ class FakeNodeFactoriesBindings(
 ) : NodeFactoriesBindings {
     override fun nodeFactories() = nodeFactories
 }
-

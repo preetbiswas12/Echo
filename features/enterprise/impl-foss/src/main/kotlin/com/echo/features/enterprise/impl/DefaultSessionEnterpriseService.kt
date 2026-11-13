@@ -8,9 +8,9 @@
 
 package com.echo.features.enterprise.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultSessionEnterpriseService : SessionEnterpriseService {
@@ -20,4 +20,3 @@ class DefaultSessionEnterpriseService : SessionEnterpriseService {
     override suspend fun isEncryptionDisabledByHomeserver(): Boolean = false
     override suspend fun arePublicRoomsDisabledByHomeserver(): Boolean = false
 }
-

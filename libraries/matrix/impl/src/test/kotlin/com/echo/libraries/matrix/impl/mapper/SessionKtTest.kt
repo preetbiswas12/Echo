@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.mapper
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.paths.SessionPaths
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSession
 import com.echo.libraries.matrix.test.A_DEVICE_ID
@@ -17,6 +16,7 @@ import com.echo.libraries.matrix.test.A_HOMESERVER_URL_2
 import com.echo.libraries.matrix.test.A_SECRET
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.sessionstorage.api.LoginType
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import java.io.File
 
@@ -67,4 +67,3 @@ class SessionKtTest {
         assertThat(result.homeserverUrl).isEqualTo(A_HOMESERVER_URL_2)
     }
 }
-

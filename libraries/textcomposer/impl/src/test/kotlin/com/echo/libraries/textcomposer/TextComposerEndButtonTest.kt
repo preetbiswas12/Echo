@@ -83,4 +83,3 @@ class TextComposerEndButtonTest : RobolectricTest() {
         }
     }
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.features.migration.impl.migrations
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rageshake.test.logs.FakeLogFilesRemover
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import java.io.File
@@ -29,4 +29,3 @@ class AppMigration07Test {
         performLambda.assertions().isCalledOnce()
     }
 }
-

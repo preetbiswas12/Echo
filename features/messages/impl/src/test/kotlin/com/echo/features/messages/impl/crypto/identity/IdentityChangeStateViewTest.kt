@@ -104,4 +104,3 @@ class IdentityChangeStateViewTest : RobolectricTest() {
         }
     }
 }
-

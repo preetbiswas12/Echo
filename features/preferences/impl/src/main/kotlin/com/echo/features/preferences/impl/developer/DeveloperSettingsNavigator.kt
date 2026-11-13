@@ -13,4 +13,3 @@ package com.echo.features.preferences.impl.developer
 fun interface DeveloperSettingsNavigator {
     fun openPushRules(filename: String, content: String)
 }
-

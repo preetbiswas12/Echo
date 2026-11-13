@@ -22,4 +22,3 @@ class FakeBatteryOptimization(
         return requestDisablingBatteryOptimizationResult()
     }
 }
-

@@ -20,4 +20,3 @@ sealed interface JoinRule {
     data class KnockRestricted(val rules: ImmutableList<AllowRule>) : JoinRule
     data class Custom(val value: String) : JoinRule
 }
-

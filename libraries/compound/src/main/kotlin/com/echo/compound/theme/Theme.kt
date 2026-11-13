@@ -58,4 +58,3 @@ fun Flow<String?>.mapToTheme(allowBlackTheme: Boolean): Flow<Theme> = map {
         else -> Theme.valueOf(it)
     }.coerceBlackTheme(allowBlackTheme)
 }
-

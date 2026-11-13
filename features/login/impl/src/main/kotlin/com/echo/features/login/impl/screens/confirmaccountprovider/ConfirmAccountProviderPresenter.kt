@@ -17,9 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.changeserver.ChangeServerEvent
@@ -31,6 +28,9 @@ import com.echo.libraries.core.uri.ensureProtocol
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
 import com.echo.libraries.matrix.api.core.MatrixPatterns
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.map
 
 @AssistedInject
@@ -156,4 +156,3 @@ class ConfirmAccountProviderPresenter(
         )
     }
 }
-

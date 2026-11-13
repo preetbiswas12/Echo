@@ -32,4 +32,3 @@ internal fun aRustRoomDescription(
     isWorldReadable = isWorldReadable,
     joinedMembers = joinedMembers,
 )
-

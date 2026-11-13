@@ -10,7 +10,6 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
@@ -38,6 +37,7 @@ import com.echo.libraries.sessionstorage.test.InMemorySessionStore
 import com.echo.libraries.workmanager.test.FakeWorkManagerScheduler
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.awaitCancellation
 import kotlinx.coroutines.launch
@@ -323,4 +323,3 @@ class RustMatrixAuthenticationServiceTest {
         )
     }
 }
-

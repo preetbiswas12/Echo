@@ -70,4 +70,3 @@ fun SlashCommand.Error.message() = when (this) {
     is SlashCommand.ErrorUnknownSlashCommand -> message
     is SlashCommand.ErrorSyntax -> message
 }
-

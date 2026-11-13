@@ -7,11 +7,11 @@
 
 package com.echo.libraries.cachestore.impl
 
+import com.echo.libraries.cachestore.api.CacheData
+import com.echo.libraries.cachestore.api.CacheStore
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.cachestore.api.CacheData
-import com.echo.libraries.cachestore.api.CacheStore
 
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
@@ -38,4 +38,3 @@ class DatabaseCacheStore(
         database.cacheDataQueries.deleteAll().await()
     }
 }
-

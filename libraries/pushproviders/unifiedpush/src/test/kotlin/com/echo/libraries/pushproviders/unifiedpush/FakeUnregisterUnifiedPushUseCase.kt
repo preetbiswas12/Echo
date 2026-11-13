@@ -30,4 +30,3 @@ class FakeUnregisterUnifiedPushUseCase(
         cleanupLambda(clientSecret, unregisterUnifiedPush)
     }
 }
-

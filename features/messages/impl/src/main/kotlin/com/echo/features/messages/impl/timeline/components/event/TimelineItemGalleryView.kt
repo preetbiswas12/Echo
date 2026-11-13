@@ -399,4 +399,3 @@ internal fun TimelineItemGalleryViewPreview(
         onLongClick = {},
     )
 }
-

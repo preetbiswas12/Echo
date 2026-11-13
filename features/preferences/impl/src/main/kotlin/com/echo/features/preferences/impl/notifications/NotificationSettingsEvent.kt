@@ -36,4 +36,3 @@ sealed interface NotificationSettingsEvent {
     data object LaunchCallRingtonePicker : NotificationSettingsEvent
     data class ToggleShowAllActivityInRoomList(val newValue: Boolean) : NotificationSettingsEvent
 }
-

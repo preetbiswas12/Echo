@@ -121,4 +121,3 @@ internal fun AvatarActionBottomSheetPreview() = ElementPreview(fillMaxSize = tru
         onDismiss = { },
     )
 }
-

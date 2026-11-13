@@ -53,4 +53,3 @@ interface UserPushStore {
     /** Erases every push preference of this user, to be called when their session is removed. */
     suspend fun reset()
 }
-

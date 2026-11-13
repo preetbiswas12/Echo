@@ -120,4 +120,3 @@ interface PushService {
      */
     suspend fun onServiceUnregistered(userId: UserId)
 }
-

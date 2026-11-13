@@ -10,7 +10,6 @@ package com.echo.libraries.push.impl.notifications
 
 import androidx.compose.ui.graphics.toArgb
 import coil3.ImageLoader
-import dev.zacsweers.metro.Inject
 import com.echo.appconfig.NotificationConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.core.log.logger.LoggerTag
@@ -28,6 +27,7 @@ import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.finishLongRunningTransaction
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.first
 import timber.log.Timber
 
@@ -164,4 +164,3 @@ data class GroupedNotificationEvents(
     val invitationEvents: List<InviteNotifiableEvent>,
     val fallbackEvents: List<FallbackNotifiableEvent>,
 )
-

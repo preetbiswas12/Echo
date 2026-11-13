@@ -181,4 +181,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setPollHistoryViewView(
         )
     }
 }
-

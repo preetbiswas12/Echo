@@ -172,4 +172,3 @@ inline fun <T, R> AsyncData<T>.map(
         AsyncData.Uninitialized -> AsyncData.Uninitialized
     }
 }
-

@@ -44,4 +44,3 @@ class PerformDatabaseVacuumRequestBuilder(
         return Result.success(listOf(WorkManagerRequestWrapper(workRequest)))
     }
 }
-

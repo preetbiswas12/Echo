@@ -135,4 +135,3 @@ fun MediaViewerEntryPoint.Params.RoomMedia.toMediaItem(
         )
     }
 }
-

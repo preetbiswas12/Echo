@@ -70,4 +70,3 @@ internal fun aReadReceiptData(
 )
 
 private val PREVIEW_USER_IDS = aRoomMemberList().map { it.userId }
-

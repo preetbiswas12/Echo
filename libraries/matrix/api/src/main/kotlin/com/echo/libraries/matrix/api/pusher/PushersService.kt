@@ -26,4 +26,3 @@ interface PushersService {
      */
     suspend fun unsetHttpPusher(unsetHttpPusherData: UnsetHttpPusherData): Result<Unit>
 }
-

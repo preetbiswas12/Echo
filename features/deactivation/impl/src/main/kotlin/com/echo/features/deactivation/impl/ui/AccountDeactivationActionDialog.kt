@@ -42,4 +42,3 @@ fun AccountDeactivationActionDialog(
         is AsyncAction.Success -> Unit
     }
 }
-

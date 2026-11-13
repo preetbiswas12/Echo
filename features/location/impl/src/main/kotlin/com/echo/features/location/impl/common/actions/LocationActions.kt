@@ -16,4 +16,3 @@ interface LocationActions {
     fun isLocationEnabled(): Boolean
     fun openLocationSettings()
 }
-

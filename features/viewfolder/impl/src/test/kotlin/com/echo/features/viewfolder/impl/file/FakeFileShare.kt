@@ -16,4 +16,3 @@ class FakeFileShare : FileShare {
         hasBeenCalled = true
     }
 }
-

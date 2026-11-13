@@ -14,4 +14,3 @@ interface SdkPendingTask : AutoCloseable {
     /** Checks if the task is still running. */
     fun isRunning(): Boolean
 }
-

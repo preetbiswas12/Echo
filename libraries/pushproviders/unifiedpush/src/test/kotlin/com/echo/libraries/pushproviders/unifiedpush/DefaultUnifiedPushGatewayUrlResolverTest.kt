@@ -84,4 +84,3 @@ class DefaultUnifiedPushGatewayUrlResolverTest {
         defaultPushGatewayHttpUrlProvider = defaultPushGatewayHttpUrlProvider,
     )
 }
-

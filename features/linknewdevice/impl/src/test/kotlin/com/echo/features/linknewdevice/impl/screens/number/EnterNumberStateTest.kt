@@ -7,10 +7,10 @@
 
 package com.echo.features.linknewdevice.impl.screens.number
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.linknewdevice.impl.screens.number.model.Digit
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.test.AN_EXCEPTION
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class EnterNumberStateTest {
@@ -92,4 +92,3 @@ class EnterNumberStateTest {
         )
     }
 }
-

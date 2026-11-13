@@ -11,7 +11,6 @@ package com.echo.features.viewfolder.impl.file
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.clipboard.ClipboardHelper
 import com.echo.libraries.androidutils.clipboard.FakeClipboardHelper
 import com.echo.libraries.androidutils.toast.FakeToastHelper
@@ -20,6 +19,7 @@ import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -173,4 +173,3 @@ class ViewFilePresenterTest {
         toastHelper = toastHelper,
     )
 }
-

@@ -16,4 +16,3 @@ interface SoundDisplayNameResolver {
     /** Returns the title of the ringtone at [uri], or null if it cannot be resolved. */
     suspend fun resolveCustomSoundTitle(uri: String): String?
 }
-

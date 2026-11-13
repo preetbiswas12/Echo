@@ -8,7 +8,6 @@
 
 package com.echo.features.roomdetails.impl.notificationsettings
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.roomdetails.impl.aJoinedRoom
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
 import com.echo.libraries.matrix.test.AN_EXCEPTION
@@ -18,6 +17,7 @@ import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -173,4 +173,3 @@ class RoomNotificationSettingsPresenterTest {
         )
     }
 }
-

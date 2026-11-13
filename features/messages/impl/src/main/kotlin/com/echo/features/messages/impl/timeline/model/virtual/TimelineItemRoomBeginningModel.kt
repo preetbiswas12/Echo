@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.virtual
 data object TimelineItemRoomBeginningModel : TimelineItemVirtualModel {
     override val type: String = "TimelineItemRoomBeginningModel"
 }
-

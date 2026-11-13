@@ -52,4 +52,3 @@ class DefaultDiffCacheInvalidator<T> : DiffCacheInvalidator<T> {
         }
     }
 }
-

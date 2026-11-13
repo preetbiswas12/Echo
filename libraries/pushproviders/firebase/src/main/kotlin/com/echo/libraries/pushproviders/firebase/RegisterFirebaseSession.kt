@@ -8,10 +8,10 @@
 
 package com.echo.libraries.pushproviders.firebase
 
+import com.echo.libraries.pushproviders.firebase.util.runFirebaseTask
 import com.google.firebase.messaging.FirebaseMessaging
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.pushproviders.firebase.util.runFirebaseTask
 import timber.log.Timber
 
 fun interface RegisterFirebaseSession {
@@ -34,4 +34,3 @@ class DefaultRegisterFirebaseSession(
             .map {}
     }
 }
-

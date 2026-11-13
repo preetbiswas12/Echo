@@ -20,4 +20,3 @@ fun interface UserProfilePresenterFactory {
      */
     fun create(userId: UserId): Presenter<UserProfileState>
 }
-

@@ -22,4 +22,3 @@ class FakeMediaFile(private val path: String) : MediaFile {
 
     override fun close() = Unit
 }
-

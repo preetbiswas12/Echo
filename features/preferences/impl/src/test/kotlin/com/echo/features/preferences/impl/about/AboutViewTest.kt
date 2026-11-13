@@ -75,4 +75,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setAboutView(
         )
     }
 }
-

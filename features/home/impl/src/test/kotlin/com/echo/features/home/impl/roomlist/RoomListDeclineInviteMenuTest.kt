@@ -97,4 +97,3 @@ class RoomListDeclineInviteMenuTest : RobolectricTest() {
         eventsRecorder.assertList(listOf(RoomListEvent.HideDeclineInviteMenu))
     }
 }
-

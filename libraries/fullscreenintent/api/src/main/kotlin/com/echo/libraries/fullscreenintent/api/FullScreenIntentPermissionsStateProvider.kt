@@ -17,4 +17,3 @@ fun aFullScreenIntentPermissionsState(
     shouldDisplayBanner = shouldDisplay,
     eventSink = eventSink,
 )
-

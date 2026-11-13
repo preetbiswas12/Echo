@@ -14,4 +14,3 @@ fun aMediaSource(url: String = "") = MediaSource(
     url = url,
     json = null
 )
-

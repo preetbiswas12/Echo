@@ -42,4 +42,3 @@ fun RoomPermissions.spaceSettingsPermissions(): SpaceSettingsPermissions {
         securityAndPrivacyPermissions = securityAndPrivacyPermissions(),
     )
 }
-

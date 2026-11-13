@@ -11,4 +11,3 @@ package com.echo.features.rageshake.api.crash
 import com.echo.libraries.architecture.Presenter
 
 interface CrashDetectionPresenter : Presenter<CrashDetectionState>
-

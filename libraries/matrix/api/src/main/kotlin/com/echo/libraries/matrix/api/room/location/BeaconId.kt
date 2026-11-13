@@ -10,4 +10,3 @@ package com.echo.libraries.matrix.api.room.location
 import com.echo.libraries.matrix.api.core.EventId
 
 typealias BeaconId = EventId
-

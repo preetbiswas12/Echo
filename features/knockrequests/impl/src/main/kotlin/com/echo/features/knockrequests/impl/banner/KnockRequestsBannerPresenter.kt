@@ -15,12 +15,12 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.knockrequests.impl.data.KnockRequestPresentable
 import com.echo.features.knockrequests.impl.data.KnockRequestsService
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.coroutine.mapState
 import com.echo.libraries.di.annotations.SessionCoroutineScope
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
@@ -93,4 +93,3 @@ class KnockRequestsBannerPresenter(
         }
     }
 }
-

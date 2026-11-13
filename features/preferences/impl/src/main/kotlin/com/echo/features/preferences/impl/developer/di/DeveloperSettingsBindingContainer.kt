@@ -7,13 +7,13 @@
 
 package com.echo.features.preferences.impl.developer.di
 
+import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsPresenter
+import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsState
+import com.echo.libraries.architecture.Presenter
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.Binds
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsPresenter
-import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsState
-import com.echo.libraries.architecture.Presenter
 
 @ContributesTo(AppScope::class)
 @BindingContainer
@@ -21,4 +21,3 @@ interface DeveloperSettingsBindingContainer {
     @Binds
     fun bindAppDeveloperSettingsPresenter(presenter: AppDeveloperSettingsPresenter): Presenter<AppDeveloperSettingsState>
 }
-

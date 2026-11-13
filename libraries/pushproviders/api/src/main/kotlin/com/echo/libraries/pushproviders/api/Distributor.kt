@@ -22,4 +22,3 @@ data class Distributor(
 ) {
     val fullName = "$name ($value)"
 }
-

@@ -11,9 +11,6 @@ package com.echo.appnav.session
 import androidx.annotation.VisibleForTesting
 import com.bumble.appyx.core.state.MutableSavedStateMap
 import com.bumble.appyx.core.state.SavedStateMap
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.androidutils.hash.hash
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -21,6 +18,9 @@ import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.AnalyticsUserData
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -146,4 +146,3 @@ private data class InMemoryMatrixSession(
     val matrixClient: MatrixClient,
     val syncOrchestrator: SyncOrchestrator,
 )
-

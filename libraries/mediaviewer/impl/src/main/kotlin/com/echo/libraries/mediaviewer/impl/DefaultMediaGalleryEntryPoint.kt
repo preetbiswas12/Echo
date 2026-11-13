@@ -10,11 +10,11 @@ package com.echo.libraries.mediaviewer.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.mediaviewer.api.MediaGalleryEntryPoint
 import com.echo.libraries.mediaviewer.impl.gallery.root.MediaGalleryFlowNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultMediaGalleryEntryPoint : MediaGalleryEntryPoint {
@@ -29,4 +29,3 @@ class DefaultMediaGalleryEntryPoint : MediaGalleryEntryPoint {
         )
     }
 }
-

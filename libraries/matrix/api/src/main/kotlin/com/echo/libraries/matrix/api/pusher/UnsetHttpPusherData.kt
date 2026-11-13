@@ -12,4 +12,3 @@ data class UnsetHttpPusherData(
     val pushKey: String,
     val appId: String,
 )
-

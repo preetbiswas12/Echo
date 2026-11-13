@@ -202,4 +202,3 @@ internal fun PollAnswerViewEndedSelectedPreview() = ElementPreview {
         answerItem = aPollAnswerItem(showVotes = true, isSelected = true, isEnabled = false, isWinner = false),
     )
 }
-

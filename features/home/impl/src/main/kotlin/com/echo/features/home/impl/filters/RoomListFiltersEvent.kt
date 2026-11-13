@@ -12,4 +12,3 @@ sealed interface RoomListFiltersEvent {
     data class ToggleFilter(val filter: RoomListFilter) : RoomListFiltersEvent
     data object ClearSelectedFilters : RoomListFiltersEvent
 }
-

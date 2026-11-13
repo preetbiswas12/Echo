@@ -9,11 +9,11 @@ package com.echo.libraries.emoji.impl.picker
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
-import io.element.android.emojibasebindings.Emoji
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.emoji.api.picker.EmojiPickerRenderer
 import com.echo.libraries.emoji.api.picker.EmojiPickerState
+import dev.zacsweers.metro.ContributesBinding
+import io.element.android.emojibasebindings.Emoji
 import kotlinx.collections.immutable.ImmutableSet
 
 @ContributesBinding(SessionScope::class)
@@ -39,4 +39,3 @@ class DefaultEmojiPickerRenderer : EmojiPickerRenderer {
         }
     }
 }
-

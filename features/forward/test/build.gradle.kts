@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.features.forward.api)
     implementation(projects.tests.testutils)
 }
-
-

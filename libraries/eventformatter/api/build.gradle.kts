@@ -17,5 +17,3 @@ android {
 dependencies {
     implementation(projects.libraries.matrix.api)
 }
-
-

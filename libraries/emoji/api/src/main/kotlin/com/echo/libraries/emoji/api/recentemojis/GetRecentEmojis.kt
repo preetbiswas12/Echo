@@ -26,4 +26,3 @@ fun interface GetRecentEmojis {
 object EmptyGetRecentEmojis : GetRecentEmojis {
     override suspend fun invoke(): Result<ImmutableList<String>> = Result.success(persistentListOf())
 }
-

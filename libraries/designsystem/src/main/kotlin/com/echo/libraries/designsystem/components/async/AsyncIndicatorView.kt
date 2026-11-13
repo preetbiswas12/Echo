@@ -80,4 +80,3 @@ internal fun AsyncIndicatorFailurePreview() {
         AsyncIndicator.Failure(text = "Failed")
     }
 }
-

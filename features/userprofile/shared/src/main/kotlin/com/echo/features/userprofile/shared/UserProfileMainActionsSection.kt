@@ -77,4 +77,3 @@ internal fun UserProfileMainActionsSectionPreview() = ElementPreview {
         onCall = { }
     )
 }
-

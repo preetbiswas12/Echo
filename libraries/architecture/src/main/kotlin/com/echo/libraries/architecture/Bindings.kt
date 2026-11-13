@@ -38,4 +38,3 @@ fun <T : Any> Node.bindings(klass: Class<T>): T {
         .firstOrNull()
         ?: error("Unable to find bindings for ${klass.name}")
 }
-

@@ -13,4 +13,3 @@ class FakeFileSizeFormatter : FileSizeFormatter {
         return "$fileSize Bytes"
     }
 }
-

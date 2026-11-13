@@ -42,4 +42,3 @@ fun aBuildMeta(
     flavorDescription = flavorDescription,
     flavorShortDescription = flavorShortDescription,
 )
-

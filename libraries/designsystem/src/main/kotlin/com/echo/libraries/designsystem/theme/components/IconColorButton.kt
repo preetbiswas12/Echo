@@ -110,4 +110,3 @@ internal fun IconColorButtonPreview() = ElementPreview {
         }
     }
 }
-

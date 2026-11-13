@@ -8,12 +8,12 @@
 
 package com.echo.libraries.mediaviewer.impl.viewer
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EVENT_ID_2
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemImage
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemLoadingIndicator
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class PagerKeysHandlerTest {
@@ -75,4 +75,3 @@ class PagerKeysHandlerTest {
         assertThat(sut.getKey(image1)).isEqualTo(1)
     }
 }
-

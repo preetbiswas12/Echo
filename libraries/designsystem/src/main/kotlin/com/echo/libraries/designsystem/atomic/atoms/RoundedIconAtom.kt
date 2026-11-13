@@ -107,4 +107,3 @@ enum class RoundedIconAtomSize {
     Medium,
     Big,
 }
-

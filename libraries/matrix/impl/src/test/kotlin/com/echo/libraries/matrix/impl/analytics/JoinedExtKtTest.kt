@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.libraries.matrix.test.room.aRoomInfo
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -103,4 +103,3 @@ class JoinedExtKtTest {
         }
     }
 }
-

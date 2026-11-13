@@ -16,4 +16,3 @@ sealed interface AllowRule {
     data class RoomMembership(val roomId: RoomId) : AllowRule
     data class Custom(val json: String) : AllowRule
 }
-

@@ -8,9 +8,6 @@
 
 package com.echo.x.di
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Multibinds
 import com.echo.features.callnative.api.NativeCallScreenHost
 import com.echo.features.enterprise.api.AppStartupHook
 import com.echo.features.enterprise.api.EnterpriseService
@@ -26,6 +23,9 @@ import com.echo.libraries.matrix.api.platform.InitPlatformService
 import com.echo.libraries.matrix.api.tracing.TracingService
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Multibinds
 
 @ContributesTo(AppScope::class)
 interface AppBindings {
@@ -61,4 +61,3 @@ interface AppBindings {
     @Multibinds(allowEmpty = true)
     fun appStartupHooks(): Set<AppStartupHook>
 }
-

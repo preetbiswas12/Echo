@@ -63,4 +63,3 @@ class FakePushProvider(
         return rotateTokenLambda()
     }
 }
-

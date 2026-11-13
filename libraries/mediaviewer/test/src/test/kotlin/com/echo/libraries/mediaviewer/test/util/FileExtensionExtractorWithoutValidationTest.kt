@@ -19,4 +19,3 @@ class FileExtensionExtractorWithoutValidationTest {
         assertThat(sut.extractFromName("test.bla")).isEqualTo("bla")
     }
 }
-

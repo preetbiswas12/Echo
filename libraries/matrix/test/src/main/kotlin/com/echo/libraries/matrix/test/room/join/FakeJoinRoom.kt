@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.test.room.join
 
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.room.join.JoinRoom
 import com.echo.tests.testutils.simulateLongTask
+import im.vector.app.features.analytics.plan.JoinedRoom
 
 class FakeJoinRoom(
     var lambda: (RoomIdOrAlias, List<String>, JoinedRoom.Trigger) -> Result<Unit>
@@ -24,4 +24,3 @@ class FakeJoinRoom(
         lambda(roomIdOrAlias, serverNames, trigger)
     }
 }
-

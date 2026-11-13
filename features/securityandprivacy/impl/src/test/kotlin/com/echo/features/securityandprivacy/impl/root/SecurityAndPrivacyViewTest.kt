@@ -231,4 +231,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setSecurityAndPrivacyView(
         )
     }
 }
-

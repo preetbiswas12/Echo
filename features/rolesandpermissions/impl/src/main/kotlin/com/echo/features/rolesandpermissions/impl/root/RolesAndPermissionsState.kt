@@ -29,4 +29,3 @@ enum class SelfDemoteAction(val role: RoomMember.Role, val titleRes: Int) {
     ToModerator(RoomMember.Role.Moderator, R.string.screen_room_roles_and_permissions_change_role_demote_to_moderator),
     ToMember(RoomMember.Role.User, R.string.screen_room_roles_and_permissions_change_role_demote_to_member)
 }
-

@@ -31,4 +31,3 @@ interface LoginEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

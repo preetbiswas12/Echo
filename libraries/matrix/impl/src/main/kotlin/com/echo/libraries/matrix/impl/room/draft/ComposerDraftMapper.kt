@@ -47,4 +47,3 @@ private fun ComposerDraftType.into(): RustComposerDraftType {
         is ComposerDraftType.Edit -> RustComposerDraftType.Edit(eventId.value)
     }
 }
-

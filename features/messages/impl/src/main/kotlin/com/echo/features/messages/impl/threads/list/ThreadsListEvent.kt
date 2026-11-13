@@ -10,4 +10,3 @@ package com.echo.features.messages.impl.threads.list
 sealed interface ThreadsListEvent {
     data object Paginate : ThreadsListEvent
 }
-

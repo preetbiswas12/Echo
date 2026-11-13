@@ -39,4 +39,3 @@ class FakeFfiRoomListService : RoomListService(NoHandle) {
         return FakeFfiTaskHandle()
     }
 }
-

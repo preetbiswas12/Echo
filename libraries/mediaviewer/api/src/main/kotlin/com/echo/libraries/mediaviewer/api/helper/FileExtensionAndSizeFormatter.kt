@@ -17,4 +17,3 @@ fun formatFileExtensionAndSize(extension: String, size: String?): String {
         }
     }
 }
-

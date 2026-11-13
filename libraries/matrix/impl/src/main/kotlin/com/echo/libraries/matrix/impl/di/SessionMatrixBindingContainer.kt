@@ -8,9 +8,6 @@
 
 package com.echo.libraries.matrix.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.ClientUrlContentFetcher
@@ -30,6 +27,9 @@ import com.echo.libraries.matrix.api.search.MessageSearchService
 import com.echo.libraries.matrix.api.spaces.SpaceService
 import com.echo.libraries.matrix.api.sync.SyncService
 import com.echo.libraries.matrix.api.verification.SessionVerificationService
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
 import kotlinx.coroutines.CoroutineScope
 
 @BindingContainer
@@ -121,4 +121,3 @@ object SessionMatrixBindingContainer {
         return matrixClient.messageSearchService
     }
 }
-

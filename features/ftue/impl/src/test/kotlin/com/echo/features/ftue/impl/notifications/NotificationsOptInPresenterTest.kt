@@ -12,7 +12,6 @@ import android.os.Build
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.permissions.api.PermissionStateProvider
 import com.echo.libraries.permissions.api.PermissionsPresenter
 import com.echo.libraries.permissions.test.FakePermissionStateProvider
@@ -20,6 +19,7 @@ import com.echo.libraries.permissions.test.FakePermissionsPresenter
 import com.echo.libraries.permissions.test.FakePermissionsPresenterFactory
 import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
@@ -133,4 +133,3 @@ class NotificationsOptInPresenterTest {
         buildVersionSdkIntProvider = FakeBuildVersionSdkIntProvider(sdkIntVersion),
     )
 }
-

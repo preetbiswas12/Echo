@@ -79,4 +79,3 @@ internal fun RoomAddressFieldPreview() = ElementPreview {
         supportingText = "This is the address that people will use to join your room",
     )
 }
-

@@ -18,4 +18,3 @@ fun RoomMember.getAvatarData(size: AvatarSize) = AvatarData(
     url = avatarUrl,
     size = size,
 )
-

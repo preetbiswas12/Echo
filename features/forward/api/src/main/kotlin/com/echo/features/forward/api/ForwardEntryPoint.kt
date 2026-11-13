@@ -33,4 +33,3 @@ interface ForwardEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

@@ -18,4 +18,3 @@ class UserIdTest {
         assertThat(userId.domainName).isEqualTo("example.org")
     }
 }
-

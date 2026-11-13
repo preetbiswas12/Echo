@@ -15,7 +15,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.crypto.sendfailure.VerifiedUserSendFailure
 import com.echo.features.messages.impl.crypto.sendfailure.VerifiedUserSendFailureFactory
 import com.echo.libraries.architecture.AsyncAction
@@ -23,6 +22,7 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingState
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.item.event.LocalEventSendState
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -97,4 +97,3 @@ class ResolveVerifiedUserSendFailurePresenter(
         )
     }
 }
-

@@ -13,9 +13,6 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.permissions.api.PermissionStateProvider
@@ -23,6 +20,9 @@ import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
 import com.echo.libraries.permissions.noop.NoopPermissionsPresenter
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -88,4 +88,3 @@ class NotificationsOptInPresenter(
         permissionStateProvider.setPermissionDenied(Manifest.permission.POST_NOTIFICATIONS, true)
     }
 }
-

@@ -279,4 +279,3 @@ internal fun MediaDetailsBottomSheetPreview(
         onDismiss = {},
     )
 }
-

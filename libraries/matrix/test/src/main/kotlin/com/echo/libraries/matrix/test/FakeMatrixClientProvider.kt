@@ -19,4 +19,3 @@ class FakeMatrixClientProvider(
 
     override fun getOrNull(sessionId: SessionId): MatrixClient? = getClient(sessionId).getOrNull()
 }
-

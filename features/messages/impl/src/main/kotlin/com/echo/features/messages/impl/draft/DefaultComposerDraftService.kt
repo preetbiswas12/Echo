@@ -8,11 +8,11 @@
 
 package com.echo.features.messages.impl.draft
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.ThreadId
 import com.echo.libraries.matrix.api.room.draft.ComposerDraft
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class DefaultComposerDraftService(
@@ -35,4 +35,3 @@ class DefaultComposerDraftService(
         }
     }
 }
-

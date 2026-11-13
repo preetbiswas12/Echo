@@ -96,4 +96,3 @@ internal fun ProtectedViewPreview(
         )
     }
 }
-

@@ -86,4 +86,3 @@ private fun coerceWidthAndHeight(width: Int, height: Int, is2x: Boolean): Pair<I
 private val widthHeightRange = 1..2048 // API will error if outside 1-2048 range @1x.
 private val widthHeightRange2x = 1..1024 // API will error if outside 1-1024 range @2x.
 private val zoomRange = 0.0..22.0 // API will error if outside 0-22 range.
-

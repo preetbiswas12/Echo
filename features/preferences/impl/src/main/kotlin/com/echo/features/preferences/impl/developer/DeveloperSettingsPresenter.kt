@@ -17,9 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.toArgb
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.preferences.impl.developer.appsettings.AppDeveloperSettingsState
 import com.echo.features.preferences.impl.tasks.ClearCacheUseCase
@@ -41,6 +38,9 @@ import com.echo.libraries.matrix.api.core.DeviceId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.notificationsettings.NotificationSettingsService
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.toImmutableMap
 import kotlinx.coroutines.CoroutineScope
@@ -233,4 +233,3 @@ private val prettyPrintJson = Json {
 private fun String.prettyPrintJson(): String = runCatchingExceptions {
     prettyPrintJson.encodeToString(JsonElement.serializer(), prettyPrintJson.parseToJsonElement(this))
 }.getOrDefault(this)
-

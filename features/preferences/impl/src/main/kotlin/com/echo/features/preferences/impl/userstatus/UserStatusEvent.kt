@@ -20,4 +20,3 @@ sealed interface UserStatusEvent {
     data object DismissEmojiPicker : UserStatusEvent
     data object ClearStatus : UserStatusEvent
 }
-

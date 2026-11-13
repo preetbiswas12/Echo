@@ -104,4 +104,3 @@ private fun EmojiItemView(emoji: VerificationEmoji, modifier: Modifier = Modifie
         )
     }
 }
-

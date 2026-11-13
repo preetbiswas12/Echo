@@ -12,4 +12,3 @@ enum class RenderingMode {
     RoomList,
     Timeline,
 }
-

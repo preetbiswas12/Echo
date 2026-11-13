@@ -61,4 +61,3 @@ interface SlashCommandService {
         slashCommand: SlashCommand.SlashCommandAdmin,
     ): Result<Unit>
 }
-

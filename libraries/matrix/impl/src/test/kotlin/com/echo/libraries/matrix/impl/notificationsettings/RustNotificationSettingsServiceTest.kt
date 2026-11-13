@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.notificationsettings
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiClient
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiNotificationSettings
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -42,4 +42,3 @@ class RustNotificationSettingsServiceTest {
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

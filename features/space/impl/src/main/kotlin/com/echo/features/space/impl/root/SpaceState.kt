@@ -50,4 +50,3 @@ sealed interface TopicViewerState {
     data object Hidden : TopicViewerState
     data class Shown(val topic: String) : TopicViewerState
 }
-

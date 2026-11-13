@@ -8,9 +8,9 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.mediaviewer.impl.model.GroupedMediaItems
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 
 @Inject
@@ -74,4 +74,3 @@ class MediaItemsPostProcessor {
         )
     }
 }
-

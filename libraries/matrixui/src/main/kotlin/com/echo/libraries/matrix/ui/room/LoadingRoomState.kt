@@ -10,10 +10,10 @@ package com.echo.libraries.matrix.ui.room
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.room.JoinedRoom
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -61,4 +61,3 @@ class LoadingRoomStateFlowFactory(private val matrixClient: MatrixClient) {
     }
         .asFlow()
 }
-

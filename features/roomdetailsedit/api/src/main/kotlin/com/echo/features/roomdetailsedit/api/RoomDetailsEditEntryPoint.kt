@@ -11,4 +11,3 @@ package com.echo.features.roomdetailsedit.api
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 fun interface RoomDetailsEditEntryPoint : SimpleFeatureEntryPoint
-

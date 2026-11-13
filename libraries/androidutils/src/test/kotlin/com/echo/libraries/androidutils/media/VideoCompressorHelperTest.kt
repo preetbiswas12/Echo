@@ -9,8 +9,8 @@
 package com.echo.libraries.androidutils.media
 
 import android.util.Size
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class VideoCompressorHelperTest : RobolectricTest() {
@@ -76,4 +76,3 @@ class VideoCompressorHelperTest : RobolectricTest() {
         assertThat(bitrate).isEqualTo(437_400L)
     }
 }
-

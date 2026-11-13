@@ -7,7 +7,6 @@
 
 package com.echo.features.preferences.impl.userstatus
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.emoji.test.fakeEmojiPickerPresenterFactory
 import com.echo.libraries.matrix.api.user.DisplayedStatus
@@ -15,6 +14,7 @@ import com.echo.libraries.matrix.api.user.UserStatus
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -164,4 +164,3 @@ class UserStatusPresenterTest {
         }
     }
 }
-

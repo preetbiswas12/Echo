@@ -7,7 +7,6 @@
 
 package com.echo.features.preferences.impl.tasks
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
@@ -15,6 +14,7 @@ import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.timeline.ReceiptType
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
 import com.echo.libraries.push.api.notifications.NotificationCleaner
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 
@@ -43,4 +43,3 @@ class DefaultMarkRoomAsRead(
         }
     }
 }
-

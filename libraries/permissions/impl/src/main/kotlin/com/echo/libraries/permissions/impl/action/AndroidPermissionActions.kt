@@ -10,11 +10,11 @@ package com.echo.libraries.permissions.impl.action
 
 import android.Manifest
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.system.openAppSettingsPage
 import com.echo.libraries.androidutils.system.startNotificationSettingsIntent
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class AndroidPermissionActions(
@@ -27,4 +27,3 @@ class AndroidPermissionActions(
         }
     }
 }
-

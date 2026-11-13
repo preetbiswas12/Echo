@@ -29,4 +29,3 @@ import kotlin.reflect.KClass
 annotation class ContributesNode(
     val scope: KClass<*>,
 )
-

@@ -132,4 +132,3 @@ internal fun SignedOutViewPreview(
         state = state,
     )
 }
-

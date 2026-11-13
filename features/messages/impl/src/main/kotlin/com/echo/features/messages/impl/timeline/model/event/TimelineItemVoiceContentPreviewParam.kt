@@ -58,4 +58,3 @@ fun aTimelineItemVoiceContent(
     formattedFileSize = "1.0 MB",
     fileExtension = "ogg",
 )
-

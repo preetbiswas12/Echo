@@ -7,13 +7,12 @@
 
 package com.echo.features.enterprise.impl.remoteconfig
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.enterprise.api.remoteconfig.CustomMapTilerConfigProvider
 import com.echo.features.enterprise.api.remoteconfig.MapTilerConfig
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultCustomMapTilerConfigProvider : CustomMapTilerConfigProvider {
     override suspend fun get(): Result<MapTilerConfig?> = Result.success(null)
 }
-

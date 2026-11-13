@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.oauth
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.oauth.AccountManagementAction
 import com.echo.libraries.matrix.test.A_DEVICE_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.AccountManagementAction as RustAccountManagementAction
 
@@ -27,4 +27,3 @@ class AccountManagementActionKtTest {
             .isEqualTo(RustAccountManagementAction.DevicesList)
     }
 }
-

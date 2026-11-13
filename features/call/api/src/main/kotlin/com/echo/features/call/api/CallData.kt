@@ -20,4 +20,3 @@ data class CallData(
     val roomId: RoomId,
     val isAudioCall: Boolean
 ) : NodeInputs, Parcelable
-

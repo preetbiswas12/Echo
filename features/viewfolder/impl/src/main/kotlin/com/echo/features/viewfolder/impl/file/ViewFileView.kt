@@ -97,4 +97,3 @@ internal fun ViewFileViewPreview(@PreviewParameter(ViewFileStatePreviewParam::cl
         onBackClick = {},
     )
 }
-

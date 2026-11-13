@@ -9,7 +9,6 @@
 package com.echo.features.startchat.impl.userlist
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.matrix.ui.components.aMatrixUser
@@ -19,6 +18,7 @@ import com.echo.libraries.usersearch.api.UserSearchResultState
 import com.echo.libraries.usersearch.test.FakeUserRepository
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -210,4 +210,3 @@ class DefaultUserListPresenterTest {
         }
     }
 }
-

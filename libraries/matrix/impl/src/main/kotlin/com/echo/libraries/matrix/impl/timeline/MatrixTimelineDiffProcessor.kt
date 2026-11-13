@@ -171,4 +171,3 @@ private class DiffingResult(initialItems: List<MatrixTimelineItem>) {
         return hasNewEventsFromSync && hasMembershipChangeEventFromSync
     }
 }
-

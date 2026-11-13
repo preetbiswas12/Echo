@@ -687,4 +687,3 @@ internal fun AttachmentImageEditorViewPreview(
         onDoneClick = {},
     )
 }
-

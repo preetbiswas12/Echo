@@ -22,4 +22,3 @@ class InMemoryFirebaseStore(
         this.installationId = installationId
     }
 }
-

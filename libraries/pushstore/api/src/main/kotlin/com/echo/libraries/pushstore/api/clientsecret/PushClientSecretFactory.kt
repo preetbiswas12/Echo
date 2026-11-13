@@ -15,4 +15,3 @@ interface PushClientSecretFactory {
     /** Returns a new random secret. */
     fun create(): String
 }
-

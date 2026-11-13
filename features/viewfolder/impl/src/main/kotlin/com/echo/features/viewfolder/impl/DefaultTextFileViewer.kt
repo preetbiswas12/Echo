@@ -10,14 +10,14 @@ package com.echo.features.viewfolder.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.viewfolder.api.TextFileViewer
 import com.echo.features.viewfolder.impl.file.ColorationMode
 import com.echo.features.viewfolder.impl.file.FileContent
 import com.echo.libraries.androidutils.clipboard.ClipboardHelper
 import com.echo.libraries.androidutils.toast.ToastHelper
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 
 @ContributesBinding(AppScope::class)
@@ -42,4 +42,3 @@ class DefaultTextFileViewer(
         )
     }
 }
-

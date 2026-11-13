@@ -83,4 +83,3 @@ internal fun MissingKeyBackupViewPreview(@PreviewParameter(MissingKeyBackupState
         onOpenClassicClick = {},
     )
 }
-

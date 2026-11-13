@@ -8,12 +8,12 @@
 
 package com.echo.libraries.textcomposer.mentions
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
+import dev.zacsweers.metro.Inject
 
 private const val EVERYONE_MENTION_TEXT = "@room"
 
@@ -123,4 +123,3 @@ private const val EVERYONE_MENTION_TEXT = "@room"
         }
     }
 }
-

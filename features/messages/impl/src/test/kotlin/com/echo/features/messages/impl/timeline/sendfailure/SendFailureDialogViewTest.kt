@@ -147,4 +147,3 @@ class SendFailureDialogViewTest : RobolectricTest() {
         }
     }
 }
-

@@ -18,8 +18,6 @@ import com.bumble.appyx.core.navigation.transition.JumpToEndTransitionHandler
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.createroom.api.CreateRoomEntryPoint
 import com.echo.features.startchat.api.StartChatEntryPoint
@@ -33,6 +31,8 @@ import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SessionScope::class)
@@ -102,4 +102,3 @@ class StartChatFlowNode(
         }
     }
 }
-

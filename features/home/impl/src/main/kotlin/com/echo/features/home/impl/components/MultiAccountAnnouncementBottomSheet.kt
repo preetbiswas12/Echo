@@ -126,4 +126,3 @@ internal fun MultiAccountAnnouncementBottomSheetPreview() = ElementPreview(fillM
         onAddAccountClick = {},
     )
 }
-

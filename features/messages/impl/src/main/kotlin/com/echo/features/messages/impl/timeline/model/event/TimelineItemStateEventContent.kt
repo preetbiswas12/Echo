@@ -13,4 +13,3 @@ data class TimelineItemStateEventContent(
 ) : TimelineItemStateContent {
     override val type: String = "TimelineItemStateEventContent"
 }
-

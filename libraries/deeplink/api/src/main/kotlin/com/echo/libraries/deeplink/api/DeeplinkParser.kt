@@ -20,4 +20,3 @@ fun interface DeeplinkParser {
      */
     fun getFromIntent(intent: Intent): DeeplinkData?
 }
-

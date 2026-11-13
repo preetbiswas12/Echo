@@ -73,4 +73,3 @@ internal fun aMessageEvent(
     forwarder = null,
     forwarderProfile = null,
 )
-

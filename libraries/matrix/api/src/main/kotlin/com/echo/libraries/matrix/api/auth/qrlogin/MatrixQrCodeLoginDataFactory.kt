@@ -19,4 +19,3 @@ interface MatrixQrCodeLoginDataFactory {
      */
     fun parseQrCodeData(data: ByteArray): Result<MatrixQrCodeLoginData>
 }
-

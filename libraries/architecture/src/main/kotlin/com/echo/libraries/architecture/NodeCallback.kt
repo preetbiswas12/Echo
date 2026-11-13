@@ -18,4 +18,3 @@ inline fun <reified I : Plugin> Node.callback(): I {
 inline fun <reified I : Plugin> List<Plugin>.callback(): I {
     return requireNotNull(filterIsInstance<I>().singleOrNull()) { "Make sure to actually pass a Callback plugin to your node" }
 }
-

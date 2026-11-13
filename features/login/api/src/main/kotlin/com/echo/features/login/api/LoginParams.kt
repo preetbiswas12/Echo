@@ -20,4 +20,3 @@ data class LoginParams(
     val accountProvider: String,
     val loginHint: String?
 ) : Parcelable
-

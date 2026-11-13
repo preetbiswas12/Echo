@@ -60,4 +60,3 @@ internal fun PermissionsViewPreview(@PreviewParameter(PermissionsStatePreviewPar
         state = state,
     )
 }
-

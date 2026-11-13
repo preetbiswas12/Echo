@@ -94,4 +94,3 @@ val assetImageSvg = Asset(
     width = 800,
     height = 600,
 )
-

@@ -10,7 +10,6 @@ package com.echo.libraries.eventformatter.impl
 
 import androidx.annotation.StringRes
 import androidx.compose.ui.text.AnnotatedString
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.eventformatter.api.PinnedMessagesBannerFormatter
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
@@ -37,6 +36,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplay
 import com.echo.libraries.matrix.ui.messages.toPlainText
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultPinnedMessagesBannerFormatter(
@@ -119,4 +119,3 @@ class DefaultPinnedMessagesBannerFormatter(
         return prefixWith(prefix)
     }
 }
-

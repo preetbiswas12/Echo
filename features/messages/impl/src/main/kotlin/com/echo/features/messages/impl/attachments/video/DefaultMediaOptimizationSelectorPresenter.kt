@@ -15,10 +15,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.mimetype.MimeTypes.isMimeTypeVideo
 import com.echo.libraries.di.SessionScope
@@ -29,6 +25,10 @@ import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProvider
 import com.echo.libraries.mediaupload.api.compressorHelper
 import com.echo.libraries.mediaviewer.api.local.LocalMedia
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import timber.log.Timber
@@ -196,4 +196,3 @@ class DefaultMediaOptimizationSelectorPresenter(
         )
     }
 }
-

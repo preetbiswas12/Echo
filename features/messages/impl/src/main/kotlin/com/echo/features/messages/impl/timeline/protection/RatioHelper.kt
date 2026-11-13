@@ -18,4 +18,3 @@ fun coerceRatioWhenHidingContent(aspectRatio: Float?, hideContent: Boolean): Flo
         aspectRatio
     }
 }
-

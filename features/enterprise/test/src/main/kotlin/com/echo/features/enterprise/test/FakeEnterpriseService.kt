@@ -91,4 +91,3 @@ class FakeEnterpriseService(
         return getNoisyNotificationChannelIdResult(sessionId)
     }
 }
-

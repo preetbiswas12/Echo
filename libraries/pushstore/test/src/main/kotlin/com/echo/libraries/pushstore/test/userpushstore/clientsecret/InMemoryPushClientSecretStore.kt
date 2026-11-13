@@ -32,4 +32,3 @@ class InMemoryPushClientSecretStore : PushClientSecretStore {
         return secrets.keys.firstOrNull { secrets[it] == clientSecret }
     }
 }
-

@@ -18,4 +18,3 @@ fun openLearnMorePage(context: Context) {
     val intent = Intent(Intent.ACTION_VIEW, AuthenticationConfig.SLIDING_SYNC_READ_MORE_URL.toUri())
     tryOrNull { context.startActivity(intent) }
 }
-

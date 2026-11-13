@@ -53,4 +53,3 @@ sealed interface PinnedMessagesListState {
         }
     }
 }
-

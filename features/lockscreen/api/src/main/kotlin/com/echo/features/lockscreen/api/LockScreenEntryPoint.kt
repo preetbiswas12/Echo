@@ -34,4 +34,3 @@ interface LockScreenEntryPoint : FeatureEntryPoint {
         Setup,
     }
 }
-

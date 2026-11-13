@@ -79,4 +79,3 @@ fun aCreateRoomRootState(
     startDmAction = startDmAction,
     eventSink = eventSink,
 )
-

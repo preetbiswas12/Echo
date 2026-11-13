@@ -138,4 +138,3 @@ class KnockRequestsService(
 }
 
 private fun knockRequestNotFoundResult() = Result.failure<Unit>(KnockRequestsException.KnockRequestNotFound)
-

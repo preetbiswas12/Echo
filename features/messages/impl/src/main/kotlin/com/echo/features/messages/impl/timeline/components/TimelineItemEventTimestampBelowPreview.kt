@@ -22,4 +22,3 @@ internal fun TimelineItemEventTimestampBelowPreview() = ElementPreviewLight {
         event = aTimelineItemEvent(content = aTimelineItemPollContent()),
     )
 }
-

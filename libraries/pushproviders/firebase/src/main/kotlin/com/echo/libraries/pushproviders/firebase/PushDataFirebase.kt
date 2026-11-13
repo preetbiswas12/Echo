@@ -43,4 +43,3 @@ fun PushDataFirebase.toPushData(): PushData? {
         clientSecret = safeClientSecret,
     )
 }
-

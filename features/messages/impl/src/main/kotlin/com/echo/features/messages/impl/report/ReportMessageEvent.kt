@@ -14,4 +14,3 @@ sealed interface ReportMessageEvent {
     data object Report : ReportMessageEvent
     data object ClearError : ReportMessageEvent
 }
-

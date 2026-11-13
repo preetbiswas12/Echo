@@ -60,4 +60,3 @@ object MessageEventContent {
             .withMentions(intentionalMentions.map())
     }
 }
-

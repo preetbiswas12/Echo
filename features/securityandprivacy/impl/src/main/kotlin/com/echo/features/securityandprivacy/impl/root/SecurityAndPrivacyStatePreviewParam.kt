@@ -160,4 +160,3 @@ fun aSecurityAndPrivacyState(
     arePublicRoomsDisabledByHomeserver = arePublicRoomsDisabledByHomeserver,
     eventSink = eventSink,
 )
-

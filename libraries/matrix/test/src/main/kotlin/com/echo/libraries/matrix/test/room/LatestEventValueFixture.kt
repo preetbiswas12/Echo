@@ -46,4 +46,3 @@ fun aLocalLatestEvent(
         isSending = isSending,
     )
 }
-

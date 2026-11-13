@@ -19,4 +19,3 @@ class FakePollHistoryEntryPoint : PollHistoryEntryPoint {
         buildContext: BuildContext,
     ): Node = lambdaError()
 }
-

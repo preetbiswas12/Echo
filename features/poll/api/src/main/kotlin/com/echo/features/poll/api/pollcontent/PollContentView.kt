@@ -357,4 +357,3 @@ internal fun PollContentViewCreatorEndedPreview() = ElementPreview {
         onEndPoll = {},
     )
 }
-

@@ -31,4 +31,3 @@ internal fun MapTilerConfig.lightMapIdOrDefault(): String {
 internal fun MapTilerConfig.darkMapIdOrDefault(): String {
     return darkStyleId?.takeIf { it.isNotBlank() } ?: MapTilerDefaults.DARK_MAP_ID
 }
-

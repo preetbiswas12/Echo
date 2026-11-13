@@ -8,9 +8,9 @@
 package com.echo.features.login.impl.screens.classic.missingkeybackup
 
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
+import dev.zacsweers.metro.Inject
 
 @Inject
 class MissingKeyBackupPresenter(
@@ -23,4 +23,3 @@ class MissingKeyBackupPresenter(
         )
     }
 }
-

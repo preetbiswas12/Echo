@@ -20,4 +20,3 @@ fun UserProfile.map() = MatrixUser(
     rawStatus = status?.into(),
     displayedStatus = DisplayedStatus.from(status, call)
 )
-

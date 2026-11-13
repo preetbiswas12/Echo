@@ -193,4 +193,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setRolesAndPermissionsView(
         )
     }
 }
-

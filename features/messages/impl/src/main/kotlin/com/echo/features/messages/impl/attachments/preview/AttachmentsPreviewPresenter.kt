@@ -20,9 +20,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.messages.impl.attachments.Attachment
 import com.echo.features.messages.impl.attachments.preview.imageeditor.AttachmentImageEditor
 import com.echo.features.messages.impl.attachments.preview.imageeditor.AttachmentImageEditorState
@@ -50,6 +47,9 @@ import com.echo.libraries.mediaupload.api.allFiles
 import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.libraries.textcomposer.model.TextEditorState
 import com.echo.libraries.textcomposer.model.rememberMarkdownTextEditorState
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CancellationException
@@ -561,4 +561,3 @@ class AttachmentsPreviewPresenter(
         }
     )
 }
-

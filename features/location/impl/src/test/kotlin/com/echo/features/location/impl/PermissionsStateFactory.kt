@@ -22,4 +22,3 @@ fun aPermissionsState(
         eventSink = {},
     )
 }
-

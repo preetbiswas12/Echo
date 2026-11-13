@@ -17,4 +17,3 @@ data class VisualListItemData(
     val iconVector: ImageVector? = null,
     val iconComposable: @Composable () -> Unit = {},
 )
-

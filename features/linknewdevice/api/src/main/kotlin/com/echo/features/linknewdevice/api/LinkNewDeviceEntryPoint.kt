@@ -23,4 +23,3 @@ interface LinkNewDeviceEntryPoint : FeatureEntryPoint {
         callback: Callback,
     ): Node
 }
-

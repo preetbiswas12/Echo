@@ -15,4 +15,3 @@ enum class CurrentUserMembership {
     KNOCKED,
     BANNED,
 }
-

@@ -8,10 +8,10 @@
 
 package com.echo.x.di
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.appnav.di.RoomGraphFactory
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultRoomGraphFactory(
@@ -22,4 +22,3 @@ class DefaultRoomGraphFactory(
             .create(room, room)
     }
 }
-

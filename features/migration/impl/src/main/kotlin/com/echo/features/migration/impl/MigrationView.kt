@@ -55,4 +55,3 @@ internal fun MigrationViewPreview(
         migrationState = state,
     )
 }
-

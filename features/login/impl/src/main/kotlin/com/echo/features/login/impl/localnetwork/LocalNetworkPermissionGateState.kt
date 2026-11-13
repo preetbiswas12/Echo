@@ -15,4 +15,3 @@ data class LocalNetworkPermissionGateState<T>(
     val requestPermission: () -> Unit,
     val abort: () -> Unit,
 )
-

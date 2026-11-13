@@ -24,4 +24,3 @@ class FakeDateFormatter(
         return formatLambda(timestamp, mode, useRelative)
     }
 }
-

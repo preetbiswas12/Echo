@@ -14,4 +14,3 @@ interface WidgetMessageInterceptor {
     val interceptedMessages: Flow<String>
     fun sendMessage(message: String)
 }
-

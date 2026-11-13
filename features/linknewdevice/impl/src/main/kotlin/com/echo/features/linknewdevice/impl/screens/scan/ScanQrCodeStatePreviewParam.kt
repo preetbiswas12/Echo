@@ -27,4 +27,3 @@ fun aScanQrCodeState(
     scanAction = scanAction,
     eventSink = eventSink
 )
-

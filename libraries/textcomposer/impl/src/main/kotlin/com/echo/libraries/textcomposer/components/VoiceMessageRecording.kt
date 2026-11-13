@@ -104,4 +104,3 @@ private fun RedRecordingDot() {
 internal fun VoiceMessageRecordingPreview() = ElementPreview {
     VoiceMessageRecording(List(100) { it.toFloat() / 100 }.toImmutableList(), 0.seconds)
 }
-

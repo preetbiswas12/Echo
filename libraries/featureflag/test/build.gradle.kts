@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.libraries.matrix.test)
     implementation(libs.coroutines.core)
 }
-
-

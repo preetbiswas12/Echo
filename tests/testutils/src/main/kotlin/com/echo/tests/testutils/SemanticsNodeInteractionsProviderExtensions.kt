@@ -85,4 +85,3 @@ fun AndroidComposeUiTest<ComponentActivity>.assertNodeWithTextIsDisplayed(@Strin
     val text = activity!!.getString(res)
     onNodeWithText(text).assertIsDisplayed()
 }
-

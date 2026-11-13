@@ -36,4 +36,3 @@ data class OutgoingVerificationState(
                 this is Verifying
     }
 }
-

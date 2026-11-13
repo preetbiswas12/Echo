@@ -33,4 +33,3 @@ data class LastLocation(
     /** The asset of the last location update. */
     val assetType: AssetType,
 )
-

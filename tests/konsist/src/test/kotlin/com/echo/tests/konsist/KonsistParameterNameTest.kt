@@ -24,4 +24,3 @@ class KonsistParameterNameTest {
             .assertEmpty(additionalMessage = "Please rename the parameter, for instance from 'onBackPress' to 'onBackClick'.")
     }
 }
-

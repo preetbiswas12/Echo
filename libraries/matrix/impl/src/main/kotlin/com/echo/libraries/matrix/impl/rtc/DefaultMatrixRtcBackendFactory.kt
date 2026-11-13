@@ -7,12 +7,12 @@
 
 package com.echo.libraries.matrix.impl.rtc
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.callnative.api.MatrixRtcBackendFactory
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.impl.RustMatrixClient
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rtc.MatrixBackend
 
 /**
@@ -38,4 +38,3 @@ class DefaultMatrixRtcBackendFactory(
         )
     }
 }
-

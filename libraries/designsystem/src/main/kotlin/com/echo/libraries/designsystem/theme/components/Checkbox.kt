@@ -115,4 +115,3 @@ internal fun CheckboxesPreview() = ElementThemedPreview(vertical = false) {
         }
     }
 }
-

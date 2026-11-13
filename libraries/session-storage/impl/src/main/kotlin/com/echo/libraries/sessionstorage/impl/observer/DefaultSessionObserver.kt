@@ -8,15 +8,15 @@
 
 package com.echo.libraries.sessionstorage.impl.observer
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.libraries.sessionstorage.api.toUserListFlow
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.map
@@ -83,4 +83,3 @@ class DefaultSessionObserver(
         }
     }
 }
-

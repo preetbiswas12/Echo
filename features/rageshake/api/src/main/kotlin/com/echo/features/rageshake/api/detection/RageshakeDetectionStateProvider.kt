@@ -17,4 +17,3 @@ fun aRageshakeDetectionState() = RageshakeDetectionState(
     preferenceState = aRageshakePreferencesState(),
     eventSink = {}
 )
-

@@ -8,9 +8,9 @@
 
 package com.echo.x.oidc
 
-import com.google.common.truth.Truth.assertThat
-import com.echo.services.toolbox.test.strings.FakeStringProvider
 import com.echo.R
+import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultOAuthRedirectUrlProviderTest {
@@ -27,4 +27,3 @@ class DefaultOAuthRedirectUrlProviderTest {
         assertThat(stringProvider.lastResIdParam).isEqualTo(R.string.login_redirect_scheme)
     }
 }
-

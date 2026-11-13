@@ -36,4 +36,3 @@ data class RoomPreviewInfo(
     /** The room's join rule. */
     val joinRule: JoinRule?,
 )
-

@@ -7,10 +7,10 @@
 
 package com.echo.libraries.htmlrenderer.api
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomAlias
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentMapOf
 import org.junit.Test
 
@@ -77,4 +77,3 @@ class MentionDisplayNamesTest {
         assertThat(displayNames.pillTextFor(MentionNodeContent.Everyone(displayText = "@room"))).isEqualTo("@room")
     }
 }
-

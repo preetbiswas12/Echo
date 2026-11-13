@@ -28,4 +28,3 @@ internal fun SecureBackupSetupViewChangePreview(
         onBackClick = {},
     )
 }
-

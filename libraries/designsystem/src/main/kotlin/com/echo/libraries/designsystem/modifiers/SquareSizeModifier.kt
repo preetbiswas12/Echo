@@ -178,4 +178,3 @@ internal fun SquareSizeModifierInsideSquarePreview() {
         }
     }
 }
-

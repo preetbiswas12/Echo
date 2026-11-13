@@ -9,6 +9,7 @@
 package com.echo.tests.konsist
 
 import androidx.compose.ui.tooling.preview.PreviewLightDark
+import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import com.google.common.truth.Truth.assertThat
 import com.lemonappdev.konsist.api.Konsist
 import com.lemonappdev.konsist.api.declaration.KoFunctionDeclaration
@@ -18,7 +19,6 @@ import com.lemonappdev.konsist.api.ext.list.withNameEndingWith
 import com.lemonappdev.konsist.api.ext.list.withoutName
 import com.lemonappdev.konsist.api.verify.assertEmpty
 import com.lemonappdev.konsist.api.verify.assertTrue
-import com.echo.libraries.designsystem.preview.PreviewsDayNight
 import org.junit.Test
 
 class KonsistPreviewTest {
@@ -252,4 +252,3 @@ class KonsistPreviewTest {
 private fun List<KoFunctionDeclaration>.withoutEnterpriseFunctions() = filter { function ->
     function.packagee?.hasNameStartingWith("com.echo.enterprise") != true
 }
-

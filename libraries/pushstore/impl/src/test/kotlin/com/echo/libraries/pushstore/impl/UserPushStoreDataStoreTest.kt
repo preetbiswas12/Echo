@@ -9,12 +9,12 @@
 package com.echo.libraries.pushstore.impl
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID_2
 import com.echo.libraries.preferences.test.FakePreferenceDataStoreFactory
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -95,4 +95,3 @@ class UserPushStoreDataStoreTest : RobolectricTest() {
         factory = FakePreferenceDataStoreFactory(),
     )
 }
-

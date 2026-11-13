@@ -11,10 +11,10 @@ package com.echo.features.lockscreen.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.api.LockScreenEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -73,4 +73,3 @@ class DefaultLockScreenEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

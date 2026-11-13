@@ -24,4 +24,3 @@ class FakeSendPollResponseAction : SendPollResponseAction {
         return Result.success(Unit)
     }
 }
-

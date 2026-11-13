@@ -7,7 +7,6 @@
 
 package com.echo.features.securityandprivacy.impl.root
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.test.FakeSessionEnterpriseService
 import com.echo.features.securityandprivacy.impl.FakeSecurityAndPrivacyNavigator
 import com.echo.features.securityandprivacy.impl.SecurityAndPrivacyNavigator
@@ -41,6 +40,7 @@ import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -1154,4 +1154,3 @@ class SecurityAndPrivacyPresenterTest {
         )
     }
 }
-

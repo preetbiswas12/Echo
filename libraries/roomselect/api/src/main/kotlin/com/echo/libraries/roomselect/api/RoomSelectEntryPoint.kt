@@ -54,4 +54,3 @@ interface RoomSelectEntryPoint : FeatureEntryPoint {
         const val DEFAULT_MAX_NUMBER_OF_ROOMS = 10
     }
 }
-

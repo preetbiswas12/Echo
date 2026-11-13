@@ -24,4 +24,3 @@ class FakeOnMissedCallNotificationHandler(
         addMissedCallNotificationLambda(sessionId, roomId, eventId)
     }
 }
-

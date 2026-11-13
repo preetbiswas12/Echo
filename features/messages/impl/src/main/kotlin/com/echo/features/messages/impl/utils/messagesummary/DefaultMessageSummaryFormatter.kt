@@ -9,7 +9,6 @@
 package com.echo.features.messages.impl.utils.messagesummary
 
 import android.content.Context
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.messages.impl.R
 import com.echo.features.messages.impl.timeline.model.event.RtcNotificationState
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemAttachmentsContent
@@ -35,6 +34,7 @@ import com.echo.libraries.core.extensions.toSafeLength
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class DefaultMessageSummaryFormatter(
@@ -86,4 +86,3 @@ class DefaultMessageSummaryFormatter(
             .toSafeLength()
     }
 }
-

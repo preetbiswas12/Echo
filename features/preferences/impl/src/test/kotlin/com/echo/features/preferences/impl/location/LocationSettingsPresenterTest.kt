@@ -7,11 +7,11 @@
 
 package com.echo.features.preferences.impl.location
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
@@ -69,4 +69,3 @@ class LocationSettingsPresenterTest {
         sessionCoroutineScope = this,
     )
 }
-

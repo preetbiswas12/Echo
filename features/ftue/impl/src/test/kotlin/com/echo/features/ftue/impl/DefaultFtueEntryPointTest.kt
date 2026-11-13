@@ -11,10 +11,10 @@ package com.echo.features.ftue.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.test.FakeLockScreenEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -42,4 +42,3 @@ class DefaultFtueEntryPointTest {
         assertThat(result).isInstanceOf(FtueFlowNode::class.java)
     }
 }
-

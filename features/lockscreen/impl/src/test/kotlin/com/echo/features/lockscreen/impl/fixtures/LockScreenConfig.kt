@@ -31,4 +31,3 @@ internal fun aLockScreenConfig(
         isWeakBiometricsEnabled = isWeakBiometricsEnabled,
     )
 }
-

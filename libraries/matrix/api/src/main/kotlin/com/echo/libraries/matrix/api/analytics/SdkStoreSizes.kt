@@ -19,4 +19,3 @@ data class SdkStoreSizes(
     val cryptoStore: ByteSize?,
     val searchIndex: ByteSize?,
 )
-

@@ -252,4 +252,3 @@ internal fun ShowLocationViewPreview(@PreviewParameter(ShowLocationStatePreviewP
         onBackClick = {},
     )
 }
-

@@ -30,4 +30,3 @@ interface SessionVerificationEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

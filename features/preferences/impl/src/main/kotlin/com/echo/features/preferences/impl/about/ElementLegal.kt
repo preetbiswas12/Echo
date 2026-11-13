@@ -34,4 +34,3 @@ fun getAllLegals(): ImmutableList<ElementLegal> {
         ElementLegal.PrivacyPolicy,
     )
 }
-

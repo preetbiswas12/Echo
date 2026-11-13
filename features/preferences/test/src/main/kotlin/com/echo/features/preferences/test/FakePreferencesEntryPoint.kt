@@ -30,4 +30,3 @@ class FakePreferencesEntryPoint : PreferencesEntryPoint {
         lambdaError()
     }
 }
-

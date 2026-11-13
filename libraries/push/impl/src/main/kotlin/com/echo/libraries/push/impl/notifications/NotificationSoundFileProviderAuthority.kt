@@ -16,4 +16,3 @@ internal const val NOTIFICATION_SOUND_FILE_PROVIDER_AUTHORITY_SUFFIX = ".filepro
 
 internal fun Context.notificationSoundFileProviderAuthority(): String =
     packageName + NOTIFICATION_SOUND_FILE_PROVIDER_AUTHORITY_SUFFIX
-

@@ -183,4 +183,3 @@ internal fun HomeSpacesViewPreview(
         contentPadding = PaddingValues(bottom = 112.dp),
     )
 }
-

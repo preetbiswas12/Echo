@@ -201,4 +201,3 @@ internal fun TimelineItemVideoViewHideMediaContentPreview() = ElementPreview {
         contentValidationState = NoopContentValidationState(),
     )
 }
-

@@ -142,4 +142,3 @@ fun AsyncIndicatorHost(
 
 internal fun MutableTransitionState<Boolean>.hasEntered() = currentState && isIdle
 internal fun MutableTransitionState<Boolean>.hasExited() = !currentState && isIdle
-

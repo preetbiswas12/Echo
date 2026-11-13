@@ -51,4 +51,3 @@ class ExpandableBottomSheetLayoutState {
         EXPANDED
     }
 }
-

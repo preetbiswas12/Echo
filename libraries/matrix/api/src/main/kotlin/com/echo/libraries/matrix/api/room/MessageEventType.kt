@@ -53,4 +53,3 @@ sealed interface MessageEventType {
     data object Voice : MessageEventType
     data class Other(val type: String) : MessageEventType
 }
-

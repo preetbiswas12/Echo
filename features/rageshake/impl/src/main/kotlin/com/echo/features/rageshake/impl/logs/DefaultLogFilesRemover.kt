@@ -8,10 +8,10 @@
 
 package com.echo.features.rageshake.impl.logs
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.logs.LogFilesRemover
 import com.echo.features.rageshake.impl.reporter.DefaultBugReporter
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import java.io.File
 
 @ContributesBinding(AppScope::class)
@@ -22,4 +22,3 @@ class DefaultLogFilesRemover(
         bugReporter.deleteAllFiles(predicate)
     }
 }
-

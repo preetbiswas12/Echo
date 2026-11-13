@@ -11,12 +11,12 @@ package com.echo.features.viewfolder.impl.folder
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.viewfolder.impl.model.Item
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -108,4 +108,3 @@ class ViewFolderPresenterTest {
         buildMeta = buildMeta,
     )
 }
-

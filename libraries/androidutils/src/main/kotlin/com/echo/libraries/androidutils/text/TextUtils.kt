@@ -28,4 +28,3 @@ fun CharSequence.safeToSpannable(): Spannable? = try {
     // This happens in unit tests
     null
 }
-

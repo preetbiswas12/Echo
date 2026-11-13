@@ -84,4 +84,3 @@ interface SessionPreferencesStore {
     /** Erases every preference of this session, so they all fall back to their defaults. */
     suspend fun clear()
 }
-

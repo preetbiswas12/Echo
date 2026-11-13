@@ -10,4 +10,3 @@ package com.echo.libraries.deeplink.impl
 
 internal const val SCHEME = "elementx"
 internal const val HOST = "open"
-

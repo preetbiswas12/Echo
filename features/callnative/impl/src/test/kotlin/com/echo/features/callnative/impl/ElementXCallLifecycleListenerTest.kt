@@ -7,16 +7,16 @@
 
 package com.echo.features.callnative.impl
 
-import com.google.common.truth.Truth.assertThat
-import io.element.android.call.api.ElementCallData
-import io.element.android.call.api.ElementCallEndReason
-import io.element.android.call.api.rtc.id.RoomId
 import com.echo.features.call.api.CurrentCall
 import com.echo.features.call.test.FakeCurrentCallTracker
 import com.echo.features.call.test.FakeRingingCallTracker
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
+import com.google.common.truth.Truth.assertThat
+import io.element.android.call.api.ElementCallData
+import io.element.android.call.api.ElementCallEndReason
+import io.element.android.call.api.rtc.id.RoomId
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -96,4 +96,3 @@ class ElementXCallLifecycleListenerTest {
         val A_CALL = ElementCallData(roomId = RoomId(A_ROOM_ID.value), isAudioCall = true, isStartingCall = true)
     }
 }
-

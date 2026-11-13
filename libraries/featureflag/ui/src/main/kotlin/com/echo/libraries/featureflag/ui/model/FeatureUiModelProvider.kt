@@ -17,4 +17,3 @@ fun aFeatureUiModelList(): ImmutableList<FeatureUiModel> {
         FeatureUiModel(key = "key2", title = "Display Room Events", description = null, icon = null, isEnabled = false),
     )
 }
-

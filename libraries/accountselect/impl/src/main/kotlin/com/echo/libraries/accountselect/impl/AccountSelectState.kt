@@ -14,4 +14,3 @@ import kotlinx.collections.immutable.ImmutableList
 data class AccountSelectState(
     val accounts: ImmutableList<MatrixUser>,
 )
-

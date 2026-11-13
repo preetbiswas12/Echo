@@ -8,11 +8,11 @@
 
 package com.echo.libraries.push.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.push.api.GetCurrentPushProvider
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultGetCurrentPushProvider(
@@ -22,4 +22,3 @@ class DefaultGetCurrentPushProvider(
         return pushStoreFactory.getOrCreate(sessionId).getPushProviderName()
     }
 }
-

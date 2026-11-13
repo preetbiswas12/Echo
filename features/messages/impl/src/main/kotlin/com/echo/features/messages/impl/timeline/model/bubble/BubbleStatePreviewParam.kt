@@ -40,4 +40,3 @@ internal fun aBubbleState(
     isMine = isMine,
     timelineRoomInfo = timelineRoomInfo,
 )
-

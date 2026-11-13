@@ -33,4 +33,3 @@ val RoomNotificationSettingsState.displayNotificationMode: RoomNotificationMode?
 val RoomNotificationSettingsState.displayIsDefault: Boolean? get() {
     return pendingSetDefault ?: roomNotificationSettings.dataOrNull()?.isDefault
 }
-

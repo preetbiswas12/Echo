@@ -17,4 +17,3 @@ data class TimelineItemDebugInfo(
     val originalJson: String?,
     val latestEditedJson: String?,
 ) : Parcelable
-

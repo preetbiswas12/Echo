@@ -37,4 +37,3 @@ interface HomeEntryPoint : FeatureEntryPoint {
         fun navigateToSession(sessionId: SessionId)
     }
 }
-

@@ -47,4 +47,3 @@ class LoadingIndicatorsPostProcessor(private val systemClock: SystemClock) {
         }
     }
 }
-

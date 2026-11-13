@@ -324,4 +324,3 @@ interface JoinedRoom : BaseRoom {
      */
     suspend fun setOwnMemberDisplayName(displayName: String): Result<Unit>
 }
-

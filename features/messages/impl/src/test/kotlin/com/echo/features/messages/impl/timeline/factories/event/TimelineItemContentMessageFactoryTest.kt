@@ -17,7 +17,6 @@ import android.text.style.URLSpan
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
 import androidx.core.text.toSpannable
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.location.api.Location
 import com.echo.features.messages.impl.timeline.model.event.AttachmentItem
 import com.echo.features.messages.impl.timeline.model.event.GalleryItem
@@ -80,6 +79,7 @@ import com.echo.libraries.matrix.test.timeline.aStickerContent
 import com.echo.libraries.matrix.ui.components.A_BLUR_HASH
 import com.echo.libraries.mediaviewer.test.util.FileExtensionExtractorWithoutValidation
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.test.runTest
@@ -1383,4 +1383,3 @@ fun CharSequence?.assertSpannedEquals(other: CharSequence?) {
         fail("Expected Spanned, got $thisString and $otherString")
     }
 }
-

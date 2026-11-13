@@ -37,4 +37,3 @@ data class TimelineItemVideoContent(
 
     val showCaption = caption != null
 }
-

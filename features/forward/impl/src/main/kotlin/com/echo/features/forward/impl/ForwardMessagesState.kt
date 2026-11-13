@@ -15,4 +15,3 @@ data class ForwardMessagesState(
     val forwardAction: AsyncAction<List<RoomId>>,
     val eventSink: (ForwardMessagesEvent) -> Unit
 )
-

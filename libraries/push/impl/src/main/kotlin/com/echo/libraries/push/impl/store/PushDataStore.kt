@@ -25,4 +25,3 @@ interface PushDataStore {
      */
     suspend fun reset()
 }
-

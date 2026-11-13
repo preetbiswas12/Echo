@@ -16,4 +16,3 @@ import androidx.compose.ui.unit.dp
  * Common padding for RoomList banners.
  */
 internal fun Modifier.roomListBannerPadding() = padding(horizontal = 16.dp, vertical = 8.dp)
-

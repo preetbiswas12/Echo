@@ -19,4 +19,3 @@ fun interface InviteFriendsUseCase {
      */
     fun execute(activity: Activity)
 }
-

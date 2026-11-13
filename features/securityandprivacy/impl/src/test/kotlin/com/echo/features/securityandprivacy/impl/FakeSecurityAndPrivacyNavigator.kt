@@ -37,4 +37,3 @@ class FakeSecurityAndPrivacyNavigator(
         closeManageAuthorizedSpacesLambda()
     }
 }
-

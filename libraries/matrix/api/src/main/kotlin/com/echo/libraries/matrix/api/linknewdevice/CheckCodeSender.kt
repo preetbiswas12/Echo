@@ -23,4 +23,3 @@ interface CheckCodeSender {
      */
     suspend fun send(code: UByte): Result<Unit>
 }
-

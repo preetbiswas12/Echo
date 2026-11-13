@@ -68,4 +68,3 @@ private fun previewPermissions(): RoomPowerLevelsValues {
         beaconInfo = RoomMember.Role.Moderator.powerLevel,
     )
 }
-

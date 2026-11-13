@@ -16,4 +16,3 @@ import org.matrix.rustcomponents.sdk.ClientBuilder
 class RustMatrixClientBuilder(
     val inner: ClientBuilder,
 ) : MatrixClientBuilder
-

@@ -11,7 +11,6 @@
 package com.echo.features.preferences.impl.root
 
 import app.cash.turbine.ReceiveTurbine
-import com.google.common.truth.Truth.assertThat
 import com.echo.compound.theme.Theme
 import com.echo.features.location.api.LocationService
 import com.echo.features.location.test.FakeLocationService
@@ -47,6 +46,7 @@ import com.echo.services.analytics.test.FakeAnalyticsService
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -405,4 +405,3 @@ class PreferencesRootPresenterTest {
         sessionCoroutineScope = this,
     )
 }
-

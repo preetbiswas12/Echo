@@ -79,4 +79,3 @@ class DefaultSimplePlayer(
 
     override fun release() = p.release()
 }
-

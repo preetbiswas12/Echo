@@ -14,4 +14,3 @@ class FakeToastHelper : ToastHelper {
         shownToasts.add(resId)
     }
 }
-

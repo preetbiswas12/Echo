@@ -13,8 +13,6 @@ import androidx.compose.ui.Modifier
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.securebackup.impl.R
 import com.echo.libraries.architecture.NodeInputs
@@ -22,6 +20,8 @@ import com.echo.libraries.architecture.inputs
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarMessage
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 
 @ContributesNode(SessionScope::class)
 @AssistedInject
@@ -65,4 +65,3 @@ class SecureBackupSetupNode(
         )
     }
 }
-

@@ -18,4 +18,3 @@ data class RoomListSearchState(
     val results: ImmutableList<RoomListRoomSummary>,
     val eventSink: (RoomListSearchEvent) -> Unit
 )
-

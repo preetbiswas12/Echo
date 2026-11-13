@@ -14,4 +14,3 @@ sealed interface InternalAcceptDeclineInviteEvent : AcceptDeclineInviteEvent {
     data object ClearAcceptActionState : InternalAcceptDeclineInviteEvent
     data object ClearDeclineActionState : InternalAcceptDeclineInviteEvent
 }
-

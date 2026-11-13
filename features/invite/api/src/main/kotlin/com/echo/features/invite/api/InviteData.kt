@@ -45,4 +45,3 @@ fun SpaceRoom.toInviteData(): InviteData {
         isDm = false,
     )
 }
-

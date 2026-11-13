@@ -11,4 +11,3 @@ package com.echo.libraries.designsystem.utils
 internal fun Boolean.asInt(): Int = if (this) 1 else 0
 
 val allBooleans = listOf(false, true)
-

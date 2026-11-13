@@ -8,7 +8,6 @@
 
 package com.echo.features.rageshake.impl.bugreport
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rageshake.api.reporter.BugReporter
 import com.echo.features.rageshake.impl.crash.A_CRASH_DATA
 import com.echo.features.rageshake.impl.crash.CrashDataStore
@@ -20,6 +19,7 @@ import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.test.A_FAILURE_REASON
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -240,4 +240,3 @@ internal fun TestScope.createPresenter(
     screenshotHolder = screenshotHolder,
     appCoroutineScope = this,
 )
-

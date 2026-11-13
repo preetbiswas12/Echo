@@ -8,8 +8,8 @@
 
 package com.echo.libraries.mediaviewer.impl.gallery.di
 
-import dev.zacsweers.metro.MapKey
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.MapKey
 import kotlin.reflect.KClass
 
 /**
@@ -19,4 +19,3 @@ import kotlin.reflect.KClass
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
 annotation class MediaItemEventContentKey(val value: KClass<out MediaItem.Event>)
-

@@ -17,9 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.libraries.androidutils.R
 import com.echo.libraries.architecture.AsyncData
@@ -46,6 +43,9 @@ import com.echo.libraries.mediaviewer.impl.model.mediaPermissions
 import com.echo.libraries.mediaviewer.impl.model.mediaSource
 import com.echo.libraries.mediaviewer.impl.model.thumbnailSource
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.onEach
@@ -267,4 +267,3 @@ private fun GroupedMediaItems?.find(eventId: EventId?): MediaItem.Event? {
     return (imageAndVideoItems + fileItems).filterIsInstance<MediaItem.Event>()
         .firstOrNull { it.eventId() == eventId }
 }
-

@@ -12,4 +12,3 @@ enum class RoomListMenuAction {
     InviteFriends,
     ReportBug
 }
-

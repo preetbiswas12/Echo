@@ -18,4 +18,3 @@ sealed interface UserProfileEvent {
     data object WithdrawVerification : UserProfileEvent
     data class CopyToClipboard(val text: String) : UserProfileEvent
 }
-

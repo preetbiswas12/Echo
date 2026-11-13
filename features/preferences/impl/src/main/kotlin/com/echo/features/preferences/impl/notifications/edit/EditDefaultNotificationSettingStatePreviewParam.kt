@@ -57,4 +57,3 @@ private fun anEditNotificationSettingRoomInfo(
     heroesAvatar = persistentListOf(),
     notificationMode = RoomNotificationMode.MENTIONS_AND_KEYWORDS_ONLY,
 )
-

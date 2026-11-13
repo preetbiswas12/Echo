@@ -9,7 +9,6 @@
 package com.echo.libraries.push.impl.troubleshoot
 
 import androidx.compose.ui.graphics.toArgb
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.appconfig.NotificationConfig
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.libraries.di.SessionScope
@@ -21,6 +20,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTest
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestDelegate
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
@@ -99,4 +99,3 @@ class NotificationTest(
 
     override suspend fun reset() = delegate.reset()
 }
-

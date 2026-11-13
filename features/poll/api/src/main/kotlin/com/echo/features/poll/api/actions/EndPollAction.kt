@@ -21,4 +21,3 @@ interface EndPollAction {
      */
     suspend fun execute(timeline: Timeline, pollStartId: EventId): Result<Unit>
 }
-

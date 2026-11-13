@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.pushproviders.api)
     implementation(projects.tests.testutils)
 }
-
-

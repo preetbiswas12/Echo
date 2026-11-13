@@ -33,4 +33,3 @@ interface ClientBuilderEnterpriseHook {
      */
     suspend fun beforeClientCreationWithSession(clientBuilder: MatrixClientBuilder, sessionId: SessionId): MatrixClientBuilder
 }
-

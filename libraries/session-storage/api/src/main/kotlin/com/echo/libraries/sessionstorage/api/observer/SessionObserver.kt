@@ -22,4 +22,3 @@ interface SessionObserver {
      */
     fun removeListener(listener: SessionListener)
 }
-

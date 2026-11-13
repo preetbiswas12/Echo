@@ -96,4 +96,3 @@ enum class RoomBadge {
     SHARED_HISTORY_SHARED,
     SHARED_HISTORY_WORLD_READABLE
 }
-

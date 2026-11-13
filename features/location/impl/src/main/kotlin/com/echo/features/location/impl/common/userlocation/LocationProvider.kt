@@ -189,4 +189,3 @@ class NotGrantedLocationProvider : LocationProvider {
 fun rememberNotGrantedLocationProvider(): NotGrantedLocationProvider {
     return remember { NotGrantedLocationProvider() }
 }
-

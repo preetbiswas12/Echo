@@ -13,4 +13,3 @@ class FakeOpenDistributorWebPageAction(
 ) : OpenDistributorWebPageAction {
     override fun execute() = executeAction()
 }
-

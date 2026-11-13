@@ -18,4 +18,3 @@ interface PinnedMessagesListNavigator {
     fun forwardEvent(eventId: EventId)
     fun navigateToThread(threadRootId: ThreadId)
 }
-

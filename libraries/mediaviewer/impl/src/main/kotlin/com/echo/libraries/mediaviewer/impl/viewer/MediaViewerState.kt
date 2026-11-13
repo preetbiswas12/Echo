@@ -64,4 +64,3 @@ sealed interface MediaViewerPageData {
         override val pagerKey: Long,
     ) : MediaViewerPageData
 }
-

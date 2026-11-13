@@ -15,4 +15,3 @@ interface UserServerResolver {
     /** Returns the server name, for instance `matrix.org` for `@alice:matrix.org`. */
     fun resolve(): String
 }
-

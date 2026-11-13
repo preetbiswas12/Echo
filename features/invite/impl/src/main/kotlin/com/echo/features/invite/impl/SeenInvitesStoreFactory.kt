@@ -18,4 +18,3 @@ interface SeenInvitesStoreFactory {
         sessionCoroutineScope: CoroutineScope,
     ): SeenInvitesStore
 }
-

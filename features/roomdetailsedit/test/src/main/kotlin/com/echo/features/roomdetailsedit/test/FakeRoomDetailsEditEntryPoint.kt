@@ -17,4 +17,3 @@ class FakeRoomDetailsEditEntryPoint : RoomDetailsEditEntryPoint {
         lambdaError()
     }
 }
-

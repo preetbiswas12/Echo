@@ -8,10 +8,10 @@
 
 package com.echo.features.messages.impl.timeline.components.receipt.bottomsheet
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.aTimelineItemEvent
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -46,4 +46,3 @@ class ReadReceiptBottomSheetPresenterTest {
 
     private fun createPresenter() = ReadReceiptBottomSheetPresenter()
 }
-

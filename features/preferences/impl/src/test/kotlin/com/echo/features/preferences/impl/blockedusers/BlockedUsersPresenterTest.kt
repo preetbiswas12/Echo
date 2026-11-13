@@ -11,7 +11,6 @@ package com.echo.features.preferences.impl.blockedusers
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.clipboard.FakeClipboardHelper
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
@@ -24,6 +23,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.libraries.ui.strings.CommonStrings
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
@@ -218,4 +218,3 @@ class BlockedUsersPresenterTest {
         snackbarDispatcher = snackbarDispatcher,
     )
 }
-

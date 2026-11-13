@@ -14,4 +14,3 @@ sealed interface AccountDeactivationEvent {
     data class DeactivateAccount(val isRetry: Boolean) : AccountDeactivationEvent
     data object CloseDialogs : AccountDeactivationEvent
 }
-

@@ -20,7 +20,6 @@ import com.bumble.appyx.navmodel.backstack.activeElement
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
 import com.bumble.appyx.testing.unit.common.helper.parentNodeTestHelper
 import com.bumble.appyx.utils.customisations.NodeCustomisationDirectoryImpl
-import com.google.common.truth.Truth.assertThat
 import com.echo.appnav.intent.IntentResolver
 import com.echo.appnav.root.RootNavStateFlowFactory
 import com.echo.appnav.root.RootPresenter
@@ -65,6 +64,7 @@ import com.echo.tests.testutils.node.FakeNodeFactoriesBindings
 import com.echo.tests.testutils.node.FakeParentNode
 import com.echo.tests.testutils.presenter.NotUsedPresenter
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runCurrent
@@ -260,4 +260,3 @@ class RootFlowNodeTest : RobolectricTest() {
         )
     }
 }
-

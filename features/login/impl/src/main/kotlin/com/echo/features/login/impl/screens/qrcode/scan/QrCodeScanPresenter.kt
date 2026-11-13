@@ -16,7 +16,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.login.impl.qrcode.QrCodeLoginManager
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginData
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginDataFactory
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
 import com.echo.libraries.matrix.api.auth.qrlogin.QrLoginException
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -102,4 +102,3 @@ class QrCodeScanPresenter(
         }
     }
 }
-

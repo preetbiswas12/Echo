@@ -10,4 +10,3 @@ package com.echo.features.linknewdevice.impl.screens.number
 object Config {
     const val VERIFICATION_CODE_LENGTH = 2
 }
-

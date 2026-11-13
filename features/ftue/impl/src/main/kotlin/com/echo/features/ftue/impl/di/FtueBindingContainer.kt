@@ -8,13 +8,13 @@
 
 package com.echo.features.ftue.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.ftue.impl.sessionverification.choosemode.ChooseSelfVerificationModePresenter
 import com.echo.features.ftue.impl.sessionverification.choosemode.ChooseSelfVerificationModeState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(SessionScope::class)
 @BindingContainer
@@ -22,4 +22,3 @@ interface FtueBindingContainer {
     @Binds
     fun bindChooseSelfVerificationModePresenter(presenter: ChooseSelfVerificationModePresenter): Presenter<ChooseSelfVerificationModeState>
 }
-

@@ -62,4 +62,3 @@ fun LocationShareItem.toMarkerData(): LocationMarkerData {
         variant = pinVariant,
     )
 }
-

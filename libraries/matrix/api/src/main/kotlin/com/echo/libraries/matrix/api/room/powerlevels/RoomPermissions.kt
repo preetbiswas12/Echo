@@ -205,4 +205,3 @@ fun <T> BaseRoom.permissionsAsState(default: T, block: (RoomPermissions) -> T): 
         permissionsFlow(default, block)
     }.collectAsState(default)
 }
-

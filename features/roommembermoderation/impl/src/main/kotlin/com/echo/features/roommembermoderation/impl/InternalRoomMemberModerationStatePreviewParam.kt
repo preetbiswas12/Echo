@@ -103,4 +103,3 @@ fun aRoomMembersModerationState(
     unbanUserAsyncAction = unbanUserAsyncAction,
     eventSink = eventSink,
 )
-

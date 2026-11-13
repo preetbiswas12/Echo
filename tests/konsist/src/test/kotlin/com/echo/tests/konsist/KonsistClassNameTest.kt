@@ -10,6 +10,8 @@ package com.echo.tests.konsist
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.bumble.appyx.core.node.Node
+import com.echo.libraries.architecture.BaseFlowNode
+import com.echo.libraries.architecture.Presenter
 import com.google.common.truth.Truth.assertThat
 import com.lemonappdev.konsist.api.Konsist
 import com.lemonappdev.konsist.api.ext.list.withAllParentsOf
@@ -21,8 +23,6 @@ import com.lemonappdev.konsist.api.ext.list.withoutName
 import com.lemonappdev.konsist.api.ext.list.withoutNameStartingWith
 import com.lemonappdev.konsist.api.verify.assertEmpty
 import com.lemonappdev.konsist.api.verify.assertTrue
-import com.echo.libraries.architecture.BaseFlowNode
-import com.echo.libraries.architecture.Presenter
 import org.junit.Test
 
 class KonsistClassNameTest {
@@ -187,4 +187,3 @@ class KonsistClassNameTest {
             .assertEmpty()
     }
 }
-

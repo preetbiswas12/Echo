@@ -15,4 +15,3 @@ val loremIpsum = """
      elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide
      nt, sunt in culpa qui officia deserunt mollit anim id est laborum.
      """.trimIndent()
-

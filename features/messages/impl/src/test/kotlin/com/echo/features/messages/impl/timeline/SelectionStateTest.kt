@@ -7,7 +7,6 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.TimelineItem
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemRedactedContent
 import com.echo.libraries.matrix.api.core.EventId
@@ -15,6 +14,7 @@ import com.echo.libraries.matrix.api.core.UniqueId
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.AN_EVENT_ID_2
 import com.echo.libraries.matrix.test.AN_EVENT_ID_3
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableSet
 import org.junit.Test
@@ -87,4 +87,3 @@ class SelectionStateTest {
         selectedEventIds = eventIds.toImmutableSet(),
     )
 }
-

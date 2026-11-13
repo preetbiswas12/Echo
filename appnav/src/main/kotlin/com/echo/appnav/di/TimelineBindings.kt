@@ -13,4 +13,3 @@ import com.echo.services.analytics.api.watchers.AnalyticsSendMessageWatcher
 interface TimelineBindings {
     val analyticsSendMessageWatcher: AnalyticsSendMessageWatcher
 }
-

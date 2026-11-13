@@ -33,4 +33,3 @@ fun aDesktopNoticeState(
     canContinue = canContinue,
     eventSink = eventSink
 )
-

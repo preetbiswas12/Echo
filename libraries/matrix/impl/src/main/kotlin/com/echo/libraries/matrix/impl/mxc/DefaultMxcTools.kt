@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl.mxc
 
+import com.echo.libraries.matrix.api.mxc.MxcTools
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.matrix.api.mxc.MxcTools
 
 @ContributesBinding(AppScope::class)
 class DefaultMxcTools : MxcTools {
@@ -34,4 +34,3 @@ class DefaultMxcTools : MxcTools {
         }
     }
 }
-

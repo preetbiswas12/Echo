@@ -7,7 +7,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.api.CallData
 import com.echo.features.call.test.FakeElementCallEntryPoint
 import com.echo.libraries.matrix.api.core.EventId
@@ -38,6 +37,7 @@ import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -380,4 +380,3 @@ class DefaultNotificationResultProcessorTest {
         coroutineScope = coroutineScope,
     )
 }
-

@@ -33,4 +33,3 @@ class TypingNotificationPostProcessor(private val mode: Timeline.Mode) {
         }
     }
 }
-

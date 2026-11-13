@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.ui.messages.reply
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.timeline.item.event.FormattedBody
 import com.echo.libraries.matrix.api.timeline.item.event.InReplyTo
 import com.echo.libraries.matrix.api.timeline.item.event.MembershipChange
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.libraries.matrix.test.timeline.aProfileDetails
 import com.echo.libraries.matrix.test.timeline.item.event.aRoomMembershipContent
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class InReplyToDetailTest {
@@ -107,4 +107,3 @@ class InReplyToDetailTest {
         ).isEqualTo("**Hello!**")
     }
 }
-

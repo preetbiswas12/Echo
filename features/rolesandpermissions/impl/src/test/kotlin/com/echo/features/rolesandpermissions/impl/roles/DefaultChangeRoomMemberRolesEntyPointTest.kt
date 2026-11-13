@@ -9,11 +9,11 @@
 package com.echo.features.rolesandpermissions.impl.roles
 
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rolesandpermissions.api.ChangeRoomMemberRolesListType
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -43,4 +43,3 @@ class DefaultChangeRoomMemberRolesEntyPointTest : RobolectricTest() {
         assertThat(input.listType).isEqualTo(listType)
     }
 }
-

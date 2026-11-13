@@ -10,8 +10,6 @@ package com.echo.features.preferences.impl.moderation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.runUpdatingState
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
@@ -21,6 +19,8 @@ import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.media.MediaPreviewService
 import com.echo.libraries.matrix.api.media.MediaPreviewValue
 import com.echo.libraries.ui.strings.CommonStrings
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.launchIn
@@ -120,4 +120,3 @@ class DefaultMediaPreviewConfigStateStore(
         }
     }
 }
-

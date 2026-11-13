@@ -21,4 +21,3 @@ fun logError(throwable: Throwable) {
         }
     }
 }
-

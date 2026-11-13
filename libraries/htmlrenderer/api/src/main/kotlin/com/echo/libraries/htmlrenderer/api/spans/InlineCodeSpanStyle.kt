@@ -18,4 +18,3 @@ val InlineCodeSpanStyle: SpanStyle = SpanStyle(
     fontFamily = FontFamily.Monospace,
     fontSize = ElementTheme.typography.fontBodySmRegular.fontSize,
 )
-

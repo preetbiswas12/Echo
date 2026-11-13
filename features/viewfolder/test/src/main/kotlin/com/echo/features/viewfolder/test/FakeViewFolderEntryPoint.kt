@@ -21,4 +21,3 @@ class FakeViewFolderEntryPoint : ViewFolderEntryPoint {
         callback: ViewFolderEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

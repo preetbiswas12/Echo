@@ -13,7 +13,6 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteState
@@ -24,6 +23,7 @@ import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runUpdatingState
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -99,4 +99,3 @@ class AcceptDeclineInvitePresenter(
         }
     }
 }
-

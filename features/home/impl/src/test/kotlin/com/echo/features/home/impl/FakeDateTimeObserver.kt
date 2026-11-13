@@ -18,4 +18,3 @@ class FakeDateTimeObserver : DateTimeObserver {
         changes.tryEmit(event)
     }
 }
-

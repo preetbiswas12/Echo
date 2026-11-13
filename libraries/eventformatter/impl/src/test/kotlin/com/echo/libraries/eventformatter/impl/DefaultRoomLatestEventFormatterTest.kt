@@ -11,8 +11,6 @@ package com.echo.libraries.eventformatter.impl
 import android.content.Context
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
-import com.google.common.truth.Truth.assertThat
-import com.google.common.truth.Truth.assertWithMessage
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.media.ImageInfo
 import com.echo.libraries.matrix.api.media.MediaSource
@@ -53,6 +51,8 @@ import com.echo.libraries.matrix.test.timeline.aStickerContent
 import com.echo.libraries.matrix.test.timeline.item.event.aRoomMembershipContent
 import com.echo.services.toolbox.impl.strings.AndroidStringProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import com.google.common.truth.Truth.assertWithMessage
 import org.junit.Before
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
@@ -991,4 +991,3 @@ class DefaultRoomLatestEventFormatterTest : RobolectricTest() {
 
     private val someoneElseId = UserId("@someone_else:domain")
 }
-

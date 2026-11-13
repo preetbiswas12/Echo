@@ -364,4 +364,3 @@ private fun ContentToPreview(state: ConfigureRoomState) {
         onCreateRoomSuccess = {},
     )
 }
-

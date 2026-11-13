@@ -23,4 +23,3 @@ class FakeFfiLazyTimelineItemProvider(
     override fun debugInfo() = debugInfo
     override fun getSendHandle(): SendHandle? = null
 }
-

@@ -33,4 +33,3 @@ class FakePinnedMessagesListNavigator : PinnedMessagesListNavigator {
         onOpenThreadLambda?.invoke(threadRootId)
     }
 }
-

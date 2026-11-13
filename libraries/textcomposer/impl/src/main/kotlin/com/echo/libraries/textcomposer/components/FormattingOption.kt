@@ -136,4 +136,3 @@ internal fun FormattingOptionPreview() = ElementPreview {
         )
     }
 }
-

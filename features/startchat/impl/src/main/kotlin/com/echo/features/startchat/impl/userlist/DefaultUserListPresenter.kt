@@ -17,10 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
@@ -28,6 +24,10 @@ import com.echo.libraries.matrix.api.room.recent.RecentDirectRoom
 import com.echo.libraries.matrix.api.room.recent.getRecentDirectRooms
 import com.echo.libraries.usersearch.api.UserRepository
 import com.echo.libraries.usersearch.api.UserSearchResult
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.launchIn
@@ -105,4 +105,3 @@ class DefaultUserListPresenter(
         )
     }
 }
-

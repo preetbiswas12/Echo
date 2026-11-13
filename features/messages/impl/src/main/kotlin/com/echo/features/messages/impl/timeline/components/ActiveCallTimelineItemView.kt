@@ -356,4 +356,3 @@ private data class CallPreviewCase(
     // [senderId] defaults to a member who is never in the call
     val senderId: UserId = previewMemberIds.last(),
 )
-

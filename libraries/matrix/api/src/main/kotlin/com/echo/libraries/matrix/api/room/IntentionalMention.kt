@@ -14,4 +14,3 @@ sealed interface IntentionalMention {
     data class User(val userId: UserId) : IntentionalMention
     data object Room : IntentionalMention
 }
-

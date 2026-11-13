@@ -24,4 +24,3 @@ class RustBaseRoomDirectoryServiceTest {
         sut.createRoomDirectoryList(backgroundScope)
     }
 }
-

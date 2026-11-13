@@ -137,4 +137,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setDeclineAndBlockView(
         )
     }
 }
-

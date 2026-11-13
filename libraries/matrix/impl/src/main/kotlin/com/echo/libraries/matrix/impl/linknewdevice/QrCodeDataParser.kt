@@ -18,4 +18,3 @@ class RustQrCodeDataParser : QrCodeDataParser {
         return QrCodeData.fromBytes(data)
     }
 }
-

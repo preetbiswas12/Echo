@@ -21,4 +21,3 @@ class FakeRoomSelectEntryPoint : RoomSelectEntryPoint {
         callback: RoomSelectEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

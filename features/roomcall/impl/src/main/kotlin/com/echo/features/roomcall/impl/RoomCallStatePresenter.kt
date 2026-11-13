@@ -14,7 +14,6 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
 import com.echo.features.call.api.CurrentCall
 import com.echo.features.call.api.CurrentCallService
 import com.echo.features.enterprise.api.SessionEnterpriseService
@@ -25,6 +24,7 @@ import com.echo.libraries.matrix.api.room.CallIntentConsensus
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.powerlevels.canCall
 import com.echo.libraries.matrix.api.room.powerlevels.permissionsAsState
+import dev.zacsweers.metro.Inject
 
 @Inject
 class RoomCallStatePresenter(
@@ -82,4 +82,3 @@ fun CallIntentConsensus.isAudio(): Boolean {
     }
     return intent == CallIntent.AUDIO
 }
-

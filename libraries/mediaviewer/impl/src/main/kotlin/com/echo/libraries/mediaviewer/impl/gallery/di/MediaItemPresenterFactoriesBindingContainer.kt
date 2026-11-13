@@ -7,11 +7,11 @@
 
 package com.echo.libraries.mediaviewer.impl.gallery.di
 
+import com.echo.libraries.di.RoomScope
+import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Multibinds
-import com.echo.libraries.di.RoomScope
-import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import kotlin.reflect.KClass
 
 /**
@@ -25,4 +25,3 @@ interface MediaItemPresenterFactoriesBindingContainer {
     @Multibinds
     fun multiBindMediaItemPresenterFactories(): @JvmSuppressWildcards Map<KClass<out MediaItem.Event>, MediaItemPresenterFactory<*, *>>
 }
-

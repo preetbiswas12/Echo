@@ -19,7 +19,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.lifecycle.lifecycleScope
-import dev.zacsweers.metro.Inject
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.lockscreen.api.LockScreenLockState
@@ -32,6 +31,7 @@ import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.designsystem.theme.ElementThemeApp
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 class PinUnlockActivity : AppCompatActivity() {
@@ -89,4 +89,3 @@ class PinUnlockActivity : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
     }
 }
-

@@ -148,4 +148,3 @@ fun TimelineState.selectedEventIdsInTimelineOrder(): ImmutableList<EventId> {
         .reversed()
         .toImmutableList()
 }
-

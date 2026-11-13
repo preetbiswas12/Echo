@@ -9,12 +9,12 @@
 package com.echo.libraries.network.useragent
 
 import android.os.Build
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.extensions.normalized
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.SdkMetadata
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 
 @SingleIn(AppScope::class)
 @ContributesBinding(AppScope::class)
@@ -59,4 +59,3 @@ class DefaultUserAgentProvider(
         }
     }
 }
-

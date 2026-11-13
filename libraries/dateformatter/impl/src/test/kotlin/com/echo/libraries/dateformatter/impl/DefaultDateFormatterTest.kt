@@ -9,9 +9,9 @@
 package com.echo.libraries.dateformatter.impl
 
 import android.os.Build
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.dateformatter.api.DateFormatterMode
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.annotation.Config
 import kotlin.time.Instant
@@ -258,4 +258,3 @@ class DefaultDateFormatterTest : RobolectricTest() {
         assertThat(formatter.format(ts, DateFormatterMode.TimeOnly, true)).isEqualTo("6:35 PM")
     }
 }
-

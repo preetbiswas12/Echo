@@ -140,4 +140,3 @@ object TestTags {
 
     val confirmInviteUnknown = TestTag("confirm_invite_unknown")
 }
-

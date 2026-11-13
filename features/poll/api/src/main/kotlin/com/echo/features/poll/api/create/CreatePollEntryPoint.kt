@@ -25,4 +25,3 @@ interface CreatePollEntryPoint : FeatureEntryPoint {
         params: Params,
     ): Node
 }
-

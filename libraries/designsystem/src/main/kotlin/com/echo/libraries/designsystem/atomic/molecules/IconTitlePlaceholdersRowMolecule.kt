@@ -61,4 +61,3 @@ internal fun IconTitlePlaceholdersRowMoleculePreview() = ElementPreview {
         iconSize = AvatarSize.TimelineRoom.dp,
     )
 }
-

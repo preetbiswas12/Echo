@@ -10,7 +10,6 @@ package com.echo.libraries.matrixmedia.impl
 
 import androidx.test.platform.app.InstrumentationRegistry
 import coil3.ImageLoader
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.media.MatrixMediaLoader
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.matrix.test.FakeMatrixClient
@@ -20,6 +19,7 @@ import com.echo.libraries.sessionstorage.test.observer.NoOpSessionObserver
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -88,4 +88,3 @@ private fun createDefaultImageLoaderHolder(
     imageLoaderFactory = imageLoaderFactory,
     sessionObserver = sessionObserver,
 )
-

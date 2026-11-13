@@ -14,4 +14,3 @@ sealed interface StartChatEvent {
     data class StartDM(val matrixUser: MatrixUser) : StartChatEvent
     data object CancelStartDM : StartChatEvent
 }
-

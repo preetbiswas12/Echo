@@ -31,4 +31,3 @@ data class DeactivateFormState(
         val Default = DeactivateFormState(false, "")
     }
 }
-

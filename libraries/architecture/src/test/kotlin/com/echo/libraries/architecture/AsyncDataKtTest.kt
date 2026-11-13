@@ -102,4 +102,3 @@ private class TestableMutableState<T>(
  * An exception that is also a data class so we can compare it using equals.
  */
 private data class MyException(val myMessage: String) : Exception(myMessage)
-

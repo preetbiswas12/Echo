@@ -36,4 +36,3 @@ class EmojiTest {
         Assert.assertFalse("Hello 👋".containsOnlyEmojis())
     }
 }
-

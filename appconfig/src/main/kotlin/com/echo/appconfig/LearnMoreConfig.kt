@@ -15,4 +15,3 @@ object LearnMoreConfig {
     const val IDENTITY_CHANGE_URL: String = "https://element.io/help#encryption18"
     const val HISTORY_VISIBLE_URL: String = "https://element.io/en/help#e2ee-history-sharing"
 }
-

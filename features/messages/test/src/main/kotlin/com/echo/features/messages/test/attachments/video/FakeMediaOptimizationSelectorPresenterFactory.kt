@@ -31,4 +31,3 @@ class FakeMediaOptimizationSelectorPresenterFactory(
         return fakePresenter
     }
 }
-

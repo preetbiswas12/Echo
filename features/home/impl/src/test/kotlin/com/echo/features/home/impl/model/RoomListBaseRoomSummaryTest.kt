@@ -8,13 +8,13 @@
 
 package com.echo.features.home.impl.model
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.designsystem.components.avatar.AvatarData
 import com.echo.libraries.designsystem.components.avatar.AvatarSize
 import com.echo.libraries.matrix.api.room.RoomNotificationMode
 import com.echo.libraries.matrix.api.user.DisplayedStatus
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_ROOM_NAME
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Test
 
@@ -114,4 +114,3 @@ internal fun createRoomListRoomSummary(
     isSpace = isSpace,
     dmUserStatus = dmUserStatus,
 )
-

@@ -25,4 +25,3 @@ data class RoomListFiltersState(
             .toImmutableList()
     }
 }
-

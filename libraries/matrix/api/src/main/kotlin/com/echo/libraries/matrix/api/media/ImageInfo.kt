@@ -17,4 +17,3 @@ data class ImageInfo(
     val thumbnailSource: MediaSource?,
     val blurhash: String?
 )
-

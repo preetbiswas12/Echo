@@ -84,4 +84,3 @@ internal fun BadgePreview() {
         )
     }
 }
-

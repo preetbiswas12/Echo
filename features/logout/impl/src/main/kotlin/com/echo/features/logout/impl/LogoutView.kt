@@ -221,4 +221,3 @@ internal fun LogoutViewPreview(
         onBackClick = {},
     )
 }
-

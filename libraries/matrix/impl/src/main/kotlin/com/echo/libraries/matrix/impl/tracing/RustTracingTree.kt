@@ -69,4 +69,3 @@ private fun Int.toLogLevel(): LogLevel {
         else -> LogLevel.DEBUG
     }
 }
-

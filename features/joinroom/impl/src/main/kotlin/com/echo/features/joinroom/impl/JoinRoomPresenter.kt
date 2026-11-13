@@ -21,9 +21,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.invite.api.InviteData
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.features.invite.api.acceptdecline.AcceptDeclineInviteEvent
@@ -50,6 +47,9 @@ import com.echo.libraries.matrix.api.room.preview.RoomPreviewInfo
 import com.echo.libraries.matrix.api.spaces.SpaceRoom
 import com.echo.libraries.matrix.ui.model.toInviteSender
 import com.echo.libraries.matrix.ui.safety.rememberHideInvitesAvatar
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -381,4 +381,3 @@ private fun JoinRule?.toJoinAuthorisationStatus(): JoinAuthorisationStatus {
         is JoinRule.Custom, null -> JoinAuthorisationStatus.Unknown
     }
 }
-

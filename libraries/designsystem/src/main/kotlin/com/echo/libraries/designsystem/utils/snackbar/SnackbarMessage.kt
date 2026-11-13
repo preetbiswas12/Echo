@@ -30,4 +30,3 @@ data class SnackbarMessage(
     val id: Long = Random.nextLong(),
     val action: () -> Unit = {},
 )
-

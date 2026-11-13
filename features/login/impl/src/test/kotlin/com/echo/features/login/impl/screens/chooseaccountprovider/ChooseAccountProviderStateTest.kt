@@ -8,11 +8,11 @@
 
 package com.echo.features.login.impl.screens.chooseaccountprovider
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.accountprovider.anAccountProviderManaged
 import com.echo.features.login.impl.login.LoginMode
 import com.echo.features.login.impl.login.aLoginModeState
 import com.echo.libraries.architecture.AsyncData
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class ChooseAccountProviderStateTest {
@@ -50,4 +50,3 @@ class ChooseAccountProviderStateTest {
         assertThat(sut.submitEnabled).isFalse()
     }
 }
-

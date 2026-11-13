@@ -18,9 +18,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.enterprise.api.SessionEnterpriseService
 import com.echo.features.startchat.api.StartDMAction
 import com.echo.features.userprofile.api.UserProfileEvent
@@ -37,6 +34,9 @@ import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.powerlevels.canCall
 import com.echo.libraries.matrix.api.room.powerlevels.use
 import com.echo.libraries.matrix.api.user.MatrixUser
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.launchIn
@@ -180,4 +180,3 @@ class UserProfilePresenter(
         // Note: on success, ignoredUsersFlow will emit new item.
     }
 }
-

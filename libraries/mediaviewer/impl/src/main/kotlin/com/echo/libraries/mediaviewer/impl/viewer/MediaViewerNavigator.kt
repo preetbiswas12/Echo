@@ -15,4 +15,3 @@ interface MediaViewerNavigator {
     fun onForwardClick(eventId: EventId)
     fun onItemDeleted()
 }
-

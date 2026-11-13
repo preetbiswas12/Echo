@@ -11,4 +11,3 @@ package com.echo.libraries.permissions.impl.action
 interface PermissionActions {
     fun openSettings(permission: String)
 }
-

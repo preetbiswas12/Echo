@@ -20,4 +20,3 @@ interface UserListPresenter : Presenter<UserListState> {
         ): UserListPresenter
     }
 }
-

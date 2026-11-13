@@ -33,4 +33,3 @@ class DefaultJsonProvider : JsonProvider {
 
     override fun invoke() = json
 }
-

@@ -9,7 +9,6 @@
 package com.echo.features.preferences.impl.user.editprofile
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.file.TemporaryUriDeleter
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
@@ -33,6 +32,7 @@ import com.echo.tests.testutils.fake.FakeTemporaryUriDeleter
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkStatic
@@ -530,4 +530,3 @@ class EditUserProfilePresenterTest {
         private const val ANOTHER_AVATAR_URL = "example://camera/foo.jpg"
     }
 }
-

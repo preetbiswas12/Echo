@@ -37,4 +37,3 @@ fun CoroutineScope.childScope(
         this + dispatcher + supervisorJob + CoroutineName(name)
     }
 }
-

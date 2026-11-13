@@ -14,7 +14,6 @@ import android.text.Spanned
 import android.text.style.URLSpan
 import android.util.Patterns
 import androidx.core.text.getSpans
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.messages.api.timeline.TextPillificator
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.MatrixPatternType
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.api.permalink.PermalinkBuilder
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
 import com.echo.libraries.textcomposer.mentions.MentionSpanProvider
 import com.echo.libraries.textcomposer.mentions.getMentionSpans
+import dev.zacsweers.metro.ContributesBinding
 import io.element.android.wysiwyg.view.spans.CodeBlockSpan
 import io.element.android.wysiwyg.view.spans.InlineCodeSpan
 
@@ -121,4 +121,3 @@ class DefaultTextPillificator(
         return true
     }
 }
-

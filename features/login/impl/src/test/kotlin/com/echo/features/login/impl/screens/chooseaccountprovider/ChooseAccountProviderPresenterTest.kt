@@ -8,7 +8,6 @@
 
 package com.echo.features.login.impl.screens.chooseaccountprovider
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.features.login.impl.login.LoginModePresenter
@@ -21,6 +20,7 @@ import com.echo.libraries.matrix.test.accountprovider.anAccountProviderManaged
 import com.echo.libraries.matrix.test.auth.FakeMatrixAuthenticationService
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -156,4 +156,3 @@ private fun createPresenter(
     enterpriseService = enterpriseService,
     loginModePresenter = loginModePresenter,
 )
-

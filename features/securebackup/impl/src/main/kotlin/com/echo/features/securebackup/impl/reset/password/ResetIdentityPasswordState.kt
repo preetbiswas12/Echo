@@ -14,4 +14,3 @@ data class ResetIdentityPasswordState(
     val resetAction: AsyncAction<Unit>,
     val eventSink: (ResetIdentityPasswordEvent) -> Unit,
 )
-

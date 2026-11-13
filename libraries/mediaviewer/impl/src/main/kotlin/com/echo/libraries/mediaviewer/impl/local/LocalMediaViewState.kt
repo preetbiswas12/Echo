@@ -40,4 +40,3 @@ fun rememberLocalMediaViewState(zoomableState: ZoomableState = rememberZoomableS
         LocalMediaViewState(zoomableState)
     }
 }
-

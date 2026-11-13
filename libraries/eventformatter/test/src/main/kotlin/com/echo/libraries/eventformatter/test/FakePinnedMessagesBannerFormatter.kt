@@ -18,4 +18,3 @@ class FakePinnedMessagesBannerFormatter(
         return formatLambda(event)
     }
 }
-

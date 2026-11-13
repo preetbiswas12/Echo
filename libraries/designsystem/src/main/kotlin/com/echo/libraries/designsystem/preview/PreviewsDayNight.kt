@@ -44,4 +44,3 @@ const val DAY_MODE_NAME = "Day"
     fontScale = 1f,
 )
 annotation class PreviewsDayNight
-

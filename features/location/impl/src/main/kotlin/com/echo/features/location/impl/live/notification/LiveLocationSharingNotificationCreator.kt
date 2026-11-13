@@ -15,10 +15,10 @@ import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
-import dev.zacsweers.metro.Inject
 import com.echo.features.location.impl.R
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.Inject
 
 @Inject
 class LiveLocationSharingNotificationCreator(
@@ -59,4 +59,3 @@ class LiveLocationSharingNotificationCreator(
     @ChecksSdkIntAtLeast(api = Build.VERSION_CODES.O)
     private fun supportNotificationChannels() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
 }
-

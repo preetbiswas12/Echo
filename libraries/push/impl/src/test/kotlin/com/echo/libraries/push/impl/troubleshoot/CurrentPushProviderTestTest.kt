@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.push.test.FakePushService
 import com.echo.libraries.pushproviders.api.Distributor
@@ -16,6 +15,7 @@ import com.echo.libraries.pushproviders.test.FakePushProvider
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -134,4 +134,3 @@ class CurrentPushProviderTestTest {
         }
     }
 }
-

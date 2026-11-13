@@ -10,13 +10,13 @@ package com.echo.x.di
 
 import android.content.Context
 import androidx.work.ListenableWorker
+import com.echo.libraries.architecture.NodeFactoriesBindings
+import com.echo.libraries.di.annotations.ApplicationContext
+import com.echo.libraries.workmanager.api.di.MetroWorkerFactory
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.DependencyGraph
 import dev.zacsweers.metro.Multibinds
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.architecture.NodeFactoriesBindings
-import com.echo.libraries.di.annotations.ApplicationContext
-import com.echo.libraries.workmanager.api.di.MetroWorkerFactory
 import kotlin.reflect.KClass
 
 @DependencyGraph(AppScope::class)
@@ -35,4 +35,3 @@ interface AppGraph : NodeFactoriesBindings {
         ): AppGraph
     }
 }
-

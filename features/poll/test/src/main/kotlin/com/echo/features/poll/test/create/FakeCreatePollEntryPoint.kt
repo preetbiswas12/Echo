@@ -21,4 +21,3 @@ class FakeCreatePollEntryPoint : CreatePollEntryPoint {
         params: Params,
     ): Node = lambdaError()
 }
-

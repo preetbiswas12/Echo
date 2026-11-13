@@ -13,8 +13,6 @@ package com.echo.features.messages.impl.voicemessages.composer
 import android.Manifest
 import androidx.lifecycle.Lifecycle
 import app.cash.turbine.TurbineTestContext
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Composer
 import com.echo.features.messages.api.timeline.voicemessages.composer.VoiceMessageComposerEvent
 import com.echo.features.messages.api.timeline.voicemessages.composer.VoiceMessageComposerState
 import com.echo.features.messages.impl.messagecomposer.aReplyMode
@@ -51,6 +49,8 @@ import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Composer
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
@@ -887,4 +887,3 @@ private fun aVoiceMessageComposerEvent(
     messageType = Composer.MessageType.VoiceMessage,
     startsThread = null
 )
-

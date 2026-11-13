@@ -10,4 +10,3 @@ package com.echo.features.rolesandpermissions.impl.roles
 import com.echo.libraries.architecture.AsyncAction
 
 data object ConfirmingModifyingOwners : AsyncAction.Confirming
-

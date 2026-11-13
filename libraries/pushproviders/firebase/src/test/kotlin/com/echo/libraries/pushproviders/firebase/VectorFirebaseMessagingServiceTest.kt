@@ -11,7 +11,6 @@
 package com.echo.libraries.pushproviders.firebase
 
 import android.os.Bundle
-import com.google.firebase.messaging.RemoteMessage
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SECRET
@@ -22,6 +21,7 @@ import com.echo.libraries.pushproviders.api.PushHandler
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.firebase.messaging.RemoteMessage
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -194,4 +194,3 @@ class VectorFirebaseMessagingServiceTest : RobolectricTest() {
         }
     }
 }
-

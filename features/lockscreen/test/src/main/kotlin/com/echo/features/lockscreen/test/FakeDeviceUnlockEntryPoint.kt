@@ -20,4 +20,3 @@ class FakeDeviceUnlockEntryPoint : DeviceUnlockEntryPoint {
 
     override fun requestUnlock(callback: DeviceUnlockEntryPoint.Callback) = lambdaError()
 }
-

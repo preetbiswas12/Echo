@@ -53,4 +53,3 @@ fun createFormatter(currentDate: String): DefaultDateFormatter {
         ),
     )
 }
-

@@ -29,4 +29,3 @@ fun Session?.anonymizedTokens(): Pair<String?, String?> {
     if (this == null) return null to null
     return anonymizeToken(accessToken) to refreshToken?.let { anonymizeToken(it) }
 }
-

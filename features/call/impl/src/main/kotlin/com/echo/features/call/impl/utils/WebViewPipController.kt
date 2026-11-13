@@ -66,4 +66,3 @@ private class PipBridge(
         onOrientationChange(orientation)
     }
 }
-

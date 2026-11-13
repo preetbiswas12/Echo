@@ -7,15 +7,15 @@
 
 package com.echo.libraries.mediaviewer.impl.gallery.voice.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.IntoMap
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.mediaviewer.impl.gallery.di.MediaItemEventContentKey
 import com.echo.libraries.mediaviewer.impl.gallery.di.MediaItemPresenterFactory
 import com.echo.libraries.mediaviewer.impl.gallery.voice.VoiceMessagePresenter
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.IntoMap
 
 @BindingContainer
 @ContributesTo(RoomScope::class)
@@ -25,4 +25,3 @@ interface VoiceMessagePresenterBindingContainer {
     @MediaItemEventContentKey(MediaItem.Voice::class)
     fun bindVoiceMessagePresenterFactory(factory: VoiceMessagePresenter.Factory): MediaItemPresenterFactory<*, *>
 }
-

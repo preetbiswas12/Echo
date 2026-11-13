@@ -14,4 +14,3 @@ sealed interface IdentityChangeEvent {
     data class PinIdentity(val userId: UserId) : IdentityChangeEvent
     data class WithdrawVerification(val userId: UserId) : IdentityChangeEvent
 }
-

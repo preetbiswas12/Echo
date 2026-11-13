@@ -18,4 +18,3 @@ sealed interface ActionListEvent {
         val userEventPermissions: UserEventPermissions,
     ) : ActionListEvent
 }
-

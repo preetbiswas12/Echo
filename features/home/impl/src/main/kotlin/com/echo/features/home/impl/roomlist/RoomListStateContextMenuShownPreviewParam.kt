@@ -32,4 +32,3 @@ internal fun aContextMenuShown(
     hasNewContent = hasNewContent,
     isFavorite = isFavorite,
 )
-

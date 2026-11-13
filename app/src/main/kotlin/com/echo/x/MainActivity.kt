@@ -178,4 +178,3 @@ class MainActivity : NodeActivity() {
         Timber.tag(loggerTag.value).d("onDestroy")
     }
 }
-

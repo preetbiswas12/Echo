@@ -157,4 +157,3 @@ internal fun UserProfileViewPreview(
         onVerifyClick = {},
     )
 }
-

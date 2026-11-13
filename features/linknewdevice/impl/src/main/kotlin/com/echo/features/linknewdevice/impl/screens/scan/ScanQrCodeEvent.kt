@@ -11,4 +11,3 @@ sealed interface ScanQrCodeEvent {
     data class QrCodeScanned(val data: ByteArray) : ScanQrCodeEvent
     data object TryAgain : ScanQrCodeEvent
 }
-

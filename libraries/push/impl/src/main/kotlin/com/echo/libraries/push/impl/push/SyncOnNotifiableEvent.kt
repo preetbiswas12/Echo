@@ -20,4 +20,3 @@ import com.echo.libraries.push.impl.db.PushRequest
 fun interface SyncOnNotifiableEvent {
     suspend operator fun invoke(requests: List<PushRequest>)
 }
-

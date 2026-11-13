@@ -7,9 +7,9 @@
 
 package com.echo.features.location.impl.show
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.test.room.location.aLiveLocationShare
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class LiveLocationShareComparatorTest {
@@ -55,4 +55,3 @@ class LiveLocationShareComparatorTest {
         assertThat(sortedShares).containsExactly(newerShare, olderShare).inOrder()
     }
 }
-

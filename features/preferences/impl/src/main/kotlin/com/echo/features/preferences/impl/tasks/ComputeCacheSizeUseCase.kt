@@ -9,13 +9,13 @@
 package com.echo.features.preferences.impl.tasks
 
 import android.content.Context
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.file.getSizeOfFiles
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 
 interface ComputeCacheSizeUseCase {
@@ -37,4 +37,3 @@ class DefaultComputeCacheSizeUseCase(
         fileSizeFormatter.format(cumulativeSize)
     }
 }
-

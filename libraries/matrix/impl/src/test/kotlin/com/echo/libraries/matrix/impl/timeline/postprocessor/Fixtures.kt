@@ -57,4 +57,3 @@ internal val dayEvent = MatrixTimelineItem.Virtual(
     uniqueId = UniqueId("day"),
     virtual = VirtualTimelineItem.DayDivider(0),
 )
-

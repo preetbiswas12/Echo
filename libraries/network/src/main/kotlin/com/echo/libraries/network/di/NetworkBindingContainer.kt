@@ -8,14 +8,14 @@
 
 package com.echo.libraries.network.di
 
+import com.echo.libraries.network.interceptors.DynamicHttpLoggingInterceptor
+import com.echo.libraries.network.interceptors.FormattedJsonHttpLogger
+import com.echo.libraries.network.interceptors.UserAgentInterceptor
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
 import dev.zacsweers.metro.SingleIn
-import com.echo.libraries.network.interceptors.DynamicHttpLoggingInterceptor
-import com.echo.libraries.network.interceptors.FormattedJsonHttpLogger
-import com.echo.libraries.network.interceptors.UserAgentInterceptor
 import okhttp3.Call
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -47,4 +47,3 @@ object NetworkBindingContainer {
         return HttpLoggingInterceptor(logger)
     }
 }
-

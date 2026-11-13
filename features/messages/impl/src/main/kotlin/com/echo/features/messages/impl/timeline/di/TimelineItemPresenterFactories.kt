@@ -10,11 +10,11 @@ package com.echo.features.messages.impl.timeline.di
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlin.reflect.KClass
 
 /**
@@ -76,4 +76,3 @@ inline fun <reified C : TimelineItemEventContent, S : Any> TimelineItemPresenter
     content = content,
     contentClass = C::class
 )
-

@@ -10,12 +10,12 @@ package com.echo.features.joinroom.api
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.features.roomdirectory.api.RoomDescription
 import com.echo.libraries.architecture.FeatureEntryPoint
 import com.echo.libraries.architecture.NodeInputs
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
+import im.vector.app.features.analytics.plan.JoinedRoom
 import java.util.Optional
 
 interface JoinRoomEntryPoint : FeatureEntryPoint {
@@ -33,4 +33,3 @@ interface JoinRoomEntryPoint : FeatureEntryPoint {
         val trigger: JoinedRoom.Trigger,
     ) : NodeInputs
 }
-

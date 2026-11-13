@@ -11,7 +11,6 @@ import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.filesize.FakeFileSizeFormatter
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.mediaviewer.api.FileViewerEntryPoint
@@ -20,6 +19,7 @@ import com.echo.libraries.mediaviewer.test.util.FileExtensionExtractorWithoutVal
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -71,4 +71,3 @@ class DefaultFileViewerEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

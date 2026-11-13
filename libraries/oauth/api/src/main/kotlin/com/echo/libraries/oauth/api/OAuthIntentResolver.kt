@@ -20,4 +20,3 @@ interface OAuthIntentResolver {
      */
     fun resolve(intent: Intent): OAuthAction?
 }
-

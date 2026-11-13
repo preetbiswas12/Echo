@@ -8,9 +8,9 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
+import com.echo.features.enterprise.api.EnterpriseService
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.features.enterprise.api.EnterpriseService
 
 interface DefaultPushGatewayHttpUrlProvider {
     fun provide(): String
@@ -24,4 +24,3 @@ class DefaultDefaultPushGatewayHttpUrlProvider(
         return enterpriseService.unifiedPushDefaultPushGateway() ?: UnifiedPushConfig.DEFAULT_PUSH_GATEWAY_HTTP_URL
     }
 }
-

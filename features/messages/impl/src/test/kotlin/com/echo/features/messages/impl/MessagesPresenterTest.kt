@@ -11,8 +11,6 @@
 package com.echo.features.messages.impl
 
 import androidx.lifecycle.Lifecycle
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.PinUnpinAction
 import com.echo.features.location.test.FakeActiveLiveLocationShareManager
 import com.echo.features.messages.impl.actionlist.ActionListEvent
 import com.echo.features.messages.impl.actionlist.ActionListState
@@ -119,6 +117,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
 import com.echo.tests.testutils.testWithLifecycleOwner
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.PinUnpinAction
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -1642,4 +1642,3 @@ class MessagesPresenterTest {
         )
     }
 }
-

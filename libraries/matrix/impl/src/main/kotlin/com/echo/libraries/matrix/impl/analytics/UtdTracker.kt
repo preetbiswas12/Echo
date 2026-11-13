@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import im.vector.app.features.analytics.plan.Error
 import com.echo.services.analytics.api.AnalyticsService
+import im.vector.app.features.analytics.plan.Error
 import org.matrix.rustcomponents.sdk.UnableToDecryptDelegate
 import org.matrix.rustcomponents.sdk.UnableToDecryptInfo
 import timber.log.Timber
@@ -50,4 +50,3 @@ class UtdTracker(
         analyticsService.capture(event)
     }
 }
-

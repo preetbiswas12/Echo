@@ -279,4 +279,3 @@ internal fun RecoveryKeyViewPreview(
         toggleRecoveryKeyVisibility = {},
     )
 }
-

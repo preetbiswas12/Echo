@@ -23,4 +23,3 @@ fun Location.toLocationMeasurement(): LocationMeasurement {
         measuredAt = Clock.System.now(),
     )
 }
-

@@ -8,9 +8,6 @@
 
 package com.echo.libraries.matrix.impl
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.androidutils.file.getSizeOfFiles
 import com.echo.libraries.core.bool.orFalse
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -101,6 +98,9 @@ import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerScheduler
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -1072,4 +1072,3 @@ private fun defaultRoomCreationPowerLevels(isPublic: Boolean, isSpace: Boolean) 
         mapOf()
     }
 )
-

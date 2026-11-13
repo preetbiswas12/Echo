@@ -90,4 +90,3 @@ fun interface SendHandleProvider {
     /** Returns the send handle of the item, or `null` when it is not a local echo waiting in the send queue. */
     operator fun invoke(): SendHandle?
 }
-

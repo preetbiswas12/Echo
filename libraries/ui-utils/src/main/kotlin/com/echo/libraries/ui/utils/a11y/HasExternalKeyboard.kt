@@ -47,4 +47,3 @@ fun hasExternalKeyboard(): Boolean {
     }
     return hasExternalKeyboard
 }
-

@@ -8,9 +8,6 @@
 
 package com.echo.features.home.impl.search
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.home.impl.datasource.RoomListRoomSummaryFactory
 import com.echo.features.home.impl.model.RoomListRoomSummary
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -18,6 +15,9 @@ import com.echo.libraries.matrix.api.roomlist.RoomList
 import com.echo.libraries.matrix.api.roomlist.RoomListFilter
 import com.echo.libraries.matrix.api.roomlist.RoomListService
 import com.echo.libraries.matrix.api.roomlist.updateVisibleRange
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CoroutineScope
@@ -73,4 +73,3 @@ class RoomListSearchDataSource(
         roomList.updateFilter(filter)
     }
 }
-

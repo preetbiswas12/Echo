@@ -9,11 +9,11 @@
 package com.echo.libraries.pushproviders.unifiedpush.troubleshoot
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.system.openUrlInExternalApp
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.pushproviders.unifiedpush.UnifiedPushConfig
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface OpenDistributorWebPageAction {
     fun execute()
@@ -30,4 +30,3 @@ class DefaultOpenDistributorWebPageAction(
         )
     }
 }
-

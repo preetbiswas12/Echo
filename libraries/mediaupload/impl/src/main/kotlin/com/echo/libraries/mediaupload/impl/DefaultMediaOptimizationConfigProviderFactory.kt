@@ -7,13 +7,13 @@
 
 package com.echo.libraries.mediaupload.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProvider
 import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProviderFactory
 import com.echo.libraries.preferences.api.store.SessionPreferencesStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultMediaOptimizationConfigProviderFactory(
@@ -27,4 +27,3 @@ class DefaultMediaOptimizationConfigProviderFactory(
         )
     }
 }
-

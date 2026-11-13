@@ -137,4 +137,3 @@ internal fun GroupHeaderViewPreview() = ElementPreview {
         )
     }
 }
-

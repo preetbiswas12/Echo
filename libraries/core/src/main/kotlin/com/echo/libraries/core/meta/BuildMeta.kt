@@ -24,4 +24,3 @@ data class BuildMeta(
     val flavorDescription: String,
     val flavorShortDescription: String,
 )
-

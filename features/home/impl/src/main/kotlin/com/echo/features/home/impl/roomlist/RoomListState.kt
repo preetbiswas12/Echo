@@ -80,4 +80,3 @@ sealed interface RoomListContentState {
         val showAllActivity: Boolean,
     ) : RoomListContentState
 }
-

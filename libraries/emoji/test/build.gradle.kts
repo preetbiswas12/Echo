@@ -17,5 +17,3 @@ dependencies {
     api(projects.libraries.emoji.api)
     implementation(projects.libraries.architecture)
 }
-
-

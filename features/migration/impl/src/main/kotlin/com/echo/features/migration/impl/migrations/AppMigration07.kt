@@ -8,9 +8,9 @@
 
 package com.echo.features.migration.impl.migrations
 
+import com.echo.features.rageshake.api.logs.LogFilesRemover
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesIntoSet
-import com.echo.features.rageshake.api.logs.LogFilesRemover
 
 /**
  * Delete the previous log files.
@@ -27,4 +27,3 @@ class AppMigration07(
         }
     }
 }
-

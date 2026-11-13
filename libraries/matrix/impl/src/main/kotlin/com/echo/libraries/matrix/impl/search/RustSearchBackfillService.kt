@@ -7,9 +7,6 @@
 
 package com.echo.libraries.matrix.impl.search
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.SdkPendingTask
 import com.echo.libraries.matrix.api.core.SessionId
@@ -19,6 +16,9 @@ import com.echo.libraries.matrix.impl.RustSdkPendingTask
 import com.echo.libraries.matrix.impl.search.workmanager.SearchBackfillRequestBuilder
 import com.echo.libraries.workmanager.api.WorkManagerRequestType
 import com.echo.libraries.workmanager.api.WorkManagerScheduler
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import org.matrix.rustcomponents.sdk.Client
 import timber.log.Timber
 import java.util.concurrent.atomic.AtomicReference
@@ -69,4 +69,3 @@ class RustSearchBackfillService(
         currentSearchBackfillTaskHandle.getAndSet(null)?.close()
     }
 }
-

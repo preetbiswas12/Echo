@@ -30,8 +30,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.FileProvider
 import androidx.core.content.PermissionChecker
 import androidx.core.net.toFile
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.file.saveWithUniqueFileName
 import com.echo.libraries.androidutils.system.startInstallFromSourceIntent
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
@@ -40,6 +38,8 @@ import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.libraries.mediaviewer.api.local.LocalMedia
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -213,4 +213,3 @@ class AndroidLocalMediaActions(
         return uri.toFile()
     }
 }
-

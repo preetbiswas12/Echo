@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.report
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.designsystem.utils.snackbar.SnackbarDispatcher
 import com.echo.libraries.matrix.api.core.EventId
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -136,4 +136,3 @@ class ReportMessagePresenterTest {
         snackbarDispatcher = snackbarDispatcher,
     )
 }
-

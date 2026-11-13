@@ -8,7 +8,6 @@
 
 package com.echo.features.rolesandpermissions.impl.roles
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.test.A_USER_ID
 import com.echo.libraries.matrix.test.A_USER_ID_2
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_6
 import com.echo.libraries.matrix.test.A_USER_ID_7
 import com.echo.libraries.matrix.test.room.aRoomMember
 import com.echo.libraries.matrix.ui.room.PowerLevelRoomMemberComparator
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import org.junit.Test
 
@@ -77,4 +77,3 @@ class MembersByRoleTest {
         assertThat(membersByRoleWithMembers.isEmpty()).isFalse()
     }
 }
-

@@ -35,4 +35,3 @@ interface PushHandler {
         data: String,
     )
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.libraries.eventformatter.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.DEFAULT_SAFE_LENGTH
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.eventformatter.api.RoomLatestEventFormatter
@@ -48,6 +47,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplay
 import com.echo.libraries.matrix.ui.messages.toPlainText
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultRoomLatestEventFormatter(
@@ -194,4 +194,3 @@ class DefaultRoomLatestEventFormatter(
         )
     }
 }
-

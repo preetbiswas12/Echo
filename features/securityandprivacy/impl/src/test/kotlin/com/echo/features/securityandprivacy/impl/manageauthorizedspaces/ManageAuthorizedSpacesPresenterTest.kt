@@ -8,9 +8,9 @@
 
 package com.echo.features.securityandprivacy.impl.manageauthorizedspaces
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import kotlinx.coroutines.test.runTest
@@ -124,4 +124,3 @@ class ManageAuthorizedSpacesPresenterTest {
         }
     }
 }
-

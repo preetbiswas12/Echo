@@ -23,4 +23,3 @@ fun aNotificationsOptInState() = NotificationsOptInState(
     notificationsPermissionState = aPermissionsState(showDialog = false),
     eventSink = {}
 )
-

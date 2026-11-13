@@ -17,4 +17,3 @@ class FakeRoomSharedWithOtherAccountChecker(
         return isJoinedByOtherAccountResult(sessionId, roomId)
     }
 }
-

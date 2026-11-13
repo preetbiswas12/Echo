@@ -8,9 +8,6 @@
 
 package com.echo.features.poll.impl.data
 
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.core.extensions.flatMap
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.core.EventId
@@ -21,6 +18,9 @@ import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.api.timeline.item.event.PollContent
 import com.echo.libraries.matrix.api.timeline.item.event.toEventOrTransactionId
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.first
 
 @AssistedInject
@@ -102,4 +102,3 @@ class PollRepository(
             }
     }
 }
-

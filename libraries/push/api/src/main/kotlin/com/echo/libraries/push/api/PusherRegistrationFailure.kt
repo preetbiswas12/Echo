@@ -24,4 +24,3 @@ sealed class PusherRegistrationFailure : Exception() {
         val isRegisteringAgain: Boolean,
     ) : PusherRegistrationFailure()
 }
-

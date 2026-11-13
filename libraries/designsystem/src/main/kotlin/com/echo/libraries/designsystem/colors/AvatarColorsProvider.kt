@@ -24,4 +24,3 @@ object AvatarColorsProvider {
 internal fun String.toHash(maxSize: Int): Int {
     return toList().sumOf { it.code } % maxSize
 }
-

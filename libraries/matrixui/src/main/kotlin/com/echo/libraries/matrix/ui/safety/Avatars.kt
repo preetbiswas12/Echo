@@ -23,4 +23,3 @@ fun MatrixClient.rememberHideInvitesAvatar(): State<Boolean> {
             .mapState { config -> config.hideInviteAvatar }
     }.collectAsState()
 }
-

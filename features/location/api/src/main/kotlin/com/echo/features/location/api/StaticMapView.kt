@@ -217,4 +217,3 @@ internal fun StaticMapViewPreview() = ElementPreview {
         modifier = Modifier.size(400.dp),
     )
 }
-

@@ -43,4 +43,3 @@ private fun aPreviewInvitePeopleState(
     createRoomFromDmAction = createRoomFromDmAction,
     eventSink = eventSink
 )
-

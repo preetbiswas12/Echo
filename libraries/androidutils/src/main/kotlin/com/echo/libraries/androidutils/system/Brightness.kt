@@ -25,4 +25,3 @@ fun Activity.setFullBrightness(full: Boolean) {
         }
     }
 }
-

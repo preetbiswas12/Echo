@@ -8,12 +8,12 @@
 
 package com.echo.libraries.emoji.impl.recentemojis
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.emoji.api.recentemojis.GetRecentEmojis
 import com.echo.libraries.emoji.impl.EmojibaseProvider
 import com.echo.libraries.matrix.api.MatrixClient
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.withContext
@@ -36,4 +36,3 @@ class DefaultGetRecentEmojis(
             }
     }
 }
-

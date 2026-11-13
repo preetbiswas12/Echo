@@ -148,4 +148,3 @@ private fun anAvatarData(i: Int) = anAvatarData(
     id = ('A' + i).toString(),
     name = ('A' + i).toString()
 )
-

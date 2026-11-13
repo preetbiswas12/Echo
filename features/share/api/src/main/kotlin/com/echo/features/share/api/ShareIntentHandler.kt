@@ -23,4 +23,3 @@ interface ShareIntentHandler {
         intent: Intent
     ): ShareIntentData?
 }
-

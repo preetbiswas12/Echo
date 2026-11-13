@@ -9,8 +9,8 @@
 package com.echo.features.login.impl.screens.onboarding
 
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultOnBoardingLogoResIdProviderTest : RobolectricTest() {
@@ -22,4 +22,3 @@ class DefaultOnBoardingLogoResIdProviderTest : RobolectricTest() {
         assertThat(result).isNull()
     }
 }
-

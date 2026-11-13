@@ -37,4 +37,3 @@ fun aBugReportState() = BugReportState(
     sending = AsyncAction.Uninitialized,
     eventSink = {}
 )
-

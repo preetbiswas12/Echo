@@ -50,4 +50,3 @@ class VideoCompressorHelper(
 private fun Size.isLandscape(): Boolean = width > height
 private fun Size.major(): Int = if (isLandscape()) width else height
 private fun Size.minor(): Int = if (isLandscape()) height else width
-

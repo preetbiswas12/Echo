@@ -17,11 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Interaction
-import im.vector.app.features.analytics.plan.PinUnpinAction
 import com.echo.features.messages.api.timeline.HtmlConverterProvider
 import com.echo.features.messages.impl.UserEventPermissions
 import com.echo.features.messages.impl.actionlist.ActionListState
@@ -52,6 +47,11 @@ import com.echo.libraries.matrix.api.timeline.item.event.EventOrTransactionId
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Interaction
+import im.vector.app.features.analytics.plan.PinUnpinAction
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
@@ -282,4 +282,3 @@ class PinnedMessagesListPresenter(
         }
     }
 }
-

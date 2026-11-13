@@ -14,8 +14,6 @@ import androidx.work.ListenableWorker
 import androidx.work.WorkerParameters
 import androidx.work.impl.utils.taskexecutor.WorkManagerTaskExecutor
 import androidx.work.workDataOf
-import com.google.common.truth.Truth.assertThat
-import com.google.common.util.concurrent.ListenableFuture
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.features.networkmonitor.test.FakeNetworkMonitor
 import com.echo.libraries.matrix.api.core.SessionId
@@ -35,6 +33,8 @@ import com.echo.services.toolbox.test.sdk.FakeBuildVersionSdkIntProvider
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceTimeBy
@@ -339,4 +339,3 @@ class FakeListenableFuture<T> : ListenableFuture<T> {
     override fun isCancelled(): Boolean = false
     override fun isDone(): Boolean = false
 }
-

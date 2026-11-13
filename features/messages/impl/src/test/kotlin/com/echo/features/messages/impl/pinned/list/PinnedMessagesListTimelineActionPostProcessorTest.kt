@@ -8,8 +8,8 @@
 
 package com.echo.features.messages.impl.pinned.list
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.actionlist.model.TimelineItemAction
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class PinnedMessagesListTimelineActionPostProcessorTest {
@@ -40,4 +40,3 @@ class PinnedMessagesListTimelineActionPostProcessorTest {
         )
     }
 }
-

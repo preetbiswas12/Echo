@@ -70,4 +70,3 @@ sealed interface ClientSecret {
         }
     }
 }
-

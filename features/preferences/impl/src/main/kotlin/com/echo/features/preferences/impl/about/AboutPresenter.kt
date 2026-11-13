@@ -9,8 +9,8 @@
 package com.echo.features.preferences.impl.about
 
 import androidx.compose.runtime.Composable
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 
 @Inject
 class AboutPresenter : Presenter<AboutState> {
@@ -21,4 +21,3 @@ class AboutPresenter : Presenter<AboutState> {
         )
     }
 }
-

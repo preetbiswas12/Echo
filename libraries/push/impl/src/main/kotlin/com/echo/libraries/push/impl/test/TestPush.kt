@@ -8,13 +8,13 @@
 
 package com.echo.libraries.push.impl.test
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.push.impl.BuildConfig
 import com.echo.libraries.push.impl.pushgateway.PushGatewayNotifyRequest
 import com.echo.libraries.pushproviders.api.Config
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface TestPush {
     suspend fun execute(config: Config)
@@ -41,4 +41,3 @@ class DefaultTestPush(
         val TEST_ROOM_ID = RoomId("!room:domain")
     }
 }
-

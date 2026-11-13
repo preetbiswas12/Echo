@@ -18,4 +18,3 @@ fun RustRoomType.map(): RoomType {
         is RustRoomType.Custom -> RoomType.Other(this.value)
     }
 }
-

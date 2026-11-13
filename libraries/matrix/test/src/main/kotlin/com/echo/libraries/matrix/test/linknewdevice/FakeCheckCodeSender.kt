@@ -23,4 +23,3 @@ class FakeCheckCodeSender(
         sendResult(code)
     }
 }
-

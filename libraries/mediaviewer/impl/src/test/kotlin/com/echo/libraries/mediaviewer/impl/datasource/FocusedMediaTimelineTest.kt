@@ -8,7 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.room.CreateTimelineParams
 import com.echo.libraries.matrix.api.room.JoinedRoom
@@ -21,6 +20,7 @@ import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemImage
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -122,4 +122,3 @@ class FocusedMediaTimelineTest {
         onlyPinnedEvents = onlyPinnedEvent,
     )
 }
-

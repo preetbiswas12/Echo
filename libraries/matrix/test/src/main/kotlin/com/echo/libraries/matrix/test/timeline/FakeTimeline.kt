@@ -497,4 +497,3 @@ class FakeTimeline(
 
     override fun toString() = "FakeTimeline: $name"
 }
-

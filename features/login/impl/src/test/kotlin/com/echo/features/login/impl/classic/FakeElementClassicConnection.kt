@@ -27,4 +27,3 @@ class FakeElementClassicConnection(
         mutableStateFlow.emit(state)
     }
 }
-

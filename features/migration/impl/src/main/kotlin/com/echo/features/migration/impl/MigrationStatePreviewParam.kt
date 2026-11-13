@@ -25,4 +25,3 @@ internal fun aMigrationState(
 ) = MigrationState(
     migrationAction = migrationAction,
 )
-

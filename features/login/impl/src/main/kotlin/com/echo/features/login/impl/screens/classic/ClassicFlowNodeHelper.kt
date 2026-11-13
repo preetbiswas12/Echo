@@ -7,11 +7,11 @@
 
 package com.echo.features.login.impl.screens.classic
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.login.impl.classic.ElementClassicConnection
 import com.echo.features.login.impl.classic.ElementClassicConnectionState
 import com.echo.libraries.sessionstorage.api.SessionStore
 import com.echo.libraries.sessionstorage.api.toUserListFlow
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
@@ -73,4 +73,3 @@ class ClassicFlowNodeHelper(
             }
     }
 }
-

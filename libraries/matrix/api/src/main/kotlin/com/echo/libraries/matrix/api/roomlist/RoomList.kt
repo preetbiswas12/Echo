@@ -69,4 +69,3 @@ suspend fun RoomList.awaitLoaded(timeout: Duration = Duration.INFINITE) {
         Timber.d("awaitAllRoomsAreLoaded: no response after $timeout")
     }
 }
-

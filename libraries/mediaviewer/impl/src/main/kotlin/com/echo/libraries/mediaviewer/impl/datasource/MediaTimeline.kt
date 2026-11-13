@@ -8,8 +8,6 @@
 
 package com.echo.libraries.mediaviewer.impl.datasource
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.UniqueId
@@ -19,6 +17,8 @@ import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.mediaviewer.impl.model.GroupedMediaItems
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.mediaviewer.impl.model.hasEvent
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -104,4 +104,3 @@ class FocusedMediaTimeline(
         }
     }
 }
-

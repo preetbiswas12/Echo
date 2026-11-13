@@ -11,12 +11,12 @@ package com.echo.features.preferences.impl.media
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.preferences.api.store.SessionPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
@@ -65,4 +65,3 @@ class MediaSettingsPresenter(
         )
     }
 }
-

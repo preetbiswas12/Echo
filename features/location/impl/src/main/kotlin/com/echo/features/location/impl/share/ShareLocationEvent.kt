@@ -29,4 +29,3 @@ sealed interface ShareLocationEvent {
     data object OpenAppSettings : ShareLocationEvent
     data object OpenLocationSettings : ShareLocationEvent
 }
-

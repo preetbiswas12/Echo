@@ -10,10 +10,10 @@ package com.echo.features.poll.impl.history
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.poll.api.history.PollHistoryEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultPollHistoryEntryPoint : PollHistoryEntryPoint {
@@ -21,4 +21,3 @@ class DefaultPollHistoryEntryPoint : PollHistoryEntryPoint {
         return parentNode.createNode<PollHistoryFlowNode>(buildContext)
     }
 }
-

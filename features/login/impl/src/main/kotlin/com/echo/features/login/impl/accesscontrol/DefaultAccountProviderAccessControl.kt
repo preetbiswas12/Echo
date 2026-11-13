@@ -8,13 +8,13 @@
 
 package com.echo.features.login.impl.accesscontrol
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.enterprise.api.EnterpriseService
 import com.echo.features.enterprise.api.IsEnterpriseBuild
 import com.echo.features.login.api.accesscontrol.AccountProviderAccessControl
 import com.echo.features.login.impl.changeserver.AccountProviderAccessException
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultAccountProviderAccessControl(
@@ -56,4 +56,3 @@ class DefaultAccountProviderAccessControl(
         const val ELEMENT_PRO_APPLICATION_ID = "io.element.enterprise"
     }
 }
-

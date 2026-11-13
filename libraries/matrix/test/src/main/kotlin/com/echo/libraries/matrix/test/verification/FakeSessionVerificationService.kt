@@ -95,4 +95,3 @@ class FakeSessionVerificationService(
         _needsSessionVerification.emit(needsVerification)
     }
 }
-

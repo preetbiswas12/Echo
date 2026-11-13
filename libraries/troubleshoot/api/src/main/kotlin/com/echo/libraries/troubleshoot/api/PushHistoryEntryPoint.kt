@@ -27,4 +27,3 @@ interface PushHistoryEntryPoint : FeatureEntryPoint {
         fun navigateToEvent(roomId: RoomId, eventId: EventId)
     }
 }
-

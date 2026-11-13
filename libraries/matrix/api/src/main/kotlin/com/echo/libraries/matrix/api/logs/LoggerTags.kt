@@ -12,4 +12,3 @@ import com.echo.libraries.core.log.logger.LoggerTag
 object LoggerTags {
     val linkNewDevice = LoggerTag("LinkNewDevice")
 }
-

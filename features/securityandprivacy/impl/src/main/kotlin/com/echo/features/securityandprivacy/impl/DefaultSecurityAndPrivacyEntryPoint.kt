@@ -10,10 +10,10 @@ package com.echo.features.securityandprivacy.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.securityandprivacy.api.SecurityAndPrivacyEntryPoint
 import com.echo.libraries.architecture.createNode
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(RoomScope::class)
 class DefaultSecurityAndPrivacyEntryPoint : SecurityAndPrivacyEntryPoint {
@@ -25,4 +25,3 @@ class DefaultSecurityAndPrivacyEntryPoint : SecurityAndPrivacyEntryPoint {
         return parentNode.createNode<SecurityAndPrivacyFlowNode>(buildContext, listOf(callback))
     }
 }
-

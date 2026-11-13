@@ -49,4 +49,3 @@ class WaveformPlaybackSyncTest {
         assertThat(extrapolatePlaybackProgress(progress = 0.3f, elapsedMs = -1_000L, durationMs = 10_000L, playbackSpeed = 1f)).isEqualTo(0.3f)
     }
 }
-

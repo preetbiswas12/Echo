@@ -54,4 +54,3 @@ fun aUserStatusState(
     updateStatusAction = updateStatusAction,
     eventSink = eventSink,
 )
-

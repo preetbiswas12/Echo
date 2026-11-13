@@ -27,4 +27,3 @@ value class ThreadId(val value: String) : Serializable {
 }
 
 fun ThreadId.asEventId(): EventId = EventId(value)
-

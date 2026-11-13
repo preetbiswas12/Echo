@@ -19,7 +19,6 @@ import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemTextBasedContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemTextContent
 import com.echo.features.messages.impl.utils.FakeMentionSpanFormatter
@@ -39,6 +38,7 @@ import com.echo.libraries.textcomposer.mentions.getMentionSpans
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import io.element.android.wysiwyg.view.spans.CustomMentionSpan
 import kotlinx.coroutines.CompletableDeferred
 import org.junit.Test
@@ -162,4 +162,3 @@ class TimelineTextViewTest : RobolectricTest() {
             isEdited = false
         )
 }
-

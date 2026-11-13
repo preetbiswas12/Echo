@@ -8,8 +8,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.SessionId
@@ -24,6 +22,8 @@ import com.echo.libraries.push.impl.notifications.model.NotifiableEvent
 import com.echo.libraries.push.impl.notifications.model.NotifiableRingingCallEvent
 import com.echo.services.appnavstate.api.AppForegroundStateService
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.withTimeoutOrNull
 import timber.log.Timber
@@ -144,4 +144,3 @@ class DefaultCallNotificationEventResolver(
         }
     }
 }
-

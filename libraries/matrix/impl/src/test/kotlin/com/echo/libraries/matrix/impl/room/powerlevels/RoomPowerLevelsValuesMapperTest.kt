@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.room.powerlevels
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.powerlevels.RoomPowerLevelsValues
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomPowerLevelsValues
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class RoomPowerLevelsValuesMapperTest {
@@ -52,4 +52,3 @@ class RoomPowerLevelsValuesMapperTest {
         )
     }
 }
-

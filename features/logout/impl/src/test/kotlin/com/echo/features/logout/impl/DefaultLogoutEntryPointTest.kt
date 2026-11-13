@@ -10,10 +10,10 @@ package com.echo.features.logout.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.logout.api.LogoutEntryPoint
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -44,4 +44,3 @@ class DefaultLogoutEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

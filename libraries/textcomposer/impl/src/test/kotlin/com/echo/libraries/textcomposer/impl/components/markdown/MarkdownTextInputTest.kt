@@ -18,7 +18,6 @@ import androidx.compose.ui.test.AndroidComposeUiTest
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.core.text.getSpans
-import com.google.common.truth.Truth.assertThat
 import com.echo.compound.theme.ElementTheme
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -38,6 +37,7 @@ import com.echo.tests.testutils.EnsureCalledOnce
 import com.echo.tests.testutils.EnsureCalledOnceWithParam
 import com.echo.tests.testutils.EventsRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MarkdownTextInputTest : RobolectricTest() {
@@ -238,4 +238,3 @@ class MarkdownTextInputTest : RobolectricTest() {
         const val PHYSICAL_KEYBOARD_DEVICE_ID = 1
     }
 }
-

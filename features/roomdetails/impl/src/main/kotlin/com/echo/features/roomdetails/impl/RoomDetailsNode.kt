@@ -19,9 +19,6 @@ import com.bumble.appyx.core.lifecycle.subscribe
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.MobileScreen
 import com.echo.annotations.ContributesNode
 import com.echo.features.leaveroom.api.LeaveRoomRenderer
 import com.echo.libraries.androidutils.system.startSharePlainTextIntent
@@ -32,6 +29,9 @@ import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.MobileScreen
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -151,4 +151,3 @@ class RoomDetailsNode(
         callback.navigateBack()
     }
 }
-

@@ -138,4 +138,3 @@ internal fun ChangeRoomPermissionsViewPreview(@PreviewParameter(ChangeRoomPermis
         )
     }
 }
-

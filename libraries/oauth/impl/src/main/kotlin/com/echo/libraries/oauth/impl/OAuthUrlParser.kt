@@ -8,10 +8,10 @@
 
 package com.echo.libraries.oauth.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.auth.OAuthRedirectUrlProvider
 import com.echo.libraries.oauth.api.OAuthAction
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 fun interface OAuthUrlParser {
@@ -44,4 +44,3 @@ class DefaultOAuthUrlParser(
         return null
     }
 }
-

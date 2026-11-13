@@ -8,10 +8,10 @@
 
 package com.echo.features.rageshake.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.RageshakeFeatureAvailability
 import com.echo.features.rageshake.impl.reporter.BugReporterUrlProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -24,4 +24,3 @@ class DefaultRageshakeFeatureAvailability(
             .map { it != null }
     }
 }
-

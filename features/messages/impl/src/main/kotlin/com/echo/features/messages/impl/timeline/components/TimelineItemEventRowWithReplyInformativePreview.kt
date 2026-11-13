@@ -22,4 +22,3 @@ internal fun TimelineItemEventRowWithReplyInformativePreview(
 ) = ElementPreview {
     TimelineItemEventRowWithReplyContentToPreview(inReplyToDetails)
 }
-

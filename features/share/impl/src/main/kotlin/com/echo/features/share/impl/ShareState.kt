@@ -26,4 +26,3 @@ data class ShareResult(
     val sessionId: SessionId,
     val roomIds: List<RoomId>,
 )
-

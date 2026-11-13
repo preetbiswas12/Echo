@@ -25,4 +25,3 @@ const val ROOM_NAME = "Room name"
 const val SPACE_NAME = "Space name"
 
 const val LAST_MESSAGE = "Last message"
-

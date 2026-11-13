@@ -23,4 +23,3 @@ data class ListOption(
 fun listOptionOf(vararg values: String): ImmutableList<ListOption> {
     return values.map { ListOption(it) }.toImmutableList()
 }
-

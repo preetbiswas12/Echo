@@ -57,4 +57,3 @@ internal object PillTextSizeCache {
     /** Clears the cache, for tests. */
     fun clear() = cache.evictAll()
 }
-

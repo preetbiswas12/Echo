@@ -18,4 +18,3 @@ sealed interface LoggedInState {
         val isTokenValid: Boolean,
     ) : LoggedInState
 }
-

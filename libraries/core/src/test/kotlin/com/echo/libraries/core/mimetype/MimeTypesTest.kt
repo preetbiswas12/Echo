@@ -7,8 +7,8 @@
 
 package com.echo.libraries.core.mimetype
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes.ensureDefaultSubtype
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MimeTypesTest {
@@ -33,4 +33,3 @@ class MimeTypesTest {
         assertThat(null.ensureDefaultSubtype()).isEqualTo(MimeTypes.OctetStream)
     }
 }
-

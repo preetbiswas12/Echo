@@ -8,12 +8,11 @@
 
 package com.echo.features.rageshake.impl.di
 
+import com.echo.features.rageshake.impl.crash.PreferencesCrashDataStore
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
-import com.echo.features.rageshake.impl.crash.PreferencesCrashDataStore
 
 @ContributesTo(AppScope::class)
 interface RageshakeBindings {
     fun preferencesCrashDataStore(): PreferencesCrashDataStore
 }
-

@@ -21,4 +21,3 @@ sealed interface RoomAddressValidity {
     data object NotAvailable : RoomAddressValidity
     data object Valid : RoomAddressValidity
 }
-

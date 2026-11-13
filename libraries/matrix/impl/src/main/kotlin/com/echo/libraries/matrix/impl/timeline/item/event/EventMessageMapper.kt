@@ -197,4 +197,3 @@ private fun RustMessageFormat.map(): MessageFormat {
         is RustMessageFormat.Unknown -> MessageFormat.UNKNOWN
     }
 }
-

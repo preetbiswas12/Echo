@@ -46,4 +46,3 @@ internal fun SelectionIndicatorPreview() = ElementPreview {
 internal fun SelectionIndicatorSelectedPreview() = ElementPreview {
     SelectionIndicator(selected = true)
 }
-

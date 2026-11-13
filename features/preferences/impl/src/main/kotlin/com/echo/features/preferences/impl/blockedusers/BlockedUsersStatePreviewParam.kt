@@ -41,4 +41,3 @@ internal fun aBlockedUsersState(
         eventSink = eventSink,
     )
 }
-

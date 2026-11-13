@@ -8,10 +8,10 @@
 package com.echo.libraries.matrix.impl.room.location
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.room.location.LiveLocationShare
 import com.echo.libraries.matrix.test.room.location.aLiveLocationShare
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.emptyFlow
@@ -134,4 +134,3 @@ class TimedLiveLocationSharesFlowTest {
             }
     }
 }
-

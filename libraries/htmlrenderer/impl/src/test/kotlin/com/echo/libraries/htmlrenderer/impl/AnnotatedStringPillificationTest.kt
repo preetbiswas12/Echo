@@ -15,7 +15,6 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withAnnotation
 import androidx.compose.ui.text.withStyle
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.htmlrenderer.api.HtmlMessageParser.Companion.INLINE_CODE_ANNOTATION_TAG
 import com.echo.libraries.htmlrenderer.api.HtmlMessageParser.Companion.LINK_ANNOTATION_TAG
 import com.echo.libraries.htmlrenderer.api.MentionNodeContent
@@ -29,6 +28,7 @@ import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
 import com.echo.libraries.matrix.test.permalink.FakePermalinkParser
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class AnnotatedStringPillificationTest : RobolectricTest() {
@@ -229,4 +229,3 @@ class AnnotatedStringPillificationTest : RobolectricTest() {
         override fun permalinkForRoomAlias(roomAlias: RoomAlias): Result<String> = Result.success("https://matrix.to/#/${roomAlias.value}")
     }
 }
-

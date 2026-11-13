@@ -17,7 +17,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.compound.theme.ElementTheme
 import com.echo.features.preferences.impl.R
 import com.echo.libraries.designsystem.components.dialogs.ListDialog
@@ -35,6 +34,7 @@ import com.echo.libraries.preferences.api.store.VideoCompressionPreset
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.compose.LocalAnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import im.vector.app.features.analytics.plan.Interaction
 
 @Composable
 fun MediaSettingsView(
@@ -228,4 +228,3 @@ internal fun VideoQualitySelectorDialogPreview() {
         )
     }
 }
-

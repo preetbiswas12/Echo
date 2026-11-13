@@ -8,7 +8,6 @@
 
 package com.echo.features.reportroom.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.reportroom.impl.fakes.FakeReportRoom
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.core.RoomId
@@ -18,6 +17,7 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -150,4 +150,3 @@ internal fun createReportRoomPresenter(
 ): ReportRoomPresenter {
     return ReportRoomPresenter(roomId, reportRoom)
 }
-

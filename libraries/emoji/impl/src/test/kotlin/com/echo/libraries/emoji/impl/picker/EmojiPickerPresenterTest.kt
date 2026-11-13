@@ -10,9 +10,6 @@ package com.echo.libraries.emoji.impl.picker
 
 import androidx.compose.foundation.text.input.setTextAndPlaceCursorAtEnd
 import app.cash.turbine.TurbineTestContext
-import com.google.common.truth.Truth.assertThat
-import io.element.android.emojibasebindings.Emoji
-import io.element.android.emojibasebindings.EmojibaseCategory
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.emoji.api.picker.EmojiPickerState
 import com.echo.libraries.emoji.api.recentemojis.GetRecentEmojis
@@ -21,6 +18,9 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.TestScope
@@ -110,4 +110,3 @@ class EmojiPickerPresenterTest : RobolectricTest() {
         )
     ) = category to emojis
 }
-

@@ -14,4 +14,3 @@ import androidx.compose.runtime.Immutable
 sealed interface TimelineItemStateContent : TimelineItemEventContent {
     val body: String
 }
-

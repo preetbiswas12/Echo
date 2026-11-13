@@ -8,16 +8,6 @@
 package com.echo.features.callnative.impl
 
 import android.content.Context
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
-import io.element.android.call.api.ElementCallController
-import io.element.android.call.api.ElementCallNotificationConfig
-import io.element.android.call.api.ElementCallOptions
-import io.element.android.call.api.rtc.MatrixRtcLogLevel
-import io.element.android.call.api.rtc.MatrixRtcLoggingConfiguration
-import io.element.android.call.impl.ElementCallStack
-import io.element.android.call.ui.ElementCallActivity
 import com.echo.features.call.api.CurrentCallTracker
 import com.echo.features.call.api.RingingCallTracker
 import com.echo.features.callnative.api.MatrixRtcBackendFactory
@@ -32,6 +22,16 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.push.api.notifications.ForegroundServiceType
 import com.echo.libraries.push.api.notifications.NotificationIdProvider
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
+import io.element.android.call.api.ElementCallController
+import io.element.android.call.api.ElementCallNotificationConfig
+import io.element.android.call.api.ElementCallOptions
+import io.element.android.call.api.rtc.MatrixRtcLogLevel
+import io.element.android.call.api.rtc.MatrixRtcLoggingConfiguration
+import io.element.android.call.impl.ElementCallStack
+import io.element.android.call.ui.ElementCallActivity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -183,4 +183,3 @@ class DefaultElementCallControllers(
         LogLevel.TRACE -> MatrixRtcLogLevel.TRACE
     }
 }
-

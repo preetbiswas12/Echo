@@ -19,6 +19,7 @@ import java.security.SecureRandom
 internal object NtfyTopic {
     private const val PREFIX = "up"
     private const val RANDOM_PART_LENGTH = 12
+
     // Lowercase and uppercase letters and digits, without lookalike characters (no `l`, `I`, `O`, `0`, `1`).
     private const val ALLOWED_CHARACTERS = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789"
 

@@ -16,4 +16,3 @@ interface DependencyInjectionGraphOwner {
     /** This is either a graph, or a list of graphs. */
     val graph: Any
 }
-

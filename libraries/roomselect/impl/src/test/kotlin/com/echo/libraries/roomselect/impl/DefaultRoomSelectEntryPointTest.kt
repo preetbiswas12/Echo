@@ -10,7 +10,6 @@ package com.echo.libraries.roomselect.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.A_SESSION_ID
@@ -19,6 +18,7 @@ import com.echo.libraries.roomselect.api.RoomSelectMode
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -67,4 +67,3 @@ class DefaultRoomSelectEntryPointTest : RobolectricTest() {
         assertThat(result.plugins).contains(callback)
     }
 }
-

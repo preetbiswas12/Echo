@@ -14,4 +14,3 @@ data class LinkNewDeviceRootState(
     val qrCodeData: AsyncData<Unit>,
     val eventSink: (LinkNewDeviceRootEvent) -> Unit,
 )
-

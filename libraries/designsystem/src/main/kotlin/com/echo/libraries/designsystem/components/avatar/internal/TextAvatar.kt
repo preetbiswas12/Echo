@@ -93,4 +93,3 @@ internal fun TextAvatarPreview() = ElementPreview {
         }
     }
 }
-

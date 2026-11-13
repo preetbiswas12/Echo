@@ -23,4 +23,3 @@ data class ResolvedRoomAlias(
      */
     val servers: List<String>
 )
-

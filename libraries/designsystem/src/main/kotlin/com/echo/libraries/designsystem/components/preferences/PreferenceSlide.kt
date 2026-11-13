@@ -91,4 +91,3 @@ internal fun PreferenceSlidePreview() = ElementThemedPreview {
         )
     }
 }
-

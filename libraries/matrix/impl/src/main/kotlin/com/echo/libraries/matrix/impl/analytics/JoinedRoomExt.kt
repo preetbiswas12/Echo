@@ -8,9 +8,9 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import im.vector.app.features.analytics.plan.JoinedRoom
 import com.echo.libraries.matrix.api.room.BaseRoom
 import com.echo.libraries.matrix.api.room.RoomInfo
+import im.vector.app.features.analytics.plan.JoinedRoom
 import kotlinx.coroutines.flow.first
 
 private fun Long.toAnalyticsRoomSize(): JoinedRoom.RoomSize {
@@ -38,4 +38,3 @@ fun RoomInfo.toAnalyticsJoinedRoom(trigger: JoinedRoom.Trigger?): JoinedRoom {
         trigger = trigger
     )
 }
-

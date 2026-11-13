@@ -29,4 +29,3 @@ interface CallAnalyticCredentialsProvider {
     /** The Sentry DSN the widget should report its crashes to. */
     val sentryDsn: String?
 }
-

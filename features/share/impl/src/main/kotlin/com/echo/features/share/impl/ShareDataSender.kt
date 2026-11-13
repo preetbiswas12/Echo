@@ -20,4 +20,3 @@ interface ShareDataSender {
      */
     suspend fun send(client: MatrixClient, shareIntentData: ShareIntentData, roomIds: List<RoomId>): Result<Unit>
 }
-

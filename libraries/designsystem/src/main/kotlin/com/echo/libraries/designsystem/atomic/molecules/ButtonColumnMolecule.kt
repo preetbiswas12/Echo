@@ -46,4 +46,3 @@ internal fun ButtonColumnMoleculePreview() = ElementPreview {
         TextButton(text = "TextButton", onClick = {}, modifier = Modifier.fillMaxWidth())
     }
 }
-

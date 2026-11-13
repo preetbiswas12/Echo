@@ -11,7 +11,6 @@ package com.echo.libraries.mediaviewer.impl
 import android.net.Uri
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.libraries.audio.test.FakeAudioFocus
@@ -32,6 +31,7 @@ import com.echo.services.toolbox.test.systemclock.FakeSystemClock
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -153,4 +153,3 @@ class DefaultMediaViewerEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

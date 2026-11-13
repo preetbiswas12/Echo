@@ -10,10 +10,10 @@ package com.echo.features.invitepeople.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invitepeople.api.InvitePeopleRenderer
 import com.echo.features.invitepeople.api.InvitePeopleState
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class DefaultInvitePeopleRenderer : InvitePeopleRenderer {
@@ -29,4 +29,3 @@ class DefaultInvitePeopleRenderer : InvitePeopleRenderer {
         }
     }
 }
-

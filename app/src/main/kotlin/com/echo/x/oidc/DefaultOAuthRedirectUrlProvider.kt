@@ -8,11 +8,11 @@
 
 package com.echo.x.oidc
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
+import com.echo.R
 import com.echo.libraries.matrix.api.auth.OAuthRedirectUrlProvider
 import com.echo.services.toolbox.api.strings.StringProvider
-import com.echo.R
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultOAuthRedirectUrlProvider(
@@ -23,4 +23,3 @@ class DefaultOAuthRedirectUrlProvider(
         append(":/")
     }
 }
-

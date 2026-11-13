@@ -46,4 +46,3 @@ fun RedIndicatorAtom(
 internal fun RedIndicatorAtomPreview() = ElementPreview {
     RedIndicatorAtom()
 }
-

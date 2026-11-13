@@ -65,4 +65,3 @@ fun aMatrixUserList() = listOf(
     aMatrixUser(displayName = USER_NAME_VICTOR),
     aMatrixUser(displayName = USER_NAME_WALTER),
 )
-

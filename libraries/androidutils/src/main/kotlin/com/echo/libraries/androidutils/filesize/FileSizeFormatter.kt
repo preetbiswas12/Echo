@@ -14,4 +14,3 @@ interface FileSizeFormatter {
      */
     fun format(fileSize: Long, useShortFormat: Boolean = true): String
 }
-

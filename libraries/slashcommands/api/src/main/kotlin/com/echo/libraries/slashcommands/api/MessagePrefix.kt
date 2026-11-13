@@ -13,4 +13,3 @@ enum class MessagePrefix {
     Unflip,
     Lenny,
 }
-

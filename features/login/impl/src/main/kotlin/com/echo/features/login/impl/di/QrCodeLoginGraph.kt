@@ -8,10 +8,10 @@
 
 package com.echo.features.login.impl.di
 
+import com.echo.libraries.architecture.NodeFactoriesBindings
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.GraphExtension
-import com.echo.libraries.architecture.NodeFactoriesBindings
 
 @GraphExtension(QrCodeLoginScope::class)
 interface QrCodeLoginGraph : NodeFactoriesBindings {
@@ -21,4 +21,3 @@ interface QrCodeLoginGraph : NodeFactoriesBindings {
         fun create(): QrCodeLoginGraph
     }
 }
-

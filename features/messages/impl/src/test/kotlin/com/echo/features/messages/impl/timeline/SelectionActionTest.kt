@@ -7,13 +7,13 @@
 
 package com.echo.features.messages.impl.timeline
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.event.aStaticLocationMode
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemLocationContent
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemRedactedContent
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemStateEventContent
 import com.echo.features.messages.impl.timeline.model.event.aTimelineItemStickerContent
 import com.echo.libraries.matrix.api.timeline.item.event.LocalEventSendState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class SelectionActionTest {
@@ -58,4 +58,3 @@ class SelectionActionTest {
         assertThat(SelectionAction.Forward.canApplyTo(item)).isTrue()
     }
 }
-

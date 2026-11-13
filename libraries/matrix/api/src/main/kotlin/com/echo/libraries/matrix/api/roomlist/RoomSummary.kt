@@ -23,4 +23,3 @@ data class RoomSummary(
     }
     val isDm = info.isDm
 }
-

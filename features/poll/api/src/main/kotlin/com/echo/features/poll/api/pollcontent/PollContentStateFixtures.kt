@@ -100,4 +100,3 @@ fun aPollContentState(
     isPollEnded = isEnded,
     isMine = isMine,
 )
-

@@ -17,4 +17,3 @@ data class CallScreenState(
     val isCallActive: Boolean,
     val eventSink: (CallScreenEvent) -> Unit,
 )
-

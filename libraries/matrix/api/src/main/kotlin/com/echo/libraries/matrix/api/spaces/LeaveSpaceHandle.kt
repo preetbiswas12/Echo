@@ -38,4 +38,3 @@ interface LeaveSpaceHandle {
      */
     fun close()
 }
-

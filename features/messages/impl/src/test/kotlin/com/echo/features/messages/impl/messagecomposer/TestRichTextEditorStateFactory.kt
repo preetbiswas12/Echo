@@ -18,4 +18,3 @@ class TestRichTextEditorStateFactory : RichTextEditorStateFactory {
         return rememberRichTextEditorState("", fake = true)
     }
 }
-

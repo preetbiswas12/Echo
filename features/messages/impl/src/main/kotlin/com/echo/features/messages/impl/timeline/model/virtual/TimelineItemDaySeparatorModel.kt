@@ -13,4 +13,3 @@ data class TimelineItemDaySeparatorModel(
 ) : TimelineItemVirtualModel {
     override val type: String = "TimelineItemDaySeparatorModel"
 }
-

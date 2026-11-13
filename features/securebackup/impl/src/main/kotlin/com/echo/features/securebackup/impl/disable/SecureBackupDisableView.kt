@@ -120,4 +120,3 @@ internal fun SecureBackupDisableViewPreview(
         onBackClick = {},
     )
 }
-

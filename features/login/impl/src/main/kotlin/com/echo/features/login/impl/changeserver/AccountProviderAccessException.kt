@@ -19,4 +19,3 @@ sealed class AccountProviderAccessException : Exception() {
         val authorisedAccountProviderTitles: List<String>,
     ) : AccountProviderAccessException()
 }
-

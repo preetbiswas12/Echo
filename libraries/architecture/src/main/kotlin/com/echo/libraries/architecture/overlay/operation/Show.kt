@@ -37,4 +37,3 @@ data class Show<T : Any>(
 fun <T : Any> Overlay<T>.show(element: T) {
     accept(Show(element))
 }
-

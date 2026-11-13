@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.api.notification.NotificationContent
 import com.echo.libraries.matrix.api.notification.RtcNotificationType
@@ -28,6 +27,7 @@ import com.echo.libraries.push.impl.notifications.model.NotifiableMessageEvent
 import com.echo.libraries.push.impl.notifications.model.NotifiableRingingCallEvent
 import com.echo.services.appnavstate.test.FakeAppForegroundStateService
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -173,4 +173,3 @@ class DefaultCallNotificationEventResolverTest {
         clientProvider = clientProvider,
     )
 }
-

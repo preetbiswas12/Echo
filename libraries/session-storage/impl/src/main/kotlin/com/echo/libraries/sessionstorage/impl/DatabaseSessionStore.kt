@@ -11,13 +11,13 @@ package com.echo.libraries.sessionstorage.impl
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
 import app.cash.sqldelight.coroutines.mapToOneOrNull
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.sessionstorage.api.LoggedInState
 import com.echo.libraries.sessionstorage.api.SessionData
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
@@ -197,4 +197,3 @@ class DatabaseSessionStore(
         }
     }
 }
-

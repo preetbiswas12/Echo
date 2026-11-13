@@ -8,8 +8,6 @@
 
 package com.echo.libraries.push.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.mapFailure
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.core.meta.BuildMeta
@@ -22,6 +20,8 @@ import com.echo.libraries.pushproviders.api.PusherSubscriber
 import com.echo.libraries.pushproviders.api.RegistrationFailure
 import com.echo.libraries.pushstore.api.UserPushStoreFactory
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 private val loggerTag = LoggerTag("DefaultPusherSubscriber", LoggerTag.PushLoggerTag)
@@ -111,4 +111,3 @@ class DefaultPusherSubscriber(
             }
     }
 }
-

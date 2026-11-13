@@ -8,14 +8,14 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.pushproviders.api.Config
 import com.echo.libraries.pushproviders.api.Distributor
 import com.echo.libraries.pushproviders.api.PushProvider
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 @ContributesIntoSet(AppScope::class)
 class UnifiedPushProvider(
@@ -67,4 +67,3 @@ class UnifiedPushProvider(
 
     override fun canRotateToken(): Boolean = false
 }
-

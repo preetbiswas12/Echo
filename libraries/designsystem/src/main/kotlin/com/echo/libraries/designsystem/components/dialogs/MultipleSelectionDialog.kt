@@ -156,4 +156,3 @@ internal fun MultipleSelectionDialogPreview() = ElementPreview {
         initialSelection = persistentListOf(0),
     )
 }
-

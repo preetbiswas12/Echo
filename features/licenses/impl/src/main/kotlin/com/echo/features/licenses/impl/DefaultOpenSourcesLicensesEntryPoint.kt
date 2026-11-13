@@ -10,10 +10,10 @@ package com.echo.features.licenses.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.licenses.api.OpenSourceLicensesEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultOpenSourcesLicensesEntryPoint : OpenSourceLicensesEntryPoint {
@@ -21,4 +21,3 @@ class DefaultOpenSourcesLicensesEntryPoint : OpenSourceLicensesEntryPoint {
         return parentNode.createNode<DependenciesFlowNode>(buildContext)
     }
 }
-

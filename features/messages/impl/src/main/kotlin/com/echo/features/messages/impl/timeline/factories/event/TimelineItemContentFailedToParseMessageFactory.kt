@@ -8,10 +8,10 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemUnknownContent
 import com.echo.libraries.matrix.api.timeline.item.event.FailedToParseMessageLikeContent
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemContentFailedToParseMessageFactory {
@@ -19,4 +19,3 @@ class TimelineItemContentFailedToParseMessageFactory {
         return TimelineItemUnknownContent
     }
 }
-

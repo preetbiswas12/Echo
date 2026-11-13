@@ -10,8 +10,8 @@ package com.echo.features.call.impl
 
 import android.Manifest
 import android.webkit.PermissionRequest
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.impl.ui.mapWebkitPermissions
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MapWebkitPermissionsTest {
@@ -33,4 +33,3 @@ class MapWebkitPermissionsTest {
         assertThat(permission).isEmpty()
     }
 }
-

@@ -19,4 +19,3 @@ data class SetHttpPusherData(
     val defaultPayload: String,
     val append: Boolean,
 )
-

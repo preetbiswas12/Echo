@@ -18,4 +18,3 @@ data class UserLocationState(val location: LocationMeasurement?) {
         fun create(hasLocationPermission: Boolean): UserLocationState
     }
 }
-

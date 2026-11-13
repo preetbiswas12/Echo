@@ -15,13 +15,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.securebackup.impl.loggerTagDisable
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runCatchingUpdatingState
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.encryption.EncryptionService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -61,4 +61,3 @@ class SecureBackupDisablePresenter(
         }.runCatchingUpdatingState(disableAction)
     }
 }
-

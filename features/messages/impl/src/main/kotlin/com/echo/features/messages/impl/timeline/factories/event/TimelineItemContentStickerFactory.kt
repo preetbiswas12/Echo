@@ -8,13 +8,13 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemStickerContent
 import com.echo.libraries.androidutils.filesize.FileSizeFormatter
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.timeline.item.event.StickerContent
 import com.echo.libraries.mediaviewer.api.util.FileExtensionExtractor
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemContentStickerFactory(
@@ -52,4 +52,3 @@ class TimelineItemContentStickerFactory(
         )
     }
 }
-

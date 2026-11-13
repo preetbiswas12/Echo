@@ -15,4 +15,3 @@ import org.matrix.rustcomponents.sdk.PredecessorRoom as RustPredecessorRoom
 fun RustPredecessorRoom.map(): PredecessorRoom {
     return PredecessorRoom(roomId = RoomId(roomId))
 }
-

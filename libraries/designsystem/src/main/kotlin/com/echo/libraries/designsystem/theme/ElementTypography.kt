@@ -21,4 +21,3 @@ val noFontPadding: TextStyle = TextStyle(
         includeFontPadding = false
     )
 )
-

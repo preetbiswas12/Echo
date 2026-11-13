@@ -8,10 +8,10 @@
 
 package com.echo.features.joinroom.impl.di
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 interface CancelKnockRoom {
     suspend operator fun invoke(roomId: RoomId): Result<Unit>
@@ -26,4 +26,3 @@ class DefaultCancelKnockRoom(private val client: MatrixClient) : CancelKnockRoom
             ?: Result.failure(IllegalStateException("No pending room found"))
     }
 }
-

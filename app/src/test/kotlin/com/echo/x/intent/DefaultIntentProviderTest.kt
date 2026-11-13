@@ -12,7 +12,6 @@ package com.echo.x.intent
 
 import android.content.Context
 import android.content.Intent
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.deeplink.api.DeepLinkCreator
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
@@ -26,6 +25,7 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.x.MainActivity
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 
@@ -66,4 +66,3 @@ class DefaultIntentProviderTest : RobolectricTest() {
         assertThat(component?.className).isEqualTo(MainActivity::class.java.name)
     }
 }
-

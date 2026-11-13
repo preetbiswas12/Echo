@@ -18,4 +18,3 @@ interface LogoutUseCase {
      */
     suspend fun logoutAll(ignoreSdkError: Boolean)
 }
-

@@ -163,4 +163,3 @@ internal fun SenderNamePreview(
         }
     }
 }
-

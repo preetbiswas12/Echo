@@ -23,4 +23,3 @@ class DefaultDnsResolver : DnsResolver {
         InetAddress.getAllByName(host).toList()
     }
 }
-

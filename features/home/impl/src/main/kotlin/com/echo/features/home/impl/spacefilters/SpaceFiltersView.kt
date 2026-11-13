@@ -192,4 +192,3 @@ private fun SpaceFilterItem(
 internal fun SpaceFiltersViewPreview(@PreviewParameter(SpaceFiltersStatePreviewParam::class) state: SpaceFiltersState) = ElementPreview(fillMaxSize = true) {
     SpaceFiltersView(state = state)
 }
-

@@ -16,11 +16,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.permissions.api.PermissionsEvent
 import com.echo.libraries.permissions.api.PermissionsPresenter
 import com.echo.libraries.permissions.api.localnetwork.LocalNetworkPermissionAdvisor
 import com.echo.libraries.permissions.api.localnetwork.LocalNetworkPermissionDialog
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.launch
 
 @Inject
@@ -94,4 +94,3 @@ class LocalNetworkPermissionGate(
         )
     }
 }
-

@@ -20,4 +20,3 @@ fun sendAttachmentError(
         R.string.screen_media_upload_preview_error_failed_sending
     }
 }
-

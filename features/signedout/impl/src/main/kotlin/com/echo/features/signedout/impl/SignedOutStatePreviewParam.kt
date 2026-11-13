@@ -27,4 +27,3 @@ internal fun aSignedOutState(
     signedOutMatrixUser = signedOutSession,
     eventSink = eventSink,
 )
-

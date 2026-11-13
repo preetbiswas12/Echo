@@ -31,4 +31,3 @@ class FirstThrottlerTest {
         assertThat(throttler.canHandle()).isTrue()
     }
 }
-

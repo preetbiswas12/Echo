@@ -123,4 +123,3 @@ private fun SdkRtcCallIntent?.map(): CallIntent = when (this) {
     SdkRtcCallIntent.AUDIO -> CallIntent.AUDIO
     else -> CallIntent.VIDEO
 }
-

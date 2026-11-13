@@ -20,4 +20,3 @@ class FakeFileViewerEntryPoint : FileViewerEntryPoint {
         callback: FileViewerEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

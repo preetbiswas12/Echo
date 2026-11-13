@@ -48,4 +48,3 @@ interface SearchBackfillService {
      */
     fun cancelSearchBackfill(): Result<Unit>
 }
-

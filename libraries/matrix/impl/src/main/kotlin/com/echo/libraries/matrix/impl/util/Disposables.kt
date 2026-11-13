@@ -14,4 +14,3 @@ import org.matrix.rustcomponents.sdk.Disposable
  * Call destroy on all elements of the iterable.
  */
 internal fun Iterable<Disposable>.destroyAll() = forEach { it.destroy() }
-

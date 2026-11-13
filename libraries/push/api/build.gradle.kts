@@ -23,5 +23,3 @@ dependencies {
     implementation(projects.libraries.preferences.api)
     implementation(projects.libraries.pushproviders.api)
 }
-
-

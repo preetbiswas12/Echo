@@ -7,7 +7,6 @@
 
 package com.echo.libraries.slashcommands.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.MsgType
@@ -17,6 +16,7 @@ import com.echo.libraries.slashcommands.api.SlashCommand
 import com.echo.libraries.slashcommands.impl.rainbow.RainbowGenerator
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 
 @Inject
 class CommandExecutor(
@@ -218,4 +218,3 @@ private fun MessagePrefix.toMarkdown() = when (this) {
     MessagePrefix.Unflip -> "┬──┬ ノ( ゜-゜ノ)"
     MessagePrefix.Lenny -> "( ͡° ͜ʖ ͡°)"
 }
-

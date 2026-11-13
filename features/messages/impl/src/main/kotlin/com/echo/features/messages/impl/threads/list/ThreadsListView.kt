@@ -410,4 +410,3 @@ fun aThreadListItemEvent(
     content = content,
     timestamp = timestamp,
 )
-

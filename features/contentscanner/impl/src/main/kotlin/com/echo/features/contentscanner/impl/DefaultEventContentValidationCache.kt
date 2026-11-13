@@ -7,8 +7,6 @@
 
 package com.echo.features.contentscanner.impl
 
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.scanner.ContentScanner
@@ -16,6 +14,8 @@ import com.echo.libraries.matrix.ui.media.contentvalidation.ContentValidationSta
 import com.echo.libraries.matrix.ui.media.contentvalidation.DefaultContentValidationState
 import com.echo.libraries.matrix.ui.media.contentvalidation.EventContentValidationCache
 import com.echo.libraries.matrix.ui.media.contentvalidation.NoopContentValidationState
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
 
@@ -37,4 +37,3 @@ class DefaultEventContentValidationCache(
         }
     }
 }
-

@@ -19,4 +19,3 @@ data class ComposerDraft(
     val htmlText: String?,
     val draftType: ComposerDraftType
 )
-

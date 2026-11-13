@@ -14,4 +14,3 @@ import okhttp3.HttpUrl
 fun interface BugReporterUrlProvider {
     fun provide(): Flow<HttpUrl?>
 }
-

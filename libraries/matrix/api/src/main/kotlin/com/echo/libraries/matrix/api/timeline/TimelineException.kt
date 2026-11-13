@@ -12,4 +12,3 @@ sealed class TimelineException : Exception() {
     data object CannotPaginate : TimelineException()
     data object EventNotFound : TimelineException()
 }
-

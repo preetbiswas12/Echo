@@ -46,4 +46,3 @@ class InMemoryAnnouncementStore(
         Announcement.SwipeAvatarToSwitchAccount -> swipeAvatarToSwitchAccountAnnouncement
     }
 }
-

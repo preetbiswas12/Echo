@@ -17,4 +17,3 @@ sealed interface RageshakeDetectionEvent {
     data object StopDetection : RageshakeDetectionEvent
     data class ProcessScreenshot(val imageResult: ImageResult) : RageshakeDetectionEvent
 }
-

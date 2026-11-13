@@ -414,4 +414,3 @@ internal fun PinUnlockViewCompactPreview(@PreviewParameter(PinUnlockStateCompact
         )
     }
 }
-

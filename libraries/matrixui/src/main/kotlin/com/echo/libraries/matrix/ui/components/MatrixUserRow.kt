@@ -49,4 +49,3 @@ fun MatrixUserRow(
 internal fun MatrixUserRowPreview(@PreviewParameter(MatrixUserPreviewParam::class) matrixUser: MatrixUser) = ElementPreview {
     MatrixUserRow(matrixUser)
 }
-

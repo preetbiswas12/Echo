@@ -39,4 +39,3 @@ internal fun List<UShort>.fromMSC3246range(): List<Float> = map { it.toInt() / 1
  * https://github.com/matrix-org/matrix-spec-proposals/blob/travis/msc/audio-waveform/proposals/3246-audio-waveform.md
  */
 internal fun List<Float>.toMSC3246range(): List<UShort> = map { (it * 1024).toInt().toUShort() }
-

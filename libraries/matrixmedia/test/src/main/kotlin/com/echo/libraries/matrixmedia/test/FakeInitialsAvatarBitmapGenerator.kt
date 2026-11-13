@@ -24,4 +24,3 @@ class FakeInitialsAvatarBitmapGenerator(
         return generateBitmapResult(size, avatarData, useDarkTheme, fontSizePercentage)
     }
 }
-

@@ -26,4 +26,3 @@ sealed interface SpaceFiltersEvent {
         data object ClearSelection : Selected
     }
 }
-

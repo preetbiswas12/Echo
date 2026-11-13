@@ -72,4 +72,3 @@ private fun rememberEventContentValidationStateInternal(eventId: EventId?): Cont
         }
     }
 }
-

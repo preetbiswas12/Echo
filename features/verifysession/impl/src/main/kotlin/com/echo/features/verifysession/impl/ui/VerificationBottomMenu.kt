@@ -26,4 +26,3 @@ internal fun VerificationBottomMenu(
         buttons()
     }
 }
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.room
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.MessageEventType
+import com.google.common.truth.Truth.assertThat
 import org.junit.Ignore
 import org.junit.Test
 import uniffi.ruma_events.MessageLikeEventType
@@ -70,4 +70,3 @@ class MessageEventTypeKtTest {
         assertThat(MessageEventType.UnstablePollStart.map()).isEqualTo(MessageLikeEventType.UnstablePollStart)
     }
 }
-

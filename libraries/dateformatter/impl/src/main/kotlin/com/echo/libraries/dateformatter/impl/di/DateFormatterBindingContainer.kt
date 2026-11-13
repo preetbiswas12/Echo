@@ -8,11 +8,11 @@
 
 package com.echo.libraries.dateformatter.impl.di
 
+import com.echo.libraries.dateformatter.impl.TimezoneProvider
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.BindingContainer
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.Provides
-import com.echo.libraries.dateformatter.impl.TimezoneProvider
 import kotlinx.datetime.TimeZone
 import java.util.Locale
 import kotlin.time.Clock
@@ -29,4 +29,3 @@ object DateFormatterBindingContainer {
     @Provides
     fun providesTimezoneProvider(): TimezoneProvider = TimezoneProvider { TimeZone.currentSystemDefault() }
 }
-

@@ -21,8 +21,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.di.RoomGraphFactory
 import com.echo.appnav.di.TimelineBindings
@@ -52,6 +50,8 @@ import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analytics.api.finishLongRunningTransaction
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
 import com.echo.services.appnavstate.api.AppNavigationStateService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
@@ -330,4 +330,3 @@ private fun initialElement(plugins: List<Plugin>): JoinedRoomLoadedFlowNode.NavT
         RoomNavigationTarget.NotificationSettings -> JoinedRoomLoadedFlowNode.NavTarget.RoomNotificationSettings
     }
 }
-

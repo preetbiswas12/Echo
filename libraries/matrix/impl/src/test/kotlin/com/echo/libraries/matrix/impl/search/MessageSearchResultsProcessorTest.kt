@@ -7,9 +7,9 @@
 
 package com.echo.libraries.matrix.impl.search
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.search.MessageSearchResult
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustSearchServiceResult
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -174,4 +174,3 @@ class MessageSearchResultsProcessorTest {
         assertThat(result.timestamp).isEqualTo(1234L)
     }
 }
-

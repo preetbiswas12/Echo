@@ -50,4 +50,3 @@ fun aMessageComposerState(
     slashCommandAction = slashCommandAction,
     eventSink = eventSink,
 )
-

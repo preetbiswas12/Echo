@@ -7,10 +7,10 @@
 
 package com.echo.libraries.preferences.impl.store
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
 import com.echo.libraries.preferences.test.FakePreferenceDataStoreFactory
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -143,4 +143,3 @@ class DefaultAppPreferencesStoreTest {
         preferenceDataStoreFactory = FakePreferenceDataStoreFactory(),
     )
 }
-

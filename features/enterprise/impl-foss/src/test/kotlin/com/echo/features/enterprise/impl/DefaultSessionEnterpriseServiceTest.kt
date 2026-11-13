@@ -19,4 +19,3 @@ class DefaultSessionEnterpriseServiceTest {
         assertThat(service.isElementCallAvailable()).isTrue()
     }
 }
-

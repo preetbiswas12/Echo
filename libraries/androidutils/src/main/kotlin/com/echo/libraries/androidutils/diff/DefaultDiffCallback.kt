@@ -38,4 +38,3 @@ internal class DefaultDiffCallback<T>(
         return oldItem == newItem
     }
 }
-

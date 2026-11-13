@@ -77,4 +77,3 @@ object MimeTypes {
         else -> OctetStream
     }
 }
-

@@ -53,4 +53,3 @@ internal fun TimelineInterface.timelineDiffFlow(): Flow<List<TimelineDiff>> =
     }.catch {
         Timber.d(it, "timelineDiffFlow() failed")
     }.buffer(Channel.UNLIMITED)
-

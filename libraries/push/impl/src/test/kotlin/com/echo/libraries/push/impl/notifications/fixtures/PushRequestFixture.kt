@@ -32,4 +32,3 @@ fun aPushRequest(
     status = status.value,
     retries = retries.toLong(),
 )
-

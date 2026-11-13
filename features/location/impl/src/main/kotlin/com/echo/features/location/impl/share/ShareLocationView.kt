@@ -374,4 +374,3 @@ internal fun ShareLocationViewPreview(
         navigateUp = {},
     )
 }
-

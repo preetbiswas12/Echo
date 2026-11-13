@@ -18,8 +18,6 @@ import com.bumble.appyx.core.navigation.model.permanent.PermanentNavModel
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.node.ParentNode
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.forward.api.ForwardEntryPoint
 import com.echo.libraries.architecture.NodeInputs
@@ -31,6 +29,8 @@ import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.roomselect.api.RoomSelectEntryPoint
 import com.echo.libraries.roomselect.api.RoomSelectMode
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 private const val MAX_NUMBER_OF_ROOMS = 5
@@ -107,4 +107,3 @@ class ForwardMessagesNode(
         }
     }
 }
-

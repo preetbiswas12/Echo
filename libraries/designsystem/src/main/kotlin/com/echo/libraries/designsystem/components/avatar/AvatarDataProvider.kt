@@ -24,4 +24,3 @@ fun anAvatarData(
     size = size,
     thumbnail = thumbnail,
 )
-

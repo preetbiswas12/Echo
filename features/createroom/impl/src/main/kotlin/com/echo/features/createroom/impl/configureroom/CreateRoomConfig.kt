@@ -21,4 +21,3 @@ data class CreateRoomConfig(
     val visibilityState: RoomVisibilityState = RoomVisibilityState.Private(JoinRuleItem.PrivateVisibility.Private),
     val parentSpace: SpaceRoom? = null,
 )
-

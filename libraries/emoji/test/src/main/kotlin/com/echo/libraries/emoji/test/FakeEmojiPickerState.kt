@@ -16,4 +16,3 @@ import com.echo.libraries.emoji.api.picker.EmojiPickerState
 data class FakeEmojiPickerState(
     override val isReady: Boolean,
 ) : EmojiPickerState
-

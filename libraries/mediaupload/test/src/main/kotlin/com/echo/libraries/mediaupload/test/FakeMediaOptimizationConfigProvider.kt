@@ -20,4 +20,3 @@ class FakeMediaOptimizationConfigProvider(
 ) : MediaOptimizationConfigProvider {
     override suspend fun get(): MediaOptimizationConfig = config
 }
-

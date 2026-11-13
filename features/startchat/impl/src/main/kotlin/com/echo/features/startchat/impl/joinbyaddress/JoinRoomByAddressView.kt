@@ -141,4 +141,3 @@ internal fun JoinRoomByAddressViewPreview(
 ) = ElementPreview {
     JoinRoomByAddressView(state = state)
 }
-

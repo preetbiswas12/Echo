@@ -139,4 +139,3 @@ private fun aDefaultInvitePeopleState(
         eventSink = {},
     )
 }
-

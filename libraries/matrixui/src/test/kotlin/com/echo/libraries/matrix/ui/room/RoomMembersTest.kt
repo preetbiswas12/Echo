@@ -11,7 +11,6 @@ package com.echo.libraries.matrix.ui.room
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.room.RoomMembersState
 import com.echo.libraries.matrix.api.room.RoomMembershipState
 import com.echo.libraries.matrix.test.A_USER_ID
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.aRoomMember
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -150,4 +150,3 @@ class RoomMembersTest {
         }
     }
 }
-

@@ -35,4 +35,3 @@ class Overlay<NavTarget : Any>(
     override val initialElements: NavElements<NavTarget, BackStack.State>
         get() = emptyList()
 }
-

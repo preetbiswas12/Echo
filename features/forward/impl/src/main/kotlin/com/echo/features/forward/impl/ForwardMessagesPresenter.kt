@@ -11,9 +11,6 @@ package com.echo.features.forward.impl
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.architecture.runCatchingUpdatingState
@@ -23,6 +20,9 @@ import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.room.CreateTimelineParams
 import com.echo.libraries.matrix.api.room.JoinedRoom
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -80,4 +80,3 @@ class ForwardMessagesPresenter(
         }.runCatchingUpdatingState(forwardingActionState)
     }
 }
-

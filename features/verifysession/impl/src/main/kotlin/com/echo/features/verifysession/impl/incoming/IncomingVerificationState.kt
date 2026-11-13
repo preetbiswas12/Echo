@@ -43,4 +43,3 @@ data class IncomingVerificationState(
                 this is Verifying
     }
 }
-

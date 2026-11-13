@@ -20,4 +20,3 @@ fun suspendWithMinimumDuration(
     }
     delay(minimumDurationMillis - duration)
 }
-

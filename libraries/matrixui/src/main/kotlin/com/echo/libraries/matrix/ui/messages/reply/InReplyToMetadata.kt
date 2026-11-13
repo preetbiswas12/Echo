@@ -183,4 +183,3 @@ internal fun InReplyToDetails.Ready.metadata(hideImage: Boolean): InReplyToMetad
     is LiveLocationContent,
     null -> null
 }
-

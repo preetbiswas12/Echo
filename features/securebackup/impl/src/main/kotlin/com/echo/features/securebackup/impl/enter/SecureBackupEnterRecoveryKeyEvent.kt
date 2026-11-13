@@ -14,4 +14,3 @@ sealed interface SecureBackupEnterRecoveryKeyEvent {
     data object Submit : SecureBackupEnterRecoveryKeyEvent
     data object ClearDialog : SecureBackupEnterRecoveryKeyEvent
 }
-

@@ -15,8 +15,8 @@ import androidx.compose.ui.platform.LocalContext
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -104,4 +104,3 @@ class ThemeTest : RobolectricTest() {
             }
     }
 }
-

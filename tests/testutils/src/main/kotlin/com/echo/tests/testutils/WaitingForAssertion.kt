@@ -21,4 +21,3 @@ suspend fun waitForPredicate(
     }
     throw AssertionError("Predicate was not true after $maxNumberOfAttempts attempts")
 }
-

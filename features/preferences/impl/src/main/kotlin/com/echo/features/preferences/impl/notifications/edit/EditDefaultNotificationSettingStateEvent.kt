@@ -14,4 +14,3 @@ sealed interface EditDefaultNotificationSettingStateEvent {
     data class SetNotificationMode(val mode: RoomNotificationMode) : EditDefaultNotificationSettingStateEvent
     data object ClearError : EditDefaultNotificationSettingStateEvent
 }
-

@@ -28,4 +28,3 @@ sealed interface MediaOptimizationState {
             is Split -> compressImages
         }
 }
-

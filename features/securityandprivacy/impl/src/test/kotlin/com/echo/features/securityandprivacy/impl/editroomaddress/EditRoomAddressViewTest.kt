@@ -112,4 +112,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setEditRoomAddressView(
         )
     }
 }
-

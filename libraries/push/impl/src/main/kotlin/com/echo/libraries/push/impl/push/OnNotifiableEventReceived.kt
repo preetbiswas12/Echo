@@ -8,12 +8,12 @@
 
 package com.echo.libraries.push.impl.push
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.push.impl.notifications.DefaultNotificationDrawerManager
 import com.echo.libraries.push.impl.notifications.model.NotifiableEvent
 import com.echo.libraries.push.impl.notifications.model.NotifiableRingingCallEvent
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -33,4 +33,3 @@ class DefaultOnNotifiableEventReceived(
         }
     }
 }
-

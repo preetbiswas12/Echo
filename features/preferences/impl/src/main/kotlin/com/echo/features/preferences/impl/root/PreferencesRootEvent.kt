@@ -13,4 +13,3 @@ sealed interface PreferencesRootEvent {
     data object ToggleOtherAccountsExpanded : PreferencesRootEvent
     data class SetTheme(val theme: ThemeOption) : PreferencesRootEvent
 }
-

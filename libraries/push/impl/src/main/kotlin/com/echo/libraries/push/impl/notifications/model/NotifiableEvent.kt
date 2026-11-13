@@ -27,4 +27,3 @@ sealed interface NotifiableEvent {
     val isRedacted: Boolean
     val isUpdated: Boolean
 }
-

@@ -14,13 +14,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalInspectionMode
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.messages.api.timeline.HtmlConverterProvider
 import com.echo.libraries.core.bool.orFalse
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.textcomposer.ElementRichTextEditorStyle
 import com.echo.libraries.textcomposer.mentions.MentionSpanProvider
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import io.element.android.wysiwyg.compose.StyledHtmlConverter
 import io.element.android.wysiwyg.display.MentionDisplayHandler
 import io.element.android.wysiwyg.display.TextDisplay
@@ -76,4 +76,3 @@ class DefaultHtmlConverterProvider(
         return htmlConverter.value ?: error("HtmlConverter wasn't instantiated. Make sure to call HtmlConverterProvider.Update() first.")
     }
 }
-

@@ -147,4 +147,3 @@ internal fun LeaveRoomViewPreview(
         LeaveRoomView(state = state, onSelectNewOwners = {})
     }
 }
-

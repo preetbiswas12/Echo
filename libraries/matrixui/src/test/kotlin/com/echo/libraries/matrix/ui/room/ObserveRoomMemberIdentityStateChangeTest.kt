@@ -9,7 +9,6 @@
 package com.echo.libraries.matrix.ui.room
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.encryption.identity.IdentityState
 import com.echo.libraries.matrix.api.encryption.identity.IdentityStateChange
 import com.echo.libraries.matrix.api.room.RoomMembersState
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.matrix.test.room.aRoomInfo
 import com.echo.libraries.matrix.test.room.aRoomMember
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -402,4 +402,3 @@ class ObserveRoomMemberIdentityStateChangeTest {
         }
     }
 }
-

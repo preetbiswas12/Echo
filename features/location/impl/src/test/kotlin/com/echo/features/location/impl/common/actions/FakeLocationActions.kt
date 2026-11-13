@@ -46,4 +46,3 @@ class FakeLocationActions(
         isLocationEnabled = enabled
     }
 }
-

@@ -67,4 +67,3 @@ fun AndroidComposeUiTest<ComponentActivity>.setSafeContent(
         }
     }
 }
-

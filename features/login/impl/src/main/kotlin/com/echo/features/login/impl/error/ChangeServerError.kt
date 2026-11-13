@@ -56,4 +56,3 @@ sealed class ChangeServerError : Exception() {
         }
     }
 }
-

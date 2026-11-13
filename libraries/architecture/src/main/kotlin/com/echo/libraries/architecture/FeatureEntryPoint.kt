@@ -22,4 +22,3 @@ interface FeatureEntryPoint
 fun interface SimpleFeatureEntryPoint : FeatureEntryPoint {
     fun createNode(parentNode: Node, buildContext: BuildContext): Node
 }
-

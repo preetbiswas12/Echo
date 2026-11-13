@@ -12,13 +12,13 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.logout.api.direct.DirectLogoutEvent
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.FakeMatrixClient
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -142,4 +142,3 @@ class DirectLogoutPresenterTest {
         matrixClient = matrixClient,
     )
 }
-

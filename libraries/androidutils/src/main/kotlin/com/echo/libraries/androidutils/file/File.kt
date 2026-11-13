@@ -90,4 +90,3 @@ fun File.getSizeOfFiles(): Long {
         // which is a common block size on many file systems.
         .sumOf { if (it.isFile) it.length() else 4096L }
 }
-

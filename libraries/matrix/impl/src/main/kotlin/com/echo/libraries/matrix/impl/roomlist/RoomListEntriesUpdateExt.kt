@@ -50,4 +50,3 @@ internal fun RoomListEntriesUpdate.describe(): String {
         }
     }
 }
-

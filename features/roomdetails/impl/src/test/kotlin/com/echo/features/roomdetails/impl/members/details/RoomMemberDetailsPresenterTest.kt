@@ -8,7 +8,6 @@
 
 package com.echo.features.roomdetails.impl.members.details
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.roomdetails.impl.aJoinedRoom
 import com.echo.features.roomdetails.impl.members.aRoomMember
 import com.echo.features.userprofile.api.UserProfileEvent
@@ -33,6 +32,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -375,4 +375,3 @@ class RoomMemberDetailsPresenterTest {
         )
     }
 }
-

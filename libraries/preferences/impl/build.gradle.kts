@@ -30,5 +30,3 @@ dependencies {
     testCommonDependencies(libs)
     testImplementation(projects.libraries.preferences.test)
 }
-
-

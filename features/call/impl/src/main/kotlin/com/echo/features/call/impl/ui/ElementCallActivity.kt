@@ -36,7 +36,6 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.Lifecycle
-import dev.zacsweers.metro.Inject
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.compound.theme.ForcedDarkElementTheme
 import com.echo.features.call.api.CallData
@@ -60,6 +59,7 @@ import com.echo.libraries.designsystem.theme.ElementThemeApp
 import com.echo.libraries.designsystem.utils.hasCompactHeightWindowSize
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 import timber.log.Timber
 
 private val loggerTag = LoggerTag("ElementCallActivity")
@@ -336,4 +336,3 @@ internal fun mapWebkitPermissions(permissions: Array<String>): List<String> {
         }
     }
 }
-

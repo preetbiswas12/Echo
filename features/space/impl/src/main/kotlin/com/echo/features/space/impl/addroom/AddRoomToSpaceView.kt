@@ -279,4 +279,3 @@ internal fun AddRoomToSpaceViewPreview(
         onAddRoom = {},
     )
 }
-

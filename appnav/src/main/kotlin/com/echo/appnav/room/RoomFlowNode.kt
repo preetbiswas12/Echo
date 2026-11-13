@@ -21,8 +21,6 @@ import com.bumble.appyx.core.plugin.plugins
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.active
 import com.bumble.appyx.navmodel.backstack.operation.newRoot
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.room.joined.JoinedRoomFlowNode
 import com.echo.appnav.room.joined.JoinedRoomLoadedFlowNode
@@ -52,6 +50,8 @@ import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.LoadJoine
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.NotificationToMessage
 import com.echo.services.analytics.api.AnalyticsLongRunningTransaction.OpenRoom
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.filter
@@ -65,8 +65,8 @@ import kotlinx.parcelize.Parcelize
 import timber.log.Timber
 import java.util.Optional
 import kotlin.jvm.optionals.getOrNull
-import im.vector.app.features.analytics.plan.JoinedRoom as JoinedRoomAnalyticsEvent
 import com.echo.libraries.matrix.api.room.JoinedRoom as JoinedRoomInstance
+import im.vector.app.features.analytics.plan.JoinedRoom as JoinedRoomAnalyticsEvent
 
 @ContributesNode(SessionScope::class)
 @AssistedInject
@@ -260,4 +260,3 @@ class RoomFlowNode(
         BackstackView(transitionHandler = JumpToEndTransitionHandler())
     }
 }
-

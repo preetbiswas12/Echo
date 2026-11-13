@@ -11,4 +11,3 @@ package com.echo.features.deactivation.api
 import com.echo.libraries.architecture.SimpleFeatureEntryPoint
 
 interface AccountDeactivationEntryPoint : SimpleFeatureEntryPoint
-

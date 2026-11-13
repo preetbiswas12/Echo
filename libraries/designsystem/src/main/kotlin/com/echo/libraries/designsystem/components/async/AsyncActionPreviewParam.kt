@@ -21,4 +21,3 @@ open class AsyncActionPreviewParam : PreviewParameterProvider<AsyncAction<Unit>>
             AsyncAction.Success(Unit),
         )
 }
-

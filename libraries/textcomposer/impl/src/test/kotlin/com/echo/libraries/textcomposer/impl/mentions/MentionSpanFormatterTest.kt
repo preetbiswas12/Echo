@@ -8,7 +8,6 @@
 
 package com.echo.libraries.textcomposer.impl.mentions
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ALIAS
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.ui.messages.RoomMemberProfilesCache
 import com.echo.libraries.matrix.ui.messages.RoomNamesCache
 import com.echo.libraries.textcomposer.mentions.DefaultMentionSpanFormatter
 import com.echo.libraries.textcomposer.mentions.MentionType
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -134,4 +134,3 @@ class MentionSpanFormatterTest {
         assertThat(result.toString()).isEqualTo("@room")
     }
 }
-

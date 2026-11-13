@@ -45,4 +45,3 @@ sealed interface StartDMResult {
     data object DmDoesNotExist : StartDMResult
     data class Failure(val throwable: Throwable) : StartDMResult
 }
-

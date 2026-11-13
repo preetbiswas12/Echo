@@ -19,4 +19,3 @@ fun SearchBackfillStrategy.map(): RustSearchBackfillStrategy = when (this) {
     SearchBackfillStrategy.FOREGROUND -> RustSearchBackfillStrategy.FOREGROUND
     SearchBackfillStrategy.BACKGROUND -> RustSearchBackfillStrategy.BACKGROUND
 }
-

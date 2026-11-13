@@ -19,4 +19,3 @@ sealed interface PinUnlockEvent {
     data object OnUseBiometric : PinUnlockEvent
     data object ClearBiometricError : PinUnlockEvent
 }
-

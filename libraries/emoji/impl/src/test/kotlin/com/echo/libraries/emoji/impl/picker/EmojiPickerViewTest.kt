@@ -21,9 +21,9 @@ import androidx.compose.ui.test.getBoundsInRoot
 import androidx.compose.ui.test.hasScrollToIndexAction
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.compose.ui.unit.dp
-import io.element.android.emojibasebindings.Emoji
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import io.element.android.emojibasebindings.Emoji
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentSetOf
 import org.junit.Test
@@ -70,4 +70,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setEmojiPickerView() {
         }
     }
 }
-

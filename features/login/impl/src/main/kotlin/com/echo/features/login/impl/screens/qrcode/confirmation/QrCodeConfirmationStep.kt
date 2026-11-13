@@ -21,4 +21,3 @@ sealed interface QrCodeConfirmationStep : NodeInputs, Parcelable {
     @Parcelize
     data class DisplayVerificationCode(val code: String) : QrCodeConfirmationStep
 }
-

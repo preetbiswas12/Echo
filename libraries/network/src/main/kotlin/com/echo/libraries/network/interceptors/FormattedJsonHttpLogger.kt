@@ -70,4 +70,3 @@ internal class FormattedJsonHttpLogger(
             .forEach { Timber.v(it) }
     }
 }
-

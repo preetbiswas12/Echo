@@ -28,4 +28,3 @@ class HideOverlayBackPressHandler<NavTarget : Any> :
         navModel.accept(Hide())
     }
 }
-

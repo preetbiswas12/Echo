@@ -8,9 +8,9 @@
 
 package com.echo.libraries.push.impl.pushgateway
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.push.api.gateway.PushGatewayFailure
 import com.echo.libraries.push.impl.test.DefaultTestPush
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import okhttp3.ResponseBody.Companion.toResponseBody
 import org.junit.Assert.assertThrows
@@ -147,4 +147,3 @@ class DefaultPushGatewayNotifyRequestTest {
         assertThat(factory.baseUrlParameter).isEqualTo("aUrl")
     }
 }
-

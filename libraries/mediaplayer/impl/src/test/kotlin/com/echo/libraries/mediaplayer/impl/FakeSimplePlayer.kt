@@ -61,4 +61,3 @@ class FakeSimplePlayer(
         listeners.forEach { it.onPlaybackStateChanged(playbackState) }
     }
 }
-

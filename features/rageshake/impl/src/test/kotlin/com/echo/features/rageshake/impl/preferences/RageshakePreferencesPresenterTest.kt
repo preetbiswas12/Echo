@@ -8,13 +8,13 @@
 
 package com.echo.features.rageshake.impl.preferences
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.rageshake.api.preferences.RageshakePreferencesEvent
 import com.echo.features.rageshake.impl.rageshake.A_SENSITIVITY
 import com.echo.features.rageshake.impl.rageshake.FakeRageShake
 import com.echo.features.rageshake.impl.rageshake.FakeRageshakeDataStore
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -88,4 +88,3 @@ class RageshakePreferencesPresenterTest {
         }
     }
 }
-

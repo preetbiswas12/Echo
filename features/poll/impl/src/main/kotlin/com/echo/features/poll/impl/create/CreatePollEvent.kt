@@ -23,4 +23,3 @@ sealed interface CreatePollEvent {
     data object ConfirmNavBack : CreatePollEvent
     data object HideConfirmation : CreatePollEvent
 }
-

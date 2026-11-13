@@ -70,4 +70,3 @@ internal fun SpaceHeaderRootViewPreview() = ElementPreview {
         numberOfSpaces = 3,
     )
 }
-

@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.virtual
 data object TimelineItemReadMarkerModel : TimelineItemVirtualModel {
     override val type: String = "TimelineItemReadMarkerModel"
 }
-

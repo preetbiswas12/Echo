@@ -9,7 +9,6 @@
 package com.echo.libraries.mediaviewer.impl.datasource
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.androidutils.filesize.FakeFileSizeFormatter
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.mimetype.MimeTypes
@@ -45,6 +44,7 @@ import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.TestScope
@@ -318,4 +318,3 @@ fun TestScope.createTimelineMediaItemsFactory() = TimelineMediaItemsFactory(
         contentValidationCache = NoopEventContentValidationCache(noopValidationState),
     )
 )
-

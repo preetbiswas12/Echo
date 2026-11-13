@@ -86,4 +86,3 @@ class EnterNumberViewTest : RobolectricTest() {
         }
     }
 }
-

@@ -19,4 +19,3 @@ fun aLoginModeState(
     localNetworkPermissionDialog = localNetworkPermissionDialog,
     eventSink = eventSink,
 )
-

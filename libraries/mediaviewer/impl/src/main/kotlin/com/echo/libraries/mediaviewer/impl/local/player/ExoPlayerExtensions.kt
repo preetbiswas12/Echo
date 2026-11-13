@@ -29,4 +29,3 @@ fun ExoPlayer.seekToEnsurePlaying(positionMs: Long) {
     }
     seekTo(positionMs)
 }
-

@@ -13,4 +13,3 @@ import com.echo.features.analytics.api.preferences.AnalyticsPreferencesState
 data class AnalyticsSettingsState(
     val analyticsPreferencesState: AnalyticsPreferencesState,
 )
-

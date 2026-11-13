@@ -8,7 +8,6 @@
 
 package com.echo.features.lockscreen.impl.setup.pin
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.LockScreenConfig
 import com.echo.features.lockscreen.impl.fixtures.aLockScreenConfig
 import com.echo.features.lockscreen.impl.fixtures.aPinCodeManager
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.tests.testutils.awaitLastSequentialItem
 import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -123,4 +123,3 @@ class SetupPinPresenterTest {
         )
     }
 }
-

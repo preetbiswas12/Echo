@@ -12,7 +12,6 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.api.LoginParams
 import com.echo.features.login.test.FakeLoginIntentResolver
 import com.echo.features.share.api.ShareIntentData
@@ -30,6 +29,7 @@ import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.libraries.oauth.test.FakeOAuthIntentResolver
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 
@@ -342,4 +342,3 @@ class IntentResolverTest : RobolectricTest() {
         )
     }
 }
-

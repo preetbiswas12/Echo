@@ -29,4 +29,3 @@ class FakeFfiQrCodeData(
         return toBytesResult()
     }
 }
-

@@ -8,8 +8,6 @@
 
 package com.echo.features.messages.impl.pinned.list
 
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.PinUnpinAction
 import com.echo.features.messages.impl.aCustomReactionState
 import com.echo.features.messages.impl.aReactionSummaryState
 import com.echo.features.messages.impl.actionlist.anActionListState
@@ -52,6 +50,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.PinUnpinAction
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.TestScope
@@ -411,4 +411,3 @@ class PinnedMessagesListPresenterTest {
         )
     }
 }
-

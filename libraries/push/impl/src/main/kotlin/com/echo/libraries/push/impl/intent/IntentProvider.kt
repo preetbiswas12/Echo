@@ -27,4 +27,3 @@ interface IntentProvider {
         extras: Bundle? = null,
     ): Intent
 }
-

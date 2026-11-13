@@ -22,4 +22,3 @@ package com.echo.libraries.matrixmedia.api
  * Let's always use the same size so coil caching works properly.
  */
 const val AVATAR_THUMBNAIL_SIZE_IN_PIXEL = 240L
-

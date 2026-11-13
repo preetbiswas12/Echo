@@ -29,4 +29,3 @@ interface ViewFolderEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

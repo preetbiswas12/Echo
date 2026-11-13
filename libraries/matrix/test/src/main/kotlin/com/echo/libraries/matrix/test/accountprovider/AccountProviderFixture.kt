@@ -26,4 +26,3 @@ fun anAccountProviderManaged(
     baseUrl = baseUrl,
     canUseServerName = canUseServerName,
 )
-

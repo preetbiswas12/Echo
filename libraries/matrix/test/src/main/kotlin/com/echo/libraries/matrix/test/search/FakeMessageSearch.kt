@@ -96,4 +96,3 @@ class FakeMessageSearch(
         val endReached: Boolean,
     )
 }
-

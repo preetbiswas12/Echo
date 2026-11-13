@@ -27,4 +27,3 @@ val EchoTypographyTokens.aliasScreenTitle: TextStyle
 
 val EchoTypographyTokens.aliasButtonText: TextStyle
     get() = fontBodyLgMedium
-

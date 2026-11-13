@@ -12,4 +12,3 @@ import com.echo.libraries.architecture.AsyncData
 data class ShowQrCodeState(
     val data: AsyncData<String>,
 )
-

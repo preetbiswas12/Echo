@@ -19,4 +19,3 @@ object EventType {
 
     const val RTC_NOTIFICATION = "org.matrix.msc4075.rtc.notification"
 }
-

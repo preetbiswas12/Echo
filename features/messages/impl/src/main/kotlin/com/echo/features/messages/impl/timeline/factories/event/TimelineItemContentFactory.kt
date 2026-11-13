@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.factories.event
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.location.api.Location
 import com.echo.features.messages.impl.timeline.model.event.RtcNotificationState
 import com.echo.features.messages.impl.timeline.model.event.TimelineItemEventContent
@@ -41,6 +40,7 @@ import com.echo.libraries.matrix.api.timeline.item.event.UnknownContent
 import com.echo.libraries.matrix.api.timeline.item.event.getDisambiguatedDisplayName
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemContentFactory(
@@ -152,4 +152,3 @@ class TimelineItemContentFactory(
         }
     }
 }
-

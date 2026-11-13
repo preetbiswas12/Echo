@@ -12,8 +12,6 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
@@ -26,6 +24,8 @@ import com.echo.libraries.push.impl.PushDatabase
 import com.echo.libraries.push.impl.store.DefaultPushDataStore.Companion.BATTERY_OPTIMIZATION_BANNER_STATE_DISMISSED
 import com.echo.libraries.push.impl.store.DefaultPushDataStore.Companion.BATTERY_OPTIMIZATION_BANNER_STATE_INIT
 import com.echo.libraries.push.impl.store.DefaultPushDataStore.Companion.BATTERY_OPTIMIZATION_BANNER_STATE_SHOW
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -114,4 +114,3 @@ class DefaultPushDataStore(
         const val BATTERY_OPTIMIZATION_BANNER_STATE_DISMISSED = 2
     }
 }
-

@@ -9,7 +9,6 @@
 package com.echo.features.enterprise.impl
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.compound.colors.SemanticColorsLightDark
 import com.echo.features.enterprise.api.BugReportUrl
 import com.echo.libraries.androidutils.json.JsonProvider
@@ -22,6 +21,7 @@ import com.echo.libraries.matrix.test.accountprovider.anAccountProviderGeneric
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import kotlinx.serialization.json.Json
@@ -143,4 +143,3 @@ class DefaultEnterpriseServiceTest {
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

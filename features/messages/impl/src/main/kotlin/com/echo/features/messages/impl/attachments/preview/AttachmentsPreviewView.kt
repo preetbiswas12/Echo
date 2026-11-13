@@ -627,4 +627,3 @@ internal fun GalleryCarouselPill(
         )
     }
 }
-

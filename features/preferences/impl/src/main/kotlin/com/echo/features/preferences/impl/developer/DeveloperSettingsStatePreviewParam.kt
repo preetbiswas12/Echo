@@ -59,4 +59,3 @@ fun aDeveloperSettingsState(
     deviceId = deviceId,
     eventSink = eventSink,
 )
-

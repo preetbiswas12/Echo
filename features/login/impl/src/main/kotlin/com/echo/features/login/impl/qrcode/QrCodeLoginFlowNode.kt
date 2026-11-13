@@ -22,9 +22,6 @@ import com.bumble.appyx.navmodel.backstack.operation.newRoot
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
 import com.bumble.appyx.navmodel.backstack.operation.replace
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.login.impl.di.QrCodeLoginBindings
 import com.echo.features.login.impl.di.QrCodeLoginGraph
@@ -44,6 +41,9 @@ import com.echo.libraries.di.DependencyInjectionGraphOwner
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginData
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
 import com.echo.libraries.matrix.api.auth.qrlogin.QrLoginException
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
@@ -254,4 +254,3 @@ sealed interface QrCodeErrorScreenType : NodeInputs, Parcelable {
     @Parcelize
     data object UnknownError : QrCodeErrorScreenType
 }
-

@@ -9,11 +9,11 @@
 package com.echo.libraries.matrix.impl.roomdirectory
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.roomdirectory.RoomDirectoryList
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustRoomDescription
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomDirectorySearch
 import com.echo.libraries.matrix.test.A_ROOM_ID_2
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
@@ -86,4 +86,3 @@ class RustBaseRoomDirectoryListTest {
         coroutineContext = StandardTestDispatcher(testScheduler),
     )
 }
-

@@ -14,4 +14,3 @@ enum class PollHistoryFilter(val stringResource: Int) {
     ONGOING(R.string.screen_polls_history_filter_ongoing),
     PAST(R.string.screen_polls_history_filter_past),
 }
-

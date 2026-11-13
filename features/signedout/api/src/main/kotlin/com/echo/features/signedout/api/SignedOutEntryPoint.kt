@@ -24,4 +24,3 @@ interface SignedOutEntryPoint : FeatureEntryPoint {
         params: Params,
     ): Node
 }
-

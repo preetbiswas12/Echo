@@ -28,4 +28,3 @@ class FakeStartDMAction(
         executeResult(matrixUser, createIfDmDoesNotExist, actionState)
     }
 }
-

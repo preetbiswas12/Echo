@@ -13,15 +13,15 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.features.linknewdevice.impl.LinkNewMobileHandler
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.matrix.api.linknewdevice.LinkMobileStep
 import com.echo.libraries.matrix.api.logs.LoggerTags
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -86,4 +86,3 @@ class ShowQrCodePresenter(
         return state
     }
 }
-

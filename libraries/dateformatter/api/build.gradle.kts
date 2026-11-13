@@ -19,5 +19,3 @@ android {
 dependencies {
     testCommonDependencies(libs)
 }
-
-

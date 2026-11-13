@@ -24,4 +24,3 @@ sealed class FocusEventException : Exception() {
         val msg: String
     ) : FocusEventException()
 }
-

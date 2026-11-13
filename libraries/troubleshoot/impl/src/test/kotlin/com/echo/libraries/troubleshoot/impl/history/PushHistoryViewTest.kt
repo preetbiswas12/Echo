@@ -131,4 +131,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setPushHistoryView(
         )
     }
 }
-

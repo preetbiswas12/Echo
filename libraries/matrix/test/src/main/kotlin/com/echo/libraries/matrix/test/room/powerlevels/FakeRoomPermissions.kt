@@ -56,4 +56,3 @@ data class FakeRoomPermissions(
         // no-op for the fake
     }
 }
-

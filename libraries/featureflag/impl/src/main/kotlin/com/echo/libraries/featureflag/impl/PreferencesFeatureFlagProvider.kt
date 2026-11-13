@@ -10,10 +10,10 @@ package com.echo.libraries.featureflag.impl
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.featureflag.api.Feature
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
@@ -46,4 +46,3 @@ class PreferencesFeatureFlagProvider(
         return true
     }
 }
-

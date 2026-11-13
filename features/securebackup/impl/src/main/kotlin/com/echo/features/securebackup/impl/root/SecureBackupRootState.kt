@@ -36,4 +36,3 @@ data class SecureBackupRootState(
             BackupState.DISABLING -> false
         }
 }
-

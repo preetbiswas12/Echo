@@ -19,4 +19,3 @@ class FakeRedactedVoiceMessageManager : RedactedVoiceMessageManager {
         _invocations.add(timelineItems)
     }
 }
-

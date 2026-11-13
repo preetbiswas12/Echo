@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.roomlist
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomList
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListDynamicEntriesController
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListEntriesWithDynamicAdaptersResult
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListService
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancel
@@ -62,4 +62,3 @@ class RoomListFactoryTest {
         roomList.loadMore()
     }
 }
-

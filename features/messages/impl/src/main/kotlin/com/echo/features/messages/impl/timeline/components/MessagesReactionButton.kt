@@ -237,4 +237,3 @@ internal fun MessagesReactionButtonExtraPreview() = ElementPreview {
         )
     }
 }
-

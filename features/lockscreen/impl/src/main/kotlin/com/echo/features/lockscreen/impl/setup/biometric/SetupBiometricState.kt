@@ -12,4 +12,3 @@ data class SetupBiometricState(
     val isBiometricSetupDone: Boolean,
     val eventSink: (SetupBiometricEvent) -> Unit
 )
-

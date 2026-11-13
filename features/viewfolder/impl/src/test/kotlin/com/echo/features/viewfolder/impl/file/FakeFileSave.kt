@@ -16,4 +16,3 @@ class FakeFileSave : FileSave {
         hasBeenCalled = true
     }
 }
-

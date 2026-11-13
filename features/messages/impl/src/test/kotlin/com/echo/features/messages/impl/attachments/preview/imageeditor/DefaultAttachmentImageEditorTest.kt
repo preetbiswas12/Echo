@@ -7,8 +7,8 @@
 
 package com.echo.features.messages.impl.attachments.preview.imageeditor
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.mimetype.MimeTypes
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultAttachmentImageEditorTest {
@@ -22,4 +22,3 @@ class DefaultAttachmentImageEditorTest {
         assertThat(exportedMimeTypeFor("image/heic")).isEqualTo(MimeTypes.Jpeg)
     }
 }
-

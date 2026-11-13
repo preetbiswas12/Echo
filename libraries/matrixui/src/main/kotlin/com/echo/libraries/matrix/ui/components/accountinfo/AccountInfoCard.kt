@@ -182,4 +182,3 @@ internal fun AccountInfoCardPreview(
         AccountInfoCard(state)
     }
 }
-

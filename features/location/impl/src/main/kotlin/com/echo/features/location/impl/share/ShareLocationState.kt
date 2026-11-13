@@ -33,4 +33,3 @@ data class ShareLocationState(
         data class LiveLocationDurations(val durations: ImmutableList<LiveLocationDuration>) : Dialog
     }
 }
-

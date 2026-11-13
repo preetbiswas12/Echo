@@ -31,4 +31,3 @@ interface CallWidgetSettingsProvider {
         hasActiveCall: Boolean,
     ): MatrixWidgetSettings
 }
-

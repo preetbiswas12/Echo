@@ -14,4 +14,3 @@ data class AnnouncementState(
     val announcement: Announcement.Fullscreen?,
     val eventSink: (AnnouncementEvent) -> Unit,
 )
-

@@ -28,4 +28,3 @@ interface TracingService {
      */
     fun updateWriteToFilesConfiguration(config: WriteToFilesConfiguration)
 }
-

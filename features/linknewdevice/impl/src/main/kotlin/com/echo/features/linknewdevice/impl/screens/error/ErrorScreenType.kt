@@ -41,4 +41,3 @@ sealed interface ErrorScreenType : NodeInputs, Parcelable {
     @Parcelize
     data object UnknownError : ErrorScreenType
 }
-

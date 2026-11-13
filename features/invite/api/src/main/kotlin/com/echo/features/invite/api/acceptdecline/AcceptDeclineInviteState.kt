@@ -16,4 +16,3 @@ data class AcceptDeclineInviteState(
     val declineAction: AsyncAction<RoomId>,
     val eventSink: (AcceptDeclineInviteEvent) -> Unit,
 )
-

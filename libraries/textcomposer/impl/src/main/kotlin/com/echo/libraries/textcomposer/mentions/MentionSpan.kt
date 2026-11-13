@@ -221,4 +221,3 @@ fun Modifier.limitMentionPillWidth(text: CharSequence): Modifier = layout { meas
     val placeable = measurable.measure(constraints)
     layout(placeable.width, placeable.height) { placeable.place(0, 0) }
 }
-

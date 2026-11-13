@@ -31,4 +31,3 @@ interface PushClientSecret {
      */
     suspend fun getUserIdFromSecret(clientSecret: String): SessionId?
 }
-

@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.timeline.factories.virtual
 
-import dev.zacsweers.metro.Inject
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemDaySeparatorModel
 import com.echo.features.messages.impl.timeline.model.virtual.TimelineItemVirtualModel
 import com.echo.libraries.dateformatter.api.DateFormatter
 import com.echo.libraries.dateformatter.api.DateFormatterMode
 import com.echo.libraries.matrix.api.timeline.item.virtual.VirtualTimelineItem
+import dev.zacsweers.metro.Inject
 
 @Inject
 class TimelineItemDaySeparatorFactory(
@@ -30,4 +30,3 @@ class TimelineItemDaySeparatorFactory(
         )
     }
 }
-

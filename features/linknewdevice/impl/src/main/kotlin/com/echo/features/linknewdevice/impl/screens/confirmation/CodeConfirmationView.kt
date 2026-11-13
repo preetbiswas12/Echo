@@ -132,4 +132,3 @@ internal fun CodeConfirmationViewPreview() {
         )
     }
 }
-

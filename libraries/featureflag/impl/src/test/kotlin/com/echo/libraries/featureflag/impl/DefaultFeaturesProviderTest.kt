@@ -8,8 +8,8 @@
 
 package com.echo.libraries.featureflag.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.featureflag.api.FeatureFlags
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DefaultFeaturesProviderTest {
@@ -23,4 +23,3 @@ class DefaultFeaturesProviderTest {
         }
     }
 }
-

@@ -21,4 +21,3 @@ fun SessionData.toMatrixUser() = MatrixUser(
     avatarUrl = userAvatarUrl,
     avatarThumbnail = userAvatarData,
 )
-

@@ -49,4 +49,3 @@ private fun SetupState.toRecoveryKeyViewState(): RecoveryKeyViewState {
         inProgress = this is SetupState.Creating,
     )
 }
-

@@ -9,14 +9,14 @@
 package com.echo.libraries.matrixmedia.impl
 
 import coil3.ImageLoader
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrixmedia.api.ImageLoaderHolder
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 
 @ContributesBinding(AppScope::class)
 @SingleIn(AppScope::class)
@@ -60,4 +60,3 @@ class DefaultImageLoaderHolder(
         }
     }
 }
-

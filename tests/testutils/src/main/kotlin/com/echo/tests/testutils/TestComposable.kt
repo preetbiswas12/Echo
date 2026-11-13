@@ -26,4 +26,3 @@ fun withConfigurationAndContext(content: @Composable () -> Any?): Any? {
     }
     return result
 }
-

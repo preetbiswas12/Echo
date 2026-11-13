@@ -240,4 +240,3 @@ enum class Command(
     fun startsWith(input: CharSequence) = isSupported &&
         allAliases.any { it.startsWith(input, 1, true) }
 }
-

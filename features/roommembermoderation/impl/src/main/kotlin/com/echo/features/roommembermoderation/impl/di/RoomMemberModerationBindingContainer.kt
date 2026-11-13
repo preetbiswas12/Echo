@@ -8,13 +8,13 @@
 
 package com.echo.features.roommembermoderation.impl.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.Binds
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.roommembermoderation.api.RoomMemberModerationState
 import com.echo.features.roommembermoderation.impl.RoomMemberModerationPresenter
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.RoomScope
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.Binds
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(RoomScope::class)
 @BindingContainer
@@ -22,4 +22,3 @@ interface RoomMemberModerationBindingContainer {
     @Binds
     fun bindRoomMemberModerationPresenter(presenter: RoomMemberModerationPresenter): Presenter<RoomMemberModerationState>
 }
-

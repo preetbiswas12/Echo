@@ -22,4 +22,3 @@ fun ElementPreviewBlack(
         content = content
     )
 }
-

@@ -8,9 +8,9 @@
 
 package com.echo.libraries.push.impl.pushgateway
 
+import com.echo.libraries.network.RetrofitFactory
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.network.RetrofitFactory
 
 interface PushGatewayApiFactory {
     fun create(baseUrl: String): PushGatewayAPI
@@ -25,4 +25,3 @@ class DefaultPushGatewayApiFactory(
             .create(PushGatewayAPI::class.java)
     }
 }
-

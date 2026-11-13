@@ -107,4 +107,3 @@ enum class RoomPermissionType {
     SPACE_MANAGE_ROOMS,
     SHARE_LIVE_LOCATION,
 }
-

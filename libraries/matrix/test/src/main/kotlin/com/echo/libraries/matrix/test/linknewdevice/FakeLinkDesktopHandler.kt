@@ -29,4 +29,3 @@ class FakeLinkDesktopHandler(
         mutableLinkDesktopStep.emit(step)
     }
 }
-

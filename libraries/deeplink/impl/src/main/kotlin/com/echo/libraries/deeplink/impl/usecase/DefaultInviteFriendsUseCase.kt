@@ -9,7 +9,6 @@
 package com.echo.libraries.deeplink.impl.usecase
 
 import android.app.Activity
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.system.startSharePlainTextIntent
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.deeplink.api.usecase.InviteFriendsUseCase
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.permalink.PermalinkBuilder
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 import com.echo.libraries.androidutils.R as AndroidUtilsR
 
@@ -48,4 +48,3 @@ class DefaultInviteFriendsUseCase(
         )
     }
 }
-

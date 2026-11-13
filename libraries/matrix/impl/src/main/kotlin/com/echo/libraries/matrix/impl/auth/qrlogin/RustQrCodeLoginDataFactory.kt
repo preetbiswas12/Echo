@@ -8,11 +8,11 @@
 
 package com.echo.libraries.matrix.impl.auth.qrlogin
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginData
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginDataFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rustcomponents.sdk.QrCodeData
 
 @ContributesBinding(AppScope::class)
@@ -21,4 +21,3 @@ class RustQrCodeLoginDataFactory : MatrixQrCodeLoginDataFactory {
         return runCatchingExceptions { SdkQrCodeLoginData(QrCodeData.fromBytes(data)) }
     }
 }
-

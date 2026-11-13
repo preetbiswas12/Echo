@@ -55,4 +55,3 @@ fun aManageAuthorizedSpacesState(
     selectedIds = selectedIds.toImmutableList(),
     eventSink = eventSink,
 )
-

@@ -19,4 +19,3 @@ data class PushGatewayNotifyBody(
     @SerialName("notification")
     val notification: PushGatewayNotification
 )
-

@@ -23,4 +23,3 @@ sealed interface VerifiedUserSendFailure {
         val userDisplayName: String,
     ) : VerifiedUserSendFailure
 }
-

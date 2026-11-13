@@ -17,7 +17,6 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
-import dev.zacsweers.metro.Inject
 import com.echo.features.rageshake.api.reporter.BugReporter
 import com.echo.features.rageshake.api.reporter.BugReporterListener
 import com.echo.features.rageshake.impl.crash.CrashDataStore
@@ -25,6 +24,7 @@ import com.echo.features.rageshake.impl.screenshot.ScreenshotHolder
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.annotations.AppCoroutineScope
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -155,4 +155,3 @@ class BugReportPresenter(
         crashDataStore.reset()
     }
 }
-

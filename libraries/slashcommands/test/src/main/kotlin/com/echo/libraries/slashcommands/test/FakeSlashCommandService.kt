@@ -43,4 +43,3 @@ class FakeSlashCommandService(
         proceedAdminResult(slashCommand)
     }
 }
-

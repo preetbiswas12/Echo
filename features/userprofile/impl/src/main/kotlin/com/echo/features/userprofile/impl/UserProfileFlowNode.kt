@@ -17,8 +17,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.ElementCallEntryPoint
@@ -39,6 +37,8 @@ import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.api.verification.VerificationRequest
 import com.echo.libraries.mediaviewer.api.MediaViewerEntryPoint
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 @ContributesNode(SessionScope::class)
@@ -158,4 +158,3 @@ class UserProfileFlowNode(
         BackstackView()
     }
 }
-

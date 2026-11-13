@@ -441,4 +441,3 @@ interface Timeline : AutoCloseable {
      */
     suspend fun abortSend(eventOrTransactionId: EventOrTransactionId, sendTarget: SendTarget): Result<Boolean>
 }
-

@@ -244,4 +244,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setUserProfileView(
         )
     }
 }
-

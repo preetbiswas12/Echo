@@ -70,4 +70,3 @@ internal fun MediaImageViewPreview() = ElementPreview {
         onClick = {},
     )
 }
-

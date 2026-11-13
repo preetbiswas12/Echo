@@ -48,4 +48,3 @@ fun DropdownMenu(
 object DropdownMenuDefaults {
     val minWidth = 200.dp
 }
-

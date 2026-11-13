@@ -46,4 +46,3 @@ fun rememberStaticMapBuilder(mapTilerConfig: MapTilerConfig?): StaticMapUrlBuild
         mapTilerConfig?.let { MapTilerStaticMapUrlBuilder(it) }
     }
 }
-

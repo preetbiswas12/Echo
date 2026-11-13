@@ -8,6 +8,7 @@
 
 package com.echo.codegen
 
+import com.echo.annotations.ContributesNode
 import com.google.devtools.ksp.KspExperimental
 import com.google.devtools.ksp.getConstructors
 import com.google.devtools.ksp.isAnnotationPresent
@@ -37,7 +38,6 @@ import dev.zacsweers.metro.Binds
 import dev.zacsweers.metro.ContributesTo
 import dev.zacsweers.metro.IntoMap
 import dev.zacsweers.metro.Origin
-import com.echo.annotations.ContributesNode
 import org.jetbrains.kotlin.name.FqName
 
 class ContributesNodeProcessor(
@@ -171,4 +171,3 @@ class ContributesNodeProcessor(
         private val nodeKeyFqName = FqName("com.echo.libraries.architecture.NodeKey")
     }
 }
-

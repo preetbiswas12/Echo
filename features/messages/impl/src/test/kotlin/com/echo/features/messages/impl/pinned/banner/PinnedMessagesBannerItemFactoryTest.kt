@@ -7,7 +7,6 @@
 
 package com.echo.features.messages.impl.pinned.banner
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.eventformatter.test.FakePinnedMessagesBannerFormatter
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.item.event.EventContent
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.test.A_UNIQUE_ID
 import com.echo.libraries.matrix.test.timeline.aMessageContent
 import com.echo.libraries.matrix.test.timeline.anEventTimelineItem
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -72,4 +72,3 @@ class PinnedMessagesBannerItemFactoryTest {
         ),
     )
 }
-

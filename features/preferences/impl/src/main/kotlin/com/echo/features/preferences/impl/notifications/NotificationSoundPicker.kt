@@ -53,4 +53,3 @@ internal fun Intent.toPickedNotificationSound(defaultUri: Uri): NotificationSoun
         else -> NotificationSound.Custom(pickedUri.toString())
     }
 }
-

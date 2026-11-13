@@ -89,4 +89,3 @@ class TimelineItemPollViewTest : RobolectricTest() {
         eventsRecorder.assertSingle(TimelineEvent.EndPoll(content.eventId!!))
     }
 }
-

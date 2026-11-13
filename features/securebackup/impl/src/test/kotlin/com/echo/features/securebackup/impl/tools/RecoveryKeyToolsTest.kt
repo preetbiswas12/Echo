@@ -35,4 +35,3 @@ class RecoveryKeyToolsTest {
         assertThat(sut.isRecoveryKeyFormatValid("abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd")).isTrue()
     }
 }
-

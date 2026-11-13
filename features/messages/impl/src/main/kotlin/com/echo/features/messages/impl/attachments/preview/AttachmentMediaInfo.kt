@@ -42,4 +42,3 @@ private fun String.toImageMimeTypeOrNull(): String? {
         else -> null
     }
 }
-

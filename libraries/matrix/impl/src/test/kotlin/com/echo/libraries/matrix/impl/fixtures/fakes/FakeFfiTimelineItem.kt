@@ -22,4 +22,3 @@ class FakeFfiTimelineItem(
     override fun fmtDebug(): String = "fmtDebug"
     override fun uniqueId(): TimelineUniqueId = TimelineUniqueId("uniqueId")
 }
-

@@ -39,4 +39,3 @@ sealed interface StateEventType {
 
     data class Custom(val type: String) : StateEventType
 }
-

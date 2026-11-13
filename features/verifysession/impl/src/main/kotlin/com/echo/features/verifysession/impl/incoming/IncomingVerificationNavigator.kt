@@ -11,4 +11,3 @@ package com.echo.features.verifysession.impl.incoming
 fun interface IncomingVerificationNavigator {
     fun onFinish()
 }
-

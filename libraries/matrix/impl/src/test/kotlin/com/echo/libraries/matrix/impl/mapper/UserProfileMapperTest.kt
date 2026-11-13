@@ -8,11 +8,11 @@
 
 package com.echo.libraries.matrix.impl.mapper
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.impl.fixtures.factories.aRustUserProfile
 import com.echo.libraries.matrix.impl.user.map
 import com.echo.libraries.matrix.test.A_USER_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class UserProfileMapperTest {
@@ -22,4 +22,3 @@ class UserProfileMapperTest {
             .isEqualTo(MatrixUser(A_USER_ID, "displayName", "avatarUrl"))
     }
 }
-

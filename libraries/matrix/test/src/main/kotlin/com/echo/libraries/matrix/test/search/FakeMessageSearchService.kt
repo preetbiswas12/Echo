@@ -28,4 +28,3 @@ class FakeMessageSearchService(
         return messageSearch
     }
 }
-

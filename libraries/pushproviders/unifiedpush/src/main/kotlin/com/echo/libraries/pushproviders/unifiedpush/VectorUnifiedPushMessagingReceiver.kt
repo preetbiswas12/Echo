@@ -10,7 +10,6 @@ package com.echo.libraries.pushproviders.unifiedpush
 
 import android.content.Context
 import android.content.Intent
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.bindings
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.di.annotations.AppCoroutineScope
@@ -18,6 +17,7 @@ import com.echo.libraries.push.api.push.FetchPushForegroundServiceManager
 import com.echo.libraries.pushproviders.api.PushHandler
 import com.echo.libraries.pushproviders.unifiedpush.registration.EndpointRegistrationHandler
 import com.echo.libraries.pushproviders.unifiedpush.registration.RegistrationResult
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import org.unifiedpush.android.connector.FailedReason
@@ -138,4 +138,3 @@ class VectorUnifiedPushMessagingReceiver : MessagingReceiver() {
         }
     }
 }
-

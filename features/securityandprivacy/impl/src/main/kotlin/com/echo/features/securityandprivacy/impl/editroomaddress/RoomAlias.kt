@@ -23,4 +23,3 @@ fun RoomAlias.addressName(): String {
 fun RoomAlias.matchesServer(serverName: String): Boolean {
     return value.split(":").last() == serverName
 }
-

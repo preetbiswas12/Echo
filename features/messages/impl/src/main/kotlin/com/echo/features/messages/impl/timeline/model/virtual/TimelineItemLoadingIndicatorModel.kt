@@ -16,4 +16,3 @@ data class TimelineItemLoadingIndicatorModel(
 ) : TimelineItemVirtualModel {
     override val type: String = "TimelineItemLoadingIndicatorModel"
 }
-

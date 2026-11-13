@@ -25,4 +25,3 @@ class DefaultLanguageTagProvider : LanguageTagProvider {
         return LocalConfiguration.current.locales.get(0)?.toLanguageTag()
     }
 }
-

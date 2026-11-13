@@ -47,4 +47,3 @@ internal fun BackButtonPreview() = ElementThemedPreview {
         BackButton(onClick = { }, enabled = false)
     }
 }
-

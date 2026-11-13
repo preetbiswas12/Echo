@@ -7,7 +7,6 @@
 
 package com.echo.features.messages.impl.threads
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.fixtures.aTimelineItemContentFactory
 import com.echo.features.messages.impl.messagesummary.FakeMessageSummaryFormatter
 import com.echo.features.messages.impl.threads.list.ThreadsListEvent
@@ -21,6 +20,7 @@ import com.echo.libraries.matrix.test.room.FakeJoinedRoom
 import com.echo.libraries.matrix.test.room.threads.FakeThreadsListService
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -72,4 +72,3 @@ class ThreadsListPresenterTest {
         )
     }
 }
-

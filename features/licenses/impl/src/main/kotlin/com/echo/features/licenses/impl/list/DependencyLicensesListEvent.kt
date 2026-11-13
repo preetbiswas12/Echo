@@ -11,4 +11,3 @@ package com.echo.features.licenses.impl.list
 sealed interface DependencyLicensesListEvent {
     data class SetFilter(val filter: String) : DependencyLicensesListEvent
 }
-

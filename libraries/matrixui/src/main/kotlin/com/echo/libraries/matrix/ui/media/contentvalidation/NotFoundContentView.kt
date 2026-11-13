@@ -44,4 +44,3 @@ internal fun NotFoundContentViewPreview() = ElementPreview {
         NotFoundContentView()
     }
 }
-

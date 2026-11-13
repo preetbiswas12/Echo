@@ -29,4 +29,3 @@ class ChangeServerErrorPreviewParam : PreviewParameterProvider<ChangeServerError
             ChangeServerError.UnsupportedServer,
         )
 }
-

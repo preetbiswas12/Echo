@@ -19,4 +19,3 @@ class MatrixWidgetSettings(
 ) : Parcelable {
     companion object
 }
-

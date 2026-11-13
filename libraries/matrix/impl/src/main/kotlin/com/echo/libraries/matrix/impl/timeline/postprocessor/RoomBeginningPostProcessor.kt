@@ -79,4 +79,3 @@ class RoomBeginningPostProcessor(private val mode: Timeline.Mode) {
         return newItems
     }
 }
-

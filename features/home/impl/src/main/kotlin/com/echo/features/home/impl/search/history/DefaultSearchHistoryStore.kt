@@ -7,11 +7,11 @@
 
 package com.echo.features.home.impl.search.history
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.androidutils.json.JsonProvider
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.SessionScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.emitAll
@@ -105,4 +105,3 @@ class DefaultSearchHistoryStore(
         }.onFailure { Timber.e(it, "Failed to persist search history") }
     }
 }
-

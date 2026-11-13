@@ -122,4 +122,3 @@ class LocalNetworkAddressClassifierTest {
         assertThat(classifier().classify("not a url")).isEqualTo(LocalNetworkClassification.Unresolvable)
     }
 }
-

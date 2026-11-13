@@ -17,5 +17,3 @@ android {
 dependencies {
     api(projects.libraries.dateformatter.api)
 }
-
-

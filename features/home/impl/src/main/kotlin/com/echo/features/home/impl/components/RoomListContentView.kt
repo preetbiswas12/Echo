@@ -450,4 +450,3 @@ internal fun RoomListContentViewPreview(@PreviewParameter(RoomListContentStatePr
         contentPadding = PaddingValues(0.dp),
     )
 }
-

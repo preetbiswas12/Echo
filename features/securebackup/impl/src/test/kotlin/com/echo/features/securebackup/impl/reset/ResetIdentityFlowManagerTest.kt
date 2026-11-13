@@ -9,13 +9,13 @@
 package com.echo.features.securebackup.impl.reset
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.IdentityResetHandle
 import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.libraries.matrix.test.encryption.FakeIdentityPasswordResetHandle
 import com.echo.tests.testutils.lambda.lambdaRecorder
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -142,4 +142,3 @@ class ResetIdentityFlowManagerTest {
         sessionCoroutineScope = this,
     )
 }
-

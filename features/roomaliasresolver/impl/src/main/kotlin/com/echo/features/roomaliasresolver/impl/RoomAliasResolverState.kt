@@ -21,4 +21,3 @@ data class RoomAliasResolverState(
 sealed class RoomAliasResolverFailures : Exception() {
     data object UnknownAlias : RoomAliasResolverFailures()
 }
-

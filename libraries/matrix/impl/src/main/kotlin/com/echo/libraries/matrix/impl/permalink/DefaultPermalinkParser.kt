@@ -10,8 +10,6 @@ package com.echo.libraries.matrix.impl.permalink
 
 import android.net.Uri
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.MatrixPatterns
@@ -22,6 +20,8 @@ import com.echo.libraries.matrix.api.core.toRoomIdOrAlias
 import com.echo.libraries.matrix.api.permalink.MatrixToConverter
 import com.echo.libraries.matrix.api.permalink.PermalinkData
 import com.echo.libraries.matrix.api.permalink.PermalinkParser
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.collections.immutable.toImmutableList
 import org.matrix.rustcomponents.sdk.MatrixId
 import org.matrix.rustcomponents.sdk.parseMatrixEntityFrom
@@ -104,4 +104,3 @@ private fun Uri.userIdWithSlash(): UserId? {
     if (!identifier.startsWith("@") || !identifier.contains('/')) return null
     return identifier.takeIf { MatrixPatterns.isUserId(it) }?.let(::UserId)
 }
-

@@ -24,4 +24,3 @@ class DiagnosticPushHandler {
         _state.emit(Unit)
     }
 }
-

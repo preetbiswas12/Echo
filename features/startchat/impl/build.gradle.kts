@@ -50,5 +50,3 @@ dependencies {
     testImplementation(projects.features.startchat.test)
     testImplementation(projects.features.enterprise.test)
 }
-
-

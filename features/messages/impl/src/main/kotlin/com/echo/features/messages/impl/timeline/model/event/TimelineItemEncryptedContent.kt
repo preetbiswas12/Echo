@@ -15,4 +15,3 @@ data class TimelineItemEncryptedContent(
 ) : TimelineItemEventContent {
     override val type: String = "TimelineItemEncryptedContent"
 }
-

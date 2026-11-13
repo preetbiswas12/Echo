@@ -24,4 +24,3 @@ internal fun HumanQrGrantLoginException.map() = when (this) {
     is HumanQrGrantLoginException.UnsupportedProtocol -> ErrorType.UnsupportedProtocol(message.orEmpty())
     is HumanQrGrantLoginException.UnsupportedQrCodeType -> ErrorType.UnsupportedQrCodeType(message.orEmpty())
 }
-

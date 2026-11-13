@@ -17,8 +17,6 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Composer
 import com.echo.features.enterprise.test.remoteconfig.aMapTilerConfig
 import com.echo.features.location.api.Location
 import com.echo.features.location.api.LocationService
@@ -60,6 +58,8 @@ import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Composer
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
@@ -782,4 +782,3 @@ private fun grantedSendLiveLocationPermissions(): FakeRoomPermissions = FakeRoom
     canSendState = { it is StateEventType.BeaconInfo },
     canSendMessage = { it is MessageEventType.Beacon }
 )
-

@@ -121,4 +121,3 @@ internal fun RoomInviteMembersViewPreview(@PreviewParameter(InvitePeopleStatePre
         onBackClick = {},
     )
 }
-

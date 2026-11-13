@@ -8,12 +8,12 @@
 
 package com.echo.features.invite.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.invite.api.SeenInvitesStore
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.push.api.notifications.NotificationCleaner
+import dev.zacsweers.metro.ContributesBinding
 
 interface DeclineInvite {
     suspend operator fun invoke(
@@ -72,4 +72,3 @@ class DefaultDeclineInvite(
         return Result.success(roomId)
     }
 }
-

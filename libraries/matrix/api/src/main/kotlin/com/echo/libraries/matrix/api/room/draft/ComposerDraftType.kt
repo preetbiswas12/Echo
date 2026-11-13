@@ -15,4 +15,3 @@ sealed interface ComposerDraftType {
     data class Reply(val eventId: EventId) : ComposerDraftType
     data class Edit(val eventId: EventId) : ComposerDraftType
 }
-

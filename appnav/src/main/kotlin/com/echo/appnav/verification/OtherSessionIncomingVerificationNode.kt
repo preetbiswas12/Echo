@@ -16,9 +16,6 @@ import com.bumble.appyx.core.navigation.model.permanent.PermanentNavModel
 import com.bumble.appyx.core.node.Node
 import com.bumble.appyx.core.node.ParentNode
 import com.bumble.appyx.core.plugin.Plugin
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
 import com.echo.annotations.ContributesNode
 import com.echo.appnav.di.SessionGraphFactory
 import com.echo.features.verifysession.api.IncomingVerificationEntryPoint
@@ -29,6 +26,9 @@ import com.echo.libraries.di.DependencyInjectionGraphOwner
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.verification.VerificationRequest
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.parcelize.Parcelize
 
 /**
@@ -90,4 +90,3 @@ class OtherSessionIncomingVerificationNode(
         )
     }
 }
-

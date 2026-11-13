@@ -22,4 +22,3 @@ fun Modifier.applyIf(
     ifFalse != null -> ifFalse(Modifier)
     else -> Modifier
 }
-

@@ -18,7 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.poll.api.actions.EndPollAction
 import com.echo.features.poll.api.actions.SendPollResponseAction
 import com.echo.features.poll.impl.history.model.PollHistoryFilter
@@ -28,6 +27,7 @@ import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.timeline.Timeline
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
@@ -100,4 +100,3 @@ class PollHistoryPresenter(
         pollHistory.paginate(Timeline.PaginationDirection.BACKWARDS)
     }
 }
-

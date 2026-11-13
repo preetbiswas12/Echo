@@ -9,4 +9,3 @@
 package com.echo.features.space.impl.settings
 
 sealed interface SpaceSettingsEvent
-

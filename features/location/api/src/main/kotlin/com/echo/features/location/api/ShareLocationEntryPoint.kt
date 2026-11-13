@@ -25,4 +25,3 @@ interface ShareLocationEntryPoint : FeatureEntryPoint {
         timelineMode: Timeline.Mode,
     ): Node
 }
-

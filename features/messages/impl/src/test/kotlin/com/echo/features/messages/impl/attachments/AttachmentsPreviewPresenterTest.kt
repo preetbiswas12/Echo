@@ -12,7 +12,6 @@ package com.echo.features.messages.impl.attachments
 
 import android.net.Uri
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.attachments.preview.AttachmentsPreviewEvent
 import com.echo.features.messages.impl.attachments.preview.AttachmentsPreviewPresenter
 import com.echo.features.messages.impl.attachments.preview.OnDoneListener
@@ -68,6 +67,7 @@ import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.collections.immutable.persistentListOf
@@ -1029,4 +1029,3 @@ class AttachmentsPreviewPresenterTest : RobolectricTest() {
         )
     )
 }
-

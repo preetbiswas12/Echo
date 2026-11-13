@@ -60,4 +60,3 @@ internal fun CrashDetectionViewPreview() = ElementPreview {
         state = aCrashDetectionState().copy(crashDetected = true)
     )
 }
-

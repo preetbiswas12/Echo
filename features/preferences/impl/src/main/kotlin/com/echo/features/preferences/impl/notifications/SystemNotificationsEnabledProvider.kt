@@ -26,4 +26,3 @@ class DefaultSystemNotificationsEnabledProvider(
         return notificationManager.areNotificationsEnabled()
     }
 }
-

@@ -16,4 +16,3 @@ sealed interface VoiceMessagePlayerEvent {
         val position: Float
     ) : VoiceMessagePlayerEvent
 }
-

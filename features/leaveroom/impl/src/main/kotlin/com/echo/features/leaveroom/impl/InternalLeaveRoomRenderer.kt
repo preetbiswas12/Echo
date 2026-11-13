@@ -10,11 +10,11 @@ package com.echo.features.leaveroom.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.leaveroom.api.LeaveRoomRenderer
 import com.echo.features.leaveroom.api.LeaveRoomState
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.RoomId
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(SessionScope::class)
 class InternalLeaveRoomRenderer : LeaveRoomRenderer {
@@ -27,4 +27,3 @@ class InternalLeaveRoomRenderer : LeaveRoomRenderer {
         }
     }
 }
-

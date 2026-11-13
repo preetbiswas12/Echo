@@ -15,4 +15,3 @@ import kotlinx.parcelize.Parcelize
 data class OAuthDetails(
     val url: String,
 ) : Parcelable
-

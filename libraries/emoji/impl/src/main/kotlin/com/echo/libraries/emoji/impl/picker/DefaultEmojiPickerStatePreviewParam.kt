@@ -10,11 +10,11 @@ package com.echo.libraries.emoji.impl.picker
 
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import io.element.android.emojibasebindings.Emoji
-import io.element.android.emojibasebindings.EmojibaseCategory
 import com.echo.libraries.designsystem.theme.components.IconSource
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.emoji.api.picker.EmojiPickerState
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
@@ -90,4 +90,3 @@ fun anEmojiPickerState(
         )
     }.toImmutableList(),
 )
-

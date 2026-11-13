@@ -20,4 +20,3 @@ internal fun SyncServiceState.toSyncState(): SyncState {
         SyncServiceState.OFFLINE -> SyncState.Offline
     }
 }
-

@@ -44,4 +44,3 @@ class AppMigration09Test {
         resetWellKnownLambda.assertions().isCalledOnce()
     }
 }
-

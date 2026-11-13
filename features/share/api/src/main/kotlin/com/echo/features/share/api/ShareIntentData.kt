@@ -36,4 +36,3 @@ data class UriToShare(
     val uri: Uri,
     val mimeType: String,
 ) : Parcelable
-

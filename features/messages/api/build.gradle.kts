@@ -21,5 +21,3 @@ dependencies {
     implementation(projects.libraries.matrix.api)
     api(projects.libraries.textcomposer.impl)
 }
-
-

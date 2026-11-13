@@ -17,4 +17,3 @@ data class RageshakeDetectionState(
     val preferenceState: RageshakePreferencesState,
     val eventSink: (RageshakeDetectionEvent) -> Unit
 )
-

@@ -60,4 +60,3 @@ internal fun BackgroundVerticalGradientDisabledPreview() = ElementPreview {
             )
     )
 }
-

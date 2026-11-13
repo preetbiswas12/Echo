@@ -142,4 +142,3 @@ internal fun ThreadTopBarPreview() = ElementPreview {
         )
     }
 }
-

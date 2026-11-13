@@ -24,4 +24,3 @@ interface RoomDirectoryEntryPoint : FeatureEntryPoint {
         fun navigateToRoom(roomDescription: RoomDescription)
     }
 }
-

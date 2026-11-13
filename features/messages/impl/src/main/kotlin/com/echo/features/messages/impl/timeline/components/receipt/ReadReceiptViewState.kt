@@ -21,4 +21,3 @@ data class ReadReceiptViewState(
 ) {
     val receipts = if (renderReadReceipts) knownReceipts else persistentListOf()
 }
-

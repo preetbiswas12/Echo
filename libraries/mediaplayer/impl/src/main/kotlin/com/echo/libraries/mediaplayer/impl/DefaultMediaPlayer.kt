@@ -11,13 +11,13 @@ package com.echo.libraries.mediaplayer.impl
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.audio.api.AudioFocus
 import com.echo.libraries.audio.api.AudioFocusRequester
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.mediaplayer.api.MediaPlayer
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Job
@@ -182,4 +182,3 @@ class DefaultMediaPlayer(
             if (it == C.TIME_UNSET) null else it
         }
 }
-

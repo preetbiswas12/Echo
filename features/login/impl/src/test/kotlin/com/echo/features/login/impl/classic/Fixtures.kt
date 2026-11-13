@@ -37,4 +37,3 @@ fun anElementClassicSession(
     roomKeysVersion = roomKeysVersion,
     doesContainBackupKey = doesContainBackupKey,
 )
-

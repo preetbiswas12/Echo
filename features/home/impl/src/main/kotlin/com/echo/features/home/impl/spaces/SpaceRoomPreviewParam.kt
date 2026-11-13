@@ -40,4 +40,3 @@ class SpaceRoomPreviewParam : PreviewParameterProvider<SpaceRoom> {
         ),
     )
 }
-

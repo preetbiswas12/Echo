@@ -20,4 +20,3 @@ data class PushHistoryState(
     val showNotSameAccountError: Boolean,
     val eventSink: (PushHistoryEvent) -> Unit,
 )
-

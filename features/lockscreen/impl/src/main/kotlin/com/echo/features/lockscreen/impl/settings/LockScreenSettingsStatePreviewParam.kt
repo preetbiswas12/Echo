@@ -31,4 +31,3 @@ fun aLockScreenSettingsState(
     showToggleBiometric = showToggleBiometric,
     eventSink = {}
 )
-

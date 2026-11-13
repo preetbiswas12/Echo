@@ -47,4 +47,3 @@ data class AggregatedReaction(
      */
     val isHighlighted: Boolean = senders.any { it.senderId == currentUserId }
 }
-

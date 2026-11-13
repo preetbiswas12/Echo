@@ -22,8 +22,8 @@ import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class ExpandSheetWhenImeIsVisibleTest : RobolectricTest() {
@@ -60,4 +60,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.renderWithIme(isImeVisible: 
     waitForIdle()
     return sheetState
 }
-

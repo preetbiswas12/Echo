@@ -80,4 +80,3 @@ internal data class ReplaceRoot<T : Any>(
 
     private fun BackStackElements<T>.rootElement() = firstOrNull { it.targetState != BackStack.State.DESTROYED }
 }
-

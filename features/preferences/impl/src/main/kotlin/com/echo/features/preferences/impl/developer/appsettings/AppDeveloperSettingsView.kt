@@ -180,4 +180,3 @@ internal fun AppDeveloperSettingsViewPreview(
         state = state,
     )
 }
-

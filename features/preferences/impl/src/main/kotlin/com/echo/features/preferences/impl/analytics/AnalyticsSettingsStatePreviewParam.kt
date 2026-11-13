@@ -21,4 +21,3 @@ open class AnalyticsSettingsStatePreviewParam : PreviewParameterProvider<Analyti
 fun aAnalyticsSettingsState() = AnalyticsSettingsState(
     analyticsPreferencesState = aAnalyticsPreferencesState(),
 )
-

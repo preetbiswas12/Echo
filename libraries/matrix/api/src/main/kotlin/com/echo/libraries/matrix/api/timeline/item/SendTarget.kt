@@ -26,4 +26,3 @@ sealed interface SendTarget {
     /** React to an existing event with the given key. */
     data class Reaction(val key: String) : SendTarget
 }
-

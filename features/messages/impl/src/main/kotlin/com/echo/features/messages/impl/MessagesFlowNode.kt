@@ -29,9 +29,6 @@ import com.bumble.appyx.core.plugin.Plugin
 import com.bumble.appyx.navmodel.backstack.BackStack
 import com.bumble.appyx.navmodel.backstack.operation.pop
 import com.bumble.appyx.navmodel.backstack.operation.push
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.annotations.ContributesNode
 import com.echo.features.call.api.CallData
 import com.echo.features.call.api.ElementCallEntryPoint
@@ -113,6 +110,9 @@ import com.echo.libraries.textcomposer.mentions.MentionSpanTheme
 import com.echo.libraries.textcomposer.mentions.MentionSpanUpdater
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.launchIn
@@ -1000,4 +1000,3 @@ private fun GalleryItem.Type.toMediaViewerType(): GalleryItemData.Type {
         GalleryItem.Type.File -> GalleryItemData.Type.File
     }
 }
-

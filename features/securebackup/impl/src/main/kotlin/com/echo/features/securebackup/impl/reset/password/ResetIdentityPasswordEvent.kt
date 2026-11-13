@@ -12,4 +12,3 @@ sealed interface ResetIdentityPasswordEvent {
     data class Reset(val password: String) : ResetIdentityPasswordEvent
     data object DismissError : ResetIdentityPasswordEvent
 }
-

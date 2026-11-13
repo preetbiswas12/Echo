@@ -8,11 +8,11 @@
 
 package com.echo.libraries.pushproviders.firebase
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.pushproviders.api.PushData
 import com.echo.tests.testutils.assertThrowsInDebug
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class FirebasePushParserTest {
@@ -86,4 +86,3 @@ class FirebasePushParserTest {
 private fun Map<String, String?>.mutate(key: String, value: String?): Map<String, String?> {
     return toMutableMap().apply { put(key, value) }
 }
-

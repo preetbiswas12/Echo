@@ -22,4 +22,3 @@ val AuthenticationException.errorCode: AuthErrorCode
             .firstOrNull { message.contains(it.value) }
             ?: AuthErrorCode.UNKNOWN
     }
-

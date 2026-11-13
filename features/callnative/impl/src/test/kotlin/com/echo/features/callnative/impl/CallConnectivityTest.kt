@@ -54,4 +54,3 @@ class CallConnectivityTest {
         job.cancel()
     }
 }
-

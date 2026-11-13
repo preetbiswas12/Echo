@@ -36,4 +36,3 @@ fun aJoinRoomByAddressState(
     addressState = addressState,
     eventSink = eventSink
 )
-

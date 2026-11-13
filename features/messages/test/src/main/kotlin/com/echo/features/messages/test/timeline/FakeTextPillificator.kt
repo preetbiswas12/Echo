@@ -17,4 +17,3 @@ class FakeTextPillificator(
         return pillifyLambda(text, pillifyPermalinks)
     }
 }
-

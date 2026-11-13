@@ -17,7 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.rolesandpermissions.impl.analytics.trackPermissionChangeAnalytics
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.Presenter
@@ -27,6 +26,7 @@ import com.echo.libraries.matrix.api.room.RoomMember
 import com.echo.libraries.matrix.api.room.powerlevels.RoomPowerLevelsValues
 import com.echo.libraries.matrix.ui.model.powerLevelOf
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableMap
 import kotlinx.coroutines.CoroutineScope
@@ -164,4 +164,3 @@ class ChangeRoomPermissionsPresenter(
             }
     }
 }
-

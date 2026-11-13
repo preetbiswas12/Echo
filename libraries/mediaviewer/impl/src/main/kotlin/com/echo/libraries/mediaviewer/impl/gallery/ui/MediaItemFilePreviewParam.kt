@@ -26,4 +26,3 @@ class MediaItemFilePreviewParam : PreviewParameterProvider<MediaItem.File> {
             ),
         )
 }
-

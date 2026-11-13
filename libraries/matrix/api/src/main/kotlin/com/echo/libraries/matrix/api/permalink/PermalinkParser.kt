@@ -25,4 +25,3 @@ interface PermalinkParser {
      */
     fun parse(uriString: String): PermalinkData
 }
-

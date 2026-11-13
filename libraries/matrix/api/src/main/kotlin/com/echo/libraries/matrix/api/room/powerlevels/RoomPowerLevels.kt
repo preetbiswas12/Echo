@@ -45,4 +45,3 @@ data class RoomPowerLevels(
         return users[userId]?.let(RoomMember.Role::forPowerLevel)
     }
 }
-

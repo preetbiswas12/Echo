@@ -12,4 +12,3 @@ object MatrixConfiguration {
     const val MATRIX_TO_PERMALINK_BASE_URL: String = "https://matrix.to/#/"
     val clientPermalinkBaseUrl: String? = null
 }
-

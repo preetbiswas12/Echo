@@ -13,4 +13,3 @@ import com.echo.libraries.architecture.AsyncData
 data class MigrationState(
     val migrationAction: AsyncData<Unit>,
 )
-

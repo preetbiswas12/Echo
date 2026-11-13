@@ -7,8 +7,8 @@
 
 package com.echo.libraries.matrix.api.media
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.media.aMediaSource
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MediaSourceTest {
@@ -24,4 +24,3 @@ class MediaSourceTest {
         assertThat(mediaSource.safeUrl).isEqualTo("https://matrix.org/url#fragment")
     }
 }
-

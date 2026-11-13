@@ -10,10 +10,10 @@ package com.echo.features.login.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.login.api.LoginEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultLoginEntryPoint : LoginEntryPoint {
@@ -35,4 +35,3 @@ class DefaultLoginEntryPoint : LoginEntryPoint {
         )
     }
 }
-

@@ -17,12 +17,12 @@ import android.content.IntentFilter
 import android.database.Cursor
 import android.net.Uri
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
-import com.google.common.truth.Truth.assertWithMessage
 import com.echo.features.share.api.ShareIntentData
 import com.echo.features.share.api.UriToShare
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
+import com.google.common.truth.Truth.assertWithMessage
 import org.junit.Test
 import org.robolectric.Robolectric
 import org.robolectric.RuntimeEnvironment
@@ -301,4 +301,3 @@ class DefaultShareIntentHandlerTest : RobolectricTest() {
         const val AN_ACTIVITY_NAME = "com.echo.x.MainActivity"
     }
 }
-

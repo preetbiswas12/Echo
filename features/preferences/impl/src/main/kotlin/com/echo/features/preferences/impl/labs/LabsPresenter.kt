@@ -18,7 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
-import dev.zacsweers.metro.Inject
 import com.echo.compound.tokens.generated.CompoundIcons
 import com.echo.features.preferences.impl.R
 import com.echo.features.preferences.impl.model.EnabledFeature
@@ -29,6 +28,7 @@ import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.ui.model.FeatureUiModel
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.launch
@@ -118,4 +118,3 @@ class LabsPresenter(
         }.toImmutableList()
     }
 }
-

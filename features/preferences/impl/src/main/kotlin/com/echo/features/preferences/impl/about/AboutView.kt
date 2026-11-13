@@ -59,4 +59,3 @@ internal fun AboutViewPreview(@PreviewParameter(AboutStatePreviewParam::class) s
         onBackClick = {},
     )
 }
-

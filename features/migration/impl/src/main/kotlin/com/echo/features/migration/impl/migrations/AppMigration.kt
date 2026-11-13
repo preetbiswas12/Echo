@@ -12,4 +12,3 @@ interface AppMigration {
     val order: Int
     suspend fun migrate(isFreshInstall: Boolean)
 }
-

@@ -15,4 +15,3 @@ import com.bumble.appyx.core.plugin.Plugin
 fun interface AssistedNodeFactory<NODE : Node> {
     fun create(buildContext: BuildContext, plugins: List<Plugin>): NODE
 }
-

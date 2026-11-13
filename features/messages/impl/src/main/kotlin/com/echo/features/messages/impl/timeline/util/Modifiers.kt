@@ -13,4 +13,3 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 fun Modifier.defaultTimelineContentPadding() = padding(horizontal = 12.dp, vertical = 6.dp)
-

@@ -7,10 +7,10 @@
 
 package com.echo.libraries.matrix.impl.analytics
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.services.analytics.api.AnalyticsSdkManager
 import com.echo.services.analytics.api.AnalyticsSdkSpan
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rustcomponents.sdk.enableSentryLogging
 
 @ContributesBinding(AppScope::class)
@@ -28,4 +28,3 @@ class RustAnalyticsSdkManager : AnalyticsSdkManager {
         return RustAnalyticsSdkSpan(name = null, parentTraceId = parentTraceId)
     }
 }
-

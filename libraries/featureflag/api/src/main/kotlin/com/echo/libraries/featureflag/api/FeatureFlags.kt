@@ -201,4 +201,3 @@ object ShowAllActivityInRoomListFeature : Feature {
     override val isFinished: Boolean = false
     override val isInLabs: Boolean = false
 }
-

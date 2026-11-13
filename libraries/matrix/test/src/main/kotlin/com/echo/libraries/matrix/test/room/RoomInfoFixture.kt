@@ -114,4 +114,3 @@ fun aRoomInfo(
     isDm = isDm,
     fullyReadEventId = fullyReadEventId,
 )
-

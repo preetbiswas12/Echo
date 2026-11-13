@@ -8,12 +8,12 @@
 
 package com.echo.features.logout.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.logout.api.LogoutUseCase
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 
 @ContributesBinding(AppScope::class)
@@ -39,4 +39,3 @@ class DefaultLogoutUseCase(
             }
     }
 }
-

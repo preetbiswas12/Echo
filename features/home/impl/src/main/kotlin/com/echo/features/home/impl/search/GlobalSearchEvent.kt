@@ -40,4 +40,3 @@ sealed interface GlobalSearchEvent {
     /** The user toggled the visibility of the "Learn More" bottom sheet. */
     data class ToggleLearnMoreBottomSheet(val show: Boolean) : GlobalSearchEvent
 }
-

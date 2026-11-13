@@ -22,4 +22,3 @@ open class TextFileContentPreviewParam : PreviewParameterProvider<AsyncData<Immu
             AsyncData.Failure(Exception("Failed to load text")),
         )
 }
-

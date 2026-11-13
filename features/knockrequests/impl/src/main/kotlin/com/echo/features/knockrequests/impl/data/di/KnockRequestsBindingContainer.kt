@@ -8,16 +8,16 @@
 
 package com.echo.features.knockrequests.impl.data.di
 
-import dev.zacsweers.metro.BindingContainer
-import dev.zacsweers.metro.ContributesTo
-import dev.zacsweers.metro.Provides
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.knockrequests.api.KnockRequestPermissions
 import com.echo.features.knockrequests.api.knockRequestPermissions
 import com.echo.features.knockrequests.impl.data.KnockRequestsService
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.matrix.api.room.powerlevels.permissionsFlow
+import dev.zacsweers.metro.BindingContainer
+import dev.zacsweers.metro.ContributesTo
+import dev.zacsweers.metro.Provides
+import dev.zacsweers.metro.SingleIn
 
 @BindingContainer
 @ContributesTo(RoomScope::class)
@@ -34,4 +34,3 @@ object KnockRequestsBindingContainer {
         )
     }
 }
-

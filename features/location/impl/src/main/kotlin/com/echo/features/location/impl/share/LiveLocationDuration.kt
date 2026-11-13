@@ -13,4 +13,3 @@ data class LiveLocationDuration(
     val duration: Duration,
     val formatted: String
 )
-

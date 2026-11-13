@@ -43,4 +43,3 @@ class TimelineItemActionComparator : Comparator<TimelineItemAction> {
         return index1.compareTo(index2)
     }
 }
-

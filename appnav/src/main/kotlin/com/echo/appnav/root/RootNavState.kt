@@ -24,4 +24,3 @@ data class RootNavState(
      */
     val loggedInState: LoggedInState,
 )
-

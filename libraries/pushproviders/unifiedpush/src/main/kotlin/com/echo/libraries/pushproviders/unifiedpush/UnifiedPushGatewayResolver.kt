@@ -8,11 +8,11 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.core.data.tryOrNull
 import com.echo.libraries.core.log.logger.LoggerTag
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
 import timber.log.Timber
@@ -87,4 +87,3 @@ class DefaultUnifiedPushGatewayResolver(
         )
     }
 }
-

@@ -34,4 +34,3 @@ class SdkBackgroundTaskError(
         "SDK background task '$task' failure: \n$message"
     }
 }
-

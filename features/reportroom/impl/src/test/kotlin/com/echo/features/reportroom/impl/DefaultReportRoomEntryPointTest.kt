@@ -10,9 +10,9 @@ package com.echo.features.reportroom.impl
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -42,4 +42,3 @@ class DefaultReportRoomEntryPointTest {
         assertThat(result.plugins).contains(ReportRoomNode.Inputs(A_ROOM_ID))
     }
 }
-

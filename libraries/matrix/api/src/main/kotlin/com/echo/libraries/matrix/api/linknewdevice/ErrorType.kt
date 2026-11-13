@@ -68,4 +68,3 @@ sealed class ErrorType(message: String) : Exception(message) {
      */
     class ConnectionInsecure(message: String) : ErrorType(message)
 }
-

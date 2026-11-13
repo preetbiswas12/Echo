@@ -8,13 +8,13 @@
 
 package com.echo.libraries.emoji.impl.recentemojis
 
+import com.echo.libraries.emoji.impl.fixtures.FakeEmojibaseProvider
+import com.echo.libraries.matrix.test.FakeMatrixClient
+import com.echo.tests.testutils.testCoroutineDispatchers
 import com.google.common.truth.Truth.assertThat
 import io.element.android.emojibasebindings.Emoji
 import io.element.android.emojibasebindings.EmojibaseCategory
 import io.element.android.emojibasebindings.EmojibaseCategory.People
-import com.echo.libraries.emoji.impl.fixtures.FakeEmojibaseProvider
-import com.echo.libraries.matrix.test.FakeMatrixClient
-import com.echo.tests.testutils.testCoroutineDispatchers
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableMap
 import kotlinx.collections.immutable.persistentListOf
@@ -67,4 +67,3 @@ class DefaultGetRecentEmojisTest {
         emojibaseProvider = FakeEmojibaseProvider(emojibaseContents),
     )
 }
-

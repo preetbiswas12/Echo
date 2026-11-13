@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.pinned.banner
 sealed interface PinnedMessagesBannerEvent {
     data object MoveToNextPinned : PinnedMessagesBannerEvent
 }
-

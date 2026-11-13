@@ -43,4 +43,3 @@ class FakeFfiLoginWithQrCodeHandler(
 
     override fun close() = Unit
 }
-

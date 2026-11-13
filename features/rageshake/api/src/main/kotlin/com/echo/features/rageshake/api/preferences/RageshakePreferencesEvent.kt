@@ -12,4 +12,3 @@ sealed interface RageshakePreferencesEvent {
     data class SetSensitivity(val sensitivity: Float) : RageshakePreferencesEvent
     data class SetIsEnabled(val isEnabled: Boolean) : RageshakePreferencesEvent
 }
-

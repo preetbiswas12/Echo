@@ -30,4 +30,3 @@ fun <T> Flow<T>.withPreviousValue(): Flow<Pair<T?, T>> {
     }
         .filterNotNull()
 }
-

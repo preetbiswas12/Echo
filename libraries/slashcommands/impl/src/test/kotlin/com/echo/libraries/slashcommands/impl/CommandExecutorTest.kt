@@ -7,7 +7,6 @@
 
 package com.echo.libraries.slashcommands.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.RoomIdOrAlias
 import com.echo.libraries.matrix.api.timeline.MsgType
@@ -24,6 +23,7 @@ import com.echo.libraries.slashcommands.api.SlashCommand
 import com.echo.libraries.slashcommands.impl.rainbow.RainbowGenerator
 import com.echo.services.toolbox.api.strings.StringProvider
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -364,4 +364,3 @@ fun createCommandExecutor(
     rainbowGenerator = rainbowGenerator,
     stringProvider = stringProvider,
 )
-

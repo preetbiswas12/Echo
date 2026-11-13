@@ -17,4 +17,3 @@ fun aSessionPushConfig(
     url = url,
     pushKey = pushKey,
 )
-

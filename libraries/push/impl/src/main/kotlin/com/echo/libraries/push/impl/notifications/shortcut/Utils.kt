@@ -18,4 +18,3 @@ internal fun Iterable<ShortcutInfoCompat>.filterBySession(sessionId: SessionId):
     val prefix = "$sessionId-"
     return filter { it.id.startsWith(prefix) }
 }
-

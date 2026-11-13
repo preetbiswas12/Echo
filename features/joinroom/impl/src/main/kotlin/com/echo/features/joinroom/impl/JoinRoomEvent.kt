@@ -22,4 +22,3 @@ sealed interface JoinRoomEvent {
     data class AcceptInvite(val inviteData: InviteData) : JoinRoomEvent
     data class DeclineInvite(val inviteData: InviteData, val blockUser: Boolean) : JoinRoomEvent
 }
-

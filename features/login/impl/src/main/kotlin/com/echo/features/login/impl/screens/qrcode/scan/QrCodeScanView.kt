@@ -225,4 +225,3 @@ internal fun QrCodeScanViewPreview(@PreviewParameter(QrCodeScanStatePreviewParam
         onBackClick = {},
     )
 }
-

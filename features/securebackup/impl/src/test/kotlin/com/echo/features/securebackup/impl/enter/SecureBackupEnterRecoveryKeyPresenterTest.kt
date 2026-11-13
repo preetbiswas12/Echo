@@ -11,7 +11,6 @@ package com.echo.features.securebackup.impl.enter
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.securebackup.impl.setup.views.RecoveryKeyUserStory
 import com.echo.features.securebackup.impl.setup.views.RecoveryKeyViewState
 import com.echo.features.securebackup.impl.tools.RecoveryKeyTools
@@ -20,6 +19,7 @@ import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.encryption.FakeEncryptionService
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -97,4 +97,3 @@ class SecureBackupEnterRecoveryKeyPresenterTest {
         recoveryKeyTools = RecoveryKeyTools(),
     )
 }
-

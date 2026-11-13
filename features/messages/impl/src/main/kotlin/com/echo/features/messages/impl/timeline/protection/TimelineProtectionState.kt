@@ -31,4 +31,3 @@ sealed interface ProtectionState {
     data object RenderAll : ProtectionState
     data class RenderOnly(val eventIds: ImmutableSet<EventId>) : ProtectionState
 }
-

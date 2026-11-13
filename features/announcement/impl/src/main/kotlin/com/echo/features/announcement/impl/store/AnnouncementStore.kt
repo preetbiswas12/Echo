@@ -23,4 +23,3 @@ interface AnnouncementStore {
 
     suspend fun reset()
 }
-

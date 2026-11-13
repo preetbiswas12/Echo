@@ -51,4 +51,3 @@ class SimpleSecretKeyRepository : SecretKeyRepository {
         return keyGenerator.generateKey()
     }
 }
-

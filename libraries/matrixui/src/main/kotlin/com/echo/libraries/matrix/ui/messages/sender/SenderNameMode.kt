@@ -17,4 +17,3 @@ sealed interface SenderNameMode {
     data object Reply : SenderNameMode
     data object ActionList : SenderNameMode
 }
-

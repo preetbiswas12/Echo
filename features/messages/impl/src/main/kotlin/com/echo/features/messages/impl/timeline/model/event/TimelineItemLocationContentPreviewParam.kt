@@ -67,4 +67,3 @@ fun aLocation() = Location(
     lon = 0.7186,
     accuracy = 5000f,
 )
-

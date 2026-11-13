@@ -12,4 +12,3 @@ sealed class KnockRequestsException : Exception() {
     data object AcceptAllPartiallyFailed : KnockRequestsException()
     data object KnockRequestNotFound : KnockRequestsException()
 }
-

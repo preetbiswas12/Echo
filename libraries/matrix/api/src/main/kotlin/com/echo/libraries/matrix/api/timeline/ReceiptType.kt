@@ -13,4 +13,3 @@ enum class ReceiptType {
     READ_PRIVATE,
     FULLY_READ
 }
-

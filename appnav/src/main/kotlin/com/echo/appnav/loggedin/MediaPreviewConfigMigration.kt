@@ -8,10 +8,10 @@
 
 package com.echo.appnav.loggedin
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.di.annotations.SessionCoroutineScope
 import com.echo.libraries.matrix.api.media.MediaPreviewService
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -58,4 +58,3 @@ class MediaPreviewConfigMigration(
             }
     }
 }
-

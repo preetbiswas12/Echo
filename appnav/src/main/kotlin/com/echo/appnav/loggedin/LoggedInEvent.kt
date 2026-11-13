@@ -14,4 +14,3 @@ sealed interface LoggedInEvent {
 
     data object RequestLocationNetworkPermission : LoggedInEvent
 }
-

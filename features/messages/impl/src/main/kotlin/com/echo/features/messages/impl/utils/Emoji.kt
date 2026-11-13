@@ -32,4 +32,3 @@ internal fun String.containsOnlyEmojis(): Boolean {
 
     return contiguous and (m?.end() == length)
 }
-

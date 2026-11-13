@@ -13,11 +13,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.impl.store.AnnouncementStatus
 import com.echo.features.announcement.impl.store.AnnouncementStore
 import com.echo.libraries.architecture.Presenter
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
@@ -65,4 +65,3 @@ class AnnouncementPresenter(
         )
     }
 }
-

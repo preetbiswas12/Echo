@@ -8,11 +8,10 @@
 
 package com.echo.features.login.impl.di
 
-import dev.zacsweers.metro.ContributesTo
 import com.echo.features.login.impl.qrcode.QrCodeLoginManager
+import dev.zacsweers.metro.ContributesTo
 
 @ContributesTo(QrCodeLoginScope::class)
 interface QrCodeLoginBindings {
     fun qrCodeLoginManager(): QrCodeLoginManager
 }
-

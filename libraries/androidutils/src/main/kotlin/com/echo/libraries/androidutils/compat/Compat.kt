@@ -33,4 +33,3 @@ fun PackageManager.getApplicationInfoCompat(packageName: String, flags: Int): Ap
         else -> getApplicationInfo(packageName, flags)
     }
 }
-

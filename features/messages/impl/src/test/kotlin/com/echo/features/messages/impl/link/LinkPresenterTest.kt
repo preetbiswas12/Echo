@@ -8,12 +8,12 @@
 
 package com.echo.features.messages.impl.link
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import io.element.android.wysiwyg.link.Link
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -95,4 +95,3 @@ class LinkPresenterTest {
         linkChecker = linkChecker,
     )
 }
-

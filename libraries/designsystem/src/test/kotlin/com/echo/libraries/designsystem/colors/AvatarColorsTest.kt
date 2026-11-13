@@ -32,4 +32,3 @@ class AvatarColorsTest {
         assertThat("7".toHash(maxSize)).isEqualTo(1)
     }
 }
-

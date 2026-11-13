@@ -18,4 +18,3 @@ class FakeSdkPendingTask(
 
     override fun close() = closeLambda()
 }
-

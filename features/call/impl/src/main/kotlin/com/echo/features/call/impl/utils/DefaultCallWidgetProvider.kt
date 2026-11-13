@@ -8,8 +8,6 @@
 
 package com.echo.features.call.impl.utils
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.RoomId
@@ -17,6 +15,8 @@ import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.widget.CallWidgetSettingsProvider
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.firstOrNull
 
 private const val EMBEDDED_CALL_WIDGET_BASE_URL = "https://appassets.androidplatform.net/element-call/index.html"
@@ -68,4 +68,3 @@ class DefaultCallWidgetProvider(
         )
     }
 }
-

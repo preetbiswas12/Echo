@@ -26,4 +26,3 @@ interface NotJoinedRoom : AutoCloseable {
      */
     suspend fun membershipDetails(): Result<RoomMembershipDetails?>
 }
-

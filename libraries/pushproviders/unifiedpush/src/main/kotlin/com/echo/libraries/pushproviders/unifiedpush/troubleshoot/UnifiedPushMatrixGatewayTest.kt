@@ -8,7 +8,6 @@
 
 package com.echo.libraries.pushproviders.unifiedpush.troubleshoot
 
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.core.SessionId
@@ -19,6 +18,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTest
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestDelegate
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.libraries.troubleshoot.api.test.TestFilterData
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -81,4 +81,3 @@ class UnifiedPushMatrixGatewayTest(
 
     override suspend fun reset() = delegate.reset()
 }
-

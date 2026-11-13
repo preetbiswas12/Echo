@@ -53,4 +53,3 @@ class FakeFfiClientBuilder(
     override fun withSearchIndexStore(path: String, key: String?): ClientBuilder = this
     override suspend fun build() = buildResult()
 }
-

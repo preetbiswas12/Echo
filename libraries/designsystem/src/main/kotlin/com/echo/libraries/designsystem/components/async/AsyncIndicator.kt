@@ -107,4 +107,3 @@ object AsyncIndicator {
 
     private val defaultSpacing = 4.dp
 }
-

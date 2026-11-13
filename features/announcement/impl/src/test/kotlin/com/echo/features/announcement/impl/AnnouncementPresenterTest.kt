@@ -8,12 +8,12 @@
 
 package com.echo.features.announcement.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.impl.store.AnnouncementStatus
 import com.echo.features.announcement.impl.store.AnnouncementStore
 import com.echo.features.announcement.impl.store.InMemoryAnnouncementStore
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -74,4 +74,3 @@ private fun createAnnouncementPresenter(
 ) = AnnouncementPresenter(
     announcementStore = announcementStore,
 )
-

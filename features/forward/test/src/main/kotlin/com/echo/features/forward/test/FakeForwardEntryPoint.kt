@@ -21,4 +21,3 @@ class FakeForwardEntryPoint : ForwardEntryPoint {
         callback: ForwardEntryPoint.Callback,
     ): Node = lambdaError()
 }
-

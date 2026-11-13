@@ -36,4 +36,3 @@ class FakeLockScreenService : LockScreenService {
         _lockState.value = lockState
     }
 }
-

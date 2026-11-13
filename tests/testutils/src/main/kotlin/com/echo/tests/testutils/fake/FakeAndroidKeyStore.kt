@@ -69,4 +69,3 @@ object FakeAndroidKeyStore {
         override fun engineGenerateKey(): SecretKey = wrapped.generateKey()
     }
 }
-

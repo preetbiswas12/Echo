@@ -15,4 +15,3 @@ fun <T : Any> BackStack<T>.canPop(): Boolean {
     return elements.any { it.targetState == BackStack.State.ACTIVE } &&
         elements.any { it.targetState == BackStack.State.STASHED }
 }
-

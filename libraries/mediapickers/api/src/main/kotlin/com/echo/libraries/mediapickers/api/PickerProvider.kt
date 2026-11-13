@@ -88,4 +88,3 @@ interface PickerProvider {
     @Composable
     fun registerCameraVideoPicker(onResult: (Uri?) -> Unit): PickerLauncher<Uri, Boolean>
 }
-

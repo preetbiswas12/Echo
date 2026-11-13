@@ -8,10 +8,10 @@
 
 package com.echo.libraries.mediaviewer.impl.viewer
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.mediaviewer.impl.model.eventId
 import com.echo.libraries.mediaviewer.impl.model.mediaSource
+import dev.zacsweers.metro.Inject
 
 /**
  * x and y are loading items.
@@ -88,4 +88,3 @@ class PagerKeysHandler {
         return cachedData.mediaItems.indexOf(mediaItem) + cachedData.keyOffset
     }
 }
-

@@ -28,4 +28,3 @@ sealed interface SecurityAndPrivacyEvent {
     data object ToggleRoomVisibility : SecurityAndPrivacyEvent
     data object DismissSaveError : SecurityAndPrivacyEvent
 }
-

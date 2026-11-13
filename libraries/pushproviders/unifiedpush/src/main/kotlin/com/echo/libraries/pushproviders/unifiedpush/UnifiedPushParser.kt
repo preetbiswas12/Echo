@@ -8,10 +8,10 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.androidutils.json.JsonProvider
 import com.echo.libraries.core.data.tryOrNull
 import com.echo.libraries.pushproviders.api.PushData
+import dev.zacsweers.metro.Inject
 
 @Inject
 class UnifiedPushParser(
@@ -21,4 +21,3 @@ class UnifiedPushParser(
         return tryOrNull { json().decodeFromString<PushDataUnifiedPush>(String(message)) }?.toPushData(clientSecret)
     }
 }
-

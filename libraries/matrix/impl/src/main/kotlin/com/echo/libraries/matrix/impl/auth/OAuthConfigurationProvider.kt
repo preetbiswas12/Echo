@@ -8,10 +8,10 @@
 
 package com.echo.libraries.matrix.impl.auth
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.auth.OAuthConfig
 import com.echo.libraries.matrix.api.auth.OAuthRedirectUrlProvider
+import dev.zacsweers.metro.Inject
 import org.matrix.rustcomponents.sdk.OAuthConfiguration
 
 @Inject
@@ -29,4 +29,3 @@ class OAuthConfigurationProvider(
         staticRegistrations = OAuthConfig.STATIC_REGISTRATIONS,
     )
 }
-

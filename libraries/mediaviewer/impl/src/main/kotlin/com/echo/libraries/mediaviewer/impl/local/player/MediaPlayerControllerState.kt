@@ -32,4 +32,3 @@ data class MediaPlayerControllerState(
     @FloatRange(from = 0.0, to = 1.0)
     val progressAsFloat = (displayProgressInMillis.toFloat() / durationInMillis.toFloat()).coerceIn(0f, 1f)
 }
-

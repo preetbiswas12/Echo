@@ -181,4 +181,3 @@ internal fun AccountSwitchSectionPreview(@PreviewParameter(AccountSwitchSectionS
             onAddAccountClick = {},
         )
     }
-

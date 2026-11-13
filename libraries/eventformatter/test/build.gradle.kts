@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.eventformatter.api)
     implementation(projects.libraries.matrix.api)
 }
-
-

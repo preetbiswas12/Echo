@@ -7,11 +7,11 @@
 
 package com.echo.features.preferences.impl.tasks
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.push.api.notifications.NotificationCleaner
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.withContext
 
 interface MarkAllRoomsAsRead {
@@ -31,4 +31,3 @@ class DefaultMarkAllRoomsAsRead(
             }
     }
 }
-

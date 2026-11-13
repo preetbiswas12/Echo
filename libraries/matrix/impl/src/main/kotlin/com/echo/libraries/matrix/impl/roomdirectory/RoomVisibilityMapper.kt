@@ -26,4 +26,3 @@ fun RustRoomVisibility.map(): RoomVisibility {
         is RustRoomVisibility.Custom -> RoomVisibility.Custom(value)
     }
 }
-

@@ -9,7 +9,6 @@
 package com.echo.libraries.push.impl.notifications
 
 import android.content.Intent
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.core.log.logger.LoggerTag
 import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -29,6 +28,7 @@ import com.echo.libraries.push.impl.push.OnNotifiableEventReceived
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
 import com.echo.services.toolbox.api.strings.StringProvider
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -231,4 +231,3 @@ class NotificationBroadcastReceiverHandler(
         }
     }
 }
-

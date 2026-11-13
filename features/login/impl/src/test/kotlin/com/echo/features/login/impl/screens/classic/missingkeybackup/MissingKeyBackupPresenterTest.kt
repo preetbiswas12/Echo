@@ -7,11 +7,11 @@
 
 package com.echo.features.login.impl.screens.classic.missingkeybackup
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.test.AN_APPLICATION_NAME
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -31,4 +31,3 @@ private fun createPresenter(
 ) = MissingKeyBackupPresenter(
     buildMeta = buildMeta,
 )
-

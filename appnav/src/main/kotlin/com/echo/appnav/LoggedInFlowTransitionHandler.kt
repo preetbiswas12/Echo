@@ -56,4 +56,3 @@ fun rememberLoggedInFlowTransitionHandler(
         LoggedInFlowTransitionHandler(backstack, slider, fader)
     }
 }
-

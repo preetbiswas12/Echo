@@ -8,7 +8,6 @@
 package com.echo.features.share.impl
 
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.share.api.OnSharedData
 import com.echo.features.share.api.ShareIntentData
 import com.echo.features.share.api.UriToShare
@@ -26,6 +25,7 @@ import com.echo.services.appnavstate.api.ActiveRoomsHolder
 import com.echo.services.appnavstate.impl.DefaultActiveRoomsHolder
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -117,4 +117,3 @@ private fun createDefaultShareDataSender(
     activeRoomsHolder = activeRoomsHolder,
     onSharedData = onSharedData,
 )
-

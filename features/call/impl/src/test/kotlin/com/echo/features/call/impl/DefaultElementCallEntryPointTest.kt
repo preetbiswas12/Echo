@@ -10,7 +10,6 @@ package com.echo.features.call.impl
 
 import android.content.Intent
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.call.api.CallData
 import com.echo.features.call.impl.notifications.CallNotificationData
 import com.echo.features.call.impl.ui.ElementCallActivity
@@ -26,6 +25,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_2
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.advanceTimeBy
@@ -108,4 +108,3 @@ class DefaultElementCallEntryPointTest : RobolectricTest() {
         appCoroutineScope = this,
     )
 }
-

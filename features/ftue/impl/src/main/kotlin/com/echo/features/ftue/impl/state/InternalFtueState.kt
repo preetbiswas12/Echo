@@ -17,4 +17,3 @@ sealed interface InternalFtueState {
 
     data object Complete : InternalFtueState
 }
-

@@ -341,4 +341,3 @@ internal fun ProgressButtonPreview() = ElementPreview {
         ProgressButton(displayImmediately = false)
     }
 }
-

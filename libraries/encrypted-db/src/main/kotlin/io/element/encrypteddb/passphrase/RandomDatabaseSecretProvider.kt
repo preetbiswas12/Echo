@@ -47,4 +47,3 @@ class RandomDatabaseSecretProvider(
             .also { SecureRandom().nextBytes(it) }
     }
 }
-

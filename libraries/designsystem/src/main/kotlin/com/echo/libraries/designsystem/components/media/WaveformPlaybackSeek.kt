@@ -113,4 +113,3 @@ private fun cursorTrackWidthPx(
 ): Float {
     return (waveformWidthPx - linePaddingPx - lineWidthPx).coerceAtLeast(0f)
 }
-

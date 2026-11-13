@@ -129,4 +129,3 @@ data class MediaSearchResultContent(
     val thumbnailType: AttachmentThumbnailType,
     val blurhash: String?,
 )
-

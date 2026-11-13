@@ -32,4 +32,3 @@ object TimelineConfig {
         StateEventType.PolicyRuleUser,
     )
 }
-

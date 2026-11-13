@@ -199,4 +199,3 @@ internal fun SecureBackupSetupViewPreview(
         onBackClick = {},
     )
 }
-

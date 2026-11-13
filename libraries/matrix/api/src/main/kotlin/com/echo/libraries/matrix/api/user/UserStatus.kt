@@ -15,4 +15,3 @@ data class UserStatus(
     val emoji: String,
     val text: String,
 ) : Parcelable
-

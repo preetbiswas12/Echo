@@ -275,4 +275,3 @@ class FakeJoinedRoom(
         sendQueueUpdates.emit(sendQueueUpdate)
     }
 }
-

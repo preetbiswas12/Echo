@@ -92,4 +92,3 @@ class CallScreenBackPressPolicyTest {
         assertThat(withOutPipSupport).isNull()
     }
 }
-

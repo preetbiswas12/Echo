@@ -8,9 +8,6 @@
 
 package com.echo.features.lockscreen.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
-import dev.zacsweers.metro.SingleIn
 import com.echo.features.lockscreen.api.LockScreenLockState
 import com.echo.features.lockscreen.api.LockScreenService
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
@@ -22,6 +19,9 @@ import com.echo.libraries.di.annotations.AppCoroutineScope
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
 import com.echo.libraries.sessionstorage.api.observer.SessionObserver
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -120,4 +120,3 @@ class DefaultLockScreenService(
         }
     }
 }
-

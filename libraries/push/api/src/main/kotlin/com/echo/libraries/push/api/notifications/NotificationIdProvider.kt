@@ -55,4 +55,3 @@ enum class ForegroundServiceType {
     ONGOING_CALL,
     LIVE_LOCATION,
 }
-

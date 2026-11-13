@@ -102,4 +102,3 @@ interface EnterpriseService {
      */
     fun getNoisyNotificationChannelId(sessionId: SessionId): String?
 }
-

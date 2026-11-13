@@ -52,4 +52,3 @@ private fun Iterable<RoomMember>.filterAndSort(
 ): ImmutableList<RoomMember> {
     return filter(predicate).sortedWith(comparator).toImmutableList()
 }
-

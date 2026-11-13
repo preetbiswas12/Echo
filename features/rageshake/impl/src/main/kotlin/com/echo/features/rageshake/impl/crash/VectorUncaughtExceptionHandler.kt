@@ -78,4 +78,3 @@ class VectorUncaughtExceptionHandler(
         previousHandler?.uncaughtException(thread, throwable)
     }
 }
-

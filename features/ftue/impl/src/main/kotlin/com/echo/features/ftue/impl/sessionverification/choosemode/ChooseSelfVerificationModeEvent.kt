@@ -11,4 +11,3 @@ package com.echo.features.ftue.impl.sessionverification.choosemode
 sealed interface ChooseSelfVerificationModeEvent {
     data object SignOut : ChooseSelfVerificationModeEvent
 }
-

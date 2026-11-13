@@ -12,4 +12,3 @@ data class SlashCommandSuggestion(
     val parameters: String?,
     val description: String,
 )
-

@@ -18,5 +18,3 @@ dependencies {
     implementation(projects.libraries.architecture)
     implementation(libs.androidx.compose.ui.tooling.preview)
 }
-
-

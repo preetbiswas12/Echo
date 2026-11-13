@@ -8,7 +8,6 @@
 package com.echo.libraries.mediaviewer.impl.viewer
 
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.core.UniqueId
@@ -25,6 +24,7 @@ import com.echo.libraries.mediaviewer.impl.model.MediaItem
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemFile
 import com.echo.libraries.mediaviewer.impl.model.aMediaItemImage
 import com.echo.tests.testutils.WarmUpRule
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -299,4 +299,3 @@ class GalleryMediaGalleryDataSourceTest {
         duration = null,
     )
 }
-

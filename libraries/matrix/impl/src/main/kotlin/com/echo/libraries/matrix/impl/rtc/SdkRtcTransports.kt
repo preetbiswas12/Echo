@@ -33,4 +33,3 @@ private fun RtcTransport.toJsonObject(): JsonObject = when (this) {
         JsonObject(fields + ("type" to JsonPrimitive(transportType)))
     }
 }
-

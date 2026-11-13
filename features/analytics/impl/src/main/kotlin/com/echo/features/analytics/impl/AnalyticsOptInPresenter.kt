@@ -10,12 +10,12 @@ package com.echo.features.analytics.impl
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Inject
 import com.echo.appconfig.AnalyticsConfig
 import com.echo.features.analytics.api.AnalyticsOptInEvent
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -48,4 +48,3 @@ class AnalyticsOptInPresenter(
         analyticsService.setUserConsent(enabled)
     }
 }
-

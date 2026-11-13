@@ -10,11 +10,11 @@ package com.echo.libraries.permissions.impl
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.bool.orFalse
 import com.echo.libraries.permissions.api.PermissionsStore
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -60,4 +60,3 @@ class DefaultPermissionsStore(
     private fun getDeniedPreferenceKey(permission: String) = booleanPreferencesKey("${permission}_denied")
     private fun getAskedPreferenceKey(permission: String) = booleanPreferencesKey("${permission}_asked")
 }
-

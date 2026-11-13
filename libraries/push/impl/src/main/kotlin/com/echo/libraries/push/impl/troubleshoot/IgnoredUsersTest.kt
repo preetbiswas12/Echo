@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.troubleshoot
 
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.di.SessionScope
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.push.impl.R
@@ -17,6 +16,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTest
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestDelegate
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesIntoSet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.StateFlow
 
@@ -66,4 +66,3 @@ class IgnoredUsersTest(
 
     override suspend fun reset() = delegate.reset()
 }
-

@@ -45,4 +45,3 @@ fun MediaPreviewValue?.isPreviewEnabled(joinRule: JoinRule?): Boolean {
         }
     }
 }
-

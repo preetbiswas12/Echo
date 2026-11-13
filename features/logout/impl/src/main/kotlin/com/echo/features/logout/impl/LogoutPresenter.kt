@@ -17,7 +17,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.architecture.Presenter
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.api.encryption.BackupState
 import com.echo.libraries.matrix.api.encryption.BackupUploadState
 import com.echo.libraries.matrix.api.encryption.EncryptionService
 import com.echo.libraries.workmanager.api.WorkManagerScheduler
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -121,4 +121,3 @@ class LogoutPresenter(
         }.runCatchingUpdatingState(logoutAction)
     }
 }
-

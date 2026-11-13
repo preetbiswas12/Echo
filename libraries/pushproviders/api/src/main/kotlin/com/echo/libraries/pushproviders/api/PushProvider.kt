@@ -89,4 +89,3 @@ interface PushProvider {
         error("rotateToken() not implemented, you need to override this method in your implementation")
     }
 }
-

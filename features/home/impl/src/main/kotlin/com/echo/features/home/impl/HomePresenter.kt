@@ -18,7 +18,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
 import com.echo.features.home.impl.roomlist.RoomListState
@@ -34,6 +33,7 @@ import com.echo.libraries.indicator.api.IndicatorService
 import com.echo.libraries.matrix.api.MatrixClient
 import com.echo.libraries.matrix.api.sync.SyncService
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.combine
@@ -141,4 +141,3 @@ class HomePresenter(
         )
     }
 }
-

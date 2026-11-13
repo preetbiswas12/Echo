@@ -160,4 +160,3 @@ private fun aListOfSpaceRooms(): List<SpaceRoom> {
         ),
     )
 }
-

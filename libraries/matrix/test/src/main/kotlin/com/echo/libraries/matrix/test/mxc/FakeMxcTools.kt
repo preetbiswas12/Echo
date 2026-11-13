@@ -17,4 +17,3 @@ class FakeMxcTools(
         return mxcUri2FilePathResult(mxcUri)
     }
 }
-

@@ -25,4 +25,3 @@ internal fun EventEncryptionInfo?.toFfi(): FfiEventEncryption = when (this) {
     null -> ClearText
     else -> FfiEventEncryption(encrypted = true, senderDeviceId = senderDeviceId, senderConfirmed = shieldState !is ShieldState.Red)
 }
-

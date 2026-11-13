@@ -17,13 +17,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
 import com.echo.features.roomdirectory.impl.root.model.RoomDirectoryListState
 import com.echo.features.roomdirectory.impl.root.model.toFeatureModel
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.core.coroutine.CoroutineDispatchers
 import com.echo.libraries.matrix.api.roomdirectory.RoomDirectoryList
 import com.echo.libraries.matrix.api.roomdirectory.RoomDirectoryService
+import dev.zacsweers.metro.Inject
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flowOn
@@ -92,4 +92,3 @@ class RoomDirectoryPresenter(
         }.flowOn(dispatchers.computation)
     }.collectAsState(RoomDirectoryListState.Default)
 }
-

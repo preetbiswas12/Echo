@@ -23,4 +23,3 @@ fun Modifier.blurHashBackground(blurHash: String?, alpha: Float = 1f) = this.com
         this
     }
 }
-

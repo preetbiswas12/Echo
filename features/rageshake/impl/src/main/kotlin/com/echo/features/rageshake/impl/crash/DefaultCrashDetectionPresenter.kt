@@ -15,13 +15,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.rageshake.api.RageshakeFeatureAvailability
 import com.echo.features.rageshake.api.crash.CrashDetectionEvent
 import com.echo.features.rageshake.api.crash.CrashDetectionPresenter
 import com.echo.features.rageshake.api.crash.CrashDetectionState
 import com.echo.libraries.core.meta.BuildMeta
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flatMapLatest
@@ -70,4 +70,3 @@ class DefaultCrashDetectionPresenter(
         crashDataStore.reset()
     }
 }
-

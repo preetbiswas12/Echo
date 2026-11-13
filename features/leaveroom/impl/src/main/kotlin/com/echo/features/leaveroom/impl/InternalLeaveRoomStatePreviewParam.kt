@@ -50,4 +50,3 @@ fun aLeaveRoomState(
     leaveAction = leaveAction,
     eventSink = eventSink,
 )
-

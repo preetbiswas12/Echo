@@ -16,4 +16,3 @@ data class TroubleshootTestSuiteState(
     val mainState: AsyncAction<Unit>,
     val tests: ImmutableList<NotificationTroubleshootTestState>,
 )
-

@@ -86,4 +86,3 @@ fun SelectionState.eventIdsToDeselect(timelineItems: List<TimelineItem>): Set<Ev
     }
     return result
 }
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.sessionstorage.impl.observer
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.sessionstorage.api.observer.SessionListener
+import com.google.common.truth.Truth.assertThat
 
 class TestSessionListener : SessionListener {
     sealed interface Event {
@@ -31,4 +31,3 @@ class TestSessionListener : SessionListener {
         assertThat(trackRecord).containsExactly(*events)
     }
 }
-

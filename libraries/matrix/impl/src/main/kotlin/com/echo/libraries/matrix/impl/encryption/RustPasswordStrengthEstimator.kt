@@ -7,11 +7,11 @@
 
 package com.echo.libraries.matrix.impl.encryption
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.encryption.PasswordStrengthEstimate
 import com.echo.libraries.matrix.api.encryption.PasswordStrengthEstimator
 import com.echo.libraries.matrix.api.encryption.PasswordStrengthRanking
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import org.matrix.rustcomponents.sdk.PasswordStrengthEstimate as SdkPasswordStrengthEstimate
 import org.matrix.rustcomponents.sdk.PasswordStrengthEstimator as SdkPasswordStrengthEstimator
 import org.matrix.rustcomponents.sdk.PasswordStrengthRanking as SdkPasswordStrengthRanking
@@ -41,4 +41,3 @@ internal fun SdkPasswordStrengthRanking.toApiModel() = when (this) {
     SdkPasswordStrengthRanking.STRONG -> PasswordStrengthRanking.Strong
     SdkPasswordStrengthRanking.VERY_STRONG -> PasswordStrengthRanking.VeryStrong
 }
-

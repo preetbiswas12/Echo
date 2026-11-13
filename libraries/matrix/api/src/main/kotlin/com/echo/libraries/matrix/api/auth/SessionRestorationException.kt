@@ -13,4 +13,3 @@ sealed class SessionRestorationException(message: String, cause: Throwable? = nu
     data class MissingSession(val sessionId: SessionId) : SessionRestorationException("Session with id $sessionId not found")
     class InvalidToken : SessionRestorationException("Access token is invalid or expired")
 }
-

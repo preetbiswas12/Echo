@@ -17,10 +17,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.knockrequests.api.KnockRequestPermissions
 import com.echo.features.knockrequests.api.knockRequestPermissions
 import com.echo.features.leaveroom.api.LeaveRoomEvent
@@ -57,6 +53,10 @@ import com.echo.libraries.push.api.notifications.NotificationCleaner
 import com.echo.libraries.ui.strings.CommonStrings
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Interaction
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.launchIn
@@ -300,4 +300,3 @@ class RoomDetailsPresenter(
             }
     }
 }
-

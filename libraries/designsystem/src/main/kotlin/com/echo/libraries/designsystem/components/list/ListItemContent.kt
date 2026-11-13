@@ -137,4 +137,3 @@ sealed interface ListItemContent {
 }
 
 private val maxCompactSize = DpSize(24.dp, 24.dp)
-

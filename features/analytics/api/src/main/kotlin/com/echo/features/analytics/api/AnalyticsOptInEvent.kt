@@ -11,4 +11,3 @@ package com.echo.features.analytics.api
 sealed interface AnalyticsOptInEvent {
     data class EnableAnalytics(val isEnabled: Boolean) : AnalyticsOptInEvent
 }
-

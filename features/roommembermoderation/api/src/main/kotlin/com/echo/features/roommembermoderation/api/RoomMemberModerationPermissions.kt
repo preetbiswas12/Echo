@@ -30,4 +30,3 @@ fun RoomPermissions.roomMemberModerationPermissions(): RoomMemberModerationPermi
         canBan = canOwnUserBan(),
     )
 }
-

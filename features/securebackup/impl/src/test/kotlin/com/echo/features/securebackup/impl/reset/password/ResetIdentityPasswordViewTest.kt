@@ -83,4 +83,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setResetPasswordView(
         ResetIdentityPasswordView(state = state, onBack = onBack)
     }
 }
-

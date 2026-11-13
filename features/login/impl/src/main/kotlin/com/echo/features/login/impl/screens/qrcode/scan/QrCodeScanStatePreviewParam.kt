@@ -52,4 +52,3 @@ fun aQrCodeScanState(
     authenticationAction = authenticationAction,
     eventSink = eventSink
 )
-

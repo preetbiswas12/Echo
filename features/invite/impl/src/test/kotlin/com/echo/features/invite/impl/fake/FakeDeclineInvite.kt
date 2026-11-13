@@ -20,4 +20,3 @@ class FakeDeclineInvite(
         lambda(roomId, blockUser, reportRoom, reportReason)
     }
 }
-

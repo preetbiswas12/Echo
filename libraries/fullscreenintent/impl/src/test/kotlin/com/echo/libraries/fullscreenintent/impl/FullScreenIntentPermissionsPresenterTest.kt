@@ -12,7 +12,6 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.Lifecycle
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.fullscreenintent.api.FullScreenIntentPermissionsEvent
 import com.echo.libraries.matrix.test.core.aBuildMeta
@@ -24,6 +23,7 @@ import com.echo.tests.testutils.FakeLifecycleOwner
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.testWithLifecycleOwner
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -144,4 +144,3 @@ class FullScreenIntentPermissionsPresenterTest {
         notificationManagerCompat = notificationManagerCompat,
     )
 }
-

@@ -13,7 +13,6 @@ import android.content.Intent
 import android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION
 import android.os.IBinder
 import androidx.core.app.ServiceCompat
-import dev.zacsweers.metro.Inject
 import com.echo.features.location.impl.common.userlocation.createLocationProvider
 import com.echo.features.location.impl.di.LocationBindings
 import com.echo.features.location.impl.live.notification.LiveLocationSharingNotificationCreator
@@ -25,6 +24,7 @@ import com.echo.libraries.preferences.api.store.AppPreferencesStore
 import com.echo.libraries.push.api.notifications.ForegroundServiceType
 import com.echo.libraries.push.api.notifications.NotificationIdProvider
 import com.echo.services.appnavstate.api.AppForegroundStateService
+import dev.zacsweers.metro.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -142,4 +142,3 @@ class LiveLocationSharingService : Service() {
         super.onDestroy()
     }
 }
-

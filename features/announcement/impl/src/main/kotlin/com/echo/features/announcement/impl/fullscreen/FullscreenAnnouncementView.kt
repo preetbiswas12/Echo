@@ -220,4 +220,3 @@ internal fun FullscreenAnnouncementViewPreview(@PreviewParameter(AnnouncementSta
         state = state,
     )
 }
-

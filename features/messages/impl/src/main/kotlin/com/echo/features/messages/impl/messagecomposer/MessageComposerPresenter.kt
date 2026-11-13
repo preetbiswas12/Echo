@@ -26,11 +26,6 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
-import im.vector.app.features.analytics.plan.Composer
-import im.vector.app.features.analytics.plan.Interaction
 import com.echo.features.contentscanner.api.ContentScannerService
 import com.echo.features.location.api.LocationService
 import com.echo.features.messages.api.timeline.TextPillificator
@@ -92,6 +87,11 @@ import com.echo.libraries.textcomposer.model.TextEditorState
 import com.echo.libraries.textcomposer.model.rememberMarkdownTextEditorState
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.analyticsproviders.api.trackers.captureInteraction
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
+import im.vector.app.features.analytics.plan.Composer
+import im.vector.app.features.analytics.plan.Interaction
 import io.element.android.wysiwyg.compose.RichTextEditorState
 import io.element.android.wysiwyg.display.TextDisplay
 import kotlinx.collections.immutable.persistentListOf
@@ -932,4 +932,3 @@ class MessageComposerPresenter(
         }
     }
 }
-

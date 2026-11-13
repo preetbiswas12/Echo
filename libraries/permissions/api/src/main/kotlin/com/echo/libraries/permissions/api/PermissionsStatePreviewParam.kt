@@ -34,4 +34,3 @@ fun aPermissionsState(
     permissionAlreadyDenied = false,
     eventSink = {}
 )
-

@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.virtual
 data object TimelineItemTypingNotificationModel : TimelineItemVirtualModel {
     override val type: String = "TimelineItemTypingNotificationModel"
 }
-

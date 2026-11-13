@@ -187,4 +187,3 @@ internal fun ListSupportingTextCustomPaddingPreview() {
         }
     }
 }
-

@@ -33,4 +33,3 @@ interface PermalinkBuilder {
 sealed class PermalinkBuilderError : Throwable() {
     data object InvalidData : PermalinkBuilderError()
 }
-

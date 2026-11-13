@@ -8,13 +8,13 @@
 
 package com.echo.libraries.pushproviders.firebase.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.pushproviders.firebase.FakeIsPlayServiceAvailable
 import com.echo.libraries.pushproviders.firebase.FirebaseConfig
 import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestState
 import com.echo.libraries.troubleshoot.api.test.TestFilterData
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -59,4 +59,3 @@ class FirebaseAvailabilityTestTest {
         assertThat(sut.isRelevant(TestFilterData(currentPushProviderName = FirebaseConfig.NAME))).isTrue()
     }
 }
-

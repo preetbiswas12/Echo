@@ -37,4 +37,3 @@ fun aReportRoomState(
     reportAction = reportAction,
     eventSink = eventSink,
 )
-

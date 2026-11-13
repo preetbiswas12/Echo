@@ -175,4 +175,3 @@ private fun ContentToPreview(elementLogoAtomSize: ElementLogoAtomSize, useBlurre
         ElementLogoAtom(elementLogoAtomSize, useBlurredShadow = useBlurredShadow)
     }
 }
-

@@ -7,13 +7,13 @@
 
 package com.echo.libraries.matrix.impl.roomlist
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.roomlist.RoomList
 import com.echo.libraries.matrix.api.roomlist.RoomListFilter
 import com.echo.libraries.matrix.api.roomlist.RoomSummary
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListDynamicEntriesController
 import com.echo.libraries.matrix.impl.fixtures.fakes.FakeFfiRoomListService
 import com.echo.services.analytics.test.FakeAnalyticsService
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.test.StandardTestDispatcher
@@ -65,4 +65,3 @@ class RustDynamicRoomListTest {
         )
     }
 }
-

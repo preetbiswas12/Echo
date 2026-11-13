@@ -22,4 +22,3 @@ class DateFormatterTimeOnly(
         return dateFormatters.formatTime(dateToFormat)
     }
 }
-

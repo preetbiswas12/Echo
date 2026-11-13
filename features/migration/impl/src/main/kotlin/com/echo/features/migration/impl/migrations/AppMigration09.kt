@@ -7,11 +7,11 @@
 
 package com.echo.features.migration.impl.migrations
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.libraries.matrix.api.MatrixClientProvider
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 /**
  * Ensure we clear the well-known cached config, since it could be invalid due to an SDK issue.
@@ -34,4 +34,3 @@ class AppMigration09(
         }
     }
 }
-

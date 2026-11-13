@@ -52,4 +52,3 @@ fun <NavTarget> rememberFaderOrSliderTransitionHandler(): ModifierTransitionHand
         FaderOrSliderTransitionHandler(slider, fader)
     }
 }
-

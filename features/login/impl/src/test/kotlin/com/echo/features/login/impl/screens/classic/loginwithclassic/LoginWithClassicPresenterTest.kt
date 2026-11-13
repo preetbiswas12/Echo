@@ -7,7 +7,6 @@
 
 package com.echo.features.login.impl.screens.classic.loginwithclassic
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.accountprovider.anAccountProviderDataSource
 import com.echo.features.login.impl.classic.ElementClassicConnection
@@ -28,6 +27,7 @@ import com.echo.libraries.matrix.test.auth.FakeMatrixAuthenticationService
 import com.echo.libraries.matrix.test.core.aBuildMeta
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -261,4 +261,3 @@ private fun createPresenter(
         isEnterpriseBuild = isEnterpriseBuild,
     ),
 )
-

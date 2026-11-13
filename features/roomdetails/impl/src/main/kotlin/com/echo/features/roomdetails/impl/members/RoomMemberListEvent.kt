@@ -14,4 +14,3 @@ sealed interface RoomMemberListEvent {
     data class ChangeSelectedSection(val section: SelectedSection) : RoomMemberListEvent
     data class RoomMemberSelected(val roomMember: RoomMember) : RoomMemberListEvent
 }
-

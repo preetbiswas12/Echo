@@ -16,5 +16,3 @@ dependencies {
     implementation(projects.libraries.htmlrenderer.api)
     implementation(projects.tests.testutils)
 }
-
-

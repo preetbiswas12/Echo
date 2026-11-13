@@ -79,4 +79,3 @@ class NotificationContentMapper {
 private fun NotificationItem.timestamp(): Long? {
     return (this.event as? NotificationEvent.Timeline)?.event?.timestamp()?.toLong()
 }
-

@@ -64,4 +64,3 @@ fun Activity.openUrlInChromeCustomTab(
         openUrlInExternalApp(url)
     }
 }
-

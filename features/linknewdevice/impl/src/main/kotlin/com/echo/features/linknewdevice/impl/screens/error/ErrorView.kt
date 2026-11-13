@@ -174,4 +174,3 @@ internal fun ErrorViewPreview(@PreviewParameter(ErrorScreenTypePreviewParam::cla
         )
     }
 }
-

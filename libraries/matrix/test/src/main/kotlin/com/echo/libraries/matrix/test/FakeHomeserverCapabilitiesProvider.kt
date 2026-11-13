@@ -18,4 +18,3 @@ class FakeHomeserverCapabilitiesProvider(
     override suspend fun canChangeDisplayName(): Result<Boolean> = canChangeDisplayName.invoke()
     override suspend fun canChangeAvatarUrl(): Result<Boolean> = canChangeAvatarUrl.invoke()
 }
-

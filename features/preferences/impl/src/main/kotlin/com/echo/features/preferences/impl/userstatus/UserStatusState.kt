@@ -49,4 +49,3 @@ enum class PredefinedUserStatus(val emoji: String, @StringRes val labelRes: Int)
     BE_RIGHT_BACK("☕", R.string.screen_settings_user_status_be_right_back),
     AWAY("🌴", R.string.screen_settings_user_status_away),
 }
-

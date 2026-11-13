@@ -100,5 +100,3 @@ dependencies {
     testImplementation(projects.services.appnavstate.test)
     testImplementation(projects.services.toolbox.test)
 }
-
-

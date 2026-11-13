@@ -17,4 +17,3 @@ sealed interface ChangeRolesEvent {
     data object Exit : ChangeRolesEvent
     data object CloseDialog : ChangeRolesEvent
 }
-

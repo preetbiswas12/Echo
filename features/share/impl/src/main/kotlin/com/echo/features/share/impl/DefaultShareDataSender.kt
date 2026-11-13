@@ -7,8 +7,6 @@
 
 package com.echo.features.share.impl
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.share.api.OnSharedData
 import com.echo.features.share.api.ShareIntentData
 import com.echo.libraries.core.bool.orFalse
@@ -19,6 +17,8 @@ import com.echo.libraries.matrix.api.room.JoinedRoom
 import com.echo.libraries.mediaupload.api.MediaOptimizationConfigProviderFactory
 import com.echo.libraries.mediaupload.api.MediaSenderRoomFactory
 import com.echo.services.appnavstate.api.ActiveRoomsHolder
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlin.coroutines.cancellation.CancellationException
 
 @ContributesBinding(AppScope::class)
@@ -100,4 +100,3 @@ class DefaultShareDataSender(
             ?: getJoinedRoom(roomId)
     }
 }
-

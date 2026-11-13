@@ -421,4 +421,3 @@ internal fun HomeViewA11yPreview() = ElementPreview {
         leaveRoomView = {}
     )
 }
-

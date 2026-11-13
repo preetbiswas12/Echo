@@ -20,9 +20,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.CryptoSessionStateChange
-import im.vector.app.features.analytics.plan.UserProperties
 import com.echo.features.networkmonitor.api.NetworkMonitor
 import com.echo.features.networkmonitor.api.NetworkStatus
 import com.echo.libraries.architecture.AsyncData
@@ -42,6 +39,9 @@ import com.echo.libraries.permissions.api.localnetwork.LocalNetworkPermissionDia
 import com.echo.libraries.push.api.PushService
 import com.echo.libraries.push.api.PusherRegistrationFailure
 import com.echo.services.analytics.api.AnalyticsService
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.CryptoSessionStateChange
+import im.vector.app.features.analytics.plan.UserProperties
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
@@ -212,4 +212,3 @@ class LoggedInPresenter(
         matrixClient.getAccountManagementUrl(null)
     }
 }
-

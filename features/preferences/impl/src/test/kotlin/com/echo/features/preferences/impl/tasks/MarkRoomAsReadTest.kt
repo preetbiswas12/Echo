@@ -9,7 +9,6 @@
 
 package com.echo.features.preferences.impl.tasks
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.api.timeline.ReceiptType
@@ -22,6 +21,7 @@ import com.echo.libraries.push.test.notifications.FakeNotificationCleaner
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -77,4 +77,3 @@ class MarkRoomAsReadTest {
         markAsReadResult.assertions().isCalledOnce().with(value(ReceiptType.READ_PRIVATE))
     }
 }
-

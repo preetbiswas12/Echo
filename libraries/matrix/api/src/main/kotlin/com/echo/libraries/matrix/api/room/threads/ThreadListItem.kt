@@ -32,4 +32,3 @@ data class ThreadListItemEvent(
     val content: EventContent?,
     val timestamp: Long,
 )
-

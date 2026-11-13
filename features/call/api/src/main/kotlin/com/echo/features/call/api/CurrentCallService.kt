@@ -21,4 +21,3 @@ interface CurrentCallService {
      */
     val currentCall: StateFlow<CurrentCall>
 }
-

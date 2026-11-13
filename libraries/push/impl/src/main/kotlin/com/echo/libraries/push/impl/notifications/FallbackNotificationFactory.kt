@@ -8,12 +8,12 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.push.impl.notifications.model.FallbackNotifiableEvent
 import com.echo.services.toolbox.api.systemclock.SystemClock
+import dev.zacsweers.metro.Inject
 
 @Inject
 class FallbackNotificationFactory(
@@ -39,4 +39,3 @@ class FallbackNotificationFactory(
         cause = cause,
     )
 }
-

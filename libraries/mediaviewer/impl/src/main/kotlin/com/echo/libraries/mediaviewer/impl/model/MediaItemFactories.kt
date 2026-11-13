@@ -142,4 +142,3 @@ fun aMediaItemLoadingIndicator(
         timestamp = 123,
     )
 }
-

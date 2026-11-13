@@ -119,4 +119,3 @@ class DefaultLogoutUseCaseTest {
         // No error
     }
 }
-

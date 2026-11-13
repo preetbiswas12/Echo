@@ -17,4 +17,3 @@ import androidx.compose.runtime.Composable
 fun hasCompactHeightWindowSize(): Boolean {
     return currentWindowAdaptiveInfo().windowSizeClass.heightSizeClass == WindowHeightSizeClass.Compact
 }
-

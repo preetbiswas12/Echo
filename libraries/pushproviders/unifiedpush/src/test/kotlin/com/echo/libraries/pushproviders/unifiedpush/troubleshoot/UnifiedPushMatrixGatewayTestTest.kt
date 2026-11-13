@@ -8,7 +8,6 @@
 
 package com.echo.libraries.pushproviders.unifiedpush.troubleshoot
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.pushproviders.api.Config
@@ -22,6 +21,7 @@ import com.echo.libraries.troubleshoot.api.test.NotificationTroubleshootTestStat
 import com.echo.libraries.troubleshoot.api.test.TestFilterData
 import com.echo.libraries.troubleshoot.test.runAndTestState
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -108,4 +108,3 @@ class UnifiedPushMatrixGatewayTestTest {
         )
     }
 }
-

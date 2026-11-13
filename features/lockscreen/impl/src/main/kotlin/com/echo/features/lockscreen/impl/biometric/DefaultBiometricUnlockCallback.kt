@@ -13,4 +13,3 @@ open class DefaultBiometricUnlockCallback : BiometricAuthenticator.Callback {
     override fun onBiometricAuthenticationSuccess() = Unit
     override fun onBiometricAuthenticationFailed(error: Exception?) = Unit
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.messages.impl.timeline.components.reactionsummary
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.messages.impl.timeline.model.anAggregatedReaction
 import com.echo.libraries.matrix.api.room.RoomMembersState
 import com.echo.libraries.matrix.test.AN_AVATAR_URL
@@ -19,6 +18,7 @@ import com.echo.libraries.matrix.test.room.FakeBaseRoom
 import com.echo.libraries.matrix.test.room.aRoomMember
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -67,4 +67,3 @@ class ReactionSummaryPresenterTest {
         }
     }
 }
-

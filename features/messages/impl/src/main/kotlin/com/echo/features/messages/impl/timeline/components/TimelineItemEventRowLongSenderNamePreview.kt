@@ -23,4 +23,3 @@ internal fun TimelineItemEventRowLongSenderNamePreview() = ElementPreviewLight {
         ),
     )
 }
-

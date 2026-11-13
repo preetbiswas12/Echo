@@ -23,4 +23,3 @@ fun NavigationBarText(
         style = ElementTheme.typography.fontBodySmMedium,
     )
 }
-

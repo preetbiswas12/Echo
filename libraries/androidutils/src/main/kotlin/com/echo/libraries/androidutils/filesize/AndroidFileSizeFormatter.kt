@@ -11,10 +11,10 @@ package com.echo.libraries.androidutils.filesize
 import android.content.Context
 import android.os.Build
 import android.text.format.Formatter
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.annotations.ApplicationContext
 import com.echo.services.toolbox.api.sdk.BuildVersionSdkIntProvider
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class AndroidFileSizeFormatter(
@@ -46,4 +46,3 @@ class AndroidFileSizeFormatter(
         }.replace("kB", "KB")
     }
 }
-

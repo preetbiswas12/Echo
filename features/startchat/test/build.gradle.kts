@@ -20,5 +20,3 @@ dependencies {
     implementation(projects.tests.testutils)
     api(projects.features.startchat.api)
 }
-
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.core
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.ProgressCallback
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.TransmissionProgress
@@ -32,4 +32,3 @@ class ProgressWatcherWrapperKtTest {
         }
     }
 }
-

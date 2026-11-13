@@ -71,4 +71,3 @@ internal fun DefaultNotificationSettingOptionPreview() = ElementPreview {
         )
     }
 }
-

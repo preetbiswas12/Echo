@@ -20,4 +20,3 @@ class FakeMarkAsFullyRead(
         return runCatchingExceptions { invokeResult(roomId, eventId) }
     }
 }
-

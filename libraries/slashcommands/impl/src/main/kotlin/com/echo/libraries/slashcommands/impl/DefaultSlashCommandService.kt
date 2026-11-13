@@ -7,7 +7,6 @@
 
 package com.echo.libraries.slashcommands.impl
 
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.di.RoomScope
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
@@ -18,6 +17,7 @@ import com.echo.libraries.slashcommands.api.SlashCommand
 import com.echo.libraries.slashcommands.api.SlashCommandService
 import com.echo.libraries.slashcommands.api.SlashCommandSuggestion
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlin.time.Duration.Companion.seconds
@@ -104,4 +104,3 @@ class DefaultSlashCommandService(
         )
     }
 }
-

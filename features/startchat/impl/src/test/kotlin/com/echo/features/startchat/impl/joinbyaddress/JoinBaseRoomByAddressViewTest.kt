@@ -58,4 +58,3 @@ private fun AndroidComposeUiTest<ComponentActivity>.setJoinRoomByAddressView(
         JoinRoomByAddressView(state = state)
     }
 }
-

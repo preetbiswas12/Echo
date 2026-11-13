@@ -13,4 +13,3 @@ import com.echo.libraries.matrix.api.room.JoinedRoom
 fun interface RoomGraphFactory {
     fun create(room: JoinedRoom): Any
 }
-

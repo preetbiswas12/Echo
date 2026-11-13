@@ -20,9 +20,6 @@ import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import dev.zacsweers.metro.Assisted
-import dev.zacsweers.metro.AssistedFactory
-import dev.zacsweers.metro.AssistedInject
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.matrix.api.MatrixClientProvider
@@ -34,6 +31,9 @@ import com.echo.libraries.matrix.ui.components.switchaccount.OtherAccount
 import com.echo.libraries.matrix.ui.model.SelectRoomInfo
 import com.echo.libraries.roomselect.api.RoomSelectMode
 import com.echo.libraries.sessionstorage.api.SessionStore
+import dev.zacsweers.metro.Assisted
+import dev.zacsweers.metro.AssistedFactory
+import dev.zacsweers.metro.AssistedInject
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -216,4 +216,3 @@ class RoomSelectPresenter(
         )
     }
 }
-

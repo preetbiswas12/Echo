@@ -32,4 +32,3 @@ data class TimelineItemVoiceContent(
 ) : TimelineItemEventContentWithAttachment {
     override val type: String = "TimelineItemAudioContent"
 }
-

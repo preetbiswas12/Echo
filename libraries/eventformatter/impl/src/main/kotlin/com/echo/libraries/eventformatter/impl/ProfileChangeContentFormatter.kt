@@ -8,10 +8,10 @@
 
 package com.echo.libraries.eventformatter.impl
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.matrix.api.core.UserId
 import com.echo.libraries.matrix.api.timeline.item.event.ProfileChangeContent
 import com.echo.services.toolbox.api.strings.StringProvider
+import dev.zacsweers.metro.Inject
 
 @Inject
 class ProfileChangeContentFormatter(
@@ -68,4 +68,3 @@ class ProfileChangeContentFormatter(
         }
     }
 }
-

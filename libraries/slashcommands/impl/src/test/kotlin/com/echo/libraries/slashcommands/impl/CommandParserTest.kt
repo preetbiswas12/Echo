@@ -7,7 +7,6 @@
 
 package com.echo.libraries.slashcommands.impl
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.featureflag.api.FeatureFlagService
 import com.echo.libraries.featureflag.api.FeatureFlags
 import com.echo.libraries.featureflag.test.FakeFeatureFlagService
@@ -22,6 +21,7 @@ import com.echo.libraries.slashcommands.api.MessagePrefix
 import com.echo.libraries.slashcommands.api.SlashCommand
 import com.echo.services.toolbox.api.strings.StringProvider
 import com.echo.services.toolbox.test.strings.FakeStringProvider
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -229,4 +229,3 @@ internal fun createCommandParser(
     featureFlagService = featureFlagService,
     stringProvider = stringProvider,
 )
-

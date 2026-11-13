@@ -7,9 +7,9 @@
 
 package com.echo.libraries.androidutils.network
 
+import com.echo.libraries.core.data.tryOrNull
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.core.data.tryOrNull
 import java.net.Inet4Address
 import java.net.Inet6Address
 import java.net.InetAddress
@@ -73,4 +73,3 @@ class DefaultLocalNetworkAddressClassifier(
         return false
     }
 }
-

@@ -15,4 +15,3 @@ data class ConfirmingStartDmWithMatrixUser(
     val matrixUser: MatrixUser,
     val isUserIdentityUnknown: Boolean,
 ) : AsyncAction.Confirming
-

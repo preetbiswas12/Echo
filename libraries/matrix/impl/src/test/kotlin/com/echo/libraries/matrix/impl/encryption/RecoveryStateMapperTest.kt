@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.encryption
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.encryption.RecoveryState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.RecoveryState as RustRecoveryState
 
@@ -23,4 +23,3 @@ class RecoveryStateMapperTest {
         assertThat(sut.map(RustRecoveryState.INCOMPLETE)).isEqualTo(RecoveryState.INCOMPLETE)
     }
 }
-

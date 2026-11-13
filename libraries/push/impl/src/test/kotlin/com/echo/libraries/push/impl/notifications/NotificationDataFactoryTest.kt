@@ -8,7 +8,6 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.user.MatrixUser
 import com.echo.libraries.matrix.test.AN_EVENT_ID
@@ -25,6 +24,7 @@ import com.echo.libraries.push.impl.notifications.fixtures.aNotifiableMessageEve
 import com.echo.libraries.push.impl.notifications.fixtures.aSimpleNotifiableEvent
 import com.echo.libraries.push.impl.notifications.fixtures.anInviteNotifiableEvent
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -201,4 +201,3 @@ fun <T> testWith(receiver: T, block: suspend T.() -> Unit) {
         receiver.block()
     }
 }
-

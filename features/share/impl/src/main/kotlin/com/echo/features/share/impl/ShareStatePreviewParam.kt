@@ -44,4 +44,3 @@ private fun aShareResult(
     sessionId = sessionId,
     roomIds = roomIds,
 )
-

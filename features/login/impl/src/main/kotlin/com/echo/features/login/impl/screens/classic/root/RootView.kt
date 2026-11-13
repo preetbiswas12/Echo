@@ -39,4 +39,3 @@ fun RootView(
 internal fun RootViewPreview() = ElementPreview {
     RootView()
 }
-

@@ -27,4 +27,3 @@ fun DisplayedStatus.Companion.from(userStatus: RustUserStatus?, userCall: UserCa
         else -> null
     }
 }
-

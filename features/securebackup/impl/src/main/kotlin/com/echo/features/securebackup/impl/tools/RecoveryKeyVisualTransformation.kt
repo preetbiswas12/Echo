@@ -42,4 +42,3 @@ class RecoveryKeyVisualTransformation : VisualTransformation {
         }
     }
 }
-

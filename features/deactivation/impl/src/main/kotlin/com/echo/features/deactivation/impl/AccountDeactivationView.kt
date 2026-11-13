@@ -312,4 +312,3 @@ internal fun AccountDeactivationViewPreview(
         onBackClick = {},
     )
 }
-

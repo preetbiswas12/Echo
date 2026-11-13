@@ -20,4 +20,3 @@ fun Modifier.testTag(id: TestTag) = semantics {
     testTag = id.value
     testTagsAsResourceId = true
 }
-

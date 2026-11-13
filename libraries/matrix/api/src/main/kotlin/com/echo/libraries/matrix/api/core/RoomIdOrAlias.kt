@@ -41,4 +41,3 @@ sealed interface RoomIdOrAlias : Parcelable {
 
 fun RoomId.toRoomIdOrAlias() = RoomIdOrAlias.Id(this)
 fun RoomAlias.toRoomIdOrAlias() = RoomIdOrAlias.Alias(this)
-

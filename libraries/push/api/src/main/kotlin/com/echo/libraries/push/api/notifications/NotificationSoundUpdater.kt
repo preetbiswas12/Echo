@@ -36,4 +36,3 @@ interface NotificationSoundUpdater {
     /** See [readNoisyChannelSound]. */
     suspend fun readRingingCallChannelSound(): NotificationSound?
 }
-

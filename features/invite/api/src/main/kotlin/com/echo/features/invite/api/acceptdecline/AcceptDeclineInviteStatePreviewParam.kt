@@ -20,4 +20,3 @@ fun anAcceptDeclineInviteState(
     declineAction = declineAction,
     eventSink = eventSink,
 )
-

@@ -28,4 +28,3 @@ private fun aResetIdentityPasswordState(
     resetAction = resetAction,
     eventSink = eventSink,
 )
-

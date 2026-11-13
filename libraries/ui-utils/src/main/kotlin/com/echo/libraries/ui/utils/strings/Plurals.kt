@@ -35,4 +35,3 @@ fun simplePluralStringResource(
     val resId = if (count == 1) resIdForOne else resIdForOthers
     return stringResource(resId, *formatArgs)
 }
-

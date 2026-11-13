@@ -11,4 +11,3 @@ package com.echo.features.messages.impl.timeline.model.event
 data object TimelineItemRedactedContent : TimelineItemEventContent {
     override val type: String = "TimelineItemRedactedContent"
 }
-

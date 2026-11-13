@@ -12,14 +12,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import dev.zacsweers.metro.Inject
-import im.vector.app.features.analytics.plan.SuperProperties
 import com.echo.features.rageshake.api.crash.CrashDetectionState
 import com.echo.features.rageshake.api.detection.RageshakeDetectionState
 import com.echo.libraries.architecture.Presenter
 import com.echo.libraries.matrix.api.SdkMetadata
 import com.echo.services.analytics.api.AnalyticsService
 import com.echo.services.apperror.api.AppErrorStateService
+import dev.zacsweers.metro.Inject
+import im.vector.app.features.analytics.plan.SuperProperties
 
 @Inject
 class RootPresenter(
@@ -52,4 +52,3 @@ class RootPresenter(
         )
     }
 }
-

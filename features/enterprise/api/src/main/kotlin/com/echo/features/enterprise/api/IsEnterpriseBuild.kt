@@ -16,4 +16,3 @@ fun interface IsEnterpriseBuild {
      */
     operator fun invoke(): Boolean
 }
-

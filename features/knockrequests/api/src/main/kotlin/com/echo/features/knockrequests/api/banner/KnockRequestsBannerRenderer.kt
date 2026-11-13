@@ -24,4 +24,3 @@ interface KnockRequestsBannerRenderer {
     @Composable
     fun View(modifier: Modifier, onViewRequestsClick: () -> Unit)
 }
-

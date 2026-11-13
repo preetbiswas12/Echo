@@ -19,4 +19,3 @@ data class EnterNumberState(
     val isContinueButtonEnabled: Boolean
         get() = numberEntry.isComplete() && !sendingCode.isLoading()
 }
-

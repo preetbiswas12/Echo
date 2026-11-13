@@ -367,4 +367,3 @@ internal fun FocusedEventPreview() = ElementPreview {
             .focusedEvent(0.dp),
     )
 }
-

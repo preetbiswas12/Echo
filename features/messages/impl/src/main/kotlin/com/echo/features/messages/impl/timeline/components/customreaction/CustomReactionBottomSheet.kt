@@ -20,12 +20,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import io.element.android.emojibasebindings.Emoji
 import com.echo.features.messages.impl.timeline.a11y.a11yReactionAction
 import com.echo.libraries.designsystem.theme.components.ModalBottomSheet
 import com.echo.libraries.designsystem.theme.components.hide
 import com.echo.libraries.emoji.api.picker.EmojiPickerRenderer
 import com.echo.libraries.matrix.api.timeline.item.event.EventOrTransactionId
+import io.element.android.emojibasebindings.Emoji
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -84,4 +84,3 @@ internal fun ExpandSheetWhenImeIsVisible(sheetState: SheetState) {
         }
     }
 }
-

@@ -46,4 +46,3 @@ internal fun SlidingSyncNotSupportedDialogPreview() = ElementPreview {
         onDismiss = {},
     )
 }
-

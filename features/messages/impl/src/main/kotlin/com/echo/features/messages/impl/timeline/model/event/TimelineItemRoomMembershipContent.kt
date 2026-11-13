@@ -13,4 +13,3 @@ data class TimelineItemRoomMembershipContent(
 ) : TimelineItemStateContent {
     override val type: String = "TimelineItemRoomMembershipContent"
 }
-

@@ -19,4 +19,3 @@ import com.echo.libraries.matrix.api.room.RoomMember
 fun RoomMember.sortingName(): String {
     return displayName?.takeIf { it.isNotEmpty() } ?: userId.value.drop(1)
 }
-

@@ -43,5 +43,3 @@ dependencies {
     testImplementation(projects.libraries.dateformatter.test)
     testImplementation(projects.features.poll.test)
 }
-
-

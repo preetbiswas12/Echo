@@ -7,12 +7,12 @@
 
 package com.echo.libraries.network.interceptors
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.Inject
-import dev.zacsweers.metro.SingleIn
 import com.echo.libraries.core.mimetype.MimeTypes
 import com.echo.libraries.matrix.api.tracing.LogLevel
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.Inject
+import dev.zacsweers.metro.SingleIn
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import okhttp3.Interceptor
@@ -41,4 +41,3 @@ class DynamicHttpLoggingInterceptor(
         return loggingInterceptor.intercept(chain)
     }
 }
-

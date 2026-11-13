@@ -9,11 +9,11 @@ package com.echo.features.ftue.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.ftue.api.SessionVerificationEntryPoint
 import com.echo.features.ftue.impl.sessionverification.FtueSessionVerificationFlowNode
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultSessionVerificationEntryPoint : SessionVerificationEntryPoint {
@@ -30,4 +30,3 @@ class DefaultSessionVerificationEntryPoint : SessionVerificationEntryPoint {
         return parentNode.createNode<FtueSessionVerificationFlowNode>(buildContext, listOf(flowNodeCallback))
     }
 }
-

@@ -27,4 +27,3 @@ data class UserListState(
 ) {
     val isMultiSelectionEnabled = selectionMode == SelectionMode.Multiple
 }
-

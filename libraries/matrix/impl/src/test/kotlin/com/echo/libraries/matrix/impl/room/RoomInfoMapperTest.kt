@@ -8,7 +8,6 @@
 
 package com.echo.libraries.matrix.impl.room
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.notification.CallIntent
 import com.echo.libraries.matrix.api.room.CallIntentConsensus
 import com.echo.libraries.matrix.api.room.CurrentUserMembership
@@ -31,6 +30,7 @@ import com.echo.libraries.matrix.test.A_USER_ID_3
 import com.echo.libraries.matrix.test.A_USER_ID_6
 import com.echo.libraries.matrix.test.room.aRoomMember
 import com.echo.libraries.matrix.test.room.defaultRoomPowerLevelValues
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.collections.immutable.toImmutableList
@@ -251,4 +251,3 @@ class RoomInfoMapperTest {
         assertThat(RustRoomNotificationMode.MUTE.map()).isEqualTo(RoomNotificationMode.MUTE)
     }
 }
-

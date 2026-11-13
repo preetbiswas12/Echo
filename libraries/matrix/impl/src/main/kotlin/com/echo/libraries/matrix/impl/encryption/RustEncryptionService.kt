@@ -288,4 +288,3 @@ class RustEncryptionService(
         service.close()
     }
 }
-

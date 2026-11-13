@@ -11,7 +11,6 @@ package com.echo.features.login.impl
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.testing.junit4.util.MainDispatcherRule
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.login.api.LoginEntryPoint
 import com.echo.features.login.impl.accountprovider.anAccountProviderDataSource
 import com.echo.features.login.impl.classic.FakeElementClassicConnection
@@ -19,6 +18,7 @@ import com.echo.features.preferences.test.FakePreferencesEntryPoint
 import com.echo.libraries.oauth.test.FakeOAuthActionFlow
 import com.echo.tests.testutils.lambda.lambdaError
 import com.echo.tests.testutils.node.TestParentNode
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -63,4 +63,3 @@ class DefaultLoginEntryPointTest {
         assertThat(result.plugins).contains(callback)
     }
 }
-

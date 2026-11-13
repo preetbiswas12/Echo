@@ -29,4 +29,3 @@ data class VideoUploadEstimation(
     val sizeInBytes: Long,
     val canUpload: Boolean,
 )
-

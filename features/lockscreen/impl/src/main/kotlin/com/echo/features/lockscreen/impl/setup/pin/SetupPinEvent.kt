@@ -12,4 +12,3 @@ sealed interface SetupPinEvent {
     data class OnPinEntryChanged(val entryAsText: String, val fromConfirmationStep: Boolean) : SetupPinEvent
     data object ClearFailure : SetupPinEvent
 }
-

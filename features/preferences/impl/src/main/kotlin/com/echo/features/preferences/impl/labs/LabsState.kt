@@ -16,4 +16,3 @@ data class LabsState(
     val isApplyingChanges: Boolean,
     val eventSink: (LabsEvent) -> Unit,
 )
-

@@ -19,8 +19,8 @@ import androidx.compose.material.icons.outlined.EmojiPeople
 import androidx.compose.material.icons.outlined.EmojiSymbols
 import androidx.compose.material.icons.outlined.EmojiTransportation
 import androidx.compose.ui.graphics.vector.ImageVector
-import io.element.android.emojibasebindings.EmojibaseCategory
 import com.echo.libraries.emoji.impl.R
+import io.element.android.emojibasebindings.EmojibaseCategory
 
 @get:StringRes
 internal val EmojibaseCategory.title: Int
@@ -46,4 +46,3 @@ internal val EmojibaseCategory.icon: ImageVector
         EmojibaseCategory.Symbols -> Icons.Outlined.EmojiSymbols
         EmojibaseCategory.Flags -> Icons.Outlined.EmojiFlags
     }
-

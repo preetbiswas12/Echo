@@ -34,4 +34,3 @@ interface KnockRequestPresentable {
         return displayName?.takeIf { it.isNotEmpty() } ?: userId.value
     }
 }
-

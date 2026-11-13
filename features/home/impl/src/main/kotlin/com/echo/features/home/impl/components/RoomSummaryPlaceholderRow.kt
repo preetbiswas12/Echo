@@ -84,4 +84,3 @@ internal fun RoomSummaryPlaceholderRow(
 internal fun RoomSummaryPlaceholderRowPreview() = ElementPreview {
     RoomSummaryPlaceholderRow()
 }
-

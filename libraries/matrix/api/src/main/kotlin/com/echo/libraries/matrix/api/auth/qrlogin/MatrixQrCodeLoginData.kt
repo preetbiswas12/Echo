@@ -17,4 +17,3 @@ interface MatrixQrCodeLoginData {
     /** The homeserver advertised by the QR code, or `null` when it does not carry one. */
     fun serverName(): String?
 }
-

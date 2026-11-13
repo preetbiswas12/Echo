@@ -104,4 +104,3 @@ fun HeaderFooterLayout(
         footer()
     }
 }
-

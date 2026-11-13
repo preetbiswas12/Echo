@@ -10,10 +10,10 @@ package com.echo.features.roomaliasresolver.impl
 
 import com.bumble.appyx.core.modality.BuildContext
 import com.bumble.appyx.core.node.Node
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.roomaliasresolver.api.RoomAliasResolverEntryPoint
 import com.echo.libraries.architecture.createNode
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 @ContributesBinding(AppScope::class)
 class DefaultRoomAliasResolverEntryPoint : RoomAliasResolverEntryPoint {
@@ -29,4 +29,3 @@ class DefaultRoomAliasResolverEntryPoint : RoomAliasResolverEntryPoint {
         )
     }
 }
-

@@ -15,4 +15,3 @@ import kotlinx.serialization.Serializable
 data class DiscoveryUnifiedPush(
     @SerialName("gateway") val gateway: String = ""
 )
-

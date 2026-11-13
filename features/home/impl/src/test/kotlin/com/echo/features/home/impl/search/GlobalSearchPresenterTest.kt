@@ -9,7 +9,6 @@
 
 package com.echo.features.home.impl.search
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.home.impl.datasource.aRoomListRoomSummaryFactory
 import com.echo.features.home.impl.search.history.FakeSearchHistoryStore
 import com.echo.features.home.impl.search.history.SearchHistoryResult
@@ -45,6 +44,7 @@ import com.echo.tests.testutils.consumeItemsUntilPredicate
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -515,4 +515,3 @@ private fun TestScope.createGlobalSearchPresenter(
         searchHistoryStore = searchHistoryStore,
     )
 }
-

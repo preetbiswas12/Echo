@@ -16,12 +16,12 @@ import android.provider.Settings
 import androidx.annotation.VisibleForTesting
 import androidx.core.location.LocationManagerCompat
 import androidx.core.net.toUri
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.features.location.api.Location
 import com.echo.libraries.androidutils.system.openAppSettingsPage
 import com.echo.libraries.core.extensions.runCatchingExceptions
 import com.echo.libraries.di.annotations.ApplicationContext
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import timber.log.Timber
 import java.util.Locale
 
@@ -76,4 +76,3 @@ internal fun buildUrl(
     val locale = Locale.ENGLISH
     return "geo:0,0?q=%.6f,%.6f (%s)".format(locale, location.lat, location.lon, urlEncoder(label.orEmpty()))
 }
-

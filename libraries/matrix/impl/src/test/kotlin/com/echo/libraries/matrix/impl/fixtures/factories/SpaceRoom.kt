@@ -52,4 +52,3 @@ internal fun aRustSpaceRoom(
     heroes = heroes,
     via = emptyList(),
 )
-

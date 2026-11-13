@@ -24,4 +24,3 @@ enum class NetworkStatus {
      */
     Disconnected
 }
-

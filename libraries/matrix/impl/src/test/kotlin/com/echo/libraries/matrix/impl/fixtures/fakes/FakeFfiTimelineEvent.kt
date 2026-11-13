@@ -24,4 +24,3 @@ open class FakeFfiTimelineEvent(
     override fun content(): TimelineEventContent = timelineEventContent
     override fun senderId(): String = senderId
 }
-

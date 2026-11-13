@@ -8,7 +8,6 @@
 
 package com.echo.features.lockscreen.impl.unlock
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.fixtures.aPinCodeManager
@@ -24,6 +23,7 @@ import com.echo.libraries.architecture.AsyncData
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -197,4 +197,3 @@ class PinUnlockPresenterTest {
         )
     }
 }
-

@@ -10,8 +10,6 @@ package com.echo.features.createroom.impl
 import android.net.Uri
 import androidx.core.net.toUri
 import app.cash.turbine.TurbineTestContext
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.CreatedRoom
 import com.echo.features.createroom.impl.configureroom.ConfigureRoomEvent
 import com.echo.features.createroom.impl.configureroom.ConfigureRoomPresenter
 import com.echo.features.createroom.impl.configureroom.ConfigureRoomState
@@ -62,6 +60,8 @@ import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.matching
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.CreatedRoom
 import io.mockk.mockk
 import kotlinx.collections.immutable.persistentMapOf
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -636,4 +636,3 @@ class ConfigureRoomPresenterTest : RobolectricTest() {
         sessionEnterpriseService = sessionEnterpriseService,
     )
 }
-

@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.api.timeline.item.event
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UserId
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 private const val A_USER_ID = "@foo:example.org"
@@ -67,4 +67,3 @@ class ProfileTimelineDetailsTest {
         ).isEqualTo("Alice ($A_USER_ID)")
     }
 }
-

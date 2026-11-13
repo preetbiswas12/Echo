@@ -8,8 +8,8 @@
 
 package com.echo.libraries.matrix.impl.sync
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.sync.SyncState
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.matrix.rustcomponents.sdk.SyncServiceState
 
@@ -23,4 +23,3 @@ class AppStateMapperKtTest {
         assertThat(SyncServiceState.OFFLINE.toSyncState()).isEqualTo(SyncState.Offline)
     }
 }
-

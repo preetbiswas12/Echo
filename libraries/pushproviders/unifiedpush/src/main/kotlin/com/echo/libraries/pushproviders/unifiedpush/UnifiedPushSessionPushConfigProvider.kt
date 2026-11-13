@@ -8,11 +8,11 @@
 
 package com.echo.libraries.pushproviders.unifiedpush
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.pushproviders.api.Config
 import com.echo.libraries.pushstore.api.clientsecret.PushClientSecret
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 
 interface UnifiedPushSessionPushConfigProvider {
     suspend fun provide(sessionId: SessionId): Config?
@@ -33,4 +33,3 @@ class DefaultUnifiedPushPushConfigProvider(
         )
     }
 }
-

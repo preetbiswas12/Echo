@@ -27,4 +27,3 @@ class FakeMatrixQrCodeLoginData(
 ) : MatrixQrCodeLoginData {
     override fun serverName() = serverNameResult()
 }
-

@@ -8,12 +8,12 @@
 
 package com.echo.libraries.matrix.impl.timeline.postprocessor
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.api.core.UniqueId
 import com.echo.libraries.matrix.api.timeline.MatrixTimelineItem
 import com.echo.libraries.matrix.api.timeline.Timeline
 import com.echo.libraries.matrix.api.timeline.item.virtual.VirtualTimelineItem
 import com.echo.libraries.matrix.test.AN_EVENT_ID
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class LastForwardIndicatorsPostProcessorTest {
@@ -87,4 +87,3 @@ class LastForwardIndicatorsPostProcessorTest {
         )
     }
 }
-

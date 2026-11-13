@@ -105,4 +105,3 @@ enum class VisualListItemPosition {
     Bottom,
     Single,
 }
-

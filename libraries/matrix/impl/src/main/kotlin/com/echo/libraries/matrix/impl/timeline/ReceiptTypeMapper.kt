@@ -16,4 +16,3 @@ internal fun ReceiptType.toRustReceiptType(): RustReceiptType = when (this) {
     ReceiptType.READ_PRIVATE -> RustReceiptType.READ_PRIVATE
     ReceiptType.FULLY_READ -> RustReceiptType.FULLY_READ
 }
-

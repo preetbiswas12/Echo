@@ -42,4 +42,3 @@ interface FileViewerEntryPoint : FeatureEntryPoint {
         fun onDone()
     }
 }
-

@@ -8,7 +8,6 @@
 
 package com.echo.features.lockscreen.impl.setup.biometric
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticator
 import com.echo.features.lockscreen.impl.biometric.BiometricAuthenticatorManager
 import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticator
@@ -16,6 +15,7 @@ import com.echo.features.lockscreen.impl.biometric.FakeBiometricAuthenticatorMan
 import com.echo.features.lockscreen.impl.pin.storage.InMemoryLockScreenStore
 import com.echo.features.lockscreen.impl.storage.LockScreenStore
 import com.echo.tests.testutils.test
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -82,4 +82,3 @@ class SetupBiometricPresenterTest {
         )
     }
 }
-

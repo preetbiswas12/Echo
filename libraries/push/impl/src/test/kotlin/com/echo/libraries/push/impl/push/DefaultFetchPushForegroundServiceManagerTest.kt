@@ -13,8 +13,8 @@ import android.content.Context.ACTIVITY_SERVICE
 import android.content.Context.POWER_SERVICE
 import android.os.PowerManager
 import androidx.test.platform.app.InstrumentationRegistry
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.async
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.withTimeout
@@ -130,4 +130,3 @@ class DefaultFetchPushForegroundServiceManagerTest : RobolectricTest() {
         return Shadows.shadowOf(activityManager)
     }
 }
-

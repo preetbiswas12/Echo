@@ -11,7 +11,6 @@ package com.echo.features.forward.impl
 import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.architecture.AsyncAction
 import com.echo.libraries.matrix.api.core.EventId
 import com.echo.libraries.matrix.api.core.RoomId
@@ -24,6 +23,7 @@ import com.echo.libraries.matrix.test.timeline.FakeTimeline
 import com.echo.tests.testutils.WarmUpRule
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -120,4 +120,3 @@ fun TestScope.createForwardMessagesPresenter(
     room = fakeRoom,
     sessionCoroutineScope = this,
 )
-

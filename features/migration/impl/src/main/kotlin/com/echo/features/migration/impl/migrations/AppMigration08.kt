@@ -8,10 +8,10 @@
 
 package com.echo.features.migration.impl.migrations
 
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesIntoSet
 import com.echo.features.announcement.api.Announcement
 import com.echo.features.announcement.api.AnnouncementService
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesIntoSet
 
 /**
  * Ensure the new notification sound banner is displayed, but only on application upgrade.
@@ -28,4 +28,3 @@ class AppMigration08(
         }
     }
 }
-

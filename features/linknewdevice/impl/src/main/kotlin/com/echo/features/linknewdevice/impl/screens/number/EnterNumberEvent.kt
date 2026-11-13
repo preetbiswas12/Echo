@@ -11,4 +11,3 @@ sealed interface EnterNumberEvent {
     data class UpdateNumber(val number: String) : EnterNumberEvent
     data object Continue : EnterNumberEvent
 }
-

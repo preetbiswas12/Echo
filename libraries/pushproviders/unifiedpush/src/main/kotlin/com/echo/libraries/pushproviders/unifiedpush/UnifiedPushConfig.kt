@@ -20,4 +20,3 @@ object UnifiedPushConfig {
     const val INDEX = 1
     const val NAME = "UnifiedPush"
 }
-

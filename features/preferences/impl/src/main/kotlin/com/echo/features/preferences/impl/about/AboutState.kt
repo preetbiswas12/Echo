@@ -13,4 +13,3 @@ import kotlinx.collections.immutable.ImmutableList
 data class AboutState(
     val elementLegals: ImmutableList<ElementLegal>,
 )
-

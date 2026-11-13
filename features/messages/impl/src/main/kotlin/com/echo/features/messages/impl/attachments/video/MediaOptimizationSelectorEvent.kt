@@ -16,4 +16,3 @@ sealed interface MediaOptimizationSelectorEvent {
     data object OpenVideoPresetSelectorDialog : MediaOptimizationSelectorEvent
     data object DismissVideoPresetSelectorDialog : MediaOptimizationSelectorEvent
 }
-

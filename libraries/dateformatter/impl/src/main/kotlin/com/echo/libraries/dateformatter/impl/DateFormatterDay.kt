@@ -8,9 +8,9 @@
 
 package com.echo.libraries.dateformatter.impl
 
+import com.echo.libraries.core.extensions.safeCapitalize
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.echo.libraries.core.extensions.safeCapitalize
 
 interface DateFormatterDay {
     fun format(
@@ -55,4 +55,3 @@ class DefaultDateFormatterDay(
             .safeCapitalize()
     }
 }
-

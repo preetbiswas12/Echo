@@ -12,4 +12,3 @@ sealed interface OAuthAction {
     data class GoBack(val toUnblock: Boolean = false) : OAuthAction
     data class Success(val url: String) : OAuthAction
 }
-

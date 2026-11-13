@@ -19,4 +19,3 @@ class FakeRegisterUnifiedPushUseCase(
         return result(distributor, clientSecret, sessionId)
     }
 }
-

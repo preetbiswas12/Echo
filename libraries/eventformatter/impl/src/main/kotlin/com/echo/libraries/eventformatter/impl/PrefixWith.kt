@@ -33,4 +33,3 @@ internal fun CharSequence.prefixWith(prefix: String): AnnotatedString {
         }
     }
 }
-

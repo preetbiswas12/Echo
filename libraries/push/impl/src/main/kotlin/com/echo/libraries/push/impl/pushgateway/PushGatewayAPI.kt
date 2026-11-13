@@ -19,4 +19,3 @@ interface PushGatewayAPI {
     @POST(PushGatewayConfig.URI_PUSH_GATEWAY_PREFIX_PATH + "notify")
     suspend fun notify(@Body body: PushGatewayNotifyBody): PushGatewayNotifyResponse
 }
-

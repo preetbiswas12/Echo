@@ -15,4 +15,3 @@ class FakeTemporaryMatrixClientFactory(
 ) : TemporaryMatrixClientFactory {
     override suspend fun create(serverName: String): Result<TemporaryMatrixClient> = createResult(serverName)
 }
-

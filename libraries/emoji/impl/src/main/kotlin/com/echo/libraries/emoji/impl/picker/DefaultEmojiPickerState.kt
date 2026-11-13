@@ -11,10 +11,10 @@ package com.echo.libraries.emoji.impl.picker
 import androidx.annotation.StringRes
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.runtime.Immutable
-import io.element.android.emojibasebindings.Emoji
 import com.echo.libraries.designsystem.theme.components.IconSource
 import com.echo.libraries.designsystem.theme.components.SearchBarResultState
 import com.echo.libraries.emoji.api.picker.EmojiPickerState
+import io.element.android.emojibasebindings.Emoji
 import kotlinx.collections.immutable.ImmutableList
 
 @Immutable
@@ -33,4 +33,3 @@ internal data class EmojiCategory(
     val icon: IconSource,
     val emojis: ImmutableList<Emoji>,
 )
-

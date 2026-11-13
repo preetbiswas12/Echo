@@ -7,11 +7,11 @@
 
 package com.echo.features.contentscanner.impl.di
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.features.contentscanner.impl.DefaultContentScannerService
 import com.echo.libraries.matrix.api.scanner.ContentScanner
 import com.echo.libraries.matrix.test.scanner.FakeContentScanner
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 
@@ -52,4 +52,3 @@ class ContentScannerBindingContainerTest {
         assertThat(contentScannerService).isInstanceOf(DefaultContentScannerService::class.java)
     }
 }
-

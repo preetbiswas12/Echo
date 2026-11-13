@@ -13,8 +13,6 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
-import dev.zacsweers.metro.AppScope
-import dev.zacsweers.metro.ContributesBinding
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.core.meta.BuildType
 import com.echo.libraries.matrix.api.media.MediaPreviewValue
@@ -25,6 +23,8 @@ import com.echo.libraries.preferences.api.store.NotificationSound
 import com.echo.libraries.preferences.api.store.NotificationSound.Companion.toStored
 import com.echo.libraries.preferences.api.store.NotificationSoundChannelConfig
 import com.echo.libraries.preferences.api.store.PreferenceDataStoreFactory
+import dev.zacsweers.metro.AppScope
+import dev.zacsweers.metro.ContributesBinding
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
@@ -289,4 +289,3 @@ private fun BuildMeta.defaultLogLevel(): LogLevel {
         BuildType.RELEASE -> LogLevel.INFO
     }
 }
-

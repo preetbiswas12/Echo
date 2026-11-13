@@ -30,4 +30,3 @@ fun Modifier.niceClickable(
         .clickable { onClick() }
         .padding(horizontal = 4.dp)
 }
-

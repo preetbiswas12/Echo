@@ -28,4 +28,3 @@ fun aAnalyticsPreferencesState(
     policyUrl = policyUrl,
     eventSink = {}
 )
-

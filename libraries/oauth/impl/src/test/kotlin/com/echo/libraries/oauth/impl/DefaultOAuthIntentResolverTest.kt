@@ -10,10 +10,10 @@ package com.echo.libraries.oauth.impl
 import android.app.Activity
 import android.content.Intent
 import androidx.core.net.toUri
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.auth.FakeOAuthRedirectUrlProvider
 import com.echo.libraries.oauth.api.OAuthAction
 import com.echo.tests.testutils.robolectric.RobolectricTest
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 import org.robolectric.RuntimeEnvironment
 
@@ -63,4 +63,3 @@ class DefaultOAuthIntentResolverTest : RobolectricTest() {
         )
     }
 }
-

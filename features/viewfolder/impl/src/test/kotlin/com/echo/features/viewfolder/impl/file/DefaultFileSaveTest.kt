@@ -7,10 +7,10 @@
 
 package com.echo.features.viewfolder.impl.file
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.tests.testutils.fake.registerFakeMediaStoreContentProvider
 import com.echo.tests.testutils.robolectric.RobolectricTest
 import com.echo.tests.testutils.testCoroutineDispatchers
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -58,4 +58,3 @@ class DefaultFileSaveTest : RobolectricTest() {
         dispatchers = testCoroutineDispatchers(),
     )
 }
-

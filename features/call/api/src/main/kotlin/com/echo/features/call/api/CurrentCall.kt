@@ -24,4 +24,3 @@ sealed interface CurrentCall {
         val url: String,
     ) : CurrentCall
 }
-

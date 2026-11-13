@@ -44,4 +44,3 @@ internal fun InvalidContentViewPreview() = ElementPreview {
         InvalidContentView()
     }
 }
-

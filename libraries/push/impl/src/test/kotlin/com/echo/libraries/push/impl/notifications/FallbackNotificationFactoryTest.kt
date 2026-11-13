@@ -7,12 +7,12 @@
 
 package com.echo.libraries.push.impl.notifications
 
-import com.google.common.truth.Truth.assertThat
 import com.echo.libraries.matrix.test.AN_EVENT_ID
 import com.echo.libraries.matrix.test.A_ROOM_ID
 import com.echo.libraries.matrix.test.A_SESSION_ID
 import com.echo.libraries.push.impl.notifications.fixtures.aFallbackNotifiableEvent
 import com.echo.services.toolbox.test.systemclock.FakeSystemClock
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class FallbackNotificationFactoryTest {
@@ -56,4 +56,3 @@ class FallbackNotificationFactoryTest {
         )
     }
 }
-

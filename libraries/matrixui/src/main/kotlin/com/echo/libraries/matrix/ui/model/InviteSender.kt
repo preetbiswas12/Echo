@@ -53,4 +53,3 @@ fun RoomMember.toInviteSender() = InviteSender(
     avatarData = getAvatarData(size = AvatarSize.InviteSender),
     membershipChangeReason = membershipChangeReason
 )
-

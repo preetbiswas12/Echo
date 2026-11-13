@@ -50,4 +50,3 @@ class FakeMediaPreviewConfigStateStore(
     fun getSetHideInviteAvatarsEvents(): List<Boolean> = setHideInviteAvatarsEvents.toList()
     fun getSetTimelineMediaPreviewValueEvents(): List<MediaPreviewValue> = setTimelineMediaPreviewValueEvents.toList()
 }
-

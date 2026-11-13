@@ -61,4 +61,3 @@ internal fun PollTitleViewPreview() = ElementPreview {
         isPollEnded = false
     )
 }
-

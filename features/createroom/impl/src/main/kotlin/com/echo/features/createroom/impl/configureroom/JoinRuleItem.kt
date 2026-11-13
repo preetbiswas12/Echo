@@ -44,4 +44,3 @@ sealed interface JoinRuleItem {
         PublicVisibility.AskToJoin -> JoinRule.Knock
     }
 }
-

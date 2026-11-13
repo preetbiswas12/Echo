@@ -18,4 +18,3 @@ enum class RoomNotificationMode {
     MENTIONS_AND_KEYWORDS_ONLY,
     MUTE
 }
-

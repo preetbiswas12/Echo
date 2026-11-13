@@ -20,4 +20,3 @@ class FakeShowLocationEntryPoint : ShowLocationEntryPoint {
         inputs: ShowLocationEntryPoint.Inputs,
     ): Node = lambdaError()
 }
-

@@ -20,4 +20,3 @@ interface ProgressCallback {
      */
     fun onProgress(current: Long, total: Long)
 }
-

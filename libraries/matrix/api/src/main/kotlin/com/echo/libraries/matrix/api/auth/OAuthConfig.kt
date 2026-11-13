@@ -32,4 +32,3 @@ object OAuthConfig {
         "https://id.thirdroom.io/realms/thirdroom" to "elementx",
     )
 }
-

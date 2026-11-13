@@ -12,9 +12,6 @@ import app.cash.molecule.RecompositionMode
 import app.cash.molecule.moleculeFlow
 import app.cash.turbine.TurbineTestContext
 import app.cash.turbine.test
-import com.google.common.truth.Truth.assertThat
-import im.vector.app.features.analytics.plan.Composer
-import im.vector.app.features.analytics.plan.PollCreation
 import com.echo.features.messages.test.FakeMessageComposerContext
 import com.echo.features.poll.api.create.CreatePollMode
 import com.echo.features.poll.impl.aPollTimelineItems
@@ -36,6 +33,9 @@ import com.echo.tests.testutils.lambda.any
 import com.echo.tests.testutils.lambda.assert
 import com.echo.tests.testutils.lambda.lambdaRecorder
 import com.echo.tests.testutils.lambda.value
+import com.google.common.truth.Truth.assertThat
+import im.vector.app.features.analytics.plan.Composer
+import im.vector.app.features.analytics.plan.PollCreation
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -584,4 +584,3 @@ private fun PollContent.expectedAnswersState() = answers.map { answer ->
         canDelete = answers.size > 2,
     )
 }
-

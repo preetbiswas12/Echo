@@ -7,8 +7,8 @@
 
 package com.echo.features.login.impl.accountprovider
 
-import dev.zacsweers.metro.Inject
 import com.echo.libraries.preferences.api.store.AppPreferencesStore
+import dev.zacsweers.metro.Inject
 
 /**
  * Persist the account provider the user just authenticated against, so that it can be offered as
@@ -33,4 +33,3 @@ class SaveAccountProviderToHistory(
         appPreferencesStore.addHomeserverToHistory(accountProvider.serverNameOrBaseUrl())
     }
 }
-

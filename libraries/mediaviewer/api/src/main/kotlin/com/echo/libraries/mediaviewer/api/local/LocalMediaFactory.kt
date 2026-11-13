@@ -43,4 +43,3 @@ interface LocalMediaFactory {
         formattedFileSize: String?
     ): LocalMedia
 }
-

@@ -41,4 +41,3 @@ enum class TimelineItemAction(
     RetrySending(CommonStrings.action_retry, CompoundDrawables.ic_compound_send_solid),
     AbortSending(CommonStrings.action_cancel, CompoundDrawables.ic_compound_send_solid),
 }
-

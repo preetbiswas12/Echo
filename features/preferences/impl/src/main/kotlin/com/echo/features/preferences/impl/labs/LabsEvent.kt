@@ -13,4 +13,3 @@ import com.echo.libraries.featureflag.ui.model.FeatureUiModel
 sealed interface LabsEvent {
     data class ToggleFeature(val feature: FeatureUiModel) : LabsEvent
 }
-
