@@ -35,7 +35,7 @@ class AccountProviderDataSource(
     // The most recently used provider (from history) can override it, see init.
     private val configuredAccountProvider = enterpriseService.accountProviderAllowList()
         .firstOrNull()
-        ?: AccountProvider.Generic(DEFAULT_ECHO_HOMESERVER)
+        ?: defaultEchoAccountProvider
 
     private val accountProvider: MutableStateFlow<AccountProvider> = MutableStateFlow(configuredAccountProvider)
 
@@ -88,3 +88,11 @@ class AccountProviderDataSource(
         accountProvider.emit(data)
     }
 }
+
+/**
+ * The account provider used by default when the user has not selected one and no enterprise provider is
+ * configured: the Echo homeserver baked into the app.
+ */
+val defaultEchoAccountProvider = AccountProvider.Generic(
+    serverName = AccountProviderDataSource.DEFAULT_ECHO_HOMESERVER,
+)

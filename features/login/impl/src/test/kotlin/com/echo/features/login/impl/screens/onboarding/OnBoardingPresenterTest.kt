@@ -16,12 +16,12 @@ import com.echo.features.login.impl.accesscontrol.DefaultAccountProviderAccessCo
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.accountprovider.SaveAccountProviderToHistory
 import com.echo.features.login.impl.accountprovider.anAccountProviderDataSource
+import com.echo.features.login.impl.accountprovider.defaultEchoAccountProvider
 import com.echo.features.login.impl.localnetwork.LocalNetworkPermissionGate
 import com.echo.features.login.impl.login.LoginModePresenter
 import com.echo.libraries.architecture.AsyncData
 import com.echo.libraries.core.meta.BuildMeta
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
-import com.echo.libraries.matrix.api.accountprovider.matrixOrgAccountProvider
 import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.test.AN_ACCOUNT_PROVIDER
 import com.echo.libraries.matrix.test.AN_ACCOUNT_PROVIDER_2
@@ -322,7 +322,7 @@ class OnBoardingPresenterTest {
             skipItems(3)
             awaitItem().also {
                 assertThat(it.defaultAccountProvider).isEqualTo(AccountProvider.Generic(A_HOMESERVER_URL))
-                assertThat(accountProviderDataSource.flow.first()).isEqualTo(matrixOrgAccountProvider)
+                assertThat(accountProviderDataSource.flow.first()).isEqualTo(defaultEchoAccountProvider)
                 it.eventSink(OnBoardingEvent.OnSignIn(AccountProvider.Generic(A_HOMESERVER_URL_2)))
                 skipItems(1) // Loading
                 // Account data source has been updated

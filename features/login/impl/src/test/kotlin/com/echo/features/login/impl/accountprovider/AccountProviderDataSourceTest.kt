@@ -11,7 +11,6 @@ package com.echo.features.login.impl.accountprovider
 import app.cash.turbine.test
 import com.echo.features.enterprise.test.FakeEnterpriseService
 import com.echo.libraries.matrix.api.accountprovider.AccountProvider
-import com.echo.libraries.matrix.api.accountprovider.matrixOrgAccountProvider
 import com.echo.libraries.matrix.test.accountprovider.anAccountProviderManaged
 import com.echo.libraries.preferences.test.InMemoryAppPreferencesStore
 import com.echo.tests.testutils.WarmUpRule
@@ -25,10 +24,10 @@ class AccountProviderDataSourceTest {
     val warmUpRule = WarmUpRule()
 
     @Test
-    fun `present - initial state - matrix org is the default when nothing is configured`() = runTest {
+    fun `present - initial state - the Echo homeserver is the default when nothing is configured`() = runTest {
         val sut = anAccountProviderDataSource()
         sut.flow.test {
-            assertThat(awaitItem()).isEqualTo(matrixOrgAccountProvider)
+            assertThat(awaitItem()).isEqualTo(defaultEchoAccountProvider)
         }
     }
 
@@ -50,11 +49,11 @@ class AccountProviderDataSourceTest {
     fun `present - user change and reset`() = runTest {
         val sut = anAccountProviderDataSource()
         sut.flow.test {
-            assertThat(awaitItem()).isEqualTo(matrixOrgAccountProvider)
+            assertThat(awaitItem()).isEqualTo(defaultEchoAccountProvider)
             sut.setAccountProvider(AccountProvider.Generic("https://example.com"))
             assertThat(awaitItem()).isEqualTo(AccountProvider.Generic("https://example.com"))
             sut.reset()
-            assertThat(awaitItem()).isEqualTo(matrixOrgAccountProvider)
+            assertThat(awaitItem()).isEqualTo(defaultEchoAccountProvider)
         }
     }
 
@@ -62,13 +61,13 @@ class AccountProviderDataSourceTest {
     fun `present - set url and reset`() = runTest {
         val sut = anAccountProviderDataSource()
         sut.flow.test {
-            assertThat(awaitItem()).isEqualTo(matrixOrgAccountProvider)
+            assertThat(awaitItem()).isEqualTo(defaultEchoAccountProvider)
             sut.setUrl(url = "https://example.com")
             assertThat(awaitItem()).isEqualTo(
                 AccountProvider.Generic("https://example.com")
             )
             sut.reset()
-            assertThat(awaitItem()).isEqualTo(matrixOrgAccountProvider)
+            assertThat(awaitItem()).isEqualTo(defaultEchoAccountProvider)
         }
     }
 

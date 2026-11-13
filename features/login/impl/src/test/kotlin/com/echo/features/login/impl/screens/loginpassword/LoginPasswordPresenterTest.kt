@@ -11,8 +11,8 @@ package com.echo.features.login.impl.screens.loginpassword
 import com.echo.features.login.impl.accountprovider.AccountProviderDataSource
 import com.echo.features.login.impl.accountprovider.SaveAccountProviderToHistory
 import com.echo.features.login.impl.accountprovider.anAccountProviderDataSource
+import com.echo.features.login.impl.accountprovider.defaultEchoAccountProvider
 import com.echo.libraries.architecture.AsyncData
-import com.echo.libraries.matrix.api.accountprovider.matrixOrgAccountProvider
 import com.echo.libraries.matrix.api.core.SessionId
 import com.echo.libraries.matrix.test.AN_EXCEPTION
 import com.echo.libraries.matrix.test.A_PASSWORD
@@ -39,7 +39,7 @@ class LoginPasswordPresenterTest {
     fun `present - initial state`() = runTest {
         createLoginPasswordPresenter().test {
             val initialState = awaitItem()
-            assertThat(initialState.accountProvider).isEqualTo(matrixOrgAccountProvider)
+            assertThat(initialState.accountProvider).isEqualTo(defaultEchoAccountProvider)
             assertThat(initialState.formState).isEqualTo(LoginFormState.Default)
             assertThat(initialState.loginAction).isEqualTo(AsyncData.Uninitialized)
             assertThat(initialState.submitEnabled).isFalse()
@@ -127,7 +127,7 @@ class LoginPasswordPresenterTest {
             val loggedInState = awaitItem()
             assertThat(loggedInState.loginAction).isEqualTo(AsyncData.Success(A_SESSION_ID))
             assertThat(appPreferencesStore.getHomeserverHistoryFlow().first())
-                .containsExactly(matrixOrgAccountProvider.serverName)
+                .containsExactly(defaultEchoAccountProvider.serverNameOrBaseUrl())
         }
     }
 

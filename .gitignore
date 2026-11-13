@@ -93,6 +93,5 @@ screenshots/
 libraries/compound/screenshots/
 **/snapshots/**/*.png
 **/docs/images-lfs/*.png
-libraries/mediaupload/impl/src/test/assets/
 
 checkouts/**

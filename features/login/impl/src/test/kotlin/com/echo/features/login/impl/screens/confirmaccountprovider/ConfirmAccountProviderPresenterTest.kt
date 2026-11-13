@@ -47,6 +47,7 @@ class ConfirmAccountProviderPresenterTest {
     companion object {
         private const val MATRIX_ORG_SERVER_NAME = "matrix.org"
         private const val MATRIX_ORG_URL = "https://matrix.org"
+        private const val ECHO_SERVER_NAME = "echo-server-a4ae.onrender.com"
     }
 
     @Test
@@ -56,7 +57,7 @@ class ConfirmAccountProviderPresenterTest {
             val initialState = awaitItem()
             assertThat(initialState.isAccountCreation).isFalse()
             assertThat(initialState.submitEnabled).isTrue()
-            assertThat(initialState.accountProviderInput).isEqualTo("matrix.org")
+            assertThat(initialState.accountProviderInput).isEqualTo(ECHO_SERVER_NAME)
             assertThat(initialState.loginModeState.loginMode).isEqualTo(AsyncData.Uninitialized)
         }
     }
@@ -405,15 +406,15 @@ class ConfirmAccountProviderPresenterTest {
     }
 
     @Test
-    fun `present - offers matrix_org without the scheme as an autocomplete suggestion`() = runTest {
+    fun `present - offers the Echo homeserver without the scheme as an autocomplete suggestion`() = runTest {
         val presenter = createConfirmAccountProviderPresenter(
             appPreferencesStore = InMemoryAppPreferencesStore(homeserverHistory = emptyList()),
         )
         presenter.test {
             val initialState = awaitItem()
-            initialState.eventSink(ConfirmAccountProviderEvent.UserInputChanged("matr"))
-            val suggestionState = awaitState { it.accountProviderInput == "matr" }
-            assertThat(suggestionState.accountProviderSuggestion).isEqualTo("matrix.org")
+            initialState.eventSink(ConfirmAccountProviderEvent.UserInputChanged("echo"))
+            val suggestionState = awaitState { it.accountProviderInput == "echo" }
+            assertThat(suggestionState.accountProviderSuggestion).isEqualTo(ECHO_SERVER_NAME)
         }
     }
 
