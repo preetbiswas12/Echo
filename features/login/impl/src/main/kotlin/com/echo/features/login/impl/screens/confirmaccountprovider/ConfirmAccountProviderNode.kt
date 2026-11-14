@@ -44,6 +44,7 @@ class ConfirmAccountProviderNode(
 
     interface Callback : Plugin {
         fun navigateToLoginPassword()
+        fun navigateToCreateAccount()
         fun navigateToOAuth(oAuthDetails: OAuthDetails)
     }
 
@@ -59,6 +60,7 @@ class ConfirmAccountProviderNode(
             onBackClick = ::navigateUp,
             onOAuthDetails = callback::navigateToOAuth,
             onNeedLoginPassword = callback::navigateToLoginPassword,
+            onNeedCreateAccount = callback::navigateToCreateAccount,
             onLearnMoreClick = { openLearnMorePage(context) },
         )
     }

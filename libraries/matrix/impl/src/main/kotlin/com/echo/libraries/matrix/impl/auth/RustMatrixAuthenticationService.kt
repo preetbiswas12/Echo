@@ -23,6 +23,7 @@ import com.echo.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.echo.libraries.matrix.api.auth.MatrixHomeServerDetails
 import com.echo.libraries.matrix.api.auth.OAuthDetails
 import com.echo.libraries.matrix.api.auth.OAuthPrompt
+import com.echo.libraries.matrix.api.auth.RegistrationException
 import com.echo.libraries.matrix.api.auth.SessionRestorationException
 import com.echo.libraries.matrix.api.auth.qrlogin.MatrixQrCodeLoginData
 import com.echo.libraries.matrix.api.auth.qrlogin.QrCodeLoginStep
@@ -51,6 +52,12 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.buildJsonObject
+import kotlinx.serialization.json.jsonObject
+import kotlinx.serialization.json.jsonPrimitive
+import kotlinx.serialization.json.put
+import kotlinx.serialization.json.putJsonObject
 import org.matrix.rustcomponents.sdk.Client
 import org.matrix.rustcomponents.sdk.ClientBuilder
 import org.matrix.rustcomponents.sdk.HumanQrLoginException
@@ -61,6 +68,10 @@ import org.matrix.rustcomponents.sdk.QrLoginProgressListener
 import org.matrix.rustcomponents.sdk.SecretsBundleWithUserId
 import timber.log.Timber
 import uniffi.matrix_sdk.OAuthAuthorizationData
+import java.io.IOException
+import java.net.HttpURLConnection
+import java.net.URL
+import java.util.Date
 import kotlin.time.Duration.Companion.seconds
 
 @ContributesBinding(AppScope::class)
@@ -176,6 +187,130 @@ class RustMatrixAuthenticationService(
                 failure.mapAuthenticationException()
             }
         }
+
+    override suspend fun register(
+        username: String,
+        password: String,
+        registrationCode: String?,
+    ): Result<SessionId> =
+        withContext(coroutineDispatchers.io) {
+            runCatchingExceptions {
+                val client = currentClient ?: error("You need to call `setHomeserver()` first")
+                val currentSessionPaths = sessionPaths ?: error("You need to call `setHomeserver()` first")
+                val homeserverUrl = client.homeserver()
+                val registration = createAccount(
+                    homeserverUrl = homeserverUrl,
+                    username = username.trim(),
+                    password = password,
+                    registrationCode = registrationCode?.takeIf { it.isNotBlank() },
+                )
+                val accountAlreadyLoggedIn = sessionStore.getAllSessions().any {
+                    it.userId == registration.userId
+                }
+                if (accountAlreadyLoggedIn) {
+                    throw AuthenticationException.AccountAlreadyLoggedIn(registration.userId)
+                }
+                // Mirror `login()`: build the final session from the credentials of the new account. The
+                // passphrase must be the pending key, since the local store of the client above was
+                // already created with it.
+                val sessionData = SessionData(
+                    userId = registration.userId,
+                    deviceId = registration.deviceId,
+                    accessToken = registration.accessToken,
+                    refreshToken = null,
+                    homeserverUrl = homeserverUrl,
+                    oAuthData = null,
+                    loginTimestamp = Date(),
+                    isTokenValid = true,
+                    loginType = LoginType.PASSWORD,
+                    passphrase = pendingKey.formattedAsString(),
+                    sessionPath = currentSessionPaths.fileDirectory.absolutePath,
+                    cachePath = currentSessionPaths.cacheDirectory.absolutePath,
+                    position = 0,
+                    lastUsageIndex = 0,
+                    userDisplayName = null,
+                    userAvatarUrl = null,
+                    userAvatarData = null,
+                )
+                finalizeClientCreation(sessionData)
+            }.mapFailure { failure ->
+                Timber.e(failure, "Failed to register")
+                failure as? RegistrationException ?: failure.mapAuthenticationException()
+            }
+        }
+
+    /**
+     * The result of a successful `POST /register` request, with the credentials of the freshly created
+     * account.
+     */
+    private data class AccountRegistration(
+        val userId: String,
+        val deviceId: String,
+        val accessToken: String,
+    )
+
+    /**
+     * Creates the account on the homeserver with a plain `POST /register` request.
+     *
+     * This is not going through the Rust SDK, which has no API for password registration. The returned
+     * credentials are then handed to the SDK to build the final session.
+     */
+    private fun createAccount(
+        homeserverUrl: String,
+        username: String,
+        password: String,
+        registrationCode: String?,
+    ): AccountRegistration {
+        val body = buildJsonObject {
+            put("username", username)
+            put("password", password)
+            put("initial_device_display_name", "Echo Android")
+            registrationCode?.let {
+                putJsonObject("auth") {
+                    put("type", "m.login.registration_token")
+                    put("token", it)
+                }
+            }
+        }.toString()
+
+        val connection = URL(homeserverUrl.trimEnd('/') + "/_matrix/client/v3/register")
+            .openConnection() as HttpURLConnection
+        return try {
+            connection.requestMethod = "POST"
+            connection.connectTimeout = 30_000
+            connection.readTimeout = 60_000
+            connection.setRequestProperty("Content-Type", "application/json")
+            connection.doOutput = true
+            connection.outputStream.use { it.write(body.encodeToByteArray()) }
+
+            val stream = if (connection.errorStream != null && connection.responseCode >= 400) {
+                connection.errorStream
+            } else {
+                connection.inputStream
+            }
+            val responseBody = stream?.bufferedReader()?.use { it.readText() } ?: ""
+            val json = Json.parseToJsonElement(responseBody).jsonObject
+
+            if (connection.responseCode >= 400) {
+                val errcode = json["errcode"]?.jsonPrimitive?.content
+                val error = json["error"]?.jsonPrimitive?.content
+                Timber.d("Registration rejected by the server: errcode=$errcode")
+                throw RegistrationException(errcode, error)
+            }
+
+            val userId = json["user_id"]?.jsonPrimitive?.content
+            val accessToken = json["access_token"]?.jsonPrimitive?.content
+            val deviceId = json["device_id"]?.jsonPrimitive?.content
+            if (userId == null || accessToken == null || deviceId == null) {
+                throw RegistrationException(null, "Malformed registration response from the server")
+            }
+            AccountRegistration(userId = userId, deviceId = deviceId, accessToken = accessToken)
+        } catch (failure: IOException) {
+            throw RegistrationException(null, "Could not reach the homeserver: ${failure.message}")
+        } finally {
+            connection.disconnect()
+        }
+    }
 
     private suspend fun tryToImportSecretForElementClassicSession(client: Client) {
         elementClassicSession

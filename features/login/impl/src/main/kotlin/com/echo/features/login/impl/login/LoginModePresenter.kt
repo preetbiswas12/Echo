@@ -93,8 +93,8 @@ class LoginModePresenter(
                         authenticationService.getOAuthUrl(prompt = oAuthPrompt, loginHint = request.loginHint).getOrThrow()
                     )
                 }
-                request.isAccountCreation -> throw AccountCreationNotSupported()
                 matrixHomeServerDetails.supportsPasswordLogin -> LoginMode.PasswordLogin
+                request.isAccountCreation -> throw AccountCreationNotSupported()
                 else -> error("Unsupported authentication flow")
             }
         }.runCatchingUpdatingState(

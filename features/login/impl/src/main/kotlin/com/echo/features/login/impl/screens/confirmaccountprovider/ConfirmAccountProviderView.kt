@@ -77,6 +77,7 @@ fun ConfirmAccountProviderView(
     onBackClick: () -> Unit,
     onOAuthDetails: (OAuthDetails) -> Unit,
     onNeedLoginPassword: () -> Unit,
+    onNeedCreateAccount: () -> Unit,
     onLearnMoreClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -238,7 +239,13 @@ fun ConfirmAccountProviderView(
         onClearError = { eventSink(ConfirmAccountProviderEvent.ClearError) },
         onLearnMoreClick = onLearnMoreClick,
         onOAuthDetails = onOAuthDetails,
-        onNeedLoginPassword = onNeedLoginPassword,
+        onNeedLoginPassword = {
+            if (state.isAccountCreation) {
+                onNeedCreateAccount()
+            } else {
+                onNeedLoginPassword()
+            }
+        },
     )
 
     LocalNetworkPermissionDialogView(
@@ -285,6 +292,7 @@ internal fun ConfirmAccountProviderViewPreview(
         onBackClick = {},
         onOAuthDetails = {},
         onNeedLoginPassword = {},
+        onNeedCreateAccount = {},
         onLearnMoreClick = {},
     )
 }

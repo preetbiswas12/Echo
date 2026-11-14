@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (c) 2026 Element Creations Ltd.
+
+  SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  Please see LICENSE files in the repository root for full details.
+-->
+<resources>
+    <string name="screen_create_account_title_with_homeserver">"Create an account on %1$s"</string>
+    <string name="screen_create_account_subtitle">"Pick a username and a password to start messaging. Your new chats will be end-to-end encrypted."</string>
+    <string name="screen_create_account_username_header">"Username"</string>
+    <string name="screen_create_account_password_supporting_text">"At least 8 characters"</string>
+    <string name="screen_create_account_registration_code">"Registration code"</string>
+    <string name="screen_create_account_registration_code_supporting_text">"This server only accepts sign-ups from people with a registration code."</string>
+    <string name="screen_create_account_error_invalid_username">"Usernames can only contain lowercase letters, numbers, dots, underscores, dashes, equals, slashes and plus signs"</string>
+    <string name="screen_create_account_error_password_mismatch">"Passwords don\'t match"</string>
+    <string name="screen_create_account_error_username_taken">"This username is already taken"</string>
+    <string name="screen_create_account_error_invalid_registration_code">"Invalid registration code"</string>
+</resources>

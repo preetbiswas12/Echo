@@ -12,6 +12,7 @@ import androidx.annotation.StringRes
 import com.echo.features.login.impl.R
 import com.echo.libraries.matrix.api.auth.AuthErrorCode
 import com.echo.libraries.matrix.api.auth.AuthenticationException
+import com.echo.libraries.matrix.api.auth.RegistrationException
 import com.echo.libraries.matrix.api.auth.errorCode
 import com.echo.libraries.ui.strings.CommonStrings
 
@@ -24,5 +25,18 @@ fun loginError(
         AuthErrorCode.FORBIDDEN -> R.string.screen_login_error_invalid_credentials
         AuthErrorCode.USER_DEACTIVATED -> R.string.screen_login_error_deactivated_account
         AuthErrorCode.UNKNOWN -> CommonStrings.error_unknown
+    }
+}
+
+@StringRes
+fun registrationError(
+    throwable: Throwable,
+): Int {
+    val registrationException = throwable as? RegistrationException ?: return CommonStrings.error_unknown
+    return when (registrationException.errcode) {
+        "M_USER_IN_USE" -> R.string.screen_create_account_error_username_taken
+        "M_INVALID_USERNAME" -> R.string.screen_create_account_error_invalid_username
+        "M_FORBIDDEN" -> R.string.screen_create_account_error_invalid_registration_code
+        else -> CommonStrings.error_unknown
     }
 }

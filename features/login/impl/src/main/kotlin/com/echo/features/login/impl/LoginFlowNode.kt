@@ -32,6 +32,7 @@ import com.echo.features.login.impl.qrcode.QrCodeLoginFlowNode
 import com.echo.features.login.impl.screens.chooseaccountprovider.ChooseAccountProviderNode
 import com.echo.features.login.impl.screens.classic.ClassicFlowNode
 import com.echo.features.login.impl.screens.confirmaccountprovider.ConfirmAccountProviderNode
+import com.echo.features.login.impl.screens.createaccount.CreateAccountNode
 import com.echo.features.login.impl.screens.loginpassword.LoginPasswordNode
 import com.echo.features.login.impl.screens.onboarding.OnBoardingNode
 import com.echo.features.preferences.api.PreferencesEntryPoint
@@ -130,6 +131,9 @@ class LoginFlowNode(
         data class LoginPassword(
             val initialLogin: String = "",
         ) : NavTarget
+
+        @Parcelize
+        data object CreateAccount : NavTarget
     }
 
     override fun resolve(navTarget: NavTarget, buildContext: BuildContext): Node {
@@ -252,6 +256,10 @@ class LoginFlowNode(
                     override fun navigateToLoginPassword() {
                         backstack.push(NavTarget.LoginPassword())
                     }
+
+                    override fun navigateToCreateAccount() {
+                        backstack.push(NavTarget.CreateAccount)
+                    }
                 }
                 createNode<ConfirmAccountProviderNode>(buildContext, plugins = listOf(inputs, callback))
             }
@@ -260,6 +268,9 @@ class LoginFlowNode(
                     initialLogin = navTarget.initialLogin,
                 )
                 createNode<LoginPasswordNode>(buildContext, plugins = listOf(inputs))
+            }
+            NavTarget.CreateAccount -> {
+                createNode<CreateAccountNode>(buildContext)
             }
         }
     }

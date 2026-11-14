@@ -46,6 +46,24 @@ interface MatrixAuthenticationService {
      */
     suspend fun login(username: String, password: String): Result<SessionId>
 
+    /**
+     * Creates a new account on the homeserver previously set through [setHomeserver], with a username and
+     * a password.
+     *
+     * If the homeserver only allows sign-ups via an OAuth provider, or rejects the request, this fails
+     * with a [RegistrationException] when the server returned a Matrix error code.
+     *
+     * @param username the username (local part) of the account to create.
+     * @param password the password to protect the account with.
+     * @param registrationCode an optional registration code, required by homeservers which only allow
+     * sign-ups from people who hold a code.
+     */
+    suspend fun register(
+        username: String,
+        password: String,
+        registrationCode: String?,
+    ): Result<SessionId>
+
     /*
      * OAuth part.
      */
