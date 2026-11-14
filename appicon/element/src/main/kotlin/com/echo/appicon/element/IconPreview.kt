@@ -26,11 +26,11 @@ internal fun IconPreview() {
     Box {
         Image(
             modifier = Modifier.matchParentSize(),
-            painter = painterResource(id = R.drawable.ic_launcher_background),
+            painter = painterResource(id = R.mipmap.ic_launcher),
             contentDescription = null,
         )
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = R.mipmap.ic_launcher),
             contentDescription = null,
         )
     }
@@ -42,11 +42,11 @@ internal fun RoundIconPreview() {
     Box(modifier = Modifier.clip(shape = CircleShape)) {
         Image(
             modifier = Modifier.matchParentSize(),
-            painter = painterResource(id = R.drawable.ic_launcher_background),
+            painter = painterResource(id = R.mipmap.ic_launcher),
             contentDescription = null,
         )
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = R.mipmap.ic_launcher),
             contentDescription = null,
         )
     }
@@ -60,7 +60,7 @@ internal fun MonochromeIconPreview() {
             .background(Color(0xFF2F3133)),
     ) {
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_monochrome),
+            painter = painterResource(id = R.mipmap.ic_launcher),
             colorFilter = ColorFilter.tint(Color(0xFFC3E0F6)),
             contentDescription = null
         )
