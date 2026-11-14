@@ -1,10 +1,10 @@
 <!-- 
 
-Please read [CONTRIBUTING.md](https://github.com/element-hq/element-x-android/blob/develop/CONTRIBUTING.md) before submitting your pull request.
+Please read [CONTRIBUTING.md](https://github.com/preetbiswas12/Echo/blob/develop/CONTRIBUTING.md) before submitting your pull request.
 
-Are you adding a new feature? Keep in mind that it needs to be added to [the iOS client](https://github.com/element-hq/element-x-ios) too, unless it's related to an Android OS only behaviour.
+Are you adding a new feature? Keep in mind that it needs to be added to [the iOS client](https://github.com/preetbiswas12/echo-ios) too, unless it's related to an Android OS only behaviour.
 
-**IMPORTANT:** if you are adding a new feature, new screens or modifying existing ones, this needs acceptance from the product and design teams before you start. For this, start with a [feature request in element-meta](https://github.com/element-hq/element-meta/issues/new?template=enhancement.yml) describing the change you want to make and the motivation behind it, and wait for it to get the `X-Accepting-PRs` or `X-Accepting-PoC-PRs` label. Then link it from this PR with `Part of element-hq/element-meta#N`. See [how feature requests are triaged](https://github.com/element-hq/element-meta/blob/develop/docs/process/feature-requests.md).
+**IMPORTANT:** if you are adding a new feature, new screens or modifying existing ones, this needs acceptance from the product and design teams before you start. For this, start with a [feature request in the Echo repo](https://github.com/preetbiswas12/Echo/issues/new?template=enhancement.yml) describing the change you want to make and the motivation behind it, and wait for it to get the `X-Accepting-PRs` or `X-Accepting-PoC-PRs` label. Then link it from this PR with `Part of preetbiswas12/Echo#N`. See [how feature requests are triaged](https://github.com/preetbiswas12/Echo/blob/develop/docs/process/feature-requests.md).
 
 -->
  
@@ -52,13 +52,13 @@ Uncomment this markdown table below and edit the last line `|||`:
 
 <!-- Depending on the Pull Request content, it can be acceptable if some of the following checkboxes stay unchecked. -->
 
-- [ ] I am aware of the [etiquette](https://github.com/element-hq/element-x-android/blob/develop/CONTRIBUTING.md#etiquette).
+- [ ] I am aware of the [etiquette](https://github.com/preetbiswas12/Echo/blob/develop/CONTRIBUTING.md#etiquette).
 - This PR was made with the help of AI:
     - [ ] Yes. In this case, please request a review by Copilot.
     - [ ] No.
 - [ ] Changes have been tested on an Android device or Android emulator with API 24
 - [ ] UI change has been tested on both light and dark themes
-- [ ] Accessibility has been taken into account. See https://github.com/element-hq/element-x-android/blob/develop/CONTRIBUTING.md#accessibility
+- [ ] Accessibility has been taken into account. See https://github.com/preetbiswas12/Echo/blob/develop/CONTRIBUTING.md#accessibility
 - [ ] Pull request is based on the develop branch
 - [ ] Pull request title will be used in the release note, it clearly defines what will change for the user
 - [ ] Pull request includes screenshots or videos if containing UI changes

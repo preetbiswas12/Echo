@@ -156,7 +156,7 @@ You can then build the Rust SDK by running the script
 This will prompt you for the path to the Rust SDK, then build it and
 `matrix-rust-components-kotlin`, eventually producing an aar file at
 `./libraries/rustsdk/matrix-rust-sdk.aar`, which will be picked up
-automatically by the Element X Android build.
+automatically by the Echo Android build.
 
 Troubleshooting:
  - You may need to set `ANDROID_NDK_HOME` e.g `export ANDROID_NDK_HOME=~/Library/Android/sdk/ndk`.

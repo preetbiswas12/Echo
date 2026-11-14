@@ -1,4 +1,4 @@
 contact_links:
   - name: Feature request
-    url: https://github.com/element-hq/element-meta/issues/new?template=enhancement.yml
-    about: Feature requests for all the Element apps are filed in element-meta.
+    url: https://github.com/preetbiswas12/Echo/issues/new?template=enhancement.yml
+    about: Feature requests for Echo are filed in the Echo repo.
