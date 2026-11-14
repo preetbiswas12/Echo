@@ -1,6 +1,6 @@
-# AGENTS.md — Element X Android
+# AGENTS.md — Echo Android
 
-> **Repo:** `element-hq/element-x-android` — Android Matrix client (Compose UI + `matrix-rust-sdk`).
+> **Repo:** `preetbiswas12/Echo` — Echo Android Matrix client (Compose UI + `matrix-rust-sdk`), a fork of Element X Android.
 
 ---
 

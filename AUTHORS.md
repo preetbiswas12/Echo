@@ -1,8 +1,8 @@
-A full developer contributors list can be found [here](https://github.com/element-hq/element-x-android/graphs/contributors).
+A full developer contributors list can be found [here](https://github.com/preetbiswas12/Echo/graphs/contributors).
 
 # Core team:
 
-The element.io Android developer team.
+The Echo developer team.
 
 # Other contributors
 
