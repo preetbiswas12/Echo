@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2025 Element Creations Ltd.
+  ~ Copyright 2023 New Vector Ltd.
+  ~
+  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  ~ Please see LICENSE files in the repository root for full details.
+  -->
+<resources>
+    <!-- Background colour of the Echo adaptive launcher icon, matching echo_app_logo.png. -->
+    <color name="echo_app_icon_background">#FFFFFFFF</color>
+</resources>
